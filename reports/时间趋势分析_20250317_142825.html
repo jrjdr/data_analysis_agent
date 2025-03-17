@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>时间趋势分析分析报告</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            color: #2c3e50;
+            margin-top: 24px;
+            margin-bottom: 16px;
+        }
+        h1 { font-size: 2em; border-bottom: 1px solid #eaecef; padding-bottom: .3em; }
+        h2 { font-size: 1.5em; border-bottom: 1px solid #eaecef; padding-bottom: .3em; }
+        h3 { font-size: 1.25em; }
+        h4 { font-size: 1em; }
+        p, ul, ol, table { margin-bottom: 16px; }
+        code {
+            font-family: Consolas, Monaco, 'Andale Mono', monospace;
+            background-color: #f6f8fa;
+            padding: 0.2em 0.4em;
+            border-radius: 3px;
+        }
+        pre {
+            background-color: #f6f8fa;
+            border-radius: 3px;
+            padding: 16px;
+            overflow: auto;
+        }
+        pre code {
+            background-color: transparent;
+            padding: 0;
+        }
+        blockquote {
+            padding: 0 1em;
+            color: #6a737d;
+            border-left: 0.25em solid #dfe2e5;
+            margin: 0 0 16px 0;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        table th, table td {
+            border: 1px solid #dfe2e5;
+            padding: 6px 13px;
+        }
+        table tr:nth-child(2n) {
+            background-color: #f6f8fa;
+        }
+        img {
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+<h1>时间趋势分析单元 分析报告</h1>
+<br>
+<h2>分析结论</h2>
+<br>
+<p>成功加载数据，共 14400 行</p>
+<p>数据预处理完成</p>
+<p>分析结果已保存到 pngs/time_trend_results.txt</p>
+<br>
+<br>
+<h2>详细分析</h2>
+<br>
+<p>=== 时间趋势分析 ===</p>
+<br>
+<p>cpu_usage_percent 指标:</p>
+<ul>
+<li>高峰时段: 9时 (平均值: 65.46)</li>
+<li>低谷时段: 23时 (平均值: 24.49)</li>
+</ul>
+<br>
+<p>memory_usage_percent 指标:</p>
+<ul>
+<li>高峰时段: 10时 (平均值: 73.88)</li>
+<li>低谷时段: 5时 (平均值: 44.32)</li>
+</ul>
+<br>
+<p>disk_usage_percent 指标:</p>
+<ul>
+<li>高峰时段: 10时 (平均值: 60.13)</li>
+<li>低谷时段: 6时 (平均值: 50.08)</li>
+</ul>
+<br>
+<p>disk_io_percent 指标:</p>
+<ul>
+<li>高峰时段: 16时 (平均值: 55.74)</li>
+<li>低谷时段: 0时 (平均值: 16.28)</li>
+</ul>
+<br>
+<p>disk_read_mbps 指标:</p>
+<ul>
+<li>高峰时段: 15时 (平均值: 71.78)</li>
+<li>低谷时段: 0时 (平均值: 20.16)</li>
+</ul>
+<br>
+<p>disk_write_mbps 指标:</p>
+<ul>
+<li>高峰时段: 16时 (平均值: 51.03)</li>
+<li>低谷时段: 0时 (平均值: 14.35)</li>
+</ul>
+<br>
+<p>network_traffic_percent 指标:</p>
+<ul>
+<li>高峰时段: 11时 (平均值: 65.11)</li>
+<li>低谷时段: 23时 (平均值: 24.44)</li>
+</ul>
+<br>
+<p>network_in_mbps 指标:</p>
+<ul>
+<li>高峰时段: 15时 (平均值: 115.45)</li>
+<li>低谷时段: 2时 (平均值: 41.79)</li>
+</ul>
+<br>
+<p>network_out_mbps 指标:</p>
+<ul>
+<li>高峰时段: 9时 (平均值: 75.91)</li>
+<li>低谷时段: 0时 (平均值: 27.96)</li>
+</ul>
+<br>
+<p>load_avg_1min 指标:</p>
+<ul>
+<li>高峰时段: 9时 (平均值: 2.62)</li>
+<li>低谷时段: 23时 (平均值: 0.98)</li>
+</ul>
+<br>
+<p>load_avg_5min 指标:</p>
+<ul>
+<li>高峰时段: 17时 (平均值: 2.63)</li>
+<li>低谷时段: 0时 (平均值: 0.98)</li>
+</ul>
+<br>
+<p>load_avg_15min 指标:</p>
+<ul>
+<li>高峰时段: 17时 (平均值: 2.67)</li>
+<li>低谷时段: 8时 (平均值: 0.97)</li>
+</ul>
+<br>
+<p>process_count 指标:</p>
+<ul>
+<li>高峰时段: 17时 (平均值: 230.25)</li>
+<li>低谷时段: 23时 (平均值: 148.18)</li>
+</ul>
+<br>
+<p>thread_count 指标:</p>
+<ul>
+<li>高峰时段: 16时 (平均值: 1312.78)</li>
+<li>低谷时段: 22时 (平均值: 804.07)</li>
+</ul>
+<br>
+<p>open_file_count 指标:</p>
+<ul>
+<li>高峰时段: 16时 (平均值: 4616.58)</li>
+<li>低谷时段: 22时 (平均值: 2770.56)</li>
+</ul>
+<br>
+<p>temperature_celsius 指标:</p>
+<ul>
+<li>高峰时段: 5时 (平均值: 50.86)</li>
+<li>低谷时段: 16时 (平均值: 49.38)</li>
+</ul>
+<br>
+<p>query_rate_per_sec 指标:</p>
+<ul>
+<li>高峰时段: 15时 (平均值: 707.98)</li>
+<li>低谷时段: 22时 (平均值: 193.56)</li>
+</ul>
+<br>
+<p>active_connections 指标:</p>
+<ul>
+<li>高峰时段: 14时 (平均值: 91.00)</li>
+<li>低谷时段: 0时 (平均值: 24.11)</li>
+</ul>
+<br>
+<p>cache_hit_rate_percent 指标:</p>
+<ul>
+<li>高峰时段: 23时 (平均值: 87.82)</li>
+<li>低谷时段: 14时 (平均值: 72.16)</li>
+</ul>
+<br>
+<p>avg_query_time_ms 指标:</p>
+<ul>
+<li>高峰时段: 14时 (平均值: 42.92)</li>
+<li>低谷时段: 23时 (平均值: 16.19)</li>
+</ul>
+<br>
+<p>transactions_per_sec 指标:</p>
+<ul>
+<li>高峰时段: 10时 (平均值: 81.76)</li>
+<li>低谷时段: 22时 (平均值: 20.78)</li>
+</ul>
+<br>
+<p>read_percent 指标:</p>
+<ul>
+<li>高峰时段: 5时 (平均值: 82.32)</li>
+<li>低谷时段: 3时 (平均值: 80.92)</li>
+</ul>
+<br>
+<p>write_percent 指标:</p>
+<ul>
+<li>高峰时段: 3时 (平均值: 19.08)</li>
+<li>低谷时段: 5时 (平均值: 17.68)</li>
+</ul>
+<br>
+<p>lock_wait_count 指标:</p>
+<ul>
+<li>高峰时段: 14时 (平均值: 9.22)</li>
+<li>低谷时段: 1时 (平均值: 1.80)</li>
+</ul>
+<br>
+<p>deadlock_count 指标:</p>
+<ul>
+<li>高峰时段: 14时 (平均值: 0.16)</li>
+<li>低谷时段: 0时 (平均值: 0.00)</li>
+</ul>
+<br>
+<p>buffer_pool_usage_percent 指标:</p>
+<ul>
+<li>高峰时段: 20时 (平均值: 73.86)</li>
+<li>低谷时段: 3时 (平均值: 70.77)</li>
+</ul>
+<br>
+<p>table_scans_per_sec 指标:</p>
+<ul>
+<li>高峰时段: 15时 (平均值: 27.01)</li>
+<li>低谷时段: 8时 (平均值: 23.11)</li>
+</ul>
+<br>
+<p>index_usage_percent 指标:</p>
+<ul>
+<li>高峰时段: 1时 (平均值: 80.75)</li>
+<li>低谷时段: 15时 (平均值: 78.23)</li>
+</ul>
+<br>
+<p>temp_tables_created_per_sec 指标:</p>
+<ul>
+<li>高峰时段: 5时 (平均值: 10.61)</li>
+<li>低谷时段: 21时 (平均值: 9.45)</li>
+</ul>
+<br>
+<p>slow_queries_count 指标:</p>
+<ul>
+<li>高峰时段: 10时 (平均值: 18.69)</li>
+<li>低谷时段: 19时 (平均值: 4.25)</li>
+</ul>
+<br>
+<p>aborted_connections 指标:</p>
+<ul>
+<li>高峰时段: 14时 (平均值: 0.92)</li>
+<li>低谷时段: 0时 (平均值: 0.01)</li>
+</ul>
+<br>
+<br>
+<p>=== 服务器性能分析 ===</p>
+<br>
+<p>服务器: 主应用服务器</p>
+<ul>
+<li>cpu_usage_percent: 平均 38.98%, 最大 100.00%</li>
+<li>memory_usage_percent: 平均 54.23%, 最大 97.18%</li>
+<li>disk_usage_percent: 平均 53.11%, 最大 83.68%</li>
+<li>network_traffic_percent: 平均 38.63%, 最大 96.68%</li>
+</ul>
+<br>
+<p>服务器: 备份应用服务器</p>
+<ul>
+<li>cpu_usage_percent: 平均 37.47%, 最大 84.05%</li>
+<li>memory_usage_percent: 平均 53.61%, 最大 87.47%</li>
+<li>disk_usage_percent: 平均 52.70%, 最大 77.92%</li>
+<li>network_traffic_percent: 平均 39.86%, 最大 100.00%</li>
+</ul>
+<br>
+<p>服务器: 数据处理服务器</p>
+<ul>
+<li>cpu_usage_percent: 平均 36.67%, 最大 84.74%</li>
+<li>memory_usage_percent: 平均 53.59%, 最大 100.00%</li>
+<li>disk_usage_percent: 平均 52.98%, 最大 89.16%</li>
+<li>network_traffic_percent: 平均 36.33%, 最大 84.03%</li>
+</ul>
+<br>
+<p>服务器: 缓存服务器</p>
+<ul>
+<li>cpu_usage_percent: 平均 36.74%, 最大 83.67%</li>
+<li>memory_usage_percent: 平均 52.64%, 最大 87.44%</li>
+<li>disk_usage_percent: 平均 52.64%, 最大 77.19%</li>
+<li>network_traffic_percent: 平均 36.80%, 最大 84.19%</li>
+</ul>
+<br>
+<p>服务器: 负载均衡服务器</p>
+<ul>
+<li>cpu_usage_percent: 平均 38.05%, 最大 84.07%</li>
+<li>memory_usage_percent: 平均 53.77%, 最大 87.73%</li>
+<li>disk_usage_percent: 平均 52.78%, 最大 78.24%</li>
+<li>network_traffic_percent: 平均 39.65%, 最大 100.00%</li>
+</ul>
+<br>
+<p>服务器: MySQL主数据库</p>
+<br>
+<p>服务器: MySQL从数据库</p>
+<br>
+<p>服务器: Redis缓存数据库</p>
+<br>
+<p>服务器: MongoDB文档数据库</p>
+<br>
+<p>服务器: Elasticsearch搜索数据库</p>
+<br>
+<br>
+<p>=== 异常值检测 ===</p>
+<br>
+<p>cpu_usage_percent 异常值:</p>
+<ul>
+<li>检测到 5 个异常点</li>
+<li>时间: 2025-02-28 03:15:00, 服务器: 主应用服务器, 值: 99.92</li>
+<li>时间: 2025-02-28 03:20:00, 服务器: 主应用服务器, 值: 100.00</li>
+<li>时间: 2025-02-28 03:25:00, 服务器: 主应用服务器, 值: 100.00</li>
+<li>时间: 2025-02-28 03:45:00, 服务器: 主应用服务器, 值: 100.00</li>
+<li>时间: 2025-02-28 03:56:00, 服务器: 主应用服务器, 值: 100.00</li>
+</ul>
+<br>
+<p>memory_usage_percent 异常值:</p>
+<ul>
+<li>检测到 2 个异常点</li>
+<li>时间: 2025-02-28 10:42:00, 服务器: 数据处理服务器, 值: 100.00</li>
+<li>时间: 2025-02-28 10:49:00, 服务器: 数据处理服务器, 值: 99.81</li>
+</ul>
+<br>
+<p>disk_io_percent 异常值:</p>
+<ul>
+<li>检测到 10 个异常点</li>
+<li>时间: 2025-02-28 03:17:00, 服务器: 主应用服务器, 值: 89.76</li>
+<li>时间: 2025-02-28 03:23:00, 服务器: 主应用服务器, 值: 88.74</li>
+<li>时间: 2025-02-28 03:30:00, 服务器: 主应用服务器, 值: 91.70</li>
+<li>时间: 2025-02-28 03:36:00, 服务器: 主应用服务器, 值: 90.76</li>
+<li>时间: 2025-02-28 03:43:00, 服务器: 主应用服务器, 值: 93.00</li>
+</ul>
+<br>
+<br>
+<p>=== 事件类型分析 ===</p>
+<br>
+<p>normal: 14103 次 (97.94%)</p>
+<p>network_issue: 122 次 (0.85%)</p>
+<p>high_load: 92 次 (0.64%)</p>
+<p>db_slowdown: 62 次 (0.43%)</p>
+<p>memory_leak: 21 次 (0.15%)</p>
+<br>
+<p>=== 数据库性能指标 ===</p>
+<br>
+<p>query_rate_per_sec:</p>
+<ul>
+<li>平均值: 349.16</li>
+<li>最大值: 1242.16</li>
+<li>最小值: 51.60</li>
+</ul>
+<br>
+<p>active_connections:</p>
+<ul>
+<li>平均值: 40.83</li>
+<li>最大值: 196.48</li>
+<li>最小值: 5.09</li>
+</ul>
+<br>
+<p>cache_hit_rate_percent:</p>
+<ul>
+<li>平均值: 84.69</li>
+<li>最大值: 99.81</li>
+<li>最小值: 27.49</li>
+</ul>
+<br>
+<p>avg_query_time_ms:</p>
+<ul>
+<li>平均值: 18.01</li>
+<li>最大值: 246.53</li>
+<li>最小值: 8.22</li>
+</ul>
+<br>
+<p>transactions_per_sec:</p>
+<ul>
+<li>平均值: 38.26</li>
+<li>最大值: 218.76</li>
+<li>最小值: 3.64</li>
+</ul>
+<br>
+<p>slow_queries_count:</p>
+<ul>
+<li>平均值: 8.28</li>
+<li>最大值: 57.00</li>
+<li>最小值: 0.00</li>
+</ul>
+<br>
+<br>
+<br>
+
+</body>
+</html>

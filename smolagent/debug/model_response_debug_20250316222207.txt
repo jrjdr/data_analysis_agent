@@ -1,0 +1,9 @@
+完整响应内容:
+模型调用失败，请检查网络连接和API配置。错误: HTTPSConnectionPool(host='xiaohumini.site', port=443): Max retries exceeded with url: /v1/chat/completions (Caused by ProxyError('Unable to connect to proxy', RemoteDisconnected('Remote end closed connection without response')))
+
+响应类型: <class 'str'>
+响应长度: 253
+首字符: '模' (ASCII: 27169)
+末字符: ')' (ASCII: 41)
+前50个字符: '模型调用失败，请检查网络连接和API配置。错误: HTTPSConnectionPool(host='
+后50个字符: ''Remote end closed connection without response')))'

@@ -1,0 +1,282 @@
+{
+  "basic_info": {
+    "file_path": "temp_csv/excel_data_20250317084430.csv",
+    "row_count": 1060,
+    "column_count": 8,
+    "file_size_kb": 64.1,
+    "analysis_timestamp": "2025-03-17 08:45:12"
+  },
+  "columns_info": {
+    "Category": {
+      "type": "object",
+      "missing_values": 0,
+      "missing_percentage": 0.0,
+      "unique_values": 5,
+      "most_common": {
+        "value": "Outerwear",
+        "count": 212
+      },
+      "least_common": {
+        "value": "Accessories",
+        "count": 212
+      },
+      "top_5_values": [
+        {
+          "value": "Outerwear",
+          "count": 212,
+          "percentage": 20.0
+        },
+        {
+          "value": "Tops",
+          "count": 212,
+          "percentage": 20.0
+        },
+        {
+          "value": "Bottoms",
+          "count": 212,
+          "percentage": 20.0
+        },
+        {
+          "value": "Dresses",
+          "count": 212,
+          "percentage": 20.0
+        },
+        {
+          "value": "Accessories",
+          "count": 212,
+          "percentage": 20.0
+        }
+      ]
+    },
+    "Item": {
+      "type": "object",
+      "missing_values": 0,
+      "missing_percentage": 0.0,
+      "unique_values": 20,
+      "most_common": {
+        "value": "Winter Coat",
+        "count": 53
+      },
+      "least_common": {
+        "value": "Sunglasses",
+        "count": 53
+      },
+      "top_5_values": [
+        {
+          "value": "Winter Coat",
+          "count": 53,
+          "percentage": 5.0
+        },
+        {
+          "value": "Light Jacket",
+          "count": 53,
+          "percentage": 5.0
+        },
+        {
+          "value": "Raincoat",
+          "count": 53,
+          "percentage": 5.0
+        },
+        {
+          "value": "Parka",
+          "count": 53,
+          "percentage": 5.0
+        },
+        {
+          "value": "T-Shirt",
+          "count": 53,
+          "percentage": 5.0
+        }
+      ]
+    },
+    "Price": {
+      "type": "float64",
+      "missing_values": 0,
+      "missing_percentage": 0.0,
+      "unique_values": 20,
+      "min": 21.91,
+      "max": 185.14,
+      "mean": 71.15700000000001,
+      "median": 58.17,
+      "std": 45.99641427560858,
+      "q1": 41.019999999999996,
+      "q3": 80.875
+    },
+    "Date": {
+      "type": "object",
+      "missing_values": 0,
+      "missing_percentage": 0.0,
+      "unique_values": 53,
+      "most_common": {
+        "value": "2024-01-01",
+        "count": 20
+      },
+      "least_common": {
+        "value": "2024-12-30",
+        "count": 20
+      },
+      "top_5_values": [
+        {
+          "value": "2024-01-01",
+          "count": 20,
+          "percentage": 1.89
+        },
+        {
+          "value": "2024-01-08",
+          "count": 20,
+          "percentage": 1.89
+        },
+        {
+          "value": "2024-01-15",
+          "count": 20,
+          "percentage": 1.89
+        },
+        {
+          "value": "2024-01-22",
+          "count": 20,
+          "percentage": 1.89
+        },
+        {
+          "value": "2024-01-29",
+          "count": 20,
+          "percentage": 1.89
+        }
+      ]
+    },
+    "Week": {
+      "type": "object",
+      "missing_values": 0,
+      "missing_percentage": 0.0,
+      "unique_values": 53,
+      "most_common": {
+        "value": "Week 1",
+        "count": 20
+      },
+      "least_common": {
+        "value": "Week 53",
+        "count": 20
+      },
+      "top_5_values": [
+        {
+          "value": "Week 1",
+          "count": 20,
+          "percentage": 1.89
+        },
+        {
+          "value": "Week 2",
+          "count": 20,
+          "percentage": 1.89
+        },
+        {
+          "value": "Week 3",
+          "count": 20,
+          "percentage": 1.89
+        },
+        {
+          "value": "Week 4",
+          "count": 20,
+          "percentage": 1.89
+        },
+        {
+          "value": "Week 5",
+          "count": 20,
+          "percentage": 1.89
+        }
+      ]
+    },
+    "Month": {
+      "type": "object",
+      "missing_values": 0,
+      "missing_percentage": 0.0,
+      "unique_values": 12,
+      "most_common": {
+        "value": "January",
+        "count": 100
+      },
+      "least_common": {
+        "value": "November",
+        "count": 80
+      },
+      "top_5_values": [
+        {
+          "value": "January",
+          "count": 100,
+          "percentage": 9.43
+        },
+        {
+          "value": "April",
+          "count": 100,
+          "percentage": 9.43
+        },
+        {
+          "value": "September",
+          "count": 100,
+          "percentage": 9.43
+        },
+        {
+          "value": "July",
+          "count": 100,
+          "percentage": 9.43
+        },
+        {
+          "value": "December",
+          "count": 100,
+          "percentage": 9.43
+        }
+      ]
+    },
+    "Sales": {
+      "type": "int64",
+      "missing_values": 0,
+      "missing_percentage": 0.0,
+      "unique_values": 146,
+      "min": 7.0,
+      "max": 270.0,
+      "mean": 58.656603773584905,
+      "median": 53.0,
+      "std": 32.92153093388534,
+      "q1": 38.0,
+      "q3": 72.25
+    },
+    "Revenue": {
+      "type": "float64",
+      "missing_values": 0,
+      "missing_percentage": 0.0,
+      "unique_values": 800,
+      "min": 372.42,
+      "max": 37518.38,
+      "mean": 4069.301264150943,
+      "median": 2845.275,
+      "std": 3904.8289129728305,
+      "q1": 1701.76,
+      "q3": 4713.1849999999995
+    }
+  },
+  "correlation": {
+    "matrix": {
+      "Price": {
+        "Price": 1.0,
+        "Sales": -0.069,
+        "Revenue": 0.636
+      },
+      "Sales": {
+        "Price": -0.069,
+        "Sales": 1.0,
+        "Revenue": 0.621
+      },
+      "Revenue": {
+        "Price": 0.636,
+        "Sales": 0.621,
+        "Revenue": 1.0
+      }
+    },
+    "strongest_positive": {
+      "columns": "Price & Revenue",
+      "value": 0.636
+    },
+    "strongest_negative": {
+      "columns": "Price & Sales",
+      "value": -0.069
+    }
+  }
+}

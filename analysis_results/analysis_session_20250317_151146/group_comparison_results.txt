@@ -1,0 +1,567 @@
+服务器性能数据分析报告
+==================================================
+分析时间: 2025-03-17 15:13:48
+数据文件: temp_csv/excel_data_20250317151146.csv
+数据行数: 14400
+数据列数: 36
+
+
+数据列分析
+==================================================
+
+分类列分析:
+--------------------------------------------------
+
+列名: timestamp
+  唯一值数量: 1440
+  最常见值: 2025-02-28 23:43:00 (出现10次)
+
+列名: server_id
+  唯一值数量: 10
+  最常见值: SRV001 (出现1440次)
+  值分布:
+    SRV001: 1440 (10.00%)
+    SRV002: 1440 (10.00%)
+    SRV003: 1440 (10.00%)
+    SRV004: 1440 (10.00%)
+    SRV005: 1440 (10.00%)
+    DB001: 1440 (10.00%)
+    DB002: 1440 (10.00%)
+    DB003: 1440 (10.00%)
+    DB004: 1440 (10.00%)
+    DB005: 1440 (10.00%)
+
+列名: server_name
+  唯一值数量: 10
+  最常见值: 主应用服务器 (出现1440次)
+  值分布:
+    主应用服务器: 1440 (10.00%)
+    备份应用服务器: 1440 (10.00%)
+    数据处理服务器: 1440 (10.00%)
+    缓存服务器: 1440 (10.00%)
+    负载均衡服务器: 1440 (10.00%)
+    MySQL主数据库: 1440 (10.00%)
+    MySQL从数据库: 1440 (10.00%)
+    Redis缓存数据库: 1440 (10.00%)
+    MongoDB文档数据库: 1440 (10.00%)
+    Elasticsearch搜索数据库: 1440 (10.00%)
+
+列名: resource_type
+  唯一值数量: 2
+  最常见值: server (出现7200次)
+  值分布:
+    server: 7200 (50.00%)
+    database: 7200 (50.00%)
+
+列名: event_type
+  唯一值数量: 5
+  最常见值: normal (出现14103次)
+  值分布:
+    normal: 14103 (97.94%)
+    network_issue: 122 (0.85%)
+    high_load: 92 (0.64%)
+    db_slowdown: 62 (0.43%)
+    memory_leak: 21 (0.15%)
+
+数值列分析:
+--------------------------------------------------
+
+列名: cpu_usage_percent
+  缺失值: 7200 (50.00%)
+  均值: 37.58
+  中位数: 31.62
+  标准差: 20.65
+  最小值: 5.58
+  最大值: 100.00
+
+列名: memory_usage_percent
+  缺失值: 7200 (50.00%)
+  均值: 53.57
+  中位数: 51.70
+  标准差: 15.33
+  最小值: 27.41
+  最大值: 100.00
+
+列名: disk_usage_percent
+  缺失值: 7200 (50.00%)
+  均值: 52.84
+  中位数: 50.00
+  标准差: 5.81
+  最小值: 50.00
+  最大值: 89.16
+
+列名: disk_io_percent
+  缺失值: 7200 (50.00%)
+  均值: 29.27
+  中位数: 23.18
+  标准差: 19.41
+  最小值: 0.48
+  最大值: 93.00
+
+列名: disk_read_mbps
+  缺失值: 7200 (50.00%)
+  均值: 37.04
+  中位数: 28.14
+  标准差: 29.03
+  最小值: 0.26
+  最大值: 180.22
+
+列名: disk_write_mbps
+  缺失值: 7200 (50.00%)
+  均值: 26.24
+  中位数: 19.72
+  标准差: 21.20
+  最小值: 0.18
+  最大值: 137.12
+
+列名: network_traffic_percent
+  缺失值: 7200 (50.00%)
+  均值: 38.25
+  中位数: 32.30
+  标准差: 21.58
+  最小值: 5.22
+  最大值: 100.00
+
+列名: network_in_mbps
+  缺失值: 7200 (50.00%)
+  均值: 66.60
+  中位数: 52.32
+  标准差: 49.50
+  最小值: 3.66
+  最大值: 298.57
+
+列名: network_out_mbps
+  缺失值: 7200 (50.00%)
+  均值: 44.22
+  中位数: 34.76
+  标准差: 32.72
+  最小值: 2.02
+  最大值: 194.92
+
+列名: load_avg_1min
+  缺失值: 7200 (50.00%)
+  均值: 1.50
+  中位数: 1.26
+  标准差: 0.83
+  最小值: 0.22
+  最大值: 4.00
+
+列名: load_avg_5min
+  缺失值: 7200 (50.00%)
+  均值: 1.50
+  中位数: 1.26
+  标准差: 0.85
+  最小值: 0.20
+  最大值: 4.64
+
+列名: load_avg_15min
+  缺失值: 7200 (50.00%)
+  均值: 1.50
+  中位数: 1.27
+  标准差: 0.87
+  最小值: 0.17
+  最大值: 4.87
+
+列名: process_count
+  缺失值: 7200 (50.00%)
+  均值: 174.55
+  中位数: 163.00
+  标准差: 41.73
+  最小值: 104.00
+  最大值: 305.00
+
+列名: thread_count
+  缺失值: 7200 (50.00%)
+  均值: 963.67
+  中位数: 914.00
+  标准差: 349.55
+  最小值: 321.00
+  最大值: 2330.00
+
+列名: open_file_count
+  缺失值: 7200 (50.00%)
+  均值: 3376.41
+  中位数: 3083.00
+  标准差: 1507.21
+  最小值: 761.00
+  最大值: 10032.00
+
+列名: temperature_celsius
+  缺失值: 7200 (50.00%)
+  均值: 50.18
+  中位数: 50.26
+  标准差: 8.65
+  最小值: 35.00
+  最大值: 64.99
+
+列名: query_rate_per_sec
+  缺失值: 7200 (50.00%)
+  均值: 349.16
+  中位数: 242.72
+  标准差: 246.15
+  最小值: 51.60
+  最大值: 1242.16
+
+列名: active_connections
+  缺失值: 7200 (50.00%)
+  均值: 40.83
+  中位数: 31.25
+  标准差: 28.10
+  最小值: 5.09
+  最大值: 196.48
+
+列名: cache_hit_rate_percent
+  缺失值: 7200 (50.00%)
+  均值: 84.69
+  中位数: 85.52
+  标准差: 7.98
+  最小值: 27.49
+  最大值: 99.81
+
+列名: avg_query_time_ms
+  缺失值: 7200 (50.00%)
+  均值: 18.01
+  中位数: 16.87
+  标准差: 12.64
+  最小值: 8.22
+  最大值: 246.53
+
+列名: transactions_per_sec
+  缺失值: 7200 (50.00%)
+  均值: 38.26
+  中位数: 25.93
+  标准差: 30.84
+  最小值: 3.64
+  最大值: 218.76
+
+列名: read_percent
+  缺失值: 7200 (50.00%)
+  均值: 81.80
+  中位数: 83.43
+  标准差: 5.87
+  最小值: 66.67
+  最大值: 88.89
+
+列名: write_percent
+  缺失值: 7200 (50.00%)
+  均值: 18.20
+  中位数: 16.57
+  标准差: 5.87
+  最小值: 11.11
+  最大值: 33.33
+
+列名: lock_wait_count
+  缺失值: 7200 (50.00%)
+  均值: 3.61
+  中位数: 2.00
+  标准差: 4.09
+  最小值: 0.00
+  最大值: 37.00
+
+列名: deadlock_count
+  缺失值: 7200 (50.00%)
+  均值: 0.02
+  中位数: 0.00
+  标准差: 0.16
+  最小值: 0.00
+  最大值: 3.00
+
+列名: buffer_pool_usage_percent
+  缺失值: 7200 (50.00%)
+  均值: 72.37
+  中位数: 72.35
+  标准差: 12.93
+  最小值: 50.00
+  最大值: 95.00
+
+列名: table_scans_per_sec
+  缺失值: 7200 (50.00%)
+  均值: 25.04
+  中位数: 25.29
+  标准差: 14.46
+  最小值: 0.01
+  最大值: 50.00
+
+列名: index_usage_percent
+  缺失值: 7200 (50.00%)
+  均值: 79.50
+  中位数: 79.56
+  标准差: 11.26
+  最小值: 60.00
+  最大值: 98.99
+
+列名: temp_tables_created_per_sec
+  缺失值: 7200 (50.00%)
+  均值: 10.13
+  中位数: 10.17
+  标准差: 5.78
+  最小值: 0.00
+  最大值: 20.00
+
+列名: slow_queries_count
+  缺失值: 7200 (50.00%)
+  均值: 8.28
+  中位数: 5.00
+  标准差: 8.72
+  最小值: 0.00
+  最大值: 57.00
+
+列名: aborted_connections
+  缺失值: 7200 (50.00%)
+  均值: 0.23
+  中位数: 0.00
+  标准差: 0.53
+  最小值: 0.00
+  最大值: 5.00
+
+分组比较分析
+==================================================
+
+按服务器名称分组分析:
+--------------------------------------------------
+
+服务器: Elasticsearch搜索数据库
+  query_rate_per_sec: 350.39
+  active_connections: 39.75
+  cache_hit_rate_percent: 85.32
+  avg_query_time_ms: 16.95
+  transactions_per_sec: 38.07
+  read_percent: 81.85
+  write_percent: 18.15
+  lock_wait_count: 3.50
+  deadlock_count: 0.02
+  buffer_pool_usage_percent: 72.32
+  table_scans_per_sec: 24.85
+  index_usage_percent: 78.86
+  temp_tables_created_per_sec: 10.06
+  slow_queries_count: 8.40
+  aborted_connections: 0.20
+
+服务器: MongoDB文档数据库
+  query_rate_per_sec: 336.65
+  active_connections: 41.16
+  cache_hit_rate_percent: 84.50
+  avg_query_time_ms: 19.51
+  transactions_per_sec: 36.86
+  read_percent: 81.82
+  write_percent: 18.18
+  lock_wait_count: 3.68
+  deadlock_count: 0.03
+  buffer_pool_usage_percent: 72.63
+  table_scans_per_sec: 25.15
+  index_usage_percent: 79.36
+  temp_tables_created_per_sec: 10.12
+  slow_queries_count: 7.62
+  aborted_connections: 0.24
+
+服务器: MySQL主数据库
+  query_rate_per_sec: 370.14
+  active_connections: 42.04
+  cache_hit_rate_percent: 84.31
+  avg_query_time_ms: 17.03
+  transactions_per_sec: 40.56
+  read_percent: 81.63
+  write_percent: 18.37
+  lock_wait_count: 3.70
+  deadlock_count: 0.02
+  buffer_pool_usage_percent: 72.56
+  table_scans_per_sec: 25.29
+  index_usage_percent: 80.00
+  temp_tables_created_per_sec: 10.29
+  slow_queries_count: 9.19
+  aborted_connections: 0.25
+
+服务器: MySQL从数据库
+  query_rate_per_sec: 341.82
+  active_connections: 41.46
+  cache_hit_rate_percent: 84.32
+  avg_query_time_ms: 19.52
+  transactions_per_sec: 37.45
+  read_percent: 81.85
+  write_percent: 18.15
+  lock_wait_count: 3.70
+  deadlock_count: 0.03
+  buffer_pool_usage_percent: 72.09
+  table_scans_per_sec: 24.91
+  index_usage_percent: 79.86
+  temp_tables_created_per_sec: 9.96
+  slow_queries_count: 8.00
+  aborted_connections: 0.24
+
+服务器: Redis缓存数据库
+  query_rate_per_sec: 346.83
+  active_connections: 39.73
+  cache_hit_rate_percent: 85.02
+  avg_query_time_ms: 17.04
+  transactions_per_sec: 38.39
+  read_percent: 81.86
+  write_percent: 18.14
+  lock_wait_count: 3.49
+  deadlock_count: 0.02
+  buffer_pool_usage_percent: 72.27
+  table_scans_per_sec: 25.02
+  index_usage_percent: 79.40
+  temp_tables_created_per_sec: 10.20
+  slow_queries_count: 8.21
+  aborted_connections: 0.20
+
+服务器: 主应用服务器
+  cpu_usage_percent: 38.98
+  memory_usage_percent: 54.23
+  disk_usage_percent: 53.11
+  disk_io_percent: 30.55
+  disk_read_mbps: 38.17
+  disk_write_mbps: 27.61
+  network_traffic_percent: 38.63
+  network_in_mbps: 65.96
+  network_out_mbps: 44.34
+  load_avg_1min: 1.56
+  load_avg_5min: 1.56
+  load_avg_15min: 1.57
+  process_count: 177.24
+  thread_count: 971.54
+  open_file_count: 3386.17
+  temperature_celsius: 50.23
+
+服务器: 备份应用服务器
+  cpu_usage_percent: 37.47
+  memory_usage_percent: 53.61
+  disk_usage_percent: 52.70
+  disk_io_percent: 29.30
+  disk_read_mbps: 36.96
+  disk_write_mbps: 26.64
+  network_traffic_percent: 39.86
+  network_in_mbps: 69.81
+  network_out_mbps: 47.17
+  load_avg_1min: 1.50
+  load_avg_5min: 1.50
+  load_avg_15min: 1.50
+  process_count: 174.27
+  thread_count: 969.18
+  open_file_count: 3426.73
+  temperature_celsius: 50.09
+
+服务器: 数据处理服务器
+  cpu_usage_percent: 36.67
+  memory_usage_percent: 53.59
+  disk_usage_percent: 52.98
+  disk_io_percent: 28.03
+  disk_read_mbps: 35.34
+  disk_write_mbps: 25.65
+  network_traffic_percent: 36.33
+  network_in_mbps: 62.51
+  network_out_mbps: 42.94
+  load_avg_1min: 1.47
+  load_avg_5min: 1.46
+  load_avg_15min: 1.45
+  process_count: 172.80
+  thread_count: 944.18
+  open_file_count: 3289.63
+  temperature_celsius: 50.13
+
+服务器: 缓存服务器
+  cpu_usage_percent: 36.74
+  memory_usage_percent: 52.64
+  disk_usage_percent: 52.64
+  disk_io_percent: 28.75
+  disk_read_mbps: 36.83
+  disk_write_mbps: 25.14
+  network_traffic_percent: 36.80
+  network_in_mbps: 64.95
+  network_out_mbps: 41.73
+  load_avg_1min: 1.47
+  load_avg_5min: 1.47
+  load_avg_15min: 1.46
+  process_count: 172.96
+  thread_count: 965.14
+  open_file_count: 3374.45
+  temperature_celsius: 50.00
+
+服务器: 负载均衡服务器
+  cpu_usage_percent: 38.05
+  memory_usage_percent: 53.77
+  disk_usage_percent: 52.78
+  disk_io_percent: 29.73
+  disk_read_mbps: 37.89
+  disk_write_mbps: 26.16
+  network_traffic_percent: 39.65
+  network_in_mbps: 69.78
+  network_out_mbps: 44.91
+  load_avg_1min: 1.52
+  load_avg_5min: 1.53
+  load_avg_15min: 1.53
+  process_count: 175.47
+  thread_count: 968.30
+  open_file_count: 3405.04
+  temperature_celsius: 50.47
+
+按资源类型分组分析:
+--------------------------------------------------
+
+资源类型: database
+  query_rate_per_sec: 均值=349.16, 中位数=242.72
+  active_connections: 均值=40.83, 中位数=31.25
+  cache_hit_rate_percent: 均值=84.69, 中位数=85.52
+  avg_query_time_ms: 均值=18.01, 中位数=16.87
+  transactions_per_sec: 均值=38.26, 中位数=25.93
+  read_percent: 均值=81.80, 中位数=83.43
+  write_percent: 均值=18.20, 中位数=16.57
+  lock_wait_count: 均值=3.61, 中位数=2.00
+  deadlock_count: 均值=0.02, 中位数=0.00
+  buffer_pool_usage_percent: 均值=72.37, 中位数=72.35
+
+资源类型: server
+  cpu_usage_percent: 均值=37.58, 中位数=31.62
+  memory_usage_percent: 均值=53.57, 中位数=51.70
+  disk_usage_percent: 均值=52.84, 中位数=50.00
+  disk_io_percent: 均值=29.27, 中位数=23.18
+  disk_read_mbps: 均值=37.04, 中位数=28.14
+  disk_write_mbps: 均值=26.24, 中位数=19.72
+  network_traffic_percent: 均值=38.25, 中位数=32.30
+  network_in_mbps: 均值=66.60, 中位数=52.32
+  network_out_mbps: 均值=44.22, 中位数=34.76
+  load_avg_1min: 均值=1.50, 中位数=1.26
+
+按事件类型分组分析:
+--------------------------------------------------
+
+事件类型: normal
+  数量: 14103 (97.94%)
+  cpu_usage_percent: 均值=36.91, 最大值=84.74
+  memory_usage_percent: 均值=53.10, 最大值=87.73
+  disk_usage_percent: 均值=52.68, 最大值=78.78
+  network_traffic_percent: 均值=36.94, 最大值=84.21
+
+事件类型: network_issue
+  数量: 122 (0.85%)
+  cpu_usage_percent: 均值=50.49, 最大值=63.07
+  memory_usage_percent: 均值=60.65, 最大值=71.89
+  disk_usage_percent: 均值=51.96, 最大值=64.30
+  network_traffic_percent: 均值=94.94, 最大值=100.00
+
+事件类型: high_load
+  数量: 92 (0.64%)
+  cpu_usage_percent: 均值=90.82, 最大值=100.00
+  memory_usage_percent: 均值=88.17, 最大值=97.18
+  disk_usage_percent: 均值=69.39, 最大值=83.68
+  network_traffic_percent: 均值=87.51, 最大值=96.68
+
+事件类型: db_slowdown
+  数量: 62 (0.43%)
+
+事件类型: memory_leak
+  数量: 21 (0.15%)
+  cpu_usage_percent: 均值=68.50, 最大值=79.59
+  memory_usage_percent: 均值=94.13, 最大值=100.00
+  disk_usage_percent: 均值=76.73, 最大值=89.16
+  network_traffic_percent: 均值=39.72, 最大值=53.67
+
+高负载时间段分析:
+--------------------------------------------------
+
+高CPU使用率时间段 (前5个):
+  2025-02-28 03:15:00
+  2025-02-28 03:16:00
+  2025-02-28 03:17:00
+  2025-02-28 03:18:00
+  2025-02-28 03:19:00

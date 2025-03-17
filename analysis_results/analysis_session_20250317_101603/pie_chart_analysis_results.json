@@ -1,0 +1,95 @@
+{
+  "signal_type_distribution": {
+    "title": "信号类型分布",
+    "description": "各种信号类型的占比分析",
+    "data": {
+      "PAGING": 7.26,
+      "ATTACH_REQUEST": 6.97,
+      "HANDOVER_REQUEST": 6.86,
+      "HANDOVER_COMPLETE": 6.82,
+      "SERVICE_REQUEST": 6.82,
+      "HANDOVER_COMMAND": 6.75,
+      "DETACH_REQUEST": 6.71,
+      "RRC_CONNECTION_SETUP_COMPLETE": 6.62,
+      "ATTACH_COMPLETE": 6.62,
+      "SERVICE_ACCEPT": 6.6,
+      "RRC_CONNECTION_REQUEST": 6.54,
+      "DETACH_ACCEPT": 6.46,
+      "RRC_CONNECTION_RELEASE": 6.44,
+      "RRC_CONNECTION_SETUP": 6.4,
+      "ATTACH_ACCEPT": 6.11
+    }
+  },
+  "status_distribution": {
+    "title": "状态分布",
+    "description": "各种状态的占比分析",
+    "data": {
+      "SUCCESS": 85.07,
+      "FAILED": 5.18,
+      "TIMEOUT": 3.75,
+      "REJECTED": 3.29,
+      "PENDING": 2.71
+    }
+  },
+  "base_station_distribution": {
+    "title": "基站分布",
+    "description": "各基站数据记录的占比分析",
+    "data": {
+      "城东-商业区基站": 20.0,
+      "城西-住宅区基站": 20.0,
+      "城北-工业园区基站": 20.0,
+      "城南-大学城基站": 20.0,
+      "市中心-商业区基站": 20.0
+    }
+  },
+  "success_failure_distribution": {
+    "title": "成功率与失败率分布",
+    "description": "平均成功率与失败率的占比",
+    "data": {
+      "成功率": 85.77,
+      "失败率": 14.23
+    }
+  },
+  "resource_usage_distribution": {
+    "title": "资源块使用率分布",
+    "description": "不同资源块使用率范围的占比",
+    "data": {
+      "26-50%": 41.71,
+      "76-100%": 33.33,
+      "51-75%": 15.07,
+      "0-25%": 9.89
+    }
+  },
+  "cpu_usage_distribution": {
+    "title": "CPU使用率分布",
+    "description": "不同CPU使用率范围的占比",
+    "data": {
+      "26-50%": 41.18,
+      "76-100%": 28.47,
+      "51-75%": 16.78,
+      "0-25%": 9.9,
+      ">100%": 3.67
+    }
+  },
+  "memory_usage_distribution": {
+    "title": "内存使用率分布",
+    "description": "不同内存使用率范围的占比",
+    "data": {
+      "26-50%": 38.1,
+      "76-100%": 24.56,
+      "51-75%": 19.97,
+      "0-25%": 11.65,
+      ">100%": 5.72
+    }
+  },
+  "temperature_distribution": {
+    "title": "温度分布",
+    "description": "不同温度范围的占比",
+    "data": {
+      "35-40°C": 25.67,
+      "40-45°C": 24.83,
+      "25-30°C": 24.78,
+      "30-35°C": 24.72
+    }
+  }
+}

@@ -1,0 +1,638 @@
+{
+  "basic_info": {
+    "file_path": "temp_csv/excel_data_20250317101603.csv",
+    "row_count": 7200,
+    "column_count": 20,
+    "file_size_mb": 2.12,
+    "analysis_timestamp": "2025-03-17 10:16:43"
+  },
+  "columns": {
+    "timestamp": {
+      "type": "object",
+      "missing_values": 0,
+      "unique_values": 1440,
+      "most_common": {
+        "value": "2025-03-01 23:43:00",
+        "count": 5
+      }
+    },
+    "base_station_id": {
+      "type": "object",
+      "missing_values": 0,
+      "unique_values": 5,
+      "value_distribution": {
+        "BS001": 1440,
+        "BS002": 1440,
+        "BS003": 1440,
+        "BS004": 1440,
+        "BS005": 1440
+      },
+      "most_common": {
+        "value": "BS001",
+        "count": 1440
+      }
+    },
+    "base_station_name": {
+      "type": "object",
+      "missing_values": 0,
+      "unique_values": 5,
+      "value_distribution": {
+        "城东-商业区基站": 1440,
+        "城西-住宅区基站": 1440,
+        "城北-工业园区基站": 1440,
+        "城南-大学城基站": 1440,
+        "市中心-商业区基站": 1440
+      },
+      "most_common": {
+        "value": "城东-商业区基站",
+        "count": 1440
+      }
+    },
+    "signal_type": {
+      "type": "object",
+      "missing_values": 0,
+      "unique_values": 15,
+      "value_distribution": {
+        "PAGING": 523,
+        "ATTACH_REQUEST": 502,
+        "HANDOVER_REQUEST": 494,
+        "HANDOVER_COMPLETE": 491,
+        "SERVICE_REQUEST": 491,
+        "HANDOVER_COMMAND": 486,
+        "DETACH_REQUEST": 483,
+        "RRC_CONNECTION_SETUP_COMPLETE": 477,
+        "ATTACH_COMPLETE": 477,
+        "SERVICE_ACCEPT": 475
+      },
+      "most_common": {
+        "value": "PAGING",
+        "count": 523
+      }
+    },
+    "status": {
+      "type": "object",
+      "missing_values": 0,
+      "unique_values": 5,
+      "value_distribution": {
+        "SUCCESS": 6125,
+        "FAILED": 373,
+        "TIMEOUT": 270,
+        "REJECTED": 237,
+        "PENDING": 195
+      },
+      "most_common": {
+        "value": "SUCCESS",
+        "count": 6125
+      }
+    },
+    "success_rate": {
+      "type": "float64",
+      "missing_values": 0,
+      "unique_values": 7200,
+      "min": 0.5001515515303329,
+      "max": 0.9899954351064012,
+      "mean": 0.8577264702900567,
+      "median": 0.878781961988077,
+      "std": 0.10651254561772257,
+      "25th_percentile": 0.8206595574935867,
+      "75th_percentile": 0.9336427619437209
+    },
+    "failure_rate": {
+      "type": "float64",
+      "missing_values": 0,
+      "unique_values": 7200,
+      "min": 0.0100045648935988,
+      "max": 0.4998484484696671,
+      "mean": 0.1422735297099433,
+      "median": 0.12121803801192305,
+      "std": 0.1065125456177226,
+      "25th_percentile": 0.06635723805627908,
+      "75th_percentile": 0.1793404425064134
+    },
+    "call_attempts": {
+      "type": "int64",
+      "missing_values": 0,
+      "unique_values": 80,
+      "min": 10.0,
+      "max": 99.0,
+      "mean": 41.36527777777778,
+      "median": 32.0,
+      "std": 26.17047799568503,
+      "25th_percentile": 21.0,
+      "75th_percentile": 63.0
+    },
+    "active_users": {
+      "type": "int64",
+      "missing_values": 0,
+      "unique_values": 450,
+      "min": 50.0,
+      "max": 499.0,
+      "mean": 200.36291666666668,
+      "median": 162.0,
+      "std": 122.80967824907731,
+      "25th_percentile": 106.0,
+      "75th_percentile": 278.0
+    },
+    "signal_strength_dbm": {
+      "type": "float64",
+      "missing_values": 0,
+      "unique_values": 7200,
+      "min": -119.9994182622317,
+      "max": -70.01293638709538,
+      "mean": -95.03278482341102,
+      "median": -95.1282878549003,
+      "std": 14.306659447626476,
+      "25th_percentile": -107.21133652995212,
+      "75th_percentile": -82.85836874033438
+    },
+    "signal_quality_db": {
+      "type": "float64",
+      "missing_values": 0,
+      "unique_values": 7200,
+      "min": 0.0014060937481952,
+      "max": 29.9977448049953,
+      "mean": 15.070743305317405,
+      "median": 15.143131147218314,
+      "std": 8.671245328227563,
+      "25th_percentile": 7.6000224364737,
+      "75th_percentile": 22.594135702932252
+    },
+    "downlink_throughput_mbps": {
+      "type": "float64",
+      "missing_values": 0,
+      "unique_values": 7200,
+      "min": 50.3341799549399,
+      "max": 1499.847487010875,
+      "mean": 713.3727619532459,
+      "median": 691.3211683424604,
+      "std": 387.86236436362805,
+      "25th_percentile": 387.2963028233699,
+      "75th_percentile": 990.58395434611
+    },
+    "uplink_throughput_mbps": {
+      "type": "float64",
+      "missing_values": 0,
+      "unique_values": 7200,
+      "min": 10.02502231975497,
+      "max": 199.9758920576939,
+      "mean": 91.60457968510894,
+      "median": 82.33752854946047,
+      "std": 51.902856429894726,
+      "25th_percentile": 49.16923515022432,
+      "75th_percentile": 132.42475567597756
+    },
+    "latency_ms": {
+      "type": "float64",
+      "missing_values": 0,
+      "unique_values": 7200,
+      "min": 5.00290349460528,
+      "max": 49.98514299959502,
+      "mean": 21.68716430516158,
+      "median": 20.557139145639244,
+      "std": 10.624858095678565,
+      "25th_percentile": 13.449466441562418,
+      "75th_percentile": 27.472125365285194
+    },
+    "jitter_ms": {
+      "type": "float64",
+      "missing_values": 0,
+      "unique_values": 7200,
+      "min": -4.997387470570525,
+      "max": 4.998996843022912,
+      "mean": -0.024618795886986893,
+      "median": -0.058804158110981,
+      "std": 2.891169506997152,
+      "25th_percentile": -2.530334922661051,
+      "75th_percentile": 2.4723520348760504
+    },
+    "packet_loss_percent": {
+      "type": "float64",
+      "missing_values": 0,
+      "unique_values": 7200,
+      "min": 4.647987792372188e-05,
+      "max": 4.999375495706468,
+      "mean": 2.5111157287540524,
+      "median": 2.5151660240869727,
+      "std": 1.4303889321092258,
+      "25th_percentile": 1.2836334318895761,
+      "75th_percentile": 3.7459306606697362
+    },
+    "resource_block_usage_percent": {
+      "type": "float64",
+      "missing_values": 0,
+      "unique_values": 60,
+      "min": 20.0,
+      "max": 99.0,
+      "mean": 56.25541666666667,
+      "median": 50.0,
+      "std": 25.539499785189168,
+      "25th_percentile": 35.0,
+      "75th_percentile": 85.0
+    },
+    "cpu_usage_percent": {
+      "type": "float64",
+      "missing_values": 0,
+      "unique_values": 7200,
+      "min": 10.04127404790298,
+      "max": 108.9950844477384,
+      "mean": 56.22436752624803,
+      "median": 49.413455412987716,
+      "std": 26.222445518547005,
+      "25th_percentile": 34.650291811032304,
+      "75th_percentile": 83.67701464454484
+    },
+    "memory_usage_percent": {
+      "type": "float64",
+      "missing_values": 0,
+      "unique_values": 7200,
+      "min": 5.04341661562998,
+      "max": 113.6988024754922,
+      "mean": 56.24006499132015,
+      "median": 50.11718956136009,
+      "std": 26.872091535792908,
+      "25th_percentile": 34.91187918308546,
+      "75th_percentile": 81.47366586694528
+    },
+    "temperature_celsius": {
+      "type": "float64",
+      "missing_values": 0,
+      "unique_values": 7200,
+      "min": 25.00192741330557,
+      "max": 44.9957874362519,
+      "mean": 35.034189235073974,
+      "median": 35.09876528104492,
+      "std": 5.756986573315828,
+      "25th_percentile": 30.035133066973202,
+      "75th_percentile": 39.9654142183596
+    }
+  },
+  "correlation_matrix": {
+    "success_rate": {
+      "success_rate": 1.0,
+      "failure_rate": -1.0,
+      "call_attempts": -0.001,
+      "active_users": 0.021,
+      "signal_strength_dbm": 0.005,
+      "signal_quality_db": 0.002,
+      "downlink_throughput_mbps": -0.002,
+      "uplink_throughput_mbps": 0.016,
+      "latency_ms": 0.005,
+      "jitter_ms": -0.007,
+      "packet_loss_percent": 0.023,
+      "resource_block_usage_percent": -0.002,
+      "cpu_usage_percent": -0.002,
+      "memory_usage_percent": 0.005,
+      "temperature_celsius": -0.021
+    },
+    "failure_rate": {
+      "success_rate": -1.0,
+      "failure_rate": 1.0,
+      "call_attempts": 0.001,
+      "active_users": -0.021,
+      "signal_strength_dbm": -0.005,
+      "signal_quality_db": -0.002,
+      "downlink_throughput_mbps": 0.002,
+      "uplink_throughput_mbps": -0.016,
+      "latency_ms": -0.005,
+      "jitter_ms": 0.007,
+      "packet_loss_percent": -0.023,
+      "resource_block_usage_percent": 0.002,
+      "cpu_usage_percent": 0.002,
+      "memory_usage_percent": -0.005,
+      "temperature_celsius": 0.021
+    },
+    "call_attempts": {
+      "success_rate": -0.001,
+      "failure_rate": 0.001,
+      "call_attempts": 1.0,
+      "active_users": 0.79,
+      "signal_strength_dbm": -0.004,
+      "signal_quality_db": 0.012,
+      "downlink_throughput_mbps": -0.303,
+      "uplink_throughput_mbps": -0.457,
+      "latency_ms": 0.507,
+      "jitter_ms": 0.014,
+      "packet_loss_percent": 0.009,
+      "resource_block_usage_percent": 0.837,
+      "cpu_usage_percent": 0.817,
+      "memory_usage_percent": 0.793,
+      "temperature_celsius": 0.006
+    },
+    "active_users": {
+      "success_rate": 0.021,
+      "failure_rate": -0.021,
+      "call_attempts": 0.79,
+      "active_users": 1.0,
+      "signal_strength_dbm": -0.004,
+      "signal_quality_db": 0.013,
+      "downlink_throughput_mbps": -0.289,
+      "uplink_throughput_mbps": -0.422,
+      "latency_ms": 0.475,
+      "jitter_ms": 0.001,
+      "packet_loss_percent": 0.007,
+      "resource_block_usage_percent": 0.796,
+      "cpu_usage_percent": 0.779,
+      "memory_usage_percent": 0.754,
+      "temperature_celsius": 0.01
+    },
+    "signal_strength_dbm": {
+      "success_rate": 0.005,
+      "failure_rate": -0.005,
+      "call_attempts": -0.004,
+      "active_users": -0.004,
+      "signal_strength_dbm": 1.0,
+      "signal_quality_db": -0.007,
+      "downlink_throughput_mbps": -0.004,
+      "uplink_throughput_mbps": 0.0,
+      "latency_ms": 0.001,
+      "jitter_ms": 0.001,
+      "packet_loss_percent": -0.003,
+      "resource_block_usage_percent": 0.007,
+      "cpu_usage_percent": 0.006,
+      "memory_usage_percent": 0.01,
+      "temperature_celsius": -0.009
+    },
+    "signal_quality_db": {
+      "success_rate": 0.002,
+      "failure_rate": -0.002,
+      "call_attempts": 0.012,
+      "active_users": 0.013,
+      "signal_strength_dbm": -0.007,
+      "signal_quality_db": 1.0,
+      "downlink_throughput_mbps": 0.0,
+      "uplink_throughput_mbps": 0.01,
+      "latency_ms": -0.015,
+      "jitter_ms": -0.024,
+      "packet_loss_percent": -0.004,
+      "resource_block_usage_percent": 0.02,
+      "cpu_usage_percent": 0.019,
+      "memory_usage_percent": 0.013,
+      "temperature_celsius": 0.006
+    },
+    "downlink_throughput_mbps": {
+      "success_rate": -0.002,
+      "failure_rate": 0.002,
+      "call_attempts": -0.303,
+      "active_users": -0.289,
+      "signal_strength_dbm": -0.004,
+      "signal_quality_db": 0.0,
+      "downlink_throughput_mbps": 1.0,
+      "uplink_throughput_mbps": 0.153,
+      "latency_ms": -0.19,
+      "jitter_ms": -0.016,
+      "packet_loss_percent": 0.009,
+      "resource_block_usage_percent": -0.307,
+      "cpu_usage_percent": -0.299,
+      "memory_usage_percent": -0.283,
+      "temperature_celsius": -0.008
+    },
+    "uplink_throughput_mbps": {
+      "success_rate": 0.016,
+      "failure_rate": -0.016,
+      "call_attempts": -0.457,
+      "active_users": -0.422,
+      "signal_strength_dbm": 0.0,
+      "signal_quality_db": 0.01,
+      "downlink_throughput_mbps": 0.153,
+      "uplink_throughput_mbps": 1.0,
+      "latency_ms": -0.27,
+      "jitter_ms": -0.003,
+      "packet_loss_percent": -0.018,
+      "resource_block_usage_percent": -0.449,
+      "cpu_usage_percent": -0.435,
+      "memory_usage_percent": -0.421,
+      "temperature_celsius": 0.0
+    },
+    "latency_ms": {
+      "success_rate": 0.005,
+      "failure_rate": -0.005,
+      "call_attempts": 0.507,
+      "active_users": 0.475,
+      "signal_strength_dbm": 0.001,
+      "signal_quality_db": -0.015,
+      "downlink_throughput_mbps": -0.19,
+      "uplink_throughput_mbps": -0.27,
+      "latency_ms": 1.0,
+      "jitter_ms": 0.001,
+      "packet_loss_percent": 0.017,
+      "resource_block_usage_percent": 0.504,
+      "cpu_usage_percent": 0.493,
+      "memory_usage_percent": 0.474,
+      "temperature_celsius": 0.014
+    },
+    "jitter_ms": {
+      "success_rate": -0.007,
+      "failure_rate": 0.007,
+      "call_attempts": 0.014,
+      "active_users": 0.001,
+      "signal_strength_dbm": 0.001,
+      "signal_quality_db": -0.024,
+      "downlink_throughput_mbps": -0.016,
+      "uplink_throughput_mbps": -0.003,
+      "latency_ms": 0.001,
+      "jitter_ms": 1.0,
+      "packet_loss_percent": -0.003,
+      "resource_block_usage_percent": -0.001,
+      "cpu_usage_percent": 0.002,
+      "memory_usage_percent": -0.002,
+      "temperature_celsius": -0.0
+    },
+    "packet_loss_percent": {
+      "success_rate": 0.023,
+      "failure_rate": -0.023,
+      "call_attempts": 0.009,
+      "active_users": 0.007,
+      "signal_strength_dbm": -0.003,
+      "signal_quality_db": -0.004,
+      "downlink_throughput_mbps": 0.009,
+      "uplink_throughput_mbps": -0.018,
+      "latency_ms": 0.017,
+      "jitter_ms": -0.003,
+      "packet_loss_percent": 1.0,
+      "resource_block_usage_percent": 0.012,
+      "cpu_usage_percent": 0.01,
+      "memory_usage_percent": 0.007,
+      "temperature_celsius": 0.004
+    },
+    "resource_block_usage_percent": {
+      "success_rate": -0.002,
+      "failure_rate": 0.002,
+      "call_attempts": 0.837,
+      "active_users": 0.796,
+      "signal_strength_dbm": 0.007,
+      "signal_quality_db": 0.02,
+      "downlink_throughput_mbps": -0.307,
+      "uplink_throughput_mbps": -0.449,
+      "latency_ms": 0.504,
+      "jitter_ms": -0.001,
+      "packet_loss_percent": 0.012,
+      "resource_block_usage_percent": 1.0,
+      "cpu_usage_percent": 0.976,
+      "memory_usage_percent": 0.948,
+      "temperature_celsius": 0.014
+    },
+    "cpu_usage_percent": {
+      "success_rate": -0.002,
+      "failure_rate": 0.002,
+      "call_attempts": 0.817,
+      "active_users": 0.779,
+      "signal_strength_dbm": 0.006,
+      "signal_quality_db": 0.019,
+      "downlink_throughput_mbps": -0.299,
+      "uplink_throughput_mbps": -0.435,
+      "latency_ms": 0.493,
+      "jitter_ms": 0.002,
+      "packet_loss_percent": 0.01,
+      "resource_block_usage_percent": 0.976,
+      "cpu_usage_percent": 1.0,
+      "memory_usage_percent": 0.924,
+      "temperature_celsius": 0.016
+    },
+    "memory_usage_percent": {
+      "success_rate": 0.005,
+      "failure_rate": -0.005,
+      "call_attempts": 0.793,
+      "active_users": 0.754,
+      "signal_strength_dbm": 0.01,
+      "signal_quality_db": 0.013,
+      "downlink_throughput_mbps": -0.283,
+      "uplink_throughput_mbps": -0.421,
+      "latency_ms": 0.474,
+      "jitter_ms": -0.002,
+      "packet_loss_percent": 0.007,
+      "resource_block_usage_percent": 0.948,
+      "cpu_usage_percent": 0.924,
+      "memory_usage_percent": 1.0,
+      "temperature_celsius": 0.016
+    },
+    "temperature_celsius": {
+      "success_rate": -0.021,
+      "failure_rate": 0.021,
+      "call_attempts": 0.006,
+      "active_users": 0.01,
+      "signal_strength_dbm": -0.009,
+      "signal_quality_db": 0.006,
+      "downlink_throughput_mbps": -0.008,
+      "uplink_throughput_mbps": 0.0,
+      "latency_ms": 0.014,
+      "jitter_ms": -0.0,
+      "packet_loss_percent": 0.004,
+      "resource_block_usage_percent": 0.014,
+      "cpu_usage_percent": 0.016,
+      "memory_usage_percent": 0.016,
+      "temperature_celsius": 1.0
+    }
+  },
+  "high_correlations": [
+    {
+      "column1": "success_rate",
+      "column2": "failure_rate",
+      "correlation": -1.0
+    },
+    {
+      "column1": "failure_rate",
+      "column2": "success_rate",
+      "correlation": -1.0
+    },
+    {
+      "column1": "call_attempts",
+      "column2": "active_users",
+      "correlation": 0.79
+    },
+    {
+      "column1": "call_attempts",
+      "column2": "resource_block_usage_percent",
+      "correlation": 0.837
+    },
+    {
+      "column1": "call_attempts",
+      "column2": "cpu_usage_percent",
+      "correlation": 0.817
+    },
+    {
+      "column1": "call_attempts",
+      "column2": "memory_usage_percent",
+      "correlation": 0.793
+    },
+    {
+      "column1": "active_users",
+      "column2": "call_attempts",
+      "correlation": 0.79
+    },
+    {
+      "column1": "active_users",
+      "column2": "resource_block_usage_percent",
+      "correlation": 0.796
+    },
+    {
+      "column1": "active_users",
+      "column2": "cpu_usage_percent",
+      "correlation": 0.779
+    },
+    {
+      "column1": "active_users",
+      "column2": "memory_usage_percent",
+      "correlation": 0.754
+    },
+    {
+      "column1": "resource_block_usage_percent",
+      "column2": "call_attempts",
+      "correlation": 0.837
+    },
+    {
+      "column1": "resource_block_usage_percent",
+      "column2": "active_users",
+      "correlation": 0.796
+    },
+    {
+      "column1": "resource_block_usage_percent",
+      "column2": "cpu_usage_percent",
+      "correlation": 0.976
+    },
+    {
+      "column1": "resource_block_usage_percent",
+      "column2": "memory_usage_percent",
+      "correlation": 0.948
+    },
+    {
+      "column1": "cpu_usage_percent",
+      "column2": "call_attempts",
+      "correlation": 0.817
+    },
+    {
+      "column1": "cpu_usage_percent",
+      "column2": "active_users",
+      "correlation": 0.779
+    },
+    {
+      "column1": "cpu_usage_percent",
+      "column2": "resource_block_usage_percent",
+      "correlation": 0.976
+    },
+    {
+      "column1": "cpu_usage_percent",
+      "column2": "memory_usage_percent",
+      "correlation": 0.924
+    },
+    {
+      "column1": "memory_usage_percent",
+      "column2": "call_attempts",
+      "correlation": 0.793
+    },
+    {
+      "column1": "memory_usage_percent",
+      "column2": "active_users",
+      "correlation": 0.754
+    },
+    {
+      "column1": "memory_usage_percent",
+      "column2": "resource_block_usage_percent",
+      "correlation": 0.948
+    },
+    {
+      "column1": "memory_usage_percent",
+      "column2": "cpu_usage_percent",
+      "correlation": 0.924
+    }
+  ]
+}

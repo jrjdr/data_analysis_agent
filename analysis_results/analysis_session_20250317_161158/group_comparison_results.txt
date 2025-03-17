@@ -1,0 +1,118 @@
+Customer Complaint Analysis Report
+==================================
+
+Data Distribution Analysis:
+==============================
+
+Complaint_ID:
+  Top 3 categories:
+    COMP-01984: 1 (0.05%)
+    COMP-01983: 1 (0.05%)
+    COMP-01982: 1 (0.05%)
+
+Date_Reported:
+  Top 3 categories:
+    2025-03-28: 37 (1.85%)
+    2025-01-01: 33 (1.65%)
+    2025-03-07: 31 (1.55%)
+
+Customer_ID:
+  Top 3 categories:
+    CUST-8483: 3 (0.15%)
+    CUST-4227: 3 (0.15%)
+    CUST-1815: 3 (0.15%)
+
+Region:
+  Top 3 categories:
+    North: 417 (20.85%)
+    Central: 405 (20.25%)
+    South: 403 (20.15%)
+
+Complaint_Type:
+  Top 3 categories:
+    Call Drop: 296 (14.80%)
+    SMS Failure: 289 (14.45%)
+    Service Outage: 289 (14.45%)
+
+Service_Type:
+  Top 3 categories:
+    Mobile: 508 (25.40%)
+    Broadband: 508 (25.40%)
+    Fixed Line: 494 (24.70%)
+
+Description:
+  Top 3 categories:
+    Customer reported call drop issue: 320 (16.00%)
+    Customer reported slow internet issue: 294 (14.70%)
+    Customer reported service outage issue: 286 (14.30%)
+
+Priority:
+  Top 3 categories:
+    Critical: 526 (26.30%)
+    Medium: 500 (25.00%)
+    Low: 495 (24.75%)
+
+Status:
+  Top 3 categories:
+    Closed: 1702 (85.10%)
+    In Progress: 111 (5.55%)
+    Resolved: 99 (4.95%)
+
+Resolution_Date:
+  Top 3 categories:
+    2025-03-12: 28 (1.40%)
+    2025-03-26: 25 (1.25%)
+    2025-03-23: 24 (1.20%)
+
+Resolution_Time_Days:
+  Mean: 7.15
+  Median: 7.00
+  Std Dev: 4.40
+
+Customer_Satisfaction:
+  Mean: 3.02
+  Median: 3.00
+  Std Dev: 1.41
+
+
+Group Comparison Analysis:
+==============================
+
+Grouping by Region:
+  Resolution_Time_Days:
+    Central: Mean=7.2, Median=7.0, Std Dev=4.48
+    East: Mean=7.18, Median=7.0, Std Dev=4.51
+    North: Mean=7.22, Median=7.0, Std Dev=4.33
+    South: Mean=7.05, Median=7.0, Std Dev=4.31
+    West: Mean=7.11, Median=7.0, Std Dev=4.41
+  Customer_Satisfaction:
+    Central: Mean=2.93, Median=3.0, Std Dev=1.37
+    East: Mean=2.99, Median=3.0, Std Dev=1.39
+    North: Mean=3.0, Median=3.0, Std Dev=1.48
+    South: Mean=3.15, Median=3.0, Std Dev=1.39
+    West: Mean=3.0, Median=3.0, Std Dev=1.4
+
+Grouping by Service_Type:
+  Resolution_Time_Days:
+    Broadband: Mean=7.18, Median=7.0, Std Dev=4.5
+    Fixed Line: Mean=7.19, Median=7.0, Std Dev=4.46
+    Mobile: Mean=7.14, Median=7.0, Std Dev=4.31
+    TV: Mean=7.11, Median=7.0, Std Dev=4.36
+  Customer_Satisfaction:
+    Broadband: Mean=3.12, Median=3.0, Std Dev=1.4
+    Fixed Line: Mean=2.99, Median=3.0, Std Dev=1.43
+    Mobile: Mean=2.98, Median=3.0, Std Dev=1.4
+    TV: Mean=2.98, Median=3.0, Std Dev=1.41
+
+Grouping by Priority:
+  Resolution_Time_Days:
+    Critical: Mean=7.44, Median=7.0, Std Dev=4.39
+    High: Mean=7.38, Median=8.0, Std Dev=4.45
+    Low: Mean=6.89, Median=7.0, Std Dev=4.39
+    Medium: Mean=6.9, Median=7.0, Std Dev=4.38
+  Customer_Satisfaction:
+    Critical: Mean=3.06, Median=3.0, Std Dev=1.41
+    High: Mean=3.03, Median=3.0, Std Dev=1.46
+    Low: Mean=2.93, Median=3.0, Std Dev=1.38
+    Medium: Mean=3.04, Median=3.0, Std Dev=1.39
+

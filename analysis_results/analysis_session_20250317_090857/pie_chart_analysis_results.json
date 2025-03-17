@@ -1,0 +1,49 @@
+{
+  "category_sales_proportion": {
+    "Accessories": 8.96,
+    "Bottoms": 16.02,
+    "Dresses": 31.54,
+    "Outerwear": 30.07,
+    "Tops": 13.41
+  },
+  "top_items_revenue_proportion": {
+    "Evening Gown": 12.32,
+    "Parka": 11.52,
+    "Formal Dress": 10.42,
+    "Winter Coat": 7.5,
+    "Light Jacket": 5.8,
+    "Raincoat": 5.25,
+    "Summer Dress": 5.17,
+    "Dress Pants": 5.05,
+    "Sweater": 4.52,
+    "Jeans": 4.47,
+    "其他": 27.98
+  },
+  "monthly_sales_proportion": {
+    "January": 8.66,
+    "February": 7.45,
+    "March": 6.31,
+    "April": 8.08,
+    "May": 8.09,
+    "June": 8.34,
+    "July": 9.38,
+    "August": 6.95,
+    "September": 7.63,
+    "October": 6.46,
+    "November": 8.42,
+    "December": 14.21
+  },
+  "price_range_distribution": {
+    "0-50": 40.0,
+    "51-100": 40.0,
+    "101-150": 10.0,
+    "151-200": 10.0
+  },
+  "sales_volume_distribution": {
+    "51-100": 46.6,
+    "0-50": 44.06,
+    "101-150": 6.98,
+    "151-200": 1.51,
+    "201-300": 0.85
+  }
+}

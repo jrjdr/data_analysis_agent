@@ -1,0 +1,14 @@
+[
+  "Complaint_ID",
+  "Date_Reported",
+  "Customer_ID",
+  "Region",
+  "Complaint_Type",
+  "Service_Type",
+  "Description",
+  "Priority",
+  "Status",
+  "Resolution_Date",
+  "Resolution_Time_Days",
+  "Customer_Satisfaction"
+]

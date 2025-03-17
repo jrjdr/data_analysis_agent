@@ -1,0 +1,4625 @@
+{
+  "timestamp": "20250317_093536",
+  "structure_analysis": {
+    "file_path": "temp_csv/excel_data_20250317093536.csv",
+    "row_count": 7200,
+    "column_count": 20,
+    "columns": {
+      "timestamp": {
+        "type": "object",
+        "missing_values": 0,
+        "unique_values": 1440,
+        "most_common": {
+          "value": "2025-03-01 23:43:00",
+          "count": 5
+        }
+      },
+      "base_station_id": {
+        "type": "object",
+        "missing_values": 0,
+        "unique_values": 5,
+        "most_common": {
+          "value": "BS001",
+          "count": 1440
+        }
+      },
+      "base_station_name": {
+        "type": "object",
+        "missing_values": 0,
+        "unique_values": 5,
+        "most_common": {
+          "value": "城东-商业区基站",
+          "count": 1440
+        }
+      },
+      "signal_type": {
+        "type": "object",
+        "missing_values": 0,
+        "unique_values": 15,
+        "most_common": {
+          "value": "PAGING",
+          "count": 523
+        }
+      },
+      "status": {
+        "type": "object",
+        "missing_values": 0,
+        "unique_values": 5,
+        "most_common": {
+          "value": "SUCCESS",
+          "count": 6125
+        }
+      },
+      "success_rate": {
+        "type": "float64",
+        "missing_values": 0,
+        "unique_values": 7200,
+        "min": 0.5001515515303329,
+        "max": 0.9899954351064012,
+        "mean": 0.8577264702900567,
+        "median": 0.878781961988077
+      },
+      "failure_rate": {
+        "type": "float64",
+        "missing_values": 0,
+        "unique_values": 7200,
+        "min": 0.0100045648935988,
+        "max": 0.4998484484696671,
+        "mean": 0.1422735297099433,
+        "median": 0.12121803801192305
+      },
+      "call_attempts": {
+        "type": "int64",
+        "missing_values": 0,
+        "unique_values": 80,
+        "min": 10,
+        "max": 99,
+        "mean": 41.36527777777778,
+        "median": 32.0
+      },
+      "active_users": {
+        "type": "int64",
+        "missing_values": 0,
+        "unique_values": 450,
+        "min": 50,
+        "max": 499,
+        "mean": 200.36291666666668,
+        "median": 162.0
+      },
+      "signal_strength_dbm": {
+        "type": "float64",
+        "missing_values": 0,
+        "unique_values": 7200,
+        "min": -119.9994182622317,
+        "max": -70.01293638709538,
+        "mean": -95.03278482341102,
+        "median": -95.1282878549003
+      },
+      "signal_quality_db": {
+        "type": "float64",
+        "missing_values": 0,
+        "unique_values": 7200,
+        "min": 0.0014060937481952,
+        "max": 29.9977448049953,
+        "mean": 15.070743305317405,
+        "median": 15.143131147218314
+      },
+      "downlink_throughput_mbps": {
+        "type": "float64",
+        "missing_values": 0,
+        "unique_values": 7200,
+        "min": 50.3341799549399,
+        "max": 1499.847487010875,
+        "mean": 713.3727619532459,
+        "median": 691.3211683424604
+      },
+      "uplink_throughput_mbps": {
+        "type": "float64",
+        "missing_values": 0,
+        "unique_values": 7200,
+        "min": 10.02502231975497,
+        "max": 199.9758920576939,
+        "mean": 91.60457968510894,
+        "median": 82.33752854946047
+      },
+      "latency_ms": {
+        "type": "float64",
+        "missing_values": 0,
+        "unique_values": 7200,
+        "min": 5.00290349460528,
+        "max": 49.98514299959502,
+        "mean": 21.68716430516158,
+        "median": 20.557139145639244
+      },
+      "jitter_ms": {
+        "type": "float64",
+        "missing_values": 0,
+        "unique_values": 7200,
+        "min": -4.997387470570525,
+        "max": 4.998996843022912,
+        "mean": -0.024618795886986893,
+        "median": -0.058804158110981
+      },
+      "packet_loss_percent": {
+        "type": "float64",
+        "missing_values": 0,
+        "unique_values": 7200,
+        "min": 4.647987792372188e-05,
+        "max": 4.999375495706468,
+        "mean": 2.5111157287540524,
+        "median": 2.5151660240869727
+      },
+      "resource_block_usage_percent": {
+        "type": "float64",
+        "missing_values": 0,
+        "unique_values": 60,
+        "min": 20.0,
+        "max": 99.0,
+        "mean": 56.25541666666667,
+        "median": 50.0
+      },
+      "cpu_usage_percent": {
+        "type": "float64",
+        "missing_values": 0,
+        "unique_values": 7200,
+        "min": 10.04127404790298,
+        "max": 108.9950844477384,
+        "mean": 56.22436752624803,
+        "median": 49.413455412987716
+      },
+      "memory_usage_percent": {
+        "type": "float64",
+        "missing_values": 0,
+        "unique_values": 7200,
+        "min": 5.04341661562998,
+        "max": 113.6988024754922,
+        "mean": 56.24006499132015,
+        "median": 50.11718956136009
+      },
+      "temperature_celsius": {
+        "type": "float64",
+        "missing_values": 0,
+        "unique_values": 7200,
+        "min": 25.00192741330557,
+        "max": 44.9957874362519,
+        "mean": 35.034189235073974,
+        "median": 35.09876528104492
+      }
+    }
+  },
+  "column_names": [
+    "timestamp",
+    "base_station_id",
+    "base_station_name",
+    "signal_type",
+    "status",
+    "success_rate",
+    "failure_rate",
+    "call_attempts",
+    "active_users",
+    "signal_strength_dbm",
+    "signal_quality_db",
+    "downlink_throughput_mbps",
+    "uplink_throughput_mbps",
+    "latency_ms",
+    "jitter_ms",
+    "packet_loss_percent",
+    "resource_block_usage_percent",
+    "cpu_usage_percent",
+    "memory_usage_percent",
+    "temperature_celsius"
+  ],
+  "results": {
+    "总体数据统计分析单元": {
+      "status": "success",
+      "error": null,
+      "code": "import pandas as pd\nimport numpy as np\nimport json\nimport sys\nimport os\nfrom typing import Dict, Any\n\ndef analyze_dataset(file_path: str) -> Dict[str, Any]:\n    \"\"\"\n    对CSV数据集进行基本统计分析\n    \n    Args:\n        file_path: CSV文件路径\n        \n    Returns:\n        包含统计分析结果的字典\n    \"\"\"\n    try:\n        # 读取CSV文件\n        df = pd.read_csv(file_path)\n        \n        # 基本数据集信息\n        basic_info = {\n            \"文件路径\": file_path,\n            \"行数\": len(df),\n            \"列数\": len(df.columns),\n            \"内存使用(MB)\": round(df.memory_usage(deep=True).sum() / 1024 / 1024, 2)\n        }\n        \n        # 列信息分析\n        columns_info = {}\n        for column in df.columns:\n            col_data = df[column]\n            col_type = str(col_data.dtype)\n            \n            # 基本列信息\n            col_info = {\n                \"数据类型\": col_type,\n                \"缺失值数量\": int(col_data.isna().sum()),\n                \"缺失值百分比\": round(col_data.isna().mean() * 100, 2)\n            }\n            \n            # 根据数据类型进行不同的统计\n            if col_type in ['int64', 'float64']:\n                # 数值型数据统计\n                col_info.update({\n                    \"唯一值数量\": int(col_data.nunique()),\n                    \"最小值\": float(col_data.min()),\n                    \"最大值\": float(col_data.max()),\n                    \"均值\": float(col_data.mean()),\n                    \"中位数\": float(col_data.median()),\n                    \"标准差\": float(col_data.std()),\n                    \"25%分位数\": float(col_data.quantile(0.25)),\n                    \"75%分位数\": float(col_data.quantile(0.75))\n                })\n            else:\n                # 分类型数据统计\n                col_info.update({\n                    \"唯一值数量\": int(col_data.nunique()),\n                    \"最常见值\": str(col_data.value_counts().index[0]),\n                    \"最常见值出现次数\": int(col_data.value_counts().iloc[0]),\n                    \"最常见值占比\": round(col_data.value_counts().iloc[0] / len(col_data) * 100, 2)\n                })\n                \n                # 如果唯一值数量较少，添加值分布信息\n                if col_data.nunique() <= 15:\n                    distribution = col_data.value_counts().to_dict()\n                    # 将键转换为字符串以确保JSON兼容性\n                    distribution = {str(k): int(v) for k, v in distribution.items()}\n                    col_info[\"值分布\"] = distribution\n            \n            columns_info[column] = col_info\n        \n        # 相关性分析（仅针对数值列）\n        numeric_columns = df.select_dtypes(include=['int64', 'float64']).columns.tolist()\n        if len(numeric_columns) > 1:\n            correlation_matrix = df[numeric_columns].corr().round(3).to_dict()\n            # 将NaN值转换为None以确保JSON兼容性\n            correlation_matrix = {k: {str(k2): (None if pd.isna(v2) else float(v2)) \n                                     for k2, v2 in v.items()} \n                                 for k, v in correlation_matrix.items()}\n        else:\n            correlation_matrix = {}\n        \n        # 汇总结果\n        results = {\n            \"基本信息\": basic_info,\n            \"列统计信息\": columns_info,\n            \"数值列相关性\": correlation_matrix\n        }\n        \n        return results\n    \n    except Exception as e:\n        return {\"错误\": f\"分析过程中出现错误: {str(e)}\"}\n\ndef main():\n    \"\"\"主函数，处理命令行参数并执行分析\"\"\"\n    if len(sys.argv) != 2:\n        print(\"使用方法: python script.py <csv文件路径>\")\n        sys.exit(1)\n    \n    file_path = sys.argv[1]\n    if not os.path.exists(file_path):\n        print(f\"错误: 文件 '{file_path}' 不存在\")\n        sys.exit(1)\n    \n    # 执行分析\n    results = analyze_dataset(file_path)\n    \n    # 保存结果到JSON文件\n    output_file = 'general_statistics_results.json'\n    with open(output_file, 'w', encoding='utf-8') as f:\n        json.dump(results, f, ensure_ascii=False, indent=2)\n    \n    print(f\"分析完成，结果已保存至 {output_file}\")\n\nif __name__ == \"__main__\":\n    main()",
+      "results": "分析完成，结果已保存至 general_statistics_results.json\n",
+      "json_results": {
+        "基本信息": {
+          "文件路径": "temp_csv/excel_data_20250317093536.csv",
+          "行数": 7200,
+          "列数": 20,
+          "内存使用(MB)": 3.06
+        },
+        "列统计信息": {
+          "timestamp": {
+            "数据类型": "object",
+            "缺失值数量": 0,
+            "缺失值百分比": 0.0,
+            "唯一值数量": 1440,
+            "最常见值": "2025-03-01 23:43:00",
+            "最常见值出现次数": 5,
+            "最常见值占比": 0.07
+          },
+          "base_station_id": {
+            "数据类型": "object",
+            "缺失值数量": 0,
+            "缺失值百分比": 0.0,
+            "唯一值数量": 5,
+            "最常见值": "BS001",
+            "最常见值出现次数": 1440,
+            "最常见值占比": 20.0,
+            "值分布": {
+              "BS001": 1440,
+              "BS002": 1440,
+              "BS003": 1440,
+              "BS004": 1440,
+              "BS005": 1440
+            }
+          },
+          "base_station_name": {
+            "数据类型": "object",
+            "缺失值数量": 0,
+            "缺失值百分比": 0.0,
+            "唯一值数量": 5,
+            "最常见值": "城东-商业区基站",
+            "最常见值出现次数": 1440,
+            "最常见值占比": 20.0,
+            "值分布": {
+              "城东-商业区基站": 1440,
+              "城西-住宅区基站": 1440,
+              "城北-工业园区基站": 1440,
+              "城南-大学城基站": 1440,
+              "市中心-商业区基站": 1440
+            }
+          },
+          "signal_type": {
+            "数据类型": "object",
+            "缺失值数量": 0,
+            "缺失值百分比": 0.0,
+            "唯一值数量": 15,
+            "最常见值": "PAGING",
+            "最常见值出现次数": 523,
+            "最常见值占比": 7.26,
+            "值分布": {
+              "PAGING": 523,
+              "ATTACH_REQUEST": 502,
+              "HANDOVER_REQUEST": 494,
+              "HANDOVER_COMPLETE": 491,
+              "SERVICE_REQUEST": 491,
+              "HANDOVER_COMMAND": 486,
+              "DETACH_REQUEST": 483,
+              "RRC_CONNECTION_SETUP_COMPLETE": 477,
+              "ATTACH_COMPLETE": 477,
+              "SERVICE_ACCEPT": 475,
+              "RRC_CONNECTION_REQUEST": 471,
+              "DETACH_ACCEPT": 465,
+              "RRC_CONNECTION_RELEASE": 464,
+              "RRC_CONNECTION_SETUP": 461,
+              "ATTACH_ACCEPT": 440
+            }
+          },
+          "status": {
+            "数据类型": "object",
+            "缺失值数量": 0,
+            "缺失值百分比": 0.0,
+            "唯一值数量": 5,
+            "最常见值": "SUCCESS",
+            "最常见值出现次数": 6125,
+            "最常见值占比": 85.07,
+            "值分布": {
+              "SUCCESS": 6125,
+              "FAILED": 373,
+              "TIMEOUT": 270,
+              "REJECTED": 237,
+              "PENDING": 195
+            }
+          },
+          "success_rate": {
+            "数据类型": "float64",
+            "缺失值数量": 0,
+            "缺失值百分比": 0.0,
+            "唯一值数量": 7200,
+            "最小值": 0.5001515515303329,
+            "最大值": 0.9899954351064012,
+            "均值": 0.8577264702900567,
+            "中位数": 0.878781961988077,
+            "标准差": 0.10651254561772257,
+            "25%分位数": 0.8206595574935867,
+            "75%分位数": 0.9336427619437209
+          },
+          "failure_rate": {
+            "数据类型": "float64",
+            "缺失值数量": 0,
+            "缺失值百分比": 0.0,
+            "唯一值数量": 7200,
+            "最小值": 0.0100045648935988,
+            "最大值": 0.4998484484696671,
+            "均值": 0.1422735297099433,
+            "中位数": 0.12121803801192305,
+            "标准差": 0.1065125456177226,
+            "25%分位数": 0.06635723805627908,
+            "75%分位数": 0.1793404425064134
+          },
+          "call_attempts": {
+            "数据类型": "int64",
+            "缺失值数量": 0,
+            "缺失值百分比": 0.0,
+            "唯一值数量": 80,
+            "最小值": 10.0,
+            "最大值": 99.0,
+            "均值": 41.36527777777778,
+            "中位数": 32.0,
+            "标准差": 26.17047799568503,
+            "25%分位数": 21.0,
+            "75%分位数": 63.0
+          },
+          "active_users": {
+            "数据类型": "int64",
+            "缺失值数量": 0,
+            "缺失值百分比": 0.0,
+            "唯一值数量": 450,
+            "最小值": 50.0,
+            "最大值": 499.0,
+            "均值": 200.36291666666668,
+            "中位数": 162.0,
+            "标准差": 122.80967824907731,
+            "25%分位数": 106.0,
+            "75%分位数": 278.0
+          },
+          "signal_strength_dbm": {
+            "数据类型": "float64",
+            "缺失值数量": 0,
+            "缺失值百分比": 0.0,
+            "唯一值数量": 7200,
+            "最小值": -119.9994182622317,
+            "最大值": -70.01293638709538,
+            "均值": -95.03278482341102,
+            "中位数": -95.1282878549003,
+            "标准差": 14.306659447626476,
+            "25%分位数": -107.21133652995212,
+            "75%分位数": -82.85836874033438
+          },
+          "signal_quality_db": {
+            "数据类型": "float64",
+            "缺失值数量": 0,
+            "缺失值百分比": 0.0,
+            "唯一值数量": 7200,
+            "最小值": 0.0014060937481952,
+            "最大值": 29.9977448049953,
+            "均值": 15.070743305317405,
+            "中位数": 15.143131147218314,
+            "标准差": 8.671245328227563,
+            "25%分位数": 7.6000224364737,
+            "75%分位数": 22.594135702932252
+          },
+          "downlink_throughput_mbps": {
+            "数据类型": "float64",
+            "缺失值数量": 0,
+            "缺失值百分比": 0.0,
+            "唯一值数量": 7200,
+            "最小值": 50.3341799549399,
+            "最大值": 1499.847487010875,
+            "均值": 713.3727619532459,
+            "中位数": 691.3211683424604,
+            "标准差": 387.86236436362805,
+            "25%分位数": 387.2963028233699,
+            "75%分位数": 990.58395434611
+          },
+          "uplink_throughput_mbps": {
+            "数据类型": "float64",
+            "缺失值数量": 0,
+            "缺失值百分比": 0.0,
+            "唯一值数量": 7200,
+            "最小值": 10.02502231975497,
+            "最大值": 199.9758920576939,
+            "均值": 91.60457968510894,
+            "中位数": 82.33752854946047,
+            "标准差": 51.902856429894726,
+            "25%分位数": 49.16923515022432,
+            "75%分位数": 132.42475567597756
+          },
+          "latency_ms": {
+            "数据类型": "float64",
+            "缺失值数量": 0,
+            "缺失值百分比": 0.0,
+            "唯一值数量": 7200,
+            "最小值": 5.00290349460528,
+            "最大值": 49.98514299959502,
+            "均值": 21.68716430516158,
+            "中位数": 20.557139145639244,
+            "标准差": 10.624858095678565,
+            "25%分位数": 13.449466441562418,
+            "75%分位数": 27.472125365285194
+          },
+          "jitter_ms": {
+            "数据类型": "float64",
+            "缺失值数量": 0,
+            "缺失值百分比": 0.0,
+            "唯一值数量": 7200,
+            "最小值": -4.997387470570525,
+            "最大值": 4.998996843022912,
+            "均值": -0.024618795886986893,
+            "中位数": -0.058804158110981,
+            "标准差": 2.891169506997152,
+            "25%分位数": -2.530334922661051,
+            "75%分位数": 2.4723520348760504
+          },
+          "packet_loss_percent": {
+            "数据类型": "float64",
+            "缺失值数量": 0,
+            "缺失值百分比": 0.0,
+            "唯一值数量": 7200,
+            "最小值": 4.647987792372188e-05,
+            "最大值": 4.999375495706468,
+            "均值": 2.5111157287540524,
+            "中位数": 2.5151660240869727,
+            "标准差": 1.4303889321092258,
+            "25%分位数": 1.2836334318895761,
+            "75%分位数": 3.7459306606697362
+          },
+          "resource_block_usage_percent": {
+            "数据类型": "float64",
+            "缺失值数量": 0,
+            "缺失值百分比": 0.0,
+            "唯一值数量": 60,
+            "最小值": 20.0,
+            "最大值": 99.0,
+            "均值": 56.25541666666667,
+            "中位数": 50.0,
+            "标准差": 25.539499785189168,
+            "25%分位数": 35.0,
+            "75%分位数": 85.0
+          },
+          "cpu_usage_percent": {
+            "数据类型": "float64",
+            "缺失值数量": 0,
+            "缺失值百分比": 0.0,
+            "唯一值数量": 7200,
+            "最小值": 10.04127404790298,
+            "最大值": 108.9950844477384,
+            "均值": 56.22436752624803,
+            "中位数": 49.413455412987716,
+            "标准差": 26.222445518547005,
+            "25%分位数": 34.650291811032304,
+            "75%分位数": 83.67701464454484
+          },
+          "memory_usage_percent": {
+            "数据类型": "float64",
+            "缺失值数量": 0,
+            "缺失值百分比": 0.0,
+            "唯一值数量": 7200,
+            "最小值": 5.04341661562998,
+            "最大值": 113.6988024754922,
+            "均值": 56.24006499132015,
+            "中位数": 50.11718956136009,
+            "标准差": 26.872091535792908,
+            "25%分位数": 34.91187918308546,
+            "75%分位数": 81.47366586694528
+          },
+          "temperature_celsius": {
+            "数据类型": "float64",
+            "缺失值数量": 0,
+            "缺失值百分比": 0.0,
+            "唯一值数量": 7200,
+            "最小值": 25.00192741330557,
+            "最大值": 44.9957874362519,
+            "均值": 35.034189235073974,
+            "中位数": 35.09876528104492,
+            "标准差": 5.756986573315828,
+            "25%分位数": 30.035133066973202,
+            "75%分位数": 39.9654142183596
+          }
+        },
+        "数值列相关性": {
+          "success_rate": {
+            "success_rate": 1.0,
+            "failure_rate": -1.0,
+            "call_attempts": -0.001,
+            "active_users": 0.021,
+            "signal_strength_dbm": 0.005,
+            "signal_quality_db": 0.002,
+            "downlink_throughput_mbps": -0.002,
+            "uplink_throughput_mbps": 0.016,
+            "latency_ms": 0.005,
+            "jitter_ms": -0.007,
+            "packet_loss_percent": 0.023,
+            "resource_block_usage_percent": -0.002,
+            "cpu_usage_percent": -0.002,
+            "memory_usage_percent": 0.005,
+            "temperature_celsius": -0.021
+          },
+          "failure_rate": {
+            "success_rate": -1.0,
+            "failure_rate": 1.0,
+            "call_attempts": 0.001,
+            "active_users": -0.021,
+            "signal_strength_dbm": -0.005,
+            "signal_quality_db": -0.002,
+            "downlink_throughput_mbps": 0.002,
+            "uplink_throughput_mbps": -0.016,
+            "latency_ms": -0.005,
+            "jitter_ms": 0.007,
+            "packet_loss_percent": -0.023,
+            "resource_block_usage_percent": 0.002,
+            "cpu_usage_percent": 0.002,
+            "memory_usage_percent": -0.005,
+            "temperature_celsius": 0.021
+          },
+          "call_attempts": {
+            "success_rate": -0.001,
+            "failure_rate": 0.001,
+            "call_attempts": 1.0,
+            "active_users": 0.79,
+            "signal_strength_dbm": -0.004,
+            "signal_quality_db": 0.012,
+            "downlink_throughput_mbps": -0.303,
+            "uplink_throughput_mbps": -0.457,
+            "latency_ms": 0.507,
+            "jitter_ms": 0.014,
+            "packet_loss_percent": 0.009,
+            "resource_block_usage_percent": 0.837,
+            "cpu_usage_percent": 0.817,
+            "memory_usage_percent": 0.793,
+            "temperature_celsius": 0.006
+          },
+          "active_users": {
+            "success_rate": 0.021,
+            "failure_rate": -0.021,
+            "call_attempts": 0.79,
+            "active_users": 1.0,
+            "signal_strength_dbm": -0.004,
+            "signal_quality_db": 0.013,
+            "downlink_throughput_mbps": -0.289,
+            "uplink_throughput_mbps": -0.422,
+            "latency_ms": 0.475,
+            "jitter_ms": 0.001,
+            "packet_loss_percent": 0.007,
+            "resource_block_usage_percent": 0.796,
+            "cpu_usage_percent": 0.779,
+            "memory_usage_percent": 0.754,
+            "temperature_celsius": 0.01
+          },
+          "signal_strength_dbm": {
+            "success_rate": 0.005,
+            "failure_rate": -0.005,
+            "call_attempts": -0.004,
+            "active_users": -0.004,
+            "signal_strength_dbm": 1.0,
+            "signal_quality_db": -0.007,
+            "downlink_throughput_mbps": -0.004,
+            "uplink_throughput_mbps": 0.0,
+            "latency_ms": 0.001,
+            "jitter_ms": 0.001,
+            "packet_loss_percent": -0.003,
+            "resource_block_usage_percent": 0.007,
+            "cpu_usage_percent": 0.006,
+            "memory_usage_percent": 0.01,
+            "temperature_celsius": -0.009
+          },
+          "signal_quality_db": {
+            "success_rate": 0.002,
+            "failure_rate": -0.002,
+            "call_attempts": 0.012,
+            "active_users": 0.013,
+            "signal_strength_dbm": -0.007,
+            "signal_quality_db": 1.0,
+            "downlink_throughput_mbps": 0.0,
+            "uplink_throughput_mbps": 0.01,
+            "latency_ms": -0.015,
+            "jitter_ms": -0.024,
+            "packet_loss_percent": -0.004,
+            "resource_block_usage_percent": 0.02,
+            "cpu_usage_percent": 0.019,
+            "memory_usage_percent": 0.013,
+            "temperature_celsius": 0.006
+          },
+          "downlink_throughput_mbps": {
+            "success_rate": -0.002,
+            "failure_rate": 0.002,
+            "call_attempts": -0.303,
+            "active_users": -0.289,
+            "signal_strength_dbm": -0.004,
+            "signal_quality_db": 0.0,
+            "downlink_throughput_mbps": 1.0,
+            "uplink_throughput_mbps": 0.153,
+            "latency_ms": -0.19,
+            "jitter_ms": -0.016,
+            "packet_loss_percent": 0.009,
+            "resource_block_usage_percent": -0.307,
+            "cpu_usage_percent": -0.299,
+            "memory_usage_percent": -0.283,
+            "temperature_celsius": -0.008
+          },
+          "uplink_throughput_mbps": {
+            "success_rate": 0.016,
+            "failure_rate": -0.016,
+            "call_attempts": -0.457,
+            "active_users": -0.422,
+            "signal_strength_dbm": 0.0,
+            "signal_quality_db": 0.01,
+            "downlink_throughput_mbps": 0.153,
+            "uplink_throughput_mbps": 1.0,
+            "latency_ms": -0.27,
+            "jitter_ms": -0.003,
+            "packet_loss_percent": -0.018,
+            "resource_block_usage_percent": -0.449,
+            "cpu_usage_percent": -0.435,
+            "memory_usage_percent": -0.421,
+            "temperature_celsius": 0.0
+          },
+          "latency_ms": {
+            "success_rate": 0.005,
+            "failure_rate": -0.005,
+            "call_attempts": 0.507,
+            "active_users": 0.475,
+            "signal_strength_dbm": 0.001,
+            "signal_quality_db": -0.015,
+            "downlink_throughput_mbps": -0.19,
+            "uplink_throughput_mbps": -0.27,
+            "latency_ms": 1.0,
+            "jitter_ms": 0.001,
+            "packet_loss_percent": 0.017,
+            "resource_block_usage_percent": 0.504,
+            "cpu_usage_percent": 0.493,
+            "memory_usage_percent": 0.474,
+            "temperature_celsius": 0.014
+          },
+          "jitter_ms": {
+            "success_rate": -0.007,
+            "failure_rate": 0.007,
+            "call_attempts": 0.014,
+            "active_users": 0.001,
+            "signal_strength_dbm": 0.001,
+            "signal_quality_db": -0.024,
+            "downlink_throughput_mbps": -0.016,
+            "uplink_throughput_mbps": -0.003,
+            "latency_ms": 0.001,
+            "jitter_ms": 1.0,
+            "packet_loss_percent": -0.003,
+            "resource_block_usage_percent": -0.001,
+            "cpu_usage_percent": 0.002,
+            "memory_usage_percent": -0.002,
+            "temperature_celsius": -0.0
+          },
+          "packet_loss_percent": {
+            "success_rate": 0.023,
+            "failure_rate": -0.023,
+            "call_attempts": 0.009,
+            "active_users": 0.007,
+            "signal_strength_dbm": -0.003,
+            "signal_quality_db": -0.004,
+            "downlink_throughput_mbps": 0.009,
+            "uplink_throughput_mbps": -0.018,
+            "latency_ms": 0.017,
+            "jitter_ms": -0.003,
+            "packet_loss_percent": 1.0,
+            "resource_block_usage_percent": 0.012,
+            "cpu_usage_percent": 0.01,
+            "memory_usage_percent": 0.007,
+            "temperature_celsius": 0.004
+          },
+          "resource_block_usage_percent": {
+            "success_rate": -0.002,
+            "failure_rate": 0.002,
+            "call_attempts": 0.837,
+            "active_users": 0.796,
+            "signal_strength_dbm": 0.007,
+            "signal_quality_db": 0.02,
+            "downlink_throughput_mbps": -0.307,
+            "uplink_throughput_mbps": -0.449,
+            "latency_ms": 0.504,
+            "jitter_ms": -0.001,
+            "packet_loss_percent": 0.012,
+            "resource_block_usage_percent": 1.0,
+            "cpu_usage_percent": 0.976,
+            "memory_usage_percent": 0.948,
+            "temperature_celsius": 0.014
+          },
+          "cpu_usage_percent": {
+            "success_rate": -0.002,
+            "failure_rate": 0.002,
+            "call_attempts": 0.817,
+            "active_users": 0.779,
+            "signal_strength_dbm": 0.006,
+            "signal_quality_db": 0.019,
+            "downlink_throughput_mbps": -0.299,
+            "uplink_throughput_mbps": -0.435,
+            "latency_ms": 0.493,
+            "jitter_ms": 0.002,
+            "packet_loss_percent": 0.01,
+            "resource_block_usage_percent": 0.976,
+            "cpu_usage_percent": 1.0,
+            "memory_usage_percent": 0.924,
+            "temperature_celsius": 0.016
+          },
+          "memory_usage_percent": {
+            "success_rate": 0.005,
+            "failure_rate": -0.005,
+            "call_attempts": 0.793,
+            "active_users": 0.754,
+            "signal_strength_dbm": 0.01,
+            "signal_quality_db": 0.013,
+            "downlink_throughput_mbps": -0.283,
+            "uplink_throughput_mbps": -0.421,
+            "latency_ms": 0.474,
+            "jitter_ms": -0.002,
+            "packet_loss_percent": 0.007,
+            "resource_block_usage_percent": 0.948,
+            "cpu_usage_percent": 0.924,
+            "memory_usage_percent": 1.0,
+            "temperature_celsius": 0.016
+          },
+          "temperature_celsius": {
+            "success_rate": -0.021,
+            "failure_rate": 0.021,
+            "call_attempts": 0.006,
+            "active_users": 0.01,
+            "signal_strength_dbm": -0.009,
+            "signal_quality_db": 0.006,
+            "downlink_throughput_mbps": -0.008,
+            "uplink_throughput_mbps": 0.0,
+            "latency_ms": 0.014,
+            "jitter_ms": -0.0,
+            "packet_loss_percent": 0.004,
+            "resource_block_usage_percent": 0.014,
+            "cpu_usage_percent": 0.016,
+            "memory_usage_percent": 0.016,
+            "temperature_celsius": 1.0
+          }
+        }
+      }
+    },
+    "柱状图对比分析单元": {
+      "status": "success",
+      "error": null,
+      "code": "import pandas as pd\nimport numpy as np\nimport json\nimport sys\nfrom datetime import datetime\n\ndef analyze_bar_chart_data(file_path):\n    \"\"\"\n    分析适合柱状图展示的数据并保存结果到JSON文件\n    \"\"\"\n    try:\n        # 读取CSV文件\n        df = pd.read_csv(file_path)\n        \n        # 初始化结果字典\n        results = {}\n        \n        # 1. 基站性能对比分析\n        station_performance = df.groupby('base_station_name').agg({\n            'success_rate': 'mean',\n            'downlink_throughput_mbps': 'mean',\n            'uplink_throughput_mbps': 'mean',\n            'latency_ms': 'mean',\n            'active_users': 'mean'\n        }).round(2)\n        \n        results['base_station_performance'] = station_performance.to_dict()\n        \n        # 2. 信号类型分布分析\n        signal_type_counts = df['signal_type'].value_counts().to_dict()\n        results['signal_type_distribution'] = signal_type_counts\n        \n        # 3. 状态分布分析\n        status_counts = df['status'].value_counts().to_dict()\n        results['status_distribution'] = status_counts\n        \n        # 4. 资源使用率分析 - 按基站分组\n        resource_usage = df.groupby('base_station_name').agg({\n            'resource_block_usage_percent': 'mean',\n            'cpu_usage_percent': 'mean',\n            'memory_usage_percent': 'mean'\n        }).round(2)\n        \n        results['resource_usage_by_station'] = resource_usage.to_dict()\n        \n        # 5. 按小时分析流量和用户数\n        df['hour'] = pd.to_datetime(df['timestamp']).dt.hour\n        hourly_metrics = df.groupby('hour').agg({\n            'active_users': 'mean',\n            'call_attempts': 'mean',\n            'downlink_throughput_mbps': 'mean',\n            'uplink_throughput_mbps': 'mean'\n        }).round(2)\n        \n        results['hourly_metrics'] = hourly_metrics.to_dict()\n        \n        # 6. 按信号类型分析成功率\n        signal_success_rate = df.groupby('signal_type')['success_rate'].mean().round(4).to_dict()\n        results['signal_type_success_rate'] = signal_success_rate\n        \n        # 7. 基站温度对比\n        temperature_by_station = df.groupby('base_station_name')['temperature_celsius'].agg(['mean', 'min', 'max']).round(2)\n        results['temperature_by_station'] = temperature_by_station.to_dict()\n        \n        # 8. 信号强度和质量对比\n        signal_metrics = df.groupby('base_station_name').agg({\n            'signal_strength_dbm': 'mean',\n            'signal_quality_db': 'mean'\n        }).round(2)\n        \n        results['signal_metrics_by_station'] = signal_metrics.to_dict()\n        \n        # 9. 资源块使用率分布\n        resource_block_bins = [0, 20, 40, 60, 80, 100]\n        resource_block_labels = ['0-20%', '21-40%', '41-60%', '61-80%', '81-100%']\n        df['resource_block_bin'] = pd.cut(df['resource_block_usage_percent'], bins=resource_block_bins, labels=resource_block_labels)\n        resource_block_dist = df['resource_block_bin'].value_counts().to_dict()\n        results['resource_block_usage_distribution'] = resource_block_dist\n        \n        # 10. 延迟分布\n        latency_bins = [0, 10, 20, 30, 40, 50]\n        latency_labels = ['0-10ms', '11-20ms', '21-30ms', '31-40ms', '41-50ms']\n        df['latency_bin'] = pd.cut(df['latency_ms'], bins=latency_bins, labels=latency_labels)\n        latency_dist = df['latency_bin'].value_counts().to_dict()\n        results['latency_distribution'] = latency_dist\n        \n        # 保存结果到JSON文件\n        with open('bar_chart_analysis_results.json', 'w', encoding='utf-8') as f:\n            json.dump(results, f, ensure_ascii=False, indent=4)\n        \n        return \"分析完成，结果已保存到 bar_chart_analysis_results.json\"\n    \n    except Exception as e:\n        return f\"分析过程中出错: {str(e)}\"\n\nif __name__ == \"__main__\":\n    if len(sys.argv) > 1:\n        file_path = sys.argv[1]\n    else:\n        file_path = 'temp_csv/excel_data_20250317093536.csv'  # 使用默认路径\n    \n    result = analyze_bar_chart_data(file_path)\n    print(result)",
+      "results": "分析完成，结果已保存到 bar_chart_analysis_results.json\n",
+      "json_results": {
+        "base_station_performance": {
+          "success_rate": {
+            "城东-商业区基站": 0.85,
+            "城北-工业园区基站": 0.86,
+            "城南-大学城基站": 0.86,
+            "城西-住宅区基站": 0.86,
+            "市中心-商业区基站": 0.86
+          },
+          "downlink_throughput_mbps": {
+            "城东-商业区基站": 720.46,
+            "城北-工业园区基站": 722.97,
+            "城南-大学城基站": 691.43,
+            "城西-住宅区基站": 714.92,
+            "市中心-商业区基站": 717.08
+          },
+          "uplink_throughput_mbps": {
+            "城东-商业区基站": 90.38,
+            "城北-工业园区基站": 91.38,
+            "城南-大学城基站": 91.34,
+            "城西-住宅区基站": 92.5,
+            "市中心-商业区基站": 92.43
+          },
+          "latency_ms": {
+            "城东-商业区基站": 21.77,
+            "城北-工业园区基站": 21.52,
+            "城南-大学城基站": 21.79,
+            "城西-住宅区基站": 21.74,
+            "市中心-商业区基站": 21.61
+          },
+          "active_users": {
+            "城东-商业区基站": 200.08,
+            "城北-工业园区基站": 201.92,
+            "城南-大学城基站": 198.12,
+            "城西-住宅区基站": 200.36,
+            "市中心-商业区基站": 201.34
+          }
+        },
+        "signal_type_distribution": {
+          "PAGING": 523,
+          "ATTACH_REQUEST": 502,
+          "HANDOVER_REQUEST": 494,
+          "HANDOVER_COMPLETE": 491,
+          "SERVICE_REQUEST": 491,
+          "HANDOVER_COMMAND": 486,
+          "DETACH_REQUEST": 483,
+          "RRC_CONNECTION_SETUP_COMPLETE": 477,
+          "ATTACH_COMPLETE": 477,
+          "SERVICE_ACCEPT": 475,
+          "RRC_CONNECTION_REQUEST": 471,
+          "DETACH_ACCEPT": 465,
+          "RRC_CONNECTION_RELEASE": 464,
+          "RRC_CONNECTION_SETUP": 461,
+          "ATTACH_ACCEPT": 440
+        },
+        "status_distribution": {
+          "SUCCESS": 6125,
+          "FAILED": 373,
+          "TIMEOUT": 270,
+          "REJECTED": 237,
+          "PENDING": 195
+        },
+        "resource_usage_by_station": {
+          "resource_block_usage_percent": {
+            "城东-商业区基站": 56.47,
+            "城北-工业园区基站": 56.1,
+            "城南-大学城基站": 56.15,
+            "城西-住宅区基站": 56.07,
+            "市中心-商业区基站": 56.49
+          },
+          "cpu_usage_percent": {
+            "城东-商业区基站": 56.54,
+            "城北-工业园区基站": 55.94,
+            "城南-大学城基站": 56.21,
+            "城西-住宅区基站": 55.88,
+            "市中心-商业区基站": 56.55
+          },
+          "memory_usage_percent": {
+            "城东-商业区基站": 55.98,
+            "城北-工业园区基站": 56.3,
+            "城南-大学城基站": 56.15,
+            "城西-住宅区基站": 56.16,
+            "市中心-商业区基站": 56.6
+          }
+        },
+        "hourly_metrics": {
+          "active_users": {
+            "0": 125.59,
+            "1": 121.66,
+            "2": 124.62,
+            "3": 123.17,
+            "4": 126.52,
+            "5": 123.63,
+            "6": 128.33,
+            "7": 122.85,
+            "8": 343.74,
+            "9": 344.26,
+            "10": 125.34,
+            "11": 124.45,
+            "12": 345.93,
+            "13": 360.98,
+            "14": 124.14,
+            "15": 124.62,
+            "16": 127.9,
+            "17": 123.45,
+            "18": 350.31,
+            "19": 360.34,
+            "20": 348.1,
+            "21": 355.05,
+            "22": 126.36,
+            "23": 127.36
+          },
+          "call_attempts": {
+            "0": 24.78,
+            "1": 25.02,
+            "2": 25.67,
+            "3": 23.59,
+            "4": 24.81,
+            "5": 24.36,
+            "6": 24.91,
+            "7": 23.9,
+            "8": 75.39,
+            "9": 74.14,
+            "10": 24.37,
+            "11": 23.79,
+            "12": 74.55,
+            "13": 74.85,
+            "14": 24.51,
+            "15": 25.51,
+            "16": 23.27,
+            "17": 24.46,
+            "18": 74.83,
+            "19": 75.94,
+            "20": 75.61,
+            "21": 75.17,
+            "22": 24.98,
+            "23": 24.35
+          },
+          "downlink_throughput_mbps": {
+            "0": 822.03,
+            "1": 772.0,
+            "2": 787.74,
+            "3": 805.15,
+            "4": 840.01,
+            "5": 800.9,
+            "6": 796.51,
+            "7": 837.38,
+            "8": 523.13,
+            "9": 501.84,
+            "10": 822.26,
+            "11": 793.75,
+            "12": 550.51,
+            "13": 524.81,
+            "14": 801.64,
+            "15": 838.72,
+            "16": 777.87,
+            "17": 776.83,
+            "18": 544.47,
+            "19": 538.48,
+            "20": 546.12,
+            "21": 505.19,
+            "22": 800.04,
+            "23": 813.56
+          },
+          "uplink_throughput_mbps": {
+            "0": 109.55,
+            "1": 114.68,
+            "2": 105.17,
+            "3": 108.2,
+            "4": 109.16,
+            "5": 110.8,
+            "6": 109.47,
+            "7": 107.45,
+            "8": 56.52,
+            "9": 54.62,
+            "10": 115.49,
+            "11": 115.01,
+            "12": 56.86,
+            "13": 54.26,
+            "14": 106.17,
+            "15": 111.18,
+            "16": 108.32,
+            "17": 110.8,
+            "18": 53.59,
+            "19": 55.76,
+            "20": 56.51,
+            "21": 55.39,
+            "22": 106.24,
+            "23": 107.35
+          }
+        },
+        "signal_type_success_rate": {
+          "ATTACH_ACCEPT": 0.8532,
+          "ATTACH_COMPLETE": 0.8633,
+          "ATTACH_REQUEST": 0.8507,
+          "DETACH_ACCEPT": 0.8652,
+          "DETACH_REQUEST": 0.8615,
+          "HANDOVER_COMMAND": 0.8492,
+          "HANDOVER_COMPLETE": 0.8584,
+          "HANDOVER_REQUEST": 0.8546,
+          "PAGING": 0.861,
+          "RRC_CONNECTION_RELEASE": 0.8606,
+          "RRC_CONNECTION_REQUEST": 0.8552,
+          "RRC_CONNECTION_SETUP": 0.8575,
+          "RRC_CONNECTION_SETUP_COMPLETE": 0.8621,
+          "SERVICE_ACCEPT": 0.8581,
+          "SERVICE_REQUEST": 0.8554
+        },
+        "temperature_by_station": {
+          "mean": {
+            "城东-商业区基站": 35.32,
+            "城北-工业园区基站": 35.13,
+            "城南-大学城基站": 35.09,
+            "城西-住宅区基站": 34.67,
+            "市中心-商业区基站": 34.96
+          },
+          "min": {
+            "城东-商业区基站": 25.0,
+            "城北-工业园区基站": 25.02,
+            "城南-大学城基站": 25.01,
+            "城西-住宅区基站": 25.0,
+            "市中心-商业区基站": 25.01
+          },
+          "max": {
+            "城东-商业区基站": 44.95,
+            "城北-工业园区基站": 44.98,
+            "城南-大学城基站": 44.99,
+            "城西-住宅区基站": 45.0,
+            "市中心-商业区基站": 44.99
+          }
+        },
+        "signal_metrics_by_station": {
+          "signal_strength_dbm": {
+            "城东-商业区基站": -95.29,
+            "城北-工业园区基站": -95.13,
+            "城南-大学城基站": -94.99,
+            "城西-住宅区基站": -94.77,
+            "市中心-商业区基站": -94.99
+          },
+          "signal_quality_db": {
+            "城东-商业区基站": 15.31,
+            "城北-工业园区基站": 15.17,
+            "城南-大学城基站": 14.92,
+            "城西-住宅区基站": 15.32,
+            "市中心-商业区基站": 14.63
+          }
+        },
+        "resource_block_usage_distribution": {
+          "21-40%": 2366,
+          "41-60%": 2318,
+          "81-100%": 2285,
+          "0-20%": 116,
+          "61-80%": 115
+        },
+        "latency_distribution": {
+          "21-30ms": 2587,
+          "11-20ms": 2526,
+          "0-10ms": 924,
+          "41-50ms": 612,
+          "31-40ms": 551
+        }
+      }
+    },
+    "饼图比例分析单元": {
+      "status": "success",
+      "error": null,
+      "code": "import pandas as pd\nimport numpy as np\nimport json\nimport sys\nfrom typing import Dict, List\n\ndef analyze_pie_chart_data(df: pd.DataFrame) -> Dict[str, List[Dict[str, float]]]:\n    \"\"\"\n    分析适合饼图展示的数据比例\n    \"\"\"\n    results = {}\n\n    # 分析信号类型分布\n    signal_type_counts = df['signal_type'].value_counts(normalize=True)\n    results['signal_type_distribution'] = [\n        {'name': name, 'value': value} \n        for name, value in signal_type_counts.items()\n    ]\n\n    # 分析基站状态分布\n    status_counts = df['status'].value_counts(normalize=True)\n    results['status_distribution'] = [\n        {'name': name, 'value': value} \n        for name, value in status_counts.items()\n    ]\n\n    # 分析基站使用情况\n    base_station_usage = df.groupby('base_station_name')['active_users'].mean()\n    total_users = base_station_usage.sum()\n    results['base_station_usage'] = [\n        {'name': name, 'value': users / total_users} \n        for name, users in base_station_usage.items()\n    ]\n\n    # 分析资源块使用率分布\n    resource_block_bins = pd.cut(df['resource_block_usage_percent'], bins=5)\n    resource_block_distribution = resource_block_bins.value_counts(normalize=True)\n    results['resource_block_usage_distribution'] = [\n        {'name': str(interval), 'value': value} \n        for interval, value in resource_block_distribution.items()\n    ]\n\n    # 分析CPU使用率分布\n    cpu_usage_bins = pd.cut(df['cpu_usage_percent'], bins=5)\n    cpu_usage_distribution = cpu_usage_bins.value_counts(normalize=True)\n    results['cpu_usage_distribution'] = [\n        {'name': str(interval), 'value': value} \n        for interval, value in cpu_usage_distribution.items()\n    ]\n\n    return results\n\ndef main(file_path: str):\n    try:\n        # 读取CSV文件\n        df = pd.read_csv(file_path)\n\n        # 分析数据\n        analysis_results = analyze_pie_chart_data(df)\n\n        # 保存结果到JSON文件\n        with open('pie_chart_analysis_results.json', 'w', encoding='utf-8') as f:\n            json.dump(analysis_results, f, ensure_ascii=False, indent=2)\n\n        print(\"分析完成，结果已保存到 pie_chart_analysis_results.json\")\n\n    except FileNotFoundError:\n        print(f\"错误：找不到文件 {file_path}\")\n    except pd.errors.EmptyDataError:\n        print(f\"错误：文件 {file_path} 是空的\")\n    except pd.errors.ParserError:\n        print(f\"错误：无法解析文件 {file_path}，请确保它是有效的CSV格式\")\n    except KeyError as e:\n        print(f\"错误：找不到所需的列 {e}\")\n    except Exception as e:\n        print(f\"发生未知错误：{e}\")\n\nif __name__ == \"__main__\":\n    if len(sys.argv) != 2:\n        print(\"使用方法: python script.py <csv_file_path>\")\n    else:\n        main(sys.argv[1])",
+      "results": "分析完成，结果已保存到 pie_chart_analysis_results.json\n",
+      "json_results": {
+        "signal_type_distribution": [
+          {
+            "name": "PAGING",
+            "value": 0.07263888888888889
+          },
+          {
+            "name": "ATTACH_REQUEST",
+            "value": 0.06972222222222223
+          },
+          {
+            "name": "HANDOVER_REQUEST",
+            "value": 0.06861111111111111
+          },
+          {
+            "name": "HANDOVER_COMPLETE",
+            "value": 0.06819444444444445
+          },
+          {
+            "name": "SERVICE_REQUEST",
+            "value": 0.06819444444444445
+          },
+          {
+            "name": "HANDOVER_COMMAND",
+            "value": 0.0675
+          },
+          {
+            "name": "DETACH_REQUEST",
+            "value": 0.06708333333333333
+          },
+          {
+            "name": "RRC_CONNECTION_SETUP_COMPLETE",
+            "value": 0.06625
+          },
+          {
+            "name": "ATTACH_COMPLETE",
+            "value": 0.06625
+          },
+          {
+            "name": "SERVICE_ACCEPT",
+            "value": 0.06597222222222222
+          },
+          {
+            "name": "RRC_CONNECTION_REQUEST",
+            "value": 0.06541666666666666
+          },
+          {
+            "name": "DETACH_ACCEPT",
+            "value": 0.06458333333333334
+          },
+          {
+            "name": "RRC_CONNECTION_RELEASE",
+            "value": 0.06444444444444444
+          },
+          {
+            "name": "RRC_CONNECTION_SETUP",
+            "value": 0.06402777777777778
+          },
+          {
+            "name": "ATTACH_ACCEPT",
+            "value": 0.06111111111111111
+          }
+        ],
+        "status_distribution": [
+          {
+            "name": "SUCCESS",
+            "value": 0.8506944444444444
+          },
+          {
+            "name": "FAILED",
+            "value": 0.051805555555555556
+          },
+          {
+            "name": "TIMEOUT",
+            "value": 0.0375
+          },
+          {
+            "name": "REJECTED",
+            "value": 0.032916666666666664
+          },
+          {
+            "name": "PENDING",
+            "value": 0.027083333333333334
+          }
+        ],
+        "base_station_usage": [
+          {
+            "name": "城东-商业区基站",
+            "value": 0.19971676395540588
+          },
+          {
+            "name": "城北-工业园区基站",
+            "value": 0.20155162888453101
+          },
+          {
+            "name": "城南-大学城基站",
+            "value": 0.19776475049094935
+          },
+          {
+            "name": "城西-住宅区基站",
+            "value": 0.19999265222204426
+          },
+          {
+            "name": "市中心-商业区基站",
+            "value": 0.2009742044470693
+          }
+        ],
+        "resource_block_usage_distribution": [
+          {
+            "name": "(83.2, 99.0]",
+            "value": 0.2697222222222222
+          },
+          {
+            "name": "(35.8, 51.6]",
+            "value": 0.2683333333333333
+          },
+          {
+            "name": "(19.921, 35.8]",
+            "value": 0.2648611111111111
+          },
+          {
+            "name": "(51.6, 67.4]",
+            "value": 0.13347222222222221
+          },
+          {
+            "name": "(67.4, 83.2]",
+            "value": 0.0636111111111111
+          }
+        ],
+        "cpu_usage_distribution": [
+          {
+            "name": "(29.832, 49.623]",
+            "value": 0.33319444444444446
+          },
+          {
+            "name": "(89.204, 108.995]",
+            "value": 0.17180555555555554
+          },
+          {
+            "name": "(9.942, 29.832]",
+            "value": 0.17125
+          },
+          {
+            "name": "(49.623, 69.414]",
+            "value": 0.1622222222222222
+          },
+          {
+            "name": "(69.414, 89.204]",
+            "value": 0.16152777777777777
+          }
+        ]
+      }
+    },
+    "时间趋势分析单元": {
+      "status": "success",
+      "error": null,
+      "code": "import pandas as pd\nimport numpy as np\nimport json\nimport sys\nfrom datetime import datetime\nfrom statsmodels.tsa.seasonal import seasonal_decompose\nfrom statsmodels.tsa.holtwinters import ExponentialSmoothing\nimport argparse\nfrom typing import Dict, List, Any\n\ndef time_trend_analysis(file_path: str) -> Dict[str, Any]:\n    \"\"\"\n    对CSV文件进行时间趋势分析\n    \n    Args:\n        file_path: CSV文件路径\n    \n    Returns:\n        包含时间趋势分析结果的字典\n    \"\"\"\n    try:\n        # 读取CSV文件\n        df = pd.read_csv(file_path)\n        \n        # 检查是否存在时间列\n        if 'timestamp' not in df.columns:\n            raise ValueError(\"数据中没有timestamp列，无法进行时间趋势分析\")\n        \n        # 将timestamp列转换为datetime类型\n        df['timestamp'] = pd.to_datetime(df['timestamp'])\n        \n        # 设置timestamp为索引\n        df.set_index('timestamp', inplace=True)\n        \n        # 按基站和信号类型分组的结果字典\n        results = {\n            \"hourly_trends\": {},\n            \"daily_trends\": {},\n            \"moving_averages\": {},\n            \"seasonal_decomposition\": {},\n            \"forecasts\": {}\n        }\n        \n        # 按小时重采样关键指标\n        hourly_metrics = ['success_rate', 'active_users', 'downlink_throughput_mbps', \n                          'latency_ms', 'packet_loss_percent']\n        \n        hourly_data = {}\n        for metric in hourly_metrics:\n            # 按小时重采样并计算平均值\n            hourly_series = df[metric].resample('H').mean()\n            hourly_data[metric] = {\n                \"timestamps\": hourly_series.index.strftime('%Y-%m-%d %H:%M:%S').tolist(),\n                \"values\": hourly_series.values.tolist()\n            }\n        \n        results[\"hourly_trends\"] = hourly_data\n        \n        # 按天重采样关键指标\n        daily_data = {}\n        for metric in hourly_metrics:\n            # 按天重采样并计算平均值、最大值、最小值\n            daily_series = df[metric].resample('D').agg(['mean', 'max', 'min'])\n            daily_data[metric] = {\n                \"timestamps\": daily_series.index.strftime('%Y-%m-%d').tolist(),\n                \"mean\": daily_series['mean'].values.tolist(),\n                \"max\": daily_series['max'].values.tolist(),\n                \"min\": daily_series['min'].values.tolist()\n            }\n        \n        results[\"daily_trends\"] = daily_data\n        \n        # 计算移动平均\n        moving_avg_data = {}\n        for metric in ['success_rate', 'downlink_throughput_mbps', 'latency_ms']:\n            # 按小时重采样后计算移动平均\n            hourly_series = df[metric].resample('H').mean()\n            \n            # 计算6小时移动平均\n            ma_6h = hourly_series.rolling(window=6).mean().dropna()\n            # 计算12小时移动平均\n            ma_12h = hourly_series.rolling(window=12).mean().dropna()\n            \n            moving_avg_data[metric] = {\n                \"timestamps\": hourly_series.index.strftime('%Y-%m-%d %H:%M:%S').tolist(),\n                \"original\": hourly_series.values.tolist(),\n                \"ma_6h\": {\n                    \"timestamps\": ma_6h.index.strftime('%Y-%m-%d %H:%M:%S').tolist(),\n                    \"values\": ma_6h.values.tolist()\n                },\n                \"ma_12h\": {\n                    \"timestamps\": ma_12h.index.strftime('%Y-%m-%d %H:%M:%S').tolist(),\n                    \"values\": ma_12h.values.tolist()\n                }\n            }\n        \n        results[\"moving_averages\"] = moving_avg_data\n        \n        # 季节性分析\n        seasonal_data = {}\n        for metric in ['success_rate', 'active_users']:\n            # 按小时重采样\n            hourly_series = df[metric].resample('H').mean()\n            \n            # 确保数据长度足够进行季节性分析\n            if len(hourly_series) >= 24:  # 至少需要一天的数据\n                # 进行季节性分解\n                decomposition = seasonal_decompose(hourly_series, model='additive', period=24)\n                \n                seasonal_data[metric] = {\n                    \"timestamps\": hourly_series.index.strftime('%Y-%m-%d %H:%M:%S').tolist(),\n                    \"trend\": decomposition.trend.dropna().values.tolist(),\n                    \"seasonal\": decomposition.seasonal.dropna().values.tolist(),\n                    \"residual\": decomposition.resid.dropna().values.tolist()\n                }\n        \n        results[\"seasonal_decomposition\"] = seasonal_data\n        \n        # 简单预测\n        forecast_data = {}\n        for metric in ['success_rate', 'downlink_throughput_mbps']:\n            hourly_series = df[metric].resample('H').mean()\n            \n            if len(hourly_series) >= 48:  # 至少需要两天的数据\n                # 使用指数平滑模型进行预测\n                train_data = hourly_series[:-12]  # 使用除最后12小时外的数据进行训练\n                \n                # 创建Holt-Winters模型\n                model = ExponentialSmoothing(\n                    train_data, \n                    trend='add', \n                    seasonal='add', \n                    seasonal_periods=24\n                ).fit()\n                \n                # 预测未来12小时\n                forecast = model.forecast(12)\n                \n                forecast_data[metric] = {\n                    \"historical_timestamps\": train_data.index.strftime('%Y-%m-%d %H:%M:%S').tolist(),\n                    \"historical_values\": train_data.values.tolist(),\n                    \"forecast_timestamps\": forecast.index.strftime('%Y-%m-%d %H:%M:%S').tolist(),\n                    \"forecast_values\": forecast.values.tolist()\n                }\n        \n        results[\"forecasts\"] = forecast_data\n        \n        # 按基站分析\n        if 'base_station_id' in df.reset_index().columns:\n            station_trends = {}\n            for station in df.reset_index()['base_station_id'].unique():\n                station_df = df[df.reset_index()['base_station_id'] == station]\n                \n                # 按小时重采样计算每个基站的成功率\n                hourly_success = station_df['success_rate'].resample('H').mean()\n                \n                station_trends[station] = {\n                    \"timestamps\": hourly_success.index.strftime('%Y-%m-%d %H:%M:%S').tolist(),\n                    \"success_rate\": hourly_success.values.tolist()\n                }\n            \n            results[\"station_trends\"] = station_trends\n        \n        return results\n    \n    except Exception as e:\n        return {\"error\": str(e)}\n\ndef main():\n    parser = argparse.ArgumentParser(description='时间趋势分析')\n    parser.add_argument('file_path', help='CSV文件路径')\n    parser.add_argument('--output', default='time_trend_analysis_results.json', help='输出JSON文件路径')\n    \n    args = parser.parse_args()\n    \n    results = time_trend_analysis(args.file_path)\n    \n    # 保存结果到JSON文件\n    with open(args.output, 'w', encoding='utf-8') as f:\n        json.dump(results, f, ensure_ascii=False, indent=2)\n    \n    print(f\"分析结果已保存到 {args.output}\")\n\nif __name__ == \"__main__\":\n    main()",
+      "results": "分析结果已保存到 time_trend_analysis_results.json\n",
+      "json_results": {
+        "error": "x must have 2 complete cycles requires 48 observations. x only has 24 observation(s)"
+      }
+    },
+    "相关性分析单元": {
+      "status": "success",
+      "error": null,
+      "code": "import pandas as pd\nimport numpy as np\nimport scipy.stats as stats\nfrom scipy.stats import f_oneway\nimport json\nimport sys\nimport os\nfrom typing import Dict, List, Any, Tuple\n\ndef load_data(file_path: str) -> pd.DataFrame:\n    \"\"\"加载CSV数据文件\"\"\"\n    try:\n        df = pd.read_csv(file_path)\n        print(f\"成功加载数据，共{df.shape[0]}行，{df.shape[1]}列\")\n        return df\n    except Exception as e:\n        print(f\"加载数据失败: {e}\")\n        sys.exit(1)\n\ndef get_numeric_columns(df: pd.DataFrame) -> List[str]:\n    \"\"\"获取数据框中的数值型列\"\"\"\n    numeric_cols = df.select_dtypes(include=['int64', 'float64']).columns.tolist()\n    print(f\"找到{len(numeric_cols)}个数值型列\")\n    return numeric_cols\n\ndef get_categorical_columns(df: pd.DataFrame) -> List[str]:\n    \"\"\"获取数据框中的分类型列\"\"\"\n    cat_cols = df.select_dtypes(include=['object', 'category']).columns.tolist()\n    print(f\"找到{len(cat_cols)}个分类型列\")\n    return cat_cols\n\ndef calculate_correlation_matrix(df: pd.DataFrame, numeric_cols: List[str]) -> Dict[str, Any]:\n    \"\"\"计算数值列之间的相关性矩阵\"\"\"\n    # 计算Pearson相关系数\n    pearson_corr = df[numeric_cols].corr(method='pearson').round(3)\n    # 计算Spearman相关系数\n    spearman_corr = df[numeric_cols].corr(method='spearman').round(3)\n    \n    # 提取强相关变量对（相关系数绝对值大于0.7）\n    strong_correlations = []\n    for i in range(len(numeric_cols)):\n        for j in range(i+1, len(numeric_cols)):\n            var1, var2 = numeric_cols[i], numeric_cols[j]\n            pearson_value = pearson_corr.loc[var1, var2]\n            spearman_value = spearman_corr.loc[var1, var2]\n            \n            if abs(pearson_value) > 0.7 or abs(spearman_value) > 0.7:\n                strong_correlations.append({\n                    'variable1': var1,\n                    'variable2': var2,\n                    'pearson_correlation': float(pearson_value),\n                    'spearman_correlation': float(spearman_value),\n                    'correlation_strength': 'Strong Positive' if pearson_value > 0.7 else 'Strong Negative'\n                })\n    \n    return {\n        'pearson_correlation_matrix': pearson_corr.to_dict(),\n        'spearman_correlation_matrix': spearman_corr.to_dict(),\n        'strong_correlations': strong_correlations\n    }\n\ndef analyze_categorical_numeric_relationships(df: pd.DataFrame, cat_cols: List[str], \n                                             numeric_cols: List[str]) -> List[Dict[str, Any]]:\n    \"\"\"分析分类变量与数值变量之间的关系\"\"\"\n    relationships = []\n    \n    for cat_col in cat_cols:\n        if len(df[cat_col].unique()) > 30:  # 如果分类变量取值太多，跳过\n            continue\n            \n        for num_col in numeric_cols:\n            # 对每个分类变量的每个取值，提取对应的数值变量值\n            groups = []\n            group_names = []\n            \n            for category in df[cat_col].unique():\n                group_data = df[df[cat_col] == category][num_col].dropna()\n                if len(group_data) > 5:  # 确保每组有足够的数据\n                    groups.append(group_data)\n                    group_names.append(category)\n            \n            if len(groups) >= 2:  # 至少需要两组才能进行ANOVA\n                try:\n                    # 执行单因素方差分析\n                    f_stat, p_value = f_oneway(*groups)\n                    \n                    # 计算每个组的统计数据\n                    group_stats = {}\n                    for i, category in enumerate(group_names):\n                        group_stats[str(category)] = {\n                            'mean': float(groups[i].mean()),\n                            'std': float(groups[i].std()),\n                            'count': int(len(groups[i]))\n                        }\n                    \n                    relationships.append({\n                        'categorical_variable': cat_col,\n                        'numeric_variable': num_col,\n                        'f_statistic': float(f_stat),\n                        'p_value': float(p_value),\n                        'significant': bool(p_value < 0.05),  # 显式转换为Python的bool类型\n                        'group_statistics': group_stats\n                    })\n                except Exception as e:\n                    print(f\"ANOVA分析失败 {cat_col} vs {num_col}: {e}\")\n    \n    return relationships\n\nclass NumpyEncoder(json.JSONEncoder):\n    \"\"\"处理NumPy数据类型的JSON编码器\"\"\"\n    def default(self, obj):\n        if isinstance(obj, np.integer):\n            return int(obj)\n        elif isinstance(obj, np.floating):\n            return float(obj)\n        elif isinstance(obj, np.ndarray):\n            return obj.tolist()\n        elif isinstance(obj, np.bool_):\n            return bool(obj)\n        elif pd.isna(obj):\n            return None\n        return super(NumpyEncoder, self).default(obj)\n\ndef main():\n    if len(sys.argv) != 2:\n        print(\"用法: python script.py <csv_file_path>\")\n        sys.exit(1)\n    \n    file_path = sys.argv[1]\n    if not os.path.exists(file_path):\n        print(f\"错误: 文件 {file_path} 不存在\")\n        sys.exit(1)\n    \n    # 加载数据\n    df = load_data(file_path)\n    \n    # 获取数值列和分类列\n    numeric_cols = get_numeric_columns(df)\n    categorical_cols = get_categorical_columns(df)\n    \n    if len(numeric_cols) < 2:\n        print(\"错误: 数据中没有足够的数值列进行相关性分析\")\n        sys.exit(1)\n    \n    # 执行相关性分析\n    results = {}\n    \n    # 1. 数值变量之间的相关性\n    print(\"计算数值变量之间的相关性...\")\n    results['numeric_correlations'] = calculate_correlation_matrix(df, numeric_cols)\n    \n    # 2. 分类变量与数值变量之间的关系\n    print(\"分析分类变量与数值变量之间的关系...\")\n    results['categorical_numeric_relationships'] = analyze_categorical_numeric_relationships(\n        df, categorical_cols, numeric_cols)\n    \n    # 3. 添加元数据\n    results['metadata'] = {\n        'file_analyzed': file_path,\n        'total_rows': int(df.shape[0]),\n        'total_columns': int(df.shape[1]),\n        'numeric_columns': numeric_cols,\n        'categorical_columns': categorical_cols,\n        'analysis_timestamp': pd.Timestamp.now().isoformat()\n    }\n    \n    # 保存结果到JSON文件\n    output_file = 'correlation_analysis_results.json'\n    with open(output_file, 'w', encoding='utf-8') as f:\n        json.dump(results, f, ensure_ascii=False, indent=2, cls=NumpyEncoder)\n    \n    print(f\"分析完成，结果已保存到 {output_file}\")\n\nif __name__ == \"__main__\":\n    main()",
+      "results": "成功加载数据，共7200行，20列\n找到15个数值型列\n找到5个分类型列\n计算数值变量之间的相关性...\n分析分类变量与数值变量之间的关系...\n分析完成，结果已保存到 correlation_analysis_results.json\n",
+      "json_results": {
+        "numeric_correlations": {
+          "pearson_correlation_matrix": {
+            "success_rate": {
+              "success_rate": 1.0,
+              "failure_rate": -1.0,
+              "call_attempts": -0.001,
+              "active_users": 0.021,
+              "signal_strength_dbm": 0.005,
+              "signal_quality_db": 0.002,
+              "downlink_throughput_mbps": -0.002,
+              "uplink_throughput_mbps": 0.016,
+              "latency_ms": 0.005,
+              "jitter_ms": -0.007,
+              "packet_loss_percent": 0.023,
+              "resource_block_usage_percent": -0.002,
+              "cpu_usage_percent": -0.002,
+              "memory_usage_percent": 0.005,
+              "temperature_celsius": -0.021
+            },
+            "failure_rate": {
+              "success_rate": -1.0,
+              "failure_rate": 1.0,
+              "call_attempts": 0.001,
+              "active_users": -0.021,
+              "signal_strength_dbm": -0.005,
+              "signal_quality_db": -0.002,
+              "downlink_throughput_mbps": 0.002,
+              "uplink_throughput_mbps": -0.016,
+              "latency_ms": -0.005,
+              "jitter_ms": 0.007,
+              "packet_loss_percent": -0.023,
+              "resource_block_usage_percent": 0.002,
+              "cpu_usage_percent": 0.002,
+              "memory_usage_percent": -0.005,
+              "temperature_celsius": 0.021
+            },
+            "call_attempts": {
+              "success_rate": -0.001,
+              "failure_rate": 0.001,
+              "call_attempts": 1.0,
+              "active_users": 0.79,
+              "signal_strength_dbm": -0.004,
+              "signal_quality_db": 0.012,
+              "downlink_throughput_mbps": -0.303,
+              "uplink_throughput_mbps": -0.457,
+              "latency_ms": 0.507,
+              "jitter_ms": 0.014,
+              "packet_loss_percent": 0.009,
+              "resource_block_usage_percent": 0.837,
+              "cpu_usage_percent": 0.817,
+              "memory_usage_percent": 0.793,
+              "temperature_celsius": 0.006
+            },
+            "active_users": {
+              "success_rate": 0.021,
+              "failure_rate": -0.021,
+              "call_attempts": 0.79,
+              "active_users": 1.0,
+              "signal_strength_dbm": -0.004,
+              "signal_quality_db": 0.013,
+              "downlink_throughput_mbps": -0.289,
+              "uplink_throughput_mbps": -0.422,
+              "latency_ms": 0.475,
+              "jitter_ms": 0.001,
+              "packet_loss_percent": 0.007,
+              "resource_block_usage_percent": 0.796,
+              "cpu_usage_percent": 0.779,
+              "memory_usage_percent": 0.754,
+              "temperature_celsius": 0.01
+            },
+            "signal_strength_dbm": {
+              "success_rate": 0.005,
+              "failure_rate": -0.005,
+              "call_attempts": -0.004,
+              "active_users": -0.004,
+              "signal_strength_dbm": 1.0,
+              "signal_quality_db": -0.007,
+              "downlink_throughput_mbps": -0.004,
+              "uplink_throughput_mbps": 0.0,
+              "latency_ms": 0.001,
+              "jitter_ms": 0.001,
+              "packet_loss_percent": -0.003,
+              "resource_block_usage_percent": 0.007,
+              "cpu_usage_percent": 0.006,
+              "memory_usage_percent": 0.01,
+              "temperature_celsius": -0.009
+            },
+            "signal_quality_db": {
+              "success_rate": 0.002,
+              "failure_rate": -0.002,
+              "call_attempts": 0.012,
+              "active_users": 0.013,
+              "signal_strength_dbm": -0.007,
+              "signal_quality_db": 1.0,
+              "downlink_throughput_mbps": 0.0,
+              "uplink_throughput_mbps": 0.01,
+              "latency_ms": -0.015,
+              "jitter_ms": -0.024,
+              "packet_loss_percent": -0.004,
+              "resource_block_usage_percent": 0.02,
+              "cpu_usage_percent": 0.019,
+              "memory_usage_percent": 0.013,
+              "temperature_celsius": 0.006
+            },
+            "downlink_throughput_mbps": {
+              "success_rate": -0.002,
+              "failure_rate": 0.002,
+              "call_attempts": -0.303,
+              "active_users": -0.289,
+              "signal_strength_dbm": -0.004,
+              "signal_quality_db": 0.0,
+              "downlink_throughput_mbps": 1.0,
+              "uplink_throughput_mbps": 0.153,
+              "latency_ms": -0.19,
+              "jitter_ms": -0.016,
+              "packet_loss_percent": 0.009,
+              "resource_block_usage_percent": -0.307,
+              "cpu_usage_percent": -0.299,
+              "memory_usage_percent": -0.283,
+              "temperature_celsius": -0.008
+            },
+            "uplink_throughput_mbps": {
+              "success_rate": 0.016,
+              "failure_rate": -0.016,
+              "call_attempts": -0.457,
+              "active_users": -0.422,
+              "signal_strength_dbm": 0.0,
+              "signal_quality_db": 0.01,
+              "downlink_throughput_mbps": 0.153,
+              "uplink_throughput_mbps": 1.0,
+              "latency_ms": -0.27,
+              "jitter_ms": -0.003,
+              "packet_loss_percent": -0.018,
+              "resource_block_usage_percent": -0.449,
+              "cpu_usage_percent": -0.435,
+              "memory_usage_percent": -0.421,
+              "temperature_celsius": 0.0
+            },
+            "latency_ms": {
+              "success_rate": 0.005,
+              "failure_rate": -0.005,
+              "call_attempts": 0.507,
+              "active_users": 0.475,
+              "signal_strength_dbm": 0.001,
+              "signal_quality_db": -0.015,
+              "downlink_throughput_mbps": -0.19,
+              "uplink_throughput_mbps": -0.27,
+              "latency_ms": 1.0,
+              "jitter_ms": 0.001,
+              "packet_loss_percent": 0.017,
+              "resource_block_usage_percent": 0.504,
+              "cpu_usage_percent": 0.493,
+              "memory_usage_percent": 0.474,
+              "temperature_celsius": 0.014
+            },
+            "jitter_ms": {
+              "success_rate": -0.007,
+              "failure_rate": 0.007,
+              "call_attempts": 0.014,
+              "active_users": 0.001,
+              "signal_strength_dbm": 0.001,
+              "signal_quality_db": -0.024,
+              "downlink_throughput_mbps": -0.016,
+              "uplink_throughput_mbps": -0.003,
+              "latency_ms": 0.001,
+              "jitter_ms": 1.0,
+              "packet_loss_percent": -0.003,
+              "resource_block_usage_percent": -0.001,
+              "cpu_usage_percent": 0.002,
+              "memory_usage_percent": -0.002,
+              "temperature_celsius": -0.0
+            },
+            "packet_loss_percent": {
+              "success_rate": 0.023,
+              "failure_rate": -0.023,
+              "call_attempts": 0.009,
+              "active_users": 0.007,
+              "signal_strength_dbm": -0.003,
+              "signal_quality_db": -0.004,
+              "downlink_throughput_mbps": 0.009,
+              "uplink_throughput_mbps": -0.018,
+              "latency_ms": 0.017,
+              "jitter_ms": -0.003,
+              "packet_loss_percent": 1.0,
+              "resource_block_usage_percent": 0.012,
+              "cpu_usage_percent": 0.01,
+              "memory_usage_percent": 0.007,
+              "temperature_celsius": 0.004
+            },
+            "resource_block_usage_percent": {
+              "success_rate": -0.002,
+              "failure_rate": 0.002,
+              "call_attempts": 0.837,
+              "active_users": 0.796,
+              "signal_strength_dbm": 0.007,
+              "signal_quality_db": 0.02,
+              "downlink_throughput_mbps": -0.307,
+              "uplink_throughput_mbps": -0.449,
+              "latency_ms": 0.504,
+              "jitter_ms": -0.001,
+              "packet_loss_percent": 0.012,
+              "resource_block_usage_percent": 1.0,
+              "cpu_usage_percent": 0.976,
+              "memory_usage_percent": 0.948,
+              "temperature_celsius": 0.014
+            },
+            "cpu_usage_percent": {
+              "success_rate": -0.002,
+              "failure_rate": 0.002,
+              "call_attempts": 0.817,
+              "active_users": 0.779,
+              "signal_strength_dbm": 0.006,
+              "signal_quality_db": 0.019,
+              "downlink_throughput_mbps": -0.299,
+              "uplink_throughput_mbps": -0.435,
+              "latency_ms": 0.493,
+              "jitter_ms": 0.002,
+              "packet_loss_percent": 0.01,
+              "resource_block_usage_percent": 0.976,
+              "cpu_usage_percent": 1.0,
+              "memory_usage_percent": 0.924,
+              "temperature_celsius": 0.016
+            },
+            "memory_usage_percent": {
+              "success_rate": 0.005,
+              "failure_rate": -0.005,
+              "call_attempts": 0.793,
+              "active_users": 0.754,
+              "signal_strength_dbm": 0.01,
+              "signal_quality_db": 0.013,
+              "downlink_throughput_mbps": -0.283,
+              "uplink_throughput_mbps": -0.421,
+              "latency_ms": 0.474,
+              "jitter_ms": -0.002,
+              "packet_loss_percent": 0.007,
+              "resource_block_usage_percent": 0.948,
+              "cpu_usage_percent": 0.924,
+              "memory_usage_percent": 1.0,
+              "temperature_celsius": 0.016
+            },
+            "temperature_celsius": {
+              "success_rate": -0.021,
+              "failure_rate": 0.021,
+              "call_attempts": 0.006,
+              "active_users": 0.01,
+              "signal_strength_dbm": -0.009,
+              "signal_quality_db": 0.006,
+              "downlink_throughput_mbps": -0.008,
+              "uplink_throughput_mbps": 0.0,
+              "latency_ms": 0.014,
+              "jitter_ms": -0.0,
+              "packet_loss_percent": 0.004,
+              "resource_block_usage_percent": 0.014,
+              "cpu_usage_percent": 0.016,
+              "memory_usage_percent": 0.016,
+              "temperature_celsius": 1.0
+            }
+          },
+          "spearman_correlation_matrix": {
+            "success_rate": {
+              "success_rate": 1.0,
+              "failure_rate": -1.0,
+              "call_attempts": -0.013,
+              "active_users": 0.017,
+              "signal_strength_dbm": 0.008,
+              "signal_quality_db": 0.007,
+              "downlink_throughput_mbps": 0.007,
+              "uplink_throughput_mbps": 0.024,
+              "latency_ms": 0.011,
+              "jitter_ms": -0.008,
+              "packet_loss_percent": 0.026,
+              "resource_block_usage_percent": -0.004,
+              "cpu_usage_percent": -0.002,
+              "memory_usage_percent": 0.002,
+              "temperature_celsius": -0.011
+            },
+            "failure_rate": {
+              "success_rate": -1.0,
+              "failure_rate": 1.0,
+              "call_attempts": 0.013,
+              "active_users": -0.017,
+              "signal_strength_dbm": -0.008,
+              "signal_quality_db": -0.007,
+              "downlink_throughput_mbps": -0.007,
+              "uplink_throughput_mbps": -0.024,
+              "latency_ms": -0.011,
+              "jitter_ms": 0.008,
+              "packet_loss_percent": -0.026,
+              "resource_block_usage_percent": 0.004,
+              "cpu_usage_percent": 0.002,
+              "memory_usage_percent": -0.002,
+              "temperature_celsius": 0.011
+            },
+            "call_attempts": {
+              "success_rate": -0.013,
+              "failure_rate": 0.013,
+              "call_attempts": 1.0,
+              "active_users": 0.668,
+              "signal_strength_dbm": -0.007,
+              "signal_quality_db": 0.007,
+              "downlink_throughput_mbps": -0.262,
+              "uplink_throughput_mbps": -0.41,
+              "latency_ms": 0.403,
+              "jitter_ms": 0.015,
+              "packet_loss_percent": 0.006,
+              "resource_block_usage_percent": 0.664,
+              "cpu_usage_percent": 0.664,
+              "memory_usage_percent": 0.668,
+              "temperature_celsius": 0.001
+            },
+            "active_users": {
+              "success_rate": 0.017,
+              "failure_rate": -0.017,
+              "call_attempts": 0.668,
+              "active_users": 1.0,
+              "signal_strength_dbm": -0.006,
+              "signal_quality_db": 0.015,
+              "downlink_throughput_mbps": -0.264,
+              "uplink_throughput_mbps": -0.384,
+              "latency_ms": 0.395,
+              "jitter_ms": -0.001,
+              "packet_loss_percent": 0.004,
+              "resource_block_usage_percent": 0.661,
+              "cpu_usage_percent": 0.666,
+              "memory_usage_percent": 0.667,
+              "temperature_celsius": 0.002
+            },
+            "signal_strength_dbm": {
+              "success_rate": 0.008,
+              "failure_rate": -0.008,
+              "call_attempts": -0.007,
+              "active_users": -0.006,
+              "signal_strength_dbm": 1.0,
+              "signal_quality_db": -0.008,
+              "downlink_throughput_mbps": -0.004,
+              "uplink_throughput_mbps": 0.005,
+              "latency_ms": 0.001,
+              "jitter_ms": 0.001,
+              "packet_loss_percent": -0.003,
+              "resource_block_usage_percent": 0.009,
+              "cpu_usage_percent": 0.008,
+              "memory_usage_percent": 0.011,
+              "temperature_celsius": -0.009
+            },
+            "signal_quality_db": {
+              "success_rate": 0.007,
+              "failure_rate": -0.007,
+              "call_attempts": 0.007,
+              "active_users": 0.015,
+              "signal_strength_dbm": -0.008,
+              "signal_quality_db": 1.0,
+              "downlink_throughput_mbps": -0.0,
+              "uplink_throughput_mbps": 0.01,
+              "latency_ms": -0.024,
+              "jitter_ms": -0.024,
+              "packet_loss_percent": -0.004,
+              "resource_block_usage_percent": 0.02,
+              "cpu_usage_percent": 0.02,
+              "memory_usage_percent": 0.014,
+              "temperature_celsius": 0.006
+            },
+            "downlink_throughput_mbps": {
+              "success_rate": 0.007,
+              "failure_rate": -0.007,
+              "call_attempts": -0.262,
+              "active_users": -0.264,
+              "signal_strength_dbm": -0.004,
+              "signal_quality_db": -0.0,
+              "downlink_throughput_mbps": 1.0,
+              "uplink_throughput_mbps": 0.147,
+              "latency_ms": -0.16,
+              "jitter_ms": -0.014,
+              "packet_loss_percent": 0.009,
+              "resource_block_usage_percent": -0.26,
+              "cpu_usage_percent": -0.259,
+              "memory_usage_percent": -0.252,
+              "temperature_celsius": -0.008
+            },
+            "uplink_throughput_mbps": {
+              "success_rate": 0.024,
+              "failure_rate": -0.024,
+              "call_attempts": -0.41,
+              "active_users": -0.384,
+              "signal_strength_dbm": 0.005,
+              "signal_quality_db": 0.01,
+              "downlink_throughput_mbps": 0.147,
+              "uplink_throughput_mbps": 1.0,
+              "latency_ms": -0.238,
+              "jitter_ms": -0.003,
+              "packet_loss_percent": -0.015,
+              "resource_block_usage_percent": -0.389,
+              "cpu_usage_percent": -0.387,
+              "memory_usage_percent": -0.386,
+              "temperature_celsius": 0.001
+            },
+            "latency_ms": {
+              "success_rate": 0.011,
+              "failure_rate": -0.011,
+              "call_attempts": 0.403,
+              "active_users": 0.395,
+              "signal_strength_dbm": 0.001,
+              "signal_quality_db": -0.024,
+              "downlink_throughput_mbps": -0.16,
+              "uplink_throughput_mbps": -0.238,
+              "latency_ms": 1.0,
+              "jitter_ms": -0.001,
+              "packet_loss_percent": 0.016,
+              "resource_block_usage_percent": 0.393,
+              "cpu_usage_percent": 0.395,
+              "memory_usage_percent": 0.391,
+              "temperature_celsius": 0.012
+            },
+            "jitter_ms": {
+              "success_rate": -0.008,
+              "failure_rate": 0.008,
+              "call_attempts": 0.015,
+              "active_users": -0.001,
+              "signal_strength_dbm": 0.001,
+              "signal_quality_db": -0.024,
+              "downlink_throughput_mbps": -0.014,
+              "uplink_throughput_mbps": -0.003,
+              "latency_ms": -0.001,
+              "jitter_ms": 1.0,
+              "packet_loss_percent": -0.003,
+              "resource_block_usage_percent": -0.006,
+              "cpu_usage_percent": -0.001,
+              "memory_usage_percent": -0.006,
+              "temperature_celsius": -0.0
+            },
+            "packet_loss_percent": {
+              "success_rate": 0.026,
+              "failure_rate": -0.026,
+              "call_attempts": 0.006,
+              "active_users": 0.004,
+              "signal_strength_dbm": -0.003,
+              "signal_quality_db": -0.004,
+              "downlink_throughput_mbps": 0.009,
+              "uplink_throughput_mbps": -0.015,
+              "latency_ms": 0.016,
+              "jitter_ms": -0.003,
+              "packet_loss_percent": 1.0,
+              "resource_block_usage_percent": 0.01,
+              "cpu_usage_percent": 0.008,
+              "memory_usage_percent": 0.004,
+              "temperature_celsius": 0.004
+            },
+            "resource_block_usage_percent": {
+              "success_rate": -0.004,
+              "failure_rate": 0.004,
+              "call_attempts": 0.664,
+              "active_users": 0.661,
+              "signal_strength_dbm": 0.009,
+              "signal_quality_db": 0.02,
+              "downlink_throughput_mbps": -0.26,
+              "uplink_throughput_mbps": -0.389,
+              "latency_ms": 0.393,
+              "jitter_ms": -0.006,
+              "packet_loss_percent": 0.01,
+              "resource_block_usage_percent": 1.0,
+              "cpu_usage_percent": 0.959,
+              "memory_usage_percent": 0.927,
+              "temperature_celsius": 0.016
+            },
+            "cpu_usage_percent": {
+              "success_rate": -0.002,
+              "failure_rate": 0.002,
+              "call_attempts": 0.664,
+              "active_users": 0.666,
+              "signal_strength_dbm": 0.008,
+              "signal_quality_db": 0.02,
+              "downlink_throughput_mbps": -0.259,
+              "uplink_throughput_mbps": -0.387,
+              "latency_ms": 0.395,
+              "jitter_ms": -0.001,
+              "packet_loss_percent": 0.008,
+              "resource_block_usage_percent": 0.959,
+              "cpu_usage_percent": 1.0,
+              "memory_usage_percent": 0.897,
+              "temperature_celsius": 0.017
+            },
+            "memory_usage_percent": {
+              "success_rate": 0.002,
+              "failure_rate": -0.002,
+              "call_attempts": 0.668,
+              "active_users": 0.667,
+              "signal_strength_dbm": 0.011,
+              "signal_quality_db": 0.014,
+              "downlink_throughput_mbps": -0.252,
+              "uplink_throughput_mbps": -0.386,
+              "latency_ms": 0.391,
+              "jitter_ms": -0.006,
+              "packet_loss_percent": 0.004,
+              "resource_block_usage_percent": 0.927,
+              "cpu_usage_percent": 0.897,
+              "memory_usage_percent": 1.0,
+              "temperature_celsius": 0.017
+            },
+            "temperature_celsius": {
+              "success_rate": -0.011,
+              "failure_rate": 0.011,
+              "call_attempts": 0.001,
+              "active_users": 0.002,
+              "signal_strength_dbm": -0.009,
+              "signal_quality_db": 0.006,
+              "downlink_throughput_mbps": -0.008,
+              "uplink_throughput_mbps": 0.001,
+              "latency_ms": 0.012,
+              "jitter_ms": -0.0,
+              "packet_loss_percent": 0.004,
+              "resource_block_usage_percent": 0.016,
+              "cpu_usage_percent": 0.017,
+              "memory_usage_percent": 0.017,
+              "temperature_celsius": 1.0
+            }
+          },
+          "strong_correlations": [
+            {
+              "variable1": "success_rate",
+              "variable2": "failure_rate",
+              "pearson_correlation": -1.0,
+              "spearman_correlation": -1.0,
+              "correlation_strength": "Strong Negative"
+            },
+            {
+              "variable1": "call_attempts",
+              "variable2": "active_users",
+              "pearson_correlation": 0.79,
+              "spearman_correlation": 0.668,
+              "correlation_strength": "Strong Positive"
+            },
+            {
+              "variable1": "call_attempts",
+              "variable2": "resource_block_usage_percent",
+              "pearson_correlation": 0.837,
+              "spearman_correlation": 0.664,
+              "correlation_strength": "Strong Positive"
+            },
+            {
+              "variable1": "call_attempts",
+              "variable2": "cpu_usage_percent",
+              "pearson_correlation": 0.817,
+              "spearman_correlation": 0.664,
+              "correlation_strength": "Strong Positive"
+            },
+            {
+              "variable1": "call_attempts",
+              "variable2": "memory_usage_percent",
+              "pearson_correlation": 0.793,
+              "spearman_correlation": 0.668,
+              "correlation_strength": "Strong Positive"
+            },
+            {
+              "variable1": "active_users",
+              "variable2": "resource_block_usage_percent",
+              "pearson_correlation": 0.796,
+              "spearman_correlation": 0.661,
+              "correlation_strength": "Strong Positive"
+            },
+            {
+              "variable1": "active_users",
+              "variable2": "cpu_usage_percent",
+              "pearson_correlation": 0.779,
+              "spearman_correlation": 0.666,
+              "correlation_strength": "Strong Positive"
+            },
+            {
+              "variable1": "active_users",
+              "variable2": "memory_usage_percent",
+              "pearson_correlation": 0.754,
+              "spearman_correlation": 0.667,
+              "correlation_strength": "Strong Positive"
+            },
+            {
+              "variable1": "resource_block_usage_percent",
+              "variable2": "cpu_usage_percent",
+              "pearson_correlation": 0.976,
+              "spearman_correlation": 0.959,
+              "correlation_strength": "Strong Positive"
+            },
+            {
+              "variable1": "resource_block_usage_percent",
+              "variable2": "memory_usage_percent",
+              "pearson_correlation": 0.948,
+              "spearman_correlation": 0.927,
+              "correlation_strength": "Strong Positive"
+            },
+            {
+              "variable1": "cpu_usage_percent",
+              "variable2": "memory_usage_percent",
+              "pearson_correlation": 0.924,
+              "spearman_correlation": 0.897,
+              "correlation_strength": "Strong Positive"
+            }
+          ]
+        },
+        "categorical_numeric_relationships": [
+          {
+            "categorical_variable": "base_station_id",
+            "numeric_variable": "success_rate",
+            "f_statistic": 1.2141938296316022,
+            "p_value": 0.30241462821074117,
+            "significant": false,
+            "group_statistics": {
+              "BS001": {
+                "mean": 0.8535921561365587,
+                "std": 0.10974933713563137,
+                "count": 1440
+              },
+              "BS002": {
+                "mean": 0.8604209809428145,
+                "std": 0.1044894905018544,
+                "count": 1440
+              },
+              "BS003": {
+                "mean": 0.8558074511442235,
+                "std": 0.10806522859257499,
+                "count": 1440
+              },
+              "BS004": {
+                "mean": 0.8609196077835375,
+                "std": 0.10417499447903948,
+                "count": 1440
+              },
+              "BS005": {
+                "mean": 0.8578921554431497,
+                "std": 0.10594511771987485,
+                "count": 1440
+              }
+            }
+          },
+          {
+            "categorical_variable": "base_station_id",
+            "numeric_variable": "failure_rate",
+            "f_statistic": 1.214193829631601,
+            "p_value": 0.30241462821074117,
+            "significant": false,
+            "group_statistics": {
+              "BS001": {
+                "mean": 0.1464078438634414,
+                "std": 0.10974933713563138,
+                "count": 1440
+              },
+              "BS002": {
+                "mean": 0.13957901905718562,
+                "std": 0.10448949050185441,
+                "count": 1440
+              },
+              "BS003": {
+                "mean": 0.14419254885577654,
+                "std": 0.108065228592575,
+                "count": 1440
+              },
+              "BS004": {
+                "mean": 0.1390803922164626,
+                "std": 0.1041749944790395,
+                "count": 1440
+              },
+              "BS005": {
+                "mean": 0.14210784455685044,
+                "std": 0.10594511771987487,
+                "count": 1440
+              }
+            }
+          },
+          {
+            "categorical_variable": "base_station_id",
+            "numeric_variable": "call_attempts",
+            "f_statistic": 0.07173099173582423,
+            "p_value": 0.9906404380110226,
+            "significant": false,
+            "group_statistics": {
+              "BS001": {
+                "mean": 41.196527777777774,
+                "std": 25.92609079488687,
+                "count": 1440
+              },
+              "BS002": {
+                "mean": 41.424305555555556,
+                "std": 26.41921286511916,
+                "count": 1440
+              },
+              "BS003": {
+                "mean": 41.47291666666667,
+                "std": 26.250053029497384,
+                "count": 1440
+              },
+              "BS004": {
+                "mean": 41.15069444444445,
+                "std": 26.31419050953369,
+                "count": 1440
+              },
+              "BS005": {
+                "mean": 41.581944444444446,
+                "std": 25.97302190658762,
+                "count": 1440
+              }
+            }
+          },
+          {
+            "categorical_variable": "base_station_id",
+            "numeric_variable": "active_users",
+            "f_statistic": 0.20193613110372127,
+            "p_value": 0.9373977749068307,
+            "significant": false,
+            "group_statistics": {
+              "BS001": {
+                "mean": 200.07916666666668,
+                "std": 121.1268581177208,
+                "count": 1440
+              },
+              "BS002": {
+                "mean": 200.35555555555555,
+                "std": 124.17353734607275,
+                "count": 1440
+              },
+              "BS003": {
+                "mean": 201.91736111111112,
+                "std": 125.90210180823242,
+                "count": 1440
+              },
+              "BS004": {
+                "mean": 198.1236111111111,
+                "std": 120.86192650919931,
+                "count": 1440
+              },
+              "BS005": {
+                "mean": 201.3388888888889,
+                "std": 122.04430387024702,
+                "count": 1440
+              }
+            }
+          },
+          {
+            "categorical_variable": "base_station_id",
+            "numeric_variable": "signal_strength_dbm",
+            "f_statistic": 0.2583233459089105,
+            "p_value": 0.9046956060093423,
+            "significant": false,
+            "group_statistics": {
+              "BS001": {
+                "mean": -95.28718662292695,
+                "std": 14.401242298467798,
+                "count": 1440
+              },
+              "BS002": {
+                "mean": -94.77033651498667,
+                "std": 14.398970970729103,
+                "count": 1440
+              },
+              "BS003": {
+                "mean": -95.12966586880894,
+                "std": 14.092565019785768,
+                "count": 1440
+              },
+              "BS004": {
+                "mean": -94.98767056358224,
+                "std": 14.462907118249055,
+                "count": 1440
+              },
+              "BS005": {
+                "mean": -94.98906454675028,
+                "std": 14.188806317592674,
+                "count": 1440
+              }
+            }
+          },
+          {
+            "categorical_variable": "base_station_id",
+            "numeric_variable": "signal_quality_db",
+            "f_statistic": 1.6573583994573744,
+            "p_value": 0.15694397084959053,
+            "significant": false,
+            "group_statistics": {
+              "BS001": {
+                "mean": 15.307022870673553,
+                "std": 8.62751981136311,
+                "count": 1440
+              },
+              "BS002": {
+                "mean": 15.323998460394812,
+                "std": 8.690947416396018,
+                "count": 1440
+              },
+              "BS003": {
+                "mean": 15.173325900421542,
+                "std": 8.638145456315707,
+                "count": 1440
+              },
+              "BS004": {
+                "mean": 14.916534491375998,
+                "std": 8.703142864525715,
+                "count": 1440
+              },
+              "BS005": {
+                "mean": 14.632834803721122,
+                "std": 8.688284844026368,
+                "count": 1440
+              }
+            }
+          },
+          {
+            "categorical_variable": "base_station_id",
+            "numeric_variable": "downlink_throughput_mbps",
+            "f_statistic": 1.531256407933356,
+            "p_value": 0.19012952807201827,
+            "significant": false,
+            "group_statistics": {
+              "BS001": {
+                "mean": 720.4582096789393,
+                "std": 389.9006228813571,
+                "count": 1440
+              },
+              "BS002": {
+                "mean": 714.9190395580547,
+                "std": 392.97217012943554,
+                "count": 1440
+              },
+              "BS003": {
+                "mean": 722.9670828284778,
+                "std": 392.9862804487479,
+                "count": 1440
+              },
+              "BS004": {
+                "mean": 691.4348715396022,
+                "std": 375.59449430821155,
+                "count": 1440
+              },
+              "BS005": {
+                "mean": 717.0846061611559,
+                "std": 387.3048387234306,
+                "count": 1440
+              }
+            }
+          },
+          {
+            "categorical_variable": "base_station_id",
+            "numeric_variable": "uplink_throughput_mbps",
+            "f_statistic": 0.41370213085272217,
+            "p_value": 0.7989022183267069,
+            "significant": false,
+            "group_statistics": {
+              "BS001": {
+                "mean": 90.38129951549695,
+                "std": 51.41852939023961,
+                "count": 1440
+              },
+              "BS002": {
+                "mean": 92.49737890900016,
+                "std": 51.89752044452598,
+                "count": 1440
+              },
+              "BS003": {
+                "mean": 91.37953797029388,
+                "std": 52.367792121887135,
+                "count": 1440
+              },
+              "BS004": {
+                "mean": 91.33538534325416,
+                "std": 51.83086392905808,
+                "count": 1440
+              },
+              "BS005": {
+                "mean": 92.42929668749963,
+                "std": 52.037294098271175,
+                "count": 1440
+              }
+            }
+          },
+          {
+            "categorical_variable": "base_station_id",
+            "numeric_variable": "latency_ms",
+            "f_statistic": 0.17077697862313662,
+            "p_value": 0.9533880193341313,
+            "significant": false,
+            "group_statistics": {
+              "BS001": {
+                "mean": 21.76536511042189,
+                "std": 10.837256246606284,
+                "count": 1440
+              },
+              "BS002": {
+                "mean": 21.742293210886903,
+                "std": 10.483093647715984,
+                "count": 1440
+              },
+              "BS003": {
+                "mean": 21.520775330903845,
+                "std": 10.618149585408856,
+                "count": 1440
+              },
+              "BS004": {
+                "mean": 21.793666307008678,
+                "std": 10.571672122443388,
+                "count": 1440
+              },
+              "BS005": {
+                "mean": 21.613721566586598,
+                "std": 10.623158725720208,
+                "count": 1440
+              }
+            }
+          },
+          {
+            "categorical_variable": "base_station_id",
+            "numeric_variable": "jitter_ms",
+            "f_statistic": 0.747564541461388,
+            "p_value": 0.5594914799495233,
+            "significant": false,
+            "group_statistics": {
+              "BS001": {
+                "mean": -0.10298190528756562,
+                "std": 2.868565871781453,
+                "count": 1440
+              },
+              "BS002": {
+                "mean": 0.040548961706426176,
+                "std": 2.8541152075223524,
+                "count": 1440
+              },
+              "BS003": {
+                "mean": -0.08361391897327355,
+                "std": 2.890732372598439,
+                "count": 1440
+              },
+              "BS004": {
+                "mean": 0.03252886991623231,
+                "std": 2.886611607289437,
+                "count": 1440
+              },
+              "BS005": {
+                "mean": -0.00957598679675377,
+                "std": 2.9557849281222324,
+                "count": 1440
+              }
+            }
+          },
+          {
+            "categorical_variable": "base_station_id",
+            "numeric_variable": "packet_loss_percent",
+            "f_statistic": 0.7120734240472186,
+            "p_value": 0.5835542321559111,
+            "significant": false,
+            "group_statistics": {
+              "BS001": {
+                "mean": 2.5627324160274556,
+                "std": 1.4466096469168428,
+                "count": 1440
+              },
+              "BS002": {
+                "mean": 2.4989134079808974,
+                "std": 1.4090324628905955,
+                "count": 1440
+              },
+              "BS003": {
+                "mean": 2.5181980724241173,
+                "std": 1.4242659300044176,
+                "count": 1440
+              },
+              "BS004": {
+                "mean": 2.4806801547118242,
+                "std": 1.429357080748753,
+                "count": 1440
+              },
+              "BS005": {
+                "mean": 2.495054592625967,
+                "std": 1.4429318458240963,
+                "count": 1440
+              }
+            }
+          },
+          {
+            "categorical_variable": "base_station_id",
+            "numeric_variable": "resource_block_usage_percent",
+            "f_statistic": 0.09390581901623833,
+            "p_value": 0.9844203034929446,
+            "significant": false,
+            "group_statistics": {
+              "BS001": {
+                "mean": 56.47222222222222,
+                "std": 25.594866918397095,
+                "count": 1440
+              },
+              "BS002": {
+                "mean": 56.074305555555554,
+                "std": 25.825644194444887,
+                "count": 1440
+              },
+              "BS003": {
+                "mean": 56.09722222222222,
+                "std": 25.351927237494962,
+                "count": 1440
+              },
+              "BS004": {
+                "mean": 56.14652777777778,
+                "std": 25.359048954777844,
+                "count": 1440
+              },
+              "BS005": {
+                "mean": 56.486805555555556,
+                "std": 25.595122956998015,
+                "count": 1440
+              }
+            }
+          },
+          {
+            "categorical_variable": "base_station_id",
+            "numeric_variable": "cpu_usage_percent",
+            "f_statistic": 0.21159195122696522,
+            "p_value": 0.9321165277105294,
+            "significant": false,
+            "group_statistics": {
+              "BS001": {
+                "mean": 56.544325467004356,
+                "std": 26.216443899006112,
+                "count": 1440
+              },
+              "BS002": {
+                "mean": 55.88127014202408,
+                "std": 26.513383834532313,
+                "count": 1440
+              },
+              "BS003": {
+                "mean": 55.941043051199365,
+                "std": 25.7864897765246,
+                "count": 1440
+              },
+              "BS004": {
+                "mean": 56.20877145098022,
+                "std": 26.16218952461407,
+                "count": 1440
+              },
+              "BS005": {
+                "mean": 56.546427520032175,
+                "std": 26.45610215356317,
+                "count": 1440
+              }
+            }
+          },
+          {
+            "categorical_variable": "base_station_id",
+            "numeric_variable": "memory_usage_percent",
+            "f_statistic": 0.10470305765237373,
+            "p_value": 0.9809040095724683,
+            "significant": false,
+            "group_statistics": {
+              "BS001": {
+                "mean": 55.98380333891028,
+                "std": 26.61609167643664,
+                "count": 1440
+              },
+              "BS002": {
+                "mean": 56.16257539229006,
+                "std": 27.566928346755887,
+                "count": 1440
+              },
+              "BS003": {
+                "mean": 56.30419844147245,
+                "std": 27.298091581505755,
+                "count": 1440
+              },
+              "BS004": {
+                "mean": 56.15352635382064,
+                "std": 26.48652593410578,
+                "count": 1440
+              },
+              "BS005": {
+                "mean": 56.59622143010734,
+                "std": 26.405866125747004,
+                "count": 1440
+              }
+            }
+          },
+          {
+            "categorical_variable": "base_station_id",
+            "numeric_variable": "temperature_celsius",
+            "f_statistic": 2.535778361349615,
+            "p_value": 0.03817605336118125,
+            "significant": true,
+            "group_statistics": {
+              "BS001": {
+                "mean": 35.3192974165127,
+                "std": 5.749773208886113,
+                "count": 1440
+              },
+              "BS002": {
+                "mean": 34.668927693361894,
+                "std": 5.776347278918597,
+                "count": 1440
+              },
+              "BS003": {
+                "mean": 35.13436774964472,
+                "std": 5.833347313393629,
+                "count": 1440
+              },
+              "BS004": {
+                "mean": 35.08865504252556,
+                "std": 5.723528030955938,
+                "count": 1440
+              },
+              "BS005": {
+                "mean": 34.95969827332502,
+                "std": 5.688619325804823,
+                "count": 1440
+              }
+            }
+          },
+          {
+            "categorical_variable": "base_station_name",
+            "numeric_variable": "success_rate",
+            "f_statistic": 1.2141938296316022,
+            "p_value": 0.30241462821074117,
+            "significant": false,
+            "group_statistics": {
+              "城东-商业区基站": {
+                "mean": 0.8535921561365587,
+                "std": 0.10974933713563137,
+                "count": 1440
+              },
+              "城西-住宅区基站": {
+                "mean": 0.8604209809428145,
+                "std": 0.1044894905018544,
+                "count": 1440
+              },
+              "城北-工业园区基站": {
+                "mean": 0.8558074511442235,
+                "std": 0.10806522859257499,
+                "count": 1440
+              },
+              "城南-大学城基站": {
+                "mean": 0.8609196077835375,
+                "std": 0.10417499447903948,
+                "count": 1440
+              },
+              "市中心-商业区基站": {
+                "mean": 0.8578921554431497,
+                "std": 0.10594511771987485,
+                "count": 1440
+              }
+            }
+          },
+          {
+            "categorical_variable": "base_station_name",
+            "numeric_variable": "failure_rate",
+            "f_statistic": 1.214193829631601,
+            "p_value": 0.30241462821074117,
+            "significant": false,
+            "group_statistics": {
+              "城东-商业区基站": {
+                "mean": 0.1464078438634414,
+                "std": 0.10974933713563138,
+                "count": 1440
+              },
+              "城西-住宅区基站": {
+                "mean": 0.13957901905718562,
+                "std": 0.10448949050185441,
+                "count": 1440
+              },
+              "城北-工业园区基站": {
+                "mean": 0.14419254885577654,
+                "std": 0.108065228592575,
+                "count": 1440
+              },
+              "城南-大学城基站": {
+                "mean": 0.1390803922164626,
+                "std": 0.1041749944790395,
+                "count": 1440
+              },
+              "市中心-商业区基站": {
+                "mean": 0.14210784455685044,
+                "std": 0.10594511771987487,
+                "count": 1440
+              }
+            }
+          },
+          {
+            "categorical_variable": "base_station_name",
+            "numeric_variable": "call_attempts",
+            "f_statistic": 0.07173099173582423,
+            "p_value": 0.9906404380110226,
+            "significant": false,
+            "group_statistics": {
+              "城东-商业区基站": {
+                "mean": 41.196527777777774,
+                "std": 25.92609079488687,
+                "count": 1440
+              },
+              "城西-住宅区基站": {
+                "mean": 41.424305555555556,
+                "std": 26.41921286511916,
+                "count": 1440
+              },
+              "城北-工业园区基站": {
+                "mean": 41.47291666666667,
+                "std": 26.250053029497384,
+                "count": 1440
+              },
+              "城南-大学城基站": {
+                "mean": 41.15069444444445,
+                "std": 26.31419050953369,
+                "count": 1440
+              },
+              "市中心-商业区基站": {
+                "mean": 41.581944444444446,
+                "std": 25.97302190658762,
+                "count": 1440
+              }
+            }
+          },
+          {
+            "categorical_variable": "base_station_name",
+            "numeric_variable": "active_users",
+            "f_statistic": 0.20193613110372127,
+            "p_value": 0.9373977749068307,
+            "significant": false,
+            "group_statistics": {
+              "城东-商业区基站": {
+                "mean": 200.07916666666668,
+                "std": 121.1268581177208,
+                "count": 1440
+              },
+              "城西-住宅区基站": {
+                "mean": 200.35555555555555,
+                "std": 124.17353734607275,
+                "count": 1440
+              },
+              "城北-工业园区基站": {
+                "mean": 201.91736111111112,
+                "std": 125.90210180823242,
+                "count": 1440
+              },
+              "城南-大学城基站": {
+                "mean": 198.1236111111111,
+                "std": 120.86192650919931,
+                "count": 1440
+              },
+              "市中心-商业区基站": {
+                "mean": 201.3388888888889,
+                "std": 122.04430387024702,
+                "count": 1440
+              }
+            }
+          },
+          {
+            "categorical_variable": "base_station_name",
+            "numeric_variable": "signal_strength_dbm",
+            "f_statistic": 0.2583233459089105,
+            "p_value": 0.9046956060093423,
+            "significant": false,
+            "group_statistics": {
+              "城东-商业区基站": {
+                "mean": -95.28718662292695,
+                "std": 14.401242298467798,
+                "count": 1440
+              },
+              "城西-住宅区基站": {
+                "mean": -94.77033651498667,
+                "std": 14.398970970729103,
+                "count": 1440
+              },
+              "城北-工业园区基站": {
+                "mean": -95.12966586880894,
+                "std": 14.092565019785768,
+                "count": 1440
+              },
+              "城南-大学城基站": {
+                "mean": -94.98767056358224,
+                "std": 14.462907118249055,
+                "count": 1440
+              },
+              "市中心-商业区基站": {
+                "mean": -94.98906454675028,
+                "std": 14.188806317592674,
+                "count": 1440
+              }
+            }
+          },
+          {
+            "categorical_variable": "base_station_name",
+            "numeric_variable": "signal_quality_db",
+            "f_statistic": 1.6573583994573744,
+            "p_value": 0.15694397084959053,
+            "significant": false,
+            "group_statistics": {
+              "城东-商业区基站": {
+                "mean": 15.307022870673553,
+                "std": 8.62751981136311,
+                "count": 1440
+              },
+              "城西-住宅区基站": {
+                "mean": 15.323998460394812,
+                "std": 8.690947416396018,
+                "count": 1440
+              },
+              "城北-工业园区基站": {
+                "mean": 15.173325900421542,
+                "std": 8.638145456315707,
+                "count": 1440
+              },
+              "城南-大学城基站": {
+                "mean": 14.916534491375998,
+                "std": 8.703142864525715,
+                "count": 1440
+              },
+              "市中心-商业区基站": {
+                "mean": 14.632834803721122,
+                "std": 8.688284844026368,
+                "count": 1440
+              }
+            }
+          },
+          {
+            "categorical_variable": "base_station_name",
+            "numeric_variable": "downlink_throughput_mbps",
+            "f_statistic": 1.531256407933356,
+            "p_value": 0.19012952807201827,
+            "significant": false,
+            "group_statistics": {
+              "城东-商业区基站": {
+                "mean": 720.4582096789393,
+                "std": 389.9006228813571,
+                "count": 1440
+              },
+              "城西-住宅区基站": {
+                "mean": 714.9190395580547,
+                "std": 392.97217012943554,
+                "count": 1440
+              },
+              "城北-工业园区基站": {
+                "mean": 722.9670828284778,
+                "std": 392.9862804487479,
+                "count": 1440
+              },
+              "城南-大学城基站": {
+                "mean": 691.4348715396022,
+                "std": 375.59449430821155,
+                "count": 1440
+              },
+              "市中心-商业区基站": {
+                "mean": 717.0846061611559,
+                "std": 387.3048387234306,
+                "count": 1440
+              }
+            }
+          },
+          {
+            "categorical_variable": "base_station_name",
+            "numeric_variable": "uplink_throughput_mbps",
+            "f_statistic": 0.41370213085272217,
+            "p_value": 0.7989022183267069,
+            "significant": false,
+            "group_statistics": {
+              "城东-商业区基站": {
+                "mean": 90.38129951549695,
+                "std": 51.41852939023961,
+                "count": 1440
+              },
+              "城西-住宅区基站": {
+                "mean": 92.49737890900016,
+                "std": 51.89752044452598,
+                "count": 1440
+              },
+              "城北-工业园区基站": {
+                "mean": 91.37953797029388,
+                "std": 52.367792121887135,
+                "count": 1440
+              },
+              "城南-大学城基站": {
+                "mean": 91.33538534325416,
+                "std": 51.83086392905808,
+                "count": 1440
+              },
+              "市中心-商业区基站": {
+                "mean": 92.42929668749963,
+                "std": 52.037294098271175,
+                "count": 1440
+              }
+            }
+          },
+          {
+            "categorical_variable": "base_station_name",
+            "numeric_variable": "latency_ms",
+            "f_statistic": 0.17077697862313662,
+            "p_value": 0.9533880193341313,
+            "significant": false,
+            "group_statistics": {
+              "城东-商业区基站": {
+                "mean": 21.76536511042189,
+                "std": 10.837256246606284,
+                "count": 1440
+              },
+              "城西-住宅区基站": {
+                "mean": 21.742293210886903,
+                "std": 10.483093647715984,
+                "count": 1440
+              },
+              "城北-工业园区基站": {
+                "mean": 21.520775330903845,
+                "std": 10.618149585408856,
+                "count": 1440
+              },
+              "城南-大学城基站": {
+                "mean": 21.793666307008678,
+                "std": 10.571672122443388,
+                "count": 1440
+              },
+              "市中心-商业区基站": {
+                "mean": 21.613721566586598,
+                "std": 10.623158725720208,
+                "count": 1440
+              }
+            }
+          },
+          {
+            "categorical_variable": "base_station_name",
+            "numeric_variable": "jitter_ms",
+            "f_statistic": 0.747564541461388,
+            "p_value": 0.5594914799495233,
+            "significant": false,
+            "group_statistics": {
+              "城东-商业区基站": {
+                "mean": -0.10298190528756562,
+                "std": 2.868565871781453,
+                "count": 1440
+              },
+              "城西-住宅区基站": {
+                "mean": 0.040548961706426176,
+                "std": 2.8541152075223524,
+                "count": 1440
+              },
+              "城北-工业园区基站": {
+                "mean": -0.08361391897327355,
+                "std": 2.890732372598439,
+                "count": 1440
+              },
+              "城南-大学城基站": {
+                "mean": 0.03252886991623231,
+                "std": 2.886611607289437,
+                "count": 1440
+              },
+              "市中心-商业区基站": {
+                "mean": -0.00957598679675377,
+                "std": 2.9557849281222324,
+                "count": 1440
+              }
+            }
+          },
+          {
+            "categorical_variable": "base_station_name",
+            "numeric_variable": "packet_loss_percent",
+            "f_statistic": 0.7120734240472186,
+            "p_value": 0.5835542321559111,
+            "significant": false,
+            "group_statistics": {
+              "城东-商业区基站": {
+                "mean": 2.5627324160274556,
+                "std": 1.4466096469168428,
+                "count": 1440
+              },
+              "城西-住宅区基站": {
+                "mean": 2.4989134079808974,
+                "std": 1.4090324628905955,
+                "count": 1440
+              },
+              "城北-工业园区基站": {
+                "mean": 2.5181980724241173,
+                "std": 1.4242659300044176,
+                "count": 1440
+              },
+              "城南-大学城基站": {
+                "mean": 2.4806801547118242,
+                "std": 1.429357080748753,
+                "count": 1440
+              },
+              "市中心-商业区基站": {
+                "mean": 2.495054592625967,
+                "std": 1.4429318458240963,
+                "count": 1440
+              }
+            }
+          },
+          {
+            "categorical_variable": "base_station_name",
+            "numeric_variable": "resource_block_usage_percent",
+            "f_statistic": 0.09390581901623833,
+            "p_value": 0.9844203034929446,
+            "significant": false,
+            "group_statistics": {
+              "城东-商业区基站": {
+                "mean": 56.47222222222222,
+                "std": 25.594866918397095,
+                "count": 1440
+              },
+              "城西-住宅区基站": {
+                "mean": 56.074305555555554,
+                "std": 25.825644194444887,
+                "count": 1440
+              },
+              "城北-工业园区基站": {
+                "mean": 56.09722222222222,
+                "std": 25.351927237494962,
+                "count": 1440
+              },
+              "城南-大学城基站": {
+                "mean": 56.14652777777778,
+                "std": 25.359048954777844,
+                "count": 1440
+              },
+              "市中心-商业区基站": {
+                "mean": 56.486805555555556,
+                "std": 25.595122956998015,
+                "count": 1440
+              }
+            }
+          },
+          {
+            "categorical_variable": "base_station_name",
+            "numeric_variable": "cpu_usage_percent",
+            "f_statistic": 0.21159195122696522,
+            "p_value": 0.9321165277105294,
+            "significant": false,
+            "group_statistics": {
+              "城东-商业区基站": {
+                "mean": 56.544325467004356,
+                "std": 26.216443899006112,
+                "count": 1440
+              },
+              "城西-住宅区基站": {
+                "mean": 55.88127014202408,
+                "std": 26.513383834532313,
+                "count": 1440
+              },
+              "城北-工业园区基站": {
+                "mean": 55.941043051199365,
+                "std": 25.7864897765246,
+                "count": 1440
+              },
+              "城南-大学城基站": {
+                "mean": 56.20877145098022,
+                "std": 26.16218952461407,
+                "count": 1440
+              },
+              "市中心-商业区基站": {
+                "mean": 56.546427520032175,
+                "std": 26.45610215356317,
+                "count": 1440
+              }
+            }
+          },
+          {
+            "categorical_variable": "base_station_name",
+            "numeric_variable": "memory_usage_percent",
+            "f_statistic": 0.10470305765237373,
+            "p_value": 0.9809040095724683,
+            "significant": false,
+            "group_statistics": {
+              "城东-商业区基站": {
+                "mean": 55.98380333891028,
+                "std": 26.61609167643664,
+                "count": 1440
+              },
+              "城西-住宅区基站": {
+                "mean": 56.16257539229006,
+                "std": 27.566928346755887,
+                "count": 1440
+              },
+              "城北-工业园区基站": {
+                "mean": 56.30419844147245,
+                "std": 27.298091581505755,
+                "count": 1440
+              },
+              "城南-大学城基站": {
+                "mean": 56.15352635382064,
+                "std": 26.48652593410578,
+                "count": 1440
+              },
+              "市中心-商业区基站": {
+                "mean": 56.59622143010734,
+                "std": 26.405866125747004,
+                "count": 1440
+              }
+            }
+          },
+          {
+            "categorical_variable": "base_station_name",
+            "numeric_variable": "temperature_celsius",
+            "f_statistic": 2.535778361349615,
+            "p_value": 0.03817605336118125,
+            "significant": true,
+            "group_statistics": {
+              "城东-商业区基站": {
+                "mean": 35.3192974165127,
+                "std": 5.749773208886113,
+                "count": 1440
+              },
+              "城西-住宅区基站": {
+                "mean": 34.668927693361894,
+                "std": 5.776347278918597,
+                "count": 1440
+              },
+              "城北-工业园区基站": {
+                "mean": 35.13436774964472,
+                "std": 5.833347313393629,
+                "count": 1440
+              },
+              "城南-大学城基站": {
+                "mean": 35.08865504252556,
+                "std": 5.723528030955938,
+                "count": 1440
+              },
+              "市中心-商业区基站": {
+                "mean": 34.95969827332502,
+                "std": 5.688619325804823,
+                "count": 1440
+              }
+            }
+          },
+          {
+            "categorical_variable": "signal_type",
+            "numeric_variable": "success_rate",
+            "f_statistic": 0.9200475244447653,
+            "p_value": 0.536003392892642,
+            "significant": false,
+            "group_statistics": {
+              "RRC_CONNECTION_RELEASE": {
+                "mean": 0.8606304559608524,
+                "std": 0.10719047425530948,
+                "count": 464
+              },
+              "SERVICE_REQUEST": {
+                "mean": 0.8553959066945382,
+                "std": 0.11050540893997403,
+                "count": 491
+              },
+              "DETACH_ACCEPT": {
+                "mean": 0.8651539916753879,
+                "std": 0.10438474204935588,
+                "count": 465
+              },
+              "HANDOVER_REQUEST": {
+                "mean": 0.8545829562099034,
+                "std": 0.10339751807237126,
+                "count": 494
+              },
+              "PAGING": {
+                "mean": 0.8610407933559258,
+                "std": 0.1083199203996032,
+                "count": 523
+              },
+              "HANDOVER_COMMAND": {
+                "mean": 0.8492445977342965,
+                "std": 0.10924551851770259,
+                "count": 486
+              },
+              "RRC_CONNECTION_SETUP_COMPLETE": {
+                "mean": 0.8620953639854172,
+                "std": 0.10705741413263467,
+                "count": 477
+              },
+              "ATTACH_COMPLETE": {
+                "mean": 0.8633351100405773,
+                "std": 0.0970650843454771,
+                "count": 477
+              },
+              "ATTACH_REQUEST": {
+                "mean": 0.8506781070084612,
+                "std": 0.11622931599310983,
+                "count": 502
+              },
+              "ATTACH_ACCEPT": {
+                "mean": 0.8531971863523864,
+                "std": 0.10841747080192184,
+                "count": 440
+              },
+              "RRC_CONNECTION_REQUEST": {
+                "mean": 0.8552075945879822,
+                "std": 0.10403231061844667,
+                "count": 471
+              },
+              "HANDOVER_COMPLETE": {
+                "mean": 0.8583896470205641,
+                "std": 0.10058000630832137,
+                "count": 491
+              },
+              "DETACH_REQUEST": {
+                "mean": 0.861523389873672,
+                "std": 0.10405575897479677,
+                "count": 483
+              },
+              "RRC_CONNECTION_SETUP": {
+                "mean": 0.8575198558237118,
+                "std": 0.11164899515380501,
+                "count": 461
+              },
+              "SERVICE_ACCEPT": {
+                "mean": 0.8581027705459808,
+                "std": 0.10390842241354763,
+                "count": 475
+              }
+            }
+          },
+          {
+            "categorical_variable": "signal_type",
+            "numeric_variable": "failure_rate",
+            "f_statistic": 0.9200475244447652,
+            "p_value": 0.536003392892642,
+            "significant": false,
+            "group_statistics": {
+              "RRC_CONNECTION_RELEASE": {
+                "mean": 0.13936954403914759,
+                "std": 0.10719047425530949,
+                "count": 464
+              },
+              "SERVICE_REQUEST": {
+                "mean": 0.14460409330546178,
+                "std": 0.11050540893997404,
+                "count": 491
+              },
+              "DETACH_ACCEPT": {
+                "mean": 0.13484600832461216,
+                "std": 0.1043847420493559,
+                "count": 465
+              },
+              "HANDOVER_REQUEST": {
+                "mean": 0.14541704379009646,
+                "std": 0.10339751807237127,
+                "count": 494
+              },
+              "PAGING": {
+                "mean": 0.13895920664407418,
+                "std": 0.10831992039960323,
+                "count": 523
+              },
+              "HANDOVER_COMMAND": {
+                "mean": 0.15075540226570344,
+                "std": 0.10924551851770259,
+                "count": 486
+              },
+              "RRC_CONNECTION_SETUP_COMPLETE": {
+                "mean": 0.13790463601458278,
+                "std": 0.10705741413263468,
+                "count": 477
+              },
+              "ATTACH_COMPLETE": {
+                "mean": 0.13666488995942278,
+                "std": 0.0970650843454771,
+                "count": 477
+              },
+              "ATTACH_REQUEST": {
+                "mean": 0.1493218929915387,
+                "std": 0.11622931599310984,
+                "count": 502
+              },
+              "ATTACH_ACCEPT": {
+                "mean": 0.1468028136476135,
+                "std": 0.10841747080192185,
+                "count": 440
+              },
+              "RRC_CONNECTION_REQUEST": {
+                "mean": 0.14479240541201768,
+                "std": 0.10403231061844669,
+                "count": 471
+              },
+              "HANDOVER_COMPLETE": {
+                "mean": 0.14161035297943583,
+                "std": 0.10058000630832138,
+                "count": 491
+              },
+              "DETACH_REQUEST": {
+                "mean": 0.13847661012632803,
+                "std": 0.10405575897479678,
+                "count": 483
+              },
+              "RRC_CONNECTION_SETUP": {
+                "mean": 0.14248014417628815,
+                "std": 0.11164899515380504,
+                "count": 461
+              },
+              "SERVICE_ACCEPT": {
+                "mean": 0.14189722945401914,
+                "std": 0.10390842241354763,
+                "count": 475
+              }
+            }
+          },
+          {
+            "categorical_variable": "signal_type",
+            "numeric_variable": "call_attempts",
+            "f_statistic": 0.45891493393690364,
+            "p_value": 0.9545461798408902,
+            "significant": false,
+            "group_statistics": {
+              "RRC_CONNECTION_RELEASE": {
+                "mean": 41.956896551724135,
+                "std": 26.879908027643776,
+                "count": 464
+              },
+              "SERVICE_REQUEST": {
+                "mean": 41.509164969450104,
+                "std": 26.68702615151237,
+                "count": 491
+              },
+              "DETACH_ACCEPT": {
+                "mean": 42.23225806451613,
+                "std": 26.29847396783143,
+                "count": 465
+              },
+              "HANDOVER_REQUEST": {
+                "mean": 41.36842105263158,
+                "std": 25.930588708465304,
+                "count": 494
+              },
+              "PAGING": {
+                "mean": 41.01338432122371,
+                "std": 26.017195400966855,
+                "count": 523
+              },
+              "HANDOVER_COMMAND": {
+                "mean": 40.08641975308642,
+                "std": 25.403156325132397,
+                "count": 486
+              },
+              "RRC_CONNECTION_SETUP_COMPLETE": {
+                "mean": 40.932914046121596,
+                "std": 26.376071934466975,
+                "count": 477
+              },
+              "ATTACH_COMPLETE": {
+                "mean": 43.102725366876314,
+                "std": 26.71110485938146,
+                "count": 477
+              },
+              "ATTACH_REQUEST": {
+                "mean": 41.276892430278885,
+                "std": 25.957992779221783,
+                "count": 502
+              },
+              "ATTACH_ACCEPT": {
+                "mean": 41.90681818181818,
+                "std": 25.61406128748131,
+                "count": 440
+              },
+              "RRC_CONNECTION_REQUEST": {
+                "mean": 40.13588110403397,
+                "std": 26.310959758703817,
+                "count": 471
+              },
+              "HANDOVER_COMPLETE": {
+                "mean": 42.16293279022403,
+                "std": 26.37666583874738,
+                "count": 491
+              },
+              "DETACH_REQUEST": {
+                "mean": 40.975155279503106,
+                "std": 25.92695219918664,
+                "count": 483
+              },
+              "RRC_CONNECTION_SETUP": {
+                "mean": 40.613882863340564,
+                "std": 25.252949511315144,
+                "count": 461
+              },
+              "SERVICE_ACCEPT": {
+                "mean": 41.28421052631579,
+                "std": 26.936659238406857,
+                "count": 475
+              }
+            }
+          },
+          {
+            "categorical_variable": "signal_type",
+            "numeric_variable": "active_users",
+            "f_statistic": 0.33841103377304205,
+            "p_value": 0.9891104579732887,
+            "significant": false,
+            "group_statistics": {
+              "RRC_CONNECTION_RELEASE": {
+                "mean": 200.28879310344828,
+                "std": 117.69924792744906,
+                "count": 464
+              },
+              "SERVICE_REQUEST": {
+                "mean": 200.72505091649694,
+                "std": 123.82914399196626,
+                "count": 491
+              },
+              "DETACH_ACCEPT": {
+                "mean": 206.18494623655914,
+                "std": 119.77801031764733,
+                "count": 465
+              },
+              "HANDOVER_REQUEST": {
+                "mean": 198.085020242915,
+                "std": 122.03975035883452,
+                "count": 494
+              },
+              "PAGING": {
+                "mean": 204.98087954110898,
+                "std": 126.29135117193941,
+                "count": 523
+              },
+              "HANDOVER_COMMAND": {
+                "mean": 193.4897119341564,
+                "std": 120.43924291585219,
+                "count": 486
+              },
+              "RRC_CONNECTION_SETUP_COMPLETE": {
+                "mean": 203.24318658280922,
+                "std": 128.1689387897732,
+                "count": 477
+              },
+              "ATTACH_COMPLETE": {
+                "mean": 197.51991614255766,
+                "std": 119.83210471739764,
+                "count": 477
+              },
+              "ATTACH_REQUEST": {
+                "mean": 201.0597609561753,
+                "std": 122.52006399842547,
+                "count": 502
+              },
+              "ATTACH_ACCEPT": {
+                "mean": 197.7340909090909,
+                "std": 120.61763876188613,
+                "count": 440
+              },
+              "RRC_CONNECTION_REQUEST": {
+                "mean": 198.16348195329087,
+                "std": 122.3533982685001,
+                "count": 471
+              },
+              "HANDOVER_COMPLETE": {
+                "mean": 202.0468431771894,
+                "std": 123.3383261569485,
+                "count": 491
+              },
+              "DETACH_REQUEST": {
+                "mean": 198.36024844720498,
+                "std": 122.51939736991999,
+                "count": 483
+              },
+              "RRC_CONNECTION_SETUP": {
+                "mean": 202.59652928416486,
+                "std": 124.95660946423567,
+                "count": 461
+              },
+              "SERVICE_ACCEPT": {
+                "mean": 200.6484210526316,
+                "std": 127.84738632658721,
+                "count": 475
+              }
+            }
+          },
+          {
+            "categorical_variable": "signal_type",
+            "numeric_variable": "signal_strength_dbm",
+            "f_statistic": 1.0982136462123055,
+            "p_value": 0.3532477261600157,
+            "significant": false,
+            "group_statistics": {
+              "RRC_CONNECTION_RELEASE": {
+                "mean": -95.41324794052971,
+                "std": 14.474038995136254,
+                "count": 464
+              },
+              "SERVICE_REQUEST": {
+                "mean": -94.73369384589083,
+                "std": 14.107082952734046,
+                "count": 491
+              },
+              "DETACH_ACCEPT": {
+                "mean": -95.86058740611567,
+                "std": 14.078144257928209,
+                "count": 465
+              },
+              "HANDOVER_REQUEST": {
+                "mean": -94.81513072726953,
+                "std": 14.583981174661556,
+                "count": 494
+              },
+              "PAGING": {
+                "mean": -93.54374357275063,
+                "std": 14.639744830289565,
+                "count": 523
+              },
+              "HANDOVER_COMMAND": {
+                "mean": -95.657113089466,
+                "std": 14.374401023448653,
+                "count": 486
+              },
+              "RRC_CONNECTION_SETUP_COMPLETE": {
+                "mean": -94.73649179748558,
+                "std": 14.158402076403748,
+                "count": 477
+              },
+              "ATTACH_COMPLETE": {
+                "mean": -94.6414710015767,
+                "std": 14.495573439857106,
+                "count": 477
+              },
+              "ATTACH_REQUEST": {
+                "mean": -95.54113706831677,
+                "std": 14.513840453146484,
+                "count": 502
+              },
+              "ATTACH_ACCEPT": {
+                "mean": -93.86652917179302,
+                "std": 14.561617567790487,
+                "count": 440
+              },
+              "RRC_CONNECTION_REQUEST": {
+                "mean": -95.2087184658996,
+                "std": 14.449472563303669,
+                "count": 471
+              },
+              "HANDOVER_COMPLETE": {
+                "mean": -95.62061750527232,
+                "std": 14.012357855817902,
+                "count": 491
+              },
+              "DETACH_REQUEST": {
+                "mean": -95.24517181147955,
+                "std": 14.222816469369075,
+                "count": 483
+              },
+              "RRC_CONNECTION_SETUP": {
+                "mean": -95.81423503204144,
+                "std": 13.882519293397385,
+                "count": 461
+              },
+              "SERVICE_ACCEPT": {
+                "mean": -94.86411706609974,
+                "std": 13.95994047198133,
+                "count": 475
+              }
+            }
+          },
+          {
+            "categorical_variable": "signal_type",
+            "numeric_variable": "signal_quality_db",
+            "f_statistic": 1.427610262763807,
+            "p_value": 0.13091711005690954,
+            "significant": false,
+            "group_statistics": {
+              "RRC_CONNECTION_RELEASE": {
+                "mean": 14.78024479723733,
+                "std": 8.373920360362447,
+                "count": 464
+              },
+              "SERVICE_REQUEST": {
+                "mean": 14.290596633612923,
+                "std": 8.729381983593443,
+                "count": 491
+              },
+              "DETACH_ACCEPT": {
+                "mean": 15.517774621244941,
+                "std": 8.646801354291727,
+                "count": 465
+              },
+              "HANDOVER_REQUEST": {
+                "mean": 15.20516339757395,
+                "std": 8.951458033335715,
+                "count": 494
+              },
+              "PAGING": {
+                "mean": 14.601188390341633,
+                "std": 8.829955711422356,
+                "count": 523
+              },
+              "HANDOVER_COMMAND": {
+                "mean": 15.192161264184938,
+                "std": 8.599958029234825,
+                "count": 486
+              },
+              "RRC_CONNECTION_SETUP_COMPLETE": {
+                "mean": 15.953900478851377,
+                "std": 8.46180726694967,
+                "count": 477
+              },
+              "ATTACH_COMPLETE": {
+                "mean": 15.4975623729664,
+                "std": 8.643235373012658,
+                "count": 477
+              },
+              "ATTACH_REQUEST": {
+                "mean": 14.792695818564408,
+                "std": 8.712165733101925,
+                "count": 502
+              },
+              "ATTACH_ACCEPT": {
+                "mean": 15.823437053443762,
+                "std": 8.455844665436484,
+                "count": 440
+              },
+              "RRC_CONNECTION_REQUEST": {
+                "mean": 14.618890751678547,
+                "std": 9.108732387157398,
+                "count": 471
+              },
+              "HANDOVER_COMPLETE": {
+                "mean": 15.217902164411372,
+                "std": 8.475843964782216,
+                "count": 491
+              },
+              "DETACH_REQUEST": {
+                "mean": 14.979524084089405,
+                "std": 8.8028419111959,
+                "count": 483
+              },
+              "RRC_CONNECTION_SETUP": {
+                "mean": 15.059553693203684,
+                "std": 8.576780359624522,
+                "count": 461
+              },
+              "SERVICE_ACCEPT": {
+                "mean": 14.656972986820922,
+                "std": 8.566000632785862,
+                "count": 475
+              }
+            }
+          },
+          {
+            "categorical_variable": "signal_type",
+            "numeric_variable": "downlink_throughput_mbps",
+            "f_statistic": 0.8736697229007515,
+            "p_value": 0.587743260114334,
+            "significant": false,
+            "group_statistics": {
+              "RRC_CONNECTION_RELEASE": {
+                "mean": 683.8251707210231,
+                "std": 371.42839391722333,
+                "count": 464
+              },
+              "SERVICE_REQUEST": {
+                "mean": 713.552252662369,
+                "std": 389.49483041186255,
+                "count": 491
+              },
+              "DETACH_ACCEPT": {
+                "mean": 729.4827373232988,
+                "std": 398.7475644117738,
+                "count": 465
+              },
+              "HANDOVER_REQUEST": {
+                "mean": 678.7678583416721,
+                "std": 382.4621543358928,
+                "count": 494
+              },
+              "PAGING": {
+                "mean": 731.6400253458888,
+                "std": 398.4368300476534,
+                "count": 523
+              },
+              "HANDOVER_COMMAND": {
+                "mean": 716.5762535792185,
+                "std": 385.42682947004266,
+                "count": 486
+              },
+              "RRC_CONNECTION_SETUP_COMPLETE": {
+                "mean": 725.6326559972706,
+                "std": 384.91671208479266,
+                "count": 477
+              },
+              "ATTACH_COMPLETE": {
+                "mean": 707.6992197761901,
+                "std": 393.81445636775885,
+                "count": 477
+              },
+              "ATTACH_REQUEST": {
+                "mean": 733.3499303916929,
+                "std": 395.0253765467118,
+                "count": 502
+              },
+              "ATTACH_ACCEPT": {
+                "mean": 728.3268716947938,
+                "std": 376.81744438117545,
+                "count": 440
+              },
+              "RRC_CONNECTION_REQUEST": {
+                "mean": 703.412830044856,
+                "std": 393.9466297175225,
+                "count": 471
+              },
+              "HANDOVER_COMPLETE": {
+                "mean": 719.7574309388914,
+                "std": 389.0186334007863,
+                "count": 491
+              },
+              "DETACH_REQUEST": {
+                "mean": 718.076638744682,
+                "std": 379.54155125658394,
+                "count": 483
+              },
+              "RRC_CONNECTION_SETUP": {
+                "mean": 701.8984246575375,
+                "std": 377.50757328149564,
+                "count": 461
+              },
+              "SERVICE_ACCEPT": {
+                "mean": 706.9282910544501,
+                "std": 398.29310398129405,
+                "count": 475
+              }
+            }
+          },
+          {
+            "categorical_variable": "signal_type",
+            "numeric_variable": "uplink_throughput_mbps",
+            "f_statistic": 0.6002664529289363,
+            "p_value": 0.8671304718752422,
+            "significant": false,
+            "group_statistics": {
+              "RRC_CONNECTION_RELEASE": {
+                "mean": 93.2955689821977,
+                "std": 52.8440324651884,
+                "count": 464
+              },
+              "SERVICE_REQUEST": {
+                "mean": 93.39847555302403,
+                "std": 51.85710821489888,
+                "count": 491
+              },
+              "DETACH_ACCEPT": {
+                "mean": 89.77726133514746,
+                "std": 52.457229815915554,
+                "count": 465
+              },
+              "HANDOVER_REQUEST": {
+                "mean": 91.27178251763259,
+                "std": 51.033772858572696,
+                "count": 494
+              },
+              "PAGING": {
+                "mean": 93.49724952614642,
+                "std": 50.45308940208717,
+                "count": 523
+              },
+              "HANDOVER_COMMAND": {
+                "mean": 91.11337267397228,
+                "std": 53.299285479656035,
+                "count": 486
+              },
+              "RRC_CONNECTION_SETUP_COMPLETE": {
+                "mean": 94.51506897917471,
+                "std": 51.562411602938646,
+                "count": 477
+              },
+              "ATTACH_COMPLETE": {
+                "mean": 91.49560392870067,
+                "std": 52.8159562002911,
+                "count": 477
+              },
+              "ATTACH_REQUEST": {
+                "mean": 89.80182480095816,
+                "std": 51.36672083299489,
+                "count": 502
+              },
+              "ATTACH_ACCEPT": {
+                "mean": 90.07827893457434,
+                "std": 52.06579599816473,
+                "count": 440
+              },
+              "RRC_CONNECTION_REQUEST": {
+                "mean": 93.65963565375425,
+                "std": 54.164245104492345,
+                "count": 471
+              },
+              "HANDOVER_COMPLETE": {
+                "mean": 89.53790454515102,
+                "std": 51.96098681689123,
+                "count": 491
+              },
+              "DETACH_REQUEST": {
+                "mean": 89.38706205786187,
+                "std": 52.02100395006544,
+                "count": 483
+              },
+              "RRC_CONNECTION_SETUP": {
+                "mean": 89.74440871473143,
+                "std": 49.01929675195534,
+                "count": 461
+              },
+              "SERVICE_ACCEPT": {
+                "mean": 93.31654283758864,
+                "std": 51.88293530575256,
+                "count": 475
+              }
+            }
+          },
+          {
+            "categorical_variable": "signal_type",
+            "numeric_variable": "latency_ms",
+            "f_statistic": 1.0862394380538867,
+            "p_value": 0.3643557424357668,
+            "significant": false,
+            "group_statistics": {
+              "RRC_CONNECTION_RELEASE": {
+                "mean": 21.683525080439985,
+                "std": 10.654284414796996,
+                "count": 464
+              },
+              "SERVICE_REQUEST": {
+                "mean": 21.879465051011206,
+                "std": 10.77564155175976,
+                "count": 491
+              },
+              "DETACH_ACCEPT": {
+                "mean": 21.627935105278002,
+                "std": 10.40180255360849,
+                "count": 465
+              },
+              "HANDOVER_REQUEST": {
+                "mean": 22.60415314592924,
+                "std": 11.043326416210212,
+                "count": 494
+              },
+              "PAGING": {
+                "mean": 22.141445939994664,
+                "std": 10.431864859091926,
+                "count": 523
+              },
+              "HANDOVER_COMMAND": {
+                "mean": 20.499735417918327,
+                "std": 10.346625957411423,
+                "count": 486
+              },
+              "RRC_CONNECTION_SETUP_COMPLETE": {
+                "mean": 21.054799475698793,
+                "std": 10.320158281611036,
+                "count": 477
+              },
+              "ATTACH_COMPLETE": {
+                "mean": 21.942285154739036,
+                "std": 10.94516413978557,
+                "count": 477
+              },
+              "ATTACH_REQUEST": {
+                "mean": 21.570454446513878,
+                "std": 10.485228326510777,
+                "count": 502
+              },
+              "ATTACH_ACCEPT": {
+                "mean": 21.796952170980713,
+                "std": 10.594061690969491,
+                "count": 440
+              },
+              "RRC_CONNECTION_REQUEST": {
+                "mean": 21.496415260213954,
+                "std": 10.27092040779111,
+                "count": 471
+              },
+              "HANDOVER_COMPLETE": {
+                "mean": 22.132566315267976,
+                "std": 10.792017302561947,
+                "count": 491
+              },
+              "DETACH_REQUEST": {
+                "mean": 21.35828037851495,
+                "std": 10.287047940001251,
+                "count": 483
+              },
+              "RRC_CONNECTION_SETUP": {
+                "mean": 22.038342718523626,
+                "std": 11.157879788375373,
+                "count": 461
+              },
+              "SERVICE_ACCEPT": {
+                "mean": 21.43380501369286,
+                "std": 10.816602608280554,
+                "count": 475
+              }
+            }
+          },
+          {
+            "categorical_variable": "signal_type",
+            "numeric_variable": "jitter_ms",
+            "f_statistic": 0.40298762708188707,
+            "p_value": 0.9746759898474723,
+            "significant": false,
+            "group_statistics": {
+              "RRC_CONNECTION_RELEASE": {
+                "mean": -0.16124618836240906,
+                "std": 2.9566225789926497,
+                "count": 464
+              },
+              "SERVICE_REQUEST": {
+                "mean": -0.05050046500991307,
+                "std": 2.9876656351460276,
+                "count": 491
+              },
+              "DETACH_ACCEPT": {
+                "mean": -0.1240598066055947,
+                "std": 2.8392658823872083,
+                "count": 465
+              },
+              "HANDOVER_REQUEST": {
+                "mean": -0.020922946525620763,
+                "std": 2.884612752459222,
+                "count": 494
+              },
+              "PAGING": {
+                "mean": -0.024166436891358712,
+                "std": 2.8091637668772456,
+                "count": 523
+              },
+              "HANDOVER_COMMAND": {
+                "mean": -0.12625839456797674,
+                "std": 2.978162499867902,
+                "count": 486
+              },
+              "RRC_CONNECTION_SETUP_COMPLETE": {
+                "mean": 0.027034332072009344,
+                "std": 2.8172614278132833,
+                "count": 477
+              },
+              "ATTACH_COMPLETE": {
+                "mean": -0.042687416251411286,
+                "std": 2.9198268804630327,
+                "count": 477
+              },
+              "ATTACH_REQUEST": {
+                "mean": -0.01679658841199101,
+                "std": 2.875949544097362,
+                "count": 502
+              },
+              "ATTACH_ACCEPT": {
+                "mean": -0.06094869388800961,
+                "std": 2.9147942119179486,
+                "count": 440
+              },
+              "RRC_CONNECTION_REQUEST": {
+                "mean": -0.07457134461295689,
+                "std": 2.919728381224671,
+                "count": 471
+              },
+              "HANDOVER_COMPLETE": {
+                "mean": 0.013358924583009708,
+                "std": 2.914238986445629,
+                "count": 491
+              },
+              "DETACH_REQUEST": {
+                "mean": 0.02819668725894004,
+                "std": 2.847323842515384,
+                "count": 483
+              },
+              "RRC_CONNECTION_SETUP": {
+                "mean": 0.1607579413444499,
+                "std": 2.855160487805411,
+                "count": 461
+              },
+              "SERVICE_ACCEPT": {
+                "mean": 0.10091430637241887,
+                "std": 2.871338388029059,
+                "count": 475
+              }
+            }
+          },
+          {
+            "categorical_variable": "signal_type",
+            "numeric_variable": "packet_loss_percent",
+            "f_statistic": 1.2268835060339496,
+            "p_value": 0.24722173522863838,
+            "significant": false,
+            "group_statistics": {
+              "RRC_CONNECTION_RELEASE": {
+                "mean": 2.5677988297621392,
+                "std": 1.432212265310418,
+                "count": 464
+              },
+              "SERVICE_REQUEST": {
+                "mean": 2.6309098377344524,
+                "std": 1.478201954823671,
+                "count": 491
+              },
+              "DETACH_ACCEPT": {
+                "mean": 2.465371759057153,
+                "std": 1.4131390690936032,
+                "count": 465
+              },
+              "HANDOVER_REQUEST": {
+                "mean": 2.5794351240233766,
+                "std": 1.4143877259604074,
+                "count": 494
+              },
+              "PAGING": {
+                "mean": 2.519251265803252,
+                "std": 1.4295091726829074,
+                "count": 523
+              },
+              "HANDOVER_COMMAND": {
+                "mean": 2.4728330959852443,
+                "std": 1.4674104518524405,
+                "count": 486
+              },
+              "RRC_CONNECTION_SETUP_COMPLETE": {
+                "mean": 2.488155235936822,
+                "std": 1.443675129038796,
+                "count": 477
+              },
+              "ATTACH_COMPLETE": {
+                "mean": 2.4461601112659572,
+                "std": 1.3717911294881688,
+                "count": 477
+              },
+              "ATTACH_REQUEST": {
+                "mean": 2.4898347348744947,
+                "std": 1.3744217773703638,
+                "count": 502
+              },
+              "ATTACH_ACCEPT": {
+                "mean": 2.4142940211014037,
+                "std": 1.4721758568824639,
+                "count": 440
+              },
+              "RRC_CONNECTION_REQUEST": {
+                "mean": 2.499283351523952,
+                "std": 1.4191274044889188,
+                "count": 471
+              },
+              "HANDOVER_COMPLETE": {
+                "mean": 2.4476683034835616,
+                "std": 1.3904498836567265,
+                "count": 491
+              },
+              "DETACH_REQUEST": {
+                "mean": 2.6728957395320725,
+                "std": 1.4657110333679497,
+                "count": 483
+              },
+              "RRC_CONNECTION_SETUP": {
+                "mean": 2.49897191219175,
+                "std": 1.427673004730463,
+                "count": 461
+              },
+              "SERVICE_ACCEPT": {
+                "mean": 2.460919216208287,
+                "std": 1.4504348043049375,
+                "count": 475
+              }
+            }
+          },
+          {
+            "categorical_variable": "signal_type",
+            "numeric_variable": "resource_block_usage_percent",
+            "f_statistic": 0.4577305279608391,
+            "p_value": 0.95505433807754,
+            "significant": false,
+            "group_statistics": {
+              "RRC_CONNECTION_RELEASE": {
+                "mean": 55.9073275862069,
+                "std": 26.378824181471607,
+                "count": 464
+              },
+              "SERVICE_REQUEST": {
+                "mean": 56.53564154786151,
+                "std": 25.321690559713073,
+                "count": 491
+              },
+              "DETACH_ACCEPT": {
+                "mean": 58.30967741935484,
+                "std": 25.74306930714778,
+                "count": 465
+              },
+              "HANDOVER_REQUEST": {
+                "mean": 56.19838056680162,
+                "std": 25.57590455729456,
+                "count": 494
+              },
+              "PAGING": {
+                "mean": 56.25812619502868,
+                "std": 25.773109369982333,
+                "count": 523
+              },
+              "HANDOVER_COMMAND": {
+                "mean": 55.39506172839506,
+                "std": 25.07194382802756,
+                "count": 486
+              },
+              "RRC_CONNECTION_SETUP_COMPLETE": {
+                "mean": 56.19496855345912,
+                "std": 25.675449638266517,
+                "count": 477
+              },
+              "ATTACH_COMPLETE": {
+                "mean": 56.492662473794546,
+                "std": 24.915370383394244,
+                "count": 477
+              },
+              "ATTACH_REQUEST": {
+                "mean": 57.22709163346614,
+                "std": 25.495649957865787,
+                "count": 502
+              },
+              "ATTACH_ACCEPT": {
+                "mean": 55.893181818181816,
+                "std": 25.424235543097875,
+                "count": 440
+              },
+              "RRC_CONNECTION_REQUEST": {
+                "mean": 55.24203821656051,
+                "std": 25.584420443970497,
+                "count": 471
+              },
+              "HANDOVER_COMPLETE": {
+                "mean": 56.83706720977597,
+                "std": 25.257165698793084,
+                "count": 491
+              },
+              "DETACH_REQUEST": {
+                "mean": 55.231884057971016,
+                "std": 25.24001092357557,
+                "count": 483
+              },
+              "RRC_CONNECTION_SETUP": {
+                "mean": 56.06507592190889,
+                "std": 25.96971680054954,
+                "count": 461
+              },
+              "SERVICE_ACCEPT": {
+                "mean": 55.991578947368424,
+                "std": 25.872617455517634,
+                "count": 475
+              }
+            }
+          },
+          {
+            "categorical_variable": "signal_type",
+            "numeric_variable": "cpu_usage_percent",
+            "f_statistic": 0.5041051387085853,
+            "p_value": 0.9323782147580525,
+            "significant": false,
+            "group_statistics": {
+              "RRC_CONNECTION_RELEASE": {
+                "mean": 55.81987008718397,
+                "std": 27.312424260277396,
+                "count": 464
+              },
+              "SERVICE_REQUEST": {
+                "mean": 56.14533096239456,
+                "std": 26.063368447717888,
+                "count": 491
+              },
+              "DETACH_ACCEPT": {
+                "mean": 58.31832781332434,
+                "std": 26.71105894195132,
+                "count": 465
+              },
+              "HANDOVER_REQUEST": {
+                "mean": 56.309620367702514,
+                "std": 25.981715729252922,
+                "count": 494
+              },
+              "PAGING": {
+                "mean": 56.19214890298378,
+                "std": 26.087239479305783,
+                "count": 523
+              },
+              "HANDOVER_COMMAND": {
+                "mean": 55.40724778888187,
+                "std": 25.659107619305008,
+                "count": 486
+              },
+              "RRC_CONNECTION_SETUP_COMPLETE": {
+                "mean": 56.203349792304714,
+                "std": 26.544335677941888,
+                "count": 477
+              },
+              "ATTACH_COMPLETE": {
+                "mean": 56.542751924625954,
+                "std": 25.853103297176528,
+                "count": 477
+              },
+              "ATTACH_REQUEST": {
+                "mean": 57.188769966173055,
+                "std": 26.490101711775655,
+                "count": 502
+              },
+              "ATTACH_ACCEPT": {
+                "mean": 55.49011168839198,
+                "std": 25.94124425451175,
+                "count": 440
+              },
+              "RRC_CONNECTION_REQUEST": {
+                "mean": 54.838357765401746,
+                "std": 26.127891540164956,
+                "count": 471
+              },
+              "HANDOVER_COMPLETE": {
+                "mean": 57.08336259378079,
+                "std": 25.952366083371317,
+                "count": 491
+              },
+              "DETACH_REQUEST": {
+                "mean": 55.324554508689836,
+                "std": 25.88803654068051,
+                "count": 483
+              },
+              "RRC_CONNECTION_SETUP": {
+                "mean": 56.21589376612006,
+                "std": 26.532904970641482,
+                "count": 461
+              },
+              "SERVICE_ACCEPT": {
+                "mean": 56.20608671512084,
+                "std": 26.39993858555658,
+                "count": 475
+              }
+            }
+          },
+          {
+            "categorical_variable": "signal_type",
+            "numeric_variable": "memory_usage_percent",
+            "f_statistic": 0.5932958661215914,
+            "p_value": 0.8726552380777362,
+            "significant": false,
+            "group_statistics": {
+              "RRC_CONNECTION_RELEASE": {
+                "mean": 55.88542194023159,
+                "std": 27.694653322113563,
+                "count": 464
+              },
+              "SERVICE_REQUEST": {
+                "mean": 55.86690122720949,
+                "std": 26.779261290098972,
+                "count": 491
+              },
+              "DETACH_ACCEPT": {
+                "mean": 58.58731920017826,
+                "std": 26.739837567088085,
+                "count": 465
+              },
+              "HANDOVER_REQUEST": {
+                "mean": 56.30191752987378,
+                "std": 27.23765256183729,
+                "count": 494
+              },
+              "PAGING": {
+                "mean": 55.48360087784875,
+                "std": 26.300462738264322,
+                "count": 523
+              },
+              "HANDOVER_COMMAND": {
+                "mean": 55.2614425942573,
+                "std": 26.645019690413278,
+                "count": 486
+              },
+              "RRC_CONNECTION_SETUP_COMPLETE": {
+                "mean": 56.440965098727716,
+                "std": 27.081613336640014,
+                "count": 477
+              },
+              "ATTACH_COMPLETE": {
+                "mean": 57.060292249141504,
+                "std": 26.626951164919376,
+                "count": 477
+              },
+              "ATTACH_REQUEST": {
+                "mean": 57.16708192142919,
+                "std": 26.59406901618176,
+                "count": 502
+              },
+              "ATTACH_ACCEPT": {
+                "mean": 55.76698421048798,
+                "std": 26.88454134892856,
+                "count": 440
+              },
+              "RRC_CONNECTION_REQUEST": {
+                "mean": 55.01785476112098,
+                "std": 27.22862313505651,
+                "count": 471
+              },
+              "HANDOVER_COMPLETE": {
+                "mean": 57.02570871099416,
+                "std": 26.04876426958764,
+                "count": 491
+              },
+              "DETACH_REQUEST": {
+                "mean": 55.184268569240395,
+                "std": 26.92160614165386,
+                "count": 483
+              },
+              "RRC_CONNECTION_SETUP": {
+                "mean": 55.9188823509838,
+                "std": 27.64483535450899,
+                "count": 461
+              },
+              "SERVICE_ACCEPT": {
+                "mean": 56.66244552099946,
+                "std": 26.899586300161587,
+                "count": 475
+              }
+            }
+          },
+          {
+            "categorical_variable": "signal_type",
+            "numeric_variable": "temperature_celsius",
+            "f_statistic": 1.515669969715909,
+            "p_value": 0.096473905590156,
+            "significant": false,
+            "group_statistics": {
+              "RRC_CONNECTION_RELEASE": {
+                "mean": 34.71871436296822,
+                "std": 5.911561860290088,
+                "count": 464
+              },
+              "SERVICE_REQUEST": {
+                "mean": 35.312596522943004,
+                "std": 5.998684408278247,
+                "count": 491
+              },
+              "DETACH_ACCEPT": {
+                "mean": 35.154082432695475,
+                "std": 5.75980028575175,
+                "count": 465
+              },
+              "HANDOVER_REQUEST": {
+                "mean": 34.70856195809225,
+                "std": 5.751213594540011,
+                "count": 494
+              },
+              "PAGING": {
+                "mean": 35.359672750823705,
+                "std": 5.573334910851264,
+                "count": 523
+              },
+              "HANDOVER_COMMAND": {
+                "mean": 35.0715922407104,
+                "std": 5.665366761278133,
+                "count": 486
+              },
+              "RRC_CONNECTION_SETUP_COMPLETE": {
+                "mean": 35.07569878157567,
+                "std": 5.922028346398561,
+                "count": 477
+              },
+              "ATTACH_COMPLETE": {
+                "mean": 34.825681048418986,
+                "std": 5.734485445434897,
+                "count": 477
+              },
+              "ATTACH_REQUEST": {
+                "mean": 34.8145564346073,
+                "std": 5.4261610948399,
+                "count": 502
+              },
+              "ATTACH_ACCEPT": {
+                "mean": 34.544232073302524,
+                "std": 5.835137152343699,
+                "count": 440
+              },
+              "RRC_CONNECTION_REQUEST": {
+                "mean": 35.03735085694455,
+                "std": 5.684225805008457,
+                "count": 471
+              },
+              "HANDOVER_COMPLETE": {
+                "mean": 34.60510895299746,
+                "std": 5.866993569753793,
+                "count": 491
+              },
+              "DETACH_REQUEST": {
+                "mean": 35.61986541137221,
+                "std": 5.5471002108031415,
+                "count": 483
+              },
+              "RRC_CONNECTION_SETUP": {
+                "mean": 35.47418753319189,
+                "std": 5.761381659174696,
+                "count": 461
+              },
+              "SERVICE_ACCEPT": {
+                "mean": 35.15071516171164,
+                "std": 5.882406361374791,
+                "count": 475
+              }
+            }
+          },
+          {
+            "categorical_variable": "status",
+            "numeric_variable": "success_rate",
+            "f_statistic": 3804.012392531384,
+            "p_value": 0.0,
+            "significant": true,
+            "group_statistics": {
+              "SUCCESS": {
+                "mean": 0.8944917658785808,
+                "std": 0.05502395124004504,
+                "count": 6125
+              },
+              "PENDING": {
+                "mean": 0.6474295284716004,
+                "std": 0.08002166344999646,
+                "count": 195
+              },
+              "REJECTED": {
+                "mean": 0.6495402994530354,
+                "std": 0.0860029606169726,
+                "count": 237
+              },
+              "TIMEOUT": {
+                "mean": 0.6471475608494714,
+                "std": 0.08535953260078423,
+                "count": 270
+              },
+              "FAILED": {
+                "mean": 0.6486564869448052,
+                "std": 0.08568968595639795,
+                "count": 373
+              }
+            }
+          },
+          {
+            "categorical_variable": "status",
+            "numeric_variable": "failure_rate",
+            "f_statistic": 3804.012392531381,
+            "p_value": 0.0,
+            "significant": true,
+            "group_statistics": {
+              "SUCCESS": {
+                "mean": 0.10550823412141924,
+                "std": 0.055023951240045055,
+                "count": 6125
+              },
+              "PENDING": {
+                "mean": 0.35257047152839954,
+                "std": 0.08002166344999646,
+                "count": 195
+              },
+              "REJECTED": {
+                "mean": 0.35045970054696446,
+                "std": 0.0860029606169726,
+                "count": 237
+              },
+              "TIMEOUT": {
+                "mean": 0.35285243915052866,
+                "std": 0.08535953260078422,
+                "count": 270
+              },
+              "FAILED": {
+                "mean": 0.35134351305519484,
+                "std": 0.08568968595639795,
+                "count": 373
+              }
+            }
+          },
+          {
+            "categorical_variable": "status",
+            "numeric_variable": "call_attempts",
+            "f_statistic": 0.34905192924211226,
+            "p_value": 0.8448436943334567,
+            "significant": false,
+            "group_statistics": {
+              "SUCCESS": {
+                "mean": 41.45469387755102,
+                "std": 26.311890671652968,
+                "count": 6125
+              },
+              "PENDING": {
+                "mean": 39.87179487179487,
+                "std": 25.26884260419625,
+                "count": 195
+              },
+              "REJECTED": {
+                "mean": 40.244725738396625,
+                "std": 24.577256772352015,
+                "count": 237
+              },
+              "TIMEOUT": {
+                "mean": 41.992592592592594,
+                "std": 26.508186656129975,
+                "count": 270
+              },
+              "FAILED": {
+                "mean": 40.93565683646113,
+                "std": 25.10228836353816,
+                "count": 373
+              }
+            }
+          },
+          {
+            "categorical_variable": "status",
+            "numeric_variable": "active_users",
+            "f_statistic": 1.3188300792302918,
+            "p_value": 0.26030938808400755,
+            "significant": false,
+            "group_statistics": {
+              "SUCCESS": {
+                "mean": 201.67591836734695,
+                "std": 123.07054028754693,
+                "count": 6125
+              },
+              "PENDING": {
+                "mean": 190.72307692307692,
+                "std": 120.90485835560496,
+                "count": 195
+              },
+              "REJECTED": {
+                "mean": 195.8016877637131,
+                "std": 122.14650968262605,
+                "count": 237
+              },
+              "TIMEOUT": {
+                "mean": 195.98518518518517,
+                "std": 127.80037786594893,
+                "count": 270
+              },
+              "FAILED": {
+                "mean": 189.9088471849866,
+                "std": 115.82477613016538,
+                "count": 373
+              }
+            }
+          },
+          {
+            "categorical_variable": "status",
+            "numeric_variable": "signal_strength_dbm",
+            "f_statistic": 0.17590207361255264,
+            "p_value": 0.9508753582960863,
+            "significant": false,
+            "group_statistics": {
+              "SUCCESS": {
+                "mean": -95.01389299428209,
+                "std": 14.31072842469204,
+                "count": 6125
+              },
+              "PENDING": {
+                "mean": -94.53416689597756,
+                "std": 14.454893567391503,
+                "count": 195
+              },
+              "REJECTED": {
+                "mean": -94.92081586818568,
+                "std": 14.439119692803411,
+                "count": 237
+              },
+              "TIMEOUT": {
+                "mean": -95.45706284309921,
+                "std": 13.83454905548261,
+                "count": 270
+              },
+              "FAILED": {
+                "mean": -95.36770312458249,
+                "std": 14.47567840134272,
+                "count": 373
+              }
+            }
+          },
+          {
+            "categorical_variable": "status",
+            "numeric_variable": "signal_quality_db",
+            "f_statistic": 0.1724501858839775,
+            "p_value": 0.9525730454429567,
+            "significant": false,
+            "group_statistics": {
+              "SUCCESS": {
+                "mean": 15.088768239583873,
+                "std": 8.67672033711103,
+                "count": 6125
+              },
+              "PENDING": {
+                "mean": 15.347716679321904,
+                "std": 8.771744897617396,
+                "count": 195
+              },
+              "REJECTED": {
+                "mean": 14.971545701098432,
+                "std": 9.03304937590175,
+                "count": 237
+              },
+              "TIMEOUT": {
+                "mean": 14.790600538457523,
+                "std": 8.546164588663252,
+                "count": 270
+              },
+              "FAILED": {
+                "mean": 14.895772390944947,
+                "std": 8.41874622065645,
+                "count": 373
+              }
+            }
+          },
+          {
+            "categorical_variable": "status",
+            "numeric_variable": "downlink_throughput_mbps",
+            "f_statistic": 0.6543985107547644,
+            "p_value": 0.623729458668427,
+            "significant": false,
+            "group_statistics": {
+              "SUCCESS": {
+                "mean": 712.2131011320807,
+                "std": 387.6053515211523,
+                "count": 6125
+              },
+              "PENDING": {
+                "mean": 692.0668382582112,
+                "std": 392.76866431492925,
+                "count": 195
+              },
+              "REJECTED": {
+                "mean": 711.1547804590812,
+                "std": 389.69999799416416,
+                "count": 237
+              },
+              "TIMEOUT": {
+                "mean": 744.8088509457317,
+                "std": 397.0218867015755,
+                "count": 270
+              },
+              "FAILED": {
+                "mean": 722.2078698254023,
+                "std": 382.3278875453869,
+                "count": 373
+              }
+            }
+          },
+          {
+            "categorical_variable": "status",
+            "numeric_variable": "uplink_throughput_mbps",
+            "f_statistic": 1.1121730118869844,
+            "p_value": 0.34876572045859044,
+            "significant": false,
+            "group_statistics": {
+              "SUCCESS": {
+                "mean": 91.78007467480154,
+                "std": 51.92999356159403,
+                "count": 6125
+              },
+              "PENDING": {
+                "mean": 90.65831195395762,
+                "std": 50.732417805342386,
+                "count": 195
+              },
+              "REJECTED": {
+                "mean": 88.52772526521636,
+                "std": 51.17065615746068,
+                "count": 237
+              },
+              "TIMEOUT": {
+                "mean": 86.87520544985668,
+                "std": 52.392988262606764,
+                "count": 270
+              },
+              "FAILED": {
+                "mean": 94.59589586939875,
+                "std": 52.13285503411097,
+                "count": 373
+              }
+            }
+          },
+          {
+            "categorical_variable": "status",
+            "numeric_variable": "latency_ms",
+            "f_statistic": 0.1950554709996788,
+            "p_value": 0.941071026607739,
+            "significant": false,
+            "group_statistics": {
+              "SUCCESS": {
+                "mean": 21.73217081607567,
+                "std": 10.607355198139132,
+                "count": 6125
+              },
+              "PENDING": {
+                "mean": 21.379749152876283,
+                "std": 10.550912786173578,
+                "count": 195
+              },
+              "REJECTED": {
+                "mean": 21.557707976913246,
+                "std": 10.657499428489329,
+                "count": 237
+              },
+              "TIMEOUT": {
+                "mean": 21.410850675362337,
+                "std": 11.028062887527728,
+                "count": 270
+              },
+              "FAILED": {
+                "mean": 21.391097026843877,
+                "std": 10.679188578773003,
+                "count": 373
+              }
+            }
+          },
+          {
+            "categorical_variable": "status",
+            "numeric_variable": "jitter_ms",
+            "f_statistic": 0.4998121178004118,
+            "p_value": 0.7358971015018445,
+            "significant": false,
+            "group_statistics": {
+              "SUCCESS": {
+                "mean": -0.029308770175992947,
+                "std": 2.8855495291193605,
+                "count": 6125
+              },
+              "PENDING": {
+                "mean": 0.22293257209535566,
+                "std": 2.963571673078187,
+                "count": 195
+              },
+              "REJECTED": {
+                "mean": -0.008769615487464494,
+                "std": 2.765385466092769,
+                "count": 237
+              },
+              "TIMEOUT": {
+                "mean": -0.1503484141097934,
+                "std": 3.0313369326348125,
+                "count": 270
+              },
+              "FAILED": {
+                "mean": 0.003918246818311156,
+                "std": 2.9271634963547006,
+                "count": 373
+              }
+            }
+          },
+          {
+            "categorical_variable": "status",
+            "numeric_variable": "packet_loss_percent",
+            "f_statistic": 0.9117023634168685,
+            "p_value": 0.45597080325152184,
+            "significant": false,
+            "group_statistics": {
+              "SUCCESS": {
+                "mean": 2.5233947592067314,
+                "std": 1.4326642760423218,
+                "count": 6125
+              },
+              "PENDING": {
+                "mean": 2.461595196717725,
+                "std": 1.390697891118373,
+                "count": 195
+              },
+              "REJECTED": {
+                "mean": 2.4968379142721395,
+                "std": 1.4880876590513201,
+                "count": 237
+              },
+              "TIMEOUT": {
+                "mean": 2.4158760843428007,
+                "std": 1.4182037424478895,
+                "count": 270
+              },
+              "FAILED": {
+                "mean": 2.4133837937612275,
+                "std": 1.384693247171766,
+                "count": 373
+              }
+            }
+          },
+          {
+            "categorical_variable": "status",
+            "numeric_variable": "resource_block_usage_percent",
+            "f_statistic": 0.5208769909701769,
+            "p_value": 0.7204050461085457,
+            "significant": false,
+            "group_statistics": {
+              "SUCCESS": {
+                "mean": 56.2974693877551,
+                "std": 25.515104870395394,
+                "count": 6125
+              },
+              "PENDING": {
+                "mean": 54.51794871794872,
+                "std": 24.843705998286875,
+                "count": 195
+              },
+              "REJECTED": {
+                "mean": 55.177215189873415,
+                "std": 26.655409105561542,
+                "count": 237
+              },
+              "TIMEOUT": {
+                "mean": 57.592592592592595,
+                "std": 25.741435590592634,
+                "count": 270
+              },
+              "FAILED": {
+                "mean": 56.19034852546917,
+                "std": 25.49454323096656,
+                "count": 373
+              }
+            }
+          },
+          {
+            "categorical_variable": "status",
+            "numeric_variable": "cpu_usage_percent",
+            "f_statistic": 0.502030221178071,
+            "p_value": 0.7342653439589988,
+            "significant": false,
+            "group_statistics": {
+              "SUCCESS": {
+                "mean": 56.274562992105125,
+                "std": 26.22146990035498,
+                "count": 6125
+              },
+              "PENDING": {
+                "mean": 54.277326386989444,
+                "std": 25.561019007264385,
+                "count": 195
+              },
+              "REJECTED": {
+                "mean": 55.13690239603839,
+                "std": 27.02270296207756,
+                "count": 237
+              },
+              "TIMEOUT": {
+                "mean": 57.354084085960736,
+                "std": 26.355321669681388,
+                "count": 270
+              },
+              "FAILED": {
+                "mean": 56.291208165706514,
+                "std": 26.03685558690034,
+                "count": 373
+              }
+            }
+          },
+          {
+            "categorical_variable": "status",
+            "numeric_variable": "memory_usage_percent",
+            "f_statistic": 0.7134444551416081,
+            "p_value": 0.582614823443117,
+            "significant": false,
+            "group_statistics": {
+              "SUCCESS": {
+                "mean": 56.36831931727885,
+                "std": 26.885493882879935,
+                "count": 6125
+              },
+              "PENDING": {
+                "mean": 54.27627406623431,
+                "std": 25.74125969827311,
+                "count": 195
+              },
+              "REJECTED": {
+                "mean": 54.66667644515315,
+                "std": 28.14278622127204,
+                "count": 237
+              },
+              "TIMEOUT": {
+                "mean": 57.348195885367694,
+                "std": 27.437722270373875,
+                "count": 270
+              },
+              "FAILED": {
+                "mean": 55.35823986516315,
+                "std": 26.01801709342992,
+                "count": 373
+              }
+            }
+          },
+          {
+            "categorical_variable": "status",
+            "numeric_variable": "temperature_celsius",
+            "f_statistic": 1.3658850630318617,
+            "p_value": 0.24306986205224143,
+            "significant": false,
+            "group_statistics": {
+              "SUCCESS": {
+                "mean": 34.98278788026322,
+                "std": 5.762647982044512,
+                "count": 6125
+              },
+              "PENDING": {
+                "mean": 35.04868204687647,
+                "std": 5.878542694694307,
+                "count": 195
+              },
+              "REJECTED": {
+                "mean": 35.52717918941197,
+                "std": 5.634952162732931,
+                "count": 237
+              },
+              "TIMEOUT": {
+                "mean": 35.658777092950224,
+                "std": 5.81465983357901,
+                "count": 270
+              },
+              "FAILED": {
+                "mean": 35.1053148627139,
+                "std": 5.621453281619247,
+                "count": 373
+              }
+            }
+          }
+        ],
+        "metadata": {
+          "file_analyzed": "temp_csv/excel_data_20250317093536.csv",
+          "total_rows": 7200,
+          "total_columns": 20,
+          "numeric_columns": [
+            "success_rate",
+            "failure_rate",
+            "call_attempts",
+            "active_users",
+            "signal_strength_dbm",
+            "signal_quality_db",
+            "downlink_throughput_mbps",
+            "uplink_throughput_mbps",
+            "latency_ms",
+            "jitter_ms",
+            "packet_loss_percent",
+            "resource_block_usage_percent",
+            "cpu_usage_percent",
+            "memory_usage_percent",
+            "temperature_celsius"
+          ],
+          "categorical_columns": [
+            "timestamp",
+            "base_station_id",
+            "base_station_name",
+            "signal_type",
+            "status"
+          ],
+          "analysis_timestamp": "2025-03-17T09:38:21.148848"
+        }
+      }
+    }
+  }
+}

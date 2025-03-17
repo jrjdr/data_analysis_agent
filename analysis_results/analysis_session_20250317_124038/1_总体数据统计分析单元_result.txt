@@ -1,0 +1,2 @@
+分析完成，结果已保存到 analysis_results.json
+图表已保存到 pngs/chart_stats_base_station_performance.png, pngs/chart_stats_signal_status_heatmap.png, pngs/chart_stats_resource_performance.png

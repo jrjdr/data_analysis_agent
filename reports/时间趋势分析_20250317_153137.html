@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>时间趋势分析分析报告</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            color: #2c3e50;
+            margin-top: 24px;
+            margin-bottom: 16px;
+        }
+        h1 { font-size: 2em; border-bottom: 1px solid #eaecef; padding-bottom: .3em; }
+        h2 { font-size: 1.5em; border-bottom: 1px solid #eaecef; padding-bottom: .3em; }
+        h3 { font-size: 1.25em; }
+        h4 { font-size: 1em; }
+        p, ul, ol, table { margin-bottom: 16px; }
+        code {
+            font-family: Consolas, Monaco, 'Andale Mono', monospace;
+            background-color: #f6f8fa;
+            padding: 0.2em 0.4em;
+            border-radius: 3px;
+        }
+        pre {
+            background-color: #f6f8fa;
+            border-radius: 3px;
+            padding: 16px;
+            overflow: auto;
+        }
+        pre code {
+            background-color: transparent;
+            padding: 0;
+        }
+        blockquote {
+            padding: 0 1em;
+            color: #6a737d;
+            border-left: 0.25em solid #dfe2e5;
+            margin: 0 0 16px 0;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        table th, table td {
+            border: 1px solid #dfe2e5;
+            padding: 6px 13px;
+        }
+        table tr:nth-child(2n) {
+            background-color: #f6f8fa;
+        }
+        img {
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+<h1>移动基站性能时间趋势分析报告</h1>
+<br>
+<h2>1. 数据概览</h2>
+<br>
+<p>本分析基于移动基站性能数据，包含7,200条记录和19个指标字段。数据集涵盖了基站标识信息、信号质量、网络性能、资源利用率等关键指标。</p>
+<br>
+<h3>1.1 数据集基本信息</h3>
+<br>
+<table>
+<tr><th>属性</th><th>值</th></tr>
+<tr><td>记录数量</td><td>7,200</td></tr>
+<tr><td>字段数量</td><td>19</td></tr>
+<tr><td>数据类型</td><td>数值型、字符型</td></tr>
+</table>
+<br>
+<h3>1.2 数据字段概述</h3>
+<br>
+<table>
+<tr><th>字段名称</th><th>数据类型</th><th>描述</th></tr>
+<tr><td>base_station_id</td><td>object</td><td>基站唯一标识符</td></tr>
+<tr><td>base_station_name</td><td>object</td><td>基站名称</td></tr>
+<tr><td>signal_type</td><td>object</td><td>信号类型</td></tr>
+<tr><td>status</td><td>object</td><td>基站状态</td></tr>
+<tr><td>success_rate</td><td>float64</td><td>连接成功率</td></tr>
+<tr><td>failure_rate</td><td>float64</td><td>连接失败率</td></tr>
+<tr><td>call_attempts</td><td>int64</td><td>呼叫尝试次数</td></tr>
+<tr><td>active_users</td><td>int64</td><td>活跃用户数</td></tr>
+<tr><td>signal_strength_dbm</td><td>float64</td><td>信号强度(dBm)</td></tr>
+<tr><td>signal_quality_db</td><td>float64</td><td>信号质量(dB)</td></tr>
+<tr><td>downlink_throughput_mbps</td><td>float64</td><td>下行吞吐量(Mbps)</td></tr>
+<tr><td>uplink_throughput_mbps</td><td>float64</td><td>上行吞吐量(Mbps)</td></tr>
+<tr><td>latency_ms</td><td>float64</td><td>延迟(ms)</td></tr>
+<tr><td>jitter_ms</td><td>float64</td><td>抖动(ms)</td></tr>
+<tr><td>packet_loss_percent</td><td>float64</td><td>丢包率(%)</td></tr>
+<tr><td>resource_block_usage_percent</td><td>float64</td><td>资源块使用率(%)</td></tr>
+<tr><td>cpu_usage_percent</td><td>float64</td><td>CPU使用率(%)</td></tr>
+<tr><td>memory_usage_percent</td><td>float64</td><td>内存使用率(%)</td></tr>
+<tr><td>temperature_celsius</td><td>float64</td><td>温度(°C)</td></tr>
+</table>
+<br>
+<h2>2. 数据洞察</h2>
+<br>
+<h3>2.1 整体趋势分析</h3>
+<br>
+<p>分析显示了各指标随时间的变化趋势。斜率值表示变化的方向和速率，正值表示上升趋势，负值表示下降趋势。</p>
+<br>
+<table>
+<tr><th>指标</th><th>趋势方向</th><th>斜率</th><th>趋势解读</th></tr>
+<tr><td>success_rate</td><td>上升</td><td>0.0000</td><td>连接成功率略有提升</td></tr>
+<tr><td>failure_rate</td><td>下降</td><td>-0.0000</td><td>连接失败率略有下降</td></tr>
+<tr><td>call_attempts</td><td>上升</td><td>0.0041</td><td>呼叫尝试次数稳步增加</td></tr>
+<tr><td>active_users</td><td>上升</td><td>0.0189</td><td>活跃用户数明显增长</td></tr>
+<tr><td>signal_strength_dbm</td><td>上升</td><td>0.0001</td><td>信号强度略有提升</td></tr>
+<tr><td>signal_quality_db</td><td>下降</td><td>-0.0000</td><td>信号质量略有下降</td></tr>
+<tr><td>downlink_throughput_mbps</td><td>下降</td><td>-0.0225</td><td>下行吞吐量明显下降</td></tr>
+<tr><td>uplink_throughput_mbps</td><td>下降</td><td>-0.0046</td><td>上行吞吐量有所下降</td></tr>
+<tr><td>latency_ms</td><td>上升</td><td>0.0010</td><td>延迟略有增加</td></tr>
+<tr><td>jitter_ms</td><td>下降</td><td>-0.0000</td><td>抖动略有减少</td></tr>
+<tr><td>packet_loss_percent</td><td>上升</td><td>0.0000</td><td>丢包率略有增加</td></tr>
+<tr><td>resource_block_usage_percent</td><td>上升</td><td>0.0040</td><td>资源块使用率稳步增加</td></tr>
+<tr><td>cpu_usage_percent</td><td>上升</td><td>0.0040</td><td>CPU使用率稳步增加</td></tr>
+<tr><td>memory_usage_percent</td><td>上升</td><td>0.0040</td><td>内存使用率稳步增加</td></tr>
+<tr><td>temperature_celsius</td><td>上升</td><td>0.0000</td><td>温度略有上升</td></tr>
+</table>
+<br>
+<h3>2.2 日内变化模式</h3>
+<br>
+<p>分析了各指标在24小时内的变化模式，确定了高峰期和低谷期。</p>
+<br>
+<table>
+<tr><th>指标</th><th>高峰时段</th><th>低谷时段</th><th>波动幅度解读</th></tr>
+<tr><td>success_rate</td><td>20:00</td><td>01:00</td><td>晚间网络质量最佳，凌晨质量较差</td></tr>
+<tr><td>failure_rate</td><td>01:00</td><td>20:00</td><td>凌晨故障率最高，晚间最低</td></tr>
+<tr><td>call_attempts</td><td>19:00</td><td>16:00</td><td>晚间通话需求最高，下午较低</td></tr>
+<tr><td>active_users</td><td>13:00</td><td>01:00</td><td>午间用户活跃度最高，凌晨最低</td></tr>
+<tr><td>signal_strength_dbm</td><td>22:00</td><td>03:00</td><td>夜间信号强度最佳，凌晨最差</td></tr>
+<tr><td>signal_quality_db</td><td>09:00</td><td>17:00</td><td>上午信号质量最佳，傍晚最差</td></tr>
+<tr><td>downlink_throughput_mbps</td><td>04:00</td><td>09:00</td><td>凌晨下行速率最高，上午最低</td></tr>
+<tr><td>uplink_throughput_mbps</td><td>10:00</td><td>18:00</td><td>上午上行速率最高，傍晚最低</td></tr>
+<tr><td>latency_ms</td><td>19:00</td><td>10:00</td><td>晚间延迟最高，上午最低</td></tr>
+<tr><td>jitter_ms</td><td>01:00</td><td>16:00</td><td>凌晨网络抖动最大，下午最小</td></tr>
+<tr><td>packet_loss_percent</td><td>18:00</td><td>00:00</td><td>傍晚丢包率最高，午夜最低</td></tr>
+<tr><td>resource_block_usage_percent</td><td>08:00</td><td>04:00</td><td>早晨资源占用最高，凌晨最低</td></tr>
+<tr><td>cpu_usage_percent</td><td>12:00</td><td>10:00</td><td>中午CPU负载最高，上午最低</td></tr>
+<tr><td>memory_usage_percent</td><td>08:00</td><td>06:00</td><td>早晨内存占用最高，凌晨最低</td></tr>
+<tr><td>temperature_celsius</td><td>04:00</td><td>01:00</td><td>凌晨设备温度波动</td></tr>
+</table>
+<br>
+<h3>2.3 周内变化模式</h3>
+<br>
+<p>数据显示所有指标在周六都出现了峰值和谷值，这表明周六的数据波动性较大。</p>
+<br>
+<table>
+<tr><th>指标</th><th>周内高峰</th><th>周内低谷</th><th>解读</th></tr>
+<tr><td>success_rate</td><td>周六</td><td>周六</td><td>周六数据波动性大</td></tr>
+<tr><td>failure_rate</td><td>周六</td><td>周六</td><td>周六数据波动性大</td></tr>
+<tr><td>call_attempts</td><td>周六</td><td>周六</td><td>周六数据波动性大</td></tr>
+<tr><td>active_users</td><td>周六</td><td>周六</td><td>周六数据波动性大</td></tr>
+<tr><td>其他指标</td><td>周六</td><td>周六</td><td>周六数据波动性大</td></tr>
+</table>
+<br>
+<h2>3. 关键发现</h2>
+<br>
+<h3>3.1 网络性能异常</h3>
+<br>
+<p>分析发现大量成功率和失败率的异常值，主要集中在特定时间段。</p>
+<br>
+<table>
+<tr><th>指标</th><th>异常数量</th><th>异常时间分布</th><th>异常值范围</th></tr>
+<tr><td>success_rate</td><td>128</td><td>全天分布，无明显集中</td><td>0.50-0.54</td></tr>
+<tr><td>failure_rate</td><td>128</td><td>全天分布，无明显集中</td><td>0.46-0.50</td></tr>
+<tr><td>其他指标</td><td>0</td><td>无异常</td><td>无异常</td></tr>
+</table>
+<br>
+<h3>3.2 网络负载与性能关系</h3>
+<br>
+<table>
+<tr><th>关系指标</th><th>相关现象</th><th>影响分析</th></tr>
+<tr><td>活跃用户与吞吐量</td><td>活跃用户增加，吞吐量下降</td><td>用户增长导致网络资源竞争加剧，影响单用户体验</td></tr>
+<tr><td>资源使用与延迟</td><td>资源块使用率增加，延迟增加</td><td>网络负载增加导致处理延迟上升</td></tr>
+<tr><td>CPU/内存使用与性能</td><td>CPU和内存使用率增加，网络性能下降</td><td>设备资源压力增大可能影响信号处理能力</td></tr>
+</table>
+<br>
+<h3>3.3 日内高峰期分析</h3>
+<br>
+<table>
+<tr><th>时间段</th><th>高峰指标</th><th>潜在原因</th><th>优化建议</th></tr>
+<tr><td>12:00-14:00</td><td>活跃用户、CPU使用率</td><td>午休时间用户活跃度高</td><td>增加午间资源配置</td></tr>
+<tr><td>18:00-20:00</td><td>呼叫尝试、延迟、丢包率</td><td>下班高峰期通话需求大</td><td>优化晚高峰资源分配</td></tr>
+<tr><td>08:00-10:00</td><td>资源块使用率、内存使用率</td><td>上班高峰期数据使用量大</td><td>提升早高峰带宽容量</td></tr>
+</table>
+<br>
+<h2>4. 总结</h2>
+<br>
+<h3>4.1 主要结论</h3>
+<br>
+<ol>
+<li>**网络使用趋势**：数据显示活跃用户数呈明显上升趋势（斜率0.0189），但网络吞吐量同时下降（下行-0.0225，上行-0.0046），表明网络负载增加正对性能产生压力。</li>
+</ol>
+<br>
+<ol>
+<li>**性能波动规律**：网络性能存在明显的日内波动模式，用户活跃高峰在中午（13:00），呼叫高峰在晚间（19:00），而网络质量（成功率）在晚间（20:00）达到最佳。</li>
+</ol>
+<br>
+<ol>
+<li>**资源利用状况**：资源块、CPU和内存使用率均呈上升趋势（斜率均为0.0040），与用户增长趋势一致，表明系统负载正在增加。</li>
+</ol>
+<br>
+<ol>
+<li>**异常情况**：成功率和失败率出现多达128个异常值，但其他指标未显示异常，这可能表明连接建立过程中存在间歇性问题。</li>
+</ol>
+<br>
+<h3>4.2 建议措施</h3>
+<br>
+<ol>
+<li>**容量规划**：考虑到用户数量持续增长而吞吐量下降的趋势，建议评估网络容量扩展需求，特别是在日内高峰期（中午和晚间）。</li>
+</ol>
+<br>
+<ol>
+<li>**资源优化**：针对不同时段的流量特征，实施动态资源分配策略，在用户高峰期增加资源配置，低谷期可适当减少以节约能源。</li>
+</ol>
+<br>
+<ol>
+<li>**连接质量调查**：针对成功率和失败率的异常现象进行深入调查，可能需要检查信令流程、认证系统或基站硬件状态。</li>
+</ol>
+<br>
+<ol>
+<li>**性能监控强化**：建立更精细的性能监控机制，特别关注吞吐量下降的原因，以及CPU和内存使用率上升对网络性能的影响。</li>
+</ol>
+<br>
+<ol>
+<li>**负载均衡策略**：考虑实施跨基站的负载均衡机制，缓解单一基站在高峰期的压力，提高整体网络资源利用效率。</li>
+</ol>
+<br>
+<h3>4.3 后续分析方向</h3>
+<br>
+<ol>
+<li>进行多基站对比分析，确定问题是局部还是系统性的</li>
+<li>深入研究用户行为模式与网络性能的关系</li>
+<li>评估网络升级或扩容的具体需求和投资回报</li>
+<li>开展故障预测模型研究，基于当前趋势提前预警潜在问题</li>
+</ol>
+
+</body>
+</html>

@@ -1,0 +1,98 @@
+# Excel Analyzer Tool Configuration
+
+# Model Configuration
+models:
+  # Conversational model configuration
+  conversational:
+    # Model type: 'hf_api', 'transformers', 'openai', 'ollama'
+    type: 'openai'
+    # Model ID or name
+    model_id: 'claude-3-7-sonnet-20250219'
+    # model_id: 'chatgpt-4o-latest'
+    # API base URL (for openai and ollama)
+    api_base: 'https://xiaohumini.site/v1'
+    # API key
+    api_key: 'sk-778u7VJNIJftJ6EVSlmeaUeJP6vf62pfJmaR23h4EWEmlD63'
+    # Additional parameters
+    parameters:
+      max_tokens: 65536 
+      temperature: 0.7
+      top_p: 0.95
+  
+  # Multimodal model configuration (for future use)
+  multimodal:
+    # Model type: 'hf_api', 'transformers', 'openai', 'ollama'
+    type: 'openai'
+    # Model ID or name
+    # model_id: 'chatgpt-4o-latest'
+    model_id: 'claude-3-7-sonnet-20250219'
+    # API base URL (for openai)
+    api_base: 'https://xiaohumini.site/v1'
+    # API key
+    api_key: 'sk-778u7VJNIJftJ6EVSlmeaUeJP6vf62pfJmaR23h4EWEmlD63'
+    # Additional parameters
+    parameters:
+      max_tokens: 65536
+      temperature: 0.7
+      top_p: 0.95
+
+# Analysis Configuration
+analysis:
+  # Excel file to analyze (relative to current directory)
+  excel_file: 'sample_data/network_traffic_data_2025_02.xlsx'
+  # excel_file: 'sample_clothing_data.xlsx'
+
+  # Default chart types to generate
+  default_chart_types:
+    - 'histogram'
+    - 'bar'
+    - 'scatter'
+    - 'heatmap'
+  
+  # 是否生成图表子报告
+  generate_chart_subreport: false
+  
+  # 分析单元配置
+  analysis_units:
+    # 是否启用各个分析单元
+    general_statistics: true
+    bar_chart: true
+    pie_chart: true
+    time_trend: true
+    correlation: false
+  
+  # 图表配置
+  charts:
+    # 图表目录（相对于分析会话目录）
+    charts_dir: 'pngs'
+    # 图表文件名前缀
+    chart_prefix: 'chart_'
+    # 图表文件格式
+    chart_format: 'png'
+    # 图表DPI
+    chart_dpi: 300
+    # 图表尺寸（英寸）
+    chart_figsize: [10, 6]
+
+  # Maximum number of rows to analyze (set to -1 for all rows)
+  max_rows: -1
+  
+  # HTML report configuration
+  html_report:
+    # Default output file name
+    default_output_file: 'excel_analysis_report.html'
+    # Include sample data in report
+    include_sample_data: true
+    # Number of sample rows to include
+    sample_rows: 5
+    # Theme for HTML report ('light' or 'dark')
+    theme: 'light'
+
+# API Configuration
+api:
+  # API请求超时设置（毫秒）
+  timeout_ms: 600000
+  # 重试次数
+  max_retries: 3
+  # 重试间隔（秒）
+  retry_delay: 2

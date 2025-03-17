@@ -1,0 +1,4 @@
+成功读取数据，共 7200 行
+时间列处理完成
+保存结果时出错: Object of type Timestamp is not JSON serializable
+分析完成，图表已保存到pngs目录

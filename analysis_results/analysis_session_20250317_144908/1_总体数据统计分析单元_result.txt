@@ -1,0 +1,2 @@
+成功读取CSV文件，包含14400行和36列数据
+分析结果已保存至: pngs/analysis_results.txt

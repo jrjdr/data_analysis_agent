@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>相关性分析分析报告</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            color: #2c3e50;
+            margin-top: 24px;
+            margin-bottom: 16px;
+        }
+        h1 { font-size: 2em; border-bottom: 1px solid #eaecef; padding-bottom: .3em; }
+        h2 { font-size: 1.5em; border-bottom: 1px solid #eaecef; padding-bottom: .3em; }
+        h3 { font-size: 1.25em; }
+        h4 { font-size: 1em; }
+        p, ul, ol, table { margin-bottom: 16px; }
+        code {
+            font-family: Consolas, Monaco, 'Andale Mono', monospace;
+            background-color: #f6f8fa;
+            padding: 0.2em 0.4em;
+            border-radius: 3px;
+        }
+        pre {
+            background-color: #f6f8fa;
+            border-radius: 3px;
+            padding: 16px;
+            overflow: auto;
+        }
+        pre code {
+            background-color: transparent;
+            padding: 0;
+        }
+        blockquote {
+            padding: 0 1em;
+            color: #6a737d;
+            border-left: 0.25em solid #dfe2e5;
+            margin: 0 0 16px 0;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        table th, table td {
+            border: 1px solid #dfe2e5;
+            padding: 6px 13px;
+        }
+        table tr:nth-child(2n) {
+            background-color: #f6f8fa;
+        }
+        img {
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+<h1>相关性分析单元 分析报告</h1>
+<br>
+<h2>分析结论</h2>
+<br>
+<p>成功读取数据: 14400行, 36列</p>
+<p>结果已保存到: pngs/correlation_results.txt</p>
+<br>
+<br>
+<h2>详细分析</h2>
+<br>
+<p>=== 服务器性能监控数据相关性分析 ===</p>
+<br>
+<p>== 分析概述 ==</p>
+<p>分析了31个数值型变量之间的相关性。</p>
+<br>
+<p>== 高度相关变量 (|r| >= 0.7) ==</p>
+<p>read_percent 与 write_percent: -1.0000</p>
+<p>load_avg_1min 与 process_count: 0.9904</p>
+<p>cpu_usage_percent 与 process_count: 0.9904</p>
+<p>load_avg_1min 与 load_avg_5min: 0.9719</p>
+<p>cpu_usage_percent 与 load_avg_5min: 0.9719</p>
+<p>load_avg_5min 与 process_count: 0.9624</p>
+<p>load_avg_1min 与 load_avg_15min: 0.9391</p>
+<p>cpu_usage_percent 与 load_avg_15min: 0.9391</p>
+<p>load_avg_15min 与 process_count: 0.9306</p>
+<p>load_avg_5min 与 load_avg_15min: 0.9096</p>
+<p>query_rate_per_sec 与 transactions_per_sec: 0.8711</p>
+<p>disk_io_percent 与 disk_read_mbps: 0.8526</p>
+<p>disk_io_percent 与 disk_write_mbps: 0.8208</p>
+<p>disk_io_percent 与 load_avg_1min: 0.8178</p>
+<p>cpu_usage_percent 与 disk_io_percent: 0.8178</p>
+<p>thread_count 与 open_file_count: 0.8102</p>
+<p>disk_io_percent 与 process_count: 0.8093</p>
+<p>disk_io_percent 与 load_avg_5min: 0.7928</p>
+<p>disk_io_percent 与 network_traffic_percent: 0.7855</p>
+<p>cpu_usage_percent 与 network_traffic_percent: 0.7819</p>
+<p>network_traffic_percent 与 load_avg_1min: 0.7819</p>
+<p>query_rate_per_sec 与 active_connections: 0.7755</p>
+<p>network_traffic_percent 与 process_count: 0.7751</p>
+<p>disk_io_percent 与 load_avg_15min: 0.7701</p>
+<p>network_traffic_percent 与 network_in_mbps: 0.7672</p>
+<p>network_traffic_percent 与 load_avg_5min: 0.7583</p>
+<p>memory_usage_percent 与 disk_io_percent: 0.7574</p>
+<p>cpu_usage_percent 与 memory_usage_percent: 0.7569</p>
+<p>memory_usage_percent 与 load_avg_1min: 0.7569</p>
+<p>network_traffic_percent 与 network_out_mbps: 0.7561</p>
+<p>memory_usage_percent 与 process_count: 0.7488</p>
+<p>memory_usage_percent 与 disk_usage_percent: 0.7425</p>
+<p>network_traffic_percent 与 load_avg_15min: 0.7384</p>
+<p>memory_usage_percent 与 load_avg_5min: 0.7361</p>
+<p>memory_usage_percent 与 network_traffic_percent: 0.7134</p>
+<p>query_rate_per_sec 与 slow_queries_count: 0.7131</p>
+<p>memory_usage_percent 与 load_avg_15min: 0.7120</p>
+<p>disk_read_mbps 与 disk_write_mbps: 0.7090</p>
+<p>active_connections 与 lock_wait_count: 0.7088</p>
+<br>
+<p>== 低度相关变量 (|r| <= 0.2) ==</p>
+<p>query_rate_per_sec 与 deadlock_count: 0.1771</p>
+<p>transactions_per_sec 与 deadlock_count: 0.1660</p>
+<p>deadlock_count 与 slow_queries_count: 0.1262</p>
+<p>query_rate_per_sec 与 avg_query_time_ms: 0.0366</p>
+<p>avg_query_time_ms 与 transactions_per_sec: 0.0340</p>
+<p>cache_hit_rate_percent 与 buffer_pool_usage_percent: 0.0269</p>
+<p>avg_query_time_ms 与 slow_queries_count: 0.0250</p>
+<p>index_usage_percent 与 temp_tables_created_per_sec: -0.0243</p>
+<p>disk_write_mbps 与 temperature_celsius: -0.0230</p>
+<p>disk_read_mbps 与 temperature_celsius: -0.0227</p>
+<p>buffer_pool_usage_percent 与 aborted_connections: -0.0218</p>
+<p>write_percent 与 index_usage_percent: -0.0204</p>
+<p>read_percent 与 index_usage_percent: 0.0204</p>
+<p>disk_io_percent 与 temperature_celsius: -0.0196</p>
+<p>load_avg_15min 与 temperature_celsius: -0.0190</p>
+<p>memory_usage_percent 与 temperature_celsius: -0.0186</p>
+<p>avg_query_time_ms 与 buffer_pool_usage_percent: -0.0186</p>
+<p>active_connections 与 buffer_pool_usage_percent: -0.0184</p>
+<p>avg_query_time_ms 与 read_percent: 0.0177</p>
+<p>... 还有70对低相关变量 ...</p>
+<br>
+<p>== 重要性能指标相关性 ==</p>
+<br>
+<p>cpu_usage_percent 与其他指标的相关性:</p>
+<ul>
+<li>load_avg_1min: 1.0000</li>
+<li>process_count: 0.9904</li>
+<li>load_avg_5min: 0.9719</li>
+<li>load_avg_15min: 0.9391</li>
+<li>disk_io_percent: 0.8178</li>
+</ul>
+<br>
+<p>memory_usage_percent 与其他指标的相关性:</p>
+<ul>
+<li>disk_io_percent: 0.7574</li>
+<li>cpu_usage_percent: 0.7569</li>
+<li>load_avg_1min: 0.7569</li>
+<li>process_count: 0.7488</li>
+<li>disk_usage_percent: 0.7425</li>
+</ul>
+<br>
+<p>disk_io_percent 与其他指标的相关性:</p>
+<ul>
+<li>disk_read_mbps: 0.8526</li>
+<li>disk_write_mbps: 0.8208</li>
+<li>load_avg_1min: 0.8178</li>
+<li>cpu_usage_percent: 0.8178</li>
+<li>process_count: 0.8093</li>
+</ul>
+<br>
+<p>network_traffic_percent 与其他指标的相关性:</p>
+<ul>
+<li>disk_io_percent: 0.7855</li>
+<li>cpu_usage_percent: 0.7819</li>
+<li>load_avg_1min: 0.7819</li>
+<li>process_count: 0.7751</li>
+<li>network_in_mbps: 0.7672</li>
+</ul>
+<br>
+<p>query_rate_per_sec 与其他指标的相关性:</p>
+<ul>
+<li>transactions_per_sec: 0.8711</li>
+<li>active_connections: 0.7755</li>
+<li>slow_queries_count: 0.7131</li>
+<li>lock_wait_count: 0.5458</li>
+<li>aborted_connections: 0.5218</li>
+</ul>
+<br>
+<p>avg_query_time_ms 与其他指标的相关性:</p>
+<ul>
+<li>active_connections: 0.3841</li>
+<li>aborted_connections: 0.2959</li>
+<li>lock_wait_count: 0.2816</li>
+<li>deadlock_count: 0.2156</li>
+<li>query_rate_per_sec: 0.0366</li>
+</ul>
+<br>
+<br>
+<p>== 完整相关性矩阵 ==</p>
+<p>                             cpu_usage_percent  memory_usage_percent  disk_usage_percent  disk_io_percent  disk_read_mbps  disk_write_mbps  network_traffic_percent  network_in_mbps  network_out_mbps  load_avg_1min  load_avg_5min  load_avg_15min  process_count  thread_count  open_file_count  temperature_celsius  query_rate_per_sec  active_connections  cache_hit_rate_percent  avg_query_time_ms  transactions_per_sec  read_percent  write_percent  lock_wait_count  deadlock_count  buffer_pool_usage_percent  table_scans_per_sec  index_usage_percent  temp_tables_created_per_sec  slow_queries_count  aborted_connections</p>
+<p>cpu_usage_percent                        1.000                 0.757               0.635            0.818           0.696            0.670                    0.782            0.596             0.590          1.000          0.972           0.939          0.990         0.663            0.540               -0.013                 NaN                 NaN                     NaN                NaN                   NaN           NaN            NaN              NaN             NaN                        NaN                  NaN                  NaN                          NaN                 NaN                  NaN</p>
+<p>memory_usage_percent                     0.757                 1.000               0.742            0.757           0.644            0.619                    0.713            0.550             0.531          0.757          0.736           0.712          0.749         0.504            0.406               -0.019                 NaN                 NaN                     NaN                NaN                   NaN           NaN            NaN              NaN             NaN                        NaN                  NaN                  NaN                          NaN                 NaN                  NaN</p>
+<p>disk_usage_percent                       0.635                 0.742               1.000            0.635           0.532            0.526                    0.570            0.447             0.436          0.635          0.618           0.599          0.628         0.420            0.333               -0.007                 NaN                 NaN                     NaN                NaN                   NaN           NaN            NaN              NaN             NaN                        NaN                  NaN                  NaN                          NaN                 NaN                  NaN</p>
+<p>disk_io_percent                          0.818                 0.757               0.635            1.000           0.853            0.821                    0.786            0.595             0.593          0.818          0.793           0.770          0.809         0.547            0.442               -0.020                 NaN                 NaN                     NaN                NaN                   NaN           NaN            NaN              NaN             NaN                        NaN                  NaN                  NaN                          NaN                 NaN                  NaN</p>
+<p>disk_read_mbps                           0.696                 0.644               0.532            0.853           1.000            0.709                    0.665            0.508             0.509          0.696          0.675           0.652          0.688         0.461            0.375               -0.023                 NaN                 NaN                     NaN                NaN                   NaN           NaN            NaN              NaN             NaN                        NaN                  NaN                  NaN                          NaN                 NaN                  NaN</p>
+<p>disk_write_mbps                          0.670                 0.619               0.526            0.821           0.709            1.000                    0.642            0.484             0.480          0.670          0.650           0.635          0.662         0.450            0.357               -0.023                 NaN                 NaN                     NaN                NaN                   NaN           NaN            NaN              NaN             NaN                        NaN                  NaN                  NaN                          NaN                 NaN                  NaN</p>
+<p>network_traffic_percent                  0.782                 0.713               0.570            0.786           0.665            0.642                    1.000            0.767             0.756          0.782          0.758           0.738          0.775         0.515            0.426               -0.012                 NaN                 NaN                     NaN                NaN                   NaN           NaN            NaN              NaN             NaN                        NaN                  NaN                  NaN                          NaN                 NaN                  NaN</p>
+<p>network_in_mbps                          0.596                 0.550               0.447            0.595           0.508            0.484                    0.767            1.000             0.591          0.596          0.576           0.565          0.593         0.398            0.328               -0.002                 NaN                 NaN                     NaN                NaN                   NaN           NaN            NaN              NaN             NaN                        NaN                  NaN                  NaN                          NaN                 NaN                  NaN</p>
+<p>network_out_mbps                         0.590                 0.531               0.436            0.593           0.509            0.480                    0.756            0.591             1.000          0.590          0.575           0.555          0.585         0.388            0.326               -0.015                 NaN                 NaN                     NaN                NaN                   NaN           NaN            NaN              NaN             NaN                        NaN                  NaN                  NaN                          NaN                 NaN                  NaN</p>
+<p>load_avg_1min                            1.000                 0.757               0.635            0.818           0.696            0.670                    0.782            0.596             0.590          1.000          0.972           0.939          0.990         0.663            0.540               -0.013                 NaN                 NaN                     NaN                NaN                   NaN           NaN            NaN              NaN             NaN                        NaN                  NaN                  NaN                          NaN                 NaN                  NaN</p>
+<p>load_avg_5min                            0.972                 0.736               0.618            0.793           0.675            0.650                    0.758            0.576             0.575          0.972          1.000           0.910          0.962         0.642            0.520               -0.010                 NaN                 NaN                     NaN                NaN                   NaN           NaN            NaN              NaN             NaN                        NaN                  NaN                  NaN                          NaN                 NaN                  NaN</p>
+<p>load_avg_15min                           0.939                 0.712               0.599            0.770           0.652            0.635                    0.738            0.565             0.555          0.939          0.910           1.000          0.931         0.621            0.505               -0.019                 NaN                 NaN                     NaN                NaN                   NaN           NaN            NaN              NaN             NaN                        NaN                  NaN                  NaN                          NaN                 NaN                  NaN</p>
+<p>process_count                            0.990                 0.749               0.628            0.809           0.688            0.662                    0.775            0.593             0.585          0.990          0.962           0.931          1.000         0.668            0.545               -0.014                 NaN                 NaN                     NaN                NaN                   NaN           NaN            NaN              NaN             NaN                        NaN                  NaN                  NaN                          NaN                 NaN                  NaN</p>
+<p>thread_count                             0.663                 0.504               0.420            0.547           0.461            0.450                    0.515            0.398             0.388          0.663          0.642           0.621          0.668         1.000            0.810                0.000                 NaN                 NaN                     NaN                NaN                   NaN           NaN            NaN              NaN             NaN                        NaN                  NaN                  NaN                          NaN                 NaN                  NaN</p>
+<p>open_file_count                          0.540                 0.406               0.333            0.442           0.375            0.357                    0.426            0.328             0.326          0.540          0.520           0.505          0.545         0.810            1.000                0.005                 NaN                 NaN                     NaN                NaN                   NaN           NaN            NaN              NaN             NaN                        NaN                  NaN                  NaN                          NaN                 NaN                  NaN</p>
+<p>temperature_celsius                     -0.013                -0.019              -0.007           -0.020          -0.023           -0.023                   -0.012           -0.002            -0.015         -0.013         -0.010          -0.019         -0.014         0.000            0.005                1.000                 NaN                 NaN                     NaN                NaN                   NaN           NaN            NaN              NaN             NaN                        NaN                  NaN                  NaN                          NaN                 NaN                  NaN</p>
+<p>query_rate_per_sec                         NaN                   NaN                 NaN              NaN             NaN              NaN                      NaN              NaN               NaN            NaN            NaN             NaN            NaN           NaN              NaN                  NaN               1.000               0.776                  -0.437              0.037                 0.871        -0.016          0.016            0.546           0.177                     -0.007                0.002               -0.016                        0.001               0.713                0.522</p>
+<p>active_connections                         NaN                   NaN                 NaN              NaN             NaN              NaN                      NaN              NaN               NaN            NaN            NaN             NaN            NaN           NaN              NaN                  NaN               0.776               1.000                  -0.585              0.384                 0.673         0.001         -0.001            0.709           0.306                     -0.018                0.004               -0.000                        0.005               0.555                0.652</p>
+<p>cache_hit_rate_percent                     NaN                   NaN                 NaN              NaN             NaN              NaN                      NaN              NaN               NaN            NaN            NaN             NaN            NaN           NaN              NaN                  NaN              -0.437              -0.585                   1.000             -0.548                -0.367         0.002         -0.002           -0.411          -0.207                      0.027               -0.003               -0.006                        0.002              -0.325               -0.408</p>
+<p>avg_query_time_ms                          NaN                   NaN                 NaN              NaN             NaN              NaN                      NaN              NaN               NaN            NaN            NaN             NaN            NaN           NaN              NaN                  NaN               0.037               0.384                  -0.548              1.000                 0.034         0.018         -0.018            0.282           0.216                     -0.019                0.010                0.006                        0.005               0.025                0.296</p>
+<p>transactions_per_sec                       NaN                   NaN                 NaN              NaN             NaN              NaN                      NaN              NaN               NaN            NaN            NaN             NaN            NaN           NaN              NaN                  NaN               0.871               0.673                  -0.367              0.034                 1.000        -0.010          0.010            0.484           0.166                     -0.004                0.002               -0.015                        0.000               0.620                0.445</p>
+<p>read_percent                               NaN                   NaN                 NaN              NaN             NaN              NaN                      NaN              NaN               NaN            NaN            NaN             NaN            NaN           NaN              NaN                  NaN              -0.016               0.001                   0.002              0.018                -0.010         1.000         -1.000           -0.003           0.000                      0.003                0.010                0.020                        0.012              -0.011                0.000</p>
+<p>write_percent                              NaN                   NaN                 NaN              NaN             NaN              NaN                      NaN              NaN               NaN            NaN            NaN             NaN            NaN           NaN              NaN                  NaN               0.016              -0.001                  -0.002             -0.018                 0.010        -1.000          1.000            0.003          -0.000                     -0.003               -0.010               -0.020                       -0.012               0.011               -0.000</p>
+<p>lock_wait_count                            NaN                   NaN                 NaN              NaN             NaN              NaN                      NaN              NaN               NaN            NaN            NaN             NaN            NaN           NaN              NaN                  NaN               0.546               0.709                  -0.411              0.282                 0.484        -0.003          0.003            1.000           0.459                     -0.012               -0.008               -0.002                        0.004               0.390                0.477</p>
+<p>deadlock_count                             NaN                   NaN                 NaN              NaN             NaN              NaN                      NaN              NaN               NaN            NaN            NaN             NaN            NaN           NaN              NaN                  NaN               0.177               0.306                  -0.207              0.216                 0.166         0.000         -0.000            0.459           1.000                     -0.009               -0.008               -0.006                       -0.014               0.126                0.190</p>
+<p>buffer_pool_usage_percent                  NaN                   NaN                 NaN              NaN             NaN              NaN                      NaN              NaN               NaN            NaN            NaN             NaN            NaN           NaN              NaN                  NaN              -0.007              -0.018                   0.027             -0.019                -0.004         0.003         -0.003           -0.012          -0.009                      1.000                0.012               -0.008                       -0.017              -0.013               -0.022</p>
+<p>table_scans_per_sec                        NaN                   NaN                 NaN              NaN             NaN              NaN                      NaN              NaN               NaN            NaN            NaN             NaN            NaN           NaN              NaN                  NaN               0.002               0.004                  -0.003              0.010                 0.002         0.010         -0.010           -0.008          -0.008                      0.012                1.000                0.001                       -0.011               0.014                0.011</p>
+<p>index_usage_percent                        NaN                   NaN                 NaN              NaN             NaN              NaN                      NaN              NaN               NaN            NaN            NaN             NaN            NaN           NaN              NaN                  NaN              -0.016              -0.000                  -0.006              0.006                -0.015         0.020         -0.020           -0.002          -0.006                     -0.008                0.001                1.000                       -0.024              -0.016               -0.011</p>
+<p>temp_tables_created_per_sec                NaN                   NaN                 NaN              NaN             NaN              NaN                      NaN              NaN               NaN            NaN            NaN             NaN            NaN           NaN              NaN                  NaN               0.001               0.005                   0.002              0.005                 0.000         0.012         -0.012            0.004          -0.014                     -0.017               -0.011               -0.024                        1.000              -0.004                0.007</p>
+<p>slow_queries_count                         NaN                   NaN                 NaN              NaN             NaN              NaN                      NaN              NaN               NaN            NaN            NaN             NaN            NaN           NaN              NaN                  NaN               0.713               0.555                  -0.325              0.025                 0.620        -0.011          0.011            0.390           0.126                     -0.013                0.014               -0.016                       -0.004               1.000                0.373</p>
+<p>aborted_connections                        NaN                   NaN                 NaN              NaN             NaN              NaN                      NaN              NaN               NaN            NaN            NaN             NaN            NaN           NaN              NaN                  NaN               0.522               0.652                  -0.408              0.296                 0.445         0.000         -0.000            0.477           0.190                     -0.022                0.011               -0.011                        0.007               0.373                1.000</p>
+<br>
+<br>
+
+</body>
+</html>

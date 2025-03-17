@@ -1,0 +1,2 @@
+成功读取CSV文件，共2000行数据
+分析结果已保存到: pngs/category_distribution_results.txt

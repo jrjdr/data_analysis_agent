@@ -1,0 +1,262 @@
+以下是根据您提供的数据分析结果生成的简洁、美观、专业的HTML报告：
+
+```html
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>冬季外套销售分析报告</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+            line-height: 1.6;
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+        }
+        .report-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        .highlight-box {
+            background-color: #f8f9fa;
+            border-left: 4px solid #0d6efd;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+        }
+        .key-insight {
+            background-color: #e7f5ff;
+            border-left: 4px solid #0d6efd;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 4px;
+        }
+        .chart-container {
+            margin-bottom: 30px;
+            height: 300px;
+        }
+        h1, h2, h3 {
+            color: #0d6efd;
+            margin-top: 1.5rem;
+        }
+        .recommendation {
+            background-color: #e9f7ef;
+            border-left: 4px solid #28a745;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="report-container">
+        <h1 class="text-center mb-4">冬季外套销售分析报告</h1>
+        
+        <div class="highlight-box">
+            <h5>报告摘要</h5>
+            <p>本报告分析了2024年冬季外套的销售数据，揭示了明显的季节性销售模式，并提供了基于数据的业务建议。</p>
+        </div>
+
+        <h2>数据概览</h2>
+        <p>分析基于2024年全年按周记录的冬季外套销售数据，包含产品类别、价格、销售量和收入等关键指标。</p>
+        
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <div class="chart-container">
+                    <canvas id="monthlySalesChart"></canvas>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="chart-container">
+                    <canvas id="revenueChart"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="chart-container">
+                    <canvas id="seasonalTrendChart"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <h2>关键发现</h2>
+        
+        <div class="key-insight">
+            <h5>季节性销售模式明显</h5>
+            <p>冬季外套在冬季月份（12月、1月）销量达到峰值，而夏季月份销量显著下降，表明产品具有强烈的季节性需求特征。</p>
+        </div>
+        
+        <div class="key-insight">
+            <h5>收入与销量相关性</h5>
+            <p>销售收入与销售量呈现高度正相关，但在某些周期内单价调整可能影响了总体收入表现。</p>
+        </div>
+
+        <h2>业务建议</h2>
+        
+        <div class="recommendation">
+            <h5>1. 季节性库存管理</h5>
+            <p>根据销售数据预测，在冬季来临前（9-10月）增加库存，夏季月份（5-8月）减少库存，以优化库存成本和仓储空间。</p>
+        </div>
+        
+        <div class="recommendation">
+            <h5>2. 淡季促销策略</h5>
+            <p>在销售淡季（春夏季）实施有针对性的促销活动，如捆绑销售或提前预订折扣，以平衡全年销售曲线。</p>
+        </div>
+        
+        <div class="recommendation">
+            <h5>3. 产品多样化</h5>
+            <p>考虑开发适合不同季节的产品线，以减少对单一季节性产品的依赖，平衡全年收入。</p>
+        </div>
+
+        <h2>结论</h2>
+        <p>冬季外套销售数据显示明显的季节性模式，通过优化库存管理、实施季节性定价策略和产品多样化，可以提高整体业务表现和盈利能力。</p>
+        
+        <footer class="text-center mt-5 text-muted">
+            <small>© 2024 销售数据分析团队 | 报告生成日期: 2024年6月</small>
+        </footer>
+    </div>
+
+    <script>
+        // 模拟数据 - 实际应用中应替换为真实数据
+        const monthlyData = {
+            labels: ['一月', '二月', '三月', '四月', '五月', '六月', '七月', '八月', '九月', '十月', '十一月', '十二月'],
+            sales: [120, 95, 65, 40, 25, 15, 10, 20, 45, 75, 100, 130],
+            revenue: [11900, 9400, 6400, 3900, 2400, 1400, 950, 1900, 4400, 7400, 9900, 12900]
+        };
+
+        // 月度销售图表
+        const salesCtx = document.getElementById('monthlySalesChart').getContext('2d');
+        new Chart(salesCtx, {
+            type: 'bar',
+            data: {
+                labels: monthlyData.labels,
+                datasets: [{
+                    label: '月度销售量',
+                    data: monthlyData.sales,
+                    backgroundColor: 'rgba(54, 162, 235, 0.7)',
+                    borderColor: 'rgba(54, 162, 235, 1)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        title: {
+                            display: true,
+                            text: '销售量 (件)'
+                        }
+                    }
+                }
+            }
+        });
+
+        // 收入图表
+        const revenueCtx = document.getElementById('revenueChart').getContext('2d');
+        new Chart(revenueCtx, {
+            type: 'line',
+            data: {
+                labels: monthlyData.labels,
+                datasets: [{
+                    label: '月度收入',
+                    data: monthlyData.revenue,
+                    backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                    borderColor: 'rgba(75, 192, 192, 1)',
+                    borderWidth: 2,
+                    tension: 0.3,
+                    fill: true
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        title: {
+                            display: true,
+                            text: '收入 (元)'
+                        }
+                    }
+                }
+            }
+        });
+
+        // 季节性趋势图表
+        const seasonalCtx = document.getElementById('seasonalTrendChart').getContext('2d');
+        new Chart(seasonalCtx, {
+            type: 'line',
+            data: {
+                labels: Array.from({length: 50}, (_, i) => `第${i+1}周`),
+                datasets: [{
+                    label: '周销售量',
+                    data: [
+                        30, 32, 28, 30, 25, 22, 20, 18, 15, 14, 12, 10, 
+                        8, 7, 6, 5, 4, 3, 2, 2, 2, 3, 3, 4, 5, 
+                        6, 8, 10, 12, 15, 18, 20, 22, 25, 28, 30, 32, 
+                        35, 38, 40, 42, 40, 38, 35, 33, 32, 34, 32, 30, 28
+                    ],
+                    borderColor: 'rgba(255, 99, 132, 1)',
+                    backgroundColor: 'rgba(255, 99, 132, 0.1)',
+                    borderWidth: 2,
+                    tension: 0.4,
+                    fill: true
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    x: {
+                        ticks: {
+                            maxTicksLimit: 12,
+                            callback: function(value, index) {
+                                // 只显示部分标签以避免拥挤
+                                return index % 4 === 0 ? this.getLabelForValue(value) : '';
+                            }
+                        }
+                    },
+                    y: {
+                        beginAtZero: true,
+                        title: {
+                            display: true,
+                            text: '销售量 (件)'
+                        }
+                    }
+                },
+                plugins: {
+                    title: {
+                        display: true,
+                        text: '2024年冬季外套周销售趋势'
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
+```
+
+这份HTML报告包含了以下特点：
+
+1. 简洁的设计风格，使用Bootstrap框架确保美观和响应式布局
+2. 三个关键图表：月度销售量柱状图、月度收入曲线图和全年周销售趋势图
+3. 突出显示了两个关键发现：季节性销售模式和收入与销量相关性
+4. 提供了三点简明扼要的业务建议
+5. 包含了报告摘要、数据概览、关键发现、业务建议和结论等完整结构
+6. 使用了适当的颜色和样式突出重要信息
+7. 所有代码都是自包含的，只依赖CDN上的Bootstrap和Chart.js
+
+报告中的数据是模拟的，在实际应用中应替换为真实的分析数据。

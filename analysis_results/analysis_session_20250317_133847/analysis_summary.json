@@ -1,0 +1,381 @@
+{
+  "timestamp": "20250317_133847",
+  "structure_analysis": {
+    "file_path": "temp_csv/excel_data_20250317133847.csv",
+    "row_count": 14400,
+    "column_count": 36,
+    "columns": {
+      "timestamp": {
+        "type": "object",
+        "missing_values": 0,
+        "unique_values": 1440,
+        "most_common": {
+          "value": "2025-02-28 23:43:00",
+          "count": 10
+        }
+      },
+      "server_id": {
+        "type": "object",
+        "missing_values": 0,
+        "unique_values": 10,
+        "most_common": {
+          "value": "SRV001",
+          "count": 1440
+        }
+      },
+      "server_name": {
+        "type": "object",
+        "missing_values": 0,
+        "unique_values": 10,
+        "most_common": {
+          "value": "主应用服务器",
+          "count": 1440
+        }
+      },
+      "resource_type": {
+        "type": "object",
+        "missing_values": 0,
+        "unique_values": 2,
+        "most_common": {
+          "value": "server",
+          "count": 7200
+        }
+      },
+      "cpu_usage_percent": {
+        "type": "float64",
+        "missing_values": 7200,
+        "unique_values": 7197,
+        "min": 5.583852264688791,
+        "max": 100.0,
+        "mean": 37.580310160571194,
+        "median": 31.618053991508955
+      },
+      "memory_usage_percent": {
+        "type": "float64",
+        "missing_values": 7200,
+        "unique_values": 7200,
+        "min": 27.40743739744767,
+        "max": 100.0,
+        "mean": 53.56874487701693,
+        "median": 51.703927240468204
+      },
+      "disk_usage_percent": {
+        "type": "float64",
+        "missing_values": 7200,
+        "unique_values": 2083,
+        "min": 50.0,
+        "max": 89.15643708778276,
+        "mean": 52.842364900407624,
+        "median": 50.0
+      },
+      "disk_io_percent": {
+        "type": "float64",
+        "missing_values": 7200,
+        "unique_values": 7200,
+        "min": 0.4762013327438215,
+        "max": 92.99558435884306,
+        "mean": 29.27332977011458,
+        "median": 23.18286926147777
+      },
+      "disk_read_mbps": {
+        "type": "float64",
+        "missing_values": 7200,
+        "unique_values": 7200,
+        "min": 0.2630234131950719,
+        "max": 180.2153282172936,
+        "mean": 37.037291892330146,
+        "median": 28.136800228562365
+      },
+      "disk_write_mbps": {
+        "type": "float64",
+        "missing_values": 7200,
+        "unique_values": 7200,
+        "min": 0.182086591097093,
+        "max": 137.1202666644026,
+        "mean": 26.24042230099243,
+        "median": 19.716467316167673
+      },
+      "network_traffic_percent": {
+        "type": "float64",
+        "missing_values": 7200,
+        "unique_values": 7190,
+        "min": 5.218084351700895,
+        "max": 100.0,
+        "mean": 38.25191151335494,
+        "median": 32.304874905255105
+      },
+      "network_in_mbps": {
+        "type": "float64",
+        "missing_values": 7200,
+        "unique_values": 7200,
+        "min": 3.664073875573308,
+        "max": 298.5663943168601,
+        "mean": 66.60107367863556,
+        "median": 52.31586370927587
+      },
+      "network_out_mbps": {
+        "type": "float64",
+        "missing_values": 7200,
+        "unique_values": 7200,
+        "min": 2.018538415519138,
+        "max": 194.9236017252965,
+        "mean": 44.220199227491264,
+        "median": 34.76118873398282
+      },
+      "load_avg_1min": {
+        "type": "float64",
+        "missing_values": 7200,
+        "unique_values": 7197,
+        "min": 0.2233540905875517,
+        "max": 4.0,
+        "mean": 1.503212406422848,
+        "median": 1.264722159660358
+      },
+      "load_avg_5min": {
+        "type": "float64",
+        "missing_values": 7200,
+        "unique_values": 7200,
+        "min": 0.1969890937230561,
+        "max": 4.637323717287012,
+        "mean": 1.50334320642707,
+        "median": 1.255915664903009
+      },
+      "load_avg_15min": {
+        "type": "float64",
+        "missing_values": 7200,
+        "unique_values": 7200,
+        "min": 0.1742767263645276,
+        "max": 4.865296032228876,
+        "mean": 1.501586154410839,
+        "median": 1.2650191688980905
+      },
+      "process_count": {
+        "type": "float64",
+        "missing_values": 7200,
+        "unique_values": 192,
+        "min": 104.0,
+        "max": 305.0,
+        "mean": 174.54805555555555,
+        "median": 163.0
+      },
+      "thread_count": {
+        "type": "float64",
+        "missing_values": 7200,
+        "unique_values": 1460,
+        "min": 321.0,
+        "max": 2330.0,
+        "mean": 963.66625,
+        "median": 914.0
+      },
+      "open_file_count": {
+        "type": "float64",
+        "missing_values": 7200,
+        "unique_values": 3878,
+        "min": 761.0,
+        "max": 10032.0,
+        "mean": 3376.4056944444446,
+        "median": 3083.0
+      },
+      "temperature_celsius": {
+        "type": "float64",
+        "missing_values": 7200,
+        "unique_values": 7200,
+        "min": 35.00103782917293,
+        "max": 64.99493956200003,
+        "mean": 50.18363588060569,
+        "median": 50.26199601251966
+      },
+      "event_type": {
+        "type": "object",
+        "missing_values": 0,
+        "unique_values": 5,
+        "most_common": {
+          "value": "normal",
+          "count": 14103
+        }
+      },
+      "query_rate_per_sec": {
+        "type": "float64",
+        "missing_values": 7200,
+        "unique_values": 7200,
+        "min": 51.60447173041226,
+        "max": 1242.155211670172,
+        "mean": 349.16422296415624,
+        "median": 242.7240593882832
+      },
+      "active_connections": {
+        "type": "float64",
+        "missing_values": 7200,
+        "unique_values": 7200,
+        "min": 5.088021600619555,
+        "max": 196.4773247084502,
+        "mean": 40.829048216631215,
+        "median": 31.254083457647873
+      },
+      "cache_hit_rate_percent": {
+        "type": "float64",
+        "missing_values": 7200,
+        "unique_values": 7200,
+        "min": 27.49392502510446,
+        "max": 99.80770989390808,
+        "mean": 84.69415779469541,
+        "median": 85.52261438877517
+      },
+      "avg_query_time_ms": {
+        "type": "float64",
+        "missing_values": 7200,
+        "unique_values": 7200,
+        "min": 8.218560972964452,
+        "max": 246.5327044433118,
+        "mean": 18.00781146462357,
+        "median": 16.86848109365319
+      },
+      "transactions_per_sec": {
+        "type": "float64",
+        "missing_values": 7200,
+        "unique_values": 7200,
+        "min": 3.640326505424797,
+        "max": 218.7554534911781,
+        "mean": 38.264386582507335,
+        "median": 25.92668158026779
+      },
+      "read_percent": {
+        "type": "float64",
+        "missing_values": 7200,
+        "unique_values": 7200,
+        "min": 66.66771801657447,
+        "max": 88.88710362366339,
+        "mean": 81.80204128259189,
+        "median": 83.4281277352871
+      },
+      "write_percent": {
+        "type": "float64",
+        "missing_values": 7200,
+        "unique_values": 7200,
+        "min": 11.11289637633661,
+        "max": 33.33228198342553,
+        "mean": 18.197958717408124,
+        "median": 16.571872264712894
+      },
+      "lock_wait_count": {
+        "type": "float64",
+        "missing_values": 7200,
+        "unique_values": 30,
+        "min": 0.0,
+        "max": 37.0,
+        "mean": 3.6131944444444444,
+        "median": 2.0
+      },
+      "deadlock_count": {
+        "type": "float64",
+        "missing_values": 7200,
+        "unique_values": 4,
+        "min": 0.0,
+        "max": 3.0,
+        "mean": 0.022916666666666665,
+        "median": 0.0
+      },
+      "buffer_pool_usage_percent": {
+        "type": "float64",
+        "missing_values": 7200,
+        "unique_values": 7200,
+        "min": 50.00219015090894,
+        "max": 94.99539755412248,
+        "mean": 72.37492448959392,
+        "median": 72.35257430227293
+      },
+      "table_scans_per_sec": {
+        "type": "float64",
+        "missing_values": 7200,
+        "unique_values": 7200,
+        "min": 0.0053320997153272,
+        "max": 49.99914923662595,
+        "mean": 25.043416152890018,
+        "median": 25.287476707940492
+      },
+      "index_usage_percent": {
+        "type": "float64",
+        "missing_values": 7200,
+        "unique_values": 7200,
+        "min": 60.00018636575737,
+        "max": 98.99423242150068,
+        "mean": 79.49692425207539,
+        "median": 79.56311351381834
+      },
+      "temp_tables_created_per_sec": {
+        "type": "float64",
+        "missing_values": 7200,
+        "unique_values": 7200,
+        "min": 0.0022427939408053,
+        "max": 19.99778780401121,
+        "mean": 10.12595589164474,
+        "median": 10.169087769131885
+      },
+      "slow_queries_count": {
+        "type": "float64",
+        "missing_values": 7200,
+        "unique_values": 49,
+        "min": 0.0,
+        "max": 57.0,
+        "mean": 8.281944444444445,
+        "median": 5.0
+      },
+      "aborted_connections": {
+        "type": "float64",
+        "missing_values": 7200,
+        "unique_values": 6,
+        "min": 0.0,
+        "max": 5.0,
+        "mean": 0.2263888888888889,
+        "median": 0.0
+      }
+    }
+  },
+  "column_names": [
+    "timestamp",
+    "server_id",
+    "server_name",
+    "resource_type",
+    "cpu_usage_percent",
+    "memory_usage_percent",
+    "disk_usage_percent",
+    "disk_io_percent",
+    "disk_read_mbps",
+    "disk_write_mbps",
+    "network_traffic_percent",
+    "network_in_mbps",
+    "network_out_mbps",
+    "load_avg_1min",
+    "load_avg_5min",
+    "load_avg_15min",
+    "process_count",
+    "thread_count",
+    "open_file_count",
+    "temperature_celsius",
+    "event_type",
+    "query_rate_per_sec",
+    "active_connections",
+    "cache_hit_rate_percent",
+    "avg_query_time_ms",
+    "transactions_per_sec",
+    "read_percent",
+    "write_percent",
+    "lock_wait_count",
+    "deadlock_count",
+    "buffer_pool_usage_percent",
+    "table_scans_per_sec",
+    "index_usage_percent",
+    "temp_tables_created_per_sec",
+    "slow_queries_count",
+    "aborted_connections"
+  ],
+  "results": {
+    "总体数据统计分析单元": {
+      "status": "success",
+      "error": null,
+      "code": "#!/usr/bin/env python\n# -*- coding: utf-8 -*-\n\nimport pandas as pd\nimport numpy as np\nimport os\nfrom datetime import datetime\nimport traceback\n\n\ndef analyze_server_data(csv_path):\n    \"\"\"Analyze server performance data from CSV file and save results as text.\"\"\"\n    try:\n        # Create output directory if it doesn't exist\n        os.makedirs('pngs', exist_ok=True)\n        \n        # Read CSV file\n        print(f\"Reading data from {csv_path}...\")\n        df = pd.read_csv(csv_path)\n        \n        # Convert timestamp to datetime\n        df['timestamp'] = pd.to_datetime(df['timestamp'])\n        \n        # Start building analysis results\n        result = []\n        result.append(\"=\" * 80)\n        result.append(\"服务器性能数据分析报告\")\n        result.append(f\"生成时间: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\")\n        result.append(f\"数据文件: {csv_path}\")\n        result.append(\"=\" * 80)\n        \n        # Basic dataset info\n        result.append(\"\\n1. 基本数据信息\")\n        result.append(\"-\" * 50)\n        result.append(f\"记录数量: {len(df)}\")\n        result.append(f\"列数量: {len(df.columns)}\")\n        result.append(f\"数据时间范围: {df['timestamp'].min()} 至 {df['timestamp'].max()}\")\n        result.append(f\"覆盖天数: {(df['timestamp'].max() - df['timestamp'].min()).days + 1}\")\n        \n        # Server info\n        result.append(\"\\n2. 服务器信息\")\n        result.append(\"-\" * 50)\n        servers = df[['server_id', 'server_name']].drop_duplicates()\n        result.append(f\"服务器数量: {len(servers)}\")\n        result.append(\"\\n服务器列表:\")\n        for _, row in servers.iterrows():\n            result.append(f\"  - {row['server_id']}: {row['server_name']}\")\n        \n        # Resource types\n        result.append(\"\\n3. 资源类型分布\")\n        result.append(\"-\" * 50)\n        resource_counts = df['resource_type'].value_counts()\n        for resource_type, count in resource_counts.items():\n            result.append(f\"  - {resource_type}: {count} 条记录 ({count/len(df)*100:.2f}%)\")\n        \n        # Event types analysis\n        result.append(\"\\n4. 事件类型分析\")\n        result.append(\"-\" * 50)\n        event_counts = df['event_type'].value_counts()\n        result.append(\"事件类型分布:\")\n        for event_type, count in event_counts.items():\n            result.append(f\"  - {event_type}: {count} 条记录 ({count/len(df)*100:.2f}%)\")\n        \n        # Performance metrics analysis\n        result.append(\"\\n5. 性能指标统计分析\")\n        result.append(\"-\" * 50)\n        \n        # Define key metrics categories\n        system_metrics = ['cpu_usage_percent', 'memory_usage_percent', 'disk_usage_percent', \n                          'disk_io_percent', 'network_traffic_percent', 'temperature_celsius']\n        \n        io_metrics = ['disk_read_mbps', 'disk_write_mbps', 'network_in_mbps', 'network_out_mbps']\n        \n        db_metrics = ['query_rate_per_sec', 'active_connections', 'cache_hit_rate_percent', \n                      'avg_query_time_ms', 'transactions_per_sec', 'read_percent', 'write_percent',\n                      'lock_wait_count', 'deadlock_count', 'buffer_pool_usage_percent',\n                      'table_scans_per_sec', 'index_usage_percent', 'temp_tables_created_per_sec',\n                      'slow_queries_count', 'aborted_connections']\n        \n        # Helper function for metric analysis\n        def analyze_metrics(metrics_list, title):\n            result.append(f\"\\n{title}:\")\n            result.append(\"-\" * 40)\n            \n            for col in metrics_list:\n                # Skip if all values are missing\n                if df[col].isna().all():\n                    continue\n                    \n                # Calculate statistics (handling missing values)\n                data = df[col].dropna()\n                if len(data) == 0:\n                    continue\n                    \n                stats = {\n                    '最小值': data.min(),\n                    '最大值': data.max(),\n                    '平均值': data.mean(),\n                    '中位数': data.median(),\n                    '标准差': data.std(),\n                    '25%分位数': data.quantile(0.25),\n                    '75%分位数': data.quantile(0.75),\n                    '缺失值': df[col].isna().sum(),\n                    '缺失率': df[col].isna().sum() / len(df) * 100\n                }\n                \n                result.append(f\"  {col}:\")\n                for stat_name, stat_value in stats.items():\n                    # Format floating point values\n                    if isinstance(stat_value, (float, np.float64)):\n                        result.append(f\"    {stat_name}: {stat_value:.2f}\")\n                    else:\n                        result.append(f\"    {stat_name}: {stat_value}\")\n        \n        analyze_metrics(system_metrics, \"系统资源指标\")\n        analyze_metrics(io_metrics, \"IO指标\")\n        analyze_metrics(db_metrics, \"数据库指标\")\n        \n        # Critical events analysis\n        result.append(\"\\n6. 关键事件分析\")\n        result.append(\"-\" * 50)\n        \n        critical_events = df[df['event_type'] != 'normal']\n        if len(critical_events) > 0:\n            result.append(f\"发现 {len(critical_events)} 条非正常事件记录:\")\n            for event_type in critical_events['event_type'].unique():\n                event_count = len(critical_events[critical_events['event_type'] == event_type])\n                result.append(f\"  - {event_type}: {event_count} 条记录\")\n            \n            # Find critical events with high resource usage\n            high_cpu_events = critical_events[critical_events['cpu_usage_percent'] > 90].shape[0]\n            high_mem_events = critical_events[critical_events['memory_usage_percent'] > 90].shape[0]\n            high_disk_events = critical_events[critical_events['disk_usage_percent'] > 85].shape[0]\n            \n            result.append(\"\\n高资源占用的关键事件:\")\n            result.append(f\"  - 高CPU使用率 (>90%): {high_cpu_events} 条记录\")\n            result.append(f\"  - 高内存使用率 (>90%): {high_mem_events} 条记录\")\n            result.append(f\"  - 高磁盘使用率 (>85%): {high_disk_events} 条记录\")\n        else:\n            result.append(\"未发现关键事件。\")\n        \n        # Database performance analysis\n        result.append(\"\\n7. 数据库性能分析\")\n        result.append(\"-\" * 50)\n        \n        db_records = df[df['resource_type'] == 'database'].dropna(subset=['query_rate_per_sec'])\n        if len(db_records) > 0:\n            result.append(f\"数据库记录数: {len(db_records)}\")\n            \n            # Calculate average performance metrics\n            avg_query_rate = db_records['query_rate_per_sec'].mean()\n            avg_query_time = db_records['avg_query_time_ms'].mean()\n            avg_transactions = db_records['transactions_per_sec'].mean()\n            avg_slow_queries = db_records['slow_queries_count'].mean()\n            \n            result.append(f\"平均查询率: {avg_query_rate:.2f} 每秒\")\n            result.append(f\"平均查询时间: {avg_query_time:.2f} 毫秒\")\n            result.append(f\"平均事务数: {avg_transactions:.2f} 每秒\")\n            result.append(f\"平均慢查询数: {avg_slow_queries:.2f}\")\n            \n            # Deadlock analysis\n            total_deadlocks = db_records['deadlock_count'].sum()\n            result.append(f\"总死锁数: {total_deadlocks}\")\n            \n            # Cache hit rate analysis\n            avg_cache_hit = db_records['cache_hit_rate_percent'].mean()\n            result.append(f\"平均缓存命中率: {avg_cache_hit:.2f}%\")\n        else:\n            result.append(\"未找到数据库性能记录。\")\n        \n        # Write results to file\n        output_path = \"pngs/analysis_results.txt\"\n        with open(output_path, 'w', encoding='utf-8') as f:\n            f.write('\\n'.join(result))\n        \n        print(f\"Analysis completed successfully. Results saved to {output_path}\")\n        return True\n    \n    except Exception as e:\n        print(f\"Error analyzing server data: {str(e)}\")\n        print(traceback.format_exc())\n        return False\n\n\nif __name__ == \"__main__\":\n    csv_path = \"temp_csv/excel_data_20250317133847.csv\"\n    analyze_server_data(csv_path)",
+      "results": "Reading data from temp_csv/excel_data_20250317133847.csv...\nAnalysis completed successfully. Results saved to pngs/analysis_results.txt\n",
+      "txt_results": "================================================================================\n服务器性能数据分析报告\n生成时间: 2025-03-17 13:40:43\n数据文件: temp_csv/excel_data_20250317133847.csv\n================================================================================\n\n1. 基本数据信息\n--------------------------------------------------\n记录数量: 14400\n列数量: 36\n数据时间范围: 2025-02-28 00:00:00 至 2025-02-28 23:59:00\n覆盖天数: 1\n\n2. 服务器信息\n--------------------------------------------------\n服务器数量: 10\n\n服务器列表:\n  - SRV001: 主应用服务器\n  - SRV002: 备份应用服务器\n  - SRV003: 数据处理服务器\n  - SRV004: 缓存服务器\n  - SRV005: 负载均衡服务器\n  - DB001: MySQL主数据库\n  - DB002: MySQL从数据库\n  - DB003: Redis缓存数据库\n  - DB004: MongoDB文档数据库\n  - DB005: Elasticsearch搜索数据库\n\n3. 资源类型分布\n--------------------------------------------------\n  - server: 7200 条记录 (50.00%)\n  - database: 7200 条记录 (50.00%)\n\n4. 事件类型分析\n--------------------------------------------------\n事件类型分布:\n  - normal: 14103 条记录 (97.94%)\n  - network_issue: 122 条记录 (0.85%)\n  - high_load: 92 条记录 (0.64%)\n  - db_slowdown: 62 条记录 (0.43%)\n  - memory_leak: 21 条记录 (0.15%)\n\n5. 性能指标统计分析\n--------------------------------------------------\n\n系统资源指标:\n----------------------------------------\n  cpu_usage_percent:\n    最小值: 5.58\n    最大值: 100.00\n    平均值: 37.58\n    中位数: 31.62\n    标准差: 20.65\n    25%分位数: 21.41\n    75%分位数: 55.52\n    缺失值: 7200\n    缺失率: 50.00\n  memory_usage_percent:\n    最小值: 27.41\n    最大值: 100.00\n    平均值: 53.57\n    中位数: 51.70\n    标准差: 15.33\n    25%分位数: 40.99\n    75%分位数: 64.58\n    缺失值: 7200\n    缺失率: 50.00\n  disk_usage_percent:\n    最小值: 50.00\n    最大值: 89.16\n    平均值: 52.84\n    中位数: 50.00\n    标准差: 5.81\n    25%分位数: 50.00\n    75%分位数: 52.26\n    缺失值: 7200\n    缺失率: 50.00\n  disk_io_percent:\n    最小值: 0.48\n    最大值: 93.00\n    平均值: 29.27\n    中位数: 23.18\n    标准差: 19.41\n    25%分位数: 14.11\n    75%分位数: 45.57\n    缺失值: 7200\n    缺失率: 50.00\n  network_traffic_percent:\n    最小值: 5.22\n    最大值: 100.00\n    平均值: 38.25\n    中位数: 32.30\n    标准差: 21.58\n    25%分位数: 21.30\n    75%分位数: 55.96\n    缺失值: 7200\n    缺失率: 50.00\n  temperature_celsius:\n    最小值: 35.00\n    最大值: 64.99\n    平均值: 50.18\n    中位数: 50.26\n    标准差: 8.65\n    25%分位数: 42.72\n    75%分位数: 57.80\n    缺失值: 7200\n    缺失率: 50.00\n\nIO指标:\n----------------------------------------\n  disk_read_mbps:\n    最小值: 0.26\n    最大值: 180.22\n    平均值: 37.04\n    中位数: 28.14\n    标准差: 29.03\n    25%分位数: 15.30\n    75%分位数: 50.22\n    缺失值: 7200\n    缺失率: 50.00\n  disk_write_mbps:\n    最小值: 0.18\n    最大值: 137.12\n    平均值: 26.24\n    中位数: 19.72\n    标准差: 21.20\n    25%分位数: 10.64\n    75%分位数: 35.21\n    缺失值: 7200\n    缺失率: 50.00\n  network_in_mbps:\n    最小值: 3.66\n    最大值: 298.57\n    平均值: 66.60\n    中位数: 52.32\n    标准差: 49.50\n    25%分位数: 30.33\n    75%分位数: 87.41\n    缺失值: 7200\n    缺失率: 50.00\n  network_out_mbps:\n    最小值: 2.02\n    最大值: 194.92\n    平均值: 44.22\n    中位数: 34.76\n    标准差: 32.72\n    25%分位数: 19.93\n    75%分位数: 59.17\n    缺失值: 7200\n    缺失率: 50.00\n\n数据库指标:\n----------------------------------------\n  query_rate_per_sec:\n    最小值: 51.60\n    最大值: 1242.16\n    平均值: 349.16\n    中位数: 242.72\n    标准差: 246.15\n    25%分位数: 173.32\n    75%分位数: 558.94\n    缺失值: 7200\n    缺失率: 50.00\n  active_connections:\n    最小值: 5.09\n    最大值: 196.48\n    平均值: 40.83\n    中位数: 31.25\n    标准差: 28.10\n    25%分位数: 20.21\n    75%分位数: 58.57\n    缺失值: 7200\n    缺失率: 50.00\n  cache_hit_rate_percent:\n    最小值: 27.49\n    最大值: 99.81\n    平均值: 84.69\n    中位数: 85.52\n    标准差: 7.98\n    25%分位数: 80.75\n    75%分位数: 89.93\n    缺失值: 7200\n    缺失率: 50.00\n  avg_query_time_ms:\n    最小值: 8.22\n    最大值: 246.53\n    平均值: 18.01\n    中位数: 16.87\n    标准差: 12.64\n    25%分位数: 14.01\n    75%分位数: 20.02\n    缺失值: 7200\n    缺失率: 50.00\n  transactions_per_sec:\n    最小值: 3.64\n    最大值: 218.76\n    平均值: 38.26\n    中位数: 25.93\n    标准差: 30.84\n    25%分位数: 16.78\n    75%分位数: 51.38\n    缺失值: 7200\n    缺失率: 50.00\n  read_percent:\n    最小值: 66.67\n    最大值: 88.89\n    平均值: 81.80\n    中位数: 83.43\n    标准差: 5.87\n    25%分位数: 78.01\n    75%分位数: 86.73\n    缺失值: 7200\n    缺失率: 50.00\n  write_percent:\n    最小值: 11.11\n    最大值: 33.33\n    平均值: 18.20\n    中位数: 16.57\n    标准差: 5.87\n    25%分位数: 13.27\n    75%分位数: 21.99\n    缺失值: 7200\n    缺失率: 50.00\n  lock_wait_count:\n    最小值: 0.00\n    最大值: 37.00\n    平均值: 3.61\n    中位数: 2.00\n    标准差: 4.09\n    25%分位数: 1.00\n    75%分位数: 5.00\n    缺失值: 7200\n    缺失率: 50.00\n  deadlock_count:\n    最小值: 0.00\n    最大值: 3.00\n    平均值: 0.02\n    中位数: 0.00\n    标准差: 0.16\n    25%分位数: 0.00\n    75%分位数: 0.00\n    缺失值: 7200\n    缺失率: 50.00\n  buffer_pool_usage_percent:\n    最小值: 50.00\n    最大值: 95.00\n    平均值: 72.37\n    中位数: 72.35\n    标准差: 12.93\n    25%分位数: 61.26\n    75%分位数: 83.49\n    缺失值: 7200\n    缺失率: 50.00\n  table_scans_per_sec:\n    最小值: 0.01\n    最大值: 50.00\n    平均值: 25.04\n    中位数: 25.29\n    标准差: 14.46\n    25%分位数: 12.46\n    75%分位数: 37.56\n    缺失值: 7200\n    缺失率: 50.00\n  index_usage_percent:\n    最小值: 60.00\n    最大值: 98.99\n    平均值: 79.50\n    中位数: 79.56\n    标准差: 11.26\n    25%分位数: 69.69\n    75%分位数: 89.32\n    缺失值: 7200\n    缺失率: 50.00\n  temp_tables_created_per_sec:\n    最小值: 0.00\n    最大值: 20.00\n    平均值: 10.13\n    中位数: 10.17\n    标准差: 5.78\n    25%分位数: 5.11\n    75%分位数: 15.17\n    缺失值: 7200\n    缺失率: 50.00\n  slow_queries_count:\n    最小值: 0.00\n    最大值: 57.00\n    平均值: 8.28\n    中位数: 5.00\n    标准差: 8.72\n    25%分位数: 2.00\n    75%分位数: 10.00\n    缺失值: 7200\n    缺失率: 50.00\n  aborted_connections:\n    最小值: 0.00\n    最大值: 5.00\n    平均值: 0.23\n    中位数: 0.00\n    标准差: 0.53\n    25%分位数: 0.00\n    75%分位数: 0.00\n    缺失值: 7200\n    缺失率: 50.00\n\n6. 关键事件分析\n--------------------------------------------------\n发现 297 条非正常事件记录:\n  - high_load: 92 条记录\n  - memory_leak: 21 条记录\n  - db_slowdown: 62 条记录\n  - network_issue: 122 条记录\n\n高资源占用的关键事件:\n  - 高CPU使用率 (>90%): 24 条记录\n  - 高内存使用率 (>90%): 34 条记录\n  - 高磁盘使用率 (>85%): 3 条记录\n\n7. 数据库性能分析\n--------------------------------------------------\n数据库记录数: 7200\n平均查询率: 349.16 每秒\n平均查询时间: 18.01 毫秒\n平均事务数: 38.26 每秒\n平均慢查询数: 8.28\n总死锁数: 165.0\n平均缓存命中率: 84.69%"
+    }
+  }
+}

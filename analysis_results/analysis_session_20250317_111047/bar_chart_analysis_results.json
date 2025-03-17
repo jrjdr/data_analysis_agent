@@ -1,0 +1,422 @@
+{
+  "station_success_rate": [
+    {
+      "base_station_name": "城南-大学城基站",
+      "success_rate": 0.8609196077835374
+    },
+    {
+      "base_station_name": "城西-住宅区基站",
+      "success_rate": 0.8604209809428143
+    },
+    {
+      "base_station_name": "市中心-商业区基站",
+      "success_rate": 0.8578921554431497
+    },
+    {
+      "base_station_name": "城北-工业园区基站",
+      "success_rate": 0.8558074511442235
+    },
+    {
+      "base_station_name": "城东-商业区基站",
+      "success_rate": 0.8535921561365585
+    }
+  ],
+  "signal_type_counts": [
+    {
+      "signal_type": "PAGING",
+      "count": 523
+    },
+    {
+      "signal_type": "ATTACH_REQUEST",
+      "count": 502
+    },
+    {
+      "signal_type": "HANDOVER_REQUEST",
+      "count": 494
+    },
+    {
+      "signal_type": "HANDOVER_COMPLETE",
+      "count": 491
+    },
+    {
+      "signal_type": "SERVICE_REQUEST",
+      "count": 491
+    },
+    {
+      "signal_type": "HANDOVER_COMMAND",
+      "count": 486
+    },
+    {
+      "signal_type": "DETACH_REQUEST",
+      "count": 483
+    },
+    {
+      "signal_type": "RRC_CONNECTION_SETUP_COMPLETE",
+      "count": 477
+    },
+    {
+      "signal_type": "ATTACH_COMPLETE",
+      "count": 477
+    },
+    {
+      "signal_type": "SERVICE_ACCEPT",
+      "count": 475
+    },
+    {
+      "signal_type": "RRC_CONNECTION_REQUEST",
+      "count": 471
+    },
+    {
+      "signal_type": "DETACH_ACCEPT",
+      "count": 465
+    },
+    {
+      "signal_type": "RRC_CONNECTION_RELEASE",
+      "count": 464
+    },
+    {
+      "signal_type": "RRC_CONNECTION_SETUP",
+      "count": 461
+    },
+    {
+      "signal_type": "ATTACH_ACCEPT",
+      "count": 440
+    }
+  ],
+  "status_counts": [
+    {
+      "status": "SUCCESS",
+      "count": 6125
+    },
+    {
+      "status": "FAILED",
+      "count": 373
+    },
+    {
+      "status": "TIMEOUT",
+      "count": 270
+    },
+    {
+      "status": "REJECTED",
+      "count": 237
+    },
+    {
+      "status": "PENDING",
+      "count": 195
+    }
+  ],
+  "station_resource_usage": [
+    {
+      "base_station_name": "市中心-商业区基站",
+      "resource_block_usage_percent": 56.486805555555556
+    },
+    {
+      "base_station_name": "城东-商业区基站",
+      "resource_block_usage_percent": 56.47222222222222
+    },
+    {
+      "base_station_name": "城南-大学城基站",
+      "resource_block_usage_percent": 56.14652777777778
+    },
+    {
+      "base_station_name": "城北-工业园区基站",
+      "resource_block_usage_percent": 56.09722222222222
+    },
+    {
+      "base_station_name": "城西-住宅区基站",
+      "resource_block_usage_percent": 56.074305555555554
+    }
+  ],
+  "station_downlink_throughput": [
+    {
+      "base_station_name": "城北-工业园区基站",
+      "downlink_throughput_mbps": 722.9670828284777
+    },
+    {
+      "base_station_name": "城东-商业区基站",
+      "downlink_throughput_mbps": 720.4582096789392
+    },
+    {
+      "base_station_name": "市中心-商业区基站",
+      "downlink_throughput_mbps": 717.0846061611559
+    },
+    {
+      "base_station_name": "城西-住宅区基站",
+      "downlink_throughput_mbps": 714.9190395580546
+    },
+    {
+      "base_station_name": "城南-大学城基站",
+      "downlink_throughput_mbps": 691.4348715396022
+    }
+  ],
+  "station_latency": [
+    {
+      "base_station_name": "城北-工业园区基站",
+      "latency_ms": 21.520775330903845
+    },
+    {
+      "base_station_name": "市中心-商业区基站",
+      "latency_ms": 21.613721566586598
+    },
+    {
+      "base_station_name": "城西-住宅区基站",
+      "latency_ms": 21.7422932108869
+    },
+    {
+      "base_station_name": "城东-商业区基站",
+      "latency_ms": 21.76536511042189
+    },
+    {
+      "base_station_name": "城南-大学城基站",
+      "latency_ms": 21.793666307008674
+    }
+  ],
+  "signal_type_success_rate": [
+    {
+      "signal_type": "DETACH_ACCEPT",
+      "success_rate": 0.8651539916753879
+    },
+    {
+      "signal_type": "ATTACH_COMPLETE",
+      "success_rate": 0.8633351100405773
+    },
+    {
+      "signal_type": "RRC_CONNECTION_SETUP_COMPLETE",
+      "success_rate": 0.8620953639854173
+    },
+    {
+      "signal_type": "DETACH_REQUEST",
+      "success_rate": 0.8615233898736719
+    },
+    {
+      "signal_type": "PAGING",
+      "success_rate": 0.8610407933559258
+    },
+    {
+      "signal_type": "RRC_CONNECTION_RELEASE",
+      "success_rate": 0.8606304559608524
+    },
+    {
+      "signal_type": "HANDOVER_COMPLETE",
+      "success_rate": 0.8583896470205641
+    },
+    {
+      "signal_type": "SERVICE_ACCEPT",
+      "success_rate": 0.8581027705459808
+    },
+    {
+      "signal_type": "RRC_CONNECTION_SETUP",
+      "success_rate": 0.8575198558237118
+    },
+    {
+      "signal_type": "SERVICE_REQUEST",
+      "success_rate": 0.8553959066945382
+    },
+    {
+      "signal_type": "RRC_CONNECTION_REQUEST",
+      "success_rate": 0.8552075945879822
+    },
+    {
+      "signal_type": "HANDOVER_REQUEST",
+      "success_rate": 0.8545829562099034
+    },
+    {
+      "signal_type": "ATTACH_ACCEPT",
+      "success_rate": 0.8531971863523864
+    },
+    {
+      "signal_type": "ATTACH_REQUEST",
+      "success_rate": 0.8506781070084614
+    },
+    {
+      "signal_type": "HANDOVER_COMMAND",
+      "success_rate": 0.8492445977342965
+    }
+  ],
+  "station_cpu_usage": [
+    {
+      "base_station_name": "市中心-商业区基站",
+      "cpu_usage_percent": 56.546427520032175
+    },
+    {
+      "base_station_name": "城东-商业区基站",
+      "cpu_usage_percent": 56.544325467004356
+    },
+    {
+      "base_station_name": "城南-大学城基站",
+      "cpu_usage_percent": 56.208771450980215
+    },
+    {
+      "base_station_name": "城北-工业园区基站",
+      "cpu_usage_percent": 55.941043051199365
+    },
+    {
+      "base_station_name": "城西-住宅区基站",
+      "cpu_usage_percent": 55.88127014202408
+    }
+  ],
+  "station_memory_usage": [
+    {
+      "base_station_name": "市中心-商业区基站",
+      "memory_usage_percent": 56.59622143010734
+    },
+    {
+      "base_station_name": "城北-工业园区基站",
+      "memory_usage_percent": 56.30419844147245
+    },
+    {
+      "base_station_name": "城西-住宅区基站",
+      "memory_usage_percent": 56.16257539229006
+    },
+    {
+      "base_station_name": "城南-大学城基站",
+      "memory_usage_percent": 56.15352635382063
+    },
+    {
+      "base_station_name": "城东-商业区基站",
+      "memory_usage_percent": 55.98380333891028
+    }
+  ],
+  "station_temperature": [
+    {
+      "base_station_name": "城东-商业区基站",
+      "temperature_celsius": 35.319297416512704
+    },
+    {
+      "base_station_name": "城北-工业园区基站",
+      "temperature_celsius": 35.13436774964472
+    },
+    {
+      "base_station_name": "城南-大学城基站",
+      "temperature_celsius": 35.08865504252556
+    },
+    {
+      "base_station_name": "市中心-商业区基站",
+      "temperature_celsius": 34.95969827332501
+    },
+    {
+      "base_station_name": "城西-住宅区基站",
+      "temperature_celsius": 34.66892769336189
+    }
+  ],
+  "hourly_active_users": [
+    {
+      "hour": 0,
+      "active_users": 125.59333333333333
+    },
+    {
+      "hour": 1,
+      "active_users": 121.65666666666667
+    },
+    {
+      "hour": 2,
+      "active_users": 124.61666666666666
+    },
+    {
+      "hour": 3,
+      "active_users": 123.16666666666667
+    },
+    {
+      "hour": 4,
+      "active_users": 126.52
+    },
+    {
+      "hour": 5,
+      "active_users": 123.62666666666667
+    },
+    {
+      "hour": 6,
+      "active_users": 128.33
+    },
+    {
+      "hour": 7,
+      "active_users": 122.85
+    },
+    {
+      "hour": 8,
+      "active_users": 343.74333333333334
+    },
+    {
+      "hour": 9,
+      "active_users": 344.2633333333333
+    },
+    {
+      "hour": 10,
+      "active_users": 125.34333333333333
+    },
+    {
+      "hour": 11,
+      "active_users": 124.45
+    },
+    {
+      "hour": 12,
+      "active_users": 345.93333333333334
+    },
+    {
+      "hour": 13,
+      "active_users": 360.98
+    },
+    {
+      "hour": 14,
+      "active_users": 124.14
+    },
+    {
+      "hour": 15,
+      "active_users": 124.62333333333333
+    },
+    {
+      "hour": 16,
+      "active_users": 127.9
+    },
+    {
+      "hour": 17,
+      "active_users": 123.45333333333333
+    },
+    {
+      "hour": 18,
+      "active_users": 350.31333333333333
+    },
+    {
+      "hour": 19,
+      "active_users": 360.34
+    },
+    {
+      "hour": 20,
+      "active_users": 348.0966666666667
+    },
+    {
+      "hour": 21,
+      "active_users": 355.05
+    },
+    {
+      "hour": 22,
+      "active_users": 126.36333333333333
+    },
+    {
+      "hour": 23,
+      "active_users": 127.35666666666667
+    }
+  ],
+  "signal_strength_distribution": [
+    {
+      "signal_strength_range": "-120 to -110",
+      "count": 1409
+    },
+    {
+      "signal_strength_range": "-110 to -100",
+      "count": 1458
+    },
+    {
+      "signal_strength_range": "-100 to -90",
+      "count": 1490
+    },
+    {
+      "signal_strength_range": "-90 to -80",
+      "count": 1444
+    },
+    {
+      "signal_strength_range": "-80 to -70",
+      "count": 1399
+    }
+  ]
+}

@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excel数据分析报告</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            color: #2c3e50;
+            margin-top: 24px;
+            margin-bottom: 16px;
+        }
+        h1 { font-size: 2em; border-bottom: 1px solid #eaecef; padding-bottom: .3em; }
+        h2 { font-size: 1.5em; border-bottom: 1px solid #eaecef; padding-bottom: .3em; }
+        h3 { font-size: 1.25em; }
+        h4 { font-size: 1em; }
+        p, ul, ol, table { margin-bottom: 16px; }
+        code {
+            font-family: Consolas, Monaco, 'Andale Mono', monospace;
+            background-color: #f6f8fa;
+            padding: 0.2em 0.4em;
+            border-radius: 3px;
+        }
+        pre {
+            background-color: #f6f8fa;
+            border-radius: 3px;
+            padding: 16px;
+            overflow: auto;
+        }
+        pre code {
+            background-color: transparent;
+            padding: 0;
+        }
+        blockquote {
+            padding: 0 1em;
+            color: #6a737d;
+            border-left: 0.25em solid #dfe2e5;
+            margin: 0 0 16px 0;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        table th, table td {
+            border: 1px solid #dfe2e5;
+            padding: 6px 13px;
+        }
+        table tr:nth-child(2n) {
+            background-color: #f6f8fa;
+        }
+        img {
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+<h1>Customer Complaints Analysis Report</h1>
+<p>*Analysis Date: March 17, 2025*</p>
+<br>
+<h2>Executive Summary</h2>
+<br>
+<p>This report analyzes 2,000 customer complaints from a telecommunications service provider during Q1 2025 (January to March). Key findings include:</p>
+<br>
+<ul>
+<li>Average resolution time is 7.15 days, with 21.5% of complaints still unresolved</li>
+<li>Customer satisfaction averages 3.02 out of 5, with relatively even distribution across ratings</li>
+<li>Call Drop issues are the most common complaint type (14.8%)</li>
+<li>Mobile and Broadband services account for 50.8% of all complaints</li>
+<li>Regional distribution is balanced, with slightly more complaints from the North region</li>
+<li>85.1% of complaints have been closed, with 14.9% still in process</li>
+</ul>
+<br>
+<h2>1. Dataset Overview</h2>
+<br>
+<p>The analysis is based on a dataset of 2,000 customer complaints with the following characteristics:</p>
+<br>
+<table>
+<tr><th>Attribute</th><th>Value</th></tr>
+<tr><td>Total records</td><td>2,000</td></tr>
+<tr><td>Time period</td><td>January - March 2025</td></tr>
+<tr><td>Data columns</td><td>12</td></tr>
+<tr><td>Missing values</td><td>Resolution_Date (430), Customer_Satisfaction (298)</td></tr>
+</table>
+<br>
+<h2>2. Complaint Volume and Distribution</h2>
+<br>
+<h3>2.1 Monthly Complaint Distribution</h3>
+<br>
+<table>
+<tr><th>Month</th><th>Number of Complaints</th><th>Percentage</th></tr>
+<tr><td>January 2025</td><td>674</td><td>33.7%</td></tr>
+<tr><td>February 2025</td><td>621</td><td>31.1%</td></tr>
+<tr><td>March 2025</td><td>705</td><td>35.2%</td></tr>
+</table>
+<br>
+<h3>2.2 Regional Distribution</h3>
+<br>
+<table>
+<tr><th>Region</th><th>Number of Complaints</th><th>Percentage</th></tr>
+<tr><td>North</td><td>417</td><td>20.85%</td></tr>
+<tr><td>Central</td><td>405</td><td>20.25%</td></tr>
+<tr><td>South</td><td>403</td><td>20.15%</td></tr>
+<tr><td>West</td><td>396</td><td>19.80%</td></tr>
+<tr><td>East</td><td>379</td><td>18.95%</td></tr>
+</table>
+<br>
+<h3>2.3 Service Type Distribution</h3>
+<br>
+<table>
+<tr><th>Service Type</th><th>Number of Complaints</th><th>Percentage</th></tr>
+<tr><td>Mobile</td><td>508</td><td>25.40%</td></tr>
+<tr><td>Broadband</td><td>508</td><td>25.40%</td></tr>
+<tr><td>Fixed Line</td><td>494</td><td>24.70%</td></tr>
+<tr><td>TV</td><td>490</td><td>24.50%</td></tr>
+</table>
+<br>
+<h3>2.4 Complaint Type Distribution</h3>
+<br>
+<table>
+<tr><th>Complaint Type</th><th>Number of Complaints</th><th>Percentage</th></tr>
+<tr><td>Call Drop</td><td>296</td><td>14.80%</td></tr>
+<tr><td>SMS Failure</td><td>289</td><td>14.45%</td></tr>
+<tr><td>Service Outage</td><td>289</td><td>14.45%</td></tr>
+<tr><td>Poor Voice Quality</td><td>288</td><td>14.40%</td></tr>
+<tr><td>No Signal</td><td>280</td><td>14.00%</td></tr>
+<tr><td>Billing Issue</td><td>279</td><td>13.95%</td></tr>
+<tr><td>Slow Internet</td><td>279</td><td>13.95%</td></tr>
+</table>
+<br>
+<h3>2.5 Priority Level Distribution</h3>
+<br>
+<table>
+<tr><th>Priority Level</th><th>Number of Complaints</th><th>Percentage</th></tr>
+<tr><td>Critical</td><td>526</td><td>26.30%</td></tr>
+<tr><td>Medium</td><td>500</td><td>25.00%</td></tr>
+<tr><td>Low</td><td>495</td><td>24.75%</td></tr>
+<tr><td>High</td><td>479</td><td>23.95%</td></tr>
+</table>
+<br>
+<h3>2.6 Current Status Distribution</h3>
+<br>
+<table>
+<tr><th>Status</th><th>Number of Complaints</th><th>Percentage</th></tr>
+<tr><td>Closed</td><td>1,702</td><td>85.10%</td></tr>
+<tr><td>In Progress</td><td>111</td><td>5.55%</td></tr>
+<tr><td>Resolved</td><td>99</td><td>4.95%</td></tr>
+<tr><td>Open</td><td>88</td><td>4.40%</td></tr>
+</table>
+<br>
+<h2>3. Resolution Time Analysis</h2>
+<br>
+<h3>3.1 Overall Resolution Time</h3>
+<br>
+<table>
+<tr><th>Metric</th><th>Value (Days)</th></tr>
+<tr><td>Average Resolution Time</td><td>7.15</td></tr>
+<tr><td>Median Resolution Time</td><td>7.00</td></tr>
+<tr><td>Minimum Resolution Time</td><td>0.00</td></tr>
+<tr><td>Maximum Resolution Time</td><td>14.00</td></tr>
+<tr><td>Standard Deviation</td><td>4.40</td></tr>
+</table>
+<br>
+<h3>3.2 Resolution Time by Region</h3>
+<br>
+<table>
+<tr><th>Region</th><th>Mean (Days)</th><th>Median (Days)</th><th>Std Dev</th></tr>
+<tr><td>North</td><td>7.22</td><td>7.0</td><td>4.33</td></tr>
+<tr><td>Central</td><td>7.20</td><td>7.0</td><td>4.48</td></tr>
+<tr><td>East</td><td>7.18</td><td>7.0</td><td>4.51</td></tr>
+<tr><td>West</td><td>7.11</td><td>7.0</td><td>4.41</td></tr>
+<tr><td>South</td><td>7.05</td><td>7.0</td><td>4.31</td></tr>
+</table>
+<br>
+<h3>3.3 Resolution Time by Service Type</h3>
+<br>
+<table>
+<tr><th>Service Type</th><th>Mean (Days)</th><th>Median (Days)</th><th>Std Dev</th></tr>
+<tr><td>Fixed Line</td><td>7.19</td><td>7.0</td><td>4.46</td></tr>
+<tr><td>Broadband</td><td>7.18</td><td>7.0</td><td>4.50</td></tr>
+<tr><td>Mobile</td><td>7.14</td><td>7.0</td><td>4.31</td></tr>
+<tr><td>TV</td><td>7.11</td><td>7.0</td><td>4.36</td></tr>
+</table>
+<br>
+<h3>3.4 Resolution Time by Priority</h3>
+<br>
+<table>
+<tr><th>Priority</th><th>Mean (Days)</th><th>Median (Days)</th><th>Std Dev</th></tr>
+<tr><td>Critical</td><td>7.44</td><td>7.0</td><td>4.39</td></tr>
+<tr><td>High</td><td>7.38</td><td>8.0</td><td>4.45</td></tr>
+<tr><td>Medium</td><td>6.90</td><td>7.0</td><td>4.38</td></tr>
+<tr><td>Low</td><td>6.89</td><td>7.0</td><td>4.39</td></tr>
+</table>
+<br>
+<h2>4. Customer Satisfaction Analysis</h2>
+<br>
+<h3>4.1 Overall Satisfaction Distribution</h3>
+<br>
+<table>
+<tr><th>Rating</th><th>Count</th><th>Percentage</th></tr>
+<tr><td>Rating 1</td><td>339</td><td>19.92%</td></tr>
+<tr><td>Rating 2</td><td>319</td><td>18.74%</td></tr>
+<tr><td>Rating 3</td><td>360</td><td>21.15%</td></tr>
+<tr><td>Rating 4</td><td>344</td><td>20.21%</td></tr>
+<tr><td>Rating 5</td><td>340</td><td>19.98%</td></tr>
+<tr><td>Average Rating</td><td>3.02</td><td>-</td></tr>
+</table>
+<br>
+<h3>4.2 Satisfaction by Region</h3>
+<br>
+<table>
+<tr><th>Region</th><th>Mean Rating</th><th>Median Rating</th><th>Std Dev</th></tr>
+<tr><td>South</td><td>3.15</td><td>3.0</td><td>1.39</td></tr>
+<tr><td>North</td><td>3.00</td><td>3.0</td><td>1.48</td></tr>
+<tr><td>West</td><td>3.00</td><td>3.0</td><td>1.40</td></tr>
+<tr><td>East</td><td>2.99</td><td>3.0</td><td>1.39</td></tr>
+<tr><td>Central</td><td>2.93</td><td>3.0</td><td>1.37</td></tr>
+</table>
+<br>
+<h3>4.3 Satisfaction by Service Type</h3>
+<br>
+<table>
+<tr><th>Service Type</th><th>Mean Rating</th><th>Median Rating</th><th>Std Dev</th></tr>
+<tr><td>Broadband</td><td>3.12</td><td>3.0</td><td>1.40</td></tr>
+<tr><td>Fixed Line</td><td>2.99</td><td>3.0</td><td>1.43</td></tr>
+<tr><td>Mobile</td><td>2.98</td><td>3.0</td><td>1.40</td></tr>
+<tr><td>TV</td><td>2.98</td><td>3.0</td><td>1.41</td></tr>
+</table>
+<br>
+<h3>4.4 Satisfaction by Priority</h3>
+<br>
+<table>
+<tr><th>Priority</th><th>Mean Rating</th><th>Median Rating</th><th>Std Dev</th></tr>
+<tr><td>Critical</td><td>3.06</td><td>3.0</td><td>1.41</td></tr>
+<tr><td>Medium</td><td>3.04</td><td>3.0</td><td>1.39</td></tr>
+<tr><td>High</td><td>3.03</td><td>3.0</td><td>1.46</td></tr>
+<tr><td>Low</td><td>2.93</td><td>3.0</td><td>1.38</td></tr>
+</table>
+<br>
+<h2>5. Cross-Dimensional Analysis</h2>
+<br>
+<h3>5.1 Complaint Type by Priority</h3>
+<br>
+<table>
+<tr><th>Complaint Type</th><th>Critical</th><th>High</th><th>Low</th><th>Medium</th></tr>
+<tr><td>Call Drop</td><td>31.76%</td><td>20.61%</td><td>20.61%</td><td>27.03%</td></tr>
+<tr><td>Billing Issue</td><td>28.78%</td><td>24.82%</td><td>22.66%</td><td>23.74%</td></tr>
+<tr><td>Service Outage</td><td>27.68%</td><td>21.45%</td><td>26.99%</td><td>23.88%</td></tr>
+<tr><td>Slow Internet</td><td>27.14%</td><td>23.93%</td><td>23.93%</td><td>25.00%</td></tr>
+<tr><td>No Signal</td><td>22.14%</td><td>27.50%</td><td>23.21%</td><td>27.14%</td></tr>
+<tr><td>SMS Failure</td><td>22.84%</td><td>24.91%</td><td>25.61%</td><td>26.64%</td></tr>
+<tr><td>Poor Voice Quality</td><td>23.61%</td><td>24.65%</td><td>30.21%</td><td>21.53%</td></tr>
+</table>
+<br>
+<h3>5.2 Regional Complaint Distribution by Type</h3>
+<br>
+<table>
+<tr><th>Region</th><th>Billing Issue</th><th>Call Drop</th><th>No Signal</th><th>Poor Voice Quality</th><th>SMS Failure</th><th>Service Outage</th><th>Slow Internet</th></tr>
+<tr><td>North</td><td>11.75%</td><td>14.63%</td><td>11.51%</td><td>18.94%</td><td>14.15%</td><td>13.43%</td><td>15.59%</td></tr>
+<tr><td>South</td><td>15.38%</td><td>14.64%</td><td>15.63%</td><td>11.91%</td><td>14.39%</td><td>12.66%</td><td>15.38%</td></tr>
+<tr><td>East</td><td>14.78%</td><td>13.98%</td><td>15.04%</td><td>13.46%</td><td>13.19%</td><td>16.62%</td><td>12.93%</td></tr>
+<tr><td>West</td><td>14.14%</td><td>13.89%</td><td>14.14%</td><td>14.65%</td><td>13.89%</td><td>16.16%</td><td>13.13%</td></tr>
+<tr><td>Central</td><td>13.58%</td><td>16.79%</td><td>13.83%</td><td>12.84%</td><td>16.54%</td><td>13.58%</td><td>12.84%</td></tr>
+</table>
+<br>
+<h2>6. Key Insights and Recommendations</h2>
+<br>
+<h3>6.1 Key Insights</h3>
+<br>
+<ol>
+<li>**Complaint Distribution**: Call Drop issues (14.8%) are the most common complaint type, closely followed by SMS Failure and Service Outage (14.45% each).</li>
+</ol>
+<br>
+<ol>
+<li>**Resolution Time**: Critical priority issues take longer to resolve (7.44 days on average) compared to Low priority issues (6.89 days), suggesting appropriate prioritization.</li>
+</ol>
+<br>
+<ol>
+<li>**Regional Variations**:</li>
+</ol>
+<ul>
+<li>The North region has more complaints related to Poor Voice Quality (18.94%)</li>
+<li>The East and West regions have more Service Outage issues (16.62% and 16.16% respectively)</li>
+<li>The Central region has more Call Drop and SMS Failure complaints</li>
+</ul>
+<br>
+<ol>
+<li>**Customer Satisfaction**:</li>
+</ol>
+<ul>
+<li>Broadband services have the highest satisfaction rating (3.12/5)</li>
+<li>The South region has the highest customer satisfaction (3.15/5)</li>
+<li>Critical priority issues have higher satisfaction ratings (3.06/5) than Low priority issues (2.93/5), possibly due to more attention given to critical issues</li>
+</ul>
+<br>
+<ol>
+<li>**Unresolved Complaints**: 14.9% of complaints are still in process (Open, In Progress, or Resolved but not Closed)</li>
+</ol>
+<br>
+<h3>6.2 Recommendations</h3>
+<br>
+<ol>
+<li>**Network Quality Improvement**:</li>
+</ol>
+<ul>
+<li>Invest in network infrastructure to reduce Call Drop issues, particularly in the Central region</li>
+<li>Address Poor Voice Quality problems in the North region</li>
+<li>Improve service reliability in East and West regions to reduce outages</li>
+</ul>
+<br>
+<ol>
+<li>**Customer Satisfaction Enhancement**:</li>
+</ol>
+<ul>
+<li>Develop specific strategies for Fixed Line, Mobile, and TV services to improve satisfaction levels</li>
+<li>Implement a specialized approach for the Central region, which shows the lowest satisfaction scores</li>
+</ul>
+<br>
+<ol>
+<li>**Resolution Time Optimization**:</li>
+</ol>
+<ul>
+<li>Review the resolution process for High priority issues, which have the highest median resolution time (8 days)</li>
+<li>Implement a more efficient triage system for Critical issues to reduce their average resolution time</li>
+</ul>
+<br>
+<ol>
+<li>**Process Improvement**:</li>
+</ol>
+<ul>
+<li>Establish a clear follow-up mechanism for resolved complaints to ensure proper closure</li>
+<li>Address the 21.5% of complaints with missing resolution data to improve tracking</li>
+</ul>
+<br>
+<ol>
+<li>**Customer Communication**:</li>
+</ol>
+<ul>
+<li>Develop better communication strategies for customers with Low priority issues, as they show the lowest satisfaction ratings</li>
+</ul>
+<br>
+<h2>7. Conclusion</h2>
+<br>
+<p>The analysis reveals a telecommunications service with relatively balanced complaint distribution across regions and service types. While the overall resolution time (7.15 days) is consistent across most dimensions, there are opportunities to improve customer satisfaction (currently at 3.02/5) through targeted improvements in network quality, particularly addressing Call Drop issues.</p>
+<br>
+<p>The most significant areas for improvement are the resolution time for Critical and High priority issues and the overall customer experience for Fixed Line, Mobile, and TV services. Additionally, the Central region requires special attention as it shows lower satisfaction scores despite having similar resolution times to other regions.</p>
+<br>
+<p>By addressing these key areas, the company can enhance customer satisfaction while maintaining or improving resolution efficiency.</p>
+
+</body>
+</html>

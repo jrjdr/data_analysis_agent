@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>比例分析分析报告</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            color: #2c3e50;
+            margin-top: 24px;
+            margin-bottom: 16px;
+        }
+        h1 { font-size: 2em; border-bottom: 1px solid #eaecef; padding-bottom: .3em; }
+        h2 { font-size: 1.5em; border-bottom: 1px solid #eaecef; padding-bottom: .3em; }
+        h3 { font-size: 1.25em; }
+        h4 { font-size: 1em; }
+        p, ul, ol, table { margin-bottom: 16px; }
+        code {
+            font-family: Consolas, Monaco, 'Andale Mono', monospace;
+            background-color: #f6f8fa;
+            padding: 0.2em 0.4em;
+            border-radius: 3px;
+        }
+        pre {
+            background-color: #f6f8fa;
+            border-radius: 3px;
+            padding: 16px;
+            overflow: auto;
+        }
+        pre code {
+            background-color: transparent;
+            padding: 0;
+        }
+        blockquote {
+            padding: 0 1em;
+            color: #6a737d;
+            border-left: 0.25em solid #dfe2e5;
+            margin: 0 0 16px 0;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        table th, table td {
+            border: 1px solid #dfe2e5;
+            padding: 6px 13px;
+        }
+        table tr:nth-child(2n) {
+            background-color: #f6f8fa;
+        }
+        img {
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+<h1>服务器和数据库性能分析报告</h1>
+<br>
+<h2>1. 数据概览</h2>
+<br>
+<p>本报告基于14,400条服务器和数据库性能监控记录，涵盖了10台不同的服务器和数据库，监控时间跨度为24小时（2025年2月28日）。</p>
+<br>
+<h3>1.1 数据基本信息</h3>
+<br>
+<table>
+<tr><th>指标</th><th>值</th></tr>
+<tr><td>总记录数</td><td>14,400</td></tr>
+<tr><td>监控对象数量</td><td>10</td></tr>
+<tr><td>时间跨度</td><td>24小时</td></tr>
+<tr><td>监控指标数量</td><td>36</td></tr>
+</table>
+<br>
+<h3>1.2 监控对象分布</h3>
+<br>
+<table>
+<tr><th>服务器ID</th><th>服务器名称</th><th>记录数量</th><th>占比</th></tr>
+<tr><td>SRV001</td><td>主应用服务器</td><td>1,440</td><td>10%</td></tr>
+<tr><td>SRV002</td><td>备份应用服务器</td><td>1,440</td><td>10%</td></tr>
+<tr><td>SRV003</td><td>数据处理服务器</td><td>1,440</td><td>10%</td></tr>
+<tr><td>SRV004</td><td>缓存服务器</td><td>1,440</td><td>10%</td></tr>
+<tr><td>SRV005</td><td>负载均衡服务器</td><td>1,440</td><td>10%</td></tr>
+<tr><td>DB001</td><td>MySQL主数据库</td><td>1,440</td><td>10%</td></tr>
+<tr><td>DB002</td><td>MySQL从数据库</td><td>1,440</td><td>10%</td></tr>
+<tr><td>DB003</td><td>Redis缓存数据库</td><td>1,440</td><td>10%</td></tr>
+<tr><td>DB004</td><td>MongoDB文档数据库</td><td>1,440</td><td>10%</td></tr>
+<tr><td>DB005</td><td>Elasticsearch搜索数据库</td><td>1,440</td><td>10%</td></tr>
+</table>
+<br>
+<h2>2. 数据洞察</h2>
+<br>
+<h3>2.1 资源使用情况</h3>
+<br>
+<table>
+<tr><th>资源类型</th><th>正常</th><th>中等</th><th>较高</th><th>严重</th></tr>
+<tr><td>CPU使用率</td><td>70.11%</td><td>19.56%</td><td>9.78%</td><td>0.56%</td></tr>
+<tr><td>内存使用率</td><td>45.86%</td><td>35.92%</td><td>16.79%</td><td>1.43%</td></tr>
+<tr><td>磁盘使用率</td><td>71.08%</td><td>25.94%</td><td>2.93%</td><td>0.04%</td></tr>
+<tr><td>网络流量</td><td>70.14%</td><td>18.67%</td><td>9.07%</td><td>2.12%</td></tr>
+<tr><td>温度</td><td>15.57%</td><td>33.67%</td><td>33.68%</td><td>17.08%</td></tr>
+</table>
+<br>
+<h3>2.2 事件类型分布</h3>
+<br>
+<table>
+<tr><th>事件类型</th><th>数量</th><th>占比</th></tr>
+<tr><td>正常</td><td>14,103</td><td>97.94%</td></tr>
+<tr><td>网络问题</td><td>122</td><td>0.85%</td></tr>
+<tr><td>高负载</td><td>92</td><td>0.64%</td></tr>
+<tr><td>数据库慢查询</td><td>62</td><td>0.43%</td></tr>
+<tr><td>内存泄漏</td><td>21</td><td>0.15%</td></tr>
+</table>
+<br>
+<h3>2.3 数据库性能指标</h3>
+<br>
+<table>
+<tr><th>指标</th><th>最小值</th><th>最大值</th><th>平均值</th><th>中位数</th></tr>
+<tr><td>查询率（每秒）</td><td>51.60</td><td>1,242.16</td><td>349.16</td><td>242.72</td></tr>
+<tr><td>活跃连接数</td><td>5.09</td><td>196.48</td><td>40.83</td><td>31.25</td></tr>
+<tr><td>缓存命中率</td><td>27.49%</td><td>99.81%</td><td>84.69%</td><td>85.52%</td></tr>
+</table>
+
+</body>
+</html>

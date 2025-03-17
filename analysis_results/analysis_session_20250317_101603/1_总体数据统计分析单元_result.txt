@@ -1,0 +1,2 @@
+正在读取文件: temp_csv/excel_data_20250317101603.csv
+分析完成，结果已保存至 general_statistics_results.json

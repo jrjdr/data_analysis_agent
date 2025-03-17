@@ -1,0 +1,203 @@
+Data Analysis Results
+====================
+
+Numeric Columns Analysis:
+  cpu_usage_percent:
+    Mean: 37.58
+    Median: 31.62
+    Std Dev: 20.65
+  memory_usage_percent:
+    Mean: 53.57
+    Median: 51.70
+    Std Dev: 15.33
+  disk_usage_percent:
+    Mean: 52.84
+    Median: 50.00
+    Std Dev: 5.81
+  disk_io_percent:
+    Mean: 29.27
+    Median: 23.18
+    Std Dev: 19.41
+  disk_read_mbps:
+    Mean: 37.04
+    Median: 28.14
+    Std Dev: 29.03
+  disk_write_mbps:
+    Mean: 26.24
+    Median: 19.72
+    Std Dev: 21.20
+  network_traffic_percent:
+    Mean: 38.25
+    Median: 32.30
+    Std Dev: 21.58
+  network_in_mbps:
+    Mean: 66.60
+    Median: 52.32
+    Std Dev: 49.50
+  network_out_mbps:
+    Mean: 44.22
+    Median: 34.76
+    Std Dev: 32.72
+  load_avg_1min:
+    Mean: 1.50
+    Median: 1.26
+    Std Dev: 0.83
+  load_avg_5min:
+    Mean: 1.50
+    Median: 1.26
+    Std Dev: 0.85
+  load_avg_15min:
+    Mean: 1.50
+    Median: 1.27
+    Std Dev: 0.87
+  process_count:
+    Mean: 174.55
+    Median: 163.00
+    Std Dev: 41.73
+  thread_count:
+    Mean: 963.67
+    Median: 914.00
+    Std Dev: 349.55
+  open_file_count:
+    Mean: 3376.41
+    Median: 3083.00
+    Std Dev: 1507.21
+  temperature_celsius:
+    Mean: 50.18
+    Median: 50.26
+    Std Dev: 8.65
+  query_rate_per_sec:
+    Mean: 349.16
+    Median: 242.72
+    Std Dev: 246.15
+  active_connections:
+    Mean: 40.83
+    Median: 31.25
+    Std Dev: 28.10
+  cache_hit_rate_percent:
+    Mean: 84.69
+    Median: 85.52
+    Std Dev: 7.98
+  avg_query_time_ms:
+    Mean: 18.01
+    Median: 16.87
+    Std Dev: 12.64
+  transactions_per_sec:
+    Mean: 38.26
+    Median: 25.93
+    Std Dev: 30.84
+  read_percent:
+    Mean: 81.80
+    Median: 83.43
+    Std Dev: 5.87
+  write_percent:
+    Mean: 18.20
+    Median: 16.57
+    Std Dev: 5.87
+  lock_wait_count:
+    Mean: 3.61
+    Median: 2.00
+    Std Dev: 4.09
+  deadlock_count:
+    Mean: 0.02
+    Median: 0.00
+    Std Dev: 0.16
+  buffer_pool_usage_percent:
+    Mean: 72.37
+    Median: 72.35
+    Std Dev: 12.93
+  table_scans_per_sec:
+    Mean: 25.04
+    Median: 25.29
+    Std Dev: 14.46
+  index_usage_percent:
+    Mean: 79.50
+    Median: 79.56
+    Std Dev: 11.26
+  temp_tables_created_per_sec:
+    Mean: 10.13
+    Median: 10.17
+    Std Dev: 5.78
+  slow_queries_count:
+    Mean: 8.28
+    Median: 5.00
+    Std Dev: 8.72
+  aborted_connections:
+    Mean: 0.23
+    Median: 0.00
+    Std Dev: 0.53
+
+Categorical Columns Analysis:
+  timestamp:
+    Unique Values: 1440
+    Most Common: 2025-02-28 00:00:00
+  server_id:
+    Unique Values: 10
+    Most Common: DB001
+  server_name:
+    Unique Values: 10
+    Most Common: Elasticsearch搜索数据库
+  resource_type:
+    Unique Values: 2
+    Most Common: database
+  event_type:
+    Unique Values: 5
+    Most Common: normal
+
+Group Comparison:
+  Server Comparison:
+    Elasticsearch搜索数据库:
+      Avg CPU Usage: nan%
+      Avg Memory Usage: nan%
+    MongoDB文档数据库:
+      Avg CPU Usage: nan%
+      Avg Memory Usage: nan%
+    MySQL主数据库:
+      Avg CPU Usage: nan%
+      Avg Memory Usage: nan%
+    MySQL从数据库:
+      Avg CPU Usage: nan%
+      Avg Memory Usage: nan%
+    Redis缓存数据库:
+      Avg CPU Usage: nan%
+      Avg Memory Usage: nan%
+    主应用服务器:
+      Avg CPU Usage: 38.98%
+      Avg Memory Usage: 54.23%
+    备份应用服务器:
+      Avg CPU Usage: 37.47%
+      Avg Memory Usage: 53.61%
+    数据处理服务器:
+      Avg CPU Usage: 36.67%
+      Avg Memory Usage: 53.59%
+    缓存服务器:
+      Avg CPU Usage: 36.74%
+      Avg Memory Usage: 52.64%
+    负载均衡服务器:
+      Avg CPU Usage: 38.05%
+      Avg Memory Usage: 53.77%
+
+  Resource Type Comparison:
+    database:
+      Avg Query Rate: 349.16/sec
+      Avg Active Connections: 40.83
+    server:
+      Avg Query Rate: nan/sec
+      Avg Active Connections: nan
+
+  Event Type Comparison:
+    db_slowdown:
+      Avg CPU Usage: nan%
+      Avg Memory Usage: nan%
+    high_load:
+      Avg CPU Usage: 90.82%
+      Avg Memory Usage: 88.17%
+    memory_leak:
+      Avg CPU Usage: 68.50%
+      Avg Memory Usage: 94.13%
+    network_issue:
+      Avg CPU Usage: 50.49%
+      Avg Memory Usage: 60.65%
+    normal:
+      Avg CPU Usage: 36.91%
+      Avg Memory Usage: 53.10%

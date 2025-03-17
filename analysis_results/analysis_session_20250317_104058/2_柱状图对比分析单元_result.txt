@@ -1,0 +1,1 @@
+分析完成，结果已保存到 'bar_chart_analysis_results.json'

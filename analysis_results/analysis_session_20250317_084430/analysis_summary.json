@@ -1,0 +1,575 @@
+{
+  "timestamp": "20250317_084430",
+  "structure_analysis": {
+    "file_path": "temp_csv/excel_data_20250317084430.csv",
+    "row_count": 1060,
+    "column_count": 8,
+    "columns": {
+      "Category": {
+        "type": "object",
+        "missing_values": 0,
+        "unique_values": 5,
+        "most_common": {
+          "value": "Outerwear",
+          "count": 212
+        }
+      },
+      "Item": {
+        "type": "object",
+        "missing_values": 0,
+        "unique_values": 20,
+        "most_common": {
+          "value": "Winter Coat",
+          "count": 53
+        }
+      },
+      "Price": {
+        "type": "float64",
+        "missing_values": 0,
+        "unique_values": 20,
+        "min": 21.91,
+        "max": 185.14,
+        "mean": 71.15700000000001,
+        "median": 58.17
+      },
+      "Date": {
+        "type": "object",
+        "missing_values": 0,
+        "unique_values": 53,
+        "most_common": {
+          "value": "2024-01-01",
+          "count": 20
+        }
+      },
+      "Week": {
+        "type": "object",
+        "missing_values": 0,
+        "unique_values": 53,
+        "most_common": {
+          "value": "Week 1",
+          "count": 20
+        }
+      },
+      "Month": {
+        "type": "object",
+        "missing_values": 0,
+        "unique_values": 12,
+        "most_common": {
+          "value": "January",
+          "count": 100
+        }
+      },
+      "Sales": {
+        "type": "int64",
+        "missing_values": 0,
+        "unique_values": 146,
+        "min": 7,
+        "max": 270,
+        "mean": 58.656603773584905,
+        "median": 53.0
+      },
+      "Revenue": {
+        "type": "float64",
+        "missing_values": 0,
+        "unique_values": 800,
+        "min": 372.42,
+        "max": 37518.38,
+        "mean": 4069.301264150943,
+        "median": 2845.275
+      }
+    }
+  },
+  "column_names": [
+    "Category",
+    "Item",
+    "Price",
+    "Date",
+    "Week",
+    "Month",
+    "Sales",
+    "Revenue"
+  ],
+  "results": {
+    "总体数据统计分析单元": {
+      "status": "success",
+      "error": null,
+      "code": "import pandas as pd\nimport numpy as np\nimport json\nimport sys\nimport os\nfrom datetime import datetime\n\ndef analyze_general_statistics(file_path):\n    \"\"\"\n    对CSV文件进行总体数据统计和基本分析\n    \n    参数:\n    file_path (str): CSV文件路径\n    \n    返回:\n    dict: 包含数据分析结果的字典\n    \"\"\"\n    try:\n        # 读取CSV文件\n        df = pd.read_csv(file_path)\n        \n        # 基本信息\n        basic_info = {\n            \"file_path\": file_path,\n            \"row_count\": len(df),\n            \"column_count\": len(df.columns),\n            \"file_size_kb\": round(os.path.getsize(file_path) / 1024, 2),\n            \"analysis_timestamp\": datetime.now().strftime(\"%Y-%m-%d %H:%M:%S\")\n        }\n        \n        # 列信息分析\n        columns_info = {}\n        for column in df.columns:\n            column_data = {\n                \"type\": str(df[column].dtype),\n                \"missing_values\": int(df[column].isna().sum()),\n                \"missing_percentage\": round(df[column].isna().sum() / len(df) * 100, 2)\n            }\n            \n            # 数值列的统计分析\n            if np.issubdtype(df[column].dtype, np.number):\n                column_data.update({\n                    \"unique_values\": int(df[column].nunique()),\n                    \"min\": float(df[column].min()),\n                    \"max\": float(df[column].max()),\n                    \"mean\": float(df[column].mean()),\n                    \"median\": float(df[column].median()),\n                    \"std\": float(df[column].std()),\n                    \"q1\": float(df[column].quantile(0.25)),\n                    \"q3\": float(df[column].quantile(0.75))\n                })\n            # 分类列的统计分析\n            else:\n                column_data.update({\n                    \"unique_values\": int(df[column].nunique()),\n                    \"most_common\": {\n                        \"value\": str(df[column].value_counts().index[0]),\n                        \"count\": int(df[column].value_counts().iloc[0])\n                    },\n                    \"least_common\": {\n                        \"value\": str(df[column].value_counts().index[-1]),\n                        \"count\": int(df[column].value_counts().iloc[-1])\n                    },\n                    \"top_5_values\": [{\n                        \"value\": str(value),\n                        \"count\": int(count),\n                        \"percentage\": round(count / len(df) * 100, 2)\n                    } for value, count in df[column].value_counts().head(5).items()]\n                })\n            \n            columns_info[column] = column_data\n        \n        # 计算相关性矩阵（仅针对数值列）\n        numeric_columns = df.select_dtypes(include=[np.number]).columns.tolist()\n        correlation = {}\n        if len(numeric_columns) > 1:\n            corr_matrix = df[numeric_columns].corr().round(3).to_dict()\n            correlation = {\n                \"matrix\": corr_matrix,\n                \"strongest_positive\": {\"columns\": None, \"value\": 0},\n                \"strongest_negative\": {\"columns\": None, \"value\": 0}\n            }\n            \n            # 找出最强的正相关和负相关\n            for col1 in numeric_columns:\n                for col2 in numeric_columns:\n                    if col1 != col2:\n                        corr_value = corr_matrix[col1][col2]\n                        if corr_value > correlation[\"strongest_positive\"][\"value\"]:\n                            correlation[\"strongest_positive\"][\"columns\"] = f\"{col1} & {col2}\"\n                            correlation[\"strongest_positive\"][\"value\"] = corr_value\n                        if corr_value < correlation[\"strongest_negative\"][\"value\"]:\n                            correlation[\"strongest_negative\"][\"columns\"] = f\"{col1} & {col2}\"\n                            correlation[\"strongest_negative\"][\"value\"] = corr_value\n        \n        # 汇总结果\n        results = {\n            \"basic_info\": basic_info,\n            \"columns_info\": columns_info,\n            \"correlation\": correlation\n        }\n        \n        return results\n    \n    except Exception as e:\n        return {\"error\": str(e)}\n\ndef main():\n    # 检查命令行参数\n    if len(sys.argv) < 2:\n        print(\"Usage: python script.py <csv_file_path>\")\n        sys.exit(1)\n    \n    file_path = sys.argv[1]\n    \n    # 检查文件是否存在\n    if not os.path.exists(file_path):\n        print(f\"Error: File '{file_path}' does not exist.\")\n        sys.exit(1)\n    \n    # 进行数据分析\n    results = analyze_general_statistics(file_path)\n    \n    # 保存结果到JSON文件\n    output_file = \"general_statistics_results.json\"\n    with open(output_file, \"w\", encoding=\"utf-8\") as f:\n        json.dump(results, f, indent=4, ensure_ascii=False)\n    \n    print(f\"Analysis completed. Results saved to {output_file}\")\n\nif __name__ == \"__main__\":\n    main()",
+      "results": "Analysis completed. Results saved to general_statistics_results.json\n",
+      "json_results": {
+        "basic_info": {
+          "file_path": "temp_csv/excel_data_20250317084430.csv",
+          "row_count": 1060,
+          "column_count": 8,
+          "file_size_kb": 64.1,
+          "analysis_timestamp": "2025-03-17 08:45:12"
+        },
+        "columns_info": {
+          "Category": {
+            "type": "object",
+            "missing_values": 0,
+            "missing_percentage": 0.0,
+            "unique_values": 5,
+            "most_common": {
+              "value": "Outerwear",
+              "count": 212
+            },
+            "least_common": {
+              "value": "Accessories",
+              "count": 212
+            },
+            "top_5_values": [
+              {
+                "value": "Outerwear",
+                "count": 212,
+                "percentage": 20.0
+              },
+              {
+                "value": "Tops",
+                "count": 212,
+                "percentage": 20.0
+              },
+              {
+                "value": "Bottoms",
+                "count": 212,
+                "percentage": 20.0
+              },
+              {
+                "value": "Dresses",
+                "count": 212,
+                "percentage": 20.0
+              },
+              {
+                "value": "Accessories",
+                "count": 212,
+                "percentage": 20.0
+              }
+            ]
+          },
+          "Item": {
+            "type": "object",
+            "missing_values": 0,
+            "missing_percentage": 0.0,
+            "unique_values": 20,
+            "most_common": {
+              "value": "Winter Coat",
+              "count": 53
+            },
+            "least_common": {
+              "value": "Sunglasses",
+              "count": 53
+            },
+            "top_5_values": [
+              {
+                "value": "Winter Coat",
+                "count": 53,
+                "percentage": 5.0
+              },
+              {
+                "value": "Light Jacket",
+                "count": 53,
+                "percentage": 5.0
+              },
+              {
+                "value": "Raincoat",
+                "count": 53,
+                "percentage": 5.0
+              },
+              {
+                "value": "Parka",
+                "count": 53,
+                "percentage": 5.0
+              },
+              {
+                "value": "T-Shirt",
+                "count": 53,
+                "percentage": 5.0
+              }
+            ]
+          },
+          "Price": {
+            "type": "float64",
+            "missing_values": 0,
+            "missing_percentage": 0.0,
+            "unique_values": 20,
+            "min": 21.91,
+            "max": 185.14,
+            "mean": 71.15700000000001,
+            "median": 58.17,
+            "std": 45.99641427560858,
+            "q1": 41.019999999999996,
+            "q3": 80.875
+          },
+          "Date": {
+            "type": "object",
+            "missing_values": 0,
+            "missing_percentage": 0.0,
+            "unique_values": 53,
+            "most_common": {
+              "value": "2024-01-01",
+              "count": 20
+            },
+            "least_common": {
+              "value": "2024-12-30",
+              "count": 20
+            },
+            "top_5_values": [
+              {
+                "value": "2024-01-01",
+                "count": 20,
+                "percentage": 1.89
+              },
+              {
+                "value": "2024-01-08",
+                "count": 20,
+                "percentage": 1.89
+              },
+              {
+                "value": "2024-01-15",
+                "count": 20,
+                "percentage": 1.89
+              },
+              {
+                "value": "2024-01-22",
+                "count": 20,
+                "percentage": 1.89
+              },
+              {
+                "value": "2024-01-29",
+                "count": 20,
+                "percentage": 1.89
+              }
+            ]
+          },
+          "Week": {
+            "type": "object",
+            "missing_values": 0,
+            "missing_percentage": 0.0,
+            "unique_values": 53,
+            "most_common": {
+              "value": "Week 1",
+              "count": 20
+            },
+            "least_common": {
+              "value": "Week 53",
+              "count": 20
+            },
+            "top_5_values": [
+              {
+                "value": "Week 1",
+                "count": 20,
+                "percentage": 1.89
+              },
+              {
+                "value": "Week 2",
+                "count": 20,
+                "percentage": 1.89
+              },
+              {
+                "value": "Week 3",
+                "count": 20,
+                "percentage": 1.89
+              },
+              {
+                "value": "Week 4",
+                "count": 20,
+                "percentage": 1.89
+              },
+              {
+                "value": "Week 5",
+                "count": 20,
+                "percentage": 1.89
+              }
+            ]
+          },
+          "Month": {
+            "type": "object",
+            "missing_values": 0,
+            "missing_percentage": 0.0,
+            "unique_values": 12,
+            "most_common": {
+              "value": "January",
+              "count": 100
+            },
+            "least_common": {
+              "value": "November",
+              "count": 80
+            },
+            "top_5_values": [
+              {
+                "value": "January",
+                "count": 100,
+                "percentage": 9.43
+              },
+              {
+                "value": "April",
+                "count": 100,
+                "percentage": 9.43
+              },
+              {
+                "value": "September",
+                "count": 100,
+                "percentage": 9.43
+              },
+              {
+                "value": "July",
+                "count": 100,
+                "percentage": 9.43
+              },
+              {
+                "value": "December",
+                "count": 100,
+                "percentage": 9.43
+              }
+            ]
+          },
+          "Sales": {
+            "type": "int64",
+            "missing_values": 0,
+            "missing_percentage": 0.0,
+            "unique_values": 146,
+            "min": 7.0,
+            "max": 270.0,
+            "mean": 58.656603773584905,
+            "median": 53.0,
+            "std": 32.92153093388534,
+            "q1": 38.0,
+            "q3": 72.25
+          },
+          "Revenue": {
+            "type": "float64",
+            "missing_values": 0,
+            "missing_percentage": 0.0,
+            "unique_values": 800,
+            "min": 372.42,
+            "max": 37518.38,
+            "mean": 4069.301264150943,
+            "median": 2845.275,
+            "std": 3904.8289129728305,
+            "q1": 1701.76,
+            "q3": 4713.1849999999995
+          }
+        },
+        "correlation": {
+          "matrix": {
+            "Price": {
+              "Price": 1.0,
+              "Sales": -0.069,
+              "Revenue": 0.636
+            },
+            "Sales": {
+              "Price": -0.069,
+              "Sales": 1.0,
+              "Revenue": 0.621
+            },
+            "Revenue": {
+              "Price": 0.636,
+              "Sales": 0.621,
+              "Revenue": 1.0
+            }
+          },
+          "strongest_positive": {
+            "columns": "Price & Revenue",
+            "value": 0.636
+          },
+          "strongest_negative": {
+            "columns": "Price & Sales",
+            "value": -0.069
+          }
+        }
+      }
+    },
+    "柱状图对比分析单元": {
+      "status": "success",
+      "error": null,
+      "code": "import pandas as pd\nimport numpy as np\nimport json\nimport sys\nimport os\nfrom datetime import datetime\n\ndef analyze_for_bar_charts(file_path):\n    \"\"\"\n    分析CSV数据，生成适合柱状图展示的数据\n    \"\"\"\n    try:\n        # 读取CSV文件\n        df = pd.read_csv(file_path)\n        \n        # 存储分析结果\n        analysis_results = {}\n        \n        # 1. 按类别统计销售额和销量\n        category_revenue = df.groupby('Category')['Revenue'].sum().sort_values(ascending=False).to_dict()\n        category_sales = df.groupby('Category')['Sales'].sum().sort_values(ascending=False).to_dict()\n        analysis_results['category_comparison'] = {\n            'revenue_by_category': category_revenue,\n            'sales_by_category': category_sales\n        }\n        \n        # 2. 按月份统计销售额和销量\n        monthly_revenue = df.groupby('Month')['Revenue'].sum().to_dict()\n        monthly_sales = df.groupby('Month')['Sales'].sum().to_dict()\n        \n        # 确保月份按正确顺序排列\n        month_order = ['January', 'February', 'March', 'April', 'May', 'June', \n                       'July', 'August', 'September', 'October', 'November', 'December']\n        ordered_monthly_revenue = {month: monthly_revenue.get(month, 0) for month in month_order if month in monthly_revenue}\n        ordered_monthly_sales = {month: monthly_sales.get(month, 0) for month in month_order if month in monthly_sales}\n        \n        analysis_results['monthly_comparison'] = {\n            'revenue_by_month': ordered_monthly_revenue,\n            'sales_by_month': ordered_monthly_sales\n        }\n        \n        # 3. 销量最高的前10个商品\n        top_items_by_sales = df.groupby('Item')['Sales'].sum().sort_values(ascending=False).head(10).to_dict()\n        analysis_results['top_items'] = {\n            'top_10_items_by_sales': top_items_by_sales\n        }\n        \n        # 4. 按类别统计平均价格\n        avg_price_by_category = df.groupby('Category')['Price'].mean().sort_values(ascending=False).to_dict()\n        analysis_results['price_comparison'] = {\n            'average_price_by_category': avg_price_by_category\n        }\n        \n        # 5. 计算每个类别的商品数量占比\n        item_count_by_category = df['Category'].value_counts().to_dict()\n        total_items = sum(item_count_by_category.values())\n        item_percentage_by_category = {category: (count / total_items) * 100 for category, count in item_count_by_category.items()}\n        analysis_results['category_distribution'] = {\n            'item_count_by_category': item_count_by_category,\n            'item_percentage_by_category': item_percentage_by_category\n        }\n        \n        # 6. 计算每个类别的平均销量\n        avg_sales_by_category = df.groupby('Category')['Sales'].mean().sort_values(ascending=False).to_dict()\n        analysis_results['average_sales'] = {\n            'average_sales_by_category': avg_sales_by_category\n        }\n        \n        # 7. 按周统计销售额趋势\n        weekly_revenue = df.groupby('Week')['Revenue'].sum().to_dict()\n        analysis_results['weekly_trend'] = {\n            'revenue_by_week': weekly_revenue\n        }\n        \n        # 8. 计算每个商品的总收入并找出收入最高的前10个商品\n        top_items_by_revenue = df.groupby('Item')['Revenue'].sum().sort_values(ascending=False).head(10).to_dict()\n        analysis_results['top_revenue_items'] = {\n            'top_10_items_by_revenue': top_items_by_revenue\n        }\n        \n        return analysis_results\n        \n    except Exception as e:\n        return {\"error\": str(e)}\n\ndef save_to_json(data, output_file='bar_chart_analysis_results.json'):\n    \"\"\"\n    将分析结果保存为JSON文件\n    \"\"\"\n    try:\n        with open(output_file, 'w', encoding='utf-8') as f:\n            json.dump(data, f, ensure_ascii=False, indent=4)\n        return True\n    except Exception as e:\n        print(f\"保存JSON文件时出错: {e}\")\n        return False\n\ndef main():\n    \"\"\"\n    主函数，处理命令行参数并执行分析\n    \"\"\"\n    # 检查命令行参数\n    if len(sys.argv) < 2:\n        print(\"请提供CSV文件路径作为命令行参数\")\n        print(\"用法: python script.py <csv_file_path>\")\n        return\n    \n    file_path = sys.argv[1]\n    \n    # 检查文件是否存在\n    if not os.path.exists(file_path):\n        print(f\"文件不存在: {file_path}\")\n        return\n    \n    # 执行分析\n    print(f\"正在分析文件: {file_path}\")\n    results = analyze_for_bar_charts(file_path)\n    \n    # 保存结果\n    if \"error\" not in results:\n        if save_to_json(results):\n            print(f\"分析结果已保存到 bar_chart_analysis_results.json\")\n        else:\n            print(\"保存分析结果时出错\")\n    else:\n        print(f\"分析过程中出错: {results['error']}\")\n\nif __name__ == \"__main__\":\n    main()",
+      "results": "正在分析文件: temp_csv/excel_data_20250317084430.csv\n分析结果已保存到 bar_chart_analysis_results.json\n",
+      "json_results": {
+        "category_comparison": {
+          "revenue_by_category": {
+            "Dresses": 1360310.0,
+            "Outerwear": 1297011.54,
+            "Bottoms": 690986.66,
+            "Tops": 578561.66,
+            "Accessories": 386589.48
+          },
+          "sales_by_category": {
+            "Accessories": 13301,
+            "Bottoms": 13007,
+            "Tops": 12401,
+            "Outerwear": 11956,
+            "Dresses": 11511
+          }
+        },
+        "monthly_comparison": {
+          "revenue_by_month": {
+            "January": 373739.08,
+            "February": 321527.59,
+            "March": 272210.45,
+            "April": 348543.69,
+            "May": 349096.39,
+            "June": 359850.93,
+            "July": 404570.57,
+            "August": 299854.47000000003,
+            "September": 329088.27,
+            "October": 278782.72,
+            "November": 363274.35,
+            "December": 612920.83
+          },
+          "sales_by_month": {
+            "January": 5251,
+            "February": 4623,
+            "March": 3860,
+            "April": 4947,
+            "May": 5164,
+            "June": 5560,
+            "July": 6419,
+            "August": 4391,
+            "September": 4692,
+            "October": 3872,
+            "November": 4983,
+            "December": 8414
+          }
+        },
+        "top_items": {
+          "top_10_items_by_sales": {
+            "Hat": 3608,
+            "Shorts": 3431,
+            "Dress Pants": 3357,
+            "Gloves": 3353,
+            "Sweater": 3343,
+            "Raincoat": 3219,
+            "Scarf": 3207,
+            "T-Shirt": 3196,
+            "Skirt": 3177,
+            "Sunglasses": 3133
+          }
+        },
+        "price_comparison": {
+          "average_price_by_category": {
+            "Dresses": 117.15249999999999,
+            "Outerwear": 109.0775,
+            "Bottoms": 53.404999999999994,
+            "Tops": 46.805,
+            "Accessories": 29.345000000000002
+          }
+        },
+        "category_distribution": {
+          "item_count_by_category": {
+            "Outerwear": 212,
+            "Tops": 212,
+            "Bottoms": 212,
+            "Dresses": 212,
+            "Accessories": 212
+          },
+          "item_percentage_by_category": {
+            "Outerwear": 20.0,
+            "Tops": 20.0,
+            "Bottoms": 20.0,
+            "Dresses": 20.0,
+            "Accessories": 20.0
+          }
+        },
+        "average_sales": {
+          "average_sales_by_category": {
+            "Accessories": 62.740566037735846,
+            "Bottoms": 61.35377358490566,
+            "Tops": 58.49528301886792,
+            "Outerwear": 56.39622641509434,
+            "Dresses": 54.29716981132076
+          }
+        },
+        "weekly_trend": {
+          "revenue_by_week": {
+            "Week 1": 88348.69,
+            "Week 10": 61502.12,
+            "Week 11": 62775.81,
+            "Week 12": 80126.81,
+            "Week 13": 67805.71,
+            "Week 14": 69079.26,
+            "Week 15": 74983.88,
+            "Week 16": 72994.25,
+            "Week 17": 67263.62,
+            "Week 18": 64222.68,
+            "Week 19": 116214.14,
+            "Week 2": 85649.13,
+            "Week 20": 93786.15,
+            "Week 21": 65836.57,
+            "Week 22": 73259.53,
+            "Week 23": 67048.75,
+            "Week 24": 103921.36,
+            "Week 25": 109175.15,
+            "Week 26": 79705.67,
+            "Week 27": 98156.67,
+            "Week 28": 80835.68000000001,
+            "Week 29": 75579.06,
+            "Week 3": 63786.32,
+            "Week 30": 67561.39,
+            "Week 31": 82437.77,
+            "Week 32": 79021.8,
+            "Week 33": 83009.28,
+            "Week 34": 66674.6,
+            "Week 35": 71148.79,
+            "Week 36": 66040.81,
+            "Week 37": 64217.2,
+            "Week 38": 61516.84,
+            "Week 39": 70297.85,
+            "Week 4": 69734.68000000001,
+            "Week 40": 67015.56999999999,
+            "Week 41": 67741.04,
+            "Week 42": 76059.29,
+            "Week 43": 69411.18,
+            "Week 44": 65571.21,
+            "Week 45": 71451.98,
+            "Week 46": 66680.89,
+            "Week 47": 69344.27,
+            "Week 48": 155797.21,
+            "Week 49": 173706.36,
+            "Week 5": 66220.26,
+            "Week 50": 90562.73,
+            "Week 51": 68132.23,
+            "Week 52": 143907.89,
+            "Week 53": 136611.62,
+            "Week 6": 70195.39,
+            "Week 7": 89968.29,
+            "Week 8": 97780.34,
+            "Week 9": 63583.57
+          }
+        },
+        "top_revenue_items": {
+          "top_10_items_by_revenue": {
+            "Evening Gown": 531524.79,
+            "Parka": 496749.88,
+            "Formal Dress": 449436.43,
+            "Winter Coat": 323591.49,
+            "Light Jacket": 250074.33,
+            "Raincoat": 226595.84,
+            "Summer Dress": 222984.94,
+            "Dress Pants": 217623.24,
+            "Sweater": 194916.83,
+            "Jeans": 192974.02
+          }
+        }
+      }
+    },
+    "饼图比例分析单元": {
+      "status": "success",
+      "error": null,
+      "code": "import pandas as pd\nimport numpy as np\nimport json\nimport sys\nimport os\nfrom datetime import datetime\n\ndef analyze_pie_chart_data(file_path):\n    \"\"\"\n    分析CSV数据，生成适合饼图展示的比例数据\n    \n    Args:\n        file_path: CSV文件路径\n    \n    Returns:\n        包含饼图数据的字典\n    \"\"\"\n    try:\n        # 读取CSV文件\n        df = pd.read_csv(file_path)\n        \n        # 初始化结果字典\n        pie_chart_data = {}\n        \n        # 1. 按类别(Category)分析销售额占比\n        category_revenue = df.groupby('Category')['Revenue'].sum().reset_index()\n        total_revenue = category_revenue['Revenue'].sum()\n        category_revenue['Percentage'] = (category_revenue['Revenue'] / total_revenue * 100).round(2)\n        pie_chart_data['category_revenue_distribution'] = category_revenue[['Category', 'Percentage']].to_dict('records')\n        \n        # 2. 按商品(Item)分析销售量占比\n        item_sales = df.groupby('Item')['Sales'].sum().reset_index()\n        total_sales = item_sales['Sales'].sum()\n        item_sales['Percentage'] = (item_sales['Sales'] / total_sales * 100).round(2)\n        # 只保留前10个商品，其余归为\"其他\"类别\n        if len(item_sales) > 10:\n            top_items = item_sales.nlargest(10, 'Percentage')\n            other_percentage = 100 - top_items['Percentage'].sum()\n            top_items = top_items.append({'Item': '其他', 'Sales': 0, 'Percentage': round(other_percentage, 2)}, \n                                        ignore_index=True)\n            pie_chart_data['item_sales_distribution'] = top_items[['Item', 'Percentage']].to_dict('records')\n        else:\n            pie_chart_data['item_sales_distribution'] = item_sales[['Item', 'Percentage']].to_dict('records')\n        \n        # 3. 按月份(Month)分析销售额占比\n        month_revenue = df.groupby('Month')['Revenue'].sum().reset_index()\n        month_revenue['Percentage'] = (month_revenue['Revenue'] / total_revenue * 100).round(2)\n        # 按月份顺序排序\n        month_order = ['January', 'February', 'March', 'April', 'May', 'June', \n                       'July', 'August', 'September', 'October', 'November', 'December']\n        month_revenue['Month'] = pd.Categorical(month_revenue['Month'], categories=month_order, ordered=True)\n        month_revenue = month_revenue.sort_values('Month')\n        pie_chart_data['monthly_revenue_distribution'] = month_revenue[['Month', 'Percentage']].to_dict('records')\n        \n        # 4. 价格区间分析\n        # 创建价格区间\n        bins = [0, 50, 100, 150, 200]\n        labels = ['0-50', '51-100', '101-150', '151-200']\n        df['Price_Range'] = pd.cut(df['Price'], bins=bins, labels=labels, right=False)\n        price_range_count = df['Price_Range'].value_counts().reset_index()\n        price_range_count.columns = ['Price_Range', 'Count']\n        price_range_count['Percentage'] = (price_range_count['Count'] / len(df) * 100).round(2)\n        pie_chart_data['price_range_distribution'] = price_range_count[['Price_Range', 'Percentage']].to_dict('records')\n        \n        # 5. 按周(Week)分析销售量占比\n        # 只取前10周数据，其余归为\"其他\"类别\n        week_sales = df.groupby('Week')['Sales'].sum().reset_index()\n        week_sales['Percentage'] = (week_sales['Sales'] / total_sales * 100).round(2)\n        if len(week_sales) > 10:\n            top_weeks = week_sales.nlargest(10, 'Sales')\n            other_percentage = 100 - top_weeks['Percentage'].sum()\n            top_weeks = top_weeks.append({'Week': '其他周', 'Sales': 0, 'Percentage': round(other_percentage, 2)}, \n                                        ignore_index=True)\n            pie_chart_data['weekly_sales_distribution'] = top_weeks[['Week', 'Percentage']].to_dict('records')\n        else:\n            pie_chart_data['weekly_sales_distribution'] = week_sales[['Week', 'Percentage']].to_dict('records')\n        \n        return pie_chart_data\n        \n    except Exception as e:\n        print(f\"分析数据时出错: {str(e)}\")\n        return None\n\ndef main():\n    # 检查命令行参数\n    if len(sys.argv) != 2:\n        print(\"用法: python script.py <csv_file_path>\")\n        sys.exit(1)\n    \n    file_path = sys.argv[1]\n    \n    # 检查文件是否存在\n    if not os.path.exists(file_path):\n        print(f\"错误: 文件 '{file_path}' 不存在\")\n        sys.exit(1)\n    \n    # 分析数据\n    pie_chart_data = analyze_pie_chart_data(file_path)\n    \n    if pie_chart_data:\n        # 将结果保存为JSON文件\n        output_file = 'pie_chart_analysis_results.json'\n        try:\n            with open(output_file, 'w', encoding='utf-8') as f:\n                json.dump(pie_chart_data, f, ensure_ascii=False, indent=4)\n            print(f\"分析结果已保存到 {output_file}\")\n        except Exception as e:\n            print(f\"保存结果时出错: {str(e)}\")\n    else:\n        print(\"分析失败，未生成结果\")\n\nif __name__ == \"__main__\":\n    main()",
+      "results": "分析数据时出错: 'DataFrame' object has no attribute 'append'\n分析失败，未生成结果\n",
+      "json_results": null
+    },
+    "时间趋势分析单元": {
+      "status": "failed",
+      "error": "Traceback (most recent call last):\n  File \"D:\\smolagent\\temp_py\\时间趋势分析单元_temp_code_20250317084740.py\", line 7, in <module>\n    from statsmodels.tsa.seasonal import seasonal_decompose\nModuleNotFoundError: No module named 'statsmodels'\n",
+      "code": "import pandas as pd\nimport numpy as np\nimport json\nimport sys\nimport os\nfrom datetime import datetime\nfrom statsmodels.tsa.seasonal import seasonal_decompose\nfrom statsmodels.tsa.holtwinters import ExponentialSmoothing\nimport argparse\n\ndef load_data(file_path):\n    \"\"\"加载CSV数据文件\"\"\"\n    try:\n        df = pd.read_csv(file_path)\n        print(f\"成功加载数据，共{len(df)}行\")\n        return df\n    except Exception as e:\n        print(f\"加载数据失败: {e}\")\n        sys.exit(1)\n\ndef prepare_time_data(df):\n    \"\"\"准备时间序列数据\"\"\"\n    # 检查是否存在Date列\n    if 'Date' not in df.columns:\n        print(\"警告: 数据中没有Date列，尝试使用Week或Month列\")\n        if 'Week' in df.columns:\n            print(\"使用Week列作为时间索引\")\n            return df, 'Week'\n        elif 'Month' in df.columns:\n            print(\"使用Month列作为时间索引\")\n            return df, 'Month'\n        else:\n            print(\"错误: 数据中没有可用的时间列\")\n            sys.exit(1)\n    \n    # 转换Date列为datetime类型\n    try:\n        df['Date'] = pd.to_datetime(df['Date'])\n        return df, 'Date'\n    except Exception as e:\n        print(f\"转换Date列失败: {e}\")\n        if 'Week' in df.columns:\n            print(\"使用Week列作为替代\")\n            return df, 'Week'\n        elif 'Month' in df.columns:\n            print(\"使用Month列作为替代\")\n            return df, 'Month'\n        else:\n            print(\"错误: 无法处理时间数据\")\n            sys.exit(1)\n\ndef analyze_time_trends(df, time_col):\n    \"\"\"分析时间趋势\"\"\"\n    results = {}\n    \n    # 1. 按时间聚合销售和收入数据\n    if time_col == 'Date':\n        # 日期级别分析\n        daily_sales = df.groupby(time_col)[['Sales', 'Revenue']].sum().reset_index()\n        daily_sales['Date'] = daily_sales['Date'].dt.strftime('%Y-%m-%d')\n        \n        # 计算7天和30天移动平均\n        daily_sales['Sales_7D_MA'] = daily_sales['Sales'].rolling(window=7, min_periods=1).mean()\n        daily_sales['Revenue_7D_MA'] = daily_sales['Revenue'].rolling(window=7, min_periods=1).mean()\n        daily_sales['Sales_30D_MA'] = daily_sales['Sales'].rolling(window=30, min_periods=1).mean()\n        daily_sales['Revenue_30D_MA'] = daily_sales['Revenue'].rolling(window=30, min_periods=1).mean()\n        \n        results['daily_trends'] = daily_sales.to_dict(orient='records')\n        \n        # 计算环比增长率\n        daily_sales['Sales_DoD_Growth'] = daily_sales['Sales'].pct_change() * 100\n        daily_sales['Revenue_DoD_Growth'] = daily_sales['Revenue'].pct_change() * 100\n        results['daily_growth'] = daily_sales[['Date', 'Sales_DoD_Growth', 'Revenue_DoD_Growth']].dropna().to_dict(orient='records')\n    \n    # 2. 月度分析\n    monthly_sales = df.groupby('Month')[['Sales', 'Revenue']].sum().reset_index()\n    \n    # 确保月份按时间顺序排列\n    month_order = ['January', 'February', 'March', 'April', 'May', 'June', \n                  'July', 'August', 'September', 'October', 'November', 'December']\n    monthly_sales['Month'] = pd.Categorical(monthly_sales['Month'], categories=month_order, ordered=True)\n    monthly_sales = monthly_sales.sort_values('Month')\n    \n    results['monthly_trends'] = monthly_sales.to_dict(orient='records')\n    \n    # 3. 周度分析\n    weekly_sales = df.groupby('Week')[['Sales', 'Revenue']].sum().reset_index()\n    # 尝试从Week列提取周数以便排序\n    try:\n        weekly_sales['Week_Num'] = weekly_sales['Week'].str.extract(r'Week (\\d+)').astype(int)\n        weekly_sales = weekly_sales.sort_values('Week_Num')\n        weekly_sales = weekly_sales.drop('Week_Num', axis=1)\n    except:\n        pass  # 如果提取失败，保持原样\n    \n    results['weekly_trends'] = weekly_sales.to_dict(orient='records')\n    \n    # 4. 类别随时间的趋势\n    category_time_trends = df.groupby([time_col, 'Category'])[['Sales', 'Revenue']].sum().reset_index()\n    if time_col == 'Date':\n        category_time_trends['Date'] = category_time_trends['Date'].dt.strftime('%Y-%m-%d')\n    results['category_time_trends'] = category_time_trends.to_dict(orient='records')\n    \n    # 5. 季节性分析 (如果有足够的数据)\n    if time_col == 'Date' and len(daily_sales) >= 14:  # 需要足够的数据点\n        try:\n            # 设置日期索引用于时间序列分析\n            ts_data = daily_sales.set_index('Date')['Revenue']\n            # 执行季节性分解\n            decomposition = seasonal_decompose(ts_data, model='additive', period=7)  # 假设周期为7天\n            \n            seasonal_data = decomposition.seasonal.reset_index()\n            seasonal_data['Date'] = seasonal_data['Date'].dt.strftime('%Y-%m-%d')\n            trend_data = decomposition.trend.reset_index()\n            trend_data['Date'] = trend_data['Date'].dt.strftime('%Y-%m-%d')\n            \n            results['seasonal_components'] = {\n                'seasonal': seasonal_data.dropna().to_dict(orient='records'),\n                'trend': trend_data.dropna().to_dict(orient='records')\n            }\n        except Exception as e:\n            print(f\"季节性分解失败: {e}\")\n    \n    # 6. 简单预测 (如果有足够的数据)\n    if time_col == 'Date' and len(daily_sales) >= 14:\n        try:\n            # 使用指数平滑进行简单预测\n            ts_data = daily_sales.set_index('Date')['Revenue']\n            model = ExponentialSmoothing(ts_data, \n                                        trend='add', \n                                        seasonal='add', \n                                        seasonal_periods=7).fit()\n            \n            # 预测未来7天\n            forecast = model.forecast(7)\n            forecast_df = pd.DataFrame({\n                'Date': pd.date_range(start=ts_data.index[-1] + pd.Timedelta(days=1), periods=7),\n                'Forecasted_Revenue': forecast.values\n            })\n            forecast_df['Date'] = forecast_df['Date'].dt.strftime('%Y-%m-%d')\n            \n            results['forecast'] = forecast_df.to_dict(orient='records')\n        except Exception as e:\n            print(f\"预测失败: {e}\")\n    \n    return results\n\ndef main():\n    parser = argparse.ArgumentParser(description='分析CSV文件中的时间趋势')\n    parser.add_argument('file_path', help='CSV文件路径')\n    parser.add_argument('--output', default='time_trend_analysis_results.json', help='输出JSON文件路径')\n    \n    args = parser.parse_args()\n    \n    # 加载数据\n    df = load_data(args.file_path)\n    \n    # 准备时间数据\n    df, time_col = prepare_time_data(df)\n    \n    # 分析时间趋势\n    results = analyze_time_trends(df, time_col)\n    \n    # 保存结果到JSON文件\n    try:\n        with open(args.output, 'w', encoding='utf-8') as f:\n            json.dump(results, f, ensure_ascii=False, indent=2)\n        print(f\"分析结果已保存到 {args.output}\")\n    except Exception as e:\n        print(f\"保存结果失败: {e}\")\n\nif __name__ == \"__main__\":\n    main()",
+      "results": null
+    },
+    "相关性分析单元": {
+      "status": "success",
+      "error": null,
+      "code": "import pandas as pd\nimport numpy as np\nimport scipy.stats as stats\nfrom scipy.stats import f_oneway\nimport json\nimport sys\nimport os\nfrom typing import Dict, List, Any, Tuple\n\ndef load_data(file_path: str) -> pd.DataFrame:\n    \"\"\"加载CSV数据文件\"\"\"\n    try:\n        return pd.read_csv(file_path)\n    except Exception as e:\n        print(f\"加载数据文件时出错: {e}\")\n        sys.exit(1)\n\ndef get_numeric_columns(df: pd.DataFrame) -> List[str]:\n    \"\"\"获取数据框中的数值型列\"\"\"\n    return df.select_dtypes(include=['int64', 'float64']).columns.tolist()\n\ndef get_categorical_columns(df: pd.DataFrame) -> List[str]:\n    \"\"\"获取数据框中的分类列\"\"\"\n    return df.select_dtypes(include=['object', 'category']).columns.tolist()\n\ndef calculate_correlations(df: pd.DataFrame, numeric_cols: List[str]) -> Dict[str, Any]:\n    \"\"\"计算数值变量之间的相关性\"\"\"\n    if len(numeric_cols) < 2:\n        return {\"error\": \"没有足够的数值列进行相关性分析\"}\n    \n    # 计算Pearson相关系数\n    pearson_corr = df[numeric_cols].corr(method='pearson').round(3)\n    \n    # 计算Spearman相关系数\n    spearman_corr = df[numeric_cols].corr(method='spearman').round(3)\n    \n    # 识别强相关变量对 (|r| > 0.5)\n    strong_correlations = []\n    for i in range(len(numeric_cols)):\n        for j in range(i+1, len(numeric_cols)):\n            col1, col2 = numeric_cols[i], numeric_cols[j]\n            pearson_r = pearson_corr.loc[col1, col2]\n            spearman_r = spearman_corr.loc[col1, col2]\n            \n            if abs(pearson_r) > 0.5:\n                correlation_type = \"正相关\" if pearson_r > 0 else \"负相关\"\n                strong_correlations.append({\n                    \"变量对\": [col1, col2],\n                    \"Pearson相关系数\": float(pearson_r),\n                    \"Spearman相关系数\": float(spearman_r),\n                    \"相关类型\": correlation_type,\n                    \"强度\": \"强\" if abs(pearson_r) > 0.7 else \"中等\"\n                })\n    \n    return {\n        \"pearson_correlation_matrix\": pearson_corr.to_dict(),\n        \"spearman_correlation_matrix\": spearman_corr.to_dict(),\n        \"strong_correlations\": strong_correlations\n    }\n\ndef analyze_categorical_vs_numeric(df: pd.DataFrame, cat_cols: List[str], \n                                  num_cols: List[str]) -> Dict[str, Any]:\n    \"\"\"分析分类变量与数值变量之间的关系\"\"\"\n    results = {}\n    \n    for cat_col in cat_cols:\n        cat_num_relations = {}\n        for num_col in num_cols:\n            # 执行单因素方差分析(ANOVA)\n            try:\n                groups = [df[df[cat_col] == category][num_col].values \n                         for category in df[cat_col].unique() if len(df[df[cat_col] == category]) > 0]\n                \n                if len(groups) > 1 and all(len(g) > 0 for g in groups):\n                    f_stat, p_value = f_oneway(*groups)\n                    \n                    # 计算每个类别的均值\n                    category_means = df.groupby(cat_col)[num_col].mean().to_dict()\n                    \n                    cat_num_relations[num_col] = {\n                        \"f_statistic\": float(f_stat),\n                        \"p_value\": float(p_value),\n                        \"significant\": p_value < 0.05,\n                        \"category_means\": category_means\n                    }\n            except Exception as e:\n                cat_num_relations[num_col] = {\"error\": str(e)}\n        \n        results[cat_col] = cat_num_relations\n    \n    return results\n\ndef perform_correlation_analysis(file_path: str, output_path: str = 'correlation_analysis_results.json') -> None:\n    \"\"\"执行相关性分析并将结果保存为JSON\"\"\"\n    # 加载数据\n    df = load_data(file_path)\n    \n    # 获取数值列和分类列\n    numeric_cols = get_numeric_columns(df)\n    categorical_cols = get_categorical_columns(df)\n    \n    if len(numeric_cols) < 2:\n        print(\"警告: 数据中没有足够的数值列进行相关性分析\")\n        results = {\"error\": \"没有足够的数值列进行相关性分析\"}\n    else:\n        # 执行相关性分析\n        correlation_results = calculate_correlations(df, numeric_cols)\n        \n        # 分析分类变量与数值变量之间的关系\n        cat_num_relations = analyze_categorical_vs_numeric(df, categorical_cols, numeric_cols)\n        \n        # 汇总结果\n        results = {\n            \"numeric_correlations\": correlation_results,\n            \"categorical_vs_numeric_relations\": cat_num_relations,\n            \"analyzed_columns\": {\n                \"numeric\": numeric_cols,\n                \"categorical\": categorical_cols\n            },\n            \"data_summary\": {\n                \"rows\": len(df),\n                \"columns\": len(df.columns)\n            }\n        }\n    \n    # 保存结果为JSON\n    try:\n        with open(output_path, 'w', encoding='utf-8') as f:\n            json.dump(results, f, ensure_ascii=False, indent=2)\n        print(f\"相关性分析结果已保存到 {output_path}\")\n    except Exception as e:\n        print(f\"保存结果时出错: {e}\")\n\nif __name__ == \"__main__\":\n    if len(sys.argv) > 1:\n        file_path = sys.argv[1]\n    else:\n        file_path = input(\"请输入CSV文件路径: \")\n    \n    perform_correlation_analysis(file_path)",
+      "results": "保存结果时出错: Object of type bool is not JSON serializable\n",
+      "json_results": null
+    }
+  }
+}

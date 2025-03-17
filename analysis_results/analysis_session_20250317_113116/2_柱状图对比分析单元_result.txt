@@ -1,0 +1,3 @@
+Analysis completed successfully!
+Charts saved at: pngs/chart_bar_success_rate_by_station_20250317113216.png, pngs/chart_bar_signal_type_performance_20250317113217.png
+Analysis results saved at: pngs/chart_bar_success_rate_by_station_20250317113216.png

@@ -1,0 +1,3 @@
+Error analyzing data: agg function failed [how->mean,dtype->object]
+Analysis complete. Results saved to pngs/analysis_results.json
+Generated 0 charts in the pngs directory

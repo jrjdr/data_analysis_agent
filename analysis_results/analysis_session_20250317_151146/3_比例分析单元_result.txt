@@ -1,0 +1,2 @@
+成功读取CSV文件，共14400行，36列
+分析结果已保存到: pngs/category_distribution_results.txt

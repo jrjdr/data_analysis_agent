@@ -1,0 +1,6 @@
+分析完成，生成了3个饼图
+JSON结果保存在: pie_chart_analysis_20250317111253.json
+生成的图表:
+ - pngs\chart_pie_base_station_id_20250317111253.png
+ - pngs\chart_pie_signal_type_20250317111253.png
+ - pngs\chart_pie_status_20250317111253.png

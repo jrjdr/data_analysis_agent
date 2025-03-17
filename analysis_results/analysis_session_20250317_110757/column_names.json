@@ -1,0 +1,22 @@
+[
+  "timestamp",
+  "base_station_id",
+  "base_station_name",
+  "signal_type",
+  "status",
+  "success_rate",
+  "failure_rate",
+  "call_attempts",
+  "active_users",
+  "signal_strength_dbm",
+  "signal_quality_db",
+  "downlink_throughput_mbps",
+  "uplink_throughput_mbps",
+  "latency_ms",
+  "jitter_ms",
+  "packet_loss_percent",
+  "resource_block_usage_percent",
+  "cpu_usage_percent",
+  "memory_usage_percent",
+  "temperature_celsius"
+]

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>分组对比分析分析报告</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            color: #2c3e50;
+            margin-top: 24px;
+            margin-bottom: 16px;
+        }
+        h1 { font-size: 2em; border-bottom: 1px solid #eaecef; padding-bottom: .3em; }
+        h2 { font-size: 1.5em; border-bottom: 1px solid #eaecef; padding-bottom: .3em; }
+        h3 { font-size: 1.25em; }
+        h4 { font-size: 1em; }
+        p, ul, ol, table { margin-bottom: 16px; }
+        code {
+            font-family: Consolas, Monaco, 'Andale Mono', monospace;
+            background-color: #f6f8fa;
+            padding: 0.2em 0.4em;
+            border-radius: 3px;
+        }
+        pre {
+            background-color: #f6f8fa;
+            border-radius: 3px;
+            padding: 16px;
+            overflow: auto;
+        }
+        pre code {
+            background-color: transparent;
+            padding: 0;
+        }
+        blockquote {
+            padding: 0 1em;
+            color: #6a737d;
+            border-left: 0.25em solid #dfe2e5;
+            margin: 0 0 16px 0;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        table th, table td {
+            border: 1px solid #dfe2e5;
+            padding: 6px 13px;
+        }
+        table tr:nth-child(2n) {
+            background-color: #f6f8fa;
+        }
+        img {
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+<h1>服务器性能数据分析报告</h1>
+<br>
+<h2>1. 数据概览</h2>
+<br>
+<p>本报告基于2025年2月28日的服务器性能监控数据进行分析。数据集包含14,400行记录和36个指标列，涵盖了10台不同服务器的性能指标。</p>
+<br>
+<h3>1.1 数据基本信息</h3>
+<br>
+<table>
+<tr><th>项目</th><th>详情</th></tr>
+<tr><td>数据收集时间</td><td>2025年2月28日</td></tr>
+<tr><td>数据行数</td><td>14,400</td></tr>
+<tr><td>数据列数</td><td>36</td></tr>
+<tr><td>监控时间点数</td><td>1,440 (每分钟一次)</td></tr>
+<tr><td>服务器数量</td><td>10</td></tr>
+</table>
+<br>
+<h3>1.2 服务器分布</h3>
+<br>
+<table>
+<tr><th>服务器ID</th><th>服务器名称</th><th>资源类型</th><th>记录数</th><th>占比</th></tr>
+<tr><td>SRV001</td><td>主应用服务器</td><td>server</td><td>1,440</td><td>10%</td></tr>
+<tr><td>SRV002</td><td>备份应用服务器</td><td>server</td><td>1,440</td><td>10%</td></tr>
+<tr><td>SRV003</td><td>数据处理服务器</td><td>server</td><td>1,440</td><td>10%</td></tr>
+<tr><td>SRV004</td><td>缓存服务器</td><td>server</td><td>1,440</td><td>10%</td></tr>
+<tr><td>SRV005</td><td>负载均衡服务器</td><td>server</td><td>1,440</td><td>10%</td></tr>
+<tr><td>DB001</td><td>MySQL主数据库</td><td>database</td><td>1,440</td><td>10%</td></tr>
+<tr><td>DB002</td><td>MySQL从数据库</td><td>database</td><td>1,440</td><td>10%</td></tr>
+<tr><td>DB003</td><td>Redis缓存数据库</td><td>database</td><td>1,440</td><td>10%</td></tr>
+<tr><td>DB004</td><td>MongoDB文档数据库</td><td>database</td><td>1,440</td><td>10%</td></tr>
+<tr><td>DB005</td><td>Elasticsearch搜索数据库</td><td>database</td><td>1,440</td><td>10%</td></tr>
+</table>
+<br>
+<h3>1.3 事件类型分布</h3>
+<br>
+<table>
+<tr><th>事件类型</th><th>记录数</th><th>占比</th></tr>
+<tr><td>normal</td><td>14,103</td><td>97.94%</td></tr>
+<tr><td>network_issue</td><td>122</td><td>0.85%</td></tr>
+<tr><td>high_load</td><td>92</td><td>0.64%</td></tr>
+<tr><td>db_slowdown</td><td>62</td><td>0.43%</td></tr>
+<tr><td>memory_leak</td><td>21</td><td>0.15%</td></tr>
+</table>
+<br>
+<h2>2. 数据洞察</h2>
+<br>
+<h3>2.1 应用服务器性能指标</h3>
+<br>
+<table>
+<tr><th>指标</th><th>均值</th><th>中位数</th><th>最小值</th><th>最大值</th><th>标准差</th></tr>
+<tr><td>CPU使用率(%)</td><td>37.58</td><td>31.62</td><td>5.58</td><td>100.00</td><td>20.65</td></tr>
+<tr><td>内存使用率(%)</td><td>53.57</td><td>51.70</td><td>27.41</td><td>100.00</td><td>15.33</td></tr>
+<tr><td>磁盘使用率(%)</td><td>52.84</td><td>50.00</td><td>50.00</td><td>89.16</td><td>5.81</td></tr>
+<tr><td>磁盘IO(%)</td><td>29.27</td><td>23.18</td><td>0.48</td><td>93.00</td><td>19.41</td></tr>
+<tr><td>网络流量(%)</td><td>38.25</td><td>32.30</td><td>5.22</td><td>100.00</td><td>21.58</td></tr>
+<tr><td>1分钟负载</td><td>1.50</td><td>1.26</td><td>0.22</td><td>4.00</td><td>0.83</td></tr>
+<tr><td>进程数</td><td>174.55</td><td>163.00</td><td>104.00</td><td>305.00</td><td>41.73</td></tr>
+<tr><td>线程数</td><td>963.67</td><td>914.00</td><td>321.00</td><td>2330.00</td><td>349.55</td></tr>
+<tr><td>温度(°C)</td><td>50.18</td><td>50.26</td><td>35.00</td><td>64.99</td><td>8.65</td></tr>
+</table>
+<br>
+<h3>2.2 数据库服务器性能指标</h3>
+<br>
+<table>
+<tr><th>指标</th><th>均值</th><th>中位数</th><th>最小值</th><th>最大值</th><th>标准差</th></tr>
+<tr><td>查询率(每秒)</td><td>349.16</td><td>242.72</td><td>51.60</td><td>1242.16</td><td>246.15</td></tr>
+<tr><td>活跃连接数</td><td>40.83</td><td>31.25</td><td>5.09</td><td>196.48</td><td>28.10</td></tr>
+<tr><td>缓存命中率(%)</td><td>84.69</td><td>85.52</td><td>27.49</td><td>99.81</td><td>7.98</td></tr>
+<tr><td>平均查询时间(ms)</td><td>18.01</td><td>16.87</td><td>8.22</td><td>246.53</td><td>12.64</td></tr>
+<tr><td>事务数(每秒)</td><td>38.26</td><td>25.93</td><td>3.64</td><td>218.76</td><td>30.84</td></tr>
+<tr><td>读操作比例(%)</td><td>81.80</td><td>83.43</td><td>66.67</td><td>88.89</td><td>5.87</td></tr>
+<tr><td>写操作比例(%)</td><td>18.20</td><td>16.57</td><td>11.11</td><td>33.33</td><td>5.87</td></tr>
+<tr><td>锁等待次数</td><td>3.61</td><td>2.00</td><td>0.00</td><td>37.00</td><td>4.09</td></tr>
+<tr><td>死锁次数</td><td>0.02</td><td>0.00</td><td>0.00</td><td>3.00</td><td>0.16</td></tr>
+<tr><td>慢查询数</td><td>8.28</td><td>5.00</td><td>0.00</td><td>57.00</td><td>8.72</td></tr>
+</table>
+<br>
+<h3>2.3 不同事件类型的性能指标对比</h3>
+<br>
+<table>
+<tr><th>事件类型</th><th>CPU使用率(%)</th><th>内存使用率(%)</th><th>磁盘使用率(%)</th><th>网络流量(%)</th></tr>
+<tr><td>normal</td><td>36.91</td><td>53.10</td><td>52.68</td><td>36.94</td></tr>
+<tr><td>network_issue</td><td>50.49</td><td>60.65</td><td>51.96</td><td>94.94</td></tr>
+<tr><td>high_load</td><td>90.82</td><td>88.17</td><td>69.39</td><td>87.51</td></tr>
+<tr><td>memory_leak</td><td>68.50</td><td>94.13</td><td>76.73</td><td>39.72</td></tr>
+</table>
+<br>
+<h2>3. 关键发现</h2>
+<br>
+<h3>3.1 异常事件分析</h3>
+<br>
+<ol>
+<li>**网络问题(network_issue)**</li>
+</ol>
+<ul>
+<li>占总记录的0.85%，共122次</li>
+<li>网络流量接近饱和(94.94%)</li>
+<li>CPU和内存使用率明显高于正常状态</li>
+</ul>
+<br>
+<ol>
+<li>**高负载(high_load)**</li>
+</ol>
+<ul>
+<li>占总记录的0.64%，共92次</li>
+<li>CPU使用率极高(90.82%)</li>
+<li>内存使用率显著升高(88.17%)</li>
+<li>网络流量大幅增加(87.51%)</li>
+</ul>
+<br>
+<ol>
+<li>**数据库慢查询(db_slowdown)**</li>
+</ol>
+<ul>
+<li>占总记录的0.43%，共62次</li>
+<li>主要影响数据库服务器性能</li>
+</ul>
+<br>
+<ol>
+<li>**内存泄漏(memory_leak)**</li>
+</ol>
+<ul>
+<li>占总记录的0.15%，共21次</li>
+<li>内存使用率接近饱和(94.13%)</li>
+<li>磁盘使用率明显增高(76.73%)</li>
+</ul>
+<br>
+<h3>3.2 服务器性能对比</h3>
+<br>
+<h4>应用服务器性能对比</h4>
+<br>
+<table>
+<tr><th>服务器名称</th><th>CPU使用率(%)</th><th>内存使用率(%)</th><th>网络流量(%)</th><th>负载均值</th></tr>
+<tr><td>主应用服务器</td><td>38.98</td><td>54.23</td><td>38.63</td><td>1.56</td></tr>
+<tr><td>备份应用服务器</td><td>37.47</td><td>53.61</td><td>39.86</td><td>1.50</td></tr>
+<tr><td>数据处理服务器</td><td>36.67</td><td>53.59</td><td>36.33</td><td>1.47</td></tr>
+<tr><td>缓存服务器</td><td>36.74</td><td>52.64</td><td>36.80</td><td>1.47</td></tr>
+<tr><td>负载均衡服务器</td><td>38.05</td><td>53.77</td><td>39.65</td><td>1.52</td></tr>
+</table>
+<br>
+<h4>数据库服务器性能对比</h4>
+<br>
+<table>
+<tr><th>服务器名称</th><th>查询率(每秒)</th><th>平均查询时间(ms)</th><th>缓存命中率(%)</th><th>慢查询数</th></tr>
+<tr><td>MySQL主数据库</td><td>370.14</td><td>17.03</td><td>84.31</td><td>9.19</td></tr>
+<tr><td>MySQL从数据库</td><td>341.82</td><td>19.52</td><td>84.32</td><td>8.00</td></tr>
+<tr><td>Redis缓存数据库</td><td>346.83</td><td>17.04</td><td>85.02</td><td>8.21</td></tr>
+<tr><td>MongoDB文档数据库</td><td>336.65</td><td>19.51</td><td>84.50</td><td>7.62</td></tr>
+<tr><td>Elasticsearch搜索数据库</td><td>350.39</td><td>16.95</td><td>85.32</td><td>8.40</td></tr>
+</table>
+<br>
+<h3>3.3 高负载时间段</h3>
+<br>
+<p>系统在2025年2月28日凌晨3:15至3:19期间出现了明显的高负载情况，这段时间应重点关注并分析可能的原因。</p>
+<br>
+<h2>4. 总结</h2>
+<br>
+<ol>
+<li>**系统整体运行状况**：系统大部分时间(97.94%)处于正常运行状态，各项指标在合理范围内。主要服务器和数据库的性能指标相对稳定，没有出现持续的严重性能问题。</li>
+</ol>
+<br>
+<ol>
+<li>**潜在问题**：</li>
+</ol>
+<ul>
+<li>网络问题是最常见的异常事件(0.85%)，表现为网络流量接近饱和</li>
+<li>高负载事件(0.64%)导致CPU和内存使用率显著升高</li>
+<li>数据库慢查询(0.43%)可能影响应用响应时间</li>
+<li>内存泄漏事件虽然较少(0.15%)但影响严重，内存使用率接近100%</li>
+</ul>
+<br>
+<ol>
+<li>**服务器对比**：</li>
+</ol>
+<ul>
+<li>主应用服务器的CPU使用率和负载均值略高于其他应用服务器</li>
+<li>MySQL主数据库的查询率最高，慢查询数也最多</li>
+<li>Elasticsearch搜索数据库的缓存命中率最高，查询性能较好</li>
+</ul>
+<br>
+<ol>
+<li>**建议措施**：</li>
+</ol>
+<ul>
+<li>优化网络配置，特别是在高流量时段</li>
+<li>对MySQL主数据库进行查询优化，减少慢查询数量</li>
+<li>调查并修复可能的内存泄漏问题</li>
+<li>对2月28日凌晨3:15-3:19的高负载情况进行深入分析</li>
+<li>考虑增加监控告警，及时发现并处理异常事件</li>
+</ul>
+<br>
+<p>本报告提供了服务器性能的全面分析，建议运维团队针对发现的问题制定相应的优化方案，以提高系统的稳定性和性能。</p>
+
+</body>
+</html>

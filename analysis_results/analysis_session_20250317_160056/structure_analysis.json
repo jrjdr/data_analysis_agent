@@ -1,0 +1,115 @@
+{
+  "file_path": "temp_csv/excel_data_20250317160056.csv",
+  "row_count": 2000,
+  "column_count": 12,
+  "columns": {
+    "Complaint_ID": {
+      "type": "object",
+      "missing_values": 0,
+      "unique_values": 2000,
+      "most_common": {
+        "value": "COMP-01984",
+        "count": 1
+      }
+    },
+    "Date_Reported": {
+      "type": "object",
+      "missing_values": 0,
+      "unique_values": 90,
+      "most_common": {
+        "value": "2025-03-28",
+        "count": 37
+      }
+    },
+    "Customer_ID": {
+      "type": "object",
+      "missing_values": 0,
+      "unique_values": 1769,
+      "most_common": {
+        "value": "CUST-8483",
+        "count": 3
+      }
+    },
+    "Region": {
+      "type": "object",
+      "missing_values": 0,
+      "unique_values": 5,
+      "most_common": {
+        "value": "North",
+        "count": 417
+      }
+    },
+    "Complaint_Type": {
+      "type": "object",
+      "missing_values": 0,
+      "unique_values": 7,
+      "most_common": {
+        "value": "Call Drop",
+        "count": 296
+      }
+    },
+    "Service_Type": {
+      "type": "object",
+      "missing_values": 0,
+      "unique_values": 4,
+      "most_common": {
+        "value": "Mobile",
+        "count": 508
+      }
+    },
+    "Description": {
+      "type": "object",
+      "missing_values": 0,
+      "unique_values": 7,
+      "most_common": {
+        "value": "Customer reported call drop issue",
+        "count": 320
+      }
+    },
+    "Priority": {
+      "type": "object",
+      "missing_values": 0,
+      "unique_values": 4,
+      "most_common": {
+        "value": "Critical",
+        "count": 526
+      }
+    },
+    "Status": {
+      "type": "object",
+      "missing_values": 0,
+      "unique_values": 4,
+      "most_common": {
+        "value": "Closed",
+        "count": 1702
+      }
+    },
+    "Resolution_Date": {
+      "type": "object",
+      "missing_values": 430,
+      "unique_values": 103,
+      "most_common": {
+        "value": "2025-03-12",
+        "count": 28
+      }
+    },
+    "Resolution_Time_Days": {
+      "type": "float64",
+      "missing_values": 430,
+      "unique_values": 15,
+      "min": 0.0,
+      "max": 14.0,
+      "mean": 7.153503184713376,
+      "median": 7.0
+    },
+    "Customer_Satisfaction": {
+      "type": "float64",
+      "missing_values": 298,
+      "unique_values": 5,
+      "min": 1.0,
+      "max": 5.0,
+      "mean": 3.0158636897767335,
+      "median": 3.0
+    }
+  }
+}

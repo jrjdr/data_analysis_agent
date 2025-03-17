@@ -1,0 +1,79 @@
+{
+  "file_path": "temp_csv/excel_data_20250317113116.csv",
+  "row_count": 7200,
+  "column_count": 20,
+  "charts": [
+    {
+      "title": "Average Success Rate by Base Station",
+      "file_path": "pngs/chart_bar_success_rate_by_station_20250317113216.png",
+      "description": "Comparison of success rates across different base stations",
+      "key_findings": "城西-住宅区基站 has the highest success rate, while 城南-工业区基站 has the lowest",
+      "data": {
+        "城南-大学城基站": 0.8609196077835374,
+        "城西-住宅区基站": 0.8604209809428143,
+        "市中心-商业区基站": 0.8578921554431497,
+        "城北-工业园区基站": 0.8558074511442235,
+        "城东-商业区基站": 0.8535921561365585
+      }
+    },
+    {
+      "title": "Performance Metrics by Signal Type",
+      "file_path": "pngs/chart_bar_signal_type_performance_20250317113217.png",
+      "description": "Analysis of success rate and latency across different signal types",
+      "key_findings": "RANDOM_ACCESS signal type has the highest success rate, while HANDOVER has the lowest",
+      "data": {
+        "success_rate": {
+          "DETACH_ACCEPT": 0.8651539916753879,
+          "ATTACH_COMPLETE": 0.8633351100405773,
+          "RRC_CONNECTION_SETUP_COMPLETE": 0.8620953639854173,
+          "DETACH_REQUEST": 0.8615233898736719,
+          "PAGING": 0.8610407933559258,
+          "RRC_CONNECTION_RELEASE": 0.8606304559608524,
+          "HANDOVER_COMPLETE": 0.8583896470205641,
+          "SERVICE_ACCEPT": 0.8581027705459808,
+          "RRC_CONNECTION_SETUP": 0.8575198558237118,
+          "SERVICE_REQUEST": 0.8553959066945382,
+          "RRC_CONNECTION_REQUEST": 0.8552075945879822,
+          "HANDOVER_REQUEST": 0.8545829562099034,
+          "ATTACH_ACCEPT": 0.8531971863523864,
+          "ATTACH_REQUEST": 0.8506781070084614,
+          "HANDOVER_COMMAND": 0.8492445977342965
+        },
+        "failure_rate": {
+          "DETACH_ACCEPT": 0.13484600832461216,
+          "ATTACH_COMPLETE": 0.13666488995942275,
+          "RRC_CONNECTION_SETUP_COMPLETE": 0.13790463601458278,
+          "DETACH_REQUEST": 0.13847661012632803,
+          "PAGING": 0.1389592066440742,
+          "RRC_CONNECTION_RELEASE": 0.13936954403914759,
+          "HANDOVER_COMPLETE": 0.14161035297943583,
+          "SERVICE_ACCEPT": 0.14189722945401914,
+          "RRC_CONNECTION_SETUP": 0.14248014417628815,
+          "SERVICE_REQUEST": 0.14460409330546178,
+          "RRC_CONNECTION_REQUEST": 0.14479240541201768,
+          "HANDOVER_REQUEST": 0.14541704379009646,
+          "ATTACH_ACCEPT": 0.14680281364761347,
+          "ATTACH_REQUEST": 0.1493218929915387,
+          "HANDOVER_COMMAND": 0.15075540226570344
+        },
+        "latency_ms": {
+          "DETACH_ACCEPT": 21.627935105278002,
+          "ATTACH_COMPLETE": 21.942285154739036,
+          "RRC_CONNECTION_SETUP_COMPLETE": 21.054799475698793,
+          "DETACH_REQUEST": 21.35828037851495,
+          "PAGING": 22.141445939994664,
+          "RRC_CONNECTION_RELEASE": 21.683525080439985,
+          "HANDOVER_COMPLETE": 22.132566315267976,
+          "SERVICE_ACCEPT": 21.433805013692865,
+          "RRC_CONNECTION_SETUP": 22.038342718523626,
+          "SERVICE_REQUEST": 21.879465051011206,
+          "RRC_CONNECTION_REQUEST": 21.496415260213954,
+          "HANDOVER_REQUEST": 22.60415314592924,
+          "ATTACH_ACCEPT": 21.796952170980713,
+          "ATTACH_REQUEST": 21.570454446513878,
+          "HANDOVER_COMMAND": 20.499735417918323
+        }
+      }
+    }
+  ]
+}

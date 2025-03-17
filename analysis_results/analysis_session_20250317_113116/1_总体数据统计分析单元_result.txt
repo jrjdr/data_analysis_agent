@@ -1,0 +1,2 @@
+Analysis completed. Results saved to analysis_results_20250317113147.json
+Charts saved to pngs/ directory

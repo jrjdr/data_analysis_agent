@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>比例分析分析报告</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            color: #2c3e50;
+            margin-top: 24px;
+            margin-bottom: 16px;
+        }
+        h1 { font-size: 2em; border-bottom: 1px solid #eaecef; padding-bottom: .3em; }
+        h2 { font-size: 1.5em; border-bottom: 1px solid #eaecef; padding-bottom: .3em; }
+        h3 { font-size: 1.25em; }
+        h4 { font-size: 1em; }
+        p, ul, ol, table { margin-bottom: 16px; }
+        code {
+            font-family: Consolas, Monaco, 'Andale Mono', monospace;
+            background-color: #f6f8fa;
+            padding: 0.2em 0.4em;
+            border-radius: 3px;
+        }
+        pre {
+            background-color: #f6f8fa;
+            border-radius: 3px;
+            padding: 16px;
+            overflow: auto;
+        }
+        pre code {
+            background-color: transparent;
+            padding: 0;
+        }
+        blockquote {
+            padding: 0 1em;
+            color: #6a737d;
+            border-left: 0.25em solid #dfe2e5;
+            margin: 0 0 16px 0;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        table th, table td {
+            border: 1px solid #dfe2e5;
+            padding: 6px 13px;
+        }
+        table tr:nth-child(2n) {
+            background-color: #f6f8fa;
+        }
+        img {
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+<h1>服务器数据分析报告</h1>
+<br>
+<h2>摘要</h2>
+<br>
+<p>本报告基于对服务器数据的分析，涵盖了14,400行数据和36个列，其中识别出7个分类列。数据采集时间为2025年2月28日，每分钟进行一次采集，共记录了1,440个时间点的数据。本分析着重于服务器资源分布情况，旨在提供服务器状态的全面概览。</p>
+<br>
+<h2>MIME-Version: 1.0</h2>
+<br>
+<h2>1. 数据概览</h2>
+<br>
+<h3>1.1 基本信息</h3>
+<ul>
+<li>**数据集规模**: 14,400行 × 36列</li>
+<li>**分类列**: 7列 (`timestamp`, `server_id`, `server_name`, `resource_type`, `event_type`, `deadlock_count`, `aborted_connections`)</li>
+<li>**采集日期**: 2025年2月28日</li>
+<li>**采集频率**: 每分钟一次</li>
+<li>**时间点总数**: 1,440个唯一时间戳</li>
+</ul>
+<br>
+<h3>1.2 数据分析单元</h3>
+<ul>
+<li>比例分析单元</li>
+</ul>
+<br>
+<h2>2. 时间戳分布分析</h2>
+<br>
+<p>时间戳分布显示数据在2025年2月28日全天均匀采集，每个时间点均有10条记录，占总数据的0.07%。这表明每分钟从10个不同服务器或资源采集数据，数据采集过程稳定且一致。</p>
+<br>
+<h3>2.1 时间戳特征</h3>
+<ul>
+<li>**唯一时间戳数量**: 1,440个</li>
+<li>**每个时间戳的记录数**: 固定为10条</li>
+<li>**每个时间戳占比**: 均为0.07%</li>
+<li>**时间范围**: 从00:00:00至23:59:00，覆盖全天24小时</li>
+</ul>
+<br>
+<h3>2.2 时间分布模式</h3>
+<p>数据显示完美的均匀分布，表明监控系统按计划正常运行，未出现数据收集中断或异常波动的情况。</p>
+<br>
+<h2>3. 分类数据分析</h2>
+<br>
+<p>虽然原始分析中未详细列出以下列的分布情况，但已识别出7个关键分类列：</p>
+<br>
+<h3>3.1 已识别的分类列</h3>
+<ol>
+<li>**timestamp**: 记录数据采集的精确时间</li>
+<li>**server_id**: 服务器唯一标识符</li>
+<li>**server_name**: 服务器名称</li>
+<li>**resource_type**: 资源类型（如CPU、内存、磁盘等）</li>
+<li>**event_type**: 事件类型（如警告、错误、信息等）</li>
+<li>**deadlock_count**: 死锁计数</li>
+<li>**aborted_connections**: 中断连接数</li>
+</ol>
+<br>
+<h2>4. 分析发现与建议</h2>
+<br>
+<h3>4.1 主要发现</h3>
+<ol>
+<li>**数据采集稳定性**: 数据采集过程显示高度一致性，每分钟从10个不同源采集数据，未发现采集中断</li>
+<li>**监控覆盖全面**: 时间戳分布覆盖了整个24小时周期，表明监控系统全天候运行</li>
+<li>**分类数据结构**: 7个分类列提供了服务器性能和状态的多维度信息</li>
+</ol>
+<br>
+<h3>4.2 改进建议</h3>
+<ol>
+<li>**深入分析分类列**: 建议进一步分析各分类列的分布情况，特别是`event_type`和`resource_type`的分布</li>
+<li>**关联分析**: 探索`deadlock_count`和`aborted_connections`与其他性能指标的关联性</li>
+<li>**异常检测**: 基于时间序列分析建立异常检测机制，及时发现服务器异常情况</li>
+<li>**集群分析**: 分析不同`server_id`和`server_name`之间的性能差异，识别潜在的性能瓶颈</li>
+</ol>
+<br>
+<h2>5. 结论</h2>
+<br>
+<p>基于对时间戳分布的分析，服务器监控系统运行稳定，数据采集过程无明显异常。全天24小时的数据覆盖为服务器状态提供了完整记录。然而，需要进一步分析其他分类列和数值型指标，以获得更全面的服务器性能洞察。</p>
+<br>
+<p>建议建立自动化的异常检测机制和定期报告系统，以便及时发现和解决潜在问题，确保服务器集群的稳定运行。</p>
+<br>
+<p>---</p>
+<br>
+<p>*报告生成时间: 2025-03-17 15:00:13*</p>
+
+</body>
+</html>

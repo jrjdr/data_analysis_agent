@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excel数据分析报告</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            color: #2c3e50;
+            margin-top: 24px;
+            margin-bottom: 16px;
+        }
+        h1 { font-size: 2em; border-bottom: 1px solid #eaecef; padding-bottom: .3em; }
+        h2 { font-size: 1.5em; border-bottom: 1px solid #eaecef; padding-bottom: .3em; }
+        h3 { font-size: 1.25em; }
+        h4 { font-size: 1em; }
+        p, ul, ol, table { margin-bottom: 16px; }
+        code {
+            font-family: Consolas, Monaco, 'Andale Mono', monospace;
+            background-color: #f6f8fa;
+            padding: 0.2em 0.4em;
+            border-radius: 3px;
+        }
+        pre {
+            background-color: #f6f8fa;
+            border-radius: 3px;
+            padding: 16px;
+            overflow: auto;
+        }
+        pre code {
+            background-color: transparent;
+            padding: 0;
+        }
+        blockquote {
+            padding: 0 1em;
+            color: #6a737d;
+            border-left: 0.25em solid #dfe2e5;
+            margin: 0 0 16px 0;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        table th, table td {
+            border: 1px solid #dfe2e5;
+            padding: 6px 13px;
+        }
+        table tr:nth-child(2n) {
+            background-color: #f6f8fa;
+        }
+        img {
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+<h1>网络数据分析报告</h1>
+<br>
+<p>*生成时间: 2025-03-17*</p>
+<br>
+<h2>1. 数据概览</h2>
+<br>
+<p>本报告基于一份包含64,800条网络性能记录的数据集，该数据集涵盖了2025年2月1日至2025年3月2日（30天）的网络性能数据。</p>
+<br>
+<h3>1.1 数据集基本信息</h3>
+<br>
+<table>
+<tr><th>指标</th><th>数值</th></tr>
+<tr><td>总记录数</td><td>64,800</td></tr>
+<tr><td>总字段数</td><td>10</td></tr>
+<tr><td>数据内存占用</td><td>17.21 MB</td></tr>
+<tr><td>时间跨度</td><td>30天 (2025-02-01至2025-03-02)</td></tr>
+</table>
+<br>
+<h3>1.2 数据分布概况</h3>
+<br>
+<p>数据集中包含多个分类变量，它们均匀分布在不同的区域、服务类型和网络类型中：</p>
+<br>
+<h4>区域分布</h4>
+<table>
+<tr><th>区域</th><th>记录数</th><th>占比</th></tr>
+<tr><td>North</td><td>12,960</td><td>20.00%</td></tr>
+<tr><td>South</td><td>12,960</td><td>20.00%</td></tr>
+<tr><td>East</td><td>12,960</td><td>20.00%</td></tr>
+<tr><td>West</td><td>12,960</td><td>20.00%</td></tr>
+<tr><td>Central</td><td>12,960</td><td>20.00%</td></tr>
+</table>
+<br>
+<h4>服务类型分布</h4>
+<table>
+<tr><th>服务类型</th><th>记录数</th><th>占比</th></tr>
+<tr><td>Voice</td><td>10,800</td><td>16.67%</td></tr>
+<tr><td>Data</td><td>10,800</td><td>16.67%</td></tr>
+<tr><td>SMS</td><td>10,800</td><td>16.67%</td></tr>
+<tr><td>Video Streaming</td><td>10,800</td><td>16.67%</td></tr>
+<tr><td>Gaming</td><td>10,800</td><td>16.67%</td></tr>
+<tr><td>Social Media</td><td>10,800</td><td>16.67%</td></tr>
+</table>
+<br>
+<h4>网络类型分布</h4>
+<table>
+<tr><th>网络类型</th><th>记录数</th><th>占比</th></tr>
+<tr><td>4G</td><td>21,600</td><td>33.33%</td></tr>
+<tr><td>5G</td><td>21,600</td><td>33.33%</td></tr>
+<tr><td>Fiber</td><td>21,600</td><td>33.33%</td></tr>
+</table>
+<br>
+<h2>2. 数据洞察</h2>
+<br>
+<h3>2.1 流量分析</h3>
+<br>
+<p>流量（Traffic_Volume_GB）是衡量网络使用情况的关键指标。以下是流量数据的统计分析：</p>
+<br>
+<table>
+<tr><th>统计量</th><th>数值 (GB)</th></tr>
+<tr><td>最小值</td><td>0.00</td></tr>
+<tr><td>最大值</td><td>19,930.14</td></tr>
+<tr><td>平均值</td><td>1,343.22</td></tr>
+<tr><td>中位数</td><td>456.97</td></tr>
+<tr><td>标准差</td><td>2,045.60</td></tr>
+</table>
+<br>
+<p>流量分布呈现显著的右偏态，表明大部分时间的流量较低，但存在少数极高流量的情况：</p>
+<br>
+<table>
+<tr><th>百分位数</th><th>流量值 (GB)</th></tr>
+<tr><td>10%</td><td>19.68</td></tr>
+<tr><td>25%</td><td>96.59</td></tr>
+<tr><td>50%</td><td>456.97</td></tr>
+<tr><td>75%</td><td>1,774.62</td></tr>
+<tr><td>90%</td><td>3,796.48</td></tr>
+<tr><td>95%</td><td>5,555.21</td></tr>
+<tr><td>99%</td><td>9,622.65</td></tr>
+</table>
+<br>
+<h3>2.2 网络性能指标</h3>
+<br>
+<h4>2.2.1 带宽与速度</h4>
+<br>
+<p>网络速度是用户体验的关键决定因素：</p>
+<br>
+<table>
+<tr><th>指标</th><th>平均值</th><th>中位数</th><th>最小值</th><th>最大值</th></tr>
+<tr><td>平均速度 (Mbps)</td><td>757.51</td><td>701.07</td><td>10.02</td><td>1,999.88</td></tr>
+<tr><td>峰值速度 (Mbps)</td><td>1,512.43</td><td>1,397.65</td><td>20.03</td><td>3,999.78</td></tr>
+<tr><td>带宽利用率 (%)</td><td>13.16</td><td>4.55</td><td>0.00</td><td>95.00</td></tr>
+</table>
+<br>
+<h4>2.2.2 拥塞分析</h4>
+<br>
+<p>拥塞是影响网络质量的重要因素：</p>
+<br>
+<table>
+<tr><th>拥塞级别</th><th>统计值</th></tr>
+<tr><td>平均拥塞度</td><td>23.48%</td></tr>
+<tr><td>中位数</td><td>8.97%</td></tr>
+<tr><td>严重拥塞情况（>80%）</td><td>占总记录的9.17%</td></tr>
+</table>
+<br>
+<h3>2.3 服务类型性能对比</h3>
+<br>
+<p>不同服务类型对网络资源的需求和性能表现各不相同：</p>
+<br>
+<table>
+<tr><th>服务类型</th><th>平均速度 (Mbps)</th><th>平均拥塞度 (%)</th><th>总流量 (GB)</th></tr>
+<tr><td>Video Streaming</td><td>759.31</td><td>53.38</td><td>37,491,047.40</td></tr>
+<tr><td>Data</td><td>751.64</td><td>38.09</td><td>22,594,260.16</td></tr>
+<tr><td>Social Media</td><td>765.14</td><td>26.13</td><td>14,348,340.77</td></tr>
+<tr><td>Gaming</td><td>757.76</td><td>17.36</td><td>9,385,600.12</td></tr>
+<tr><td>Voice</td><td>760.69</td><td>4.19</td><td>2,269,729.03</td></tr>
+<tr><td>SMS</td><td>750.54</td><td>1.76</td><td>951,959.99</td></tr>
+</table>
+<br>
+<h2>3. 关键发现</h2>
+<br>
+<h3>3.1 网络流量分布</h3>
+<br>
+<h4>3.1.1 网络类型流量对比</h4>
+<br>
+<p>不同网络类型的流量表现存在明显差异：</p>
+<br>
+<table>
+<tr><th>网络类型</th><th>平均流量 (GB)</th><th>占总流量比例</th></tr>
+<tr><td>Fiber</td><td>1,790.52</td><td>44.34%</td></tr>
+<tr><td>5G</td><td>1,338.59</td><td>33.16%</td></tr>
+<tr><td>4G</td><td>900.56</td><td>22.50%</td></tr>
+</table>
+<br>
+<p>这表明Fiber网络承载了接近一半的总流量，是流量负载最高的网络类型。</p>
+<br>
+<h4>3.1.2 区域流量分布</h4>
+<br>
+<p>各区域的流量分布相对均衡，但仍有细微差异：</p>
+<br>
+<table>
+<tr><th>区域</th><th>总流量 (GB)</th><th>占比</th></tr>
+<tr><td>Central</td><td>17,487,090.88</td><td>20.08%</td></tr>
+<tr><td>West</td><td>17,479,589.96</td><td>20.07%</td></tr>
+<tr><td>North</td><td>17,348,676.07</td><td>19.92%</td></tr>
+<tr><td>South</td><td>17,383,955.95</td><td>19.97%</td></tr>
+<tr><td>East</td><td>17,341,624.61</td><td>19.96%</td></tr>
+</table>
+<br>
+<h3>3.2 流量时间模式</h3>
+<br>
+<p>网络流量呈现明显的每日周期性模式：</p>
+<br>
+<table>
+<tr><th>时段</th><th>平均流量 (GB)</th><th>特征</th></tr>
+<tr><td>7:00</td><td>2,664.41</td><td>流量高峰</td></tr>
+<tr><td>18:00</td><td>0.00</td><td>流量低谷</td></tr>
+</table>
+<br>
+<p>高峰期（凌晨至早上）与低谷期（下午至傍晚）的流量差异显著：</p>
+<br>
+<table>
+<tr><th>时间段</th><th>平均流量 (GB)</th></tr>
+<tr><td>0:00-7:59</td><td>2,334.76</td></tr>
+<tr><td>8:00-15:59</td><td>1,305.56</td></tr>
+<tr><td>16:00-23:59</td><td>420.60</td></tr>
+</table>
+<br>
+<h3>3.3 用户投诉分析</h3>
+<br>
+<p>从用户投诉数据可以发现：</p>
+<br>
+<table>
+<tr><th>投诉类型</th><th>占比</th><th>解决时间(天)</th></tr>
+<tr><td>通话掉线</td><td>14.80%</td><td>-</td></tr>
+<tr><td>短信失败</td><td>14.45%</td><td>-</td></tr>
+<tr><td>服务中断</td><td>14.45%</td><td>-</td></tr>
+</table>
+<br>
+<p>各区域的投诉解决时间和客户满意度：</p>
+<br>
+<table>
+<tr><th>区域</th><th>平均解决时间(天)</th><th>客户满意度(1-5)</th></tr>
+<tr><td>North</td><td>7.22</td><td>3.00</td></tr>
+<tr><td>Central</td><td>7.20</td><td>2.93</td></tr>
+<tr><td>East</td><td>7.18</td><td>2.99</td></tr>
+<tr><td>West</td><td>7.11</td><td>3.00</td></tr>
+<tr><td>South</td><td>7.05</td><td>3.15</td></tr>
+</table>
+<br>
+<p>不同优先级的解决时间：</p>
+<br>
+<table>
+<tr><th>优先级</th><th>平均解决时间(天)</th><th>客户满意度</th></tr>
+<tr><td>Critical</td><td>7.44</td><td>3.06</td></tr>
+<tr><td>High</td><td>7.38</td><td>3.03</td></tr>
+<tr><td>Medium</td><td>6.90</td><td>3.04</td></tr>
+<tr><td>Low</td><td>6.89</td><td>2.93</td></tr>
+</table>
+<br>
+<h2>4. 总结</h2>
+<br>
+<p>基于对64,800条网络性能记录的分析，我们得出以下主要结论：</p>
+<br>
+<ol>
+<li>**网络使用模式**：流量呈现明显的每日周期性，早晨7点达到峰值（2,664.41GB），晚上6点降至最低（几乎为0）。这表明用户行为具有较强的日常模式，网络规划应当考虑这一点。</li>
+</ol>
+<br>
+<ol>
+<li>**服务需求差异**：视频流媒体服务消耗了最多的网络资源（约37.5PB），且拥塞度最高（53.38%）；而SMS服务消耗资源最少（约952TB），拥塞度也最低（1.76%）。</li>
+</ol>
+<br>
+<ol>
+<li>**网络类型性能**：Fiber网络提供了最高的平均流量（约1,790GB），是4G网络（约901GB）的近两倍，表明高速网络基础设施对支持大数据量传输至关重要。</li>
+</ol>
+<br>
+<ol>
+<li>**用户体验**：尽管Critical优先级的问题解决时间最长（7.44天），但客户满意度（3.06）仍然略高于Low优先级问题（2.93），可能是因为关键问题得到了更彻底的解决。</li>
+</ol>
+<br>
+<ol>
+<li>**区域平衡**：各区域的网络流量和性能表现相对均衡，表明网络基础设施分布相对公平，但南部地区的客户满意度略高（3.15）。</li>
+</ol>
+<br>
+<p>这些发现为网络优化、资源分配和服务质量提升提供了数据支持，建议重点关注视频流媒体服务的拥塞管理，以及提高Critical优先级问题的解决效率。</p>
+
+</body>
+</html>

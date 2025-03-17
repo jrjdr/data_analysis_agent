@@ -1,0 +1,3 @@
+Successfully read CSV file with 14400 rows and 36 columns
+Identified 7 categorical columns: ['timestamp', 'server_id', 'server_name', 'resource_type', 'event_type', 'deadlock_count', 'aborted_connections']
+Results saved to pngs/category_distribution_results.txt

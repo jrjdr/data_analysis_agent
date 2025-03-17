@@ -1,0 +1,79 @@
+{
+  "file_path": "temp_csv/excel_data_20250317090857.csv",
+  "row_count": 1060,
+  "column_count": 8,
+  "columns": {
+    "Category": {
+      "type": "object",
+      "missing_values": 0,
+      "unique_values": 5,
+      "most_common": {
+        "value": "Outerwear",
+        "count": 212
+      }
+    },
+    "Item": {
+      "type": "object",
+      "missing_values": 0,
+      "unique_values": 20,
+      "most_common": {
+        "value": "Winter Coat",
+        "count": 53
+      }
+    },
+    "Price": {
+      "type": "float64",
+      "missing_values": 0,
+      "unique_values": 20,
+      "min": 21.91,
+      "max": 185.14,
+      "mean": 71.15700000000001,
+      "median": 58.17
+    },
+    "Date": {
+      "type": "object",
+      "missing_values": 0,
+      "unique_values": 53,
+      "most_common": {
+        "value": "2024-01-01",
+        "count": 20
+      }
+    },
+    "Week": {
+      "type": "object",
+      "missing_values": 0,
+      "unique_values": 53,
+      "most_common": {
+        "value": "Week 1",
+        "count": 20
+      }
+    },
+    "Month": {
+      "type": "object",
+      "missing_values": 0,
+      "unique_values": 12,
+      "most_common": {
+        "value": "January",
+        "count": 100
+      }
+    },
+    "Sales": {
+      "type": "int64",
+      "missing_values": 0,
+      "unique_values": 146,
+      "min": 7,
+      "max": 270,
+      "mean": 58.656603773584905,
+      "median": 53.0
+    },
+    "Revenue": {
+      "type": "float64",
+      "missing_values": 0,
+      "unique_values": 800,
+      "min": 372.42,
+      "max": 37518.38,
+      "mean": 4069.301264150943,
+      "median": 2845.275
+    }
+  }
+}

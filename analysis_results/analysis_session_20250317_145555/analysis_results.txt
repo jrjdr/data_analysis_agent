@@ -1,0 +1,454 @@
+=================================
+SERVER MONITORING DATA ANALYSIS
+=================================
+Analysis Date: 2025-03-17 14:56:34
+Source File: temp_csv/excel_data_20250317145554.csv
+
+DATASET OVERVIEW
+-----------------
+Total Records: 14400
+Total Columns: 36
+Date Range: 2025-02-28 00:00:00 to 2025-02-28 23:59:00
+Numeric Columns: 31
+Categorical Columns: 4
+
+MISSING VALUES ANALYSIS
+----------------------
+cpu_usage_percent: 7200 missing values (50.0%)
+memory_usage_percent: 7200 missing values (50.0%)
+disk_usage_percent: 7200 missing values (50.0%)
+disk_io_percent: 7200 missing values (50.0%)
+disk_read_mbps: 7200 missing values (50.0%)
+disk_write_mbps: 7200 missing values (50.0%)
+network_traffic_percent: 7200 missing values (50.0%)
+network_in_mbps: 7200 missing values (50.0%)
+network_out_mbps: 7200 missing values (50.0%)
+load_avg_1min: 7200 missing values (50.0%)
+load_avg_5min: 7200 missing values (50.0%)
+load_avg_15min: 7200 missing values (50.0%)
+process_count: 7200 missing values (50.0%)
+thread_count: 7200 missing values (50.0%)
+open_file_count: 7200 missing values (50.0%)
+temperature_celsius: 7200 missing values (50.0%)
+query_rate_per_sec: 7200 missing values (50.0%)
+active_connections: 7200 missing values (50.0%)
+cache_hit_rate_percent: 7200 missing values (50.0%)
+avg_query_time_ms: 7200 missing values (50.0%)
+transactions_per_sec: 7200 missing values (50.0%)
+read_percent: 7200 missing values (50.0%)
+write_percent: 7200 missing values (50.0%)
+lock_wait_count: 7200 missing values (50.0%)
+deadlock_count: 7200 missing values (50.0%)
+buffer_pool_usage_percent: 7200 missing values (50.0%)
+table_scans_per_sec: 7200 missing values (50.0%)
+index_usage_percent: 7200 missing values (50.0%)
+temp_tables_created_per_sec: 7200 missing values (50.0%)
+slow_queries_count: 7200 missing values (50.0%)
+aborted_connections: 7200 missing values (50.0%)
+
+CATEGORICAL VARIABLES ANALYSIS
+-----------------------------
+server_id:
+  Unique Values: 10
+  Most Common: 'SRV001' (1440 occurrences, 10.0%)
+  Least Common: 'DB005' (1440 occurrences, 10.0%)
+
+server_name:
+  Unique Values: 10
+  Most Common: '主应用服务器' (1440 occurrences, 10.0%)
+  Least Common: 'Elasticsearch搜索数据库' (1440 occurrences, 10.0%)
+
+resource_type:
+  Unique Values: 2
+  Most Common: 'server' (7200 occurrences, 50.0%)
+  Least Common: 'database' (7200 occurrences, 50.0%)
+
+event_type:
+  Unique Values: 5
+  Most Common: 'normal' (14103 occurrences, 97.94%)
+  Least Common: 'memory_leak' (21 occurrences, 0.15%)
+
+EVENT TYPE ANALYSIS
+------------------
+normal: 14103 (97.94%)
+network_issue: 122 (0.85%)
+high_load: 92 (0.64%)
+db_slowdown: 62 (0.43%)
+memory_leak: 21 (0.15%)
+
+SERVER PERFORMANCE METRICS
+-------------------------
+Top 5 Metrics with Highest Average Values:
+1. cache_hit_rate_percent:
+   Mean: 84.6942
+   Min: 27.4939
+   Max: 99.8077
+   Std Dev: 7.9839
+
+2. read_percent:
+   Mean: 81.8020
+   Min: 66.6677
+   Max: 88.8871
+   Std Dev: 5.8677
+
+3. index_usage_percent:
+   Mean: 79.4969
+   Min: 60.0002
+   Max: 98.9942
+   Std Dev: 11.2597
+
+4. buffer_pool_usage_percent:
+   Mean: 72.3749
+   Min: 50.0022
+   Max: 94.9954
+   Std Dev: 12.9328
+
+5. memory_usage_percent:
+   Mean: 53.5687
+   Min: 27.4074
+   Max: 100.0000
+   Std Dev: 15.3251
+
+NUMERIC COLUMN STATISTICS
+------------------------
+cpu_usage_percent:
+  Count: 7200
+  Mean: 37.5803
+  Std Dev: 20.6508
+  Min: 5.5839
+  25%: 21.4086
+  50% (Median): 31.6181
+  75%: 55.5209
+  Max: 100.0000
+
+memory_usage_percent:
+  Count: 7200
+  Mean: 53.5687
+  Std Dev: 15.3251
+  Min: 27.4074
+  25%: 40.9938
+  50% (Median): 51.7039
+  75%: 64.5847
+  Max: 100.0000
+
+disk_usage_percent:
+  Count: 7200
+  Mean: 52.8424
+  Std Dev: 5.8148
+  Min: 50.0000
+  25%: 50.0000
+  50% (Median): 50.0000
+  75%: 52.2606
+  Max: 89.1564
+
+disk_io_percent:
+  Count: 7200
+  Mean: 29.2733
+  Std Dev: 19.4060
+  Min: 0.4762
+  25%: 14.1121
+  50% (Median): 23.1829
+  75%: 45.5682
+  Max: 92.9956
+
+disk_read_mbps:
+  Count: 7200
+  Mean: 37.0373
+  Std Dev: 29.0330
+  Min: 0.2630
+  25%: 15.3036
+  50% (Median): 28.1368
+  75%: 50.2239
+  Max: 180.2153
+
+disk_write_mbps:
+  Count: 7200
+  Mean: 26.2404
+  Std Dev: 21.1984
+  Min: 0.1821
+  25%: 10.6367
+  50% (Median): 19.7165
+  75%: 35.2109
+  Max: 137.1203
+
+network_traffic_percent:
+  Count: 7200
+  Mean: 38.2519
+  Std Dev: 21.5793
+  Min: 5.2181
+  25%: 21.2983
+  50% (Median): 32.3049
+  75%: 55.9626
+  Max: 100.0000
+
+network_in_mbps:
+  Count: 7200
+  Mean: 66.6011
+  Std Dev: 49.5000
+  Min: 3.6641
+  25%: 30.3334
+  50% (Median): 52.3159
+  75%: 87.4100
+  Max: 298.5664
+
+network_out_mbps:
+  Count: 7200
+  Mean: 44.2202
+  Std Dev: 32.7211
+  Min: 2.0185
+  25%: 19.9314
+  50% (Median): 34.7612
+  75%: 59.1701
+  Max: 194.9236
+
+load_avg_1min:
+  Count: 7200
+  Mean: 1.5032
+  Std Dev: 0.8260
+  Min: 0.2234
+  25%: 0.8563
+  50% (Median): 1.2647
+  75%: 2.2208
+  Max: 4.0000
+
+load_avg_5min:
+  Count: 7200
+  Mean: 1.5033
+  Std Dev: 0.8512
+  Min: 0.1970
+  25%: 0.8410
+  50% (Median): 1.2559
+  75%: 2.1533
+  Max: 4.6373
+
+load_avg_15min:
+  Count: 7200
+  Mean: 1.5016
+  Std Dev: 0.8671
+  Min: 0.1743
+  25%: 0.8226
+  50% (Median): 1.2650
+  75%: 2.0749
+  Max: 4.8653
+
+process_count:
+  Count: 7200
+  Mean: 174.5481
+  Std Dev: 41.7346
+  Min: 104.0000
+  25%: 142.0000
+  50% (Median): 163.0000
+  75%: 210.0000
+  Max: 305.0000
+
+thread_count:
+  Count: 7200
+  Mean: 963.6662
+  Std Dev: 349.5545
+  Min: 321.0000
+  25%: 696.7500
+  50% (Median): 914.0000
+  75%: 1171.0000
+  Max: 2330.0000
+
+open_file_count:
+  Count: 7200
+  Mean: 3376.4057
+  Std Dev: 1507.2098
+  Min: 761.0000
+  25%: 2252.7500
+  50% (Median): 3083.0000
+  75%: 4230.0000
+  Max: 10032.0000
+
+temperature_celsius:
+  Count: 7200
+  Mean: 50.1836
+  Std Dev: 8.6514
+  Min: 35.0010
+  25%: 42.7176
+  50% (Median): 50.2620
+  75%: 57.7955
+  Max: 64.9949
+
+query_rate_per_sec:
+  Count: 7200
+  Mean: 349.1642
+  Std Dev: 246.1451
+  Min: 51.6045
+  25%: 173.3178
+  50% (Median): 242.7241
+  75%: 558.9444
+  Max: 1242.1552
+
+active_connections:
+  Count: 7200
+  Mean: 40.8290
+  Std Dev: 28.1032
+  Min: 5.0880
+  25%: 20.2116
+  50% (Median): 31.2541
+  75%: 58.5679
+  Max: 196.4773
+
+cache_hit_rate_percent:
+  Count: 7200
+  Mean: 84.6942
+  Std Dev: 7.9839
+  Min: 27.4939
+  25%: 80.7550
+  50% (Median): 85.5226
+  75%: 89.9286
+  Max: 99.8077
+
+avg_query_time_ms:
+  Count: 7200
+  Mean: 18.0078
+  Std Dev: 12.6404
+  Min: 8.2186
+  25%: 14.0135
+  50% (Median): 16.8685
+  75%: 20.0218
+  Max: 246.5327
+
+transactions_per_sec:
+  Count: 7200
+  Mean: 38.2644
+  Std Dev: 30.8363
+  Min: 3.6403
+  25%: 16.7835
+  50% (Median): 25.9267
+  75%: 51.3844
+  Max: 218.7555
+
+read_percent:
+  Count: 7200
+  Mean: 81.8020
+  Std Dev: 5.8677
+  Min: 66.6677
+  25%: 78.0061
+  50% (Median): 83.4281
+  75%: 86.7317
+  Max: 88.8871
+
+write_percent:
+  Count: 7200
+  Mean: 18.1980
+  Std Dev: 5.8677
+  Min: 11.1129
+  25%: 13.2683
+  50% (Median): 16.5719
+  75%: 21.9939
+  Max: 33.3323
+
+lock_wait_count:
+  Count: 7200
+  Mean: 3.6132
+  Std Dev: 4.0867
+  Min: 0.0000
+  25%: 1.0000
+  50% (Median): 2.0000
+  75%: 5.0000
+  Max: 37.0000
+
+deadlock_count:
+  Count: 7200
+  Mean: 0.0229
+  Std Dev: 0.1587
+  Min: 0.0000
+  25%: 0.0000
+  50% (Median): 0.0000
+  75%: 0.0000
+  Max: 3.0000
+
+buffer_pool_usage_percent:
+  Count: 7200
+  Mean: 72.3749
+  Std Dev: 12.9328
+  Min: 50.0022
+  25%: 61.2562
+  50% (Median): 72.3526
+  75%: 83.4862
+  Max: 94.9954
+
+table_scans_per_sec:
+  Count: 7200
+  Mean: 25.0434
+  Std Dev: 14.4564
+  Min: 0.0053
+  25%: 12.4602
+  50% (Median): 25.2875
+  75%: 37.5585
+  Max: 49.9991
+
+index_usage_percent:
+  Count: 7200
+  Mean: 79.4969
+  Std Dev: 11.2597
+  Min: 60.0002
+  25%: 69.6884
+  50% (Median): 79.5631
+  75%: 89.3177
+  Max: 98.9942
+
+temp_tables_created_per_sec:
+  Count: 7200
+  Mean: 10.1260
+  Std Dev: 5.7842
+  Min: 0.0022
+  25%: 5.1109
+  50% (Median): 10.1691
+  75%: 15.1734
+  Max: 19.9978
+
+slow_queries_count:
+  Count: 7200
+  Mean: 8.2819
+  Std Dev: 8.7180
+  Min: 0.0000
+  25%: 2.0000
+  50% (Median): 5.0000
+  75%: 10.0000
+  Max: 57.0000
+
+aborted_connections:
+  Count: 7200
+  Mean: 0.2264
+  Std Dev: 0.5332
+  Min: 0.0000
+  25%: 0.0000
+  50% (Median): 0.0000
+  75%: 0.0000
+  Max: 5.0000
+
+TIME DISTRIBUTION ANALYSIS
+--------------------------
+Events by Hour of Day:
+  Hour 0: 600 events (4.17%)
+  Hour 1: 600 events (4.17%)
+  Hour 2: 600 events (4.17%)
+  Hour 3: 600 events (4.17%)
+  Hour 4: 600 events (4.17%)
+  Hour 5: 600 events (4.17%)
+  Hour 6: 600 events (4.17%)
+  Hour 7: 600 events (4.17%)
+  Hour 8: 600 events (4.17%)
+  Hour 9: 600 events (4.17%)
+  Hour 10: 600 events (4.17%)
+  Hour 11: 600 events (4.17%)
+  Hour 12: 600 events (4.17%)
+  Hour 13: 600 events (4.17%)
+  Hour 14: 600 events (4.17%)
+  Hour 15: 600 events (4.17%)
+  Hour 16: 600 events (4.17%)
+  Hour 17: 600 events (4.17%)
+  Hour 18: 600 events (4.17%)
+  Hour 19: 600 events (4.17%)
+  Hour 20: 600 events (4.17%)
+  Hour 21: 600 events (4.17%)
+  Hour 22: 600 events (4.17%)
+  Hour 23: 600 events (4.17%)
+
+=================================
+END OF ANALYSIS
+=================================

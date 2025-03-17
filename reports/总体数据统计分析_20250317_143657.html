@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>总体数据统计分析分析报告</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            color: #2c3e50;
+            margin-top: 24px;
+            margin-bottom: 16px;
+        }
+        h1 { font-size: 2em; border-bottom: 1px solid #eaecef; padding-bottom: .3em; }
+        h2 { font-size: 1.5em; border-bottom: 1px solid #eaecef; padding-bottom: .3em; }
+        h3 { font-size: 1.25em; }
+        h4 { font-size: 1em; }
+        p, ul, ol, table { margin-bottom: 16px; }
+        code {
+            font-family: Consolas, Monaco, 'Andale Mono', monospace;
+            background-color: #f6f8fa;
+            padding: 0.2em 0.4em;
+            border-radius: 3px;
+        }
+        pre {
+            background-color: #f6f8fa;
+            border-radius: 3px;
+            padding: 16px;
+            overflow: auto;
+        }
+        pre code {
+            background-color: transparent;
+            padding: 0;
+        }
+        blockquote {
+            padding: 0 1em;
+            color: #6a737d;
+            border-left: 0.25em solid #dfe2e5;
+            margin: 0 0 16px 0;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        table th, table td {
+            border: 1px solid #dfe2e5;
+            padding: 6px 13px;
+        }
+        table tr:nth-child(2n) {
+            background-color: #f6f8fa;
+        }
+        img {
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+<h1>总体数据统计分析单元 分析报告</h1>
+<br>
+<h2>分析结论</h2>
+<br>
+<p>正在读取文件: temp_csv/excel_data_20250317143557.csv</p>
+<p>分析完成，结果已保存到: pngs/analysis_results.txt</p>
+<br>
+<br>
+<h2>详细分析</h2>
+<br>
+<p>================================================================================</p>
+<p>CSV数据分析报告</p>
+<p>文件: temp_csv/excel_data_20250317143557.csv</p>
+<p>分析时间: 2025-03-17 14:36:57</p>
+<p>================================================================================</p>
+<br>
+<ol>
+<li>基本数据信息</li>
+</ol>
+<p>--------------------------------------------------------------------------------</p>
+<p>行数: 14400</p>
+<p>列数: 36</p>
+<p>列名: timestamp, server_id, server_name, resource_type, cpu_usage_percent, memory_usage_percent, disk_usage_percent, disk_io_percent, disk_read_mbps, disk_write_mbps, network_traffic_percent, network_in_mbps, network_out_mbps, load_avg_1min, load_avg_5min, load_avg_15min, process_count, thread_count, open_file_count, temperature_celsius, event_type, query_rate_per_sec, active_connections, cache_hit_rate_percent, avg_query_time_ms, transactions_per_sec, read_percent, write_percent, lock_wait_count, deadlock_count, buffer_pool_usage_percent, table_scans_per_sec, index_usage_percent, temp_tables_created_per_sec, slow_queries_count, aborted_connections</p>
+<br>
+<p>数据类型信息:</p>
+<ul>
+<li>timestamp: object</li>
+<li>server_id: object</li>
+<li>server_name: object</li>
+<li>resource_type: object</li>
+<li>cpu_usage_percent: float64</li>
+<li>memory_usage_percent: float64</li>
+<li>disk_usage_percent: float64</li>
+<li>disk_io_percent: float64</li>
+<li>disk_read_mbps: float64</li>
+<li>disk_write_mbps: float64</li>
+<li>network_traffic_percent: float64</li>
+<li>network_in_mbps: float64</li>
+<li>network_out_mbps: float64</li>
+<li>load_avg_1min: float64</li>
+<li>load_avg_5min: float64</li>
+<li>load_avg_15min: float64</li>
+<li>process_count: float64</li>
+<li>thread_count: float64</li>
+<li>open_file_count: float64</li>
+<li>temperature_celsius: float64</li>
+<li>event_type: object</li>
+<li>query_rate_per_sec: float64</li>
+<li>active_connections: float64</li>
+<li>cache_hit_rate_percent: float64</li>
+<li>avg_query_time_ms: float64</li>
+<li>transactions_per_sec: float64</li>
+<li>read_percent: float64</li>
+<li>write_percent: float64</li>
+<li>lock_wait_count: float64</li>
+<li>deadlock_count: float64</li>
+<li>buffer_pool_usage_percent: float64</li>
+<li>table_scans_per_sec: float64</li>
+<li>index_usage_percent: float64</li>
+<li>temp_tables_created_per_sec: float64</li>
+<li>slow_queries_count: float64</li>
+<li>aborted_connections: float64</li>
+</ul>
+<br>
+<p>缺失值信息:</p>
+<ul>
+<li>cpu_usage_percent: 7200 (50.00%)</li>
+<li>memory_usage_percent: 7200 (50.00%)</li>
+<li>disk_usage_percent: 7200 (50.00%)</li>
+<li>disk_io_percent: 7200 (50.00%)</li>
+<li>disk_read_mbps: 7200 (50.00%)</li>
+<li>disk_write_mbps: 7200 (50.00%)</li>
+<li>network_traffic_percent: 7200 (50.00%)</li>
+<li>network_in_mbps: 7200 (50.00%)</li>
+<li>network_out_mbps: 7200 (50.00%)</li>
+<li>load_avg_1min: 7200 (50.00%)</li>
+<li>load_avg_5min: 7200 (50.00%)</li>
+<li>load_avg_15min: 7200 (50.00%)</li>
+<li>process_count: 7200 (50.00%)</li>
+<li>thread_count: 7200 (50.00%)</li>
+<li>open_file_count: 7200 (50.00%)</li>
+<li>temperature_celsius: 7200 (50.00%)</li>
+<li>query_rate_per_sec: 7200 (50.00%)</li>
+<li>active_connections: 7200 (50.00%)</li>
+<li>cache_hit_rate_percent: 7200 (50.00%)</li>
+<li>avg_query_time_ms: 7200 (50.00%)</li>
+<li>transactions_per_sec: 7200 (50.00%)</li>
+<li>read_percent: 7200 (50.00%)</li>
+<li>write_percent: 7200 (50.00%)</li>
+<li>lock_wait_count: 7200 (50.00%)</li>
+<li>deadlock_count: 7200 (50.00%)</li>
+<li>buffer_pool_usage_percent: 7200 (50.00%)</li>
+<li>table_scans_per_sec: 7200 (50.00%)</li>
+<li>index_usage_percent: 7200 (50.00%)</li>
+<li>temp_tables_created_per_sec: 7200 (50.00%)</li>
+<li>slow_queries_count: 7200 (50.00%)</li>
+<li>aborted_connections: 7200 (50.00%)</li>
+</ul>
+<br>
+<ol>
+<li>分类列分析</li>
+</ol>
+<p>--------------------------------------------------------------------------------</p>
+<p>列: timestamp</p>
+<ul>
+<li>唯一值数量: 1440</li>
+<li>前5个最常见值:</li>
+<li>2025-02-28 23:43:00: 10 (0.07%)</li>
+<li>2025-02-28 23:42:00: 10 (0.07%)</li>
+<li>2025-02-28 23:41:00: 10 (0.07%)</li>
+<li>2025-02-28 23:40:00: 10 (0.07%)</li>
+<li>2025-02-28 23:39:00: 10 (0.07%)</li>
+</ul>
+<br>
+<p>列: server_id</p>
+<ul>
+<li>唯一值数量: 10</li>
+<li>值分布:</li>
+<li>SRV001: 1440 (10.00%)</li>
+<li>SRV002: 1440 (10.00%)</li>
+<li>SRV003: 1440 (10.00%)</li>
+<li>SRV004: 1440 (10.00%)</li>
+<li>SRV005: 1440 (10.00%)</li>
+<li>DB001: 1440 (10.00%)</li>
+<li>DB002: 1440 (10.00%)</li>
+<li>DB003: 1440 (10.00%)</li>
+<li>DB004: 1440 (10.00%)</li>
+<li>DB005: 1440 (10.00%)</li>
+</ul>
+<br>
+<p>列: server_name</p>
+<ul>
+<li>唯一值数量: 10</li>
+<li>值分布:</li>
+<li>主应用服务器: 1440 (10.00%)</li>
+<li>备份应用服务器: 1440 (10.00%)</li>
+<li>数据处理服务器: 1440 (10.00%)</li>
+<li>缓存服务器: 1440 (10.00%)</li>
+<li>负载均衡服务器: 1440 (10.00%)</li>
+<li>MySQL主数据库: 1440 (10.00%)</li>
+<li>MySQL从数据库: 1440 (10.00%)</li>
+<li>Redis缓存数据库: 1440 (10.00%)</li>
+<li>MongoDB文档数据库: 1440 (10.00%)</li>
+<li>Elasticsearch搜索数据库: 1440 (10.00%)</li>
+</ul>
+<br>
+<p>列: resource_type</p>
+<ul>
+<li>唯一值数量: 2</li>
+<li>值分布:</li>
+<li>server: 7200 (50.00%)</li>
+<li>database: 7200 (50.00%)</li>
+</ul>
+<br>
+<p>列: event_type</p>
+<ul>
+<li>唯一值数量: 5</li>
+<li>值分布:</li>
+<li>normal: 14103 (97.94%)</li>
+<li>network_issue: 122 (0.85%)</li>
+<li>high_load: 92 (0.64%)</li>
+<li>db_slowdown: 62 (0.43%)</li>
+<li>memory_leak: 21 (0.15%)</li>
+</ul>
+<br>
+<ol>
+<li>数值列分析</li>
+</ol>
+<p>--------------------------------------------------------------------------------</p>
+<p>列: cpu_usage_percent</p>
+<ul>
+<li>计数: 7200</li>
+<li>平均值: 37.5803</li>
+<li>标准差: 20.6508</li>
+<li>最小值: 5.5839</li>
+<li>25%分位数: 21.4086</li>
+<li>中位数: 31.6181</li>
+<li>75%分位数: 55.5209</li>
+<li>最大值: 100.0000</li>
+<li>偏度: 0.6397</li>
+<li>峰度: -0.7397</li>
+<li>潜在异常值数量: 0 (0.00%)</li>
+</ul>
+<br>
+<p>列: memory_usage_percent</p>
+<ul>
+<li>计数: 7200</li>
+<li>平均值: 53.5687</li>
+<li>标准差: 15.3251</li>
+<li>最小值: 27.4074</li>
+<li>25%分位数: 40.9938</li>
+<li>中位数: 51.7039</li>
+<li>75%分位数: 64.5847</li>
+<li>最大值: 100.0000</li>
+<li>偏度: 0.4176</li>
+<li>峰度: -0.7488</li>
+<li>潜在异常值数量: 1 (0.01%)</li>
+</ul>
+<br>
+<p>列: disk_usage_percent</p>
+<ul>
+<li>计数: 7200</li>
+<li>平均值: 52.8424</li>
+<li>标准差: 5.8148</li>
+<li>最小值: 50.0000</li>
+<li>25%分位数: 50.0000</li>
+<li>中位数: 50.0000</li>
+<li>75%分位数: 52.2606</li>
+<li>最大值: 89.1564</li>
+<li>偏度: 2.2312</li>
+<li>峰度: 4.4344</li>
+<li>潜在异常值数量: 1371 (19.04%)</li>
+</ul>
+<br>
+<p>列: disk_io_percent</p>
+<ul>
+<li>计数: 7200</li>
+<li>平均值: 29.2733</li>
+<li>标准差: 19.4060</li>
+<li>最小值: 0.4762</li>
+<li>25%分位数: 14.1121</li>
+<li>中位数: 23.1829</li>
+<li>75%分位数: 45.5682</li>
+<li>最大值: 92.9956</li>
+<li>偏度: 0.7292</li>
+<li>峰度: -0.6348</li>
+<li>潜在异常值数量: 1 (0.01%)</li>
+</ul>
+<br>
+<p>列: disk_read_mbps</p>
+<ul>
+<li>计数: 7200</li>
+<li>平均值: 37.0373</li>
+<li>标准差: 29.0330</li>
+<li>最小值: 0.2630</li>
+<li>25%分位数: 15.3036</li>
+<li>中位数: 28.1368</li>
+<li>75%分位数: 50.2239</li>
+<li>最大值: 180.2153</li>
+<li>偏度: 1.2105</li>
+<li>峰度: 0.8621</li>
+<li>潜在异常值数量: 290 (4.03%)</li>
+</ul>
+<br>
+<p>列: disk_write_mbps</p>
+<ul>
+<li>计数: 7200</li>
+<li>平均值: 26.2404</li>
+<li>标准差: 21.1984</li>
+<li>最小值: 0.1821</li>
+<li>25%分位数: 10.6367</li>
+<li>中位数: 19.7165</li>
+<li>75%分位数: 35.2109</li>
+<li>最大值: 137.1203</li>
+<li>偏度: 1.3354</li>
+<li>峰度: 1.3654</li>
+<li>潜在异常值数量: 369 (5.12%)</li>
+</ul>
+<br>
+<p>列: network_traffic_percent</p>
+<ul>
+<li>计数: 7200</li>
+<li>平均值: 38.2519</li>
+<li>标准差: 21.5793</li>
+<li>最小值: 5.2181</li>
+<li>25%分位数: 21.2983</li>
+<li>中位数: 32.3049</li>
+<li>75%分位数: 55.9626</li>
+<li>最大值: 100.0000</li>
+<li>偏度: 0.7310</li>
+<li>峰度: -0.4704</li>
+<li>潜在异常值数量: 0 (0.00%)</li>
+</ul>
+<br>
+<p>列: network_in_mbps</p>
+<ul>
+<li>计数: 7200</li>
+<li>平均值: 66.6011</li>
+<li>标准差: 49.5000</li>
+<li>最小值: 3.6641</li>
+<li>25%分位数: 30.3334</li>
+<li>中位数: 52.3159</li>
+<li>75%分位数: 87.4100</li>
+<li>最大值: 298.5664</li>
+<li>偏度: 1.3615</li>
+<li>峰度: 1.6056</li>
+<li>潜在异常值数量: 364 (5.06%)</li>
+</ul>
+<br>
+<p>列: network_out_mbps</p>
+<ul>
+<li>计数: 7200</li>
+<li>平均值: 44.2202</li>
+<li>标准差: 32.7211</li>
+<li>最小值: 2.0185</li>
+<li>25%分位数: 19.9314</li>
+<li>中位数: 34.7612</li>
+<li>75%分位数: 59.1701</li>
+<li>最大值: 194.9236</li>
+<li>偏度: 1.2907</li>
+<li>峰度: 1.3662</li>
+<li>潜在异常值数量: 302 (4.19%)</li>
+</ul>
+<br>
+<p>列: load_avg_1min</p>
+<ul>
+<li>计数: 7200</li>
+<li>平均值: 1.5032</li>
+<li>标准差: 0.8260</li>
+<li>最小值: 0.2234</li>
+<li>25%分位数: 0.8563</li>
+<li>中位数: 1.2647</li>
+<li>75%分位数: 2.2208</li>
+<li>最大值: 4.0000</li>
+<li>偏度: 0.6397</li>
+<li>峰度: -0.7397</li>
+<li>潜在异常值数量: 0 (0.00%)</li>
+</ul>
+<br>
+<p>列: load_avg_5min</p>
+<ul>
+<li>计数: 7200</li>
+<li>平均值: 1.5033</li>
+<li>标准差: 0.8512</li>
+<li>最小值: 0.1970</li>
+<li>25%分位数: 0.8410</li>
+<li>中位数: 1.2559</li>
+<li>75%分位数: 2.1533</li>
+<li>最大值: 4.6373</li>
+<li>偏度: 0.7551</li>
+<li>峰度: -0.3738</li>
+<li>潜在异常值数量: 8 (0.11%)</li>
+</ul>
+<br>
+<p>列: load_avg_15min</p>
+<ul>
+<li>计数: 7200</li>
+<li>平均值: 1.5016</li>
+<li>标准差: 0.8671</li>
+<li>最小值: 0.1743</li>
+<li>25%分位数: 0.8226</li>
+<li>中位数: 1.2650</li>
+<li>75%分位数: 2.0749</li>
+<li>最大值: 4.8653</li>
+<li>偏度: 0.8218</li>
+<li>峰度: -0.1400</li>
+<li>潜在异常值数量: 26 (0.36%)</li>
+</ul>
+<br>
+<p>列: process_count</p>
+<ul>
+<li>计数: 7200</li>
+<li>平均值: 174.5481</li>
+<li>标准差: 41.7346</li>
+<li>最小值: 104.0000</li>
+<li>25%分位数: 142.0000</li>
+<li>中位数: 163.0000</li>
+<li>75%分位数: 210.0000</li>
+<li>最大值: 305.0000</li>
+<li>偏度: 0.6157</li>
+<li>峰度: -0.7145</li>
+<li>潜在异常值数量: 0 (0.00%)</li>
+</ul>
+<br>
+<p>列: thread_count</p>
+<ul>
+<li>计数: 7200</li>
+<li>平均值: 963.6662</li>
+<li>标准差: 349.5545</li>
+<li>最小值: 321.0000</li>
+<li>25%分位数: 696.7500</li>
+<li>中位数: 914.0000</li>
+<li>75%分位数: 1171.0000</li>
+<li>最大值: 2330.0000</li>
+<li>偏度: 0.6935</li>
+<li>峰度: 0.0497</li>
+<li>潜在异常值数量: 83 (1.15%)</li>
+</ul>
+<br>
+<p>列: open_file_count</p>
+<ul>
+<li>计数: 7200</li>
+<li>平均值: 3376.4057</li>
+<li>标准差: 1507.2098</li>
+<li>最小值: 761.0000</li>
+<li>25%分位数: 2252.7500</li>
+<li>中位数: 3083.0000</li>
+<li>75%分位数: 4230.0000</li>
+<li>最大值: 10032.0000</li>
+<li>偏度: 0.9640</li>
+<li>峰度: 0.8766</li>
+<li>潜在异常值数量: 157 (2.18%)</li>
+</ul>
+<br>
+<p>列: temperature_celsius</p>
+<ul>
+<li>计数: 7200</li>
+<li>平均值: 50.1836</li>
+<li>标准差: 8.6514</li>
+<li>最小值: 35.0010</li>
+<li>25%分位数: 42.7176</li>
+<li>中位数: 50.2620</li>
+<li>75%分位数: 57.7955</li>
+<li>最大值: 64.9949</li>
+<li>偏度: -0.0180</li>
+<li>峰度: -1.2061</li>
+<li>潜在异常值数量: 0 (0.00%)</li>
+</ul>
+<br>
+<p>列: query_rate_per_sec</p>
+<ul>
+<li>计数: 7200</li>
+<li>平均值: 349.1642</li>
+<li>标准差: 246.1451</li>
+<li>最小值: 51.6045</li>
+<li>25%分位数: 173.3178</li>
+<li>中位数: 242.7241</li>
+<li>75%分位数: 558.9444</li>
+<li>最大值: 1242.1552</li>
+<li>偏度: 1.0112</li>
+<li>峰度: -0.3682</li>
+<li>潜在异常值数量: 8 (0.11%)</li>
+</ul>
+<br>
+<p>列: active_connections</p>
+<ul>
+<li>计数: 7200</li>
+<li>平均值: 40.8290</li>
+<li>标准差: 28.1032</li>
+<li>最小值: 5.0880</li>
+<li>25%分位数: 20.2116</li>
+<li>中位数: 31.2541</li>
+<li>75%分位数: 58.5679</li>
+<li>最大值: 196.4773</li>
+<li>偏度: 1.3457</li>
+<li>峰度: 2.0966</li>
+<li>潜在异常值数量: 75 (1.04%)</li>
+</ul>
+<br>
+<p>列: cache_hit_rate_percent</p>
+<ul>
+<li>计数: 7200</li>
+<li>平均值: 84.6942</li>
+<li>标准差: 7.9839</li>
+<li>最小值: 27.4939</li>
+<li>25%分位数: 80.7550</li>
+<li>中位数: 85.5226</li>
+<li>75%分位数: 89.9286</li>
+<li>最大值: 99.8077</li>
+<li>偏度: -1.7611</li>
+<li>峰度: 7.3919</li>
+<li>潜在异常值数量: 132 (1.83%)</li>
+</ul>
+<br>
+<p>列: avg_query_time_ms</p>
+<ul>
+<li>计数: 7200</li>
+<li>平均值: 18.0078</li>
+<li>标准差: 12.6404</li>
+<li>最小值: 8.2186</li>
+<li>25%分位数: 14.0135</li>
+<li>中位数: 16.8685</li>
+<li>75%分位数: 20.0218</li>
+<li>最大值: 246.5327</li>
+<li>偏度: 10.7211</li>
+<li>峰度: 133.0910</li>
+<li>潜在异常值数量: 62 (0.86%)</li>
+</ul>
+<br>
+<p>列: transactions_per_sec</p>
+<ul>
+<li>计数: 7200</li>
+<li>平均值: 38.2644</li>
+<li>标准差: 30.8363</li>
+<li>最小值: 3.6403</li>
+<li>25%分位数: 16.7835</li>
+<li>中位数: 25.9267</li>
+<li>75%分位数: 51.3844</li>
+<li>最大值: 218.7555</li>
+<li>偏度: 1.6024</li>
+<li>峰度: 2.4302</li>
+<li>潜在异常值数量: 375 (5.21%)</li>
+</ul>
+<br>
+<p>列: read_percent</p>
+<ul>
+<li>计数: 7200</li>
+<li>平均值: 81.8020</li>
+<li>标准差: 5.8677</li>
+<li>最小值: 66.6677</li>
+<li>25%分位数: 78.0061</li>
+<li>中位数: 83.4281</li>
+<li>75%分位数: 86.7317</li>
+<li>最大值: 88.8871</li>
+<li>偏度: -0.8058</li>
+<li>峰度: -0.3709</li>
+<li>潜在异常值数量: 0 (0.00%)</li>
+</ul>
+<br>
+<p>列: write_percent</p>
+<ul>
+<li>计数: 7200</li>
+<li>平均值: 18.1980</li>
+<li>标准差: 5.8677</li>
+<li>最小值: 11.1129</li>
+<li>25%分位数: 13.2683</li>
+<li>中位数: 16.5719</li>
+<li>75%分位数: 21.9939</li>
+<li>最大值: 33.3323</li>
+<li>偏度: 0.8058</li>
+<li>峰度: -0.3709</li>
+<li>潜在异常值数量: 0 (0.00%)</li>
+</ul>
+<br>
+<p>列: lock_wait_count</p>
+<ul>
+<li>计数: 7200</li>
+<li>平均值: 3.6132</li>
+<li>标准差: 4.0867</li>
+<li>最小值: 0.0000</li>
+<li>25%分位数: 1.0000</li>
+<li>中位数: 2.0000</li>
+<li>75%分位数: 5.0000</li>
+<li>最大值: 37.0000</li>
+<li>偏度: 1.9698</li>
+<li>峰度: 5.4284</li>
+<li>潜在异常值数量: 474 (6.58%)</li>
+</ul>
+<br>
+<p>列: deadlock_count</p>
+<ul>
+<li>计数: 7200</li>
+<li>平均值: 0.0229</li>
+<li>标准差: 0.1587</li>
+<li>最小值: 0.0000</li>
+<li>25%分位数: 0.0000</li>
+<li>中位数: 0.0000</li>
+<li>75%分位数: 0.0000</li>
+<li>最大值: 3.0000</li>
+<li>偏度: 7.6000</li>
+<li>峰度: 67.2935</li>
+<li>潜在异常值数量: 156 (2.17%)</li>
+</ul>
+<br>
+<p>列: buffer_pool_usage_percent</p>
+<ul>
+<li>计数: 7200</li>
+<li>平均值: 72.3749</li>
+<li>标准差: 12.9328</li>
+<li>最小值: 50.0022</li>
+<li>25%分位数: 61.2562</li>
+<li>中位数: 72.3526</li>
+<li>75%分位数: 83.4862</li>
+<li>最大值: 94.9954</li>
+<li>偏度: -0.0068</li>
+<li>峰度: -1.1995</li>
+<li>潜在异常值数量: 0 (0.00%)</li>
+</ul>
+<br>
+<p>列: table_scans_per_sec</p>
+<ul>
+<li>计数: 7200</li>
+<li>平均值: 25.0434</li>
+<li>标准差: 14.4564</li>
+<li>最小值: 0.0053</li>
+<li>25%分位数: 12.4602</li>
+<li>中位数: 25.2875</li>
+<li>75%分位数: 37.5585</li>
+<li>最大值: 49.9991</li>
+<li>偏度: -0.0012</li>
+<li>峰度: -1.2043</li>
+<li>潜在异常值数量: 0 (0.00%)</li>
+</ul>
+<br>
+<p>列: index_usage_percent</p>
+<ul>
+<li>计数: 7200</li>
+<li>平均值: 79.4969</li>
+<li>标准差: 11.2597</li>
+<li>最小值: 60.0002</li>
+<li>25%分位数: 69.6884</li>
+<li>中位数: 79.5631</li>
+<li>75%分位数: 89.3177</li>
+<li>最大值: 98.9942</li>
+<li>偏度: -0.0042</li>
+<li>峰度: -1.2050</li>
+<li>潜在异常值数量: 0 (0.00%)</li>
+</ul>
+<br>
+<p>列: temp_tables_created_per_sec</p>
+<ul>
+<li>计数: 7200</li>
+<li>平均值: 10.1260</li>
+<li>标准差: 5.7842</li>
+<li>最小值: 0.0022</li>
+<li>25%分位数: 5.1109</li>
+<li>中位数: 10.1691</li>
+<li>75%分位数: 15.1734</li>
+<li>最大值: 19.9978</li>
+<li>偏度: -0.0218</li>
+<li>峰度: -1.2009</li>
+<li>潜在异常值数量: 0 (0.00%)</li>
+</ul>
+<br>
+<p>列: slow_queries_count</p>
+<ul>
+<li>计数: 7200</li>
+<li>平均值: 8.2819</li>
+<li>标准差: 8.7180</li>
+<li>最小值: 0.0000</li>
+<li>25%分位数: 2.0000</li>
+<li>中位数: 5.0000</li>
+<li>75%分位数: 10.0000</li>
+<li>最大值: 57.0000</li>
+<li>偏度: 1.7169</li>
+<li>峰度: 2.6807</li>
+<li>潜在异常值数量: 715 (9.93%)</li>
+</ul>
+<br>
+<p>列: aborted_connections</p>
+<ul>
+<li>计数: 7200</li>
+<li>平均值: 0.2264</li>
+<li>标准差: 0.5332</li>
+<li>最小值: 0.0000</li>
+<li>25%分位数: 0.0000</li>
+<li>中位数: 0.0000</li>
+<li>75%分位数: 0.0000</li>
+<li>最大值: 5.0000</li>
+<li>偏度: 2.6504</li>
+<li>峰度: 8.2453</li>
+<li>潜在异常值数量: 1285 (17.85%)</li>
+</ul>
+<br>
+<ol>
+<li>数据总结与发现</li>
+</ol>
+<p>--------------------------------------------------------------------------------</p>
+<p>资源使用情况:</p>
+<ul>
+<li>cpu_usage_percent: 有 138 条记录 (0.96%) 使用率超过80%</li>
+<li>memory_usage_percent: 有 468 条记录 (3.25%) 使用率超过80%</li>
+<li>disk_usage_percent: 有 8 条记录 (0.06%) 使用率超过80%</li>
+<li>buffer_pool_usage_percent: 有 2393 条记录 (16.62%) 使用率超过80%</li>
+<li>index_usage_percent: 有 3512 条记录 (24.39%) 使用率超过80%</li>
+</ul>
+<br>
+<p>事件类型分析:</p>
+<ul>
+<li>network_issue: 122 次 (0.85%)</li>
+<li>high_load: 92 次 (0.64%)</li>
+<li>db_slowdown: 62 次 (0.43%)</li>
+<li>memory_leak: 21 次 (0.15%)</li>
+</ul>
+<br>
+<p>慢查询总数: 59630</p>
+<p>死锁总数: 165</p>
+<br>
+<br>
+<br>
+
+</body>
+</html>

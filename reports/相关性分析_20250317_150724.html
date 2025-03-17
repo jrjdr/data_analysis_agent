@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>相关性分析分析报告</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            color: #2c3e50;
+            margin-top: 24px;
+            margin-bottom: 16px;
+        }
+        h1 { font-size: 2em; border-bottom: 1px solid #eaecef; padding-bottom: .3em; }
+        h2 { font-size: 1.5em; border-bottom: 1px solid #eaecef; padding-bottom: .3em; }
+        h3 { font-size: 1.25em; }
+        h4 { font-size: 1em; }
+        p, ul, ol, table { margin-bottom: 16px; }
+        code {
+            font-family: Consolas, Monaco, 'Andale Mono', monospace;
+            background-color: #f6f8fa;
+            padding: 0.2em 0.4em;
+            border-radius: 3px;
+        }
+        pre {
+            background-color: #f6f8fa;
+            border-radius: 3px;
+            padding: 16px;
+            overflow: auto;
+        }
+        pre code {
+            background-color: transparent;
+            padding: 0;
+        }
+        blockquote {
+            padding: 0 1em;
+            color: #6a737d;
+            border-left: 0.25em solid #dfe2e5;
+            margin: 0 0 16px 0;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        table th, table td {
+            border: 1px solid #dfe2e5;
+            padding: 6px 13px;
+        }
+        table tr:nth-child(2n) {
+            background-color: #f6f8fa;
+        }
+        img {
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+<h1>服务器监控数据相关性分析报告</h1>
+<br>
+<p>**生成时间**: 2025-03-17 15:06:19  </p>
+<p>**数据文件**: temp_csv/excel_data_20250317145554.csv  </p>
+<p>**数据规模**: 14,400 行 × 31 列（数值型）</p>
+<br>
+<h2>1. 数据概览</h2>
+<br>
+<p>本报告基于大规模服务器监控数据（14,400条记录），分析了31个关键性能指标之间的相关关系。这些指标涵盖了系统资源使用（CPU、内存、磁盘）、网络流量、负载情况、以及数据库性能等多个维度。通过相关性分析，我们可以识别出哪些指标之间存在强关联，从而更好地理解系统行为模式和潜在的性能瓶颈。</p>
+<br>
+<h3>1.1 主要分析维度</h3>
+<br>
+<table>
+<tr><th>分析维度</th><th>包含的指标示例</th></tr>
+<tr><td>系统资源</td><td>cpu_usage_percent, memory_usage_percent, disk_usage_percent</td></tr>
+<tr><td>磁盘I/O</td><td>disk_io_percent, disk_read_mbps, disk_write_mbps</td></tr>
+<tr><td>网络流量</td><td>network_traffic_percent, network_in_mbps, network_out_mbps</td></tr>
+<tr><td>系统负载</td><td>load_avg_1min, load_avg_5min, load_avg_15min</td></tr>
+<tr><td>进程管理</td><td>process_count, thread_count, open_file_count</td></tr>
+<tr><td>数据库性能</td><td>query_rate_per_sec, transactions_per_sec, cache_hit_rate_percent</td></tr>
+<tr><td>数据库操作</td><td>read_percent, write_percent, lock_wait_count</td></tr>
+<tr><td>性能问题</td><td>slow_queries_count, deadlock_count, aborted_connections</td></tr>
+</table>
+<br>
+<h2>2. 数据洞察</h2>
+<br>
+<h3>2.1 高度相关变量对 (|r| ≥ 0.8)</h3>
+<br>
+<p>下表展示了相关系数绝对值大于或等于0.8的变量对，这些指标之间存在极强的线性关系。</p>
+<br>
+<table>
+<tr><th>变量1</th><th>变量2</th><th>相关系数</th></tr>
+<tr><td>cpu_usage_percent</td><td>load_avg_1min</td><td>1.0000</td></tr>
+<tr><td>read_percent</td><td>write_percent</td><td>-1.0000</td></tr>
+<tr><td>load_avg_1min</td><td>process_count</td><td>0.9904</td></tr>
+<tr><td>cpu_usage_percent</td><td>process_count</td><td>0.9904</td></tr>
+<tr><td>load_avg_1min</td><td>load_avg_5min</td><td>0.9719</td></tr>
+<tr><td>cpu_usage_percent</td><td>load_avg_5min</td><td>0.9719</td></tr>
+<tr><td>load_avg_5min</td><td>process_count</td><td>0.9624</td></tr>
+<tr><td>load_avg_1min</td><td>load_avg_15min</td><td>0.9391</td></tr>
+<tr><td>cpu_usage_percent</td><td>load_avg_15min</td><td>0.9391</td></tr>
+<tr><td>load_avg_15min</td><td>process_count</td><td>0.9306</td></tr>
+<tr><td>load_avg_5min</td><td>load_avg_15min</td><td>0.9096</td></tr>
+<tr><td>query_rate_per_sec</td><td>transactions_per_sec</td><td>0.8711</td></tr>
+<tr><td>disk_io_percent</td><td>disk_read_mbps</td><td>0.8526</td></tr>
+<tr><td>disk_io_percent</td><td>disk_write_mbps</td><td>0.8208</td></tr>
+<tr><td>disk_io_percent</td><td>load_avg_1min</td><td>0.8178</td></tr>
+<tr><td>cpu_usage_percent</td><td>disk_io_percent</td><td>0.8178</td></tr>
+<tr><td>thread_count</td><td>open_file_count</td><td>0.8102</td></tr>
+<tr><td>disk_io_percent</td><td>process_count</td><td>0.8093</td></tr>
+</table>
+<br>
+<h3>2.2 低度相关变量对 (|r| ≤ 0.2)</h3>
+<br>
+<p>以下是相关系数绝对值较小（≤0.2）的部分变量对，这些指标之间几乎没有线性关系。由于低相关变量对数量较多（超过70对），下表仅展示部分代表性的结果。</p>
+<br>
+<table>
+<tr><th>变量1</th><th>变量2</th><th>相关系数</th></tr>
+<tr><td>active_connections</td><td>index_usage_percent</td><td>-0.0002</td></tr>
+<tr><td>write_percent</td><td>aborted_connections</td><td>-0.0002</td></tr>
+<tr><td>read_percent</td><td>aborted_connections</td><td>0.0002</td></tr>
+<tr><td>transactions_per_sec</td><td>temp_tables_created_per_sec</td><td>0.0002</td></tr>
+<tr><td>thread_count</td><td>temperature_celsius</td><td>0.0003</td></tr>
+<tr><td>write_percent</td><td>deadlock_count</td><td>-0.0004</td></tr>
+<tr><td>read_percent</td><td>deadlock_count</td><td>0.0004</td></tr>
+<tr><td>table_scans_per_sec</td><td>index_usage_percent</td><td>0.0008</td></tr>
+<tr><td>active_connections</td><td>write_percent</td><td>-0.0008</td></tr>
+<tr><td>active_connections</td><td>read_percent</td><td>0.0008</td></tr>
+</table>
+<br>
+<h3>2.3 系统资源指标之间的相关性</h3>
+<br>
+<p>系统资源指标之间普遍存在中等到高度的正相关关系，以下表格展示了主要系统资源指标间的相关系数。</p>
+<br>
+<table>
+<tr><th>变量1</th><th>变量2</th><th>相关系数</th></tr>
+<tr><td>cpu_usage_percent</td><td>memory_usage_percent</td><td>0.76</td></tr>
+<tr><td>cpu_usage_percent</td><td>disk_usage_percent</td><td>0.63</td></tr>
+<tr><td>memory_usage_percent</td><td>disk_usage_percent</td><td>0.74</td></tr>
+<tr><td>cpu_usage_percent</td><td>disk_io_percent</td><td>0.82</td></tr>
+<tr><td>memory_usage_percent</td><td>disk_io_percent</td><td>0.76</td></tr>
+<tr><td>disk_usage_percent</td><td>disk_io_percent</td><td>0.63</td></tr>
+</table>
+<br>
+<h3>2.4 数据库性能指标之间的相关性</h3>
+<br>
+<p>数据库相关指标之间的相关关系较为复杂，既有强相关也有几乎不相关的指标对。</p>
+<br>
+<table>
+<tr><th>变量1</th><th>变量2</th><th>相关系数</th></tr>
+<tr><td>query_rate_per_sec</td><td>transactions_per_sec</td><td>0.87</td></tr>
+<tr><td>query_rate_per_sec</td><td>active_connections</td><td>0.78</td></tr>
+<tr><td>query_rate_per_sec</td><td>slow_queries_count</td><td>0.71</td></tr>
+<tr><td>cache_hit_rate_percent</td><td>active_connections</td><td>-0.58</td></tr>
+<tr><td>read_percent</td><td>write_percent</td><td>-1.00</td></tr>
+<tr><td>lock_wait_count</td><td>active_connections</td><td>0.71</td></tr>
+<tr><td>lock_wait_count</td><td>deadlock_count</td><td>0.46</td></tr>
+</table>
+<br>
+<h2>3. 关键发现</h2>
+<br>
+<h3>3.1 CPU使用率与系统负载高度相关</h3>
+<br>
+<p>CPU使用率与系统负载指标（1分钟、5分钟、15分钟负载平均值）之间存在极强的正相关关系（r > 0.93），这表明系统负载主要受CPU资源限制。此外，CPU使用率与进程数量之间的相关系数高达0.99，表明进程数对CPU占用有直接影响。</p>
+<br>
+<table>
+<tr><th>CPU相关指标对</th><th>相关系数</th></tr>
+<tr><td>cpu_usage_percent - load_avg_1min</td><td>1.0000</td></tr>
+<tr><td>cpu_usage_percent - process_count</td><td>0.9904</td></tr>
+<tr><td>cpu_usage_percent - load_avg_5min</td><td>0.9719</td></tr>
+<tr><td>cpu_usage_percent - load_avg_15min</td><td>0.9391</td></tr>
+<tr><td>cpu_usage_percent - disk_io_percent</td><td>0.8178</td></tr>
+<tr><td>cpu_usage_percent - network_traffic_percent</td><td>0.7819</td></tr>
+</table>
+<br>
+<h3>3.2 读写操作存在完全负相关</h3>
+<br>
+<p>数据库读取百分比（read_percent）与写入百分比（write_percent）之间的相关系数为-1.0，表明它们是互补的（总和为100%）。这种强负相关关系意味着系统中的读写比例是一个零和关系，可能表明数据库服务器在任何时刻都有明确的读写偏向。</p>
+<br>
+<h3>3.3 磁盘I/O对系统性能的关键影响</h3>
+<br>
+<p>磁盘I/O百分比与多个关键性能指标存在高度相关性，包括磁盘读写速度、CPU使用率和系统负载。这表明磁盘I/O可能是系统瓶颈的重要指标。</p>
+<br>
+<table>
+<tr><th>磁盘I/O相关指标对</th><th>相关系数</th></tr>
+<tr><td>disk_io_percent - disk_read_mbps</td><td>0.8526</td></tr>
+<tr><td>disk_io_percent - disk_write_mbps</td><td>0.8208</td></tr>
+<tr><td>disk_io_percent - load_avg_1min</td><td>0.8178</td></tr>
+<tr><td>disk_io_percent - cpu_usage_percent</td><td>0.8178</td></tr>
+<tr><td>disk_io_percent - process_count</td><td>0.8093</td></tr>
+<tr><td>disk_io_percent - network_traffic_percent</td><td>0.7855</td></tr>
+</table>
+<br>
+<h3>3.4 数据库查询率与多项性能指标相关</h3>
+<br>
+<p>查询率（query_rate_per_sec）与事务率、活动连接数和慢查询数有较强的正相关关系，表明查询负载增加会直接影响这些指标。</p>
+<br>
+<table>
+<tr><th>查询率相关指标对</th><th>相关系数</th></tr>
+<tr><td>query_rate_per_sec - transactions_per_sec</td><td>0.8711</td></tr>
+<tr><td>query_rate_per_sec - active_connections</td><td>0.7800</td></tr>
+<tr><td>query_rate_per_sec - slow_queries_count</td><td>0.7100</td></tr>
+<tr><td>query_rate_per_sec - lock_wait_count</td><td>0.5500</td></tr>
+</table>
+<br>
+<h3>3.5 温度与系统指标无明显相关性</h3>
+<br>
+<p>服务器温度（temperature_celsius）与几乎所有系统指标的相关性接近于零，这可能表明系统温度控制良好，或温度变化范围较小，不足以对性能产生明显影响。</p>
+<br>
+<table>
+<tr><th>温度相关指标对</th><th>相关系数</th></tr>
+<tr><td>temperature_celsius - thread_count</td><td>0.0003</td></tr>
+<tr><td>temperature_celsius - network_in_mbps</td><td>-0.0022</td></tr>
+<tr><td>temperature_celsius - cpu_usage_percent</td><td>-0.0100</td></tr>
+<tr><td>temperature_celsius - memory_usage_percent</td><td>-0.0200</td></tr>
+</table>
+<br>
+<h3>3.6 缓存命中率对查询性能的影响</h3>
+<br>
+<p>缓存命中率（cache_hit_rate_percent）与平均查询时间呈中度负相关（r = -0.55），这符合预期：缓存命中率越高，平均查询时间越短。同时，缓存命中率与活动连接数和查询率也呈负相关，这可能表明高并发场景下缓存效率下降。</p>
+<br>
+<table>
+<tr><th>缓存命中率相关指标对</th><th>相关系数</th></tr>
+<tr><td>cache_hit_rate_percent - avg_query_time_ms</td><td>-0.5500</td></tr>
+<tr><td>cache_hit_rate_percent - active_connections</td><td>-0.5800</td></tr>
+<tr><td>cache_hit_rate_percent - query_rate_per_sec</td><td>-0.4400</td></tr>
+</table>
+<br>
+<h2>4. 总结</h2>
+<br>
+<p>本相关性分析报告揭示了服务器监控数据中各指标间的关联强度，通过这些关联可以得出以下主要结论：</p>
+<br>
+<ol>
+<li>**系统资源使用链条**：CPU使用率、系统负载和进程数量形成了一个高度相关的指标集群（r > 0.93），表明它们构成了系统资源利用的核心链条。</li>
+</ol>
+<br>
+<ol>
+<li>**I/O密集型工作负载特征**：磁盘I/O百分比与CPU使用率和系统负载的高相关性（r > 0.81）表明系统可能存在I/O密集型工作负载，磁盘性能可能是关键瓶颈。</li>
+</ol>
+<br>
+<ol>
+<li>**数据库性能关联因素**：查询率、事务率和活动连接数之间存在明显的正相关关系，而缓存命中率与查询性能呈负相关，表明数据库负载增加会导致缓存效率下降和查询时间增加。</li>
+</ol>
+<br>
+<ol>
+<li>**资源隔离的有效性**：温度与其他系统指标几乎无相关性，表明服务器温度控制良好，不对系统性能产生明显影响。</li>
+</ol>
+<br>
+<ol>
+<li>**读写操作的平衡**：读写操作百分比之间的完全负相关（r = -1.0）表明系统在任一时刻都有明确的读写偏向，这对数据库优化策略有重要参考价值。</li>
+</ol>
+<br>
+<p>基于这些发现，建议系统管理员关注CPU使用率、磁盘I/O和查询率这三个关键指标，它们与多数性能指标高度相关，可作为系统健康状况的主要观测点。同时，针对磁盘I/O与CPU使用率的高相关性，应考虑提升存储系统性能或优化I/O密集型操作，以缓解系统瓶颈。对于数据库性能，应重点关注缓存命中率的优化，以降低平均查询时间并提升整体系统性能。</p>
+
+</body>
+</html>

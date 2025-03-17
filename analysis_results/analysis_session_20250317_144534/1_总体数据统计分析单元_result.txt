@@ -1,0 +1,2 @@
+正在读取CSV文件: temp_csv/excel_data_20250317144534.csv
+分析结果已保存到: pngs/analysis_results.txt

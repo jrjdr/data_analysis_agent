@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excel数据分析报告</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            color: #2c3e50;
+            margin-top: 24px;
+            margin-bottom: 16px;
+        }
+        h1 { font-size: 2em; border-bottom: 1px solid #eaecef; padding-bottom: .3em; }
+        h2 { font-size: 1.5em; border-bottom: 1px solid #eaecef; padding-bottom: .3em; }
+        h3 { font-size: 1.25em; }
+        h4 { font-size: 1em; }
+        p, ul, ol, table { margin-bottom: 16px; }
+        code {
+            font-family: Consolas, Monaco, 'Andale Mono', monospace;
+            background-color: #f6f8fa;
+            padding: 0.2em 0.4em;
+            border-radius: 3px;
+        }
+        pre {
+            background-color: #f6f8fa;
+            border-radius: 3px;
+            padding: 16px;
+            overflow: auto;
+        }
+        pre code {
+            background-color: transparent;
+            padding: 0;
+        }
+        blockquote {
+            padding: 0 1em;
+            color: #6a737d;
+            border-left: 0.25em solid #dfe2e5;
+            margin: 0 0 16px 0;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        table th, table td {
+            border: 1px solid #dfe2e5;
+            padding: 6px 13px;
+        }
+        table tr:nth-child(2n) {
+            background-color: #f6f8fa;
+        }
+        img {
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+<h1>服务器与数据库监控数据分析报告</h1>
+<br>
+<p>*生成日期: 2025-03-17*</p>
+<br>
+<h2>1. 数据概览</h2>
+<br>
+<h3>1.1 基本数据信息</h3>
+<br>
+<p>本报告基于2025年2月28日全天监控数据分析，包含了多台服务器和数据库服务器的运行状态和性能数据。</p>
+<br>
+<table>
+<tr><th>项目</th><th>描述</th></tr>
+<tr><td>记录总数</td><td>14,400 行</td></tr>
+<tr><td>字段总数</td><td>36 列</td></tr>
+<tr><td>监控时段</td><td>2025-02-28 00:00:00 至 2025-02-28 23:59:00</td></tr>
+<tr><td>监控对象</td><td>10台服务器（5台应用服务器，5台数据库服务器）</td></tr>
+<tr><td>内存占用</td><td>7.77 MB</td></tr>
+</table>
+<br>
+<h3>1.2 数据结构特点</h3>
+<br>
+<p>数据分为两大类型，服务器指标（resource_type="server"）和数据库指标（resource_type="database"），各占总数据的50%。</p>
+<br>
+<table>
+<tr><th>类型</th><th>记录数</th><th>比例</th><th>主要指标</th></tr>
+<tr><td>服务器指标</td><td>7,200</td><td>50%</td><td>CPU使用率、内存使用率、磁盘使用率、网络流量等</td></tr>
+<tr><td>数据库指标</td><td>7,200</td><td>50%</td><td>查询率、活跃连接数、缓存命中率、事务处理率等</td></tr>
+</table>
+<br>
+<h3>1.3 监控对象分布</h3>
+<br>
+<table>
+<tr><th>服务器ID</th><th>服务器名称</th><th>记录数</th><th>占比</th></tr>
+<tr><td>SRV001</td><td>主应用服务器</td><td>1,440</td><td>10%</td></tr>
+<tr><td>SRV002</td><td>备份应用服务器</td><td>1,440</td><td>10%</td></tr>
+<tr><td>SRV003</td><td>数据处理服务器</td><td>1,440</td><td>10%</td></tr>
+<tr><td>SRV004</td><td>缓存服务器</td><td>1,440</td><td>10%</td></tr>
+<tr><td>SRV005</td><td>负载均衡服务器</td><td>1,440</td><td>10%</td></tr>
+<tr><td>DB001</td><td>MySQL主数据库</td><td>1,440</td><td>10%</td></tr>
+<tr><td>DB002</td><td>MySQL从数据库</td><td>1,440</td><td>10%</td></tr>
+<tr><td>DB003</td><td>Redis缓存数据库</td><td>1,440</td><td>10%</td></tr>
+<tr><td>DB004</td><td>MongoDB文档数据库</td><td>1,440</td><td>10%</td></tr>
+<tr><td>DB005</td><td>Elasticsearch搜索数据库</td><td>1,440</td><td>10%</td></tr>
+</table>
+<br>
+<h3>1.4 事件类型分布</h3>
+<br>
+<table>
+<tr><th>事件类型</th><th>记录数</th><th>占比</th></tr>
+<tr><td>normal</td><td>14,103</td><td>97.94%</td></tr>
+<tr><td>network_issue</td><td>122</td><td>0.85%</td></tr>
+<tr><td>high_load</td><td>92</td><td>0.64%</td></tr>
+<tr><td>db_slowdown</td><td>62</td><td>0.43%</td></tr>
+<tr><td>memory_leak</td><td>21</td><td>0.15%</td></tr>
+</table>
+<br>
+<h2>2. 数据洞察</h2>
+<br>
+<h3>2.1 系统资源使用情况</h3>
+<br>
+<h4>2.1.1 CPU使用率分析</h4>
+<br>
+<p>服务器CPU使用率总体处于中等负载水平，但存在高负载峰值。</p>
+<br>
+<table>
+<tr><th>指标</th><th>值</th></tr>
+<tr><td>平均值</td><td>37.58%</td></tr>
+<tr><td>中位数</td><td>31.62%</td></tr>
+<tr><td>最小值</td><td>5.58%</td></tr>
+<tr><td>最大值</td><td>100.00%</td></tr>
+<tr><td>标准差</td><td>20.65%</td></tr>
+<tr><td>高峰时段</td><td>9时</td></tr>
+</table>
+<br>
+<p>各服务器CPU使用率对比：</p>
+<br>
+<table>
+<tr><th>服务器名称</th><th>平均CPU使用率</th><th>最大值</th><th>最小值</th></tr>
+<tr><td>主应用服务器</td><td>38.98%</td><td>100.00%</td><td>5.71%</td></tr>
+<tr><td>备份应用服务器</td><td>37.47%</td><td>84.05%</td><td>5.72%</td></tr>
+<tr><td>数据处理服务器</td><td>36.67%</td><td>84.74%</td><td>5.58%</td></tr>
+<tr><td>缓存服务器</td><td>36.74%</td><td>83.67%</td><td>6.12%</td></tr>
+<tr><td>负载均衡服务器</td><td>38.05%</td><td>84.07%</td><td>5.85%</td></tr>
+</table>
+<br>
+<h4>2.1.2 内存使用情况</h4>
+<br>
+<p>内存使用率总体处于中高水平，且波动相对CPU较小。</p>
+<br>
+<table>
+<tr><th>指标</th><th>值</th></tr>
+<tr><td>平均值</td><td>53.57%</td></tr>
+<tr><td>中位数</td><td>51.70%</td></tr>
+<tr><td>最小值</td><td>27.41%</td></tr>
+<tr><td>最大值</td><td>100.00%</td></tr>
+<tr><td>标准差</td><td>15.33%</td></tr>
+<tr><td>高峰时段</td><td>10时</td></tr>
+<tr><td>异常值比例</td><td>0.01%</td></tr>
+</table>
+<br>
+<p>各服务器内存使用率对比：</p>
+<br>
+<table>
+<tr><th>服务器名称</th><th>平均内存使用率</th><th>最大值</th><th>最小值</th></tr>
+<tr><td>主应用服务器</td><td>54.23%</td><td>97.18%</td><td>28.07%</td></tr>
+<tr><td>备份应用服务器</td><td>53.61%</td><td>87.47%</td><td>27.51%</td></tr>
+<tr><td>数据处理服务器</td><td>53.59%</td><td>100.00%</td><td>27.89%</td></tr>
+<tr><td>缓存服务器</td><td>52.64%</td><td>87.44%</td><td>27.45%</td></tr>
+<tr><td>负载均衡服务器</td><td>53.77%</td><td>87.73%</td><td>27.41%</td></tr>
+</table>
+<br>
+<h4>2.1.3 磁盘使用情况</h4>
+<br>
+<p>磁盘使用率保持在较稳定水平，但存在较多异常值。</p>
+<br>
+<table>
+<tr><th>指标</th><th>值</th></tr>
+<tr><td>平均值</td><td>52.84%</td></tr>
+<tr><td>中位数</td><td>50.00%</td></tr>
+<tr><td>最小值</td><td>50.00%</td></tr>
+<tr><td>最大值</td><td>89.16%</td></tr>
+<tr><td>标准差</td><td>5.81%</td></tr>
+<tr><td>高峰时段</td><td>10时</td></tr>
+<tr><td>异常值比例</td><td>19.04%</td></tr>
+</table>
+<br>
+<p>磁盘I/O活动：</p>
+<br>
+<table>
+<tr><th>指标</th><th>读取 (MB/s)</th><th>写入 (MB/s)</th><th>I/O百分比</th></tr>
+<tr><td>平均值</td><td>37.04</td><td>26.24</td><td>29.27%</td></tr>
+<tr><td>最大值</td><td>180.22</td><td>137.12</td><td>93.00%</td></tr>
+<tr><td>最小值</td><td>0.26</td><td>0.18</td><td>0.48%</td></tr>
+<tr><td>标准差</td><td>29.03</td><td>21.20</td><td>19.41%</td></tr>
+</table>
+<br>
+<h4>2.1.4 网络流量情况</h4>
+<br>
+<table>
+<tr><th>指标</th><th>流量百分比</th><th>入站 (Mbps)</th><th>出站 (Mbps)</th></tr>
+<tr><td>平均值</td><td>38.25%</td><td>66.60</td><td>44.22</td></tr>
+<tr><td>中位数</td><td>32.30%</td><td>52.32</td><td>34.76</td></tr>
+<tr><td>最大值</td><td>100.00%</td><td>298.57</td><td>194.92</td></tr>
+<tr><td>最小值</td><td>5.22%</td><td>3.66</td><td>2.02</td></tr>
+<tr><td>标准差</td><td>21.58%</td><td>49.50</td><td>32.72</td></tr>
+<tr><td>高峰时段</td><td>11时</td><td>-</td><td>-</td></tr>
+</table>
+<br>
+<h3>2.2 数据库性能分析</h3>
+<br>
+<h4>2.2.1 查询性能指标</h4>
+<br>
+<table>
+<tr><th>指标</th><th>平均值</th><th>中位数</th><th>最大值</th><th>最小值</th><th>标准差</th><th>高峰时段</th></tr>
+<tr><td>查询率 (每秒)</td><td>349.16</td><td>242.72</td><td>1242.16</td><td>51.60</td><td>246.15</td><td>15时</td></tr>
+<tr><td>查询时间 (ms)</td><td>18.01</td><td>16.87</td><td>246.53</td><td>8.22</td><td>12.64</td><td>14时</td></tr>
+<tr><td>活跃连接数</td><td>40.83</td><td>31.25</td><td>196.48</td><td>5.09</td><td>28.10</td><td>14时</td></tr>
+<tr><td>事务处理率 (每秒)</td><td>38.26</td><td>25.93</td><td>218.76</td><td>3.64</td><td>30.84</td><td>10时</td></tr>
+</table>
+<br>
+<h4>2.2.2 缓存和存储性能</h4>
+<br>
+<table>
+<tr><th>指标</th><th>平均值</th><th>中位数</th><th>最大值</th><th>最小值</th><th>标准差</th></tr>
+<tr><td>缓存命中率 (%)</td><td>84.69</td><td>85.52</td><td>99.81</td><td>27.49</td><td>7.98</td></tr>
+<tr><td>缓冲池使用率 (%)</td><td>72.37</td><td>72.35</td><td>95.00</td><td>50.00</td><td>12.93</td></tr>
+<tr><td>索引使用率 (%)</td><td>79.50</td><td>79.56</td><td>98.99</td><td>60.00</td><td>11.26</td></tr>
+</table>
+<br>
+<h4>2.2.3 数据库读写比例</h4>
+<br>
+<table>
+<tr><th>指标</th><th>值</th><th>标准差</th></tr>
+<tr><td>读取占比</td><td>81.80%</td><td>5.87%</td></tr>
+<tr><td>写入占比</td><td>18.20%</td><td>5.87%</td></tr>
+</table>
+<br>
+<h4>2.2.4 问题指标</h4>
+<br>
+<table>
+<tr><th>指标</th><th>平均值</th><th>最大值</th><th>总计</th></tr>
+<tr><td>锁等待次数</td><td>3.61</td><td>37.00</td><td>-</td></tr>
+<tr><td>死锁数</td><td>0.02</td><td>3.00</td><td>165</td></tr>
+<tr><td>慢查询数</td><td>8.28</td><td>57.00</td><td>59,630</td></tr>
+<tr><td>中断连接</td><td>0.23</td><td>5.00</td><td>-</td></tr>
+</table>
+<br>
+<h3>2.3 相关性分析</h3>
+<br>
+<h4>2.3.1 高度相关变量对 (|r| > 0.8)</h4>
+<br>
+<p>以下指标对之间存在强相关性：</p>
+<br>
+<table>
+<tr><th>指标对</th><th>相关系数</th></tr>
+<tr><td>CPU使用率 <-> 1分钟负载</td><td>1.0000</td></tr>
+<tr><td>读百分比 <-> 写百分比</td><td>-1.0000</td></tr>
+<tr><td>1分钟负载 <-> 进程数</td><td>0.9904</td></tr>
+<tr><td>CPU使用率 <-> 进程数</td><td>0.9904</td></tr>
+<tr><td>1分钟负载 <-> 5分钟负载</td><td>0.9719</td></tr>
+<tr><td>CPU使用率 <-> 5分钟负载</td><td>0.9719</td></tr>
+<tr><td>5分钟负载 <-> 进程数</td><td>0.9624</td></tr>
+<tr><td>查询率 <-> 事务处理率</td><td>0.8711</td></tr>
+<tr><td>磁盘IO百分比 <-> 磁盘读MB/s</td><td>0.8526</td></tr>
+<tr><td>磁盘IO百分比 <-> 磁盘写MB/s</td><td>0.8208</td></tr>
+<tr><td>CPU使用率 <-> 磁盘IO百分比</td><td>0.8178</td></tr>
+<tr><td>线程数 <-> 打开文件数</td><td>0.8102</td></tr>
+</table>
+<br>
+<h4>2.3.2 中度相关变量对（部分）</h4>
+<br>
+<table>
+<tr><th>指标对</th><th>相关系数</th></tr>
+<tr><td>查询率 <-> 活跃连接数</td><td>0.7755</td></tr>
+<tr><td>网络流量 <-> 网络入站MB/s</td><td>0.7672</td></tr>
+<tr><td>CPU使用率 <-> 内存使用率</td><td>0.7569</td></tr>
+<tr><td>内存使用率 <-> 磁盘使用率</td><td>0.7425</td></tr>
+<tr><td>查询率 <-> 慢查询数</td><td>0.7131</td></tr>
+</table>
+<br>
+<h2>3. 关键发现</h2>
+<br>
+<h3>3.1 系统性能分析</h3>
+<br>
+<h4>3.1.1 高负载事件</h4>
+<br>
+<p>数据显示发生了92次高负载事件(high_load)，占总事件的0.64%。这些事件主要表现为：</p>
+<br>
+<table>
+<tr><th>状态</th><th>CPU使用率</th><th>内存使用率</th></tr>
+<tr><td>正常状态</td><td>36.91%</td><td>53.10%</td></tr>
+<tr><td>高负载状态</td><td>90.82%</td><td>88.17%</td></tr>
+<tr><td>增长幅度</td><td>146.1%</td><td>66.0%</td></tr>
+</table>
+<br>
+<h4>3.1.2 内存泄漏问题</h4>
+<br>
+<p>监控期间出现了21次内存泄漏警告(memory_leak)，占总事件的0.15%：</p>
+<br>
+<table>
+<tr><th>状态</th><th>CPU使用率</th><th>内存使用率</th></tr>
+<tr><td>正常状态</td><td>36.91%</td><td>53.10%</td></tr>
+<tr><td>内存泄漏状态</td><td>68.50%</td><td>94.13%</td></tr>
+<tr><td>增长幅度</td><td>85.6%</td><td>77.3%</td></tr>
+</table>
+<br>
+<h4>3.1.3 网络问题</h4>
+<br>
+<p>监控期间出现了122次网络问题(network_issue)，占总事件的0.85%：</p>
+<br>
+<table>
+<tr><th>状态</th><th>CPU使用率</th><th>内存使用率</th></tr>
+<tr><td>正常状态</td><td>36.91%</td><td>53.10%</td></tr>
+<tr><td>网络问题状态</td><td>50.49%</td><td>60.65%</td></tr>
+<tr><td>增长幅度</td><td>36.8%</td><td>14.2%</td></tr>
+</table>
+<br>
+<h3>3.2 数据库关键指标分析</h3>
+<br>
+<h4>3.2.1 查询性能降级</h4>
+<br>
+<p>监控记录了62次数据库查询性能降级事件(db_slowdown)，占总事件的0.43%。从慢查询统计看，系统累计记录了约59,630次慢查询，平均每分钟约41次。</p>
+<br>
+<h4>3.2.2 读写比例分析</h4>
+<br>
+<p>系统整体呈现读密集型特征，读写比例为81.80%:18.20%，这一特征对缓存策略和索引优化提供了方向。</p>
+<br>
+<h4>3.2.3 数据库锁和并发问题</h4>
+<br>
+<table>
+<tr><th>指标</th><th>发现</th></tr>
+<tr><td>锁等待次数</td><td>平均每分钟3.61次，最高时达到37次</td></tr>
+<tr><td>死锁数</td><td>全天共发生约165次死锁</td></tr>
+</table>
+<br>
+<h3>3.3 异常值分析</h3>
+<br>
+<p>异常值比例较高的指标：</p>
+<br>
+<table>
+<tr><th>指标</th><th>异常值比例</th><th>可能原因</th></tr>
+<tr><td>磁盘使用率</td><td>19.04%</td><td>可能与备份、日志或临时文件积累有关</td></tr>
+<tr><td>中断连接</td><td>17.85%</td><td>可能与网络问题或连接超时有关</td></tr>
+<tr><td>慢查询数</td><td>9</td></tr>
+</table>
+
+</body>
+</html>

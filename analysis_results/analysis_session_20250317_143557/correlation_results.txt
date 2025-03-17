@@ -1,0 +1,174 @@
+相关性分析结果
+====================
+
+相关性矩阵：
+                             cpu_usage_percent  memory_usage_percent  disk_usage_percent  disk_io_percent  disk_read_mbps  disk_write_mbps  network_traffic_percent  network_in_mbps  network_out_mbps  load_avg_1min  load_avg_5min  load_avg_15min  process_count  thread_count  open_file_count  temperature_celsius  query_rate_per_sec  active_connections  cache_hit_rate_percent  avg_query_time_ms  transactions_per_sec  read_percent  write_percent  lock_wait_count  deadlock_count  buffer_pool_usage_percent  table_scans_per_sec  index_usage_percent  temp_tables_created_per_sec  slow_queries_count  aborted_connections
+cpu_usage_percent                     1.000000              0.756924            0.634898         0.817753        0.696093         0.669639                 0.781950         0.596370          0.589703       1.000000       0.971878        0.939124       0.990357      0.662625         0.539714            -0.013428                 NaN                 NaN                     NaN                NaN                   NaN           NaN            NaN              NaN             NaN                        NaN                  NaN                  NaN                          NaN                 NaN                  NaN
+memory_usage_percent                  0.756924              1.000000            0.742461         0.757409        0.644398         0.618674                 0.713369         0.549889          0.531174       0.756924       0.736059        0.712030       0.748754      0.503878         0.405839            -0.018625                 NaN                 NaN                     NaN                NaN                   NaN           NaN            NaN              NaN             NaN                        NaN                  NaN                  NaN                          NaN                 NaN                  NaN
+disk_usage_percent                    0.634898              0.742461            1.000000         0.634615        0.532327         0.525549                 0.569916         0.447040          0.436337       0.634898       0.618108        0.599108       0.627827      0.420321         0.333400            -0.007089                 NaN                 NaN                     NaN                NaN                   NaN           NaN            NaN              NaN             NaN                        NaN                  NaN                  NaN                          NaN                 NaN                  NaN
+disk_io_percent                       0.817753              0.757409            0.634615         1.000000        0.852639         0.820767                 0.785517         0.594674          0.592981       0.817753       0.792844        0.770148       0.809267      0.547351         0.442246            -0.019595                 NaN                 NaN                     NaN                NaN                   NaN           NaN            NaN              NaN             NaN                        NaN                  NaN                  NaN                          NaN                 NaN                  NaN
+disk_read_mbps                        0.696093              0.644398            0.532327         0.852639        1.000000         0.708957                 0.664986         0.508143          0.509272       0.696093       0.674937        0.652060       0.688185      0.460926         0.375227            -0.022668                 NaN                 NaN                     NaN                NaN                   NaN           NaN            NaN              NaN             NaN                        NaN                  NaN                  NaN                          NaN                 NaN                  NaN
+disk_write_mbps                       0.669639              0.618674            0.525549         0.820767        0.708957         1.000000                 0.641960         0.483825          0.479740       0.669639       0.649879        0.634743       0.661789      0.449585         0.356859            -0.022999                 NaN                 NaN                     NaN                NaN                   NaN           NaN            NaN              NaN             NaN                        NaN                  NaN                  NaN                          NaN                 NaN                  NaN
+network_traffic_percent               0.781950              0.713369            0.569916         0.785517        0.664986         0.641960                 1.000000         0.767229          0.756116       0.781950       0.758337        0.738424       0.775064      0.514582         0.425539            -0.011810                 NaN                 NaN                     NaN                NaN                   NaN           NaN            NaN              NaN             NaN                        NaN                  NaN                  NaN                          NaN                 NaN                  NaN
+network_in_mbps                       0.596370              0.549889            0.447040         0.594674        0.508143         0.483825                 0.767229         1.000000          0.590727       0.596370       0.575601        0.565113       0.592665      0.397655         0.328300            -0.002208                 NaN                 NaN                     NaN                NaN                   NaN           NaN            NaN              NaN             NaN                        NaN                  NaN                  NaN                          NaN                 NaN                  NaN
+network_out_mbps                      0.589703              0.531174            0.436337         0.592981        0.509272         0.479740                 0.756116         0.590727          1.000000       0.589703       0.575120        0.554812       0.584566      0.388214         0.325673            -0.014570                 NaN                 NaN                     NaN                NaN                   NaN           NaN            NaN              NaN             NaN                        NaN                  NaN                  NaN                          NaN                 NaN                  NaN
+load_avg_1min                         1.000000              0.756924            0.634898         0.817753        0.696093         0.669639                 0.781950         0.596370          0.589703       1.000000       0.971878        0.939124       0.990357      0.662625         0.539714            -0.013428                 NaN                 NaN                     NaN                NaN                   NaN           NaN            NaN              NaN             NaN                        NaN                  NaN                  NaN                          NaN                 NaN                  NaN
+load_avg_5min                         0.971878              0.736059            0.618108         0.792844        0.674937         0.649879                 0.758337         0.575601          0.575120       0.971878       1.000000        0.909577       0.962423      0.641551         0.520265            -0.009735                 NaN                 NaN                     NaN                NaN                   NaN           NaN            NaN              NaN             NaN                        NaN                  NaN                  NaN                          NaN                 NaN                  NaN
+load_avg_15min                        0.939124              0.712030            0.599108         0.770148        0.652060         0.634743                 0.738424         0.565113          0.554812       0.939124       0.909577        1.000000       0.930560      0.621068         0.504598            -0.019005                 NaN                 NaN                     NaN                NaN                   NaN           NaN            NaN              NaN             NaN                        NaN                  NaN                  NaN                          NaN                 NaN                  NaN
+process_count                         0.990357              0.748754            0.627827         0.809267        0.688185         0.661789                 0.775064         0.592665          0.584566       0.990357       0.962423        0.930560       1.000000      0.667646         0.544595            -0.014175                 NaN                 NaN                     NaN                NaN                   NaN           NaN            NaN              NaN             NaN                        NaN                  NaN                  NaN                          NaN                 NaN                  NaN
+thread_count                          0.662625              0.503878            0.420321         0.547351        0.460926         0.449585                 0.514582         0.397655          0.388214       0.662625       0.641551        0.621068       0.667646      1.000000         0.810245             0.000305                 NaN                 NaN                     NaN                NaN                   NaN           NaN            NaN              NaN             NaN                        NaN                  NaN                  NaN                          NaN                 NaN                  NaN
+open_file_count                       0.539714              0.405839            0.333400         0.442246        0.375227         0.356859                 0.425539         0.328300          0.325673       0.539714       0.520265        0.504598       0.544595      0.810245         1.000000             0.004914                 NaN                 NaN                     NaN                NaN                   NaN           NaN            NaN              NaN             NaN                        NaN                  NaN                  NaN                          NaN                 NaN                  NaN
+temperature_celsius                  -0.013428             -0.018625           -0.007089        -0.019595       -0.022668        -0.022999                -0.011810        -0.002208         -0.014570      -0.013428      -0.009735       -0.019005      -0.014175      0.000305         0.004914             1.000000                 NaN                 NaN                     NaN                NaN                   NaN           NaN            NaN              NaN             NaN                        NaN                  NaN                  NaN                          NaN                 NaN                  NaN
+query_rate_per_sec                         NaN                   NaN                 NaN              NaN             NaN              NaN                      NaN              NaN               NaN            NaN            NaN             NaN            NaN           NaN              NaN                  NaN            1.000000            0.775509               -0.436562           0.036560              0.871084     -0.016112       0.016112         0.545806        0.177093                  -0.007206             0.002406            -0.015811                     0.001174            0.713092             0.521834
+active_connections                         NaN                   NaN                 NaN              NaN             NaN              NaN                      NaN              NaN               NaN            NaN            NaN             NaN            NaN           NaN              NaN                  NaN            0.775509            1.000000               -0.584608           0.384134              0.673215      0.000844      -0.000844         0.708823        0.306239                  -0.018363             0.004474            -0.000150                     0.005009            0.555109             0.651986
+cache_hit_rate_percent                     NaN                   NaN                 NaN              NaN             NaN              NaN                      NaN              NaN               NaN            NaN            NaN             NaN            NaN           NaN              NaN                  NaN           -0.436562           -0.584608                1.000000          -0.547840             -0.366880      0.001913      -0.001913        -0.410884       -0.207161                   0.026876            -0.003478            -0.005583                     0.002420           -0.325036            -0.407947
+avg_query_time_ms                          NaN                   NaN                 NaN              NaN             NaN              NaN                      NaN              NaN               NaN            NaN            NaN             NaN            NaN           NaN              NaN                  NaN            0.036560            0.384134               -0.547840           1.000000              0.034000      0.017685      -0.017685         0.281633        0.215601                  -0.018589             0.010276             0.005525                     0.005191            0.025004             0.295936
+transactions_per_sec                       NaN                   NaN                 NaN              NaN             NaN              NaN                      NaN              NaN               NaN            NaN            NaN             NaN            NaN           NaN              NaN                  NaN            0.871084            0.673215               -0.366880           0.034000              1.000000     -0.010268       0.010268         0.484332        0.165975                  -0.003653             0.001948            -0.014504                     0.000222            0.619777             0.445371
+read_percent                               NaN                   NaN                 NaN              NaN             NaN              NaN                      NaN              NaN               NaN            NaN            NaN             NaN            NaN           NaN              NaN                  NaN           -0.016112            0.000844                0.001913           0.017685             -0.010268      1.000000      -1.000000        -0.002943        0.000386                   0.003335             0.009918             0.020430                     0.012013           -0.011432             0.000196
+write_percent                              NaN                   NaN                 NaN              NaN             NaN              NaN                      NaN              NaN               NaN            NaN            NaN             NaN            NaN           NaN              NaN                  NaN            0.016112           -0.000844               -0.001913          -0.017685              0.010268     -1.000000       1.000000         0.002943       -0.000386                  -0.003335            -0.009918            -0.020430                    -0.012013            0.011432            -0.000196
+lock_wait_count                            NaN                   NaN                 NaN              NaN             NaN              NaN                      NaN              NaN               NaN            NaN            NaN             NaN            NaN           NaN              NaN                  NaN            0.545806            0.708823               -0.410884           0.281633              0.484332     -0.002943       0.002943         1.000000        0.459062                  -0.011824            -0.008211            -0.002439                     0.004183            0.389535             0.476762
+deadlock_count                             NaN                   NaN                 NaN              NaN             NaN              NaN                      NaN              NaN               NaN            NaN            NaN             NaN            NaN           NaN              NaN                  NaN            0.177093            0.306239               -0.207161           0.215601              0.165975      0.000386      -0.000386         0.459062        1.000000                  -0.008827            -0.007679            -0.005964                    -0.014483            0.126182             0.189876
+buffer_pool_usage_percent                  NaN                   NaN                 NaN              NaN             NaN              NaN                      NaN              NaN               NaN            NaN            NaN             NaN            NaN           NaN              NaN                  NaN           -0.007206           -0.018363                0.026876          -0.018589             -0.003653      0.003335      -0.003335        -0.011824       -0.008827                   1.000000             0.012435            -0.008031                    -0.016929           -0.012651            -0.021778
+table_scans_per_sec                        NaN                   NaN                 NaN              NaN             NaN              NaN                      NaN              NaN               NaN            NaN            NaN             NaN            NaN           NaN              NaN                  NaN            0.002406            0.004474               -0.003478           0.010276              0.001948      0.009918      -0.009918        -0.008211       -0.007679                   0.012435             1.000000             0.000770                    -0.010531            0.014399             0.010686
+index_usage_percent                        NaN                   NaN                 NaN              NaN             NaN              NaN                      NaN              NaN               NaN            NaN            NaN             NaN            NaN           NaN              NaN                  NaN           -0.015811           -0.000150               -0.005583           0.005525             -0.014504      0.020430      -0.020430        -0.002439       -0.005964                  -0.008031             0.000770             1.000000                    -0.024282           -0.015637            -0.011290
+temp_tables_created_per_sec                NaN                   NaN                 NaN              NaN             NaN              NaN                      NaN              NaN               NaN            NaN            NaN             NaN            NaN           NaN              NaN                  NaN            0.001174            0.005009                0.002420           0.005191              0.000222      0.012013      -0.012013         0.004183       -0.014483                  -0.016929            -0.010531            -0.024282                     1.000000           -0.004150             0.007143
+slow_queries_count                         NaN                   NaN                 NaN              NaN             NaN              NaN                      NaN              NaN               NaN            NaN            NaN             NaN            NaN           NaN              NaN                  NaN            0.713092            0.555109               -0.325036           0.025004              0.619777     -0.011432       0.011432         0.389535        0.126182                  -0.012651             0.014399            -0.015637                    -0.004150            1.000000             0.372772
+aborted_connections                        NaN                   NaN                 NaN              NaN             NaN              NaN                      NaN              NaN               NaN            NaN            NaN             NaN            NaN           NaN              NaN                  NaN            0.521834            0.651986               -0.407947           0.295936              0.445371      0.000196      -0.000196         0.476762        0.189876                  -0.021778             0.010686            -0.011290                     0.007143            0.372772             1.000000
+
+高度相关变量对：
+cpu_usage_percent - memory_usage_percent: 0.7569
+cpu_usage_percent - disk_io_percent: 0.8178
+cpu_usage_percent - network_traffic_percent: 0.7819
+cpu_usage_percent - load_avg_1min: 1.0000
+cpu_usage_percent - load_avg_5min: 0.9719
+cpu_usage_percent - load_avg_15min: 0.9391
+cpu_usage_percent - process_count: 0.9904
+memory_usage_percent - disk_usage_percent: 0.7425
+memory_usage_percent - disk_io_percent: 0.7574
+memory_usage_percent - network_traffic_percent: 0.7134
+memory_usage_percent - load_avg_1min: 0.7569
+memory_usage_percent - load_avg_5min: 0.7361
+memory_usage_percent - load_avg_15min: 0.7120
+memory_usage_percent - process_count: 0.7488
+disk_io_percent - disk_read_mbps: 0.8526
+disk_io_percent - disk_write_mbps: 0.8208
+disk_io_percent - network_traffic_percent: 0.7855
+disk_io_percent - load_avg_1min: 0.8178
+disk_io_percent - load_avg_5min: 0.7928
+disk_io_percent - load_avg_15min: 0.7701
+disk_io_percent - process_count: 0.8093
+disk_read_mbps - disk_write_mbps: 0.7090
+network_traffic_percent - network_in_mbps: 0.7672
+network_traffic_percent - network_out_mbps: 0.7561
+network_traffic_percent - load_avg_1min: 0.7819
+network_traffic_percent - load_avg_5min: 0.7583
+network_traffic_percent - load_avg_15min: 0.7384
+network_traffic_percent - process_count: 0.7751
+load_avg_1min - load_avg_5min: 0.9719
+load_avg_1min - load_avg_15min: 0.9391
+load_avg_1min - process_count: 0.9904
+load_avg_5min - load_avg_15min: 0.9096
+load_avg_5min - process_count: 0.9624
+load_avg_15min - process_count: 0.9306
+thread_count - open_file_count: 0.8102
+query_rate_per_sec - active_connections: 0.7755
+query_rate_per_sec - transactions_per_sec: 0.8711
+query_rate_per_sec - slow_queries_count: 0.7131
+active_connections - lock_wait_count: 0.7088
+read_percent - write_percent: -1.0000
+
+低度相关变量对：
+cpu_usage_percent - temperature_celsius: -0.0134
+memory_usage_percent - temperature_celsius: -0.0186
+disk_usage_percent - temperature_celsius: -0.0071
+disk_io_percent - temperature_celsius: -0.0196
+disk_read_mbps - temperature_celsius: -0.0227
+disk_write_mbps - temperature_celsius: -0.0230
+network_traffic_percent - temperature_celsius: -0.0118
+network_in_mbps - temperature_celsius: -0.0022
+network_out_mbps - temperature_celsius: -0.0146
+load_avg_1min - temperature_celsius: -0.0134
+load_avg_5min - temperature_celsius: -0.0097
+load_avg_15min - temperature_celsius: -0.0190
+process_count - temperature_celsius: -0.0142
+thread_count - temperature_celsius: 0.0003
+open_file_count - temperature_celsius: 0.0049
+query_rate_per_sec - avg_query_time_ms: 0.0366
+query_rate_per_sec - read_percent: -0.0161
+query_rate_per_sec - write_percent: 0.0161
+query_rate_per_sec - deadlock_count: 0.1771
+query_rate_per_sec - buffer_pool_usage_percent: -0.0072
+query_rate_per_sec - table_scans_per_sec: 0.0024
+query_rate_per_sec - index_usage_percent: -0.0158
+query_rate_per_sec - temp_tables_created_per_sec: 0.0012
+active_connections - read_percent: 0.0008
+active_connections - write_percent: -0.0008
+active_connections - buffer_pool_usage_percent: -0.0184
+active_connections - table_scans_per_sec: 0.0045
+active_connections - index_usage_percent: -0.0002
+active_connections - temp_tables_created_per_sec: 0.0050
+cache_hit_rate_percent - read_percent: 0.0019
+cache_hit_rate_percent - write_percent: -0.0019
+cache_hit_rate_percent - deadlock_count: -0.2072
+cache_hit_rate_percent - buffer_pool_usage_percent: 0.0269
+cache_hit_rate_percent - table_scans_per_sec: -0.0035
+cache_hit_rate_percent - index_usage_percent: -0.0056
+cache_hit_rate_percent - temp_tables_created_per_sec: 0.0024
+avg_query_time_ms - transactions_per_sec: 0.0340
+avg_query_time_ms - read_percent: 0.0177
+avg_query_time_ms - write_percent: -0.0177
+avg_query_time_ms - lock_wait_count: 0.2816
+avg_query_time_ms - deadlock_count: 0.2156
+avg_query_time_ms - buffer_pool_usage_percent: -0.0186
+avg_query_time_ms - table_scans_per_sec: 0.0103
+avg_query_time_ms - index_usage_percent: 0.0055
+avg_query_time_ms - temp_tables_created_per_sec: 0.0052
+avg_query_time_ms - slow_queries_count: 0.0250
+avg_query_time_ms - aborted_connections: 0.2959
+transactions_per_sec - read_percent: -0.0103
+transactions_per_sec - write_percent: 0.0103
+transactions_per_sec - deadlock_count: 0.1660
+transactions_per_sec - buffer_pool_usage_percent: -0.0037
+transactions_per_sec - table_scans_per_sec: 0.0019
+transactions_per_sec - index_usage_percent: -0.0145
+transactions_per_sec - temp_tables_created_per_sec: 0.0002
+read_percent - lock_wait_count: -0.0029
+read_percent - deadlock_count: 0.0004
+read_percent - buffer_pool_usage_percent: 0.0033
+read_percent - table_scans_per_sec: 0.0099
+read_percent - index_usage_percent: 0.0204
+read_percent - temp_tables_created_per_sec: 0.0120
+read_percent - slow_queries_count: -0.0114
+read_percent - aborted_connections: 0.0002
+write_percent - lock_wait_count: 0.0029
+write_percent - deadlock_count: -0.0004
+write_percent - buffer_pool_usage_percent: -0.0033
+write_percent - table_scans_per_sec: -0.0099
+write_percent - index_usage_percent: -0.0204
+write_percent - temp_tables_created_per_sec: -0.0120
+write_percent - slow_queries_count: 0.0114
+write_percent - aborted_connections: -0.0002
+lock_wait_count - buffer_pool_usage_percent: -0.0118
+lock_wait_count - table_scans_per_sec: -0.0082
+lock_wait_count - index_usage_percent: -0.0024
+lock_wait_count - temp_tables_created_per_sec: 0.0042
+deadlock_count - buffer_pool_usage_percent: -0.0088
+deadlock_count - table_scans_per_sec: -0.0077
+deadlock_count - index_usage_percent: -0.0060
+deadlock_count - temp_tables_created_per_sec: -0.0145
+deadlock_count - slow_queries_count: 0.1262
+deadlock_count - aborted_connections: 0.1899
+buffer_pool_usage_percent - table_scans_per_sec: 0.0124
+buffer_pool_usage_percent - index_usage_percent: -0.0080
+buffer_pool_usage_percent - temp_tables_created_per_sec: -0.0169
+buffer_pool_usage_percent - slow_queries_count: -0.0127
+buffer_pool_usage_percent - aborted_connections: -0.0218
+table_scans_per_sec - index_usage_percent: 0.0008
+table_scans_per_sec - temp_tables_created_per_sec: -0.0105
+table_scans_per_sec - slow_queries_count: 0.0144
+table_scans_per_sec - aborted_connections: 0.0107
+index_usage_percent - temp_tables_created_per_sec: -0.0243
+index_usage_percent - slow_queries_count: -0.0156
+index_usage_percent - aborted_connections: -0.0113
+temp_tables_created_per_sec - slow_queries_count: -0.0042
+temp_tables_created_per_sec - aborted_connections: 0.0071

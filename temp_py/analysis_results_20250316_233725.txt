@@ -1,0 +1,1 @@
+Usage: python script.py <path_to_csv_file>

@@ -1,0 +1,219 @@
+Time Series Analysis Results
+==============================
+
+Analysis for cpu_usage_percent
+--------------------
+Overall trend: Decreasing
+Daily pattern: Peak at 9:00, Trough at 23:00
+Weekly pattern: Peak on Friday, Trough on Friday
+No significant anomalies detected
+
+Analysis for memory_usage_percent
+--------------------
+Overall trend: Decreasing
+Daily pattern: Peak at 10:00, Trough at 5:00
+Weekly pattern: Peak on Friday, Trough on Friday
+No significant anomalies detected
+
+Analysis for disk_usage_percent
+--------------------
+Overall trend: Decreasing
+Daily pattern: Peak at 10:00, Trough at 6:00
+Weekly pattern: Peak on Friday, Trough on Friday
+No significant anomalies detected
+
+Analysis for disk_io_percent
+--------------------
+Overall trend: Decreasing
+Daily pattern: Peak at 16:00, Trough at 0:00
+Weekly pattern: Peak on Friday, Trough on Friday
+No significant anomalies detected
+
+Analysis for disk_read_mbps
+--------------------
+Overall trend: Decreasing
+Daily pattern: Peak at 15:00, Trough at 0:00
+Weekly pattern: Peak on Friday, Trough on Friday
+No significant anomalies detected
+
+Analysis for disk_write_mbps
+--------------------
+Overall trend: Decreasing
+Daily pattern: Peak at 16:00, Trough at 0:00
+Weekly pattern: Peak on Friday, Trough on Friday
+No significant anomalies detected
+
+Analysis for network_traffic_percent
+--------------------
+Overall trend: Decreasing
+Daily pattern: Peak at 11:00, Trough at 23:00
+Weekly pattern: Peak on Friday, Trough on Friday
+No significant anomalies detected
+
+Analysis for network_in_mbps
+--------------------
+Overall trend: Decreasing
+Daily pattern: Peak at 15:00, Trough at 2:00
+Weekly pattern: Peak on Friday, Trough on Friday
+No significant anomalies detected
+
+Analysis for network_out_mbps
+--------------------
+Overall trend: Decreasing
+Daily pattern: Peak at 9:00, Trough at 0:00
+Weekly pattern: Peak on Friday, Trough on Friday
+No significant anomalies detected
+
+Analysis for load_avg_1min
+--------------------
+Overall trend: Decreasing
+Daily pattern: Peak at 9:00, Trough at 23:00
+Weekly pattern: Peak on Friday, Trough on Friday
+No significant anomalies detected
+
+Analysis for load_avg_5min
+--------------------
+Overall trend: Decreasing
+Daily pattern: Peak at 17:00, Trough at 0:00
+Weekly pattern: Peak on Friday, Trough on Friday
+No significant anomalies detected
+
+Analysis for load_avg_15min
+--------------------
+Overall trend: Decreasing
+Daily pattern: Peak at 17:00, Trough at 8:00
+Weekly pattern: Peak on Friday, Trough on Friday
+No significant anomalies detected
+
+Analysis for process_count
+--------------------
+Overall trend: Decreasing
+Daily pattern: Peak at 17:00, Trough at 23:00
+Weekly pattern: Peak on Friday, Trough on Friday
+No significant anomalies detected
+
+Analysis for thread_count
+--------------------
+Overall trend: Decreasing
+Daily pattern: Peak at 16:00, Trough at 22:00
+Weekly pattern: Peak on Friday, Trough on Friday
+No significant anomalies detected
+
+Analysis for open_file_count
+--------------------
+Overall trend: Decreasing
+Daily pattern: Peak at 16:00, Trough at 22:00
+Weekly pattern: Peak on Friday, Trough on Friday
+No significant anomalies detected
+
+Analysis for temperature_celsius
+--------------------
+Overall trend: Decreasing
+Daily pattern: Peak at 5:00, Trough at 16:00
+Weekly pattern: Peak on Friday, Trough on Friday
+No significant anomalies detected
+
+Analysis for query_rate_per_sec
+--------------------
+Overall trend: Decreasing
+Daily pattern: Peak at 15:00, Trough at 22:00
+Weekly pattern: Peak on Friday, Trough on Friday
+No significant anomalies detected
+
+Analysis for active_connections
+--------------------
+Overall trend: Decreasing
+Daily pattern: Peak at 14:00, Trough at 0:00
+Weekly pattern: Peak on Friday, Trough on Friday
+No significant anomalies detected
+
+Analysis for cache_hit_rate_percent
+--------------------
+Overall trend: Decreasing
+Daily pattern: Peak at 23:00, Trough at 14:00
+Weekly pattern: Peak on Friday, Trough on Friday
+No significant anomalies detected
+
+Analysis for avg_query_time_ms
+--------------------
+Overall trend: Decreasing
+Daily pattern: Peak at 14:00, Trough at 23:00
+Weekly pattern: Peak on Friday, Trough on Friday
+No significant anomalies detected
+
+Analysis for transactions_per_sec
+--------------------
+Overall trend: Decreasing
+Daily pattern: Peak at 10:00, Trough at 22:00
+Weekly pattern: Peak on Friday, Trough on Friday
+No significant anomalies detected
+
+Analysis for read_percent
+--------------------
+Overall trend: Decreasing
+Daily pattern: Peak at 5:00, Trough at 3:00
+Weekly pattern: Peak on Friday, Trough on Friday
+No significant anomalies detected
+
+Analysis for write_percent
+--------------------
+Overall trend: Decreasing
+Daily pattern: Peak at 3:00, Trough at 5:00
+Weekly pattern: Peak on Friday, Trough on Friday
+No significant anomalies detected
+
+Analysis for lock_wait_count
+--------------------
+Overall trend: Decreasing
+Daily pattern: Peak at 14:00, Trough at 1:00
+Weekly pattern: Peak on Friday, Trough on Friday
+No significant anomalies detected
+
+Analysis for deadlock_count
+--------------------
+Overall trend: Decreasing
+Daily pattern: Peak at 14:00, Trough at 0:00
+Weekly pattern: Peak on Friday, Trough on Friday
+No significant anomalies detected
+
+Analysis for buffer_pool_usage_percent
+--------------------
+Overall trend: Decreasing
+Daily pattern: Peak at 20:00, Trough at 3:00
+Weekly pattern: Peak on Friday, Trough on Friday
+No significant anomalies detected
+
+Analysis for table_scans_per_sec
+--------------------
+Overall trend: Decreasing
+Daily pattern: Peak at 15:00, Trough at 8:00
+Weekly pattern: Peak on Friday, Trough on Friday
+No significant anomalies detected
+
+Analysis for index_usage_percent
+--------------------
+Overall trend: Decreasing
+Daily pattern: Peak at 1:00, Trough at 15:00
+Weekly pattern: Peak on Friday, Trough on Friday
+No significant anomalies detected
+
+Analysis for temp_tables_created_per_sec
+--------------------
+Overall trend: Decreasing
+Daily pattern: Peak at 5:00, Trough at 21:00
+Weekly pattern: Peak on Friday, Trough on Friday
+No significant anomalies detected
+
+Analysis for slow_queries_count
+--------------------
+Overall trend: Decreasing
+Daily pattern: Peak at 10:00, Trough at 19:00
+Weekly pattern: Peak on Friday, Trough on Friday
+No significant anomalies detected
+
+Analysis for aborted_connections
+--------------------
+Overall trend: Decreasing
+Daily pattern: Peak at 14:00, Trough at 0:00
+Weekly pattern: Peak on Friday, Trough on Friday
+No significant anomalies detected

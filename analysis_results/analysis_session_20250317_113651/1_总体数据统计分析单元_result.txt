@@ -1,0 +1,2 @@
+分析完成，结果已保存到 analysis_results.json
+生成的图表保存在 pngs 目录下

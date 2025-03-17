@@ -1,0 +1,109 @@
+{
+  "category_comparison": {
+    "revenue_by_category": {
+      "Dresses": 1360310.0,
+      "Outerwear": 1297011.54,
+      "Bottoms": 690986.66,
+      "Tops": 578561.66,
+      "Accessories": 386589.48
+    },
+    "sales_by_category": {
+      "Accessories": 13301,
+      "Bottoms": 13007,
+      "Tops": 12401,
+      "Outerwear": 11956,
+      "Dresses": 11511
+    }
+  },
+  "monthly_comparison": {
+    "revenue_by_month": {
+      "January": 373739.08,
+      "February": 321527.59,
+      "March": 272210.45,
+      "April": 348543.69,
+      "May": 349096.39,
+      "June": 359850.93,
+      "July": 404570.57,
+      "August": 299854.47000000003,
+      "September": 329088.27,
+      "October": 278782.72,
+      "November": 363274.35,
+      "December": 612920.83
+    },
+    "sales_by_month": {
+      "January": 5251,
+      "February": 4623,
+      "March": 3860,
+      "April": 4947,
+      "May": 5164,
+      "June": 5560,
+      "July": 6419,
+      "August": 4391,
+      "September": 4692,
+      "October": 3872,
+      "November": 4983,
+      "December": 8414
+    }
+  },
+  "top_items": {
+    "top_10_items_by_sales": {
+      "Hat": 3608,
+      "Shorts": 3431,
+      "Dress Pants": 3357,
+      "Gloves": 3353,
+      "Sweater": 3343,
+      "Raincoat": 3219,
+      "Scarf": 3207,
+      "T-Shirt": 3196,
+      "Skirt": 3177,
+      "Sunglasses": 3133
+    }
+  },
+  "price_distribution": {
+    "0-50": 424,
+    "51-100": 424,
+    "101-150": 106,
+    "151-200": 106
+  },
+  "average_prices": {
+    "avg_price_by_category": {
+      "Dresses": 117.15249999999999,
+      "Outerwear": 109.0775,
+      "Bottoms": 53.404999999999994,
+      "Tops": 46.805,
+      "Accessories": 29.345000000000002
+    }
+  },
+  "item_counts": {
+    "item_count_by_category": {
+      "Accessories": 4,
+      "Bottoms": 4,
+      "Dresses": 4,
+      "Outerwear": 4,
+      "Tops": 4
+    }
+  },
+  "weekly_trends": {
+    "sales_by_week": {
+      "Week 1": 1224,
+      "Week 10": 909,
+      "Week 11": 874,
+      "Week 12": 1059,
+      "Week 13": 1018,
+      "Week 14": 969,
+      "Week 15": 1084,
+      "Week 16": 1069,
+      "Week 17": 939,
+      "Week 18": 886
+    }
+  },
+  "category_percentage": {
+    "revenue_percent_by_category": {
+      "Accessories": 8.962400002592814,
+      "Bottoms": 16.019315485190134,
+      "Dresses": 31.536404838349537,
+      "Outerwear": 30.068940907183794,
+      "Tops": 13.412938766683727
+    }
+  }
+}

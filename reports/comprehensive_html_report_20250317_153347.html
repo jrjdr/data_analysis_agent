@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>综合数据分析报告</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            color: #2c3e50;
+            margin-top: 24px;
+            margin-bottom: 16px;
+        }
+        h1 { font-size: 2em; border-bottom: 1px solid #eaecef; padding-bottom: .3em; }
+        h2 { font-size: 1.5em; border-bottom: 1px solid #eaecef; padding-bottom: .3em; }
+        h3 { font-size: 1.25em; }
+        h4 { font-size: 1em; }
+        p, ul, ol, table { margin-bottom: 16px; }
+        code {
+            font-family: Consolas, Monaco, 'Andale Mono', monospace;
+            background-color: #f6f8fa;
+            padding: 0.2em 0.4em;
+            border-radius: 3px;
+        }
+        pre {
+            background-color: #f6f8fa;
+            border-radius: 3px;
+            padding: 16px;
+            overflow: auto;
+        }
+        pre code {
+            background-color: transparent;
+            padding: 0;
+        }
+        blockquote {
+            padding: 0 1em;
+            color: #6a737d;
+            border-left: 0.25em solid #dfe2e5;
+            margin: 0 0 16px 0;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        table th, table td {
+            border: 1px solid #dfe2e5;
+            padding: 6px 13px;
+        }
+        table tr:nth-child(2n) {
+            background-color: #f6f8fa;
+        }
+        img {
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+<h1>5G基站网络性能综合分析报告</h1>
+<br>
+<h2>1. 数据概览</h2>
+<br>
+<p>本次分析基于对5个基站的网络性能监控数据，共计7,200条记录。数据收集时间为2025年3月1日全天（00:00至23:59）。</p>
+<br>
+<h3>1.1 数据集基本信息</h3>
+<br>
+<table>
+<tr><th>项目</th><th>值</th></tr>
+<tr><td>记录总数</td><td>7,200</td></tr>
+<tr><td>时间跨度</td><td>2025-03-01 00:00:00 至 2025-03-01 23:59:00</td></tr>
+<tr><td>基站数量</td><td>5</td></tr>
+<tr><td>信号类型数量</td><td>15</td></tr>
+<tr><td>内存占用</td><td>3.06 MB</td></tr>
+</table>
+<br>
+<h3>1.2 基站分布情况</h3>
+<br>
+<table>
+<tr><th>基站ID</th><th>基站名称</th><th>记录数</th><th>占比</th></tr>
+<tr><td>BS001</td><td>城东-商业区基站</td><td>1,440</td><td>20.00%</td></tr>
+<tr><td>BS002</td><td>城西-住宅区基站</td><td>1,440</td><td>20.00%</td></tr>
+<tr><td>BS003</td><td>城北-工业园区基站</td><td>1,440</td><td>20.00%</td></tr>
+<tr><td>BS004</td><td>城南-大学城基站</td><td>1,440</td><td>20.00%</td></tr>
+<tr><td>BS005</td><td>市中心-商业区基站</td><td>1,440</td><td>20.00%</td></tr>
+</table>
+<br>
+<h3>1.3 信号类型分布</h3>
+<br>
+<table>
+<tr><th>信号类型</th><th>记录数</th><th>占比</th></tr>
+<tr><td>PAGING</td><td>523</td><td>7.26%</td></tr>
+<tr><td>ATTACH_REQUEST</td><td>502</td><td>6.97%</td></tr>
+<tr><td>HANDOVER_REQUEST</td><td>494</td><td>6.86%</td></tr>
+<tr><td>HANDOVER_COMPLETE</td><td>491</td><td>6.82%</td></tr>
+<tr><td>SERVICE_REQUEST</td><td>491</td><td>6.82%</td></tr>
+<tr><td>HANDOVER_COMMAND</td><td>486</td><td>6.75%</td></tr>
+<tr><td>DETACH_REQUEST</td><td>483</td><td>6.71%</td></tr>
+<tr><td>其他信号类型</td><td>3,730</td><td>51.81%</td></tr>
+</table>
+<br>
+<h3>1.4 状态分布</h3>
+<br>
+<table>
+<tr><th>状态</th><th>记录数</th><th>占比</th></tr>
+<tr><td>SUCCESS</td><td>6,125</td><td>85.07%</td></tr>
+<tr><td>FAILED</td><td>373</td><td>5.18%</td></tr>
+<tr><td>TIMEOUT</td><td>270</td><td>3.75%</td></tr>
+<tr><td>REJECTED</td><td>237</td><td>3.29%</td></tr>
+<tr><td>PENDING</td><td>195</td><td>2.71%</td></tr>
+</table>
+<br>
+<h2>2. 数据洞察</h2>
+<br>
+<h3>2.1 网络性能关键指标</h3>
+<br>
+<table>
+<tr><th>指标</th><th>最小值</th><th>最大值</th><th>平均值</th><th>中位数</th><th>标准差</th><th>主要分布区间</th></tr>
+<tr><td>成功率</td><td>50%</td><td>99%</td><td>86%</td><td>88%</td><td>11%</td><td>80%-100%（85.07%）</td></tr>
+<tr><td>信号强度 (dBm)</td><td>-119.99</td><td>-70.01</td><td>-95.03</td><td>-95.13</td><td>14.31</td><td>-100.0--90.0（20.74%）</td></tr>
+<tr><td>信号质量 (dB)</td><td>0.00</td><td>29.99</td><td>15.07</td><td>15.14</td><td>8.67</td><td>18.0-24.0（20.39%）</td></tr>
+<tr><td>下行吞吐量 (Mbps)</td><td>50.33</td><td>1,499.85</td><td>713.37</td><td>691.32</td><td>387.86</td><td>630.1-920.0（24.29%）</td></tr>
+<tr><td>上行吞吐量 (Mbps)</td><td>10.03</td><td>199.98</td><td>91.60</td><td>82.34</td><td>51.90</td><td>48.0-86.0（28.56%）</td></tr>
+<tr><td>延迟 (ms)</td><td>5.00</td><td>49.99</td><td>21.69</td><td>20.56</td><td>10.62</td><td>14.0-23.0（32.07%）</td></tr>
+<tr><td>抖动 (ms)</td><td>-5.00</td><td>5.00</td><td>-0.02</td><td>-0.06</td><td>2.89</td><td>-</td></tr>
+<tr><td>丢包率 (%)</td><td>0.00</td><td>5.00</td><td>2.51</td><td>2.52</td><td>1.43</td><td>0%-5%（100%）</td></tr>
+</table>
+<br>
+<h3>2.2 资源利用情况</h3>
+<br>
+<table>
+<tr><th>指标</th><th>最小值</th><th>最大值</th><th>平均值</th><th>中位数</th><th>标准差</th><th>主要分布区间</th></tr>
+<tr><td>资源块使用率 (%)</td><td>20.00</td><td>99.00</td><td>56.26</td><td>50.00</td><td>25.54</td><td>20%-40%（32.86%）</td></tr>
+<tr><td>CPU使用率 (%)</td><td>10.04</td><td>108.99</td><td>56.22</td><td>49.41</td><td>26.22</td><td>20%-40%（29.72%）</td></tr>
+<tr><td>内存使用率 (%)</td><td>5.04</td><td>113.70</td><td>56.24</td><td>50.12</td><td>26.87</td><td>40%-60%（27.42%）</td></tr>
+<tr><td>温度 (°C)</td><td>25.00</td><td>45.00</td><td>35.03</td><td>35.10</td><td>5.76</td><td>均匀分布（约20%）</td></tr>
+</table>
+<br>
+<h3>2.3 各基站性能对比</h3>
+<br>
+<table>
+<tr><th>基站ID</th><th>基站名称</th><th>平均成功率</th><th>平均信号强度 (dBm)</th><th>平均下行吞吐量 (Mbps)</th><th>平均上行吞吐量 (Mbps)</th><th>平均延迟 (ms)</th><th>平均丢包率 (%)</th></tr>
+<tr><td>BS001</td><td>城东-商业区基站</td><td>0.8536</td><td>-95.29</td><td>720.46</td><td>90.38</td><td>21.77</td><td>2.56</td></tr>
+<tr><td>BS002</td><td>城西-住宅区基站</td><td>0.8604</td><td>-94.77</td><td>714.92</td><td>92.50</td><td>21.74</td><td>2.50</td></tr>
+<tr><td>BS003</td><td>城北-工业园区基站</td><td>0.8558</td><td>-95.13</td><td>722.97</td><td>91.38</td><td>21.52</td><td>2.52</td></tr>
+<tr><td>BS004</td><td>城南-大学城基站</td><td>0.8609</td><td>-94.99</td><td>691.43</td><td>91.34</td><td>21.79</td><td>2.48</td></tr>
+<tr><td>BS005</td><td>市中心-商业区基站</td><td>0.8579</td><td>-94.99</td><td>717.08</td><td>92.43</td><td>21.61</td><td>2.50</td></tr>
+</table>
+<br>
+<h3>2.4 时间趋势分析</h3>
+<br>
+<h4>2.4.1 整体趋势</h4>
+<br>
+<table>
+<tr><th>指标</th><th>趋势方向</th><th>斜率</th><th>趋势解读</th></tr>
+<tr><td>成功率</td><td>上升</td><td>0.0000</td><td>连接成功率略有提升</td></tr>
+<tr><td>活跃用户</td><td>上升</td><td>0.0189</td><td>活跃用户数明显增长</td></tr>
+<tr><td>下行吞吐量</td><td>下降</td><td>-0.0225</td><td>下行吞吐量明显下降</td></tr>
+<tr><td>上行吞吐量</td><td>下降</td><td>-0.0046</td><td>上行吞吐量有所下降</td></tr>
+<tr><td>延迟</td><td>上升</td><td>0.0010</td><td>延迟略有增加</td></tr>
+<tr><td>资源块使用率</td><td>上升</td><td>0.0040</td><td>资源块使用率稳步增加</td></tr>
+<tr><td>CPU使用率</td><td>上升</td><td>0.0040</td><td>CPU使用率稳步增加</td></tr>
+<tr><td>内存使用率</td><td>上升</td><td>0.0040</td><td>内存使用率稳步增加</td></tr>
+</table>
+<br>
+<h4>2.4.2 日内变化模式</h4>
+<br>
+<table>
+<tr><th>指标</th><th>高峰时段</th><th>低谷时段</th><th>波动幅度解读</th></tr>
+<tr><td>成功率</td><td>20:00</td><td>01:00</td><td>晚间网络质量最佳，凌晨质量较差</td></tr>
+<tr><td>活跃用户</td><td>13:00</td><td>01:00</td><td>午间用户活跃度最高，凌晨最低</td></tr>
+<tr><td>呼叫尝试</td><td>19:00</td><td>16:00</td><td>晚间通话需求最高，下午较低</td></tr>
+<tr><td>下行吞吐量</td><td>04:00</td><td>09:00</td><td>凌晨下行速率最高，上午最低</td></tr>
+<tr><td>延迟</td><td>19:00</td><td>10:00</td><td>晚间延迟最高，上午最低</td></tr>
+<tr><td>资源块使用率</td><td>08:00</td><td>04:00</td><td>早晨资源占用最高，凌晨最低</td></tr>
+<tr><td>CPU使用率</td><td>12:00</td><td>10:00</td><td>中午CPU负载最高，上午最低</td></tr>
+</table>
+<br>
+<h2>3. 关键发现</h2>
+<br>
+<h3>3.1 网络性能分析</h3>
+<br>
+<h4>3.1.1 高成功率表现</h4>
+<br>
+<ul>
+<li>85.07%的记录显示状态为"SUCCESS"，平均成功率达到86%</li>
+<li>成功率在不同时段有明显波动，晚间20:00达到高峰，凌晨01:00降至最低</li>
+<li>网络延迟平均为21.69ms，85.27%的记录延迟低于32ms，表明网络响应速度良好</li>
+</ul>
+<br>
+<h4>3.1.2 吞吐量分析</h4>
+<br>
+<ul>
+<li>下行吞吐量平均值为713.37Mbps，但呈现明显下降趋势（斜率-0.0225）</li>
+<li>上行吞吐量平均值为91.60Mbps，也呈现下降趋势（斜率-0.0046）</li>
+<li>凌晨04:00下行吞吐量达到最高，而上午09:00降至最低</li>
+</ul>
+<br>
+<h4>3.1.3 基站性能差异</h4>
+<br>
+<table>
+<tr><th>基站ID</th><th>优势</th><th>劣势</th></tr>
+<tr><td>BS001 (城东-商业区)</td><td>下行吞吐量高于平均值</td><td>成功率略低，信号强度最弱，丢包率最高</td></tr>
+<tr><td>BS002 (城西-住宅区)</td><td>成功率较高，信号强度较好</td><td>无明显劣势</td></tr>
+<tr><td>BS003 (城北-工业园区)</td><td>下行吞吐量最高，延迟最低</td><td>成功率略低于平均值</td></tr>
+<tr><td>BS004 (城南-大学城)</td><td>成功率最高，丢包率最低</td><td>下行吞吐量最低</td></tr>
+<tr><td>BS005 (市中心-商业区)</td><td>上行吞吐量最高</td><td>设备资源利用率(CPU/内存)最高</td></tr>
+</table>
+<br>
+<h3>3.2 资源利用分析</h3>
+<br>
+<h4>3.2.1 资源使用分布</h4>
+<br>
+<ul>
+<li>资源块使用率平均为56.26%，分布在三个主要区间：20%-40%（32.86%）、40%-60%（32.19%）和80%-100%（31.74%）</li>
+<li>这表明基站资源使用存在波动，可能与不同时段的负载有关</li>
+<li>资源使用呈现明显的日内变化模式，早晨08:00资源占用最高，凌晨04:00最低</li>
+</ul>
+<br>
+<h4>3.2.2 系统负载情况</h4>
+<br>
+<ul>
+<li>CPU和内存使用率平均都在56%左右，均呈上升趋势（斜率0.0040）</li>
+<li>存在少量超负荷情况：3.67%的记录CPU使用率超过100%，5.72%的记录内存使用率超过100%</li>
+<li>中午12:00 CPU负载达到最高，与活跃用户高峰期（13:00）基本一致</li>
+</ul>
+<br>
+<h4>3.2.3 强相关性指标</h4>
+<br>
+<table>
+<tr><th>相关项目</th><th>相关系数</th><th>解读</th></tr>
+<tr><td>资源块使用率 vs CPU使用率</td><td>0.9756</td><td>资源使用与处理能力高度相关</td></tr>
+<tr><td>资源块使用率 vs 内存使用率</td><td>0.9477</td><td>网络负载与内存消耗密切相关</td></tr>
+<tr><td>CPU使用率 vs 内存使用率</td><td>0.9244</td><td>处理能力与内存使用协同变化</td></tr>
+<tr><td>呼叫尝试 vs 资源块使用率</td><td>0.8366</td><td>通话需求直接影响资源消耗</td></tr>
+<tr><td>活跃用户 vs 资源块使用率</td><td>0.7963</td><td>用户数量与资源需求正相关</td></tr>
+</table>
+<br>
+<h3>3.3 用户行为模式</h3>
+<br>
+<h4>3.3.1 用户活跃度分析</h4>
+<br>
+<ul>
+<li>活跃用户数呈明显上升趋势（斜率0.0189），表明用户基数正在增长</li>
+<li>用户活跃高峰在中午（13:00），凌晨（01:00）降至最低</li>
+<li>呼叫尝试高峰在晚间（19:00），下午（16:00）较低</li>
+</ul>
+<br>
+<h4>3.3.2 信号类型分析</h4>
+<br>
+<ul>
+<li>PAGING信号占比最高（7.26%），表明寻呼操作频繁</li>
+<li>ATTACH_REQUEST（6.97%）和HANDOVER相关操作（HANDOVER_REQUEST 6.86%，HANDOVER_COMPLETE 6.82%）也较为常见</li>
+<li>不同信号类型的成功率存在差异：</li>
+<li>DETACH_ACCEPT：86.52%（最高成功率）</li>
+<li>RRC_CONNECTION_SETUP_COMPLETE：86.21%（第二高）</li>
+<li>HANDOVER_COMMAND：84.92%（最低成功率）</li>
+<li>ATTACH_REQUEST：85.07%（第二低）</li>
+</ul>
+<br>
+<h3>3.4 网络异常分析</h3>
+<br>
+<ul>
+<li>分析发现大量成功率和失败率的异常值，共128个异常记录</li>
+<li>异常值全天分布，无明显时间集中性，成功率异常范围在0.50-0.54之间</li>
+<li>网络性能与负载存在明显关联：</li>
+<li>活跃用户增加，吞吐量下降，表明网络资源竞争加剧</li>
+<li>资源块使用率增加，延迟增加，表明网络负载影响处理速度</li>
+<li>CPU和内存使用率增加，网络性能下降，表明设备资源压力影响信号处理能力</li>
+</ul>
+<br>
+<h2>4. 总结与建议</h2>
+<br>
+<h3>4.1 主要结论</h3>
+<br>
+<ol>
+<li>**网络性能总体良好**：85.07%的操作成功完成，平均成功率达86%，平均延迟仅为21.69ms，丢包率控制在5%以内，符合5G网络标准要求。</li>
+</ol>
+<br>
+<ol>
+<li>**用户增长与网络压力**：数据显示活跃用户数呈明显上升趋势（斜率0.0189），但网络吞吐量同时下降（下行-0.0225，上行-0.0046），表明网络负载增加正对性能产生压力。</li>
+</ol>
+<br>
+<ol>
+<li>**资源利用存在优化空间**：</li>
+</ol>
+<ul>
+<li>资源块使用率分布出现三极化现象（低、中、高负载各占约三分之一）</li>
+<li>存在少量CPU和内存过载情况，需要关注系统稳定性</li>
+<li>约20%的记录温度较高（41℃-45℃），建议加强散热管理</li>
+</ul>
+<br>
+<ol>
+<li>**明显的时间模式**：网络性能存在明显的日内波动模式，用户活跃高峰在中午（13:00），呼叫高峰在晚间（19:00），而网络质量（成功率）在晚间（20:00）达到最佳。</li>
+</ol>
+<br>
+<ol>
+<li>**基站性能差异**：</li>
+</ol>
+<ul>
+<li>城南-大学城基站(BS004)成功率最高，但下行吞吐量最低，可能与学生用户使用特点相关</li>
+<li>城北-工业园区基站(BS003)下行吞吐量最高，延迟最低，适合工业应用需求</li>
+<li>城东-商业区基站(BS001)信号强度和丢包率表现稍弱，建议优化</li>
+</ul>
+<br>
+<ol>
+<li>**异常情况**：成功率和失败率出现多达128个异常值，但其他指标未显示异常，这可能表明连接建立过程中存在间歇性问题。</li>
+</ol>
+<br>
+<h3>4.2 建议措施</h3>
+<br>
+<ol>
+<li>**容量规划与扩展**：</li>
+</ol>
+<ul>
+<li>考虑到用户数量持续增长而吞吐量下降的趋势，建议评估网络容量扩展需求</li>
+<li>特别关注中午（13:00）和晚间（19:00-20:00）的高峰期容量需求</li>
+<li>针对城南-大学城基站，考虑提升下行吞吐量容量</li>
+</ul>
+<br>
+<ol>
+<li>**资源优化策略**：</li>
+</ol>
+<ul>
+<li>实施动态资源分配策略，在用户高峰期增加资源配置，低谷期可适当减少以节约能源</li>
+<li>针对资源使用三极化现象，优化资源调度算法</li>
+<li>监控并解决CPU和内存过载问题，特别是市中心-商业区基站</li>
+</ul>
+<br>
+<ol>
+<li>**信号处理优化**：</li>
+</ol>
+<ul>
+<li>优化HANDOVER_COMMAND和ATTACH_REQUEST信号处理流程，提高成功率</li>
+<li>针对城东商业区基站进行信号覆盖优化，降低丢包率</li>
+<li>深入调查成功率异常值的原因，可能需要检查信令流程、认证系统或基站硬件状态</li>
+</ul>
+<br>
+<ol>
+<li>**负载均衡与监控**：</li>
+</ol>
+<ul>
+<li>实施跨基站的负载均衡机制，缓解单一基站在高峰期的压力</li>
+<li>建立更精细的性能监控机制，特别关注吞吐量下降的原因</li>
+<li>加强对设备温度的监控，确保设备在安全温度范围内运行</li>
+</ul>
+<br>
+<ol>
+<li>**用户体验优化**：</li>
+</ol>
+<ul>
+<li>根据用户活动模式优化资源分配，提高利用效率</li>
+<li>针对不同基站的用户群体特点（如大学城、商业区、工业园区），调整网络参数配置</li>
+<li>在用户高峰期提前增加资源配置，避免性能下降</li>
+</ul>
+<br>
+<h3>4.3 后续分析方向</h3>
+<br>
+<ol>
+<li>进行更长时间跨度的趋势分析，评估网络性能的长期变化</li>
+<li>深入研究用户行为模式与网络性能的关系，建立更精确的预测模型</li>
+<li>开展故障预测模型研究，基于当前趋势提前预警潜在问题</li>
+<li>分析不同信号类型的处理流程，找出可优化环节</li>
+<li>评估网络升级或扩容的具体需求和投资回报</li>
+</ol>
+<br>
+<p>本报告提供了5G基站网络性能的全面分析，可为网络优化和资源规划提供数据支持，确保网络在用户增长的情况下继续提供高质量的服务。</p>
+
+</body>
+</html>

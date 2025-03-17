@@ -1,0 +1,2 @@
+分析数据时出错: 'DataFrame' object has no attribute 'append'
+分析失败，未生成结果

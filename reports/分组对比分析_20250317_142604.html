@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>分组对比分析分析报告</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            color: #2c3e50;
+            margin-top: 24px;
+            margin-bottom: 16px;
+        }
+        h1 { font-size: 2em; border-bottom: 1px solid #eaecef; padding-bottom: .3em; }
+        h2 { font-size: 1.5em; border-bottom: 1px solid #eaecef; padding-bottom: .3em; }
+        h3 { font-size: 1.25em; }
+        h4 { font-size: 1em; }
+        p, ul, ol, table { margin-bottom: 16px; }
+        code {
+            font-family: Consolas, Monaco, 'Andale Mono', monospace;
+            background-color: #f6f8fa;
+            padding: 0.2em 0.4em;
+            border-radius: 3px;
+        }
+        pre {
+            background-color: #f6f8fa;
+            border-radius: 3px;
+            padding: 16px;
+            overflow: auto;
+        }
+        pre code {
+            background-color: transparent;
+            padding: 0;
+        }
+        blockquote {
+            padding: 0 1em;
+            color: #6a737d;
+            border-left: 0.25em solid #dfe2e5;
+            margin: 0 0 16px 0;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        table th, table td {
+            border: 1px solid #dfe2e5;
+            padding: 6px 13px;
+        }
+        table tr:nth-child(2n) {
+            background-color: #f6f8fa;
+        }
+        img {
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+<h1>分组对比分析单元 分析报告</h1>
+<br>
+<h2>分析结论</h2>
+<br>
+<p>成功加载数据，共 14400 行，36 列</p>
+<p>分析结果已保存到: pngs/group_comparison_results.txt</p>
+<br>
+<br>
+<h2>详细分析</h2>
+<br>
+<p>=== 服务器性能数据分析报告 ===</p>
+<p>分析时间: 2025-03-17 14:26:04</p>
+<p>数据文件: temp_csv/excel_data_20250317142408.csv</p>
+<p>数据范围: 2025-02-28 00:00:00 至 2025-02-28 23:59:00</p>
+<p>数据行数: 14400</p>
+<p>服务器数量: 10</p>
+<br>
+<p>==================================================</p>
+<br>
+<p>=== 数据列分析 ===</p>
+<br>
+<p>分类列 (4): server_id, server_name, resource_type, event_type</p>
+<br>
+<br>
+<p>server_id 分布:</p>
+<ul>
+<li>SRV001: 1440 (10.00%)</li>
+<li>SRV002: 1440 (10.00%)</li>
+<li>SRV003: 1440 (10.00%)</li>
+<li>SRV004: 1440 (10.00%)</li>
+<li>SRV005: 1440 (10.00%)</li>
+<li>... 其他 5 个值</li>
+</ul>
+<br>
+<p>server_name 分布:</p>
+<ul>
+<li>主应用服务器: 1440 (10.00%)</li>
+<li>备份应用服务器: 1440 (10.00%)</li>
+<li>数据处理服务器: 1440 (10.00%)</li>
+<li>缓存服务器: 1440 (10.00%)</li>
+<li>负载均衡服务器: 1440 (10.00%)</li>
+<li>... 其他 5 个值</li>
+</ul>
+<br>
+<p>resource_type 分布:</p>
+<ul>
+<li>server: 7200 (50.00%)</li>
+<li>database: 7200 (50.00%)</li>
+</ul>
+<br>
+<p>event_type 分布:</p>
+<ul>
+<li>normal: 14103 (97.94%)</li>
+<li>network_issue: 122 (0.85%)</li>
+<li>high_load: 92 (0.64%)</li>
+<li>db_slowdown: 62 (0.43%)</li>
+<li>memory_leak: 21 (0.15%)</li>
+</ul>
+<br>
+<br>
+<p>数值列 (31): cpu_usage_percent, memory_usage_percent, disk_usage_percent, disk_io_percent, disk_read_mbps, disk_write_mbps, network_traffic_percent, network_in_mbps, network_out_mbps, load_avg_1min...</p>
+<br>
+<p>cpu_usage_percent 统计:</p>
+<ul>
+<li>均值: 37.58</li>
+<li>中位数: 31.62</li>
+<li>标准差: 20.65</li>
+<li>最小值: 5.58</li>
+<li>最大值: 100.00</li>
+<li>缺失值: 7200 (50.00%)</li>
+</ul>
+<br>
+<p>memory_usage_percent 统计:</p>
+<ul>
+<li>均值: 53.57</li>
+<li>中位数: 51.70</li>
+<li>标准差: 15.33</li>
+<li>最小值: 27.41</li>
+<li>最大值: 100.00</li>
+<li>缺失值: 7200 (50.00%)</li>
+</ul>
+<br>
+<p>disk_usage_percent 统计:</p>
+<ul>
+<li>均值: 52.84</li>
+<li>中位数: 50.00</li>
+<li>标准差: 5.81</li>
+<li>最小值: 50.00</li>
+<li>最大值: 89.16</li>
+<li>缺失值: 7200 (50.00%)</li>
+</ul>
+<br>
+<p>disk_io_percent 统计:</p>
+<ul>
+<li>均值: 29.27</li>
+<li>中位数: 23.18</li>
+<li>标准差: 19.41</li>
+<li>最小值: 0.48</li>
+<li>最大值: 93.00</li>
+<li>缺失值: 7200 (50.00%)</li>
+</ul>
+<br>
+<p>disk_read_mbps 统计:</p>
+<ul>
+<li>均值: 37.04</li>
+<li>中位数: 28.14</li>
+<li>标准差: 29.03</li>
+<li>最小值: 0.26</li>
+<li>最大值: 180.22</li>
+<li>缺失值: 7200 (50.00%)</li>
+</ul>
+<br>
+<p>disk_write_mbps 统计:</p>
+<ul>
+<li>均值: 26.24</li>
+<li>中位数: 19.72</li>
+<li>标准差: 21.20</li>
+<li>最小值: 0.18</li>
+<li>最大值: 137.12</li>
+<li>缺失值: 7200 (50.00%)</li>
+</ul>
+<br>
+<p>network_traffic_percent 统计:</p>
+<ul>
+<li>均值: 38.25</li>
+<li>中位数: 32.30</li>
+<li>标准差: 21.58</li>
+<li>最小值: 5.22</li>
+<li>最大值: 100.00</li>
+<li>缺失值: 7200 (50.00%)</li>
+</ul>
+<br>
+<p>network_in_mbps 统计:</p>
+<ul>
+<li>均值: 66.60</li>
+<li>中位数: 52.32</li>
+<li>标准差: 49.50</li>
+<li>最小值: 3.66</li>
+<li>最大值: 298.57</li>
+<li>缺失值: 7200 (50.00%)</li>
+</ul>
+<br>
+<p>network_out_mbps 统计:</p>
+<ul>
+<li>均值: 44.22</li>
+<li>中位数: 34.76</li>
+<li>标准差: 32.72</li>
+<li>最小值: 2.02</li>
+<li>最大值: 194.92</li>
+<li>缺失值: 7200 (50.00%)</li>
+</ul>
+<br>
+<p>load_avg_1min 统计:</p>
+<ul>
+<li>均值: 1.50</li>
+<li>中位数: 1.26</li>
+<li>标准差: 0.83</li>
+<li>最小值: 0.22</li>
+<li>最大值: 4.00</li>
+<li>缺失值: 7200 (50.00%)</li>
+</ul>
+<br>
+<br>
+<p>=== 分组对比分析 ===</p>
+<br>
+<ol>
+<li>按服务器名称分组分析</li>
+</ol>
+<br>
+<p>服务器性能指标平均值:</p>
+<p>                    cpu_usage_percent  memory_usage_percent  disk_usage_percent  network_traffic_percent  temperature_celsius</p>
+<p>server_name                                                                                                                  </p>
+<p>Elasticsearch搜索数据库                NaN                   NaN                 NaN                      NaN                  NaN</p>
+<p>MongoDB文档数据库                      NaN                   NaN                 NaN                      NaN                  NaN</p>
+<p>MySQL主数据库                         NaN                   NaN                 NaN                      NaN                  NaN</p>
+<p>MySQL从数据库                         NaN                   NaN                 NaN                      NaN                  NaN</p>
+<p>Redis缓存数据库                        NaN                   NaN                 NaN                      NaN                  NaN</p>
+<p>主应用服务器                          38.98                 54.23               53.11                    38.63                50.23</p>
+<p>备份应用服务器                         37.47                 53.61               52.70                    39.86                50.09</p>
+<p>数据处理服务器                         36.67                 53.59               52.98                    36.33                50.13</p>
+<p>缓存服务器                           36.74                 52.64               52.64                    36.80                50.00</p>
+<p>负载均衡服务器                         38.05                 53.77               52.78                    39.65                50.47</p>
+<br>
+<br>
+<ol>
+<li>按资源类型分组分析</li>
+</ol>
+<br>
+<p>资源类型性能指标平均值:</p>
+<p>               cpu_usage_percent  memory_usage_percent  disk_usage_percent  network_traffic_percent  temperature_celsius</p>
+<p>resource_type                                                                                                           </p>
+<p>database                     NaN                   NaN                 NaN                      NaN                  NaN</p>
+<p>server                     37.58                 53.57               52.84                    38.25                50.18</p>
+<br>
+<br>
+<ol>
+<li>按事件类型分组分析</li>
+</ol>
+<br>
+<p>事件类型分布:</p>
+<ul>
+<li>normal: 14103 (97.94%)</li>
+<li>network_issue: 122 (0.85%)</li>
+<li>high_load: 92 (0.64%)</li>
+<li>db_slowdown: 62 (0.43%)</li>
+<li>memory_leak: 21 (0.15%)</li>
+</ul>
+<br>
+<br>
+<ol>
+<li>高负载分析</li>
+</ol>
+<br>
+<p>高CPU使用率 (>80%) 事件数: 138</p>
+<ul>
+<li>服务器分布: {'主应用服务器': 61, '负载均衡服务器': 25, '备份应用服务器': 19, '数据处理服务器': 18, '缓存服务器': 15}</li>
+</ul>
+<br>
+<p>高内存使用率 (>80%) 事件数: 468</p>
+<ul>
+<li>服务器分布: {'主应用服务器': 122, '数据处理服务器': 108, '缓存服务器': 85, '负载均衡服务器': 79, '备份应用服务器': 74}</li>
+</ul>
+<br>
+<br>
+
+</body>
+</html>

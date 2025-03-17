@@ -1,0 +1,5 @@
+Successfully read CSV file with 7200 rows and 20 columns.
+Created chart: pngs\chart_bar_success_rate_by_station.png
+Created chart: pngs\chart_bar_signal_type_distribution.png
+Created chart: pngs\chart_bar_resource_usage_by_station.png
+Analysis complete. Results saved to analysis_results_20250317120841.json

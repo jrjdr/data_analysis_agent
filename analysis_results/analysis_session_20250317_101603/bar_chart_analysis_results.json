@@ -1,0 +1,308 @@
+{
+  "station_success_rate": {
+    "title": "各基站平均成功率",
+    "x_label": "基站名称",
+    "y_label": "平均成功率",
+    "data": [
+      {
+        "base_station_name": "城南-大学城基站",
+        "success_rate": 0.8609196077835374
+      },
+      {
+        "base_station_name": "城西-住宅区基站",
+        "success_rate": 0.8604209809428143
+      },
+      {
+        "base_station_name": "市中心-商业区基站",
+        "success_rate": 0.8578921554431497
+      },
+      {
+        "base_station_name": "城北-工业园区基站",
+        "success_rate": 0.8558074511442235
+      },
+      {
+        "base_station_name": "城东-商业区基站",
+        "success_rate": 0.8535921561365585
+      }
+    ]
+  },
+  "signal_type_counts": {
+    "title": "不同信号类型数量统计",
+    "x_label": "信号类型",
+    "y_label": "数量",
+    "data": [
+      {
+        "signal_type": "PAGING",
+        "count": 523
+      },
+      {
+        "signal_type": "ATTACH_REQUEST",
+        "count": 502
+      },
+      {
+        "signal_type": "HANDOVER_REQUEST",
+        "count": 494
+      },
+      {
+        "signal_type": "HANDOVER_COMPLETE",
+        "count": 491
+      },
+      {
+        "signal_type": "SERVICE_REQUEST",
+        "count": 491
+      },
+      {
+        "signal_type": "HANDOVER_COMMAND",
+        "count": 486
+      },
+      {
+        "signal_type": "DETACH_REQUEST",
+        "count": 483
+      },
+      {
+        "signal_type": "RRC_CONNECTION_SETUP_COMPLETE",
+        "count": 477
+      },
+      {
+        "signal_type": "ATTACH_COMPLETE",
+        "count": 477
+      },
+      {
+        "signal_type": "SERVICE_ACCEPT",
+        "count": 475
+      },
+      {
+        "signal_type": "RRC_CONNECTION_REQUEST",
+        "count": 471
+      },
+      {
+        "signal_type": "DETACH_ACCEPT",
+        "count": 465
+      },
+      {
+        "signal_type": "RRC_CONNECTION_RELEASE",
+        "count": 464
+      },
+      {
+        "signal_type": "RRC_CONNECTION_SETUP",
+        "count": 461
+      },
+      {
+        "signal_type": "ATTACH_ACCEPT",
+        "count": 440
+      }
+    ]
+  },
+  "status_counts": {
+    "title": "不同状态数量统计",
+    "x_label": "状态",
+    "y_label": "数量",
+    "data": [
+      {
+        "status": "SUCCESS",
+        "count": 6125
+      },
+      {
+        "status": "FAILED",
+        "count": 373
+      },
+      {
+        "status": "TIMEOUT",
+        "count": 270
+      },
+      {
+        "status": "REJECTED",
+        "count": 237
+      },
+      {
+        "status": "PENDING",
+        "count": 195
+      }
+    ]
+  },
+  "signal_type_success_rate": {
+    "title": "不同信号类型的平均成功率",
+    "x_label": "信号类型",
+    "y_label": "平均成功率",
+    "data": [
+      {
+        "signal_type": "DETACH_ACCEPT",
+        "success_rate": 0.8651539916753879
+      },
+      {
+        "signal_type": "ATTACH_COMPLETE",
+        "success_rate": 0.8633351100405773
+      },
+      {
+        "signal_type": "RRC_CONNECTION_SETUP_COMPLETE",
+        "success_rate": 0.8620953639854173
+      },
+      {
+        "signal_type": "DETACH_REQUEST",
+        "success_rate": 0.8615233898736719
+      },
+      {
+        "signal_type": "PAGING",
+        "success_rate": 0.8610407933559258
+      },
+      {
+        "signal_type": "RRC_CONNECTION_RELEASE",
+        "success_rate": 0.8606304559608524
+      },
+      {
+        "signal_type": "HANDOVER_COMPLETE",
+        "success_rate": 0.8583896470205641
+      },
+      {
+        "signal_type": "SERVICE_ACCEPT",
+        "success_rate": 0.8581027705459808
+      },
+      {
+        "signal_type": "RRC_CONNECTION_SETUP",
+        "success_rate": 0.8575198558237118
+      },
+      {
+        "signal_type": "SERVICE_REQUEST",
+        "success_rate": 0.8553959066945382
+      },
+      {
+        "signal_type": "RRC_CONNECTION_REQUEST",
+        "success_rate": 0.8552075945879822
+      },
+      {
+        "signal_type": "HANDOVER_REQUEST",
+        "success_rate": 0.8545829562099034
+      },
+      {
+        "signal_type": "ATTACH_ACCEPT",
+        "success_rate": 0.8531971863523864
+      },
+      {
+        "signal_type": "ATTACH_REQUEST",
+        "success_rate": 0.8506781070084614
+      },
+      {
+        "signal_type": "HANDOVER_COMMAND",
+        "success_rate": 0.8492445977342965
+      }
+    ]
+  },
+  "station_resource_usage": {
+    "title": "各基站平均资源块使用率",
+    "x_label": "基站名称",
+    "y_label": "平均资源块使用率(%)",
+    "data": [
+      {
+        "base_station_name": "市中心-商业区基站",
+        "resource_block_usage_percent": 56.486805555555556
+      },
+      {
+        "base_station_name": "城东-商业区基站",
+        "resource_block_usage_percent": 56.47222222222222
+      },
+      {
+        "base_station_name": "城南-大学城基站",
+        "resource_block_usage_percent": 56.14652777777778
+      },
+      {
+        "base_station_name": "城北-工业园区基站",
+        "resource_block_usage_percent": 56.09722222222222
+      },
+      {
+        "base_station_name": "城西-住宅区基站",
+        "resource_block_usage_percent": 56.074305555555554
+      }
+    ]
+  },
+  "station_downlink": {
+    "title": "各基站平均下行吞吐量",
+    "x_label": "基站名称",
+    "y_label": "平均下行吞吐量(Mbps)",
+    "data": [
+      {
+        "base_station_name": "城北-工业园区基站",
+        "downlink_throughput_mbps": 722.9670828284777
+      },
+      {
+        "base_station_name": "城东-商业区基站",
+        "downlink_throughput_mbps": 720.4582096789392
+      },
+      {
+        "base_station_name": "市中心-商业区基站",
+        "downlink_throughput_mbps": 717.0846061611559
+      },
+      {
+        "base_station_name": "城西-住宅区基站",
+        "downlink_throughput_mbps": 714.9190395580546
+      },
+      {
+        "base_station_name": "城南-大学城基站",
+        "downlink_throughput_mbps": 691.4348715396022
+      }
+    ]
+  },
+  "station_latency": {
+    "title": "各基站平均延迟",
+    "x_label": "基站名称",
+    "y_label": "平均延迟(ms)",
+    "data": [
+      {
+        "base_station_name": "城北-工业园区基站",
+        "latency_ms": 21.520775330903845
+      },
+      {
+        "base_station_name": "市中心-商业区基站",
+        "latency_ms": 21.613721566586598
+      },
+      {
+        "base_station_name": "城西-住宅区基站",
+        "latency_ms": 21.7422932108869
+      },
+      {
+        "base_station_name": "城东-商业区基站",
+        "latency_ms": 21.76536511042189
+      },
+      {
+        "base_station_name": "城南-大学城基站",
+        "latency_ms": 21.793666307008674
+      }
+    ]
+  },
+  "station_hardware": {
+    "title": "各基站硬件状态",
+    "x_label": "基站名称",
+    "y_label": "使用率/温度",
+    "data": [
+      {
+        "base_station_name": "城东-商业区基站",
+        "cpu_usage_percent": 56.544325467004356,
+        "memory_usage_percent": 55.98380333891028,
+        "temperature_celsius": 35.319297416512704
+      },
+      {
+        "base_station_name": "城北-工业园区基站",
+        "cpu_usage_percent": 55.941043051199365,
+        "memory_usage_percent": 56.30419844147245,
+        "temperature_celsius": 35.13436774964472
+      },
+      {
+        "base_station_name": "城南-大学城基站",
+        "cpu_usage_percent": 56.208771450980215,
+        "memory_usage_percent": 56.15352635382063,
+        "temperature_celsius": 35.08865504252556
+      },
+      {
+        "base_station_name": "城西-住宅区基站",
+        "cpu_usage_percent": 55.88127014202408,
+        "memory_usage_percent": 56.16257539229006,
+        "temperature_celsius": 34.66892769336189
+      },
+      {
+        "base_station_name": "市中心-商业区基站",
+        "cpu_usage_percent": 56.546427520032175,
+        "memory_usage_percent": 56.59622143010734,
+        "temperature_celsius": 34.95969827332501
+      }
+    ]
+  }
+}

@@ -1,0 +1,2 @@
+成功加载CSV文件，共2000行数据
+分析结果已保存到: pngs/time_trend_results.txt

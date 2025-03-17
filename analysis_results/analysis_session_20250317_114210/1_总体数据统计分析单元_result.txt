@@ -1,0 +1,2 @@
+分析完成，结果已保存到 analysis_results.json
+图表已保存到: pngs/chart_stats_signal_success.png 和 pngs/chart_stats_time_performance.png

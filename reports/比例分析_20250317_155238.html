@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>比例分析分析报告</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            color: #2c3e50;
+            margin-top: 24px;
+            margin-bottom: 16px;
+        }
+        h1 { font-size: 2em; border-bottom: 1px solid #eaecef; padding-bottom: .3em; }
+        h2 { font-size: 1.5em; border-bottom: 1px solid #eaecef; padding-bottom: .3em; }
+        h3 { font-size: 1.25em; }
+        h4 { font-size: 1em; }
+        p, ul, ol, table { margin-bottom: 16px; }
+        code {
+            font-family: Consolas, Monaco, 'Andale Mono', monospace;
+            background-color: #f6f8fa;
+            padding: 0.2em 0.4em;
+            border-radius: 3px;
+        }
+        pre {
+            background-color: #f6f8fa;
+            border-radius: 3px;
+            padding: 16px;
+            overflow: auto;
+        }
+        pre code {
+            background-color: transparent;
+            padding: 0;
+        }
+        blockquote {
+            padding: 0 1em;
+            color: #6a737d;
+            border-left: 0.25em solid #dfe2e5;
+            margin: 0 0 16px 0;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        table th, table td {
+            border: 1px solid #dfe2e5;
+            padding: 6px 13px;
+        }
+        table tr:nth-child(2n) {
+            background-color: #f6f8fa;
+        }
+        img {
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+<h1>客户投诉数据分析报告</h1>
+<br>
+<h2>1. 数据概览</h2>
+<br>
+<p>本次分析基于2000条客户投诉记录，涵盖了多个维度的数据，包括地区分布、投诉类型、服务类型、优先级、处理状态以及客户满意度评分。</p>
+<br>
+<h3>数据完整性概览</h3>
+<br>
+<table>
+<tr><th>分析维度</th><th>有效数据量</th><th>缺失数据量</th><th>数据完整率</th></tr>
+<tr><td>Region (地区)</td><td>2000</td><td>0</td><td>100%</td></tr>
+<tr><td>Complaint_Type (投诉类型)</td><td>2000</td><td>0</td><td>100%</td></tr>
+<tr><td>Service_Type (服务类型)</td><td>2000</td><td>0</td><td>100%</td></tr>
+<tr><td>Priority (优先级)</td><td>2000</td><td>0</td><td>100%</td></tr>
+<tr><td>Status (状态)</td><td>2000</td><td>0</td><td>100%</td></tr>
+<tr><td>Customer_Satisfaction (客户满意度)</td><td>1702</td><td>298</td><td>85.1%</td></tr>
+</table>
+<br>
+<h2>2. 数据洞察</h2>
+<br>
+<h3>地区分布分析</h3>
+<br>
+<p>各地区投诉数量分布相对均衡，北部地区略高于其他地区。</p>
+<br>
+<table>
+<tr><th>地区</th><th>投诉数量</th><th>占比</th></tr>
+<tr><td>North (北部)</td><td>417</td><td>20.85%</td></tr>
+<tr><td>Central (中部)</td><td>405</td><td>20.25%</td></tr>
+<tr><td>South (南部)</td><td>403</td><td>20.15%</td></tr>
+<tr><td>West (西部)</td><td>396</td><td>19.80%</td></tr>
+<tr><td>East (东部)</td><td>379</td><td>18.95%</td></tr>
+</table>
+<br>
+<h3>投诉类型分析</h3>
+<br>
+<p>七种主要投诉类型的分布相对均衡，其中通话掉线问题略高。</p>
+<br>
+<table>
+<tr><th>投诉类型</th><th>投诉数量</th><th>占比</th></tr>
+<tr><td>Call Drop (通话掉线)</td><td>296</td><td>14.80%</td></tr>
+<tr><td>SMS Failure (短信失败)</td><td>289</td><td>14.45%</td></tr>
+<tr><td>Service Outage (服务中断)</td><td>289</td><td>14.45%</td></tr>
+<tr><td>Poor Voice Quality (语音质量差)</td><td>288</td><td>14.40%</td></tr>
+<tr><td>No Signal (无信号)</td><td>280</td><td>14.00%</td></tr>
+<tr><td>Slow Internet (网速慢)</td><td>280</td><td>14.00%</td></tr>
+<tr><td>Billing Issue (账单问题)</td><td>278</td><td>13.90%</td></tr>
+</table>
+<br>
+<h3>服务类型分析</h3>
+<br>
+<p>四种服务类型的投诉分布相对均衡。</p>
+<br>
+<table>
+<tr><th>服务类型</th><th>投诉数量</th><th>占比</th></tr>
+<tr><td>Mobile (移动服务)</td><td>508</td><td>25.40%</td></tr>
+<tr><td>Broadband (宽带服务)</td><td>508</td><td>25.40%</td></tr>
+<tr><td>Fixed Line (固定电话)</td><td>494</td><td>24.70%</td></tr>
+<tr><td>TV (电视服务)</td><td>490</td><td>24.50%</td></tr>
+</table>
+<br>
+<h3>优先级分析</h3>
+<br>
+<p>投诉优先级分布相对均衡，但关键优先级的投诉略高。</p>
+<br>
+<table>
+<tr><th>优先级</th><th>投诉数量</th><th>占比</th></tr>
+<tr><td>Critical (关键)</td><td>526</td><td>26.30%</td></tr>
+<tr><td>Medium (中等)</td><td>500</td><td>25.00%</td></tr>
+<tr><td>Low (低)</td><td>495</td><td>24.75%</td></tr>
+<tr><td>High (高)</td><td>479</td><td>23.95%</td></tr>
+</table>
+<br>
+<h3>处理状态分析</h3>
+<br>
+<p>大多数投诉已经关闭，少部分仍在处理中。</p>
+<br>
+<table>
+<tr><th>状态</th><th>投诉数量</th><th>占比</th></tr>
+<tr><td>Closed (已关闭)</td><td>1702</td><td>85.10%</td></tr>
+<tr><td>In Progress (处理中)</td><td>111</td><td>5.55%</td></tr>
+<tr><td>Resolved (已解决)</td><td>99</td><td>4.95%</td></tr>
+<tr><td>Open (开放)</td><td>88</td><td>4.40%</td></tr>
+</table>
+<br>
+<h3>客户满意度分析</h3>
+<br>
+<p>在已关闭的投诉中，客户满意度评分分布相对均衡。</p>
+<br>
+<table>
+<tr><th>满意度评分</th><th>评分数量</th><th>占比</th></tr>
+<tr><td>3.0</td><td>360</td><td>21.15%</td></tr>
+<tr><td>4.0</td><td>344</td><td>20.21%</td></tr>
+<tr><td>5.0</td><td>340</td><td>19.98%</td></tr>
+<tr><td>1.0</td><td>339</td><td>19.92%</td></tr>
+<tr><td>2.0</td><td>319</td><td>18.74%</td></tr>
+</table>
+<br>
+<h2>3. 关键发现</h2>
+<br>
+<h3>投诉处理效率</h3>
+<br>
+<table>
+<tr><th>指标</th><th>数值</th><th>分析</th></tr>
+<tr><td>已处理投诉比例</td><td>90.05% (1801/2000)</td><td>包括已关闭和已解决的投诉，表明整体处理效率较高</td></tr>
+<tr><td>未处理投诉比例</td><td>9.95% (199/2000)</td><td>包括开放和处理中的投诉，需要进一步跟进</td></tr>
+<tr><td>关键优先级投诉占比</td><td>26.30%</td><td>超过四分之一的投诉被标记为关键优先级，需要特别关注</td></tr>
+</table>
+<br>
+<h3>客户满意度分布</h3>
+<br>
+<table>
+<tr><th>指标</th><th>数值</th><th>分析</th></tr>
+<tr><td>高满意度比例 (4-5分)</td><td>40.19% (684/1702)</td><td>约40%的已关闭投诉获得了较高的客户满意度评分</td></tr>
+<tr><td>中等满意度比例 (3分)</td><td>21.15% (360/1702)</td><td>约五分之一的客户给出了中等评价</td></tr>
+<tr><td>低满意度比例 (1-2分)</td><td>38.66% (658/1702)</td><td>接近40%的客户表示不满意，需要改进</td></tr>
+<tr><td>满意度缺失比例</td><td>14.9% (298/2000)</td><td>近15%的投诉没有记录客户满意度，可能影响分析准确性</td></tr>
+</table>
+<br>
+<h3>投诉类型与服务类型关联</h3>
+<br>
+<p>虽然各类型分布相对均衡，但通信相关问题（通话掉线、短信失败、服务中断、语音质量差、无信号）占总投诉的72.1%，而账单问题仅占13.9%，表明技术问题是主要投诉来源。</p>
+<br>
+<table>
+<tr><th>服务类型</th><th>投诉占比</th><th>潜在关注点</th></tr>
+<tr><td>移动和宽带服务</td><td>50.8%</td><td>这两类服务投诉占比最高，可能需要优先改进</td></tr>
+<tr><td>固定电话和电视服务</td><td>49.2%</td><td>虽然占比略低，但差距不大，同样需要关注</td></tr>
+</table>
+<br>
+<h2>4. 总结</h2>
+<br>
+<ol>
+<li>**投诉分布均衡性**：从地区、投诉类型、服务类型和优先级来看，投诉分布相对均衡，没有特别突出的单一问题点，表明问题可能是系统性的而非局部的。</li>
+</ol>
+<br>
+<ol>
+<li>**处理效率良好**：85.1%的投诉已经关闭，另有4.95%已解决但可能尚未关闭，总体处理效率较高。</li>
+</ol>
+<br>
+<ol>
+<li>**客户满意度两极化**：客户满意度评分呈现相对均衡分布，高满意度(4-5分)和低满意度(1-2分)的比例接近，各约占40%，表明服务质量体验参差不齐。</li>
+</ol>
+<br>
+<ol>
+<li>**技术问题为主**：通信技术相关问题是主要投诉来源，占比超过70%，应优先解决技术稳定性问题。</li>
+</ol>
+<br>
+<ol>
+<li>**数据完整性**：除客户满意度外，其他维度数据完整性良好。客户满意度评分缺失约15%，可能与部分投诉尚未完全处理完毕有关。</li>
+</ol>
+<br>
+<ol>
+<li>**改进建议**：</li>
+</ol>
+<ul>
+<li>加强技术基础设施建设，特别是针对通话掉线和短信失败等高频问题</li>
+<li>建立更完善的客户满意度跟踪机制，减少数据缺失</li>
+<li>针对低满意度投诉进行深入分析，找出共性问题并优先解决</li>
+<li>关注北部地区略高的投诉率，可能需要针对性改进</li>
+</ul>
+<br>
+<p>通过持续监控这些指标并采取针对性措施，有望提高整体服务质量和客户满意度。</p>
+
+</body>
+</html>

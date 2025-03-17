@@ -1,0 +1,4 @@
+{
+  "status": "error",
+  "message": "分析过程中出错: agg function failed [how->mean,dtype->object]"
+}

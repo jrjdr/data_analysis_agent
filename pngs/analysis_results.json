@@ -1,0 +1,10 @@
+{
+  "file_path": "temp_csv/excel_data_20250317132811.csv",
+  "analysis_time": "2025-03-17 13:30:33",
+  "basic_stats": {
+    "row_count": 14400,
+    "column_count": 36,
+    "columns": {
+      "timestamp": {
+        "type": "object",
+        "missing_values": 

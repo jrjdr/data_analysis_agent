@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>比例分析分析报告</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            color: #2c3e50;
+            margin-top: 24px;
+            margin-bottom: 16px;
+        }
+        h1 { font-size: 2em; border-bottom: 1px solid #eaecef; padding-bottom: .3em; }
+        h2 { font-size: 1.5em; border-bottom: 1px solid #eaecef; padding-bottom: .3em; }
+        h3 { font-size: 1.25em; }
+        h4 { font-size: 1em; }
+        p, ul, ol, table { margin-bottom: 16px; }
+        code {
+            font-family: Consolas, Monaco, 'Andale Mono', monospace;
+            background-color: #f6f8fa;
+            padding: 0.2em 0.4em;
+            border-radius: 3px;
+        }
+        pre {
+            background-color: #f6f8fa;
+            border-radius: 3px;
+            padding: 16px;
+            overflow: auto;
+        }
+        pre code {
+            background-color: transparent;
+            padding: 0;
+        }
+        blockquote {
+            padding: 0 1em;
+            color: #6a737d;
+            border-left: 0.25em solid #dfe2e5;
+            margin: 0 0 16px 0;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        table th, table td {
+            border: 1px solid #dfe2e5;
+            padding: 6px 13px;
+        }
+        table tr:nth-child(2n) {
+            background-color: #f6f8fa;
+        }
+        img {
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+<h1>5G基站性能分析报告</h1>
+<br>
+<h2>1. 数据概览</h2>
+<br>
+<p>本次分析基于7,200条5G基站性能记录，包含20个关键指标。数据涵盖5个不同基站的运行情况，每个基站各有1,440条记录，分布均匀。</p>
+<br>
+<h3>基站分布情况</h3>
+<br>
+<table>
+<tr><th>基站ID</th><th>基站名称</th><th>记录数</th><th>占比</th></tr>
+<tr><td>BS001</td><td>市中心-商业区基站</td><td>1,440</td><td>20.00%</td></tr>
+<tr><td>BS002</td><td>城东-商业区基站</td><td>1,440</td><td>20.00%</td></tr>
+<tr><td>BS003</td><td>城西-住宅区基站</td><td>1,440</td><td>20.00%</td></tr>
+<tr><td>BS004</td><td>城北-工业园区基站</td><td>1,440</td><td>20.00%</td></tr>
+<tr><td>BS005</td><td>城南-大学城基站</td><td>1,440</td><td>20.00%</td></tr>
+</table>
+<br>
+<h3>信号类型分布</h3>
+<br>
+<p>数据集包含15种不同的信号类型，分布较为均衡，主要信号类型如下：</p>
+<br>
+<table>
+<tr><th>信号类型</th><th>记录数</th><th>占比</th></tr>
+<tr><td>PAGING</td><td>523</td><td>7.26%</td></tr>
+<tr><td>ATTACH_REQUEST</td><td>502</td><td>6.97%</td></tr>
+<tr><td>HANDOVER_REQUEST</td><td>494</td><td>6.86%</td></tr>
+<tr><td>HANDOVER_COMPLETE</td><td>491</td><td>6.82%</td></tr>
+<tr><td>SERVICE_REQUEST</td><td>491</td><td>6.82%</td></tr>
+<tr><td>其他类型</td><td>4,699</td><td>65.27%</td></tr>
+</table>
+<br>
+<h3>状态分布</h3>
+<br>
+<table>
+<tr><th>状态</th><th>记录数</th><th>占比</th></tr>
+<tr><td>SUCCESS</td><td>6,125</td><td>85.07%</td></tr>
+<tr><td>FAILED</td><td>373</td><td>5.18%</td></tr>
+<tr><td>TIMEOUT</td><td>270</td><td>3.75%</td></tr>
+<tr><td>REJECTED</td><td>237</td><td>3.29%</td></tr>
+<tr><td>PENDING</td><td>195</td><td>2.71%</td></tr>
+</table>
+<br>
+<h2>2. 数据洞察</h2>
+<br>
+<h3>网络性能指标</h3>
+<br>
+<table>
+<tr><th>指标</th><th>最小值</th><th>最大值</th><th>平均值</th><th>主要分布区间</th></tr>
+<tr><td>成功率</td><td>50%</td><td>99%</td><td>86%</td><td>80%-100%（85.07%）</td></tr>
+<tr><td>失败率</td><td>1%</td><td>50%</td><td>14%</td><td>0%-20%（85.07%）</td></tr>
+<tr><td>下行吞吐量(Mbps)</td><td>50.33</td><td>1,499.85</td><td>713.37</td><td>630.1-920.0（24.29%）</td></tr>
+<tr><td>上行吞吐量(Mbps)</td><td>10.03</td><td>199.98</td><td>91.60</td><td>48.0-86.0（28.56%）</td></tr>
+<tr><td>延迟(ms)</td><td>5.00</td><td>49.99</td><td>21.69</td><td>14.0-23.0（32.07%）</td></tr>
+<tr><td>丢包率(%)</td><td>0.00</td><td>5.00</td><td>2.51</td><td>0%-20%（100%）</td></tr>
+</table>
+<br>
+<h3>信号质量指标</h3>
+<br>
+<table>
+<tr><th>指标</th><th>最小值</th><th>最大值</th><th>平均值</th><th>主要分布区间</th></tr>
+<tr><td>信号强度(dBm)</td><td>-120.00</td><td>-70.01</td><td>-95.03</td><td>-100.0--90.0（20.74%）</td></tr>
+<tr><td>信号质量(dB)</td><td>0.00</td><td>30.00</td><td>15.07</td><td>18.0-24.0（20.39%）</td></tr>
+</table>
+<br>
+<h3>资源使用情况</h3>
+<br>
+<table>
+<tr><th>指标</th><th>最小值</th><th>最大值</th><th>平均值</th><th>主要分布区间</th></tr>
+<tr><td>资源块使用率(%)</td><td>20.00</td><td>99.00</td><td>56.26</td><td>20%-40%（32.86%）</td></tr>
+<tr><td>CPU使用率(%)</td><td>10.04</td><td>109.00</td><td>56.22</td><td>20%-40%（29.72%）</td></tr>
+<tr><td>内存使用率(%)</td><td>5.04</td><td>113.70</td><td>56.24</td><td>40%-60%（27.42%）</td></tr>
+<tr><td>温度(℃)</td><td>25.00</td><td>45.00</td><td>35.03</td><td>均匀分布（约20%）</td></tr>
+</table>
+<br>
+<h3>用户活动指标</h3>
+<br>
+<table>
+<tr><th>指标</th><th>最小值</th><th>最大值</th><th>平均值</th><th>主要分布区间</th></tr>
+<tr><td>呼叫尝试次数</td><td>10.00</td><td>99.00</td><td>41.37</td><td>10.0-27.8（39.89%）</td></tr>
+<tr><td>活跃用户数</td><td>50.00</td><td>499.00</td><td>200.36</td><td>50.0-139.8（39.81%）</td></tr>
+</table>
+<br>
+<h2>3. 关键发现</h2>
+<br>
+<h3>网络性能状况</h3>
+<br>
+<ol>
+<li>**高成功率表现**：</li>
+</ol>
+<ul>
+<li>85.07%的记录显示状态为"SUCCESS"</li>
+<li>平均成功率达到86%，且85.07%的记录成功率在80%-100%区间</li>
+</ul>
+<br>
+<table>
+<tr><th>成功率区间</th><th>记录数</th><th>占比</th></tr>
+<tr><td>80%-100%</td><td>6,125</td><td>85.07%</td></tr>
+<tr><td>60%-80%</td><td>716</td><td>9.94%</td></tr>
+<tr><td>40%-60%</td><td>359</td><td>4.99%</td></tr>
+</table>
+<br>
+<ol>
+<li>**延迟表现良好**：</li>
+</ol>
+<ul>
+<li>平均延迟为21.69ms</li>
+<li>85.27%的记录延迟低于32ms，表明网络响应速度良好</li>
+</ul>
+<br>
+<table>
+<tr><th>延迟区间(ms)</th><th>记录数</th><th>占比</th></tr>
+<tr><td>5.0-14.0</td><td>1,943</td><td>26.99%</td></tr>
+<tr><td>14.0-23.0</td><td>2,309</td><td>32.07%</td></tr>
+<tr><td>23.0-32.0</td><td>1,887</td><td>26.21%</td></tr>
+</table>
+<br>
+<ol>
+<li>**吞吐量分布**：</li>
+</ol>
+<ul>
+<li>下行吞吐量平均值为713.37Mbps，表现优异</li>
+<li>上行吞吐量平均值为91.60Mbps，72.17%的记录上行吞吐量低于124Mbps</li>
+</ul>
+<br>
+<h3>资源利用情况</h3>
+<br>
+<ol>
+<li>**资源使用分布均衡**：</li>
+</ol>
+<ul>
+<li>资源块使用率平均为56.26%，分布在三个主要区间：20%-40%（32.86%）、40%-60%（32.19%）和80%-100%（31.74%）</li>
+<li>这表明基站资源使用存在波动，可能与不同时段的负载有关</li>
+</ul>
+<br>
+<ol>
+<li>**系统负载情况**：</li>
+</ol>
+<ul>
+<li>CPU和内存使用率平均都在56%左右</li>
+<li>存在少量超负荷情况：3.67%的记录CPU使用率超过100%，5.72%的记录内存使用率超过100%</li>
+</ul>
+<br>
+<table>
+<tr><th>资源</th><th>过载记录数</th><th>占比</th></tr>
+<tr><td>CPU > 100%</td><td>264</td><td>3.67%</td></tr>
+<tr><td>内存 > 100%</td><td>412</td><td>5.72%</td></tr>
+</table>
+<br>
+<ol>
+<li>**温度分布**：</li>
+</ol>
+<ul>
+<li>温度在25℃至45℃之间均匀分布，平均为35.03℃</li>
+<li>20%的记录温度在41℃-45℃之间，需要关注散热情况</li>
+</ul>
+<br>
+<h3>用户行为模式</h3>
+<br>
+<ol>
+<li>**用户活跃度集中在低负载区间**：</li>
+</ol>
+<ul>
+<li>39.81%的记录活跃用户数在50-139.8之间</li>
+<li>呼叫尝试次数也集中在低区间，39.89%的记录在10-27.8次之间</li>
+</ul>
+<br>
+<ol>
+<li>**信号类型分布**：</li>
+</ol>
+<ul>
+<li>PAGING信号占比最高（7.26%），表明寻呼操作频繁</li>
+<li>ATTACH_REQUEST（6.97%）和HANDOVER相关操作（HANDOVER_REQUEST 6.86%，HANDOVER_COMPLETE 6.82%）也较为常见</li>
+</ul>
+<br>
+<h2>4. 总结</h2>
+<br>
+<p>基于对7,200条5G基站性能记录的分析，我们得出以下关键结论：</p>
+<br>
+<ol>
+<li>**网络性能总体良好**：85.07%的操作成功完成，平均成功率达86%，平均延迟仅为21.69ms，丢包率控制在5%以内。</li>
+</ol>
+<br>
+<ol>
+<li>**资源利用存在优化空间**：</li>
+</ol>
+<ul>
+<li>资源块使用率分布出现三极化现象（低、中、高负载各占约三分之一）</li>
+<li>存在少量CPU和内存过载情况，需要关注系统稳定性</li>
+<li>约20%的记录温度较高（41℃-45℃），建议加强散热管理</li>
+</ul>
+<br>
+<ol>
+<li>**用户活动集中在低负载区间**：近40%的记录显示活跃用户数和呼叫尝试次数较低，表明基站容量可能存在冗余或时段分布不均。</li>
+</ol>
+<br>
+<ol>
+<li>**信号类型分析**：PAGING、ATTACH和HANDOVER相关操作是最常见的信号类型，反映了移动用户的连接和切换需求。</li>
+</ol>
+<br>
+<ol>
+<li>**改进建议**：</li>
+</ol>
+<ul>
+<li>针对资源使用波动大的情况，可考虑动态资源分配策略</li>
+<li>对出现过载的基站进行系统升级或负载均衡</li>
+<li>加强高温基站的散热管理</li>
+<li>考虑根据用户活动模式优化资源分配，提高利用效率</li>
+</ul>
+<br>
+<p>此报告提供了5G基站性能的全面分析，可为网络优化和资源规划提供数据支持。</p>
+
+</body>
+</html>

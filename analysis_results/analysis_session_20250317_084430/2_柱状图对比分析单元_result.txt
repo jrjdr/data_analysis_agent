@@ -1,0 +1,2 @@
+正在分析文件: temp_csv/excel_data_20250317084430.csv
+分析结果已保存到 bar_chart_analysis_results.json

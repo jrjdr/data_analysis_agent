@@ -1,0 +1,2 @@
+成功加载数据: 14400行, 36列
+分析结果已保存到: pngs/time_trend_results.txt

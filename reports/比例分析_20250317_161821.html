@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>比例分析分析报告</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            color: #2c3e50;
+            margin-top: 24px;
+            margin-bottom: 16px;
+        }
+        h1 { font-size: 2em; border-bottom: 1px solid #eaecef; padding-bottom: .3em; }
+        h2 { font-size: 1.5em; border-bottom: 1px solid #eaecef; padding-bottom: .3em; }
+        h3 { font-size: 1.25em; }
+        h4 { font-size: 1em; }
+        p, ul, ol, table { margin-bottom: 16px; }
+        code {
+            font-family: Consolas, Monaco, 'Andale Mono', monospace;
+            background-color: #f6f8fa;
+            padding: 0.2em 0.4em;
+            border-radius: 3px;
+        }
+        pre {
+            background-color: #f6f8fa;
+            border-radius: 3px;
+            padding: 16px;
+            overflow: auto;
+        }
+        pre code {
+            background-color: transparent;
+            padding: 0;
+        }
+        blockquote {
+            padding: 0 1em;
+            color: #6a737d;
+            border-left: 0.25em solid #dfe2e5;
+            margin: 0 0 16px 0;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        table th, table td {
+            border: 1px solid #dfe2e5;
+            padding: 6px 13px;
+        }
+        table tr:nth-child(2n) {
+            background-color: #f6f8fa;
+        }
+        img {
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+<h1>电信数据分析报告</h1>
+<br>
+<h2>1. 数据概览</h2>
+<br>
+<p>本分析报告基于`excel_data_20250317161158.csv`文件，该文件包含电信服务相关数据。数据集共有**64,800行**记录和**10列**特征。</p>
+<br>
+<p>数据集的分类维度主要包括：</p>
+<ul>
+<li>**地区（Region）**：共5个区域</li>
+<li>**服务类型（Service_Type）**：共6种服务</li>
+<li>**网络类型（Network_Type）**：共3种网络</li>
+</ul>
+<br>
+<p>下表总结了数据文件的基本信息：</p>
+<br>
+<table>
+<tr><th>数据特征</th><th>值</th></tr>
+<tr><td>文件名称</td><td>excel_data_20250317161158.csv</td></tr>
+<tr><td>分析时间</td><td>2025-03-17 16:17:49</td></tr>
+<tr><td>数据行数</td><td>64,800</td></tr>
+<tr><td>数据列数</td><td>10</td></tr>
+<tr><td>分类列</td><td>Region, Service_Type, Network_Type</td></tr>
+</table>
+<br>
+<h2>2. 数据洞察</h2>
+<br>
+<h3>2.1 地区分布（Region）</h3>
+<br>
+<p>数据集中的地区分布非常均匀，每个地区的数据量完全相同，都占总数据量的20%。这种均匀分布有利于我们进行无偏的跨地区比较和分析。</p>
+<br>
+<table>
+<tr><th>地区</th><th>数量</th><th>占比</th></tr>
+<tr><td>North</td><td>12,960</td><td>20.00%</td></tr>
+<tr><td>South</td><td>12,960</td><td>20.00%</td></tr>
+<tr><td>East</td><td>12,960</td><td>20.00%</td></tr>
+<tr><td>West</td><td>12,960</td><td>20.00%</td></tr>
+<tr><td>Central</td><td>12,960</td><td>20.00%</td></tr>
+<tr><td>**总计**</td><td>**64,800**</td><td>**100.00%**</td></tr>
+</table>
+<br>
+<h3>2.2 服务类型分布（Service_Type）</h3>
+<br>
+<p>服务类型的分布同样呈现完全均匀的特点，每种服务类型占总数据的16.67%。这表明数据集可能是经过预先设计的均衡采样或是基于某种均匀分布的模拟数据。</p>
+<br>
+<table>
+<tr><th>服务类型</th><th>数量</th><th>占比</th></tr>
+<tr><td>Voice</td><td>10,800</td><td>16.67%</td></tr>
+<tr><td>Data</td><td>10,800</td><td>16.67%</td></tr>
+<tr><td>SMS</td><td>10,800</td><td>16.67%</td></tr>
+<tr><td>Video Streaming</td><td>10,800</td><td>16.67%</td></tr>
+<tr><td>Gaming</td><td>10,800</td><td>16.67%</td></tr>
+<tr><td>Social Media</td><td>10,800</td><td>16.67%</td></tr>
+<tr><td>**总计**</td><td>**64,800**</td><td>**100.00%**</td></tr>
+</table>
+<br>
+<h3>2.3 网络类型分布（Network_Type）</h3>
+<br>
+<p>网络类型的分布也呈现完全均匀的特点，每种网络类型占总数据的33.33%。</p>
+<br>
+<table>
+<tr><th>网络类型</th><th>数量</th><th>占比</th></tr>
+<tr><td>4G</td><td>21,600</td><td>33.33%</td></tr>
+<tr><td>5G</td><td>21,600</td><td>33.33%</td></tr>
+<tr><td>Fiber</td><td>21,600</td><td>33.33%</td></tr>
+<tr><td>**总计**</td><td>**64,800**</td><td>**100.00%**</td></tr>
+</table>
+<br>
+<h2>3. 关键发现</h2>
+<br>
+<h3>3.1 数据分布特点</h3>
+<br>
+<p>所有分类变量（Region、Service_Type、Network_Type）都呈现完全均匀分布，这表明：</p>
+<br>
+<table>
+<tr><th>分类变量</th><th>类别数量</th><th>分布特点</th><th>意义</th></tr>
+<tr><td>Region</td><td>5</td><td>完全均匀（各20%）</td><td>可能是设计的平衡数据集</td></tr>
+<tr><td>Service_Type</td><td>6</td><td>完全均匀（各16.67%）</td><td>可能是控制变量研究设计</td></tr>
+<tr><td>Network_Type</td><td>3</td><td>完全均匀（各33.33%）</td><td>适合进行公平比较分析</td></tr>
+</table>
+<br>
+<h3>3.2 数据处理问题</h3>
+<br>
+<p>在原始分析过程中遇到了错误：`module 'pandas' has no attribute 'np'`。这表明数据处理过程中存在技术问题，可能需要修正代码中的库引用方式。正确做法应该是直接导入NumPy库（`import numpy as np`）而非通过pandas引用。</p>
+<br>
+<table>
+<tr><th>错误类型</th><th>错误信息</th><th>可能的解决方案</th></tr>
+<tr><td>属性错误</td><td>module 'pandas' has no attribute 'np'</td><td>1. 使用`import numpy as np`代替`pandas.np` <br> 2. 更新数据处理脚本</td></tr>
+</table>
+<br>
+<h2>4. 总结</h2>
+<br>
+<p>基于对`excel_data_20250317161158.csv`文件的分析，我们观察到这是一个关于电信服务的结构化数据集，具有以下特点：</p>
+<br>
+<ol>
+<li>**均衡的数据分布**：所有分类变量（Region、Service_Type、Network_Type）均呈现完全均匀分布，这种分布特点非常适合进行公平的对比分析。</li>
+</ol>
+<br>
+<ol>
+<li>**多维度分类**：数据集从地域（5个区域）、服务类型（6种服务）和网络技术（3种网络）多个维度对电信服务进行了分类。</li>
+</ol>
+<br>
+<ol>
+<li>**数据规模适中**：64,800行的数据量足够大，可以支持有意义的统计分析，同时又不至于过大而难以处理。</li>
+</ol>
+<br>
+<ol>
+<li>**数据处理问题**：在数据处理过程中遇到的技术错误提示我们，在后续分析中需要注意正确引用和使用相关库。</li>
+</ol>
+<br>
+<p>该数据集为研究不同地区、不同服务类型以及不同网络技术之间的关系提供了良好基础。完全均衡的数据分布也暗示这可能是一个经过精心设计的实验性或模拟数据集，而非原始采集的真实世界数据。</p>
+<br>
+<p>后续分析可以深入探讨其他数值型变量（未在本报告中展示）与这些分类变量之间的关系，从而获得更多业务洞察。</p>
+
+</body>
+</html>

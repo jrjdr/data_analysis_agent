@@ -1,0 +1,1 @@
+分析过程中出现错误: agg function failed [how->mean,dtype->object]

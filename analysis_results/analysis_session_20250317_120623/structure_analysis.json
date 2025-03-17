@@ -1,0 +1,187 @@
+{
+  "file_path": "temp_csv/excel_data_20250317120623.csv",
+  "row_count": 7200,
+  "column_count": 20,
+  "columns": {
+    "timestamp": {
+      "type": "object",
+      "missing_values": 0,
+      "unique_values": 1440,
+      "most_common": {
+        "value": "2025-03-01 23:43:00",
+        "count": 5
+      }
+    },
+    "base_station_id": {
+      "type": "object",
+      "missing_values": 0,
+      "unique_values": 5,
+      "most_common": {
+        "value": "BS001",
+        "count": 1440
+      }
+    },
+    "base_station_name": {
+      "type": "object",
+      "missing_values": 0,
+      "unique_values": 5,
+      "most_common": {
+        "value": "城东-商业区基站",
+        "count": 1440
+      }
+    },
+    "signal_type": {
+      "type": "object",
+      "missing_values": 0,
+      "unique_values": 15,
+      "most_common": {
+        "value": "PAGING",
+        "count": 523
+      }
+    },
+    "status": {
+      "type": "object",
+      "missing_values": 0,
+      "unique_values": 5,
+      "most_common": {
+        "value": "SUCCESS",
+        "count": 6125
+      }
+    },
+    "success_rate": {
+      "type": "float64",
+      "missing_values": 0,
+      "unique_values": 7200,
+      "min": 0.5001515515303329,
+      "max": 0.9899954351064012,
+      "mean": 0.8577264702900567,
+      "median": 0.878781961988077
+    },
+    "failure_rate": {
+      "type": "float64",
+      "missing_values": 0,
+      "unique_values": 7200,
+      "min": 0.0100045648935988,
+      "max": 0.4998484484696671,
+      "mean": 0.1422735297099433,
+      "median": 0.12121803801192305
+    },
+    "call_attempts": {
+      "type": "int64",
+      "missing_values": 0,
+      "unique_values": 80,
+      "min": 10,
+      "max": 99,
+      "mean": 41.36527777777778,
+      "median": 32.0
+    },
+    "active_users": {
+      "type": "int64",
+      "missing_values": 0,
+      "unique_values": 450,
+      "min": 50,
+      "max": 499,
+      "mean": 200.36291666666668,
+      "median": 162.0
+    },
+    "signal_strength_dbm": {
+      "type": "float64",
+      "missing_values": 0,
+      "unique_values": 7200,
+      "min": -119.9994182622317,
+      "max": -70.01293638709538,
+      "mean": -95.03278482341102,
+      "median": -95.1282878549003
+    },
+    "signal_quality_db": {
+      "type": "float64",
+      "missing_values": 0,
+      "unique_values": 7200,
+      "min": 0.0014060937481952,
+      "max": 29.9977448049953,
+      "mean": 15.070743305317405,
+      "median": 15.143131147218314
+    },
+    "downlink_throughput_mbps": {
+      "type": "float64",
+      "missing_values": 0,
+      "unique_values": 7200,
+      "min": 50.3341799549399,
+      "max": 1499.847487010875,
+      "mean": 713.3727619532459,
+      "median": 691.3211683424604
+    },
+    "uplink_throughput_mbps": {
+      "type": "float64",
+      "missing_values": 0,
+      "unique_values": 7200,
+      "min": 10.02502231975497,
+      "max": 199.9758920576939,
+      "mean": 91.60457968510894,
+      "median": 82.33752854946047
+    },
+    "latency_ms": {
+      "type": "float64",
+      "missing_values": 0,
+      "unique_values": 7200,
+      "min": 5.00290349460528,
+      "max": 49.98514299959502,
+      "mean": 21.68716430516158,
+      "median": 20.557139145639244
+    },
+    "jitter_ms": {
+      "type": "float64",
+      "missing_values": 0,
+      "unique_values": 7200,
+      "min": -4.997387470570525,
+      "max": 4.998996843022912,
+      "mean": -0.024618795886986893,
+      "median": -0.058804158110981
+    },
+    "packet_loss_percent": {
+      "type": "float64",
+      "missing_values": 0,
+      "unique_values": 7200,
+      "min": 4.647987792372188e-05,
+      "max": 4.999375495706468,
+      "mean": 2.5111157287540524,
+      "median": 2.5151660240869727
+    },
+    "resource_block_usage_percent": {
+      "type": "float64",
+      "missing_values": 0,
+      "unique_values": 60,
+      "min": 20.0,
+      "max": 99.0,
+      "mean": 56.25541666666667,
+      "median": 50.0
+    },
+    "cpu_usage_percent": {
+      "type": "float64",
+      "missing_values": 0,
+      "unique_values": 7200,
+      "min": 10.04127404790298,
+      "max": 108.9950844477384,
+      "mean": 56.22436752624803,
+      "median": 49.413455412987716
+    },
+    "memory_usage_percent": {
+      "type": "float64",
+      "missing_values": 0,
+      "unique_values": 7200,
+      "min": 5.04341661562998,
+      "max": 113.6988024754922,
+      "mean": 56.24006499132015,
+      "median": 50.11718956136009
+    },
+    "temperature_celsius": {
+      "type": "float64",
+      "missing_values": 0,
+      "unique_values": 7200,
+      "min": 25.00192741330557,
+      "max": 44.9957874362519,
+      "mean": 35.034189235073974,
+      "median": 35.09876528104492
+    }
+  }
+}

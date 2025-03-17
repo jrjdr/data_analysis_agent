@@ -1,0 +1,24 @@
+DataFrame shape: (7200, 19)
+DataFrame columns: ['base_station_id', 'base_station_name', 'signal_type', 'status', 'success_rate', 'failure_rate', 'call_attempts', 'active_users', 'signal_strength_dbm', 'signal_quality_db', 'downlink_throughput_mbps', 'uplink_throughput_mbps', 'latency_ms', 'jitter_ms', 'packet_loss_percent', 'resource_block_usage_percent', 'cpu_usage_percent', 'memory_usage_percent', 'temperature_celsius']
+DataFrame dtypes:
+base_station_id                  object
+base_station_name                object
+signal_type                      object
+status                           object
+success_rate                    float64
+failure_rate                    float64
+call_attempts                     int64
+active_users                      int64
+signal_strength_dbm             float64
+signal_quality_db               float64
+downlink_throughput_mbps        float64
+uplink_throughput_mbps          float64
+latency_ms                      float64
+jitter_ms                       float64
+packet_loss_percent             float64
+resource_block_usage_percent    float64
+cpu_usage_percent               float64
+memory_usage_percent            float64
+temperature_celsius             float64
+dtype: object
+Results saved to pngs/time_trend_results.txt

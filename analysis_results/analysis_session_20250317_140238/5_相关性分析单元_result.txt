@@ -1,0 +1,5 @@
+正在读取文件: temp_csv/excel_data_20250317140237.csv
+计算相关性矩阵...
+正在保存结果到: pngs/correlation_results.txt
+分析完成!
+相关性分析结果已保存到: pngs/correlation_results.txt

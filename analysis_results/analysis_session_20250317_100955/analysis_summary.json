@@ -1,0 +1,3727 @@
+{
+  "timestamp": "20250317_100955",
+  "structure_analysis": {
+    "file_path": "temp_csv/excel_data_20250317100955.csv",
+    "row_count": 7200,
+    "column_count": 20,
+    "columns": {
+      "timestamp": {
+        "type": "object",
+        "missing_values": 0,
+        "unique_values": 1440,
+        "most_common": {
+          "value": "2025-03-01 23:43:00",
+          "count": 5
+        }
+      },
+      "base_station_id": {
+        "type": "object",
+        "missing_values": 0,
+        "unique_values": 5,
+        "most_common": {
+          "value": "BS001",
+          "count": 1440
+        }
+      },
+      "base_station_name": {
+        "type": "object",
+        "missing_values": 0,
+        "unique_values": 5,
+        "most_common": {
+          "value": "城东-商业区基站",
+          "count": 1440
+        }
+      },
+      "signal_type": {
+        "type": "object",
+        "missing_values": 0,
+        "unique_values": 15,
+        "most_common": {
+          "value": "PAGING",
+          "count": 523
+        }
+      },
+      "status": {
+        "type": "object",
+        "missing_values": 0,
+        "unique_values": 5,
+        "most_common": {
+          "value": "SUCCESS",
+          "count": 6125
+        }
+      },
+      "success_rate": {
+        "type": "float64",
+        "missing_values": 0,
+        "unique_values": 7200,
+        "min": 0.5001515515303329,
+        "max": 0.9899954351064012,
+        "mean": 0.8577264702900567,
+        "median": 0.878781961988077
+      },
+      "failure_rate": {
+        "type": "float64",
+        "missing_values": 0,
+        "unique_values": 7200,
+        "min": 0.0100045648935988,
+        "max": 0.4998484484696671,
+        "mean": 0.1422735297099433,
+        "median": 0.12121803801192305
+      },
+      "call_attempts": {
+        "type": "int64",
+        "missing_values": 0,
+        "unique_values": 80,
+        "min": 10,
+        "max": 99,
+        "mean": 41.36527777777778,
+        "median": 32.0
+      },
+      "active_users": {
+        "type": "int64",
+        "missing_values": 0,
+        "unique_values": 450,
+        "min": 50,
+        "max": 499,
+        "mean": 200.36291666666668,
+        "median": 162.0
+      },
+      "signal_strength_dbm": {
+        "type": "float64",
+        "missing_values": 0,
+        "unique_values": 7200,
+        "min": -119.9994182622317,
+        "max": -70.01293638709538,
+        "mean": -95.03278482341102,
+        "median": -95.1282878549003
+      },
+      "signal_quality_db": {
+        "type": "float64",
+        "missing_values": 0,
+        "unique_values": 7200,
+        "min": 0.0014060937481952,
+        "max": 29.9977448049953,
+        "mean": 15.070743305317405,
+        "median": 15.143131147218314
+      },
+      "downlink_throughput_mbps": {
+        "type": "float64",
+        "missing_values": 0,
+        "unique_values": 7200,
+        "min": 50.3341799549399,
+        "max": 1499.847487010875,
+        "mean": 713.3727619532459,
+        "median": 691.3211683424604
+      },
+      "uplink_throughput_mbps": {
+        "type": "float64",
+        "missing_values": 0,
+        "unique_values": 7200,
+        "min": 10.02502231975497,
+        "max": 199.9758920576939,
+        "mean": 91.60457968510894,
+        "median": 82.33752854946047
+      },
+      "latency_ms": {
+        "type": "float64",
+        "missing_values": 0,
+        "unique_values": 7200,
+        "min": 5.00290349460528,
+        "max": 49.98514299959502,
+        "mean": 21.68716430516158,
+        "median": 20.557139145639244
+      },
+      "jitter_ms": {
+        "type": "float64",
+        "missing_values": 0,
+        "unique_values": 7200,
+        "min": -4.997387470570525,
+        "max": 4.998996843022912,
+        "mean": -0.024618795886986893,
+        "median": -0.058804158110981
+      },
+      "packet_loss_percent": {
+        "type": "float64",
+        "missing_values": 0,
+        "unique_values": 7200,
+        "min": 4.647987792372188e-05,
+        "max": 4.999375495706468,
+        "mean": 2.5111157287540524,
+        "median": 2.5151660240869727
+      },
+      "resource_block_usage_percent": {
+        "type": "float64",
+        "missing_values": 0,
+        "unique_values": 60,
+        "min": 20.0,
+        "max": 99.0,
+        "mean": 56.25541666666667,
+        "median": 50.0
+      },
+      "cpu_usage_percent": {
+        "type": "float64",
+        "missing_values": 0,
+        "unique_values": 7200,
+        "min": 10.04127404790298,
+        "max": 108.9950844477384,
+        "mean": 56.22436752624803,
+        "median": 49.413455412987716
+      },
+      "memory_usage_percent": {
+        "type": "float64",
+        "missing_values": 0,
+        "unique_values": 7200,
+        "min": 5.04341661562998,
+        "max": 113.6988024754922,
+        "mean": 56.24006499132015,
+        "median": 50.11718956136009
+      },
+      "temperature_celsius": {
+        "type": "float64",
+        "missing_values": 0,
+        "unique_values": 7200,
+        "min": 25.00192741330557,
+        "max": 44.9957874362519,
+        "mean": 35.034189235073974,
+        "median": 35.09876528104492
+      }
+    }
+  },
+  "column_names": [
+    "timestamp",
+    "base_station_id",
+    "base_station_name",
+    "signal_type",
+    "status",
+    "success_rate",
+    "failure_rate",
+    "call_attempts",
+    "active_users",
+    "signal_strength_dbm",
+    "signal_quality_db",
+    "downlink_throughput_mbps",
+    "uplink_throughput_mbps",
+    "latency_ms",
+    "jitter_ms",
+    "packet_loss_percent",
+    "resource_block_usage_percent",
+    "cpu_usage_percent",
+    "memory_usage_percent",
+    "temperature_celsius"
+  ],
+  "results": {
+    "总体数据统计分析单元": {
+      "status": "success",
+      "error": null,
+      "code": "import pandas as pd\nimport numpy as np\nimport json\nimport sys\nfrom typing import Dict, Any\n\ndef analyze_csv(file_path: str) -> Dict[str, Any]:\n    try:\n        # 读取CSV文件\n        df = pd.read_csv(file_path)\n        \n        # 基本信息\n        result = {\n            \"file_path\": file_path,\n            \"row_count\": len(df),\n            \"column_count\": len(df.columns),\n            \"columns\": {}\n        }\n        \n        # 遍历每一列进行分析\n        for col in df.columns:\n            col_data = {\n                \"type\": str(df[col].dtype),\n                \"missing_values\": df[col].isnull().sum(),\n                \"unique_values\": df[col].nunique()\n            }\n            \n            # 数值列统计\n            if pd.api.types.is_numeric_dtype(df[col]):\n                col_data.update({\n                    \"min\": df[col].min(),\n                    \"max\": df[col].max(),\n                    \"mean\": df[col].mean(),\n                    \"median\": df[col].median(),\n                    \"std\": df[col].std()\n                })\n            \n            # 分类列统计\n            elif pd.api.types.is_object_dtype(df[col]):\n                value_counts = df[col].value_counts()\n                col_data[\"most_common\"] = {\n                    \"value\": value_counts.index[0],\n                    \"count\": int(value_counts.iloc[0])\n                }\n            \n            result[\"columns\"][col] = col_data\n        \n        return result\n    \n    except Exception as e:\n        print(f\"Error analyzing CSV: {str(e)}\")\n        return {}\n\ndef save_to_json(data: Dict[str, Any], output_file: str) -> None:\n    try:\n        with open(output_file, 'w', encoding='utf-8') as f:\n            json.dump(data, f, ensure_ascii=False, indent=2, default=str)\n        print(f\"Results saved to {output_file}\")\n    except Exception as e:\n        print(f\"Error saving results to JSON: {str(e)}\")\n\nif __name__ == \"__main__\":\n    if len(sys.argv) != 2:\n        print(\"Usage: python script.py <csv_file_path>\")\n        sys.exit(1)\n    \n    csv_file_path = sys.argv[1]\n    output_file = 'general_statistics_results.json'\n    \n    analysis_results = analyze_csv(csv_file_path)\n    if analysis_results:\n        save_to_json(analysis_results, output_file)",
+      "results": "Results saved to general_statistics_results.json\n",
+      "json_results": {
+        "file_path": "temp_csv/excel_data_20250317100955.csv",
+        "row_count": 7200,
+        "column_count": 20,
+        "columns": {
+          "timestamp": {
+            "type": "object",
+            "missing_values": "0",
+            "unique_values": 1440,
+            "most_common": {
+              "value": "2025-03-01 23:43:00",
+              "count": 5
+            }
+          },
+          "base_station_id": {
+            "type": "object",
+            "missing_values": "0",
+            "unique_values": 5,
+            "most_common": {
+              "value": "BS001",
+              "count": 1440
+            }
+          },
+          "base_station_name": {
+            "type": "object",
+            "missing_values": "0",
+            "unique_values": 5,
+            "most_common": {
+              "value": "城东-商业区基站",
+              "count": 1440
+            }
+          },
+          "signal_type": {
+            "type": "object",
+            "missing_values": "0",
+            "unique_values": 15,
+            "most_common": {
+              "value": "PAGING",
+              "count": 523
+            }
+          },
+          "status": {
+            "type": "object",
+            "missing_values": "0",
+            "unique_values": 5,
+            "most_common": {
+              "value": "SUCCESS",
+              "count": 6125
+            }
+          },
+          "success_rate": {
+            "type": "float64",
+            "missing_values": "0",
+            "unique_values": 7200,
+            "min": 0.5001515515303329,
+            "max": 0.9899954351064012,
+            "mean": 0.8577264702900567,
+            "median": 0.878781961988077,
+            "std": 0.10651254561772257
+          },
+          "failure_rate": {
+            "type": "float64",
+            "missing_values": "0",
+            "unique_values": 7200,
+            "min": 0.0100045648935988,
+            "max": 0.4998484484696671,
+            "mean": 0.1422735297099433,
+            "median": 0.12121803801192305,
+            "std": 0.1065125456177226
+          },
+          "call_attempts": {
+            "type": "int64",
+            "missing_values": "0",
+            "unique_values": 80,
+            "min": "10",
+            "max": "99",
+            "mean": 41.36527777777778,
+            "median": 32.0,
+            "std": 26.17047799568503
+          },
+          "active_users": {
+            "type": "int64",
+            "missing_values": "0",
+            "unique_values": 450,
+            "min": "50",
+            "max": "499",
+            "mean": 200.36291666666668,
+            "median": 162.0,
+            "std": 122.80967824907731
+          },
+          "signal_strength_dbm": {
+            "type": "float64",
+            "missing_values": "0",
+            "unique_values": 7200,
+            "min": -119.9994182622317,
+            "max": -70.01293638709538,
+            "mean": -95.03278482341102,
+            "median": -95.1282878549003,
+            "std": 14.306659447626476
+          },
+          "signal_quality_db": {
+            "type": "float64",
+            "missing_values": "0",
+            "unique_values": 7200,
+            "min": 0.0014060937481952,
+            "max": 29.9977448049953,
+            "mean": 15.070743305317405,
+            "median": 15.143131147218314,
+            "std": 8.671245328227563
+          },
+          "downlink_throughput_mbps": {
+            "type": "float64",
+            "missing_values": "0",
+            "unique_values": 7200,
+            "min": 50.3341799549399,
+            "max": 1499.847487010875,
+            "mean": 713.3727619532459,
+            "median": 691.3211683424604,
+            "std": 387.86236436362805
+          },
+          "uplink_throughput_mbps": {
+            "type": "float64",
+            "missing_values": "0",
+            "unique_values": 7200,
+            "min": 10.02502231975497,
+            "max": 199.9758920576939,
+            "mean": 91.60457968510894,
+            "median": 82.33752854946047,
+            "std": 51.902856429894726
+          },
+          "latency_ms": {
+            "type": "float64",
+            "missing_values": "0",
+            "unique_values": 7200,
+            "min": 5.00290349460528,
+            "max": 49.98514299959502,
+            "mean": 21.68716430516158,
+            "median": 20.557139145639244,
+            "std": 10.624858095678565
+          },
+          "jitter_ms": {
+            "type": "float64",
+            "missing_values": "0",
+            "unique_values": 7200,
+            "min": -4.997387470570525,
+            "max": 4.998996843022912,
+            "mean": -0.024618795886986893,
+            "median": -0.058804158110981,
+            "std": 2.891169506997152
+          },
+          "packet_loss_percent": {
+            "type": "float64",
+            "missing_values": "0",
+            "unique_values": 7200,
+            "min": 4.647987792372188e-05,
+            "max": 4.999375495706468,
+            "mean": 2.5111157287540524,
+            "median": 2.5151660240869727,
+            "std": 1.4303889321092258
+          },
+          "resource_block_usage_percent": {
+            "type": "float64",
+            "missing_values": "0",
+            "unique_values": 60,
+            "min": 20.0,
+            "max": 99.0,
+            "mean": 56.25541666666667,
+            "median": 50.0,
+            "std": 25.539499785189168
+          },
+          "cpu_usage_percent": {
+            "type": "float64",
+            "missing_values": "0",
+            "unique_values": 7200,
+            "min": 10.04127404790298,
+            "max": 108.9950844477384,
+            "mean": 56.22436752624803,
+            "median": 49.413455412987716,
+            "std": 26.222445518547005
+          },
+          "memory_usage_percent": {
+            "type": "float64",
+            "missing_values": "0",
+            "unique_values": 7200,
+            "min": 5.04341661562998,
+            "max": 113.6988024754922,
+            "mean": 56.24006499132015,
+            "median": 50.11718956136009,
+            "std": 26.872091535792908
+          },
+          "temperature_celsius": {
+            "type": "float64",
+            "missing_values": "0",
+            "unique_values": 7200,
+            "min": 25.00192741330557,
+            "max": 44.9957874362519,
+            "mean": 35.034189235073974,
+            "median": 35.09876528104492,
+            "std": 5.756986573315828
+          }
+        }
+      }
+    },
+    "柱状图对比分析单元": {
+      "status": "failed",
+      "error": null,
+      "code": "import pandas as pd\nimport numpy as np\nimport json\nimport sys\nfrom collections import defaultdict\n\ndef analyze_data(file_path):\n    try:\n        # 读取CSV文件\n        df = pd.read_csv(file_path)\n        \n        results = {}\n\n        # 1. 基站信号类型分布\n        signal_type_counts = df['signal_type'].value_counts().to_dict()\n        results['signal_type_distribution'] = signal_type_counts\n\n        # 2. 基站状态分布\n        status_counts = df['status'].value_counts().to_dict()\n        results['status_distribution'] = status_counts\n\n        # 3. 基站平均成功率排名（Top 5）\n        avg_success_rate = df.groupby('base_station_name')['success_rate'].mean().sort_values(ascending=False)\n        results['top_5_base_stations_by_success_rate'] = avg_success_rate.head(5).to_dict()\n\n        # 4. 信号类型平均吞吐量对比\n        avg_throughput = df.groupby('signal_type')[['downlink_throughput_mbps', 'uplink_throughput_mbps']].mean()\n        results['avg_throughput_by_signal_type'] = avg_throughput.to_dict()\n\n        # 5. 基站资源块使用率分布\n        resource_block_usage_bins = pd.cut(df['resource_block_usage_percent'], bins=5)\n        resource_block_usage_counts = resource_block_usage_bins.value_counts().sort_index()\n        results['resource_block_usage_distribution'] = {str(k): int(v) for k, v in resource_block_usage_counts.items()}\n\n        # 6. 活跃用户数量分布\n        active_users_bins = pd.cut(df['active_users'], bins=5)\n        active_users_counts = active_users_bins.value_counts().sort_index()\n        results['active_users_distribution'] = {str(k): int(v) for k, v in active_users_counts.items()}\n\n        # 7. CPU使用率区间分布\n        cpu_usage_bins = pd.cut(df['cpu_usage_percent'], bins=[0, 25, 50, 75, 100, float('inf')])\n        cpu_usage_counts = cpu_usage_bins.value_counts().sort_index()\n        results['cpu_usage_distribution'] = {str(k): int(v) for k, v in cpu_usage_counts.items()}\n\n        # 8. 内存使用率区间分布\n        memory_usage_bins = pd.cut(df['memory_usage_percent'], bins=[0, 25, 50, 75, 100, float('inf')])\n        memory_usage_counts = memory_usage_bins.value_counts().sort_index()\n        results['memory_usage_distribution'] = {str(k): int(v) for k, v in memory_usage_counts.items()}\n\n        # 9. 温度区间分布\n        temperature_bins = pd.cut(df['temperature_celsius'], bins=5)\n        temperature_counts = temperature_bins.value_counts().sort_index()\n        results['temperature_distribution'] = {str(k): int(v) for k, v in temperature_counts.items()}\n\n        # 10. 每小时平均调用尝试次数\n        df['hour'] = pd.to_datetime(df['timestamp']).dt.hour\n        hourly_call_attempts = df.groupby('hour')['call_attempts'].mean().round().astype(int)\n        results['hourly_avg_call_attempts'] = hourly_call_attempts.to_dict()\n\n        return results\n\n    except Exception as e:\n        print(f\"An error occurred: {str(e)}\")\n        return None",
+      "results": null
+    },
+    "饼图比例分析单元": {
+      "status": "success",
+      "error": null,
+      "code": "import pandas as pd\nimport numpy as np\nimport json\nimport sys\nimport os\nfrom collections import defaultdict\n\ndef analyze_pie_chart_data(csv_path):\n    \"\"\"\n    分析CSV数据，提取适合饼图展示的比例数据\n    \"\"\"\n    try:\n        # 读取CSV文件\n        df = pd.read_csv(csv_path)\n        \n        # 初始化结果字典\n        pie_chart_data = {}\n        \n        # 1. 分析信号类型分布\n        signal_type_counts = df['signal_type'].value_counts()\n        total_signals = signal_type_counts.sum()\n        pie_chart_data['signal_type_distribution'] = {\n            'title': '信号类型分布',\n            'description': '各种信号类型在总信号中的占比',\n            'data': {signal: count/total_signals for signal, count in signal_type_counts.items()}\n        }\n        \n        # 2. 分析状态分布\n        status_counts = df['status'].value_counts()\n        total_status = status_counts.sum()\n        pie_chart_data['status_distribution'] = {\n            'title': '状态分布',\n            'description': '各种状态在总记录中的占比',\n            'data': {status: count/total_status for status, count in status_counts.items()}\n        }\n        \n        # 3. 分析基站分布\n        station_counts = df['base_station_name'].value_counts()\n        total_stations = station_counts.sum()\n        pie_chart_data['base_station_distribution'] = {\n            'title': '基站分布',\n            'description': '各基站数据记录在总记录中的占比',\n            'data': {station: count/total_stations for station, count in station_counts.items()}\n        }\n        \n        # 4. 分析成功率和失败率的平均分布\n        avg_success_rate = df['success_rate'].mean()\n        avg_failure_rate = df['failure_rate'].mean()\n        pie_chart_data['avg_success_failure_rate'] = {\n            'title': '平均成功/失败率',\n            'description': '通信成功率与失败率的平均分布',\n            'data': {\n                '成功率': avg_success_rate,\n                '失败率': avg_failure_rate\n            }\n        }\n        \n        # 5. 分析资源块使用率分布\n        # 将资源块使用率分成几个区间\n        resource_bins = [0, 25, 50, 75, 100]\n        resource_labels = ['0-25%', '25-50%', '50-75%', '75-100%']\n        resource_counts = pd.cut(df['resource_block_usage_percent'], bins=resource_bins, labels=resource_labels).value_counts()\n        total_resource = resource_counts.sum()\n        pie_chart_data['resource_usage_distribution'] = {\n            'title': '资源块使用率分布',\n            'description': '不同资源块使用率区间的分布',\n            'data': {label: count/total_resource for label, count in resource_counts.items()}\n        }\n        \n        # 6. 分析CPU使用率分布\n        cpu_bins = [0, 25, 50, 75, 100, float('inf')]\n        cpu_labels = ['0-25%', '25-50%', '50-75%', '75-100%', '>100%']\n        cpu_counts = pd.cut(df['cpu_usage_percent'], bins=cpu_bins, labels=cpu_labels).value_counts()\n        total_cpu = cpu_counts.sum()\n        pie_chart_data['cpu_usage_distribution'] = {\n            'title': 'CPU使用率分布',\n            'description': '不同CPU使用率区间的分布',\n            'data': {label: count/total_cpu for label, count in cpu_counts.items()}\n        }\n        \n        # 7. 分析内存使用率分布\n        memory_bins = [0, 25, 50, 75, 100, float('inf')]\n        memory_labels = ['0-25%', '25-50%', '50-75%', '75-100%', '>100%']\n        memory_counts = pd.cut(df['memory_usage_percent'], bins=memory_bins, labels=memory_labels).value_counts()\n        total_memory = memory_counts.sum()\n        pie_chart_data['memory_usage_distribution'] = {\n            'title': '内存使用率分布',\n            'description': '不同内存使用率区间的分布',\n            'data': {label: count/total_memory for label, count in memory_counts.items()}\n        }\n        \n        # 8. 分析温度分布\n        temp_bins = [25, 30, 35, 40, 45]\n        temp_labels = ['25-30°C', '30-35°C', '35-40°C', '40-45°C']\n        temp_counts = pd.cut(df['temperature_celsius'], bins=temp_bins, labels=temp_labels).value_counts()\n        total_temp = temp_counts.sum()\n        pie_chart_data['temperature_distribution'] = {\n            'title': '温度分布',\n            'description': '不同温度区间的分布',\n            'data': {label: count/total_temp for label, count in temp_counts.items()}\n        }\n        \n        return pie_chart_data\n        \n    except Exception as e:\n        print(f\"分析数据时出错: {str(e)}\")\n        return None\n\ndef main():\n    # 检查命令行参数\n    if len(sys.argv) != 2:\n        print(\"用法: python script.py <csv_file_path>\")\n        sys.exit(1)\n    \n    csv_path = sys.argv[1]\n    \n    # 检查文件是否存在\n    if not os.path.exists(csv_path):\n        print(f\"错误: 文件 '{csv_path}' 不存在\")\n        sys.exit(1)\n    \n    # 分析数据\n    pie_chart_data = analyze_pie_chart_data(csv_path)\n    \n    if pie_chart_data:\n        # 将结果保存为JSON\n        output_file = 'pie_chart_analysis_results.json'\n        try:\n            with open(output_file, 'w', encoding='utf-8') as f:\n                json.dump(pie_chart_data, f, ensure_ascii=False, indent=4)\n            print(f\"分析结果已保存到 {output_file}\")\n        except Exception as e:\n            print(f\"保存结果时出错: {str(e)}\")\n    else:\n        print(\"分析失败，未生成结果\")\n\nif __name__ == \"__main__\":\n    main()",
+      "results": "分析结果已保存到 pie_chart_analysis_results.json\n",
+      "json_results": {
+        "signal_type_distribution": {
+          "title": "信号类型分布",
+          "description": "各种信号类型在总信号中的占比",
+          "data": {
+            "PAGING": 0.07263888888888889,
+            "ATTACH_REQUEST": 0.06972222222222223,
+            "HANDOVER_REQUEST": 0.06861111111111111,
+            "HANDOVER_COMPLETE": 0.06819444444444445,
+            "SERVICE_REQUEST": 0.06819444444444445,
+            "HANDOVER_COMMAND": 0.0675,
+            "DETACH_REQUEST": 0.06708333333333333,
+            "RRC_CONNECTION_SETUP_COMPLETE": 0.06625,
+            "ATTACH_COMPLETE": 0.06625,
+            "SERVICE_ACCEPT": 0.06597222222222222,
+            "RRC_CONNECTION_REQUEST": 0.06541666666666666,
+            "DETACH_ACCEPT": 0.06458333333333334,
+            "RRC_CONNECTION_RELEASE": 0.06444444444444444,
+            "RRC_CONNECTION_SETUP": 0.06402777777777778,
+            "ATTACH_ACCEPT": 0.06111111111111111
+          }
+        },
+        "status_distribution": {
+          "title": "状态分布",
+          "description": "各种状态在总记录中的占比",
+          "data": {
+            "SUCCESS": 0.8506944444444444,
+            "FAILED": 0.051805555555555556,
+            "TIMEOUT": 0.0375,
+            "REJECTED": 0.032916666666666664,
+            "PENDING": 0.027083333333333334
+          }
+        },
+        "base_station_distribution": {
+          "title": "基站分布",
+          "description": "各基站数据记录在总记录中的占比",
+          "data": {
+            "城东-商业区基站": 0.2,
+            "城西-住宅区基站": 0.2,
+            "城北-工业园区基站": 0.2,
+            "城南-大学城基站": 0.2,
+            "市中心-商业区基站": 0.2
+          }
+        },
+        "avg_success_failure_rate": {
+          "title": "平均成功/失败率",
+          "description": "通信成功率与失败率的平均分布",
+          "data": {
+            "成功率": 0.8577264702900567,
+            "失败率": 0.1422735297099433
+          }
+        },
+        "resource_usage_distribution": {
+          "title": "资源块使用率分布",
+          "description": "不同资源块使用率区间的分布",
+          "data": {
+            "25-50%": 0.4170833333333333,
+            "75-100%": 0.3333333333333333,
+            "50-75%": 0.15069444444444444,
+            "0-25%": 0.09888888888888889
+          }
+        },
+        "cpu_usage_distribution": {
+          "title": "CPU使用率分布",
+          "description": "不同CPU使用率区间的分布",
+          "data": {
+            "25-50%": 0.41180555555555554,
+            "75-100%": 0.2847222222222222,
+            "50-75%": 0.16777777777777778,
+            "0-25%": 0.09902777777777778,
+            ">100%": 0.03666666666666667
+          }
+        },
+        "memory_usage_distribution": {
+          "title": "内存使用率分布",
+          "description": "不同内存使用率区间的分布",
+          "data": {
+            "25-50%": 0.3809722222222222,
+            "75-100%": 0.24555555555555555,
+            "50-75%": 0.19972222222222222,
+            "0-25%": 0.11652777777777777,
+            ">100%": 0.05722222222222222
+          }
+        },
+        "temperature_distribution": {
+          "title": "温度分布",
+          "description": "不同温度区间的分布",
+          "data": {
+            "35-40°C": 0.25666666666666665,
+            "40-45°C": 0.24833333333333332,
+            "25-30°C": 0.2477777777777778,
+            "30-35°C": 0.24722222222222223
+          }
+        }
+      }
+    },
+    "时间趋势分析单元": {
+      "status": "success",
+      "error": null,
+      "code": "import pandas as pd\nimport numpy as np\nimport json\nimport sys\nimport os\nfrom datetime import datetime\nfrom statsmodels.tsa.seasonal import seasonal_decompose\nfrom statsmodels.tsa.holtwinters import ExponentialSmoothing\n\ndef time_trend_analysis(csv_path):\n    \"\"\"\n    对CSV文件进行时间趋势分析\n    \n    参数:\n        csv_path: CSV文件路径\n    \n    返回:\n        分析结果字典\n    \"\"\"\n    try:\n        # 读取CSV文件\n        df = pd.read_csv(csv_path)\n        \n        # 检查是否存在时间列\n        if 'timestamp' not in df.columns:\n            raise ValueError(\"数据中没有timestamp列，无法进行时间趋势分析\")\n        \n        # 将timestamp转换为datetime类型\n        df['timestamp'] = pd.to_datetime(df['timestamp'])\n        df = df.sort_values('timestamp')\n        \n        # 设置timestamp为索引\n        df_time = df.set_index('timestamp')\n        \n        # 选择需要分析的指标列\n        metrics = ['success_rate', 'active_users', 'signal_strength_dbm', \n                  'downlink_throughput_mbps', 'latency_ms', 'packet_loss_percent']\n        \n        results = {\n            \"analysis_time\": datetime.now().strftime(\"%Y-%m-%d %H:%M:%S\"),\n            \"data_file\": os.path.basename(csv_path),\n            \"time_range\": {\n                \"start\": df['timestamp'].min().strftime(\"%Y-%m-%d %H:%M:%S\"),\n                \"end\": df['timestamp'].max().strftime(\"%Y-%m-%d %H:%M:%S\"),\n                \"duration_days\": (df['timestamp'].max() - df['timestamp'].min()).days\n            },\n            \"metrics\": {}\n        }\n        \n        # 按基站分组进行分析\n        for station_id in df['base_station_id'].unique():\n            station_data = df[df['base_station_id'] == station_id]\n            station_name = station_data['base_station_name'].iloc[0]\n            \n            results[\"metrics\"][station_id] = {\n                \"station_name\": station_name,\n                \"metrics_analysis\": {}\n            }\n            \n            # 对每个指标进行分析\n            for metric in metrics:\n                # 重采样为小时数据\n                hourly_data = station_data.set_index('timestamp')[metric].resample('H').mean()\n                \n                # 计算每日平均值\n                daily_data = station_data.set_index('timestamp')[metric].resample('D').mean()\n                \n                # 计算移动平均\n                if len(hourly_data) >= 24:\n                    ma_24h = hourly_data.rolling(window=24).mean()\n                else:\n                    ma_24h = None\n                \n                # 计算增长率（环比）\n                if len(daily_data) >= 2:\n                    growth_rate = daily_data.pct_change().dropna()\n                    avg_growth_rate = growth_rate.mean()\n                else:\n                    avg_growth_rate = None\n                \n                # 进行时间序列分解（如果有足够的数据点）\n                seasonal_result = None\n                if len(daily_data) >= 14:  # 至少需要两周的数据\n                    try:\n                        decomposition = seasonal_decompose(daily_data, model='additive', period=7)\n                        seasonal_result = {\n                            \"trend\": decomposition.trend.dropna().tolist(),\n                            \"seasonal\": decomposition.seasonal.dropna().tolist(),\n                            \"timestamps\": daily_data.index[decomposition.seasonal.dropna().index].strftime(\"%Y-%m-%d\").tolist()\n                        }\n                    except:\n                        seasonal_result = None\n                \n                # 简单预测（如果有足够的数据点）\n                forecast = None\n                if len(daily_data) >= 7:\n                    try:\n                        model = ExponentialSmoothing(\n                            daily_data, \n                            trend='add', \n                            seasonal='add' if len(daily_data) >= 14 else None,\n                            seasonal_periods=7 if len(daily_data) >= 14 else None\n                        ).fit()\n                        \n                        # 预测未来7天\n                        forecast_horizon = 7\n                        forecast_values = model.forecast(forecast_horizon)\n                        forecast = {\n                            \"dates\": pd.date_range(\n                                start=daily_data.index[-1] + pd.Timedelta(days=1), \n                                periods=forecast_horizon\n                            ).strftime(\"%Y-%m-%d\").tolist(),\n                            \"values\": forecast_values.tolist()\n                        }\n                    except:\n                        forecast = None\n                \n                # 保存分析结果\n                results[\"metrics\"][station_id][\"metrics_analysis\"][metric] = {\n                    \"hourly_data\": {\n                        \"timestamps\": hourly_data.index.strftime(\"%Y-%m-%d %H:%M:%S\").tolist(),\n                        \"values\": hourly_data.tolist()\n                    },\n                    \"daily_data\": {\n                        \"timestamps\": daily_data.index.strftime(\"%Y-%m-%d\").tolist(),\n                        \"values\": daily_data.tolist()\n                    },\n                    \"moving_average_24h\": None if ma_24h is None else {\n                        \"timestamps\": ma_24h.index.strftime(\"%Y-%m-%d %H:%M:%S\").tolist(),\n                        \"values\": ma_24h.dropna().tolist()\n                    },\n                    \"average_daily_growth_rate\": None if avg_growth_rate is None else float(avg_growth_rate),\n                    \"seasonal_decomposition\": seasonal_result,\n                    \"forecast\": forecast,\n                    \"statistics\": {\n                        \"min\": float(station_data[metric].min()),\n                        \"max\": float(station_data[metric].max()),\n                        \"mean\": float(station_data[metric].mean()),\n                        \"median\": float(station_data[metric].median()),\n                        \"std\": float(station_data[metric].std())\n                    }\n                }\n        \n        return results\n    \n    except Exception as e:\n        return {\n            \"error\": str(e),\n            \"status\": \"failed\",\n            \"timestamp\": datetime.now().strftime(\"%Y-%m-%d %H:%M:%S\")\n        }\n\nif __name__ == \"__main__\":\n    if len(sys.argv) < 2:\n        print(\"使用方法: python script.py <csv文件路径>\")\n        sys.exit(1)\n    \n    csv_path = sys.argv[1]\n    results = time_trend_analysis(csv_path)\n    \n    # 将结果保存为JSON文件\n    with open('time_trend_analysis_results.json', 'w', encoding='utf-8') as f:\n        json.dump(results, f, ensure_ascii=False, indent=2)\n    \n    print(f\"分析完成，结果已保存到 time_trend_analysis_results.json\")",
+      "results": "分析完成，结果已保存到 time_trend_analysis_results.json\n",
+      "json_results": {
+        "analysis_time": "2025-03-17 10:12:28",
+        "data_file": "excel_data_20250317100955.csv",
+        "time_range": {
+          "start": "2025-03-01 00:00:00",
+          "end": "2025-03-01 23:59:00",
+          "duration_days": 0
+        },
+        "metrics": {
+          "BS001": {
+            "station_name": "城东-商业区基站",
+            "metrics_analysis": {
+              "success_rate": {
+                "hourly_data": {
+                  "timestamps": [
+                    "2025-03-01 00:00:00",
+                    "2025-03-01 01:00:00",
+                    "2025-03-01 02:00:00",
+                    "2025-03-01 03:00:00",
+                    "2025-03-01 04:00:00",
+                    "2025-03-01 05:00:00",
+                    "2025-03-01 06:00:00",
+                    "2025-03-01 07:00:00",
+                    "2025-03-01 08:00:00",
+                    "2025-03-01 09:00:00",
+                    "2025-03-01 10:00:00",
+                    "2025-03-01 11:00:00",
+                    "2025-03-01 12:00:00",
+                    "2025-03-01 13:00:00",
+                    "2025-03-01 14:00:00",
+                    "2025-03-01 15:00:00",
+                    "2025-03-01 16:00:00",
+                    "2025-03-01 17:00:00",
+                    "2025-03-01 18:00:00",
+                    "2025-03-01 19:00:00",
+                    "2025-03-01 20:00:00",
+                    "2025-03-01 21:00:00",
+                    "2025-03-01 22:00:00",
+                    "2025-03-01 23:00:00"
+                  ],
+                  "values": [
+                    0.8583806767902381,
+                    0.8401739716880602,
+                    0.8539917996402849,
+                    0.8612499238447316,
+                    0.8622757125027614,
+                    0.8738279009741081,
+                    0.8515121653464651,
+                    0.8428308902234416,
+                    0.8383118891715154,
+                    0.8705249988550919,
+                    0.8393260610311825,
+                    0.867129395056769,
+                    0.8460957063854047,
+                    0.8633969616614159,
+                    0.8459377921362262,
+                    0.8413051272323192,
+                    0.8393137476581498,
+                    0.8534326430360333,
+                    0.8649852840878898,
+                    0.8373092721262193,
+                    0.860633221788157,
+                    0.8534037612670793,
+                    0.859958748171232,
+                    0.8609040966026295
+                  ]
+                },
+                "daily_data": {
+                  "timestamps": [
+                    "2025-03-01"
+                  ],
+                  "values": [
+                    0.8535921561365585
+                  ]
+                },
+                "moving_average_24h": {
+                  "timestamps": [
+                    "2025-03-01 00:00:00",
+                    "2025-03-01 01:00:00",
+                    "2025-03-01 02:00:00",
+                    "2025-03-01 03:00:00",
+                    "2025-03-01 04:00:00",
+                    "2025-03-01 05:00:00",
+                    "2025-03-01 06:00:00",
+                    "2025-03-01 07:00:00",
+                    "2025-03-01 08:00:00",
+                    "2025-03-01 09:00:00",
+                    "2025-03-01 10:00:00",
+                    "2025-03-01 11:00:00",
+                    "2025-03-01 12:00:00",
+                    "2025-03-01 13:00:00",
+                    "2025-03-01 14:00:00",
+                    "2025-03-01 15:00:00",
+                    "2025-03-01 16:00:00",
+                    "2025-03-01 17:00:00",
+                    "2025-03-01 18:00:00",
+                    "2025-03-01 19:00:00",
+                    "2025-03-01 20:00:00",
+                    "2025-03-01 21:00:00",
+                    "2025-03-01 22:00:00",
+                    "2025-03-01 23:00:00"
+                  ],
+                  "values": [
+                    0.8535921561365586
+                  ]
+                },
+                "average_daily_growth_rate": null,
+                "seasonal_decomposition": null,
+                "forecast": null,
+                "statistics": {
+                  "min": 0.5024669394166674,
+                  "max": 0.9899954351064012,
+                  "mean": 0.8535921561365587,
+                  "median": 0.8754458143093169,
+                  "std": 0.10974933713563137
+                }
+              },
+              "active_users": {
+                "hourly_data": {
+                  "timestamps": [
+                    "2025-03-01 00:00:00",
+                    "2025-03-01 01:00:00",
+                    "2025-03-01 02:00:00",
+                    "2025-03-01 03:00:00",
+                    "2025-03-01 04:00:00",
+                    "2025-03-01 05:00:00",
+                    "2025-03-01 06:00:00",
+                    "2025-03-01 07:00:00",
+                    "2025-03-01 08:00:00",
+                    "2025-03-01 09:00:00",
+                    "2025-03-01 10:00:00",
+                    "2025-03-01 11:00:00",
+                    "2025-03-01 12:00:00",
+                    "2025-03-01 13:00:00",
+                    "2025-03-01 14:00:00",
+                    "2025-03-01 15:00:00",
+                    "2025-03-01 16:00:00",
+                    "2025-03-01 17:00:00",
+                    "2025-03-01 18:00:00",
+                    "2025-03-01 19:00:00",
+                    "2025-03-01 20:00:00",
+                    "2025-03-01 21:00:00",
+                    "2025-03-01 22:00:00",
+                    "2025-03-01 23:00:00"
+                  ],
+                  "values": [
+                    118.18333333333334,
+                    132.28333333333333,
+                    120.58333333333333,
+                    123.43333333333334,
+                    131.8,
+                    115.73333333333333,
+                    130.61666666666667,
+                    123.5,
+                    331.6333333333333,
+                    339.1666666666667,
+                    129.03333333333333,
+                    127.96666666666667,
+                    331.0,
+                    364.5,
+                    122.58333333333333,
+                    126.21666666666667,
+                    134.21666666666667,
+                    129.96666666666667,
+                    348.46666666666664,
+                    356.51666666666665,
+                    342.6333333333333,
+                    366.96666666666664,
+                    126.88333333333334,
+                    128.01666666666668
+                  ]
+                },
+                "daily_data": {
+                  "timestamps": [
+                    "2025-03-01"
+                  ],
+                  "values": [
+                    200.07916666666668
+                  ]
+                },
+                "moving_average_24h": {
+                  "timestamps": [
+                    "2025-03-01 00:00:00",
+                    "2025-03-01 01:00:00",
+                    "2025-03-01 02:00:00",
+                    "2025-03-01 03:00:00",
+                    "2025-03-01 04:00:00",
+                    "2025-03-01 05:00:00",
+                    "2025-03-01 06:00:00",
+                    "2025-03-01 07:00:00",
+                    "2025-03-01 08:00:00",
+                    "2025-03-01 09:00:00",
+                    "2025-03-01 10:00:00",
+                    "2025-03-01 11:00:00",
+                    "2025-03-01 12:00:00",
+                    "2025-03-01 13:00:00",
+                    "2025-03-01 14:00:00",
+                    "2025-03-01 15:00:00",
+                    "2025-03-01 16:00:00",
+                    "2025-03-01 17:00:00",
+                    "2025-03-01 18:00:00",
+                    "2025-03-01 19:00:00",
+                    "2025-03-01 20:00:00",
+                    "2025-03-01 21:00:00",
+                    "2025-03-01 22:00:00",
+                    "2025-03-01 23:00:00"
+                  ],
+                  "values": [
+                    200.07916666666665
+                  ]
+                },
+                "average_daily_growth_rate": null,
+                "seasonal_decomposition": null,
+                "forecast": null,
+                "statistics": {
+                  "min": 50.0,
+                  "max": 499.0,
+                  "mean": 200.07916666666668,
+                  "median": 164.0,
+                  "std": 121.1268581177208
+                }
+              },
+              "signal_strength_dbm": {
+                "hourly_data": {
+                  "timestamps": [
+                    "2025-03-01 00:00:00",
+                    "2025-03-01 01:00:00",
+                    "2025-03-01 02:00:00",
+                    "2025-03-01 03:00:00",
+                    "2025-03-01 04:00:00",
+                    "2025-03-01 05:00:00",
+                    "2025-03-01 06:00:00",
+                    "2025-03-01 07:00:00",
+                    "2025-03-01 08:00:00",
+                    "2025-03-01 09:00:00",
+                    "2025-03-01 10:00:00",
+                    "2025-03-01 11:00:00",
+                    "2025-03-01 12:00:00",
+                    "2025-03-01 13:00:00",
+                    "2025-03-01 14:00:00",
+                    "2025-03-01 15:00:00",
+                    "2025-03-01 16:00:00",
+                    "2025-03-01 17:00:00",
+                    "2025-03-01 18:00:00",
+                    "2025-03-01 19:00:00",
+                    "2025-03-01 20:00:00",
+                    "2025-03-01 21:00:00",
+                    "2025-03-01 22:00:00",
+                    "2025-03-01 23:00:00"
+                  ],
+                  "values": [
+                    -95.2879447683575,
+                    -95.86948605595076,
+                    -95.20043354637386,
+                    -93.58792452901615,
+                    -94.42585875239618,
+                    -96.90541163685398,
+                    -95.66014830099097,
+                    -97.67382594315198,
+                    -94.77292925362293,
+                    -93.92657039131016,
+                    -95.71752450680471,
+                    -96.9848748232559,
+                    -97.88245614446234,
+                    -99.29436353595968,
+                    -94.64422262062455,
+                    -93.61212537652719,
+                    -96.96253031478358,
+                    -93.92875647395368,
+                    -92.30349972281768,
+                    -95.48633256530749,
+                    -94.24299283727291,
+                    -93.15450280556912,
+                    -94.60703100713879,
+                    -94.76073303774474
+                  ]
+                },
+                "daily_data": {
+                  "timestamps": [
+                    "2025-03-01"
+                  ],
+                  "values": [
+                    -95.28718662292695
+                  ]
+                },
+                "moving_average_24h": {
+                  "timestamps": [
+                    "2025-03-01 00:00:00",
+                    "2025-03-01 01:00:00",
+                    "2025-03-01 02:00:00",
+                    "2025-03-01 03:00:00",
+                    "2025-03-01 04:00:00",
+                    "2025-03-01 05:00:00",
+                    "2025-03-01 06:00:00",
+                    "2025-03-01 07:00:00",
+                    "2025-03-01 08:00:00",
+                    "2025-03-01 09:00:00",
+                    "2025-03-01 10:00:00",
+                    "2025-03-01 11:00:00",
+                    "2025-03-01 12:00:00",
+                    "2025-03-01 13:00:00",
+                    "2025-03-01 14:00:00",
+                    "2025-03-01 15:00:00",
+                    "2025-03-01 16:00:00",
+                    "2025-03-01 17:00:00",
+                    "2025-03-01 18:00:00",
+                    "2025-03-01 19:00:00",
+                    "2025-03-01 20:00:00",
+                    "2025-03-01 21:00:00",
+                    "2025-03-01 22:00:00",
+                    "2025-03-01 23:00:00"
+                  ],
+                  "values": [
+                    -95.28718662292694
+                  ]
+                },
+                "average_daily_growth_rate": null,
+                "seasonal_decomposition": null,
+                "forecast": null,
+                "statistics": {
+                  "min": -119.9975938052844,
+                  "max": -70.01293638709538,
+                  "mean": -95.28718662292695,
+                  "median": -95.49303727127366,
+                  "std": 14.401242298467798
+                }
+              },
+              "downlink_throughput_mbps": {
+                "hourly_data": {
+                  "timestamps": [
+                    "2025-03-01 00:00:00",
+                    "2025-03-01 01:00:00",
+                    "2025-03-01 02:00:00",
+                    "2025-03-01 03:00:00",
+                    "2025-03-01 04:00:00",
+                    "2025-03-01 05:00:00",
+                    "2025-03-01 06:00:00",
+                    "2025-03-01 07:00:00",
+                    "2025-03-01 08:00:00",
+                    "2025-03-01 09:00:00",
+                    "2025-03-01 10:00:00",
+                    "2025-03-01 11:00:00",
+                    "2025-03-01 12:00:00",
+                    "2025-03-01 13:00:00",
+                    "2025-03-01 14:00:00",
+                    "2025-03-01 15:00:00",
+                    "2025-03-01 16:00:00",
+                    "2025-03-01 17:00:00",
+                    "2025-03-01 18:00:00",
+                    "2025-03-01 19:00:00",
+                    "2025-03-01 20:00:00",
+                    "2025-03-01 21:00:00",
+                    "2025-03-01 22:00:00",
+                    "2025-03-01 23:00:00"
+                  ],
+                  "values": [
+                    819.9167258754928,
+                    800.3350780922126,
+                    808.719412188541,
+                    951.4552029983283,
+                    849.4428756678204,
+                    776.004505934978,
+                    799.9280723744293,
+                    831.8524399065227,
+                    466.41312415194534,
+                    545.1782323974664,
+                    892.867355704379,
+                    832.356373994388,
+                    535.0847710728841,
+                    532.7378105423074,
+                    742.831032190797,
+                    813.3779349306493,
+                    758.5384380945925,
+                    784.9781602083166,
+                    563.9604455935053,
+                    531.7520208617824,
+                    549.2351930645383,
+                    489.31234775948667,
+                    816.3354670386838,
+                    798.3840116504945
+                  ]
+                },
+                "daily_data": {
+                  "timestamps": [
+                    "2025-03-01"
+                  ],
+                  "values": [
+                    720.4582096789392
+                  ]
+                },
+                "moving_average_24h": {
+                  "timestamps": [
+                    "2025-03-01 00:00:00",
+                    "2025-03-01 01:00:00",
+                    "2025-03-01 02:00:00",
+                    "2025-03-01 03:00:00",
+                    "2025-03-01 04:00:00",
+                    "2025-03-01 05:00:00",
+                    "2025-03-01 06:00:00",
+                    "2025-03-01 07:00:00",
+                    "2025-03-01 08:00:00",
+                    "2025-03-01 09:00:00",
+                    "2025-03-01 10:00:00",
+                    "2025-03-01 11:00:00",
+                    "2025-03-01 12:00:00",
+                    "2025-03-01 13:00:00",
+                    "2025-03-01 14:00:00",
+                    "2025-03-01 15:00:00",
+                    "2025-03-01 16:00:00",
+                    "2025-03-01 17:00:00",
+                    "2025-03-01 18:00:00",
+                    "2025-03-01 19:00:00",
+                    "2025-03-01 20:00:00",
+                    "2025-03-01 21:00:00",
+                    "2025-03-01 22:00:00",
+                    "2025-03-01 23:00:00"
+                  ],
+                  "values": [
+                    720.4582096789392
+                  ]
+                },
+                "average_daily_growth_rate": null,
+                "seasonal_decomposition": null,
+                "forecast": null,
+                "statistics": {
+                  "min": 50.46451949863309,
+                  "max": 1499.808042178363,
+                  "mean": 720.4582096789393,
+                  "median": 703.9201969413834,
+                  "std": 389.9006228813571
+                }
+              },
+              "latency_ms": {
+                "hourly_data": {
+                  "timestamps": [
+                    "2025-03-01 00:00:00",
+                    "2025-03-01 01:00:00",
+                    "2025-03-01 02:00:00",
+                    "2025-03-01 03:00:00",
+                    "2025-03-01 04:00:00",
+                    "2025-03-01 05:00:00",
+                    "2025-03-01 06:00:00",
+                    "2025-03-01 07:00:00",
+                    "2025-03-01 08:00:00",
+                    "2025-03-01 09:00:00",
+                    "2025-03-01 10:00:00",
+                    "2025-03-01 11:00:00",
+                    "2025-03-01 12:00:00",
+                    "2025-03-01 13:00:00",
+                    "2025-03-01 14:00:00",
+                    "2025-03-01 15:00:00",
+                    "2025-03-01 16:00:00",
+                    "2025-03-01 17:00:00",
+                    "2025-03-01 18:00:00",
+                    "2025-03-01 19:00:00",
+                    "2025-03-01 20:00:00",
+                    "2025-03-01 21:00:00",
+                    "2025-03-01 22:00:00",
+                    "2025-03-01 23:00:00"
+                  ],
+                  "values": [
+                    17.06814068440172,
+                    17.139564419778214,
+                    18.392047347556336,
+                    18.159585863360103,
+                    18.68103099115668,
+                    16.85517584930274,
+                    17.597939344454964,
+                    18.814400868320245,
+                    30.03430812247058,
+                    30.910435900773187,
+                    17.94872235048425,
+                    17.598846966855195,
+                    30.833888181182875,
+                    30.787382996669532,
+                    17.237757803927035,
+                    16.624847666529224,
+                    16.069323035287002,
+                    17.362178395481006,
+                    28.60267517106797,
+                    29.582465316290016,
+                    31.8671531868971,
+                    27.67234107213454,
+                    17.712957712651995,
+                    18.815593403092784
+                  ]
+                },
+                "daily_data": {
+                  "timestamps": [
+                    "2025-03-01"
+                  ],
+                  "values": [
+                    21.76536511042189
+                  ]
+                },
+                "moving_average_24h": {
+                  "timestamps": [
+                    "2025-03-01 00:00:00",
+                    "2025-03-01 01:00:00",
+                    "2025-03-01 02:00:00",
+                    "2025-03-01 03:00:00",
+                    "2025-03-01 04:00:00",
+                    "2025-03-01 05:00:00",
+                    "2025-03-01 06:00:00",
+                    "2025-03-01 07:00:00",
+                    "2025-03-01 08:00:00",
+                    "2025-03-01 09:00:00",
+                    "2025-03-01 10:00:00",
+                    "2025-03-01 11:00:00",
+                    "2025-03-01 12:00:00",
+                    "2025-03-01 13:00:00",
+                    "2025-03-01 14:00:00",
+                    "2025-03-01 15:00:00",
+                    "2025-03-01 16:00:00",
+                    "2025-03-01 17:00:00",
+                    "2025-03-01 18:00:00",
+                    "2025-03-01 19:00:00",
+                    "2025-03-01 20:00:00",
+                    "2025-03-01 21:00:00",
+                    "2025-03-01 22:00:00",
+                    "2025-03-01 23:00:00"
+                  ],
+                  "values": [
+                    21.765365110421886
+                  ]
+                },
+                "average_daily_growth_rate": null,
+                "seasonal_decomposition": null,
+                "forecast": null,
+                "statistics": {
+                  "min": 5.004281384199381,
+                  "max": 49.98514299959502,
+                  "mean": 21.76536511042189,
+                  "median": 20.5149706237205,
+                  "std": 10.837256246606284
+                }
+              },
+              "packet_loss_percent": {
+                "hourly_data": {
+                  "timestamps": [
+                    "2025-03-01 00:00:00",
+                    "2025-03-01 01:00:00",
+                    "2025-03-01 02:00:00",
+                    "2025-03-01 03:00:00",
+                    "2025-03-01 04:00:00",
+                    "2025-03-01 05:00:00",
+                    "2025-03-01 06:00:00",
+                    "2025-03-01 07:00:00",
+                    "2025-03-01 08:00:00",
+                    "2025-03-01 09:00:00",
+                    "2025-03-01 10:00:00",
+                    "2025-03-01 11:00:00",
+                    "2025-03-01 12:00:00",
+                    "2025-03-01 13:00:00",
+                    "2025-03-01 14:00:00",
+                    "2025-03-01 15:00:00",
+                    "2025-03-01 16:00:00",
+                    "2025-03-01 17:00:00",
+                    "2025-03-01 18:00:00",
+                    "2025-03-01 19:00:00",
+                    "2025-03-01 20:00:00",
+                    "2025-03-01 21:00:00",
+                    "2025-03-01 22:00:00",
+                    "2025-03-01 23:00:00"
+                  ],
+                  "values": [
+                    2.407854387017511,
+                    2.6115615172786772,
+                    2.679430359243267,
+                    2.58071678624945,
+                    2.3926713005850835,
+                    2.889795058418163,
+                    2.482543410876013,
+                    2.7516767761695617,
+                    2.3227741486440223,
+                    2.6566037309468924,
+                    2.571185831415014,
+                    2.344112958179775,
+                    2.3764501491075856,
+                    2.7862868563158387,
+                    2.6107518038847086,
+                    2.708800961310556,
+                    2.564503138869837,
+                    2.546057600334862,
+                    2.986494482247534,
+                    2.3736190787154303,
+                    2.4883084661988257,
+                    2.509044769652119,
+                    2.4211157475685527,
+                    2.443218665429655
+                  ]
+                },
+                "daily_data": {
+                  "timestamps": [
+                    "2025-03-01"
+                  ],
+                  "values": [
+                    2.5627324160274556
+                  ]
+                },
+                "moving_average_24h": {
+                  "timestamps": [
+                    "2025-03-01 00:00:00",
+                    "2025-03-01 01:00:00",
+                    "2025-03-01 02:00:00",
+                    "2025-03-01 03:00:00",
+                    "2025-03-01 04:00:00",
+                    "2025-03-01 05:00:00",
+                    "2025-03-01 06:00:00",
+                    "2025-03-01 07:00:00",
+                    "2025-03-01 08:00:00",
+                    "2025-03-01 09:00:00",
+                    "2025-03-01 10:00:00",
+                    "2025-03-01 11:00:00",
+                    "2025-03-01 12:00:00",
+                    "2025-03-01 13:00:00",
+                    "2025-03-01 14:00:00",
+                    "2025-03-01 15:00:00",
+                    "2025-03-01 16:00:00",
+                    "2025-03-01 17:00:00",
+                    "2025-03-01 18:00:00",
+                    "2025-03-01 19:00:00",
+                    "2025-03-01 20:00:00",
+                    "2025-03-01 21:00:00",
+                    "2025-03-01 22:00:00",
+                    "2025-03-01 23:00:00"
+                  ],
+                  "values": [
+                    2.5627324160274556
+                  ]
+                },
+                "average_daily_growth_rate": null,
+                "seasonal_decomposition": null,
+                "forecast": null,
+                "statistics": {
+                  "min": 0.0033483415035762,
+                  "max": 4.999375495706468,
+                  "mean": 2.5627324160274556,
+                  "median": 2.6220387426237473,
+                  "std": 1.4466096469168428
+                }
+              }
+            }
+          },
+          "BS002": {
+            "station_name": "城西-住宅区基站",
+            "metrics_analysis": {
+              "success_rate": {
+                "hourly_data": {
+                  "timestamps": [
+                    "2025-03-01 00:00:00",
+                    "2025-03-01 01:00:00",
+                    "2025-03-01 02:00:00",
+                    "2025-03-01 03:00:00",
+                    "2025-03-01 04:00:00",
+                    "2025-03-01 05:00:00",
+                    "2025-03-01 06:00:00",
+                    "2025-03-01 07:00:00",
+                    "2025-03-01 08:00:00",
+                    "2025-03-01 09:00:00",
+                    "2025-03-01 10:00:00",
+                    "2025-03-01 11:00:00",
+                    "2025-03-01 12:00:00",
+                    "2025-03-01 13:00:00",
+                    "2025-03-01 14:00:00",
+                    "2025-03-01 15:00:00",
+                    "2025-03-01 16:00:00",
+                    "2025-03-01 17:00:00",
+                    "2025-03-01 18:00:00",
+                    "2025-03-01 19:00:00",
+                    "2025-03-01 20:00:00",
+                    "2025-03-01 21:00:00",
+                    "2025-03-01 22:00:00",
+                    "2025-03-01 23:00:00"
+                  ],
+                  "values": [
+                    0.8649049879507532,
+                    0.8261963114746379,
+                    0.8735509720783979,
+                    0.8677894690982689,
+                    0.8668294183359649,
+                    0.8474456866510709,
+                    0.8717830985143388,
+                    0.8531308448612863,
+                    0.8555062674276499,
+                    0.851430689189918,
+                    0.8640680005816039,
+                    0.860966134225473,
+                    0.8608819679773513,
+                    0.8726025873305975,
+                    0.8567985889610964,
+                    0.8316681696639971,
+                    0.8395937964789384,
+                    0.8667876594466649,
+                    0.872258768048541,
+                    0.8550041410666823,
+                    0.8885155511442218,
+                    0.8766187464558712,
+                    0.8509274838438855,
+                    0.8748442018203335
+                  ]
+                },
+                "daily_data": {
+                  "timestamps": [
+                    "2025-03-01"
+                  ],
+                  "values": [
+                    0.8604209809428143
+                  ]
+                },
+                "moving_average_24h": {
+                  "timestamps": [
+                    "2025-03-01 00:00:00",
+                    "2025-03-01 01:00:00",
+                    "2025-03-01 02:00:00",
+                    "2025-03-01 03:00:00",
+                    "2025-03-01 04:00:00",
+                    "2025-03-01 05:00:00",
+                    "2025-03-01 06:00:00",
+                    "2025-03-01 07:00:00",
+                    "2025-03-01 08:00:00",
+                    "2025-03-01 09:00:00",
+                    "2025-03-01 10:00:00",
+                    "2025-03-01 11:00:00",
+                    "2025-03-01 12:00:00",
+                    "2025-03-01 13:00:00",
+                    "2025-03-01 14:00:00",
+                    "2025-03-01 15:00:00",
+                    "2025-03-01 16:00:00",
+                    "2025-03-01 17:00:00",
+                    "2025-03-01 18:00:00",
+                    "2025-03-01 19:00:00",
+                    "2025-03-01 20:00:00",
+                    "2025-03-01 21:00:00",
+                    "2025-03-01 22:00:00",
+                    "2025-03-01 23:00:00"
+                  ],
+                  "values": [
+                    0.8604209809428144
+                  ]
+                },
+                "average_daily_growth_rate": null,
+                "seasonal_decomposition": null,
+                "forecast": null,
+                "statistics": {
+                  "min": 0.5009843387030902,
+                  "max": 0.9897788497718822,
+                  "mean": 0.8604209809428145,
+                  "median": 0.8801628240595454,
+                  "std": 0.1044894905018544
+                }
+              },
+              "active_users": {
+                "hourly_data": {
+                  "timestamps": [
+                    "2025-03-01 00:00:00",
+                    "2025-03-01 01:00:00",
+                    "2025-03-01 02:00:00",
+                    "2025-03-01 03:00:00",
+                    "2025-03-01 04:00:00",
+                    "2025-03-01 05:00:00",
+                    "2025-03-01 06:00:00",
+                    "2025-03-01 07:00:00",
+                    "2025-03-01 08:00:00",
+                    "2025-03-01 09:00:00",
+                    "2025-03-01 10:00:00",
+                    "2025-03-01 11:00:00",
+                    "2025-03-01 12:00:00",
+                    "2025-03-01 13:00:00",
+                    "2025-03-01 14:00:00",
+                    "2025-03-01 15:00:00",
+                    "2025-03-01 16:00:00",
+                    "2025-03-01 17:00:00",
+                    "2025-03-01 18:00:00",
+                    "2025-03-01 19:00:00",
+                    "2025-03-01 20:00:00",
+                    "2025-03-01 21:00:00",
+                    "2025-03-01 22:00:00",
+                    "2025-03-01 23:00:00"
+                  ],
+                  "values": [
+                    131.11666666666667,
+                    118.48333333333333,
+                    122.0,
+                    124.4,
+                    116.55,
+                    133.5,
+                    128.5,
+                    121.23333333333333,
+                    361.35,
+                    335.23333333333335,
+                    123.73333333333333,
+                    121.96666666666667,
+                    353.53333333333336,
+                    370.8833333333333,
+                    124.63333333333334,
+                    124.53333333333333,
+                    129.06666666666666,
+                    122.56666666666666,
+                    347.5,
+                    359.18333333333334,
+                    339.6666666666667,
+                    351.93333333333334,
+                    129.98333333333332,
+                    116.98333333333333
+                  ]
+                },
+                "daily_data": {
+                  "timestamps": [
+                    "2025-03-01"
+                  ],
+                  "values": [
+                    200.35555555555555
+                  ]
+                },
+                "moving_average_24h": {
+                  "timestamps": [
+                    "2025-03-01 00:00:00",
+                    "2025-03-01 01:00:00",
+                    "2025-03-01 02:00:00",
+                    "2025-03-01 03:00:00",
+                    "2025-03-01 04:00:00",
+                    "2025-03-01 05:00:00",
+                    "2025-03-01 06:00:00",
+                    "2025-03-01 07:00:00",
+                    "2025-03-01 08:00:00",
+                    "2025-03-01 09:00:00",
+                    "2025-03-01 10:00:00",
+                    "2025-03-01 11:00:00",
+                    "2025-03-01 12:00:00",
+                    "2025-03-01 13:00:00",
+                    "2025-03-01 14:00:00",
+                    "2025-03-01 15:00:00",
+                    "2025-03-01 16:00:00",
+                    "2025-03-01 17:00:00",
+                    "2025-03-01 18:00:00",
+                    "2025-03-01 19:00:00",
+                    "2025-03-01 20:00:00",
+                    "2025-03-01 21:00:00",
+                    "2025-03-01 22:00:00",
+                    "2025-03-01 23:00:00"
+                  ],
+                  "values": [
+                    200.35555555555558
+                  ]
+                },
+                "average_daily_growth_rate": null,
+                "seasonal_decomposition": null,
+                "forecast": null,
+                "statistics": {
+                  "min": 50.0,
+                  "max": 499.0,
+                  "mean": 200.35555555555555,
+                  "median": 163.0,
+                  "std": 124.17353734607275
+                }
+              },
+              "signal_strength_dbm": {
+                "hourly_data": {
+                  "timestamps": [
+                    "2025-03-01 00:00:00",
+                    "2025-03-01 01:00:00",
+                    "2025-03-01 02:00:00",
+                    "2025-03-01 03:00:00",
+                    "2025-03-01 04:00:00",
+                    "2025-03-01 05:00:00",
+                    "2025-03-01 06:00:00",
+                    "2025-03-01 07:00:00",
+                    "2025-03-01 08:00:00",
+                    "2025-03-01 09:00:00",
+                    "2025-03-01 10:00:00",
+                    "2025-03-01 11:00:00",
+                    "2025-03-01 12:00:00",
+                    "2025-03-01 13:00:00",
+                    "2025-03-01 14:00:00",
+                    "2025-03-01 15:00:00",
+                    "2025-03-01 16:00:00",
+                    "2025-03-01 17:00:00",
+                    "2025-03-01 18:00:00",
+                    "2025-03-01 19:00:00",
+                    "2025-03-01 20:00:00",
+                    "2025-03-01 21:00:00",
+                    "2025-03-01 22:00:00",
+                    "2025-03-01 23:00:00"
+                  ],
+                  "values": [
+                    -94.26012632405197,
+                    -96.85497890195688,
+                    -93.65966992560497,
+                    -94.25357064500227,
+                    -94.38523775198851,
+                    -96.6003137835615,
+                    -96.81767557684894,
+                    -94.09608402379527,
+                    -95.13386247628833,
+                    -97.43772069887343,
+                    -96.08575591817345,
+                    -94.81803807707189,
+                    -96.33779382347772,
+                    -94.60525086047046,
+                    -93.84555865338464,
+                    -94.18664798109106,
+                    -94.80509184743603,
+                    -92.76152504275005,
+                    -93.29871445050348,
+                    -92.27090999351194,
+                    -95.02136117714875,
+                    -97.85315585112691,
+                    -92.13200921175161,
+                    -92.96702336381023
+                  ]
+                },
+                "daily_data": {
+                  "timestamps": [
+                    "2025-03-01"
+                  ],
+                  "values": [
+                    -94.77033651498667
+                  ]
+                },
+                "moving_average_24h": {
+                  "timestamps": [
+                    "2025-03-01 00:00:00",
+                    "2025-03-01 01:00:00",
+                    "2025-03-01 02:00:00",
+                    "2025-03-01 03:00:00",
+                    "2025-03-01 04:00:00",
+                    "2025-03-01 05:00:00",
+                    "2025-03-01 06:00:00",
+                    "2025-03-01 07:00:00",
+                    "2025-03-01 08:00:00",
+                    "2025-03-01 09:00:00",
+                    "2025-03-01 10:00:00",
+                    "2025-03-01 11:00:00",
+                    "2025-03-01 12:00:00",
+                    "2025-03-01 13:00:00",
+                    "2025-03-01 14:00:00",
+                    "2025-03-01 15:00:00",
+                    "2025-03-01 16:00:00",
+                    "2025-03-01 17:00:00",
+                    "2025-03-01 18:00:00",
+                    "2025-03-01 19:00:00",
+                    "2025-03-01 20:00:00",
+                    "2025-03-01 21:00:00",
+                    "2025-03-01 22:00:00",
+                    "2025-03-01 23:00:00"
+                  ],
+                  "values": [
+                    -94.77033651498668
+                  ]
+                },
+                "average_daily_growth_rate": null,
+                "seasonal_decomposition": null,
+                "forecast": null,
+                "statistics": {
+                  "min": -119.9319038780747,
+                  "max": -70.01806730174104,
+                  "mean": -94.77033651498667,
+                  "median": -95.05097640202209,
+                  "std": 14.398970970729103
+                }
+              },
+              "downlink_throughput_mbps": {
+                "hourly_data": {
+                  "timestamps": [
+                    "2025-03-01 00:00:00",
+                    "2025-03-01 01:00:00",
+                    "2025-03-01 02:00:00",
+                    "2025-03-01 03:00:00",
+                    "2025-03-01 04:00:00",
+                    "2025-03-01 05:00:00",
+                    "2025-03-01 06:00:00",
+                    "2025-03-01 07:00:00",
+                    "2025-03-01 08:00:00",
+                    "2025-03-01 09:00:00",
+                    "2025-03-01 10:00:00",
+                    "2025-03-01 11:00:00",
+                    "2025-03-01 12:00:00",
+                    "2025-03-01 13:00:00",
+                    "2025-03-01 14:00:00",
+                    "2025-03-01 15:00:00",
+                    "2025-03-01 16:00:00",
+                    "2025-03-01 17:00:00",
+                    "2025-03-01 18:00:00",
+                    "2025-03-01 19:00:00",
+                    "2025-03-01 20:00:00",
+                    "2025-03-01 21:00:00",
+                    "2025-03-01 22:00:00",
+                    "2025-03-01 23:00:00"
+                  ],
+                  "values": [
+                    827.5411055582554,
+                    798.4773585727728,
+                    763.6509708461012,
+                    748.9762197570594,
+                    774.3982798969258,
+                    819.0934144112995,
+                    703.6767327188139,
+                    842.1480309774817,
+                    503.34597768535735,
+                    532.402091376222,
+                    837.89783624717,
+                    747.2742896648193,
+                    550.4884778139204,
+                    549.2958401324939,
+                    842.1877653515858,
+                    903.8835285795045,
+                    770.3109822453173,
+                    888.9226066742996,
+                    535.7648104460878,
+                    531.259926950204,
+                    551.256419043054,
+                    457.77218217223896,
+                    847.800152120795,
+                    830.2319501515308
+                  ]
+                },
+                "daily_data": {
+                  "timestamps": [
+                    "2025-03-01"
+                  ],
+                  "values": [
+                    714.9190395580546
+                  ]
+                },
+                "moving_average_24h": {
+                  "timestamps": [
+                    "2025-03-01 00:00:00",
+                    "2025-03-01 01:00:00",
+                    "2025-03-01 02:00:00",
+                    "2025-03-01 03:00:00",
+                    "2025-03-01 04:00:00",
+                    "2025-03-01 05:00:00",
+                    "2025-03-01 06:00:00",
+                    "2025-03-01 07:00:00",
+                    "2025-03-01 08:00:00",
+                    "2025-03-01 09:00:00",
+                    "2025-03-01 10:00:00",
+                    "2025-03-01 11:00:00",
+                    "2025-03-01 12:00:00",
+                    "2025-03-01 13:00:00",
+                    "2025-03-01 14:00:00",
+                    "2025-03-01 15:00:00",
+                    "2025-03-01 16:00:00",
+                    "2025-03-01 17:00:00",
+                    "2025-03-01 18:00:00",
+                    "2025-03-01 19:00:00",
+                    "2025-03-01 20:00:00",
+                    "2025-03-01 21:00:00",
+                    "2025-03-01 22:00:00",
+                    "2025-03-01 23:00:00"
+                  ],
+                  "values": [
+                    714.9190395580546
+                  ]
+                },
+                "average_daily_growth_rate": null,
+                "seasonal_decomposition": null,
+                "forecast": null,
+                "statistics": {
+                  "min": 50.3341799549399,
+                  "max": 1498.449656846607,
+                  "mean": 714.9190395580547,
+                  "median": 675.8891321185718,
+                  "std": 392.97217012943554
+                }
+              },
+              "latency_ms": {
+                "hourly_data": {
+                  "timestamps": [
+                    "2025-03-01 00:00:00",
+                    "2025-03-01 01:00:00",
+                    "2025-03-01 02:00:00",
+                    "2025-03-01 03:00:00",
+                    "2025-03-01 04:00:00",
+                    "2025-03-01 05:00:00",
+                    "2025-03-01 06:00:00",
+                    "2025-03-01 07:00:00",
+                    "2025-03-01 08:00:00",
+                    "2025-03-01 09:00:00",
+                    "2025-03-01 10:00:00",
+                    "2025-03-01 11:00:00",
+                    "2025-03-01 12:00:00",
+                    "2025-03-01 13:00:00",
+                    "2025-03-01 14:00:00",
+                    "2025-03-01 15:00:00",
+                    "2025-03-01 16:00:00",
+                    "2025-03-01 17:00:00",
+                    "2025-03-01 18:00:00",
+                    "2025-03-01 19:00:00",
+                    "2025-03-01 20:00:00",
+                    "2025-03-01 21:00:00",
+                    "2025-03-01 22:00:00",
+                    "2025-03-01 23:00:00"
+                  ],
+                  "values": [
+                    18.18127819458835,
+                    17.052775393292993,
+                    16.000181324617774,
+                    18.148708612734346,
+                    19.169902919954154,
+                    17.998497321537474,
+                    17.816722553427564,
+                    17.882002239893936,
+                    31.1266877833509,
+                    28.08095345780401,
+                    16.449696389809958,
+                    17.165192990572184,
+                    29.35354069894655,
+                    29.665663048934025,
+                    17.86048019693909,
+                    18.040116067236852,
+                    17.042536580567127,
+                    18.2208271599694,
+                    29.189942827136957,
+                    31.520193147482814,
+                    30.422633809019878,
+                    30.672920570053535,
+                    17.345996979335506,
+                    17.407586794080235
+                  ]
+                },
+                "daily_data": {
+                  "timestamps": [
+                    "2025-03-01"
+                  ],
+                  "values": [
+                    21.7422932108869
+                  ]
+                },
+                "moving_average_24h": {
+                  "timestamps": [
+                    "2025-03-01 00:00:00",
+                    "2025-03-01 01:00:00",
+                    "2025-03-01 02:00:00",
+                    "2025-03-01 03:00:00",
+                    "2025-03-01 04:00:00",
+                    "2025-03-01 05:00:00",
+                    "2025-03-01 06:00:00",
+                    "2025-03-01 07:00:00",
+                    "2025-03-01 08:00:00",
+                    "2025-03-01 09:00:00",
+                    "2025-03-01 10:00:00",
+                    "2025-03-01 11:00:00",
+                    "2025-03-01 12:00:00",
+                    "2025-03-01 13:00:00",
+                    "2025-03-01 14:00:00",
+                    "2025-03-01 15:00:00",
+                    "2025-03-01 16:00:00",
+                    "2025-03-01 17:00:00",
+                    "2025-03-01 18:00:00",
+                    "2025-03-01 19:00:00",
+                    "2025-03-01 20:00:00",
+                    "2025-03-01 21:00:00",
+                    "2025-03-01 22:00:00",
+                    "2025-03-01 23:00:00"
+                  ],
+                  "values": [
+                    21.7422932108869
+                  ]
+                },
+                "average_daily_growth_rate": null,
+                "seasonal_decomposition": null,
+                "forecast": null,
+                "statistics": {
+                  "min": 5.021831291771854,
+                  "max": 49.94164679688323,
+                  "mean": 21.742293210886903,
+                  "median": 20.679335217406397,
+                  "std": 10.483093647715984
+                }
+              },
+              "packet_loss_percent": {
+                "hourly_data": {
+                  "timestamps": [
+                    "2025-03-01 00:00:00",
+                    "2025-03-01 01:00:00",
+                    "2025-03-01 02:00:00",
+                    "2025-03-01 03:00:00",
+                    "2025-03-01 04:00:00",
+                    "2025-03-01 05:00:00",
+                    "2025-03-01 06:00:00",
+                    "2025-03-01 07:00:00",
+                    "2025-03-01 08:00:00",
+                    "2025-03-01 09:00:00",
+                    "2025-03-01 10:00:00",
+                    "2025-03-01 11:00:00",
+                    "2025-03-01 12:00:00",
+                    "2025-03-01 13:00:00",
+                    "2025-03-01 14:00:00",
+                    "2025-03-01 15:00:00",
+                    "2025-03-01 16:00:00",
+                    "2025-03-01 17:00:00",
+                    "2025-03-01 18:00:00",
+                    "2025-03-01 19:00:00",
+                    "2025-03-01 20:00:00",
+                    "2025-03-01 21:00:00",
+                    "2025-03-01 22:00:00",
+                    "2025-03-01 23:00:00"
+                  ],
+                  "values": [
+                    2.223126128823494,
+                    2.5298923916427016,
+                    2.7847274306168335,
+                    2.240485197893352,
+                    2.3588390865902915,
+                    2.5773677430411737,
+                    2.413963863410534,
+                    2.435242429076322,
+                    2.4049155980938557,
+                    2.7643325358375477,
+                    2.2329515688991526,
+                    2.6212450911017275,
+                    2.3641948949712233,
+                    2.8277711480775443,
+                    2.727323376771532,
+                    2.28765933106955,
+                    2.377103626947288,
+                    2.4795480950679285,
+                    2.591227414299911,
+                    2.362691824018021,
+                    2.685733352468292,
+                    2.5502193234161306,
+                    2.629085825594539,
+                    2.5042745138125833
+                  ]
+                },
+                "daily_data": {
+                  "timestamps": [
+                    "2025-03-01"
+                  ],
+                  "values": [
+                    2.498913407980897
+                  ]
+                },
+                "moving_average_24h": {
+                  "timestamps": [
+                    "2025-03-01 00:00:00",
+                    "2025-03-01 01:00:00",
+                    "2025-03-01 02:00:00",
+                    "2025-03-01 03:00:00",
+                    "2025-03-01 04:00:00",
+                    "2025-03-01 05:00:00",
+                    "2025-03-01 06:00:00",
+                    "2025-03-01 07:00:00",
+                    "2025-03-01 08:00:00",
+                    "2025-03-01 09:00:00",
+                    "2025-03-01 10:00:00",
+                    "2025-03-01 11:00:00",
+                    "2025-03-01 12:00:00",
+                    "2025-03-01 13:00:00",
+                    "2025-03-01 14:00:00",
+                    "2025-03-01 15:00:00",
+                    "2025-03-01 16:00:00",
+                    "2025-03-01 17:00:00",
+                    "2025-03-01 18:00:00",
+                    "2025-03-01 19:00:00",
+                    "2025-03-01 20:00:00",
+                    "2025-03-01 21:00:00",
+                    "2025-03-01 22:00:00",
+                    "2025-03-01 23:00:00"
+                  ],
+                  "values": [
+                    2.498913407980897
+                  ]
+                },
+                "average_daily_growth_rate": null,
+                "seasonal_decomposition": null,
+                "forecast": null,
+                "statistics": {
+                  "min": 0.0040730865437743,
+                  "max": 4.994224135923156,
+                  "mean": 2.4989134079808974,
+                  "median": 2.479152753371185,
+                  "std": 1.4090324628905955
+                }
+              }
+            }
+          },
+          "BS003": {
+            "station_name": "城北-工业园区基站",
+            "metrics_analysis": {
+              "success_rate": {
+                "hourly_data": {
+                  "timestamps": [
+                    "2025-03-01 00:00:00",
+                    "2025-03-01 01:00:00",
+                    "2025-03-01 02:00:00",
+                    "2025-03-01 03:00:00",
+                    "2025-03-01 04:00:00",
+                    "2025-03-01 05:00:00",
+                    "2025-03-01 06:00:00",
+                    "2025-03-01 07:00:00",
+                    "2025-03-01 08:00:00",
+                    "2025-03-01 09:00:00",
+                    "2025-03-01 10:00:00",
+                    "2025-03-01 11:00:00",
+                    "2025-03-01 12:00:00",
+                    "2025-03-01 13:00:00",
+                    "2025-03-01 14:00:00",
+                    "2025-03-01 15:00:00",
+                    "2025-03-01 16:00:00",
+                    "2025-03-01 17:00:00",
+                    "2025-03-01 18:00:00",
+                    "2025-03-01 19:00:00",
+                    "2025-03-01 20:00:00",
+                    "2025-03-01 21:00:00",
+                    "2025-03-01 22:00:00",
+                    "2025-03-01 23:00:00"
+                  ],
+                  "values": [
+                    0.849737125300995,
+                    0.8578676961553628,
+                    0.8756255623553706,
+                    0.8605829642510044,
+                    0.8492089760623236,
+                    0.8578972609935426,
+                    0.8716113506332789,
+                    0.8736353110593185,
+                    0.8364508927172913,
+                    0.8583604224974833,
+                    0.8610238976718481,
+                    0.8443370523529559,
+                    0.8496528265374181,
+                    0.8466861720800911,
+                    0.8360552504500257,
+                    0.8849237446714086,
+                    0.8418341519996296,
+                    0.8393507726115332,
+                    0.8464847814198799,
+                    0.8465170278319777,
+                    0.8612872640210811,
+                    0.8560364771729178,
+                    0.8677136014120964,
+                    0.8664982452025285
+                  ]
+                },
+                "daily_data": {
+                  "timestamps": [
+                    "2025-03-01"
+                  ],
+                  "values": [
+                    0.8558074511442235
+                  ]
+                },
+                "moving_average_24h": {
+                  "timestamps": [
+                    "2025-03-01 00:00:00",
+                    "2025-03-01 01:00:00",
+                    "2025-03-01 02:00:00",
+                    "2025-03-01 03:00:00",
+                    "2025-03-01 04:00:00",
+                    "2025-03-01 05:00:00",
+                    "2025-03-01 06:00:00",
+                    "2025-03-01 07:00:00",
+                    "2025-03-01 08:00:00",
+                    "2025-03-01 09:00:00",
+                    "2025-03-01 10:00:00",
+                    "2025-03-01 11:00:00",
+                    "2025-03-01 12:00:00",
+                    "2025-03-01 13:00:00",
+                    "2025-03-01 14:00:00",
+                    "2025-03-01 15:00:00",
+                    "2025-03-01 16:00:00",
+                    "2025-03-01 17:00:00",
+                    "2025-03-01 18:00:00",
+                    "2025-03-01 19:00:00",
+                    "2025-03-01 20:00:00",
+                    "2025-03-01 21:00:00",
+                    "2025-03-01 22:00:00",
+                    "2025-03-01 23:00:00"
+                  ],
+                  "values": [
+                    0.8558074511442234
+                  ]
+                },
+                "average_daily_growth_rate": null,
+                "seasonal_decomposition": null,
+                "forecast": null,
+                "statistics": {
+                  "min": 0.5001515515303329,
+                  "max": 0.9899132168151474,
+                  "mean": 0.8558074511442235,
+                  "median": 0.8784784585449321,
+                  "std": 0.10806522859257499
+                }
+              },
+              "active_users": {
+                "hourly_data": {
+                  "timestamps": [
+                    "2025-03-01 00:00:00",
+                    "2025-03-01 01:00:00",
+                    "2025-03-01 02:00:00",
+                    "2025-03-01 03:00:00",
+                    "2025-03-01 04:00:00",
+                    "2025-03-01 05:00:00",
+                    "2025-03-01 06:00:00",
+                    "2025-03-01 07:00:00",
+                    "2025-03-01 08:00:00",
+                    "2025-03-01 09:00:00",
+                    "2025-03-01 10:00:00",
+                    "2025-03-01 11:00:00",
+                    "2025-03-01 12:00:00",
+                    "2025-03-01 13:00:00",
+                    "2025-03-01 14:00:00",
+                    "2025-03-01 15:00:00",
+                    "2025-03-01 16:00:00",
+                    "2025-03-01 17:00:00",
+                    "2025-03-01 18:00:00",
+                    "2025-03-01 19:00:00",
+                    "2025-03-01 20:00:00",
+                    "2025-03-01 21:00:00",
+                    "2025-03-01 22:00:00",
+                    "2025-03-01 23:00:00"
+                  ],
+                  "values": [
+                    123.28333333333333,
+                    121.16666666666667,
+                    121.91666666666667,
+                    130.4,
+                    128.73333333333332,
+                    122.78333333333333,
+                    117.78333333333333,
+                    124.51666666666667,
+                    355.8666666666667,
+                    362.56666666666666,
+                    127.31666666666666,
+                    120.35,
+                    351.93333333333334,
+                    367.3666666666667,
+                    122.3,
+                    116.36666666666666,
+                    127.63333333333334,
+                    120.8,
+                    352.5,
+                    376.6333333333333,
+                    361.28333333333336,
+                    342.1,
+                    121.66666666666667,
+                    128.75
+                  ]
+                },
+                "daily_data": {
+                  "timestamps": [
+                    "2025-03-01"
+                  ],
+                  "values": [
+                    201.91736111111112
+                  ]
+                },
+                "moving_average_24h": {
+                  "timestamps": [
+                    "2025-03-01 00:00:00",
+                    "2025-03-01 01:00:00",
+                    "2025-03-01 02:00:00",
+                    "2025-03-01 03:00:00",
+                    "2025-03-01 04:00:00",
+                    "2025-03-01 05:00:00",
+                    "2025-03-01 06:00:00",
+                    "2025-03-01 07:00:00",
+                    "2025-03-01 08:00:00",
+                    "2025-03-01 09:00:00",
+                    "2025-03-01 10:00:00",
+                    "2025-03-01 11:00:00",
+                    "2025-03-01 12:00:00",
+                    "2025-03-01 13:00:00",
+                    "2025-03-01 14:00:00",
+                    "2025-03-01 15:00:00",
+                    "2025-03-01 16:00:00",
+                    "2025-03-01 17:00:00",
+                    "2025-03-01 18:00:00",
+                    "2025-03-01 19:00:00",
+                    "2025-03-01 20:00:00",
+                    "2025-03-01 21:00:00",
+                    "2025-03-01 22:00:00",
+                    "2025-03-01 23:00:00"
+                  ],
+                  "values": [
+                    201.9173611111111
+                  ]
+                },
+                "average_daily_growth_rate": null,
+                "seasonal_decomposition": null,
+                "forecast": null,
+                "statistics": {
+                  "min": 50.0,
+                  "max": 499.0,
+                  "mean": 201.91736111111112,
+                  "median": 162.0,
+                  "std": 125.90210180823242
+                }
+              },
+              "signal_strength_dbm": {
+                "hourly_data": {
+                  "timestamps": [
+                    "2025-03-01 00:00:00",
+                    "2025-03-01 01:00:00",
+                    "2025-03-01 02:00:00",
+                    "2025-03-01 03:00:00",
+                    "2025-03-01 04:00:00",
+                    "2025-03-01 05:00:00",
+                    "2025-03-01 06:00:00",
+                    "2025-03-01 07:00:00",
+                    "2025-03-01 08:00:00",
+                    "2025-03-01 09:00:00",
+                    "2025-03-01 10:00:00",
+                    "2025-03-01 11:00:00",
+                    "2025-03-01 12:00:00",
+                    "2025-03-01 13:00:00",
+                    "2025-03-01 14:00:00",
+                    "2025-03-01 15:00:00",
+                    "2025-03-01 16:00:00",
+                    "2025-03-01 17:00:00",
+                    "2025-03-01 18:00:00",
+                    "2025-03-01 19:00:00",
+                    "2025-03-01 20:00:00",
+                    "2025-03-01 21:00:00",
+                    "2025-03-01 22:00:00",
+                    "2025-03-01 23:00:00"
+                  ],
+                  "values": [
+                    -95.89111301746925,
+                    -94.70342294992751,
+                    -97.73406681360657,
+                    -96.28284410879876,
+                    -95.46148855952838,
+                    -92.90074182139848,
+                    -94.05272317939784,
+                    -94.85946832168608,
+                    -96.08027313634231,
+                    -95.67465104365861,
+                    -93.7291877607981,
+                    -97.12590308258139,
+                    -94.90809098843339,
+                    -95.34982772235253,
+                    -95.42327141644,
+                    -94.60722527742429,
+                    -94.28032941909959,
+                    -96.58415025871157,
+                    -96.62147011323053,
+                    -94.23634134097614,
+                    -92.25918369860814,
+                    -97.2652592039579,
+                    -92.75224826607851,
+                    -94.32869935090906
+                  ]
+                },
+                "daily_data": {
+                  "timestamps": [
+                    "2025-03-01"
+                  ],
+                  "values": [
+                    -95.12966586880897
+                  ]
+                },
+                "moving_average_24h": {
+                  "timestamps": [
+                    "2025-03-01 00:00:00",
+                    "2025-03-01 01:00:00",
+                    "2025-03-01 02:00:00",
+                    "2025-03-01 03:00:00",
+                    "2025-03-01 04:00:00",
+                    "2025-03-01 05:00:00",
+                    "2025-03-01 06:00:00",
+                    "2025-03-01 07:00:00",
+                    "2025-03-01 08:00:00",
+                    "2025-03-01 09:00:00",
+                    "2025-03-01 10:00:00",
+                    "2025-03-01 11:00:00",
+                    "2025-03-01 12:00:00",
+                    "2025-03-01 13:00:00",
+                    "2025-03-01 14:00:00",
+                    "2025-03-01 15:00:00",
+                    "2025-03-01 16:00:00",
+                    "2025-03-01 17:00:00",
+                    "2025-03-01 18:00:00",
+                    "2025-03-01 19:00:00",
+                    "2025-03-01 20:00:00",
+                    "2025-03-01 21:00:00",
+                    "2025-03-01 22:00:00",
+                    "2025-03-01 23:00:00"
+                  ],
+                  "values": [
+                    -95.12966586880896
+                  ]
+                },
+                "average_daily_growth_rate": null,
+                "seasonal_decomposition": null,
+                "forecast": null,
+                "statistics": {
+                  "min": -119.9994182622317,
+                  "max": -70.01411385019013,
+                  "mean": -95.12966586880894,
+                  "median": -94.86946554193804,
+                  "std": 14.092565019785768
+                }
+              },
+              "downlink_throughput_mbps": {
+                "hourly_data": {
+                  "timestamps": [
+                    "2025-03-01 00:00:00",
+                    "2025-03-01 01:00:00",
+                    "2025-03-01 02:00:00",
+                    "2025-03-01 03:00:00",
+                    "2025-03-01 04:00:00",
+                    "2025-03-01 05:00:00",
+                    "2025-03-01 06:00:00",
+                    "2025-03-01 07:00:00",
+                    "2025-03-01 08:00:00",
+                    "2025-03-01 09:00:00",
+                    "2025-03-01 10:00:00",
+                    "2025-03-01 11:00:00",
+                    "2025-03-01 12:00:00",
+                    "2025-03-01 13:00:00",
+                    "2025-03-01 14:00:00",
+                    "2025-03-01 15:00:00",
+                    "2025-03-01 16:00:00",
+                    "2025-03-01 17:00:00",
+                    "2025-03-01 18:00:00",
+                    "2025-03-01 19:00:00",
+                    "2025-03-01 20:00:00",
+                    "2025-03-01 21:00:00",
+                    "2025-03-01 22:00:00",
+                    "2025-03-01 23:00:00"
+                  ],
+                  "values": [
+                    854.6581661238235,
+                    723.9620688931983,
+                    816.9760407280124,
+                    774.7462547893634,
+                    857.8032965155746,
+                    824.2185120024421,
+                    843.9535025563146,
+                    875.9180860903173,
+                    584.3301389692738,
+                    486.75947119102835,
+                    793.1950417168381,
+                    854.4018511993023,
+                    611.627735593264,
+                    513.855034337834,
+                    832.7421550877563,
+                    864.3122992843661,
+                    760.8300895058895,
+                    703.2265766847635,
+                    487.3327411743724,
+                    553.2700853141758,
+                    566.7211900500334,
+                    494.1935273762014,
+                    804.8074801333377,
+                    867.3686425659831
+                  ]
+                },
+                "daily_data": {
+                  "timestamps": [
+                    "2025-03-01"
+                  ],
+                  "values": [
+                    722.9670828284777
+                  ]
+                },
+                "moving_average_24h": {
+                  "timestamps": [
+                    "2025-03-01 00:00:00",
+                    "2025-03-01 01:00:00",
+                    "2025-03-01 02:00:00",
+                    "2025-03-01 03:00:00",
+                    "2025-03-01 04:00:00",
+                    "2025-03-01 05:00:00",
+                    "2025-03-01 06:00:00",
+                    "2025-03-01 07:00:00",
+                    "2025-03-01 08:00:00",
+                    "2025-03-01 09:00:00",
+                    "2025-03-01 10:00:00",
+                    "2025-03-01 11:00:00",
+                    "2025-03-01 12:00:00",
+                    "2025-03-01 13:00:00",
+                    "2025-03-01 14:00:00",
+                    "2025-03-01 15:00:00",
+                    "2025-03-01 16:00:00",
+                    "2025-03-01 17:00:00",
+                    "2025-03-01 18:00:00",
+                    "2025-03-01 19:00:00",
+                    "2025-03-01 20:00:00",
+                    "2025-03-01 21:00:00",
+                    "2025-03-01 22:00:00",
+                    "2025-03-01 23:00:00"
+                  ],
+                  "values": [
+                    722.9670828284778
+                  ]
+                },
+                "average_daily_growth_rate": null,
+                "seasonal_decomposition": null,
+                "forecast": null,
+                "statistics": {
+                  "min": 51.37224261955526,
+                  "max": 1499.847487010875,
+                  "mean": 722.9670828284778,
+                  "median": 703.5216113689282,
+                  "std": 392.9862804487479
+                }
+              },
+              "latency_ms": {
+                "hourly_data": {
+                  "timestamps": [
+                    "2025-03-01 00:00:00",
+                    "2025-03-01 01:00:00",
+                    "2025-03-01 02:00:00",
+                    "2025-03-01 03:00:00",
+                    "2025-03-01 04:00:00",
+                    "2025-03-01 05:00:00",
+                    "2025-03-01 06:00:00",
+                    "2025-03-01 07:00:00",
+                    "2025-03-01 08:00:00",
+                    "2025-03-01 09:00:00",
+                    "2025-03-01 10:00:00",
+                    "2025-03-01 11:00:00",
+                    "2025-03-01 12:00:00",
+                    "2025-03-01 13:00:00",
+                    "2025-03-01 14:00:00",
+                    "2025-03-01 15:00:00",
+                    "2025-03-01 16:00:00",
+                    "2025-03-01 17:00:00",
+                    "2025-03-01 18:00:00",
+                    "2025-03-01 19:00:00",
+                    "2025-03-01 20:00:00",
+                    "2025-03-01 21:00:00",
+                    "2025-03-01 22:00:00",
+                    "2025-03-01 23:00:00"
+                  ],
+                  "values": [
+                    17.40823649113573,
+                    17.588562704581566,
+                    17.88751923693311,
+                    17.070930334279296,
+                    18.490089770833357,
+                    17.427721983725714,
+                    16.761815281409383,
+                    18.29867500370495,
+                    29.426543501648833,
+                    30.647831897828542,
+                    15.614266559473192,
+                    17.237146877569717,
+                    28.029574300501885,
+                    29.750447928771965,
+                    16.506990301073774,
+                    18.440957162077606,
+                    16.708633312274102,
+                    16.951641149302226,
+                    30.75564704287414,
+                    31.16464271802932,
+                    30.058271608801043,
+                    30.50558934866481,
+                    17.522871192044263,
+                    16.24400223415377
+                  ]
+                },
+                "daily_data": {
+                  "timestamps": [
+                    "2025-03-01"
+                  ],
+                  "values": [
+                    21.520775330903845
+                  ]
+                },
+                "moving_average_24h": {
+                  "timestamps": [
+                    "2025-03-01 00:00:00",
+                    "2025-03-01 01:00:00",
+                    "2025-03-01 02:00:00",
+                    "2025-03-01 03:00:00",
+                    "2025-03-01 04:00:00",
+                    "2025-03-01 05:00:00",
+                    "2025-03-01 06:00:00",
+                    "2025-03-01 07:00:00",
+                    "2025-03-01 08:00:00",
+                    "2025-03-01 09:00:00",
+                    "2025-03-01 10:00:00",
+                    "2025-03-01 11:00:00",
+                    "2025-03-01 12:00:00",
+                    "2025-03-01 13:00:00",
+                    "2025-03-01 14:00:00",
+                    "2025-03-01 15:00:00",
+                    "2025-03-01 16:00:00",
+                    "2025-03-01 17:00:00",
+                    "2025-03-01 18:00:00",
+                    "2025-03-01 19:00:00",
+                    "2025-03-01 20:00:00",
+                    "2025-03-01 21:00:00",
+                    "2025-03-01 22:00:00",
+                    "2025-03-01 23:00:00"
+                  ],
+                  "values": [
+                    21.520775330903845
+                  ]
+                },
+                "average_daily_growth_rate": null,
+                "seasonal_decomposition": null,
+                "forecast": null,
+                "statistics": {
+                  "min": 5.061523995811336,
+                  "max": 49.97584500596998,
+                  "mean": 21.520775330903845,
+                  "median": 20.45774893725813,
+                  "std": 10.618149585408856
+                }
+              },
+              "packet_loss_percent": {
+                "hourly_data": {
+                  "timestamps": [
+                    "2025-03-01 00:00:00",
+                    "2025-03-01 01:00:00",
+                    "2025-03-01 02:00:00",
+                    "2025-03-01 03:00:00",
+                    "2025-03-01 04:00:00",
+                    "2025-03-01 05:00:00",
+                    "2025-03-01 06:00:00",
+                    "2025-03-01 07:00:00",
+                    "2025-03-01 08:00:00",
+                    "2025-03-01 09:00:00",
+                    "2025-03-01 10:00:00",
+                    "2025-03-01 11:00:00",
+                    "2025-03-01 12:00:00",
+                    "2025-03-01 13:00:00",
+                    "2025-03-01 14:00:00",
+                    "2025-03-01 15:00:00",
+                    "2025-03-01 16:00:00",
+                    "2025-03-01 17:00:00",
+                    "2025-03-01 18:00:00",
+                    "2025-03-01 19:00:00",
+                    "2025-03-01 20:00:00",
+                    "2025-03-01 21:00:00",
+                    "2025-03-01 22:00:00",
+                    "2025-03-01 23:00:00"
+                  ],
+                  "values": [
+                    2.603322052041592,
+                    2.2994109061402797,
+                    2.3306619741983274,
+                    2.850811612110124,
+                    2.3839590458519115,
+                    2.4003773214378783,
+                    2.325860735153195,
+                    2.5463208853300814,
+                    2.825622706417478,
+                    2.44697145049932,
+                    2.281171829491762,
+                    2.481914854363826,
+                    2.7474730509260405,
+                    2.448845890057918,
+                    2.679701226848107,
+                    2.6881278034466476,
+                    2.487801484007615,
+                    2.576113073840375,
+                    2.6167922590691366,
+                    2.7596107220028805,
+                    2.607672946653366,
+                    2.5216863646829992,
+                    2.145037752581949,
+                    2.3814857910260074
+                  ]
+                },
+                "daily_data": {
+                  "timestamps": [
+                    "2025-03-01"
+                  ],
+                  "values": [
+                    2.5181980724241173
+                  ]
+                },
+                "moving_average_24h": {
+                  "timestamps": [
+                    "2025-03-01 00:00:00",
+                    "2025-03-01 01:00:00",
+                    "2025-03-01 02:00:00",
+                    "2025-03-01 03:00:00",
+                    "2025-03-01 04:00:00",
+                    "2025-03-01 05:00:00",
+                    "2025-03-01 06:00:00",
+                    "2025-03-01 07:00:00",
+                    "2025-03-01 08:00:00",
+                    "2025-03-01 09:00:00",
+                    "2025-03-01 10:00:00",
+                    "2025-03-01 11:00:00",
+                    "2025-03-01 12:00:00",
+                    "2025-03-01 13:00:00",
+                    "2025-03-01 14:00:00",
+                    "2025-03-01 15:00:00",
+                    "2025-03-01 16:00:00",
+                    "2025-03-01 17:00:00",
+                    "2025-03-01 18:00:00",
+                    "2025-03-01 19:00:00",
+                    "2025-03-01 20:00:00",
+                    "2025-03-01 21:00:00",
+                    "2025-03-01 22:00:00",
+                    "2025-03-01 23:00:00"
+                  ],
+                  "values": [
+                    2.5181980724241173
+                  ]
+                },
+                "average_daily_growth_rate": null,
+                "seasonal_decomposition": null,
+                "forecast": null,
+                "statistics": {
+                  "min": 0.0007288380362652,
+                  "max": 4.99920902709272,
+                  "mean": 2.5181980724241173,
+                  "median": 2.5135873388000296,
+                  "std": 1.4242659300044176
+                }
+              }
+            }
+          },
+          "BS004": {
+            "station_name": "城南-大学城基站",
+            "metrics_analysis": {
+              "success_rate": {
+                "hourly_data": {
+                  "timestamps": [
+                    "2025-03-01 00:00:00",
+                    "2025-03-01 01:00:00",
+                    "2025-03-01 02:00:00",
+                    "2025-03-01 03:00:00",
+                    "2025-03-01 04:00:00",
+                    "2025-03-01 05:00:00",
+                    "2025-03-01 06:00:00",
+                    "2025-03-01 07:00:00",
+                    "2025-03-01 08:00:00",
+                    "2025-03-01 09:00:00",
+                    "2025-03-01 10:00:00",
+                    "2025-03-01 11:00:00",
+                    "2025-03-01 12:00:00",
+                    "2025-03-01 13:00:00",
+                    "2025-03-01 14:00:00",
+                    "2025-03-01 15:00:00",
+                    "2025-03-01 16:00:00",
+                    "2025-03-01 17:00:00",
+                    "2025-03-01 18:00:00",
+                    "2025-03-01 19:00:00",
+                    "2025-03-01 20:00:00",
+                    "2025-03-01 21:00:00",
+                    "2025-03-01 22:00:00",
+                    "2025-03-01 23:00:00"
+                  ],
+                  "values": [
+                    0.8785641663120173,
+                    0.8494966237887813,
+                    0.8431425590652687,
+                    0.8623102521372797,
+                    0.8482996234833758,
+                    0.8575827775640916,
+                    0.8403089995206005,
+                    0.863975978765023,
+                    0.8629821297279591,
+                    0.877265661405962,
+                    0.87080598221782,
+                    0.8695467554206509,
+                    0.8776629118464206,
+                    0.8385869057668315,
+                    0.8524108191013848,
+                    0.8943485053772261,
+                    0.8568362131940487,
+                    0.8582923747306277,
+                    0.8110253749613123,
+                    0.8557790861028532,
+                    0.8716162938847949,
+                    0.8785140506613971,
+                    0.8847447094800998,
+                    0.8579718322890701
+                  ]
+                },
+                "daily_data": {
+                  "timestamps": [
+                    "2025-03-01"
+                  ],
+                  "values": [
+                    0.8609196077835374
+                  ]
+                },
+                "moving_average_24h": {
+                  "timestamps": [
+                    "2025-03-01 00:00:00",
+                    "2025-03-01 01:00:00",
+                    "2025-03-01 02:00:00",
+                    "2025-03-01 03:00:00",
+                    "2025-03-01 04:00:00",
+                    "2025-03-01 05:00:00",
+                    "2025-03-01 06:00:00",
+                    "2025-03-01 07:00:00",
+                    "2025-03-01 08:00:00",
+                    "2025-03-01 09:00:00",
+                    "2025-03-01 10:00:00",
+                    "2025-03-01 11:00:00",
+                    "2025-03-01 12:00:00",
+                    "2025-03-01 13:00:00",
+                    "2025-03-01 14:00:00",
+                    "2025-03-01 15:00:00",
+                    "2025-03-01 16:00:00",
+                    "2025-03-01 17:00:00",
+                    "2025-03-01 18:00:00",
+                    "2025-03-01 19:00:00",
+                    "2025-03-01 20:00:00",
+                    "2025-03-01 21:00:00",
+                    "2025-03-01 22:00:00",
+                    "2025-03-01 23:00:00"
+                  ],
+                  "values": [
+                    0.8609196077835374
+                  ]
+                },
+                "average_daily_growth_rate": null,
+                "seasonal_decomposition": null,
+                "forecast": null,
+                "statistics": {
+                  "min": 0.5014310768534375,
+                  "max": 0.9897765241305156,
+                  "mean": 0.8609196077835375,
+                  "median": 0.8826888224229452,
+                  "std": 0.10417499447903948
+                }
+              },
+              "active_users": {
+                "hourly_data": {
+                  "timestamps": [
+                    "2025-03-01 00:00:00",
+                    "2025-03-01 01:00:00",
+                    "2025-03-01 02:00:00",
+                    "2025-03-01 03:00:00",
+                    "2025-03-01 04:00:00",
+                    "2025-03-01 05:00:00",
+                    "2025-03-01 06:00:00",
+                    "2025-03-01 07:00:00",
+                    "2025-03-01 08:00:00",
+                    "2025-03-01 09:00:00",
+                    "2025-03-01 10:00:00",
+                    "2025-03-01 11:00:00",
+                    "2025-03-01 12:00:00",
+                    "2025-03-01 13:00:00",
+                    "2025-03-01 14:00:00",
+                    "2025-03-01 15:00:00",
+                    "2025-03-01 16:00:00",
+                    "2025-03-01 17:00:00",
+                    "2025-03-01 18:00:00",
+                    "2025-03-01 19:00:00",
+                    "2025-03-01 20:00:00",
+                    "2025-03-01 21:00:00",
+                    "2025-03-01 22:00:00",
+                    "2025-03-01 23:00:00"
+                  ],
+                  "values": [
+                    127.61666666666666,
+                    114.4,
+                    128.6,
+                    113.46666666666667,
+                    128.03333333333333,
+                    119.91666666666667,
+                    126.71666666666667,
+                    118.66666666666667,
+                    339.1666666666667,
+                    350.25,
+                    123.9,
+                    123.46666666666667,
+                    335.78333333333336,
+                    341.3666666666667,
+                    129.51666666666668,
+                    120.51666666666667,
+                    123.58333333333333,
+                    120.51666666666667,
+                    346.65,
+                    354.85,
+                    350.3333333333333,
+                    351.4,
+                    131.83333333333334,
+                    134.41666666666666
+                  ]
+                },
+                "daily_data": {
+                  "timestamps": [
+                    "2025-03-01"
+                  ],
+                  "values": [
+                    198.1236111111111
+                  ]
+                },
+                "moving_average_24h": {
+                  "timestamps": [
+                    "2025-03-01 00:00:00",
+                    "2025-03-01 01:00:00",
+                    "2025-03-01 02:00:00",
+                    "2025-03-01 03:00:00",
+                    "2025-03-01 04:00:00",
+                    "2025-03-01 05:00:00",
+                    "2025-03-01 06:00:00",
+                    "2025-03-01 07:00:00",
+                    "2025-03-01 08:00:00",
+                    "2025-03-01 09:00:00",
+                    "2025-03-01 10:00:00",
+                    "2025-03-01 11:00:00",
+                    "2025-03-01 12:00:00",
+                    "2025-03-01 13:00:00",
+                    "2025-03-01 14:00:00",
+                    "2025-03-01 15:00:00",
+                    "2025-03-01 16:00:00",
+                    "2025-03-01 17:00:00",
+                    "2025-03-01 18:00:00",
+                    "2025-03-01 19:00:00",
+                    "2025-03-01 20:00:00",
+                    "2025-03-01 21:00:00",
+                    "2025-03-01 22:00:00",
+                    "2025-03-01 23:00:00"
+                  ],
+                  "values": [
+                    198.12361111111113
+                  ]
+                },
+                "average_daily_growth_rate": null,
+                "seasonal_decomposition": null,
+                "forecast": null,
+                "statistics": {
+                  "min": 50.0,
+                  "max": 498.0,
+                  "mean": 198.1236111111111,
+                  "median": 160.5,
+                  "std": 120.86192650919931
+                }
+              },
+              "signal_strength_dbm": {
+                "hourly_data": {
+                  "timestamps": [
+                    "2025-03-01 00:00:00",
+                    "2025-03-01 01:00:00",
+                    "2025-03-01 02:00:00",
+                    "2025-03-01 03:00:00",
+                    "2025-03-01 04:00:00",
+                    "2025-03-01 05:00:00",
+                    "2025-03-01 06:00:00",
+                    "2025-03-01 07:00:00",
+                    "2025-03-01 08:00:00",
+                    "2025-03-01 09:00:00",
+                    "2025-03-01 10:00:00",
+                    "2025-03-01 11:00:00",
+                    "2025-03-01 12:00:00",
+                    "2025-03-01 13:00:00",
+                    "2025-03-01 14:00:00",
+                    "2025-03-01 15:00:00",
+                    "2025-03-01 16:00:00",
+                    "2025-03-01 17:00:00",
+                    "2025-03-01 18:00:00",
+                    "2025-03-01 19:00:00",
+                    "2025-03-01 20:00:00",
+                    "2025-03-01 21:00:00",
+                    "2025-03-01 22:00:00",
+                    "2025-03-01 23:00:00"
+                  ],
+                  "values": [
+                    -92.97652475619944,
+                    -93.78795493727938,
+                    -93.21489358367735,
+                    -98.41124530165153,
+                    -94.46478970004856,
+                    -93.48387665476562,
+                    -95.69290073235825,
+                    -96.03396354177673,
+                    -94.56165340963135,
+                    -93.78027992314804,
+                    -94.2899633949242,
+                    -93.5578588244778,
+                    -95.38329099675899,
+                    -95.94962375894583,
+                    -95.65340811251205,
+                    -95.58541571732603,
+                    -94.56305958466669,
+                    -95.82098506473613,
+                    -97.151395039726,
+                    -94.01407553498642,
+                    -94.5628958746323,
+                    -95.53339502545876,
+                    -95.08933264912703,
+                    -96.14131140715914
+                  ]
+                },
+                "daily_data": {
+                  "timestamps": [
+                    "2025-03-01"
+                  ],
+                  "values": [
+                    -94.98767056358223
+                  ]
+                },
+                "moving_average_24h": {
+                  "timestamps": [
+                    "2025-03-01 00:00:00",
+                    "2025-03-01 01:00:00",
+                    "2025-03-01 02:00:00",
+                    "2025-03-01 03:00:00",
+                    "2025-03-01 04:00:00",
+                    "2025-03-01 05:00:00",
+                    "2025-03-01 06:00:00",
+                    "2025-03-01 07:00:00",
+                    "2025-03-01 08:00:00",
+                    "2025-03-01 09:00:00",
+                    "2025-03-01 10:00:00",
+                    "2025-03-01 11:00:00",
+                    "2025-03-01 12:00:00",
+                    "2025-03-01 13:00:00",
+                    "2025-03-01 14:00:00",
+                    "2025-03-01 15:00:00",
+                    "2025-03-01 16:00:00",
+                    "2025-03-01 17:00:00",
+                    "2025-03-01 18:00:00",
+                    "2025-03-01 19:00:00",
+                    "2025-03-01 20:00:00",
+                    "2025-03-01 21:00:00",
+                    "2025-03-01 22:00:00",
+                    "2025-03-01 23:00:00"
+                  ],
+                  "values": [
+                    -94.98767056358224
+                  ]
+                },
+                "average_daily_growth_rate": null,
+                "seasonal_decomposition": null,
+                "forecast": null,
+                "statistics": {
+                  "min": -119.9298026735213,
+                  "max": -70.01521953226198,
+                  "mean": -94.98767056358224,
+                  "median": -94.78112150009787,
+                  "std": 14.462907118249055
+                }
+              },
+              "downlink_throughput_mbps": {
+                "hourly_data": {
+                  "timestamps": [
+                    "2025-03-01 00:00:00",
+                    "2025-03-01 01:00:00",
+                    "2025-03-01 02:00:00",
+                    "2025-03-01 03:00:00",
+                    "2025-03-01 04:00:00",
+                    "2025-03-01 05:00:00",
+                    "2025-03-01 06:00:00",
+                    "2025-03-01 07:00:00",
+                    "2025-03-01 08:00:00",
+                    "2025-03-01 09:00:00",
+                    "2025-03-01 10:00:00",
+                    "2025-03-01 11:00:00",
+                    "2025-03-01 12:00:00",
+                    "2025-03-01 13:00:00",
+                    "2025-03-01 14:00:00",
+                    "2025-03-01 15:00:00",
+                    "2025-03-01 16:00:00",
+                    "2025-03-01 17:00:00",
+                    "2025-03-01 18:00:00",
+                    "2025-03-01 19:00:00",
+                    "2025-03-01 20:00:00",
+                    "2025-03-01 21:00:00",
+                    "2025-03-01 22:00:00",
+                    "2025-03-01 23:00:00"
+                  ],
+                  "values": [
+                    790.0585349341469,
+                    769.4167907896343,
+                    786.9889411284737,
+                    758.8170585885563,
+                    801.5692369397188,
+                    719.1999671285387,
+                    767.2832926938027,
+                    801.9016203820465,
+                    540.9552645644835,
+                    447.2442634898061,
+                    814.9803998319778,
+                    710.031791051457,
+                    513.465126711853,
+                    507.38837458490747,
+                    780.061144974954,
+                    805.9773436883657,
+                    761.0842894558463,
+                    729.8098871364699,
+                    596.4579785123894,
+                    572.6587332559568,
+                    509.2988297775409,
+                    546.4514972440091,
+                    763.3267362022204,
+                    800.0098138832985
+                  ]
+                },
+                "daily_data": {
+                  "timestamps": [
+                    "2025-03-01"
+                  ],
+                  "values": [
+                    691.4348715396022
+                  ]
+                },
+                "moving_average_24h": {
+                  "timestamps": [
+                    "2025-03-01 00:00:00",
+                    "2025-03-01 01:00:00",
+                    "2025-03-01 02:00:00",
+                    "2025-03-01 03:00:00",
+                    "2025-03-01 04:00:00",
+                    "2025-03-01 05:00:00",
+                    "2025-03-01 06:00:00",
+                    "2025-03-01 07:00:00",
+                    "2025-03-01 08:00:00",
+                    "2025-03-01 09:00:00",
+                    "2025-03-01 10:00:00",
+                    "2025-03-01 11:00:00",
+                    "2025-03-01 12:00:00",
+                    "2025-03-01 13:00:00",
+                    "2025-03-01 14:00:00",
+                    "2025-03-01 15:00:00",
+                    "2025-03-01 16:00:00",
+                    "2025-03-01 17:00:00",
+                    "2025-03-01 18:00:00",
+                    "2025-03-01 19:00:00",
+                    "2025-03-01 20:00:00",
+                    "2025-03-01 21:00:00",
+                    "2025-03-01 22:00:00",
+                    "2025-03-01 23:00:00"
+                  ],
+                  "values": [
+                    691.4348715396022
+                  ]
+                },
+                "average_daily_growth_rate": null,
+                "seasonal_decomposition": null,
+                "forecast": null,
+                "statistics": {
+                  "min": 51.20874361005519,
+                  "max": 1499.304361343575,
+                  "mean": 691.4348715396022,
+                  "median": 661.5092817343445,
+                  "std": 375.59449430821155
+                }
+              },
+              "latency_ms": {
+                "hourly_data": {
+                  "timestamps": [
+                    "2025-03-01 00:00:00",
+                    "2025-03-01 01:00:00",
+                    "2025-03-01 02:00:00",
+                    "2025-03-01 03:00:00",
+                    "2025-03-01 04:00:00",
+                    "2025-03-01 05:00:00",
+                    "2025-03-01 06:00:00",
+                    "2025-03-01 07:00:00",
+                    "2025-03-01 08:00:00",
+                    "2025-03-01 09:00:00",
+                    "2025-03-01 10:00:00",
+                    "2025-03-01 11:00:00",
+                    "2025-03-01 12:00:00",
+                    "2025-03-01 13:00:00",
+                    "2025-03-01 14:00:00",
+                    "2025-03-01 15:00:00",
+                    "2025-03-01 16:00:00",
+                    "2025-03-01 17:00:00",
+                    "2025-03-01 18:00:00",
+                    "2025-03-01 19:00:00",
+                    "2025-03-01 20:00:00",
+                    "2025-03-01 21:00:00",
+                    "2025-03-01 22:00:00",
+                    "2025-03-01 23:00:00"
+                  ],
+                  "values": [
+                    17.4971163972264,
+                    17.313162534762352,
+                    18.340397140840714,
+                    17.727180651880367,
+                    17.973202367783536,
+                    18.55252283564901,
+                    17.04872939952253,
+                    17.7506571077763,
+                    28.78104582391327,
+                    29.73423219285811,
+                    15.788395365924607,
+                    19.051915497026737,
+                    28.767066971153138,
+                    31.88989276805867,
+                    17.099869470483256,
+                    17.31055564198343,
+                    20.561439373217183,
+                    17.823841781182086,
+                    31.898331314396394,
+                    30.632929868544508,
+                    28.270053471295906,
+                    28.184950088107335,
+                    18.37804316683321,
+                    16.67246013778919
+                  ]
+                },
+                "daily_data": {
+                  "timestamps": [
+                    "2025-03-01"
+                  ],
+                  "values": [
+                    21.793666307008674
+                  ]
+                },
+                "moving_average_24h": {
+                  "timestamps": [
+                    "2025-03-01 00:00:00",
+                    "2025-03-01 01:00:00",
+                    "2025-03-01 02:00:00",
+                    "2025-03-01 03:00:00",
+                    "2025-03-01 04:00:00",
+                    "2025-03-01 05:00:00",
+                    "2025-03-01 06:00:00",
+                    "2025-03-01 07:00:00",
+                    "2025-03-01 08:00:00",
+                    "2025-03-01 09:00:00",
+                    "2025-03-01 10:00:00",
+                    "2025-03-01 11:00:00",
+                    "2025-03-01 12:00:00",
+                    "2025-03-01 13:00:00",
+                    "2025-03-01 14:00:00",
+                    "2025-03-01 15:00:00",
+                    "2025-03-01 16:00:00",
+                    "2025-03-01 17:00:00",
+                    "2025-03-01 18:00:00",
+                    "2025-03-01 19:00:00",
+                    "2025-03-01 20:00:00",
+                    "2025-03-01 21:00:00",
+                    "2025-03-01 22:00:00",
+                    "2025-03-01 23:00:00"
+                  ],
+                  "values": [
+                    21.793666307008678
+                  ]
+                },
+                "average_daily_growth_rate": null,
+                "seasonal_decomposition": null,
+                "forecast": null,
+                "statistics": {
+                  "min": 5.014948470869883,
+                  "max": 49.98242645361677,
+                  "mean": 21.793666307008678,
+                  "median": 20.563855631820203,
+                  "std": 10.571672122443388
+                }
+              },
+              "packet_loss_percent": {
+                "hourly_data": {
+                  "timestamps": [
+                    "2025-03-01 00:00:00",
+                    "2025-03-01 01:00:00",
+                    "2025-03-01 02:00:00",
+                    "2025-03-01 03:00:00",
+                    "2025-03-01 04:00:00",
+                    "2025-03-01 05:00:00",
+                    "2025-03-01 06:00:00",
+                    "2025-03-01 07:00:00",
+                    "2025-03-01 08:00:00",
+                    "2025-03-01 09:00:00",
+                    "2025-03-01 10:00:00",
+                    "2025-03-01 11:00:00",
+                    "2025-03-01 12:00:00",
+                    "2025-03-01 13:00:00",
+                    "2025-03-01 14:00:00",
+                    "2025-03-01 15:00:00",
+                    "2025-03-01 16:00:00",
+                    "2025-03-01 17:00:00",
+                    "2025-03-01 18:00:00",
+                    "2025-03-01 19:00:00",
+                    "2025-03-01 20:00:00",
+                    "2025-03-01 21:00:00",
+                    "2025-03-01 22:00:00",
+                    "2025-03-01 23:00:00"
+                  ],
+                  "values": [
+                    2.2663409679010305,
+                    2.5071966239520873,
+                    2.4185752786338823,
+                    2.537420465139377,
+                    2.73972462279453,
+                    2.568930959265024,
+                    2.463447931704744,
+                    2.3651070940216963,
+                    2.428023092218937,
+                    2.6265718816172114,
+                    2.480523052535467,
+                    2.67251451059293,
+                    2.7969803518495815,
+                    2.3456385129798796,
+                    2.5866046917971848,
+                    2.155220843293795,
+                    2.6088725083873623,
+                    2.4829370872799355,
+                    2.4977528912934686,
+                    2.3478937853757436,
+                    2.148306775339691,
+                    2.579224750766136,
+                    2.392852528011221,
+                    2.5196625063328666
+                  ]
+                },
+                "daily_data": {
+                  "timestamps": [
+                    "2025-03-01"
+                  ],
+                  "values": [
+                    2.4806801547118242
+                  ]
+                },
+                "moving_average_24h": {
+                  "timestamps": [
+                    "2025-03-01 00:00:00",
+                    "2025-03-01 01:00:00",
+                    "2025-03-01 02:00:00",
+                    "2025-03-01 03:00:00",
+                    "2025-03-01 04:00:00",
+                    "2025-03-01 05:00:00",
+                    "2025-03-01 06:00:00",
+                    "2025-03-01 07:00:00",
+                    "2025-03-01 08:00:00",
+                    "2025-03-01 09:00:00",
+                    "2025-03-01 10:00:00",
+                    "2025-03-01 11:00:00",
+                    "2025-03-01 12:00:00",
+                    "2025-03-01 13:00:00",
+                    "2025-03-01 14:00:00",
+                    "2025-03-01 15:00:00",
+                    "2025-03-01 16:00:00",
+                    "2025-03-01 17:00:00",
+                    "2025-03-01 18:00:00",
+                    "2025-03-01 19:00:00",
+                    "2025-03-01 20:00:00",
+                    "2025-03-01 21:00:00",
+                    "2025-03-01 22:00:00",
+                    "2025-03-01 23:00:00"
+                  ],
+                  "values": [
+                    2.4806801547118242
+                  ]
+                },
+                "average_daily_growth_rate": null,
+                "seasonal_decomposition": null,
+                "forecast": null,
+                "statistics": {
+                  "min": 4.647987792372188e-05,
+                  "max": 4.990039747837442,
+                  "mean": 2.4806801547118242,
+                  "median": 2.47150771737633,
+                  "std": 1.429357080748753
+                }
+              }
+            }
+          },
+          "BS005": {
+            "station_name": "市中心-商业区基站",
+            "metrics_analysis": {
+              "success_rate": {
+                "hourly_data": {
+                  "timestamps": [
+                    "2025-03-01 00:00:00",
+                    "2025-03-01 01:00:00",
+                    "2025-03-01 02:00:00",
+                    "2025-03-01 03:00:00",
+                    "2025-03-01 04:00:00",
+                    "2025-03-01 05:00:00",
+                    "2025-03-01 06:00:00",
+                    "2025-03-01 07:00:00",
+                    "2025-03-01 08:00:00",
+                    "2025-03-01 09:00:00",
+                    "2025-03-01 10:00:00",
+                    "2025-03-01 11:00:00",
+                    "2025-03-01 12:00:00",
+                    "2025-03-01 13:00:00",
+                    "2025-03-01 14:00:00",
+                    "2025-03-01 15:00:00",
+                    "2025-03-01 16:00:00",
+                    "2025-03-01 17:00:00",
+                    "2025-03-01 18:00:00",
+                    "2025-03-01 19:00:00",
+                    "2025-03-01 20:00:00",
+                    "2025-03-01 21:00:00",
+                    "2025-03-01 22:00:00",
+                    "2025-03-01 23:00:00"
+                  ],
+                  "values": [
+                    0.8480300212289432,
+                    0.8535449009165822,
+                    0.8786490398777437,
+                    0.8621635273446313,
+                    0.8536947354647789,
+                    0.8526883866513473,
+                    0.849182510135483,
+                    0.8597737826896267,
+                    0.8470272279771535,
+                    0.8563107763853871,
+                    0.8587047805553695,
+                    0.8610095752450798,
+                    0.8745172273199471,
+                    0.8514471803636877,
+                    0.8403268209183936,
+                    0.8559728774579132,
+                    0.8586593582885341,
+                    0.8672513039974653,
+                    0.8482024845654991,
+                    0.8562315267464314,
+                    0.8685303919633581,
+                    0.8697376926257776,
+                    0.8519362076834268,
+                    0.8658193942330292
+                  ]
+                },
+                "daily_data": {
+                  "timestamps": [
+                    "2025-03-01"
+                  ],
+                  "values": [
+                    0.8578921554431497
+                  ]
+                },
+                "moving_average_24h": {
+                  "timestamps": [
+                    "2025-03-01 00:00:00",
+                    "2025-03-01 01:00:00",
+                    "2025-03-01 02:00:00",
+                    "2025-03-01 03:00:00",
+                    "2025-03-01 04:00:00",
+                    "2025-03-01 05:00:00",
+                    "2025-03-01 06:00:00",
+                    "2025-03-01 07:00:00",
+                    "2025-03-01 08:00:00",
+                    "2025-03-01 09:00:00",
+                    "2025-03-01 10:00:00",
+                    "2025-03-01 11:00:00",
+                    "2025-03-01 12:00:00",
+                    "2025-03-01 13:00:00",
+                    "2025-03-01 14:00:00",
+                    "2025-03-01 15:00:00",
+                    "2025-03-01 16:00:00",
+                    "2025-03-01 17:00:00",
+                    "2025-03-01 18:00:00",
+                    "2025-03-01 19:00:00",
+                    "2025-03-01 20:00:00",
+                    "2025-03-01 21:00:00",
+                    "2025-03-01 22:00:00",
+                    "2025-03-01 23:00:00"
+                  ],
+                  "values": [
+                    0.8578921554431496
+                  ]
+                },
+                "average_daily_growth_rate": null,
+                "seasonal_decomposition": null,
+                "forecast": null,
+                "statistics": {
+                  "min": 0.5014315095290534,
+                  "max": 0.989942017960527,
+                  "mean": 0.8578921554431497,
+                  "median": 0.8772454474653677,
+                  "std": 0.10594511771987485
+                }
+              },
+              "active_users": {
+                "hourly_data": {
+                  "timestamps": [
+                    "2025-03-01 00:00:00",
+                    "2025-03-01 01:00:00",
+                    "2025-03-01 02:00:00",
+                    "2025-03-01 03:00:00",
+                    "2025-03-01 04:00:00",
+                    "2025-03-01 05:00:00",
+                    "2025-03-01 06:00:00",
+                    "2025-03-01 07:00:00",
+                    "2025-03-01 08:00:00",
+                    "2025-03-01 09:00:00",
+                    "2025-03-01 10:00:00",
+                    "2025-03-01 11:00:00",
+                    "2025-03-01 12:00:00",
+                    "2025-03-01 13:00:00",
+                    "2025-03-01 14:00:00",
+                    "2025-03-01 15:00:00",
+                    "2025-03-01 16:00:00",
+                    "2025-03-01 17:00:00",
+                    "2025-03-01 18:00:00",
+                    "2025-03-01 19:00:00",
+                    "2025-03-01 20:00:00",
+                    "2025-03-01 21:00:00",
+                    "2025-03-01 22:00:00",
+                    "2025-03-01 23:00:00"
+                  ],
+                  "values": [
+                    127.76666666666667,
+                    121.95,
+                    129.98333333333332,
+                    124.13333333333334,
+                    127.48333333333333,
+                    126.2,
+                    138.03333333333333,
+                    126.33333333333333,
+                    330.7,
+                    334.1,
+                    122.73333333333333,
+                    128.5,
+                    357.4166666666667,
+                    360.78333333333336,
+                    121.66666666666667,
+                    135.48333333333332,
+                    125.0,
+                    123.41666666666667,
+                    356.45,
+                    354.51666666666665,
+                    346.56666666666666,
+                    362.85,
+                    121.45,
+                    128.61666666666667
+                  ]
+                },
+                "daily_data": {
+                  "timestamps": [
+                    "2025-03-01"
+                  ],
+                  "values": [
+                    201.3388888888889
+                  ]
+                },
+                "moving_average_24h": {
+                  "timestamps": [
+                    "2025-03-01 00:00:00",
+                    "2025-03-01 01:00:00",
+                    "2025-03-01 02:00:00",
+                    "2025-03-01 03:00:00",
+                    "2025-03-01 04:00:00",
+                    "2025-03-01 05:00:00",
+                    "2025-03-01 06:00:00",
+                    "2025-03-01 07:00:00",
+                    "2025-03-01 08:00:00",
+                    "2025-03-01 09:00:00",
+                    "2025-03-01 10:00:00",
+                    "2025-03-01 11:00:00",
+                    "2025-03-01 12:00:00",
+                    "2025-03-01 13:00:00",
+                    "2025-03-01 14:00:00",
+                    "2025-03-01 15:00:00",
+                    "2025-03-01 16:00:00",
+                    "2025-03-01 17:00:00",
+                    "2025-03-01 18:00:00",
+                    "2025-03-01 19:00:00",
+                    "2025-03-01 20:00:00",
+                    "2025-03-01 21:00:00",
+                    "2025-03-01 22:00:00",
+                    "2025-03-01 23:00:00"
+                  ],
+                  "values": [
+                    201.33888888888887
+                  ]
+                },
+                "average_daily_growth_rate": null,
+                "seasonal_decomposition": null,
+                "forecast": null,
+                "statistics": {
+                  "min": 50.0,
+                  "max": 499.0,
+                  "mean": 201.3388888888889,
+                  "median": 163.0,
+                  "std": 122.04430387024702
+                }
+              },
+              "signal_strength_dbm": {
+                "hourly_data": {
+                  "timestamps": [
+                    "2025-03-01 00:00:00",
+                    "2025-03-01 01:00:00",
+                    "2025-03-01 02:00:00",
+                    "2025-03-01 03:00:00",
+                    "2025-03-01 04:00:00",
+                    "2025-03-01 05:00:00",
+                    "2025-03-01 06:00:00",
+                    "2025-03-01 07:00:00",
+                    "2025-03-01 08:00:00",
+                    "2025-03-01 09:00:00",
+                    "2025-03-01 10:00:00",
+                    "2025-03-01 11:00:00",
+                    "2025-03-01 12:00:00",
+                    "2025-03-01 13:00:00",
+                    "2025-03-01 14:00:00",
+                    "2025-03-01 15:00:00",
+                    "2025-03-01 16:00:00",
+                    "2025-03-01 17:00:00",
+                    "2025-03-01 18:00:00",
+                    "2025-03-01 19:00:00",
+                    "2025-03-01 20:00:00",
+                    "2025-03-01 21:00:00",
+                    "2025-03-01 22:00:00",
+                    "2025-03-01 23:00:00"
+                  ],
+                  "values": [
+                    -93.30636417945996,
+                    -95.82512895918084,
+                    -96.81325949823473,
+                    -96.69401075685404,
+                    -94.77203046287782,
+                    -98.03113296998308,
+                    -95.07113215323696,
+                    -95.33161665010729,
+                    -92.54313164149552,
+                    -93.56240347521347,
+                    -97.4721995431811,
+                    -94.02935595282938,
+                    -93.96619480805289,
+                    -94.01612593836998,
+                    -95.34022614339578,
+                    -97.06580430725653,
+                    -93.39138008587524,
+                    -94.02840774842436,
+                    -94.87667249774475,
+                    -94.8568970299287,
+                    -95.89251033888243,
+                    -93.88254273749467,
+                    -95.39625607937121,
+                    -93.57276516455616
+                  ]
+                },
+                "daily_data": {
+                  "timestamps": [
+                    "2025-03-01"
+                  ],
+                  "values": [
+                    -94.98906454675028
+                  ]
+                },
+                "moving_average_24h": {
+                  "timestamps": [
+                    "2025-03-01 00:00:00",
+                    "2025-03-01 01:00:00",
+                    "2025-03-01 02:00:00",
+                    "2025-03-01 03:00:00",
+                    "2025-03-01 04:00:00",
+                    "2025-03-01 05:00:00",
+                    "2025-03-01 06:00:00",
+                    "2025-03-01 07:00:00",
+                    "2025-03-01 08:00:00",
+                    "2025-03-01 09:00:00",
+                    "2025-03-01 10:00:00",
+                    "2025-03-01 11:00:00",
+                    "2025-03-01 12:00:00",
+                    "2025-03-01 13:00:00",
+                    "2025-03-01 14:00:00",
+                    "2025-03-01 15:00:00",
+                    "2025-03-01 16:00:00",
+                    "2025-03-01 17:00:00",
+                    "2025-03-01 18:00:00",
+                    "2025-03-01 19:00:00",
+                    "2025-03-01 20:00:00",
+                    "2025-03-01 21:00:00",
+                    "2025-03-01 22:00:00",
+                    "2025-03-01 23:00:00"
+                  ],
+                  "values": [
+                    -94.98906454675028
+                  ]
+                },
+                "average_daily_growth_rate": null,
+                "seasonal_decomposition": null,
+                "forecast": null,
+                "statistics": {
+                  "min": -119.9680269569733,
+                  "max": -70.01879127801004,
+                  "mean": -94.98906454675028,
+                  "median": -95.49375946228038,
+                  "std": 14.188806317592674
+                }
+              },
+              "downlink_throughput_mbps": {
+                "hourly_data": {
+                  "timestamps": [
+                    "2025-03-01 00:00:00",
+                    "2025-03-01 01:00:00",
+                    "2025-03-01 02:00:00",
+                    "2025-03-01 03:00:00",
+                    "2025-03-01 04:00:00",
+                    "2025-03-01 05:00:00",
+                    "2025-03-01 06:00:00",
+                    "2025-03-01 07:00:00",
+                    "2025-03-01 08:00:00",
+                    "2025-03-01 09:00:00",
+                    "2025-03-01 10:00:00",
+                    "2025-03-01 11:00:00",
+                    "2025-03-01 12:00:00",
+                    "2025-03-01 13:00:00",
+                    "2025-03-01 14:00:00",
+                    "2025-03-01 15:00:00",
+                    "2025-03-01 16:00:00",
+                    "2025-03-01 17:00:00",
+                    "2025-03-01 18:00:00",
+                    "2025-03-01 19:00:00",
+                    "2025-03-01 20:00:00",
+                    "2025-03-01 21:00:00",
+                    "2025-03-01 22:00:00",
+                    "2025-03-01 23:00:00"
+                  ],
+                  "values": [
+                    817.990810964777,
+                    767.8104036949214,
+                    762.3739002536495,
+                    791.7790726986854,
+                    916.8122285778968,
+                    865.9809767560804,
+                    867.710880786258,
+                    835.0579969341136,
+                    520.6103656322468,
+                    497.634625221646,
+                    772.3496230063865,
+                    824.6819912811164,
+                    541.8872450654424,
+                    520.7886790391328,
+                    810.358068320543,
+                    806.0686997185993,
+                    838.6059147695124,
+                    777.1987648088824,
+                    538.8533031922581,
+                    503.4377375183907,
+                    554.1111529115028,
+                    538.2302485655462,
+                    767.9149913797474,
+                    771.7828667704053
+                  ]
+                },
+                "daily_data": {
+                  "timestamps": [
+                    "2025-03-01"
+                  ],
+                  "values": [
+                    717.0846061611559
+                  ]
+                },
+                "moving_average_24h": {
+                  "timestamps": [
+                    "2025-03-01 00:00:00",
+                    "2025-03-01 01:00:00",
+                    "2025-03-01 02:00:00",
+                    "2025-03-01 03:00:00",
+                    "2025-03-01 04:00:00",
+                    "2025-03-01 05:00:00",
+                    "2025-03-01 06:00:00",
+                    "2025-03-01 07:00:00",
+                    "2025-03-01 08:00:00",
+                    "2025-03-01 09:00:00",
+                    "2025-03-01 10:00:00",
+                    "2025-03-01 11:00:00",
+                    "2025-03-01 12:00:00",
+                    "2025-03-01 13:00:00",
+                    "2025-03-01 14:00:00",
+                    "2025-03-01 15:00:00",
+                    "2025-03-01 16:00:00",
+                    "2025-03-01 17:00:00",
+                    "2025-03-01 18:00:00",
+                    "2025-03-01 19:00:00",
+                    "2025-03-01 20:00:00",
+                    "2025-03-01 21:00:00",
+                    "2025-03-01 22:00:00",
+                    "2025-03-01 23:00:00"
+                  ],
+                  "values": [
+                    717.0846061611559
+                  ]
+                },
+                "average_daily_growth_rate": null,
+                "seasonal_decomposition": null,
+                "forecast": null,
+                "statistics": {
+                  "min": 52.42995974927251,
+                  "max": 1499.466453121581,
+                  "mean": 717.0846061611559,
+                  "median": 714.5940811054866,
+                  "std": 387.3048387234306
+                }
+              },
+              "latency_ms": {
+                "hourly_data": {
+                  "timestamps": [
+                    "2025-03-01 00:00:00",
+                    "2025-03-01 01:00:00",
+                    "2025-03-01 02:00:00",
+                    "2025-03-01 03:00:00",
+                    "2025-03-01 04:00:00",
+                    "2025-03-01 05:00:00",
+                    "2025-03-01 06:00:00",
+                    "2025-03-01 07:00:00",
+                    "2025-03-01 08:00:00",
+                    "2025-03-01 09:00:00",
+                    "2025-03-01 10:00:00",
+                    "2025-03-01 11:00:00",
+                    "2025-03-01 12:00:00",
+                    "2025-03-01 13:00:00",
+                    "2025-03-01 14:00:00",
+                    "2025-03-01 15:00:00",
+                    "2025-03-01 16:00:00",
+                    "2025-03-01 17:00:00",
+                    "2025-03-01 18:00:00",
+                    "2025-03-01 19:00:00",
+                    "2025-03-01 20:00:00",
+                    "2025-03-01 21:00:00",
+                    "2025-03-01 22:00:00",
+                    "2025-03-01 23:00:00"
+                  ],
+                  "values": [
+                    16.155403420996965,
+                    18.35238932507819,
+                    17.501050513857567,
+                    16.587039136950132,
+                    18.711138852219896,
+                    18.927065322970503,
+                    16.442019358586105,
+                    18.154870107176016,
+                    31.61952103583712,
+                    27.12760888189255,
+                    17.497046530997274,
+                    17.60456775611684,
+                    28.68075393138623,
+                    28.533436673092616,
+                    18.365726856454856,
+                    16.733731884093434,
+                    17.535021062448752,
+                    17.343124002147466,
+                    31.13120498354988,
+                    28.909788572785406,
+                    30.292124549902077,
+                    31.483151621239173,
+                    17.392104515636106,
+                    17.649428702663215
+                  ]
+                },
+                "daily_data": {
+                  "timestamps": [
+                    "2025-03-01"
+                  ],
+                  "values": [
+                    21.613721566586598
+                  ]
+                },
+                "moving_average_24h": {
+                  "timestamps": [
+                    "2025-03-01 00:00:00",
+                    "2025-03-01 01:00:00",
+                    "2025-03-01 02:00:00",
+                    "2025-03-01 03:00:00",
+                    "2025-03-01 04:00:00",
+                    "2025-03-01 05:00:00",
+                    "2025-03-01 06:00:00",
+                    "2025-03-01 07:00:00",
+                    "2025-03-01 08:00:00",
+                    "2025-03-01 09:00:00",
+                    "2025-03-01 10:00:00",
+                    "2025-03-01 11:00:00",
+                    "2025-03-01 12:00:00",
+                    "2025-03-01 13:00:00",
+                    "2025-03-01 14:00:00",
+                    "2025-03-01 15:00:00",
+                    "2025-03-01 16:00:00",
+                    "2025-03-01 17:00:00",
+                    "2025-03-01 18:00:00",
+                    "2025-03-01 19:00:00",
+                    "2025-03-01 20:00:00",
+                    "2025-03-01 21:00:00",
+                    "2025-03-01 22:00:00",
+                    "2025-03-01 23:00:00"
+                  ],
+                  "values": [
+                    21.6137215665866
+                  ]
+                },
+                "average_daily_growth_rate": null,
+                "seasonal_decomposition": null,
+                "forecast": null,
+                "statistics": {
+                  "min": 5.00290349460528,
+                  "max": 49.95149393215196,
+                  "mean": 21.613721566586598,
+                  "median": 20.589264574645327,
+                  "std": 10.623158725720208
+                }
+              },
+              "packet_loss_percent": {
+                "hourly_data": {
+                  "timestamps": [
+                    "2025-03-01 00:00:00",
+                    "2025-03-01 01:00:00",
+                    "2025-03-01 02:00:00",
+                    "2025-03-01 03:00:00",
+                    "2025-03-01 04:00:00",
+                    "2025-03-01 05:00:00",
+                    "2025-03-01 06:00:00",
+                    "2025-03-01 07:00:00",
+                    "2025-03-01 08:00:00",
+                    "2025-03-01 09:00:00",
+                    "2025-03-01 10:00:00",
+                    "2025-03-01 11:00:00",
+                    "2025-03-01 12:00:00",
+                    "2025-03-01 13:00:00",
+                    "2025-03-01 14:00:00",
+                    "2025-03-01 15:00:00",
+                    "2025-03-01 16:00:00",
+                    "2025-03-01 17:00:00",
+                    "2025-03-01 18:00:00",
+                    "2025-03-01 19:00:00",
+                    "2025-03-01 20:00:00",
+                    "2025-03-01 21:00:00",
+                    "2025-03-01 22:00:00",
+                    "2025-03-01 23:00:00"
+                  ],
+                  "values": [
+                    2.425958841704331,
+                    2.1732089799145147,
+                    2.708574506408605,
+                    2.3803142972418296,
+                    2.60171367969278,
+                    2.4971406639166367,
+                    2.449835148520779,
+                    2.4590695461218606,
+                    2.5607703789888103,
+                    2.317196120496893,
+                    2.6409875946437853,
+                    2.281108033575904,
+                    2.5344286165500702,
+                    2.410888450388676,
+                    2.38144636911054,
+                    2.6597191056275773,
+                    2.499195866226303,
+                    2.82283933491421,
+                    2.6659594510596323,
+                    2.3754665581788013,
+                    2.726432772717429,
+                    2.369785220156126,
+                    2.431302906322276,
+                    2.507967780544839
+                  ]
+                },
+                "daily_data": {
+                  "timestamps": [
+                    "2025-03-01"
+                  ],
+                  "values": [
+                    2.495054592625967
+                  ]
+                },
+                "moving_average_24h": {
+                  "timestamps": [
+                    "2025-03-01 00:00:00",
+                    "2025-03-01 01:00:00",
+                    "2025-03-01 02:00:00",
+                    "2025-03-01 03:00:00",
+                    "2025-03-01 04:00:00",
+                    "2025-03-01 05:00:00",
+                    "2025-03-01 06:00:00",
+                    "2025-03-01 07:00:00",
+                    "2025-03-01 08:00:00",
+                    "2025-03-01 09:00:00",
+                    "2025-03-01 10:00:00",
+                    "2025-03-01 11:00:00",
+                    "2025-03-01 12:00:00",
+                    "2025-03-01 13:00:00",
+                    "2025-03-01 14:00:00",
+                    "2025-03-01 15:00:00",
+                    "2025-03-01 16:00:00",
+                    "2025-03-01 17:00:00",
+                    "2025-03-01 18:00:00",
+                    "2025-03-01 19:00:00",
+                    "2025-03-01 20:00:00",
+                    "2025-03-01 21:00:00",
+                    "2025-03-01 22:00:00",
+                    "2025-03-01 23:00:00"
+                  ],
+                  "values": [
+                    2.495054592625967
+                  ]
+                },
+                "average_daily_growth_rate": null,
+                "seasonal_decomposition": null,
+                "forecast": null,
+                "statistics": {
+                  "min": 0.0008146801991271,
+                  "max": 4.986401309614175,
+                  "mean": 2.495054592625967,
+                  "median": 2.492583650819544,
+                  "std": 1.4429318458240963
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "相关性分析单元": {
+      "status": "failed",
+      "error": "Traceback (most recent call last):\n  File \"D:\\smolagent\\temp_py\\相关性分析单元_temp_code_20250317101423.py\", line 126, in <module>\n    print(json.dumps(results, ensure_ascii=False, indent=2))\n          ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Python313\\Lib\\json\\__init__.py\", line 238, in dumps\n    **kw).encode(obj)\n          ~~~~~~^^^^^\n  File \"C:\\Python313\\Lib\\json\\encoder.py\", line 200, in encode\n    chunks = self.iterencode(o, _one_shot=True)\n  File \"C:\\Python313\\Lib\\json\\encoder.py\", line 261, in iterencode\n    return _iterencode(o, 0)\n  File \"C:\\Python313\\Lib\\json\\encoder.py\", line 180, in default\n    raise TypeError(f'Object of type {o.__class__.__name__} '\n                    f'is not JSON serializable')\nTypeError: Object of type bool is not JSON serializable\n",
+      "code": "import pandas as pd\nimport numpy as np\nimport scipy.stats as stats\nfrom scipy.stats import f_oneway\nimport json\nimport sys\nimport os\nfrom typing import Dict, List, Any, Tuple\n\ndef load_data(file_path: str) -> pd.DataFrame:\n    \"\"\"加载CSV数据文件\"\"\"\n    try:\n        return pd.read_csv(file_path)\n    except Exception as e:\n        print(f\"加载数据文件时出错: {e}\")\n        sys.exit(1)\n\ndef get_numeric_columns(df: pd.DataFrame) -> List[str]:\n    \"\"\"获取数据框中的数值型列\"\"\"\n    return df.select_dtypes(include=['int64', 'float64']).columns.tolist()\n\ndef get_categorical_columns(df: pd.DataFrame) -> List[str]:\n    \"\"\"获取数据框中的分类列\"\"\"\n    return df.select_dtypes(include=['object', 'category']).columns.tolist()\n\ndef calculate_correlations(df: pd.DataFrame, numeric_cols: List[str]) -> Dict[str, Any]:\n    \"\"\"计算数值变量之间的相关系数\"\"\"\n    if len(numeric_cols) < 2:\n        return {\"error\": \"数值列不足，无法计算相关性\"}\n    \n    # 计算Pearson相关系数\n    pearson_corr = df[numeric_cols].corr(method='pearson').round(3)\n    \n    # 计算Spearman相关系数\n    spearman_corr = df[numeric_cols].corr(method='spearman').round(3)\n    \n    # 识别强相关变量对 (|r| > 0.7)\n    strong_correlations = []\n    for i in range(len(numeric_cols)):\n        for j in range(i+1, len(numeric_cols)):\n            corr_value = pearson_corr.iloc[i, j]\n            if abs(corr_value) > 0.7:\n                strong_correlations.append({\n                    \"variable1\": numeric_cols[i],\n                    \"variable2\": numeric_cols[j],\n                    \"pearson_correlation\": float(corr_value),\n                    \"correlation_type\": \"强正相关\" if corr_value > 0 else \"强负相关\"\n                })\n    \n    return {\n        \"pearson_correlation_matrix\": pearson_corr.to_dict(),\n        \"spearman_correlation_matrix\": spearman_corr.to_dict(),\n        \"strong_correlations\": strong_correlations\n    }\n\ndef analyze_categorical_vs_numeric(df: pd.DataFrame, cat_cols: List[str], num_cols: List[str]) -> Dict[str, Any]:\n    \"\"\"分析分类变量与数值变量之间的关系\"\"\"\n    results = []\n    \n    for cat_col in cat_cols:\n        if len(df[cat_col].unique()) > 10:  # 跳过唯一值过多的分类变量\n            continue\n            \n        for num_col in num_cols:\n            try:\n                # 按分类变量分组\n                groups = [df[df[cat_col] == val][num_col].dropna() for val in df[cat_col].unique()]\n                \n                # 只有当所有组都有足够的数据时才进行ANOVA分析\n                if all(len(group) > 1 for group in groups) and len(groups) >= 2:\n                    # 执行单因素方差分析(ANOVA)\n                    f_stat, p_value = f_oneway(*groups)\n                    \n                    # 记录结果\n                    result = {\n                        \"categorical_variable\": cat_col,\n                        \"numeric_variable\": num_col,\n                        \"f_statistic\": float(f_stat),\n                        \"p_value\": float(p_value),\n                        \"significant\": p_value < 0.05\n                    }\n                    results.append(result)\n            except Exception as e:\n                print(f\"分析 {cat_col} 与 {num_col} 时出错: {e}\")\n    \n    return {\"categorical_vs_numeric_analysis\": results}\n\ndef main(file_path: str) -> Dict[str, Any]:\n    \"\"\"主函数，执行所有分析步骤\"\"\"\n    # 加载数据\n    df = load_data(file_path)\n    \n    # 获取数值列和分类列\n    numeric_cols = get_numeric_columns(df)\n    categorical_cols = get_categorical_columns(df)\n    \n    # 执行相关性分析\n    correlation_results = calculate_correlations(df, numeric_cols)\n    \n    # 分析分类变量与数值变量之间的关系\n    cat_num_results = analyze_categorical_vs_numeric(df, categorical_cols, numeric_cols)\n    \n    # 合并所有结果\n    all_results = {\n        \"dataset_info\": {\n            \"rows\": df.shape[0],\n            \"columns\": df.shape[1],\n            \"numeric_columns\": numeric_cols,\n            \"categorical_columns\": categorical_cols\n        },\n        **correlation_results,\n        **cat_num_results\n    }\n    \n    return all_results\n\nif __name__ == \"__main__\":\n    if len(sys.argv) != 2:\n        print(\"用法: python script.py <数据文件路径>\")\n        sys.exit(1)\n        \n    file_path = sys.argv[1]\n    results = main(file_path)\n    \n    # 输出结果为JSON\n    print(json.dumps(results, ensure_ascii=False, indent=2))",
+      "results": null
+    }
+  }
+}

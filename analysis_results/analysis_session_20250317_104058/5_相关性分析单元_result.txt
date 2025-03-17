@@ -1,0 +1,4 @@
+成功读取CSV文件: temp_csv/excel_data_20250317104057.csv
+找到的数值型列: ['success_rate', 'failure_rate', 'call_attempts', 'active_users', 'signal_strength_dbm', 'signal_quality_db', 'downlink_throughput_mbps', 'uplink_throughput_mbps', 'latency_ms', 'jitter_ms', 'packet_loss_percent', 'resource_block_usage_percent', 'cpu_usage_percent', 'memory_usage_percent', 'temperature_celsius']
+分析完成! 发现 13 对强相关变量
+结果已保存至: correlations.json

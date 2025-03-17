@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>总体数据统计分析分析报告</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            color: #2c3e50;
+            margin-top: 24px;
+            margin-bottom: 16px;
+        }
+        h1 { font-size: 2em; border-bottom: 1px solid #eaecef; padding-bottom: .3em; }
+        h2 { font-size: 1.5em; border-bottom: 1px solid #eaecef; padding-bottom: .3em; }
+        h3 { font-size: 1.25em; }
+        h4 { font-size: 1em; }
+        p, ul, ol, table { margin-bottom: 16px; }
+        code {
+            font-family: Consolas, Monaco, 'Andale Mono', monospace;
+            background-color: #f6f8fa;
+            padding: 0.2em 0.4em;
+            border-radius: 3px;
+        }
+        pre {
+            background-color: #f6f8fa;
+            border-radius: 3px;
+            padding: 16px;
+            overflow: auto;
+        }
+        pre code {
+            background-color: transparent;
+            padding: 0;
+        }
+        blockquote {
+            padding: 0 1em;
+            color: #6a737d;
+            border-left: 0.25em solid #dfe2e5;
+            margin: 0 0 16px 0;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        table th, table td {
+            border: 1px solid #dfe2e5;
+            padding: 6px 13px;
+        }
+        table tr:nth-child(2n) {
+            background-color: #f6f8fa;
+        }
+        img {
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+<h1>电信客户投诉数据分析报告</h1>
+<br>
+<h2>1. 数据概览</h2>
+<br>
+<p>本报告基于2025年1月至3月的电信客户投诉数据进行分析，共包含2000条投诉记录，12个数据字段。</p>
+<br>
+<h3>1.1 基本数据统计</h3>
+<br>
+<table>
+<tr><th>指标</th><th>数值</th></tr>
+<tr><td>总投诉数量</td><td>2,000</td></tr>
+<tr><td>数据时间范围</td><td>2025年1月-3月</td></tr>
+<tr><td>涉及客户数量</td><td>1,769</td></tr>
+<tr><td>已关闭投诉比例</td><td>85.10%</td></tr>
+<tr><td>平均解决时间</td><td>7.15天</td></tr>
+</table>
+<br>
+<h3>1.2 投诉月度分布</h3>
+<br>
+<table>
+<tr><th>月份</th><th>投诉数量</th><th>占比</th></tr>
+<tr><td>2025年1月</td><td>674</td><td>33.7%</td></tr>
+<tr><td>2025年2月</td><td>621</td><td>31.05%</td></tr>
+<tr><td>2025年3月</td><td>705</td><td>35.25%</td></tr>
+</table>
+<br>
+<h3>1.3 投诉类型分布</h3>
+<br>
+<table>
+<tr><th>投诉类型</th><th>数量</th><th>占比</th></tr>
+<tr><td>通话中断 (Call Drop)</td><td>296</td><td>14.80%</td></tr>
+<tr><td>短信失败 (SMS Failure)</td><td>289</td><td>14.45%</td></tr>
+<tr><td>服务中断 (Service Outage)</td><td>289</td><td>14.45%</td></tr>
+<tr><td>通话质量差 (Poor Voice Quality)</td><td>288</td><td>14.40%</td></tr>
+<tr><td>无信号 (No Signal)</td><td>280</td><td>14.00%</td></tr>
+<tr><td>网速慢 (Slow Internet)</td><td>280</td><td>14.00%</td></tr>
+<tr><td>账单问题 (Billing Issue)</td><td>278</td><td>13.90%</td></tr>
+</table>
+<br>
+<h2>2. 数据洞察</h2>
+<br>
+<h3>2.1 投诉处理状态</h3>
+<br>
+<table>
+<tr><th>状态</th><th>数量</th><th>占比</th></tr>
+<tr><td>已关闭 (Closed)</td><td>1,702</td><td>85.10%</td></tr>
+<tr><td>处理中 (In Progress)</td><td>111</td><td>5.55%</td></tr>
+<tr><td>已解决 (Resolved)</td><td>99</td><td>4.95%</td></tr>
+<tr><td>未处理 (Open)</td><td>88</td><td>4.40%</td></tr>
+</table>
+<br>
+<h3>2.2 投诉优先级分布</h3>
+<br>
+<table>
+<tr><th>优先级</th><th>数量</th><th>占比</th></tr>
+<tr><td>紧急 (Critical)</td><td>526</td><td>26.30%</td></tr>
+<tr><td>中等 (Medium)</td><td>500</td><td>25.00%</td></tr>
+<tr><td>低 (Low)</td><td>495</td><td>24.75%</td></tr>
+<tr><td>高 (High)</td><td>479</td><td>23.95%</td></tr>
+</table>
+<br>
+<h3>2.3 区域投诉分布</h3>
+<br>
+<table>
+<tr><th>区域</th><th>数量</th><th>占比</th></tr>
+<tr><td>北部 (North)</td><td>417</td><td>20.85%</td></tr>
+<tr><td>中部 (Central)</td><td>405</td><td>20.25%</td></tr>
+<tr><td>南部 (South)</td><td>403</td><td>20.15%</td></tr>
+<tr><td>西部 (West)</td><td>396</td><td>19.80%</td></tr>
+<tr><td>东部 (East)</td><td>379</td><td>18.95%</td></tr>
+</table>
+<br>
+<h3>2.4 服务类型分布</h3>
+<br>
+<table>
+<tr><th>服务类型</th><th>数量</th><th>占比</th></tr>
+<tr><td>移动服务 (Mobile)</td><td>508</td><td>25.40%</td></tr>
+<tr><td>宽带服务 (Broadband)</td><td>508</td><td>25.40%</td></tr>
+<tr><td>固定电话 (Fixed Line)</td><td>494</td><td>24.70%</td></tr>
+<tr><td>电视服务 (TV)</td><td>490</td><td>24.50%</td></tr>
+</table>
+<br>
+<h3>2.5 客户满意度分析</h3>
+<br>
+<table>
+<tr><th>满意度评分</th><th>数量</th><th>占比</th></tr>
+<tr><td>1分</td><td>339</td><td>19.92%</td></tr>
+<tr><td>2分</td><td>319</td><td>18.74%</td></tr>
+<tr><td>3分</td><td>360</td><td>21.15%</td></tr>
+<tr><td>4分</td><td>344</td><td>20.21%</td></tr>
+<tr><td>5分</td><td>340</td><td>19.98%</td></tr>
+<tr><td>缺失值</td><td>298</td><td>14.90%</td></tr>
+</table>
+<br>
+<h3>2.6 解决时间分析</h3>
+<br>
+<table>
+<tr><th>指标</th><th>天数</th></tr>
+<tr><td>平均解决时间</td><td>7.15</td></tr>
+<tr><td>最短解决时间</td><td>0.00</td></tr>
+<tr><td>最长解决时间</td><td>14.00</td></tr>
+<tr><td>中位数解决时间</td><td>7.00</td></tr>
+<tr><td>缺失值数量</td><td>430 (21.5%)</td></tr>
+</table>
+<br>
+<h2>3. 关键发现</h2>
+<br>
+<h3>3.1 投诉类型与优先级关系</h3>
+<br>
+<table>
+<tr><th>投诉类型</th><th>紧急 (Critical)</th><th>高 (High)</th><th>中等 (Medium)</th><th>低 (Low)</th></tr>
+<tr><td>通话中断 (Call Drop)</td><td>31.76%</td><td>20.61%</td><td>27.03%</td><td>20.61%</td></tr>
+<tr><td>账单问题 (Billing Issue)</td><td>28.78%</td><td>24.82%</td><td>23.74%</td><td>22.66%</td></tr>
+<tr><td>服务中断 (Service Outage)</td><td>27.68%</td><td>21.45%</td><td>23.88%</td><td>26.99%</td></tr>
+<tr><td>网速慢 (Slow Internet)</td><td>27.14%</td><td>23.93%</td><td>25.00%</td><td>23.93%</td></tr>
+<tr><td>短信失败 (SMS Failure)</td><td>22.84%</td><td>24.91%</td><td>26.64%</td><td>25.61%</td></tr>
+<tr><td>通话质量差 (Poor Voice Quality)</td><td>23.61%</td><td>24.65%</td><td>21.53%</td><td>30.21%</td></tr>
+<tr><td>无信号 (No Signal)</td><td>22.14%</td><td>27.50%</td><td>27.14%</td><td>23.21%</td></tr>
+</table>
+<br>
+<h3>3.2 区域与投诉类型关系</h3>
+<br>
+<table>
+<tr><th>区域</th><th>通话中断</th><th>短信失败</th><th>服务中断</th><th>通话质量差</th><th>无信号</th><th>网速慢</th><th>账单问题</th></tr>
+<tr><td>北部 (North)</td><td>14.63%</td><td>14.15%</td><td>13.43%</td><td>18.94%</td><td>11.51%</td><td>15.59%</td><td>11.75%</td></tr>
+<tr><td>中部 (Central)</td><td>16.79%</td><td>16.54%</td><td>13.58%</td><td>12.84%</td><td>13.83%</td><td>12.84%</td><td>13.58%</td></tr>
+<tr><td>南部 (South)</td><td>14.64%</td><td>14.39%</td><td>12.66%</td><td>11.91%</td><td>15.63%</td><td>15.38%</td><td>15.38%</td></tr>
+<tr><td>西部 (West)</td><td>13.89%</td><td>13.89%</td><td>16.16%</td><td>14.65%</td><td>14.14%</td><td>13.13%</td><td>14.14%</td></tr>
+<tr><td>东部 (East)</td><td>13.98%</td><td>13.19%</td><td>16.62%</td><td>13.46%</td><td>15.04%</td><td>12.93%</td><td>14.78%</td></tr>
+</table>
+<br>
+<h3>3.3 服务类型与客户满意度关系</h3>
+<br>
+<table>
+<tr><th>服务类型</th><th>平均满意度评分</th></tr>
+<tr><td>宽带服务 (Broadband)</td><td>3.12</td></tr>
+<tr><td>固定电话 (Fixed Line)</td><td>2.99</td></tr>
+<tr><td>移动服务 (Mobile)</td><td>2.98</td></tr>
+<tr><td>电视服务 (TV)</td><td>2.98</td></tr>
+</table>
+<br>
+<h3>3.4 重复投诉客户分析</h3>
+<br>
+<p>数据显示有少量客户存在多次投诉情况，最高频率为3次投诉，涉及客户包括CUST-8483、CUST-4227、CUST-1815、CUST-7950和CUST-2704等。</p>
+<br>
+<h2>4. 总结</h2>
+<br>
+<ol>
+<li>**投诉分布均衡**：各类投诉类型分布相对均衡，各占13.9%-14.8%，表明公司面临多方面的服务挑战，需要全面提升服务质量。</li>
+</ol>
+<br>
+<ol>
+<li>**区域差异**：北部地区通话质量问题突出（18.94%），中部地区通话中断和短信失败问题较多（分别为16.79%和16.54%），东部地区服务中断问题较为严重（16.62%）。</li>
+</ol>
+<br>
+<ol>
+<li>**优先级分配**：通话中断问题被赋予最高紧急优先级（31.76%），表明该问题对客户体验影响最大。</li>
+</ol>
+<br>
+<ol>
+<li>**客户满意度**：整体客户满意度评分为3.02（满分5分），处于中等水平。宽带服务满意度相对较高（3.12分），其他服务类型满意度相近。</li>
+</ol>
+<br>
+<ol>
+<li>**解决效率**：平均解决时间为7.15天，85.10%的投诉已关闭，但仍有约15%的投诉处于未完全解决状态。</li>
+</ol>
+<br>
+<ol>
+<li>**季节性趋势**：3月份投诉量最高（705件），其次是1月份（674件），2月份相对较少（621件），可能与季节性因素或服务调整有关。</li>
+</ol>
+<br>
+<ol>
+<li>**数据完整性**：客户满意度数据缺失14.90%，解决时间数据缺失21.5%，建议改进数据收集流程，提高数据完整性。</li>
+</ol>
+<br>
+<ol>
+<li>**改进建议**：</li>
+</ol>
+<ul>
+<li>针对通话中断和通话质量问题进行网络基础设施升级</li>
+<li>加强区域性问题的针对性解决方案</li>
+<li>缩短投诉解决时间，特别是对紧急优先级的投诉</li>
+<li>完善客户满意度评价收集机制</li>
+<li>对重复投诉客户进行专项跟进</li>
+</ul>
+
+</body>
+</html>

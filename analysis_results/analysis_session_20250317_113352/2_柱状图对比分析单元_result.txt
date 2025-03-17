@@ -1,0 +1,3 @@
+成功读取CSV文件，共7200行数据
+分析完成，结果已保存到 pngs/analysis_results.json
+生成的图表已保存到 pngs/chart_bar_station_success_rate.png, pngs/chart_bar_signal_type_rates.png, pngs/chart_bar_resource_usage.png

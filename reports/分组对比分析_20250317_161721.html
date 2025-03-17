@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>分组对比分析分析报告</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            color: #2c3e50;
+            margin-top: 24px;
+            margin-bottom: 16px;
+        }
+        h1 { font-size: 2em; border-bottom: 1px solid #eaecef; padding-bottom: .3em; }
+        h2 { font-size: 1.5em; border-bottom: 1px solid #eaecef; padding-bottom: .3em; }
+        h3 { font-size: 1.25em; }
+        h4 { font-size: 1em; }
+        p, ul, ol, table { margin-bottom: 16px; }
+        code {
+            font-family: Consolas, Monaco, 'Andale Mono', monospace;
+            background-color: #f6f8fa;
+            padding: 0.2em 0.4em;
+            border-radius: 3px;
+        }
+        pre {
+            background-color: #f6f8fa;
+            border-radius: 3px;
+            padding: 16px;
+            overflow: auto;
+        }
+        pre code {
+            background-color: transparent;
+            padding: 0;
+        }
+        blockquote {
+            padding: 0 1em;
+            color: #6a737d;
+            border-left: 0.25em solid #dfe2e5;
+            margin: 0 0 16px 0;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        table th, table td {
+            border: 1px solid #dfe2e5;
+            padding: 6px 13px;
+        }
+        table tr:nth-child(2n) {
+            background-color: #f6f8fa;
+        }
+        img {
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+<h1>客户投诉分析报告</h1>
+<br>
+<h2>1. 数据概览</h2>
+<br>
+<p>本报告基于64,800行客户投诉数据进行分析，最终有效分析样本为2,000条记录。</p>
+<br>
+<h3>1.1 数据分布概况</h3>
+<br>
+<table>
+<tr><th>特征</th><th>分布情况</th></tr>
+<tr><td>地区分布</td><td>北部(20.85%)、中部(20.25%)、南部(20.15%)、其他地区(38.75%)</td></tr>
+<tr><td>投诉类型</td><td>通话中断(14.80%)、短信失败(14.45%)、服务中断(14.45%)</td></tr>
+<tr><td>服务类型</td><td>移动服务(25.40%)、宽带服务(25.40%)、固定电话(24.70%)、电视服务(24.50%)</td></tr>
+<tr><td>优先级</td><td>紧急(26.30%)、中等(25.00%)、低(24.75%)、高(23.95%)</td></tr>
+<tr><td>状态</td><td>已关闭(85.10%)、处理中(5.55%)、已解决(4.95%)、其他(4.40%)</td></tr>
+</table>
+<br>
+<h3>1.2 关键指标统计</h3>
+<br>
+<table>
+<tr><th>指标</th><th>平均值</th><th>中位数</th><th>标准差</th></tr>
+<tr><td>解决时间(天)</td><td>7.15</td><td>7.00</td><td>4.40</td></tr>
+<tr><td>客户满意度(1-5分)</td><td>3.02</td><td>3.00</td><td>1.41</td></tr>
+</table>
+<br>
+<h2>2. 数据洞察</h2>
+<br>
+<h3>2.1 按地区分组分析</h3>
+<br>
+<h4>2.1.1 解决时间(天)</h4>
+<br>
+<table>
+<tr><th>地区</th><th>平均解决时间</th><th>中位数</th><th>标准差</th></tr>
+<tr><td>北部</td><td>7.22</td><td>7.0</td><td>4.33</td></tr>
+<tr><td>中部</td><td>7.20</td><td>7.0</td><td>4.48</td></tr>
+<tr><td>东部</td><td>7.18</td><td>7.0</td><td>4.51</td></tr>
+<tr><td>西部</td><td>7.11</td><td>7.0</td><td>4.41</td></tr>
+<tr><td>南部</td><td>7.05</td><td>7.0</td><td>4.31</td></tr>
+</table>
+<br>
+<h4>2.1.2 客户满意度</h4>
+<br>
+<table>
+<tr><th>地区</th><th>平均满意度</th><th>中位数</th><th>标准差</th></tr>
+<tr><td>南部</td><td>3.15</td><td>3.0</td><td>1.39</td></tr>
+<tr><td>北部</td><td>3.00</td><td>3.0</td><td>1.48</td></tr>
+<tr><td>西部</td><td>3.00</td><td>3.0</td><td>1.40</td></tr>
+<tr><td>东部</td><td>2.99</td><td>3.0</td><td>1.39</td></tr>
+<tr><td>中部</td><td>2.93</td><td>3.0</td><td>1.37</td></tr>
+</table>
+<br>
+<h3>2.2 按服务类型分组分析</h3>
+<br>
+<h4>2.2.1 解决时间(天)</h4>
+<br>
+<table>
+<tr><th>服务类型</th><th>平均解决时间</th><th>中位数</th><th>标准差</th></tr>
+<tr><td>固定电话</td><td>7.19</td><td>7.0</td><td>4.46</td></tr>
+<tr><td>宽带服务</td><td>7.18</td><td>7.0</td><td>4.50</td></tr>
+<tr><td>移动服务</td><td>7.14</td><td>7.0</td><td>4.31</td></tr>
+<tr><td>电视服务</td><td>7.11</td><td>7.0</td><td>4.36</td></tr>
+</table>
+<br>
+<h4>2.2.2 客户满意度</h4>
+<br>
+<table>
+<tr><th>服务类型</th><th>平均满意度</th><th>中位数</th><th>标准差</th></tr>
+<tr><td>宽带服务</td><td>3.12</td><td>3.0</td><td>1.40</td></tr>
+<tr><td>固定电话</td><td>2.99</td><td>3.0</td><td>1.43</td></tr>
+<tr><td>移动服务</td><td>2.98</td><td>3.0</td><td>1.40</td></tr>
+<tr><td>电视服务</td><td>2.98</td><td>3.0</td><td>1.41</td></tr>
+</table>
+<br>
+<h3>2.3 按优先级分组分析</h3>
+<br>
+<h4>2.3.1 解决时间(天)</h4>
+<br>
+<table>
+<tr><th>优先级</th><th>平均解决时间</th><th>中位数</th><th>标准差</th></tr>
+<tr><td>紧急</td><td>7.44</td><td>7.0</td><td>4.39</td></tr>
+<tr><td>高</td><td>7.38</td><td>8.0</td><td>4.45</td></tr>
+<tr><td>中等</td><td>6.90</td><td>7.0</td><td>4.38</td></tr>
+<tr><td>低</td><td>6.89</td><td>7.0</td><td>4.39</td></tr>
+</table>
+<br>
+<h4>2.3.2 客户满意度</h4>
+<br>
+<table>
+<tr><th>优先级</th><th>平均满意度</th><th>中位数</th><th>标准差</th></tr>
+<tr><td>紧急</td><td>3.06</td><td>3.0</td><td>1.41</td></tr>
+<tr><td>中等</td><td>3.04</td><td>3.0</td><td>1.39</td></tr>
+<tr><td>高</td><td>3.03</td><td>3.0</td><td>1.46</td></tr>
+<tr><td>低</td><td>2.93</td><td>3.0</td><td>1.38</td></tr>
+</table>
+<br>
+<h3>2.4 投诉描述分析</h3>
+<br>
+<table>
+<tr><th>描述类型</th><th>占比</th></tr>
+<tr><td>通话中断问题</td><td>16.00%</td></tr>
+<tr><td>网速慢问题</td><td>14.70%</td></tr>
+<tr><td>服务中断问题</td><td>14.30%</td></tr>
+</table>
+<br>
+<h2>3. 关键发现</h2>
+<br>
+<h3>3.1 地区差异分析</h3>
+<br>
+<table>
+<tr><th>发现</th><th>数据支持</th><th>潜在影响</th></tr>
+<tr><td>南部地区客户满意度最高</td><td>南部满意度为3.15，高于平均值3.02</td><td>可作为最佳实践参考</td></tr>
+<tr><td>北部地区解决时间最长</td><td>北部平均7.22天，高于总体平均值7.15天</td><td>需优化北部地区服务响应流程</td></tr>
+<tr><td>中部地区客户满意度最低</td><td>中部满意度为2.93，低于平均值3.02</td><td>需调查中部地区服务质量问题</td></tr>
+</table>
+<br>
+<h3>3.2 服务类型差异分析</h3>
+<br>
+<table>
+<tr><th>发现</th><th>数据支持</th><th>潜在影响</th></tr>
+<tr><td>宽带服务满意度最高</td><td>宽带服务满意度3.12，高于平均值3.02</td><td>可分析宽带服务的成功因素</td></tr>
+<tr><td>固定电话解决时间最长</td><td>固定电话平均7.19天，高于平均值7.15天</td><td>可能需要优化固定电话技术支持流程</td></tr>
+<tr><td>电视服务解决时间最短</td><td>电视服务平均7.11天，低于平均值7.15天</td><td>可借鉴电视服务的处理流程</td></tr>
+</table>
+<br>
+<h3>3.3 优先级处理分析</h3>
+<br>
+<table>
+<tr><th>发现</th><th>数据支持</th><th>潜在影响</th></tr>
+<tr><td>紧急优先级实际解决时间最长</td><td>紧急平均7.44天，高于其他优先级</td><td>优先级分配与实际处理不匹配</td></tr>
+<tr><td>高优先级中位数解决时间最长</td><td>高优先级中位数为8天，其他均为7天</td><td>高优先级案例处理流程可能存在问题</td></tr>
+<tr><td>低优先级实际解决时间最短</td><td>低优先级平均6.89天，低于其他优先级</td><td>资源分配可能过度倾向于低优先级案例</td></tr>
+</table>
+<br>
+<h2>4. 总结</h2>
+<br>
+<ol>
+<li>**地区服务质量差异明显**：南部地区表现最佳，客户满意度最高且解决时间相对较短；中部和北部地区需要改进，特别是在解决速度和客户满意度方面。</li>
+</ol>
+<br>
+<ol>
+<li>**服务类型差异化表现**：宽带服务在客户满意度方面表现突出，值得分析其成功经验；固定电话服务解决时间偏长，需要优化处理流程。</li>
+</ol>
+<br>
+<ol>
+<li>**优先级处理机制存在问题**：当前优先级划分与实际处理效率不匹配，紧急和高优先级案例反而耗时更长，表明资源分配或流程设计可能存在问题，需要重新评估优先级管理策略。</li>
+</ol>
+<br>
+<ol>
+<li>**投诉类型集中**：通话中断、短信失败和服务中断是最主要的投诉类型，应针对这些高频问题制定专项改进计划，可能需要进行基础设施升级。</li>
+</ol>
+<br>
+<ol>
+<li>**整体客户满意度有待提升**：平均满意度为3.02（满分5分），处于中等水平，公司需要制定全面的服务质量提升计划，特别关注中部地区和固定电话、移动服务、电视服务等满意度较低的业务。</li>
+</ol>
+
+</body>
+</html>

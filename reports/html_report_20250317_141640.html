@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excel数据分析报告</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            color: #2c3e50;
+            margin-top: 24px;
+            margin-bottom: 16px;
+        }
+        h1 { font-size: 2em; border-bottom: 1px solid #eaecef; padding-bottom: .3em; }
+        h2 { font-size: 1.5em; border-bottom: 1px solid #eaecef; padding-bottom: .3em; }
+        h3 { font-size: 1.25em; }
+        h4 { font-size: 1em; }
+        p, ul, ol, table { margin-bottom: 16px; }
+        code {
+            font-family: Consolas, Monaco, 'Andale Mono', monospace;
+            background-color: #f6f8fa;
+            padding: 0.2em 0.4em;
+            border-radius: 3px;
+        }
+        pre {
+            background-color: #f6f8fa;
+            border-radius: 3px;
+            padding: 16px;
+            overflow: auto;
+        }
+        pre code {
+            background-color: transparent;
+            padding: 0;
+        }
+        blockquote {
+            padding: 0 1em;
+            color: #6a737d;
+            border-left: 0.25em solid #dfe2e5;
+            margin: 0 0 16px 0;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        table th, table td {
+            border: 1px solid #dfe2e5;
+            padding: 6px 13px;
+        }
+        table tr:nth-child(2n) {
+            background-color: #f6f8fa;
+        }
+        img {
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+<h1>服务器性能监控数据分析报告</h1>
+<br>
+<h2>1. 数据概览</h2>
+<br>
+<p>本次分析的数据集包含了10台服务器在24小时内的性能监控数据，共14,400条记录，36个指标。</p>
+<br>
+<h3>1.1 基本信息</h3>
+<br>
+<table>
+<tr><th>项目</th><th>值</th></tr>
+<tr><td>记录数</td><td>14,400</td></tr>
+<tr><td>指标数</td><td>36</td></tr>
+<tr><td>时间范围</td><td>24小时</td></tr>
+<tr><td>服务器数量</td><td>10</td></tr>
+</table>
+<br>
+<h3>1.2 服务器列表</h3>
+<br>
+<table>
+<tr><th>服务器ID</th><th>服务器名称</th><th>类型</th></tr>
+<tr><td>SRV001</td><td>主应用服务器</td><td>server</td></tr>
+<tr><td>SRV002</td><td>备份应用服务器</td><td>server</td></tr>
+<tr><td>SRV003</td><td>数据处理服务器</td><td>server</td></tr>
+<tr><td>SRV004</td><td>缓存服务器</td><td>server</td></tr>
+<tr><td>SRV005</td><td>负载均衡服务器</td><td>server</td></tr>
+<tr><td>DB001</td><td>MySQL主数据库</td><td>database</td></tr>
+<tr><td>DB002</td><td>MySQL从数据库</td><td>database</td></tr>
+<tr><td>DB003</td><td>Redis缓存数据库</td><td>database</td></tr>
+<tr><td>DB004</td><td>MongoDB文档数据库</td><td>database</td></tr>
+<tr><td>DB005</td><td>Elasticsearch搜索数据库</td><td>database</td></tr>
+</table>
+<br>
+<h2>2. 数据洞察</h2>
+<br>
+<h3>2.1 资源使用情况</h3>
+<br>
+<table>
+<tr><th>指标</th><th>平均值</th><th>最小值</th><th>最大值</th><th>标准差</th></tr>
+<tr><td>CPU使用率</td><td>37.58%</td><td>5.58%</td><td>100.00%</td><td>20.65%</td></tr>
+<tr><td>内存使用率</td><td>53.57%</td><td>27.41%</td><td>100.00%</td><td>15.33%</td></tr>
+<tr><td>磁盘使用率</td><td>52.84%</td><td>50.00%</td><td>89.16%</td><td>5.81%</td></tr>
+<tr><td>磁盘IO</td><td>29.27%</td><td>0.48%</td><td>93.00%</td><td>19.41%</td></tr>
+<tr><td>网络流量</td><td>38.25%</td><td>5.22%</td><td>100.00%</td><td>21.58%</td></tr>
+</table>
+<br>
+<h3>2.2 数据库性能指标</h3>
+<br>
+<table>
+<tr><th>指标</th><th>平均值</th><th>最小值</th><th>最大值</th><th>标准差</th></tr>
+<tr><td>查询率(每秒)</td><td>349.16</td><td>51.60</td><td>1242.16</td><td>246.15</td></tr>
+<tr><td>活跃连接数</td><td>40.83</td><td>5.09</td><td>196.48</td><td>28.10</td></tr>
+<tr><td>缓存命中率</td><td>84.69%</td><td>27.49%</td><td>99.81%</td><td>7.98%</td></tr>
+<tr><td>平均查询时间(ms)</td><td>18.01</td><td>8.22</td><td>246.53</td><td>12.64</td></tr>
+<tr><td>事务数(每秒)</td><td>38.26</td><td>3.64</td><td>218.76</td><td>30.84</td></tr>
+</table>
+<br>
+<h3>2.3 事件类型分布</h3>
+<br>
+<table>
+<tr><th>事件类型</th><th>数量</th><th>百分比</th></tr>
+<tr><td>normal</td><td>14,103</td><td>97.94%</td></tr>
+<tr><td>network_issue</td><td>122</td><td>0.85%</td></tr>
+<tr><td>high_load</td><td>92</td><td>0.64%</td></tr>
+<tr><td>db_slowdown</td><td>62</td><td>0.43%</td></tr>
+<tr><td>memory_leak</td><td>21</td><td>0.15%</td></tr>
+</table>
+<br>
+<h2>3. 关键发现</h2>
+<br>
+<h3>3.1 资源使用高峰</h3>
+<br>
+<table>
+<tr><th>指标</th><th>高峰时间</th><th>低谷时间</th></tr>
+<tr><td>CPU</td></tr>
+</table>
+
+</body>
+</html>

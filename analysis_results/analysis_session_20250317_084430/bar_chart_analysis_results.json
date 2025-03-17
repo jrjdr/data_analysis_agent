@@ -1,0 +1,167 @@
+{
+  "category_comparison": {
+    "revenue_by_category": {
+      "Dresses": 1360310.0,
+      "Outerwear": 1297011.54,
+      "Bottoms": 690986.66,
+      "Tops": 578561.66,
+      "Accessories": 386589.48
+    },
+    "sales_by_category": {
+      "Accessories": 13301,
+      "Bottoms": 13007,
+      "Tops": 12401,
+      "Outerwear": 11956,
+      "Dresses": 11511
+    }
+  },
+  "monthly_comparison": {
+    "revenue_by_month": {
+      "January": 373739.08,
+      "February": 321527.59,
+      "March": 272210.45,
+      "April": 348543.69,
+      "May": 349096.39,
+      "June": 359850.93,
+      "July": 404570.57,
+      "August": 299854.47000000003,
+      "September": 329088.27,
+      "October": 278782.72,
+      "November": 363274.35,
+      "December": 612920.83
+    },
+    "sales_by_month": {
+      "January": 5251,
+      "February": 4623,
+      "March": 3860,
+      "April": 4947,
+      "May": 5164,
+      "June": 5560,
+      "July": 6419,
+      "August": 4391,
+      "September": 4692,
+      "October": 3872,
+      "November": 4983,
+      "December": 8414
+    }
+  },
+  "top_items": {
+    "top_10_items_by_sales": {
+      "Hat": 3608,
+      "Shorts": 3431,
+      "Dress Pants": 3357,
+      "Gloves": 3353,
+      "Sweater": 3343,
+      "Raincoat": 3219,
+      "Scarf": 3207,
+      "T-Shirt": 3196,
+      "Skirt": 3177,
+      "Sunglasses": 3133
+    }
+  },
+  "price_comparison": {
+    "average_price_by_category": {
+      "Dresses": 117.15249999999999,
+      "Outerwear": 109.0775,
+      "Bottoms": 53.404999999999994,
+      "Tops": 46.805,
+      "Accessories": 29.345000000000002
+    }
+  },
+  "category_distribution": {
+    "item_count_by_category": {
+      "Outerwear": 212,
+      "Tops": 212,
+      "Bottoms": 212,
+      "Dresses": 212,
+      "Accessories": 212
+    },
+    "item_percentage_by_category": {
+      "Outerwear": 20.0,
+      "Tops": 20.0,
+      "Bottoms": 20.0,
+      "Dresses": 20.0,
+      "Accessories": 20.0
+    }
+  },
+  "average_sales": {
+    "average_sales_by_category": {
+      "Accessories": 62.740566037735846,
+      "Bottoms": 61.35377358490566,
+      "Tops": 58.49528301886792,
+      "Outerwear": 56.39622641509434,
+      "Dresses": 54.29716981132076
+    }
+  },
+  "weekly_trend": {
+    "revenue_by_week": {
+      "Week 1": 88348.69,
+      "Week 10": 61502.12,
+      "Week 11": 62775.81,
+      "Week 12": 80126.81,
+      "Week 13": 67805.71,
+      "Week 14": 69079.26,
+      "Week 15": 74983.88,
+      "Week 16": 72994.25,
+      "Week 17": 67263.62,
+      "Week 18": 64222.68,
+      "Week 19": 116214.14,
+      "Week 2": 85649.13,
+      "Week 20": 93786.15,
+      "Week 21": 65836.57,
+      "Week 22": 73259.53,
+      "Week 23": 67048.75,
+      "Week 24": 103921.36,
+      "Week 25": 109175.15,
+      "Week 26": 79705.67,
+      "Week 27": 98156.67,
+      "Week 28": 80835.68000000001,
+      "Week 29": 75579.06,
+      "Week 3": 63786.32,
+      "Week 30": 67561.39,
+      "Week 31": 82437.77,
+      "Week 32": 79021.8,
+      "Week 33": 83009.28,
+      "Week 34": 66674.6,
+      "Week 35": 71148.79,
+      "Week 36": 66040.81,
+      "Week 37": 64217.2,
+      "Week 38": 61516.84,
+      "Week 39": 70297.85,
+      "Week 4": 69734.68000000001,
+      "Week 40": 67015.56999999999,
+      "Week 41": 67741.04,
+      "Week 42": 76059.29,
+      "Week 43": 69411.18,
+      "Week 44": 65571.21,
+      "Week 45": 71451.98,
+      "Week 46": 66680.89,
+      "Week 47": 69344.27,
+      "Week 48": 155797.21,
+      "Week 49": 173706.36,
+      "Week 5": 66220.26,
+      "Week 50": 90562.73,
+      "Week 51": 68132.23,
+      "Week 52": 143907.89,
+      "Week 53": 136611.62,
+      "Week 6": 70195.39,
+      "Week 7": 89968.29,
+      "Week 8": 97780.34,
+      "Week 9": 63583.57
+    }
+  },
+  "top_revenue_items": {
+    "top_10_items_by_revenue": {
+      "Evening Gown": 531524.79,
+      "Parka": 496749.88,
+      "Formal Dress": 449436.43,
+      "Winter Coat": 323591.49,
+      "Light Jacket": 250074.33,
+      "Raincoat": 226595.84,
+      "Summer Dress": 222984.94,
+      "Dress Pants": 217623.24,
+      "Sweater": 194916.83,
+      "Jeans": 192974.02
+    }
+  }
+}

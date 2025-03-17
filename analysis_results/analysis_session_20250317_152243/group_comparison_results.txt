@@ -1,0 +1,255 @@
+基站数据分析报告
+==================================================
+分析时间: 2025-03-17 15:27:48
+数据文件: temp_csv/excel_data_20250317152243.csv
+记录数: 7200
+1. 数据分布分析
+==================================================
+
+1.1 分类列分布
+--------------------------------------------------
+
+base_station_id 分布:
+BS001                1440   20.0%
+BS002                1440   20.0%
+BS003                1440   20.0%
+BS004                1440   20.0%
+BS005                1440   20.0%
+
+base_station_name 分布:
+城东-商业区基站             1440   20.0%
+城西-住宅区基站             1440   20.0%
+城北-工业园区基站            1440   20.0%
+城南-大学城基站             1440   20.0%
+市中心-商业区基站            1440   20.0%
+
+signal_type 分布:
+PAGING               523    7.26%
+ATTACH_REQUEST       502    6.97%
+HANDOVER_REQUEST     494    6.86%
+HANDOVER_COMPLETE    491    6.82%
+SERVICE_REQUEST      491    6.82%
+HANDOVER_COMMAND     486    6.75%
+DETACH_REQUEST       483    6.71%
+RRC_CONNECTION_SETUP_COMPLETE 477    6.62%
+ATTACH_COMPLETE      477    6.62%
+SERVICE_ACCEPT       475    6.6%
+RRC_CONNECTION_REQUEST 471    6.54%
+DETACH_ACCEPT        465    6.46%
+RRC_CONNECTION_RELEASE 464    6.44%
+RRC_CONNECTION_SETUP 461    6.4%
+ATTACH_ACCEPT        440    6.11%
+
+status 分布:
+SUCCESS              6125   85.07%
+FAILED               373    5.18%
+TIMEOUT              270    3.75%
+REJECTED             237    3.29%
+PENDING              195    2.71%
+
+
+1.2 数值列统计
+--------------------------------------------------
+列名                             最小值        最大值        平均值        中位数        标准差       
+--------------------------------------------------------------------------------
+success_rate                   0.5        0.99       0.86       0.88       0.11      
+failure_rate                   0.01       0.5        0.14       0.12       0.11      
+call_attempts                  10         99         41.37      32.0       26.17     
+active_users                   50         499        200.36     162.0      122.81    
+signal_strength_dbm            -120.0     -70.01     -95.03     -95.13     14.31     
+signal_quality_db              0.0        30.0       15.07      15.14      8.67      
+downlink_throughput_mbps       50.33      1499.85    713.37     691.32     387.86    
+uplink_throughput_mbps         10.03      199.98     91.6       82.34      51.9      
+latency_ms                     5.0        49.99      21.69      20.56      10.62     
+jitter_ms                      -5.0       5.0        -0.02      -0.06      2.89      
+packet_loss_percent            0.0        5.0        2.51       2.52       1.43      
+resource_block_usage_percent   20.0       99.0       56.26      50.0       25.54     
+cpu_usage_percent              10.04      109.0      56.22      49.41      26.22     
+memory_usage_percent           5.04       113.7      56.24      50.12      26.87     
+temperature_celsius            25.0       45.0       35.03      35.1       5.76      
+
+
+2. 分组对比分析
+==================================================
+
+2.1 按基站分组分析
+--------------------------------------------------
+                  success_rate            active_users      signal_strength_dbm downlink_throughput_mbps uplink_throughput_mbps latency_ms packet_loss_percent cpu_usage_percent temperature_celsius
+                          mean  min   max         mean  max                mean                     mean                   mean       mean                mean              mean                mean
+base_station_name                                                                                                                                                                                   
+城东-商业区基站                  0.85  0.5  0.99       200.08  499              -95.29                   720.46                  90.38      21.77                2.56             56.54               35.32
+城北-工业园区基站                 0.86  0.5  0.99       201.92  499              -95.13                   722.97                  91.38      21.52                2.52             55.94               35.13
+城南-大学城基站                  0.86  0.5  0.99       198.12  498              -94.99                   691.43                  91.34      21.79                2.48             56.21               35.09
+城西-住宅区基站                  0.86  0.5  0.99       200.36  499              -94.77                   714.92                  92.50      21.74                2.50             55.88               34.67
+市中心-商业区基站                 0.86  0.5  0.99       201.34  499              -94.99                   717.08                  92.43      21.61                2.50             56.55               34.96
+
+
+2.2 按信号类型分组分析
+--------------------------------------------------
+                              success_rate             failure_rate call_attempts latency_ms packet_loss_percent
+                                      mean   min   max         mean          mean       mean                mean
+signal_type                                                                                                     
+ATTACH_ACCEPT                         0.85  0.50  0.99         0.15         41.91      21.80                2.41
+ATTACH_COMPLETE                       0.86  0.50  0.99         0.14         43.10      21.94                2.45
+ATTACH_REQUEST                        0.85  0.51  0.99         0.15         41.28      21.57                2.49
+DETACH_ACCEPT                         0.87  0.51  0.99         0.13         42.23      21.63                2.47
+DETACH_REQUEST                        0.86  0.50  0.99         0.14         40.98      21.36                2.67
+HANDOVER_COMMAND                      0.85  0.50  0.99         0.15         40.09      20.50                2.47
+HANDOVER_COMPLETE                     0.86  0.50  0.99         0.14         42.16      22.13                2.45
+HANDOVER_REQUEST                      0.85  0.51  0.99         0.15         41.37      22.60                2.58
+PAGING                                0.86  0.50  0.99         0.14         41.01      22.14                2.52
+RRC_CONNECTION_RELEASE                0.86  0.50  0.99         0.14         41.96      21.68                2.57
+RRC_CONNECTION_REQUEST                0.86  0.51  0.99         0.14         40.14      21.50                2.50
+RRC_CONNECTION_SETUP                  0.86  0.51  0.99         0.14         40.61      22.04                2.50
+RRC_CONNECTION_SETUP_COMPLETE         0.86  0.50  0.99         0.14         40.93      21.05                2.49
+SERVICE_ACCEPT                        0.86  0.50  0.99         0.14         41.28      21.43                2.46
+SERVICE_REQUEST                       0.86  0.50  0.99         0.14         41.51      21.88                2.63
+
+
+2.3 按状态分组分析
+--------------------------------------------------
+          call_attempts  signal_strength_dbm  downlink_throughput_mbps  latency_ms  resource_block_usage_percent
+status                                                                                                          
+FAILED            40.94               -95.37                    722.21       21.39                         56.19
+PENDING           39.87               -94.53                    692.07       21.38                         54.52
+REJECTED          40.24               -94.92                    711.15       21.56                         55.18
+SUCCESS           41.45               -95.01                    712.21       21.73                         56.30
+TIMEOUT           41.99               -95.46                    744.81       21.41                         57.59
+
+
+2.4 按时间段分组分析（每小时）
+--------------------------------------------------
+      success_rate  active_users  downlink_throughput_mbps  latency_ms  cpu_usage_percent
+hour                                                                                     
+0             0.86        125.59                    822.03       17.26              39.83
+1             0.85        121.66                    772.00       17.49              39.72
+2             0.86        124.62                    787.74       17.62              39.54
+3             0.86        123.17                    805.15       17.54              40.19
+4             0.86        126.52                    840.01       18.61              38.53
+5             0.86        123.63                    800.90       17.95              41.22
+6             0.86        128.33                    796.51       17.13              38.96
+7             0.86        122.85                    837.38       18.18              39.31
+8             0.85        343.74                    523.13       30.20              90.03
+9             0.86        344.26                    501.84       29.30              89.44
+10            0.86        125.34                    822.26       16.66              38.07
+11            0.86        124.45                    793.75       17.73              39.83
+12            0.86        345.93                    550.51       29.13              90.27
+13            0.85        360.98                    524.81       30.13              88.71
+14            0.85        124.14                    801.64       17.41              38.88
+15            0.86        124.62                    838.72       17.43              40.50
+16            0.85        127.90                    777.87       17.58              39.84
+17            0.86        123.45                    776.83       17.54              39.03
+18            0.85        350.31                    544.47       30.32              89.60
+19            0.85        360.34                    538.48       30.36              89.37
+20            0.87        348.10                    546.12       30.18              89.84
+21            0.87        355.05                    505.19       29.70              88.98
+22            0.86        126.36                    800.04       17.67              39.99
+23            0.87        127.36                    813.56       17.36              39.72
+
+
+3. 比较性分析
+==================================================
+
+3.1 不同基站之间的关键性能指标对比
+--------------------------------------------------
+                   success_rate  latency_ms  downlink_throughput_mbps  packet_loss_percent  成功率_排名  延迟_排名  下行吞吐量_排名  丢包率_排名
+base_station_name                                                                                                          
+城东-商业区基站                   0.85       21.77                    720.46                 2.56       5      4         2       5
+城北-工业园区基站                  0.86       21.52                    722.97                 2.52       2      1         1       4
+城南-大学城基站                   0.86       21.79                    691.43                 2.48       2      5         5       1
+城西-住宅区基站                   0.86       21.74                    714.92                 2.50       2      3         4       2
+市中心-商业区基站                  0.86       21.61                    717.08                 2.50       2      2         3       2
+
+
+3.2 高负载与低负载条件下的性能差异
+--------------------------------------------------
+                             高负载_平均值     低负载_平均值  差异_百分比
+success_rate                0.858772    0.856685    0.24
+latency_ms                 25.794114   17.593881   46.61
+downlink_throughput_mbps  616.501994  809.921165  -23.88
+uplink_throughput_mbps     74.682680  108.470167  -31.15
+packet_loss_percent         2.512595    2.509641    0.12
+
+
+3.3 信号强度与成功率关系
+--------------------------------------------------
+                       success_rate  downlink_throughput_mbps  latency_ms  packet_loss_percent   样本数
+signal_strength_group                                                                               
+极弱 (-120~-110)                 0.86                    715.74       21.80                 2.50  1409
+较弱 (-110~-100)                 0.86                    710.91       21.68                 2.54  1458
+中等 (-100~-90)                  0.86                    706.91       21.55                 2.47  1490
+较强 (-90~-80)                   0.86                    725.64       21.67                 2.52  1444
+强 (-80~-70)                    0.86                    707.78       21.75                 2.53  1399
+
+
+4. 异常检测与模式识别
+==================================================
+
+4.1 高延迟异常
+--------------------------------------------------
+高延迟阈值: 42.94 ms
+高延迟记录数: 422 (5.86%)
+
+按基站统计高延迟记录:
+base_station_name
+城西-住宅区基站     89
+城南-大学城基站     89
+城东-商业区基站     84
+市中心-商业区基站    81
+城北-工业园区基站    79
+
+按信号类型统计高延迟记录:
+signal_type
+ATTACH_COMPLETE                  35
+SERVICE_REQUEST                  34
+RRC_CONNECTION_RELEASE           32
+RRC_CONNECTION_SETUP             32
+HANDOVER_REQUEST                 30
+SERVICE_ACCEPT                   29
+HANDOVER_COMPLETE                29
+PAGING                           29
+ATTACH_REQUEST                   29
+RRC_CONNECTION_SETUP_COMPLETE    27
+RRC_CONNECTION_REQUEST           26
+DETACH_ACCEPT                    25
+ATTACH_ACCEPT                    23
+DETACH_REQUEST                   23
+HANDOVER_COMMAND                 19
+
+
+4.2 低成功率异常
+--------------------------------------------------
+低成功率阈值: 0.64
+低成功率记录数: 533 (7.40%)
+
+按基站统计低成功率记录:
+base_station_name
+城东-商业区基站     117
+市中心-商业区基站    109
+城北-工业园区基站    105
+城西-住宅区基站     102
+城南-大学城基站     100
+
+按信号类型统计低成功率记录:
+signal_type
+ATTACH_REQUEST                   54
+PAGING                           41
+RRC_CONNECTION_SETUP             41
+HANDOVER_COMMAND                 38
+SERVICE_REQUEST                  38
+RRC_CONNECTION_SETUP_COMPLETE    37
+ATTACH_ACCEPT                    37
+RRC_CONNECTION_REQUEST           35
+HANDOVER_REQUEST                 35
+RRC_CONNECTION_RELEASE           34
+SERVICE_ACCEPT                   33
+DETACH_ACCEPT                    33
+DETACH_REQUEST                   28
+ATTACH_COMPLETE                  26
+HANDOVER_COMPLETE                23
+
+
+5. 分析结论
+==================================================
+
+这里是自动生成的结论，基于数据分析结果。具体结论将取决于实际数据内容。

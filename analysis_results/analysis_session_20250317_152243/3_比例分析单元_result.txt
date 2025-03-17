@@ -1,0 +1,2 @@
+成功加载数据，共7200行，20列
+分析结果已保存到 pngs/category_distribution_results.txt

@@ -1,0 +1,1 @@
+An error occurred: x must have 2 complete cycles requires 48 observations. x only has 24 observation(s)

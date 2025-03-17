@@ -1,0 +1,4 @@
+成功读取数据，共 7200 行，20 列
+分析结果已保存至 correlation_analysis_20250317111502.json
+分析完成！热图已保存至 pngs/chart_corr_heatmap_20250317111457.png
+发现了 11 对高相关性变量

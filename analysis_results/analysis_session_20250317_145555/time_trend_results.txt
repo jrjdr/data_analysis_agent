@@ -1,0 +1,125 @@
+=== SERVER METRICS TIME TREND ANALYSIS ===
+Analysis Date: 2025-03-17 15:04:26
+Data Period: 2025-02-28 00:00:00 to 2025-02-28 23:59:00
+Total Records: 14400
+
+--- TREND ANALYSIS ---
+
+CPU_USAGE_PERCENT:
+  Direction: decreasing
+  Strength (R-value): 0.0000
+  Slope: nan per day
+  Statistical Significance: Not significant
+
+MEMORY_USAGE_PERCENT:
+  Direction: decreasing
+  Strength (R-value): 0.0000
+  Slope: nan per day
+  Statistical Significance: Not significant
+
+DISK_USAGE_PERCENT:
+  Direction: decreasing
+  Strength (R-value): 0.0000
+  Slope: nan per day
+  Statistical Significance: Not significant
+
+NETWORK_TRAFFIC_PERCENT:
+  Direction: decreasing
+  Strength (R-value): 0.0000
+  Slope: nan per day
+  Statistical Significance: Not significant
+
+TEMPERATURE_CELSIUS:
+  Direction: decreasing
+  Strength (R-value): 0.0000
+  Slope: nan per day
+  Statistical Significance: Not significant
+
+
+--- PERIODICITY ANALYSIS ---
+
+CPU_USAGE_PERCENT:
+  Daily Pattern: Insufficient data
+  Seasonal Strength: Insufficient data
+
+MEMORY_USAGE_PERCENT:
+  Daily Pattern: Insufficient data
+  Seasonal Strength: Insufficient data
+
+DISK_IO_PERCENT:
+  Daily Pattern: Insufficient data
+  Seasonal Strength: Insufficient data
+
+NETWORK_TRAFFIC_PERCENT:
+  Daily Pattern: Insufficient data
+  Seasonal Strength: Insufficient data
+
+QUERY_RATE_PER_SEC:
+  Daily Pattern: Insufficient data
+  Seasonal Strength: Insufficient data
+
+
+--- ANOMALY DETECTION ---
+
+CPU_USAGE_PERCENT Anomalies:
+  2025-02-28 03:15:00: 99.92
+  2025-02-28 03:20:00: 100.00
+  2025-02-28 03:25:00: 100.00
+  2025-02-28 03:45:00: 100.00
+  2025-02-28 03:56:00: 100.00
+
+MEMORY_USAGE_PERCENT Anomalies:
+  2025-02-28 10:42:00: 100.00
+  2025-02-28 10:49:00: 99.81
+
+DISK_IO_PERCENT Anomalies:
+  2025-02-28 03:17:00: 89.76
+  2025-02-28 03:23:00: 88.74
+  2025-02-28 03:30:00: 91.70
+  2025-02-28 03:36:00: 90.76
+  2025-02-28 03:43:00: 93.00
+  2025-02-28 03:44:00: 92.51
+  2025-02-28 03:51:00: 89.81
+  2025-02-28 03:55:00: 87.88
+  2025-02-28 03:56:00: 88.75
+  2025-02-28 03:58:00: 88.10
+
+AVG_QUERY_TIME_MS Anomalies:
+  2025-02-28 14:00:00: 173.43
+  2025-02-28 14:00:00: 100.82
+  2025-02-28 14:01:00: 155.09
+  2025-02-28 14:01:00: 87.33
+  2025-02-28 14:02:00: 160.29
+  2025-02-28 14:02:00: 218.87
+  2025-02-28 14:03:00: 116.07
+  2025-02-28 14:03:00: 149.60
+  2025-02-28 14:04:00: 162.89
+  2025-02-28 14:04:00: 155.06
+
+
+--- CORRELATION ANALYSIS ---
+
+cpu_usage_percent and memory_usage_percent:
+  Correlation: 0.7532 (positive correlation)
+  Interpretation: Moderate positive relationship
+
+cpu_usage_percent and disk_io_percent:
+  Correlation: 0.8155 (positive correlation)
+  Interpretation: Strong positive relationship
+
+cpu_usage_percent and network_traffic_percent:
+  Correlation: 0.7654 (positive correlation)
+  Interpretation: Moderate positive relationship
+
+memory_usage_percent and disk_io_percent:
+  Correlation: 0.7509 (positive correlation)
+  Interpretation: Moderate positive relationship
+
+disk_io_percent and network_traffic_percent:
+  Correlation: 0.7747 (positive correlation)
+  Interpretation: Moderate positive relationship
+
+
+--- SUMMARY ---
+Strongest Trend: cpu_usage_percent (decreasing)
+Total Anomalies Detected: 27

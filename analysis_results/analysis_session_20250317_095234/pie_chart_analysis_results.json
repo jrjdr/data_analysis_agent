@@ -1,0 +1,174 @@
+{
+  "base_station_distribution": [
+    {
+      "name": "城东-商业区基站",
+      "value": 0.2
+    },
+    {
+      "name": "城西-住宅区基站",
+      "value": 0.2
+    },
+    {
+      "name": "城北-工业园区基站",
+      "value": 0.2
+    },
+    {
+      "name": "城南-大学城基站",
+      "value": 0.2
+    },
+    {
+      "name": "市中心-商业区基站",
+      "value": 0.2
+    }
+  ],
+  "signal_type_distribution": [
+    {
+      "name": "PAGING",
+      "value": 0.07263888888888889
+    },
+    {
+      "name": "ATTACH_REQUEST",
+      "value": 0.06972222222222223
+    },
+    {
+      "name": "HANDOVER_REQUEST",
+      "value": 0.06861111111111111
+    },
+    {
+      "name": "HANDOVER_COMPLETE",
+      "value": 0.06819444444444445
+    },
+    {
+      "name": "SERVICE_REQUEST",
+      "value": 0.06819444444444445
+    },
+    {
+      "name": "HANDOVER_COMMAND",
+      "value": 0.0675
+    },
+    {
+      "name": "DETACH_REQUEST",
+      "value": 0.06708333333333333
+    },
+    {
+      "name": "RRC_CONNECTION_SETUP_COMPLETE",
+      "value": 0.06625
+    },
+    {
+      "name": "ATTACH_COMPLETE",
+      "value": 0.06625
+    },
+    {
+      "name": "SERVICE_ACCEPT",
+      "value": 0.06597222222222222
+    },
+    {
+      "name": "RRC_CONNECTION_REQUEST",
+      "value": 0.06541666666666666
+    },
+    {
+      "name": "DETACH_ACCEPT",
+      "value": 0.06458333333333334
+    },
+    {
+      "name": "RRC_CONNECTION_RELEASE",
+      "value": 0.06444444444444444
+    },
+    {
+      "name": "RRC_CONNECTION_SETUP",
+      "value": 0.06402777777777778
+    },
+    {
+      "name": "ATTACH_ACCEPT",
+      "value": 0.06111111111111111
+    }
+  ],
+  "status_distribution": [
+    {
+      "name": "SUCCESS",
+      "value": 0.8506944444444444
+    },
+    {
+      "name": "FAILED",
+      "value": 0.051805555555555556
+    },
+    {
+      "name": "TIMEOUT",
+      "value": 0.0375
+    },
+    {
+      "name": "REJECTED",
+      "value": 0.032916666666666664
+    },
+    {
+      "name": "PENDING",
+      "value": 0.027083333333333334
+    }
+  ],
+  "resource_block_usage_distribution": [
+    {
+      "name": "(83.2, 99.0]",
+      "value": 0.2697222222222222
+    },
+    {
+      "name": "(35.8, 51.6]",
+      "value": 0.2683333333333333
+    },
+    {
+      "name": "(19.921, 35.8]",
+      "value": 0.2648611111111111
+    },
+    {
+      "name": "(51.6, 67.4]",
+      "value": 0.13347222222222221
+    },
+    {
+      "name": "(67.4, 83.2]",
+      "value": 0.0636111111111111
+    }
+  ],
+  "cpu_usage_distribution": [
+    {
+      "name": "(29.832, 49.623]",
+      "value": 0.33319444444444446
+    },
+    {
+      "name": "(89.204, 108.995]",
+      "value": 0.17180555555555554
+    },
+    {
+      "name": "(9.942, 29.832]",
+      "value": 0.17125
+    },
+    {
+      "name": "(49.623, 69.414]",
+      "value": 0.1622222222222222
+    },
+    {
+      "name": "(69.414, 89.204]",
+      "value": 0.16152777777777777
+    }
+  ],
+  "memory_usage_distribution": [
+    {
+      "name": "(26.774, 48.506]",
+      "value": 0.3386111111111111
+    },
+    {
+      "name": "(70.237, 91.968]",
+      "value": 0.1951388888888889
+    },
+    {
+      "name": "(48.506, 70.237]",
+      "value": 0.19430555555555556
+    },
+    {
+      "name": "(4.935, 26.774]",
+      "value": 0.13805555555555554
+    },
+    {
+      "name": "(91.968, 113.699]",
+      "value": 0.1338888888888889
+    }
+  ]
+}

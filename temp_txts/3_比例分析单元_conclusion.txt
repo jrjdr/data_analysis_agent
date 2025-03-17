@@ -1,0 +1,6 @@
+# 比例分析单元 分析结论
+
+正在读取文件: temp_csv/excel_data_20250317161158.csv
+成功加载数据，共 64800 行，10 列
+处理数据时出错: module 'pandas' has no attribute 'np'
+分析过程中出现错误。

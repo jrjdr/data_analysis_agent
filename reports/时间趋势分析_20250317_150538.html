@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>时间趋势分析分析报告</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            color: #2c3e50;
+            margin-top: 24px;
+            margin-bottom: 16px;
+        }
+        h1 { font-size: 2em; border-bottom: 1px solid #eaecef; padding-bottom: .3em; }
+        h2 { font-size: 1.5em; border-bottom: 1px solid #eaecef; padding-bottom: .3em; }
+        h3 { font-size: 1.25em; }
+        h4 { font-size: 1em; }
+        p, ul, ol, table { margin-bottom: 16px; }
+        code {
+            font-family: Consolas, Monaco, 'Andale Mono', monospace;
+            background-color: #f6f8fa;
+            padding: 0.2em 0.4em;
+            border-radius: 3px;
+        }
+        pre {
+            background-color: #f6f8fa;
+            border-radius: 3px;
+            padding: 16px;
+            overflow: auto;
+        }
+        pre code {
+            background-color: transparent;
+            padding: 0;
+        }
+        blockquote {
+            padding: 0 1em;
+            color: #6a737d;
+            border-left: 0.25em solid #dfe2e5;
+            margin: 0 0 16px 0;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        table th, table td {
+            border: 1px solid #dfe2e5;
+            padding: 6px 13px;
+        }
+        table tr:nth-child(2n) {
+            background-color: #f6f8fa;
+        }
+        img {
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+<h1>服务器指标时间趋势分析报告</h1>
+<br>
+<h2>1. 数据概览</h2>
+<br>
+<h3>分析基本信息</h3>
+<table>
+<tr><th>项目</th><th>详情</th></tr>
+<tr><td>分析日期</td><td>2025-03-17 15:04:26</td></tr>
+<tr><td>数据周期</td><td>2025-02-28 00:00:00 至 2025-02-28 23:59:00</td></tr>
+<tr><td>总记录数</td><td>14,400 条</td></tr>
+<tr><td>分析类型</td><td>服务器指标时间趋势分析</td></tr>
+<tr><td>指标范围</td><td>CPU使用率、内存使用率、磁盘使用率、网络流量、温度、查询率、查询时间</td></tr>
+</table>
+<br>
+<h3>指标趋势概览</h3>
+<table>
+<tr><th>指标</th><th>趋势方向</th><th>强度(R值)</th><th>斜率(每天)</th><th>统计显著性</th></tr>
+<tr><td>CPU使用率</td><td>下降</td><td>0.0000</td><td>无法确定</td><td>不显著</td></tr>
+<tr><td>内存使用率</td><td>下降</td><td>0.0000</td><td>无法确定</td><td>不显著</td></tr>
+<tr><td>磁盘使用率</td><td>下降</td><td>0.0000</td><td>无法确定</td><td>不显著</td></tr>
+<tr><td>网络流量</td><td>下降</td><td>0.0000</td><td>无法确定</td><td>不显著</td></tr>
+<tr><td>温度(摄氏度)</td><td>下降</td><td>0.0000</td><td>无法确定</td><td>不显著</td></tr>
+</table>
+<br>
+<h2>2. 数据洞察</h2>
+<br>
+<h3>周期性分析</h3>
+<table>
+<tr><th>指标</th><th>日常模式</th><th>季节性强度</th></tr>
+<tr><td>CPU使用率</td><td>数据不足</td><td>数据不足</td></tr>
+<tr><td>内存使用率</td><td>数据不足</td><td>数据不足</td></tr>
+<tr><td>磁盘I/O</td><td>数据不足</td><td>数据不足</td></tr>
+<tr><td>网络流量</td><td>数据不足</td><td>数据不足</td></tr>
+<tr><td>每秒查询率</td><td>数据不足</td><td>数据不足</td></tr>
+</table>
+<br>
+<h3>指标间相关性分析</h3>
+<table>
+<tr><th>指标组合</th><th>相关系数</th><th>解释</th></tr>
+<tr><td>CPU使用率 vs 内存使用率</td><td>0.7532</td><td>中度正相关</td></tr>
+<tr><td>CPU使用率 vs 磁盘I/O</td><td>0.8155</td><td>强正相关</td></tr>
+<tr><td>CPU使用率 vs 网络流量</td><td>0.7654</td><td>中度正相关</td></tr>
+<tr><td>内存使用率 vs 磁盘I/O</td><td>0.7509</td><td>中度正相关</td></tr>
+<tr><td>磁盘I/O vs 网络流量</td><td>0.7747</td><td>中度正相关</td></tr>
+</table>
+<br>
+<h2>3. 关键发现</h2>
+<br>
+<h3>异常检测结果</h3>
+<br>
+<h4>CPU使用率异常</h4>
+<table>
+<tr><th>时间戳</th><th>异常值(%)</th></tr>
+<tr><td>2025-02-28 03:15:00</td><td>99.92</td></tr>
+<tr><td>2025-02-28 03:20:00</td><td>100.00</td></tr>
+<tr><td>2025-02-28 03:25:00</td><td>100.00</td></tr>
+<tr><td>2025-02-28 03:45:00</td><td>100.00</td></tr>
+<tr><td>2025-02-28 03:56:00</td><td>100.00</td></tr>
+</table>
+<br>
+<h4>内存使用率异常</h4>
+<table>
+<tr><th>时间戳</th><th>异常值(%)</th></tr>
+<tr><td>2025-02-28 10:42:00</td><td>100.00</td></tr>
+<tr><td>2025-02-28 10:49:00</td><td>99.81</td></tr>
+</table>
+<br>
+<h4>磁盘I/O异常</h4>
+<table>
+<tr><th>时间戳</th><th>异常值(%)</th></tr>
+<tr><td>2025-02-28 03:17:00</td><td>89.76</td></tr>
+<tr><td>2025-02-28 03:23:00</td><td>88.74</td></tr>
+<tr><td>2025-02-28 03:30:00</td><td>91.70</td></tr>
+<tr><td>2025-02-28 03:36:00</td><td>90.76</td></tr>
+<tr><td>2025-02-28 03:43:00</td><td>93.00</td></tr>
+<tr><td>2025-02-28 03:44:00</td><td>92.51</td></tr>
+<tr><td>2025-02-28 03:51:00</td><td>89.81</td></tr>
+<tr><td>2025-02-28 03:55:00</td><td>87.88</td></tr>
+<tr><td>2025-02-28 03:56:00</td><td>88.75</td></tr>
+<tr><td>2025-02-28 03:58:00</td><td>88.10</td></tr>
+</table>
+<br>
+<h4>平均查询时间异常</h4>
+<table>
+<tr><th>时间戳</th><th>异常值(毫秒)</th></tr>
+<tr><td>2025-02-28 14:00:00</td><td>173.43</td></tr>
+<tr><td>2025-02-28 14:00:00</td><td>100.82</td></tr>
+<tr><td>2025-02-28 14:01:00</td><td>155.09</td></tr>
+<tr><td>2025-02-28 14:01:00</td><td>87.33</td></tr>
+<tr><td>2025-02-28 14:02:00</td><td>160.29</td></tr>
+<tr><td>2025-02-28 14:02:00</td><td>218.87</td></tr>
+<tr><td>2025-02-28 14:03:00</td><td>116.07</td></tr>
+<tr><td>2025-02-28 14:03:00</td><td>149.60</td></tr>
+<tr><td>2025-02-28 14:04:00</td><td>162.89</td></tr>
+<tr><td>2025-02-28 14:04:00</td><td>155.06</td></tr>
+</table>
+<br>
+<h3>关键性能问题时段</h3>
+<table>
+<tr><th>时间段</th><th>问题描述</th><th>影响的指标</th></tr>
+<tr><td>03:15-04:00</td><td>CPU利用率达到峰值(100%)，同时磁盘I/O活动异常高</td><td>CPU使用率、磁盘I/O</td></tr>
+<tr><td>10:42-10:49</td><td>内存使用率接近或达到100%</td><td>内存使用率</td></tr>
+<tr><td>14:00-14:04</td><td>查询响应时间显著增加，比正常值高出50-100%</td><td>平均查询时间</td></tr>
+</table>
+<br>
+<h2>4. 总结</h2>
+<br>
+<p>本次分析基于2025年2月28日全天的服务器指标监控数据(共14,400条记录)，识别了以下关键发现：</p>
+<br>
+<ol>
+<li>**性能瓶颈**：</li>
+</ol>
+<ul>
+<li>凌晨3点至4点时段出现严重的CPU饱和(100%)和磁盘I/O高峰</li>
+<li>上午10:42至10:49期间出现内存资源耗尽(接近100%)</li>
+<li>下午14:00至14:04期间查询响应时间显著延长</li>
+</ul>
+<br>
+<ol>
+<li>**相关性发现**：</li>
+</ol>
+<ul>
+<li>CPU使用率与磁盘I/O之间存在强正相关(0.8155)，表明磁盘操作可能是CPU压力的主要来源</li>
+<li>所有主要服务器指标之间均存在中度至强度的正相关关系，表明系统资源使用呈现协同变化模式</li>
+</ul>
+<br>
+<ol>
+<li>**趋势分析**：</li>
+</ol>
+<ul>
+<li>所有指标均显示下降趋势，但R值为0，斜率无法确定，且统计上不显著</li>
+<li>由于数据仅覆盖24小时，无法进行充分的周期性分析和季节性评估</li>
+</ul>
+<br>
+<ol>
+<li>**建议行动**：</li>
+</ol>
+<ul>
+<li>调查凌晨3点的CPU和磁盘I/O峰值原因，可能与计划任务或后台处理有关</li>
+<li>分析上午10:42左右的内存使用情况，评估是否需要内存扩容</li>
+<li>检查下午14点左右的查询性能下降原因，考虑查询优化或负载均衡策略</li>
+<li>实施更长时间范围的监控(至少7天)以获取更有意义的趋势和周期性分析结果</li>
+</ul>
+<br>
+<p>总体而言，虽然单日数据显示了几个明显的性能瓶颈点，但需要更长时间的数据才能得出关于系统性能趋势的可靠结论。已识别的27个异常事件集中在三个时间段，建议优先调查这些时段内的系统行为和工作负载特征。</p>
+
+</body>
+</html>

@@ -10,7 +10,7 @@ models:
     model_id: 'claude-3-7-sonnet-20250219'
     # model_id: 'chatgpt-4o-latest'
     # API base URL (for openai and ollama)
-    api_base: 'https://xiaohumini.site/v1'
+    api_base: 'your url'
     # API key
     api_key: 'your key'
     # Additional parameters
@@ -27,9 +27,9 @@ models:
     # model_id: 'chatgpt-4o-latest'
     model_id: 'claude-3-7-sonnet-20250219'
     # API base URL (for openai)
-    api_base: 'https://xiaohumini.site/v1'
+    api_base: 'your url'
     # API key
-    api_key: 'sk-778u7VJNIJftJ6EVSlmeaUeJP6vf62pfJmaR23h4EWEmlD63'
+    api_key: 'your key'
     # Additional parameters
     parameters:
       max_tokens: 65536

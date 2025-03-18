@@ -1,0 +1,122 @@
+{
+  "timestamp": "20250318_083039",
+  "structure_analysis": {
+    "file_path": "temp_csv/excel_data_20250318082908.csv",
+    "row_count": 64800,
+    "column_count": 10,
+    "columns": {
+      "Timestamp": {
+        "type": "object",
+        "missing_values": 0,
+        "unique_values": 720,
+        "most_common": {
+          "value": "2025-03-02 07:00:00",
+          "count": 90
+        }
+      },
+      "Region": {
+        "type": "object",
+        "missing_values": 0,
+        "unique_values": 5,
+        "most_common": {
+          "value": "North",
+          "count": 12960
+        }
+      },
+      "Service_Type": {
+        "type": "object",
+        "missing_values": 0,
+        "unique_values": 6,
+        "most_common": {
+          "value": "Voice",
+          "count": 10800
+        }
+      },
+      "Network_Type": {
+        "type": "object",
+        "missing_values": 0,
+        "unique_values": 3,
+        "most_common": {
+          "value": "4G",
+          "count": 21600
+        }
+      },
+      "Traffic_Volume_GB": {
+        "type": "float64",
+        "missing_values": 0,
+        "unique_values": 50696,
+        "min": 0.0,
+        "max": 19930.14,
+        "mean": 1343.2243436728395,
+        "median": 456.97
+      },
+      "Active_Users": {
+        "type": "int64",
+        "missing_values": 0,
+        "unique_values": 1608,
+        "min": 0,
+        "max": 2445,
+        "mean": 189.78743827160494,
+        "median": 96.0
+      },
+      "Bandwidth_Utilization_Percent": {
+        "type": "float64",
+        "missing_values": 0,
+        "unique_values": 7019,
+        "min": 0.0,
+        "max": 95.0,
+        "mean": 13.164103549382714,
+        "median": 4.55
+      },
+      "Average_Speed_Mbps": {
+        "type": "float64",
+        "missing_values": 0,
+        "unique_values": 53557,
+        "min": 10.02,
+        "max": 1999.88,
+        "mean": 757.5135956790124,
+        "median": 701.0699999999999
+      },
+      "Peak_Speed_Mbps": {
+        "type": "float64",
+        "missing_values": 0,
+        "unique_values": 58765,
+        "min": 20.03,
+        "max": 3999.78,
+        "mean": 1512.427361728395,
+        "median": 1397.65
+      },
+      "Congestion_Level": {
+        "type": "float64",
+        "missing_values": 0,
+        "unique_values": 8587,
+        "min": 0.0,
+        "max": 100.0,
+        "mean": 23.48457268518518,
+        "median": 8.97
+      }
+    }
+  },
+  "column_names": [
+    "Timestamp",
+    "Region",
+    "Service_Type",
+    "Network_Type",
+    "Traffic_Volume_GB",
+    "Active_Users",
+    "Bandwidth_Utilization_Percent",
+    "Average_Speed_Mbps",
+    "Peak_Speed_Mbps",
+    "Congestion_Level"
+  ],
+  "results": {
+    "总体数据统计分析单元": {
+      "status": "success",
+      "error": null,
+      "code": "import pandas as pd\nimport os\nimport numpy as np\nfrom datetime import datetime\n\ndef load_csv_data(file_path):\n    \"\"\"加载CSV文件数据\"\"\"\n    try:\n        df = pd.read_csv(file_path)\n        print(f\"成功加载CSV文件: {file_path}\")\n        return df\n    except Exception as e:\n        print(f\"加载CSV文件时出错: {e}\")\n        return None\n\ndef basic_statistics(df):\n    \"\"\"计算基本描述性统计\"\"\"\n    result = []\n    result.append(\"=\" * 80)\n    result.append(\"基本数据统计\")\n    result.append(\"=\" * 80)\n    \n    result.append(f\"数据集大小: {df.shape[0]} 行 x {df.shape[1]} 列\")\n    result.append(f\"内存使用: {df.memory_usage().sum() / (1024 * 1024):.2f} MB\")\n    \n    # 检查缺失值\n    missing_values = df.isnull().sum()\n    if missing_values.sum() > 0:\n        result.append(\"\\n缺失值统计:\")\n        for col, count in missing_values[missing_values > 0].items():\n            result.append(f\"  {col}: {count} 缺失值 ({count/len(df)*100:.2f}%)\")\n    else:\n        result.append(\"\\n数据集中没有缺失值\")\n    \n    # 数据类型信息\n    result.append(\"\\n列数据类型:\")\n    for col, dtype in df.dtypes.items():\n        result.append(f\"  {col}: {dtype}\")\n    \n    return \"\\n\".join(result)\n\ndef analyze_numeric_columns(df):\n    \"\"\"分析数值型列\"\"\"\n    numeric_cols = df.select_dtypes(include=['number']).columns.tolist()\n    \n    result = []\n    result.append(\"\\n\" + \"=\" * 80)\n    result.append(\"数值列分析\")\n    result.append(\"=\" * 80)\n    \n    for col in numeric_cols:\n        result.append(f\"\\n列: {col}\")\n        result.append(\"-\" * 40)\n        \n        # 基本统计\n        stats = df[col].describe()\n        result.append(f\"  计数: {stats['count']:.0f}\")\n        result.append(f\"  均值: {stats['mean']:.2f}\")\n        result.append(f\"  标准差: {stats['std']:.2f}\")\n        result.append(f\"  最小值: {stats['min']:.2f}\")\n        result.append(f\"  25%分位数: {stats['25%']:.2f}\")\n        result.append(f\"  中位数: {stats['50%']:.2f}\")\n        result.append(f\"  75%分位数: {stats['75%']:.2f}\")\n        result.append(f\"  最大值: {stats['max']:.2f}\")\n        \n        # 额外统计\n        result.append(f\"  偏度: {df[col].skew():.2f}\")\n        result.append(f\"  峰度: {df[col].kurtosis():.2f}\")\n        \n        # 分位数分析\n        percentiles = [0.1, 0.9, 0.95, 0.99]\n        result.append(\"\\n  分位数分析:\")\n        for p in percentiles:\n            result.append(f\"    {int(p*100)}%分位数: {df[col].quantile(p):.2f}\")\n    \n    return \"\\n\".join(result)\n\ndef analyze_categorical_columns(df):\n    \"\"\"分析分类列\"\"\"\n    cat_cols = df.select_dtypes(include=['object']).columns.tolist()\n    \n    result = []\n    result.append(\"\\n\" + \"=\" * 80)\n    result.append(\"分类列分析\")\n    result.append(\"=\" * 80)\n    \n    for col in cat_cols:\n        result.append(f\"\\n列: {col}\")\n        result.append(\"-\" * 40)\n        \n        # 唯一值计数\n        unique_count = df[col].nunique()\n        result.append(f\"  唯一值数量: {unique_count}\")\n        \n        # 频率分析\n        value_counts = df[col].value_counts()\n        result.append(\"\\n  值分布:\")\n        \n        for value, count in value_counts.head(10).items():\n            result.append(f\"    {value}: {count} ({count/len(df)*100:.2f}%)\")\n        \n        if len(value_counts) > 10:\n            result.append(f\"    ... 以及 {len(value_counts)-10} 个其他值\")\n    \n    return \"\\n\".join(result)\n\ndef analyze_timestamp_column(df):\n    \"\"\"分析时间戳列\"\"\"\n    result = []\n    \n    if 'Timestamp' in df.columns and pd.api.types.is_object_dtype(df['Timestamp']):\n        result.append(\"\\n\" + \"=\" * 80)\n        result.append(\"时间戳分析\")\n        result.append(\"=\" * 80)\n        \n        try:\n            # 转换时间戳列\n            df['Timestamp'] = pd.to_datetime(df['Timestamp'])\n            \n            # 时间范围\n            min_time = df['Timestamp'].min()\n            max_time = df['Timestamp'].max()\n            time_range = max_time - min_time\n            \n            result.append(f\"\\n时间范围: {time_range}\")\n            result.append(f\"开始时间: {min_time}\")\n            result.append(f\"结束时间: {max_time}\")\n            \n            # 按日期分组统计\n            result.append(\"\\n每日数据量:\")\n            daily_counts = df.groupby(df['Timestamp'].dt.date).size()\n            for date, count in daily_counts.head(10).items():\n                result.append(f\"  {date}: {count} 条记录\")\n            \n            if len(daily_counts) > 10:\n                result.append(f\"  ... 以及 {len(daily_counts)-10} 个其他日期\")\n            \n        except Exception as e:\n            result.append(f\"时间戳分析出错: {e}\")\n    \n    return \"\\n\".join(result)\n\ndef cross_analysis(df):\n    \"\"\"交叉分析\"\"\"\n    result = []\n    result.append(\"\\n\" + \"=\" * 80)\n    result.append(\"交叉分析\")\n    result.append(\"=\" * 80)\n    \n    # 按区域和服务类型分析流量\n    if all(col in df.columns for col in ['Region', 'Service_Type', 'Traffic_Volume_GB']):\n        result.append(\"\\n按区域和服务类型的平均流量(GB):\")\n        cross_table = df.pivot_table(\n            values='Traffic_Volume_GB', \n            index='Region', \n            columns='Service_Type', \n            aggfunc='mean'\n        )\n        \n        # 格式化输出\n        result.append(\"\\n\" + \" \" * 15 + \"\".join([f\"{col:>15}\" for col in cross_table.columns]))\n        for idx, row in cross_table.iterrows():\n            result.append(f\"{idx:15}\" + \"\".join([f\"{val:15.2f}\" for val in row]))\n    \n    # 按网络类型分析速度\n    if all(col in df.columns for col in ['Network_Type', 'Average_Speed_Mbps']):\n        result.append(\"\\n按网络类型的平均速度(Mbps):\")\n        network_speed = df.groupby('Network_Type')['Average_Speed_Mbps'].agg(['mean', 'min', 'max'])\n        \n        result.append(\"\\n\" + \" \" * 10 + \"\".join([f\"{col:>15}\" for col in network_speed.columns]))\n        for idx, row in network_speed.iterrows():\n            result.append(f\"{idx:10}\" + \"\".join([f\"{val:15.2f}\" for val in row]))\n    \n    return \"\\n\".join(result)\n\ndef save_analysis_results(results, output_path):\n    \"\"\"保存分析结果到文本文件\"\"\"\n    try:\n        # 确保目录存在\n        os.makedirs(os.path.dirname(output_path), exist_ok=True)\n        \n        with open(output_path, 'w', encoding='utf-8') as f:\n            f.write(results)\n        \n        print(f\"分析结果已保存到: {output_path}\")\n        return True\n    except Exception as e:\n        print(f\"保存分析结果时出错: {e}\")\n        return False\n\ndef main():\n    # 文件路径\n    csv_path = \"temp_csv/excel_data_20250318082908.csv\"\n    output_path = \"pngs/analysis_results.txt\"\n    \n    # 加载数据\n    df = load_csv_data(csv_path)\n    if df is None:\n        return\n    \n    # 执行分析\n    results = []\n    results.append(f\"CSV数据分析报告\")\n    results.append(f\"生成时间: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\")\n    results.append(f\"文件: {csv_path}\")\n    results.append(\"\")\n    \n    results.append(basic_statistics(df))\n    results.append(analyze_numeric_columns(df))\n    results.append(analyze_categorical_columns(df))\n    results.append(analyze_timestamp_column(df))\n    results.append(cross_analysis(df))\n    \n    # 保存结果\n    save_analysis_results(\"\\n\".join(results), output_path)\n\nif __name__ == \"__main__\":\n    main()",
+      "results": "成功加载CSV文件: temp_csv/excel_data_20250318082908.csv\n分析结果已保存到: pngs/analysis_results.txt\n",
+      "txt_results": "CSV数据分析报告\n生成时间: 2025-03-18 08:30:19\n文件: temp_csv/excel_data_20250318082908.csv\n\n================================================================================\n基本数据统计\n================================================================================\n数据集大小: 64800 行 x 10 列\n内存使用: 4.94 MB\n\n数据集中没有缺失值\n\n列数据类型:\n  Timestamp: object\n  Region: object\n  Service_Type: object\n  Network_Type: object\n  Traffic_Volume_GB: float64\n  Active_Users: int64\n  Bandwidth_Utilization_Percent: float64\n  Average_Speed_Mbps: float64\n  Peak_Speed_Mbps: float64\n  Congestion_Level: float64\n\n================================================================================\n数值列分析\n================================================================================\n\n列: Traffic_Volume_GB\n----------------------------------------\n  计数: 64800\n  均值: 1343.22\n  标准差: 2045.60\n  最小值: 0.00\n  25%分位数: 96.59\n  中位数: 456.97\n  75%分位数: 1774.62\n  最大值: 19930.14\n  偏度: 2.75\n  峰度: 10.05\n\n  分位数分析:\n    10%分位数: 19.68\n    90%分位数: 3796.48\n    95%分位数: 5555.21\n    99%分位数: 9622.65\n\n列: Active_Users\n----------------------------------------\n  计数: 64800\n  均值: 189.79\n  标准差: 252.73\n  最小值: 0.00\n  25%分位数: 27.00\n  中位数: 96.00\n  75%分位数: 252.00\n  最大值: 2445.00\n  偏度: 2.64\n  峰度: 9.69\n\n  分位数分析:\n    10%分位数: 5.00\n    90%分位数: 497.00\n    95%分位数: 694.00\n    99%分位数: 1197.04\n\n列: Bandwidth_Utilization_Percent\n----------------------------------------\n  计数: 64800\n  均值: 13.16\n  标准差: 19.23\n  最小值: 0.00\n  25%分位数: 0.95\n  中位数: 4.55\n  75%分位数: 17.63\n  最大值: 95.00\n  偏度: 2.24\n  峰度: 5.17\n\n  分位数分析:\n    10%分位数: 0.19\n    90%分位数: 38.14\n    95%分位数: 55.57\n    99%分位数: 95.00\n\n列: Average_Speed_Mbps\n----------------------------------------\n  计数: 64800\n  均值: 757.51\n  标准差: 486.49\n  最小值: 10.02\n  25%分位数: 361.67\n  中位数: 701.07\n  75%分位数: 1074.03\n  最大值: 1999.88\n  偏度: 0.52\n  峰度: -0.50\n\n  分位数分析:\n    10%分位数: 153.84\n    90%分位数: 1455.11\n    95%分位数: 1694.06\n    99%分位数: 1937.38\n\n列: Peak_Speed_Mbps\n----------------------------------------\n  计数: 64800\n  均值: 1512.43\n  标准差: 976.05\n  最小值: 20.03\n  25%分位数: 716.04\n  中位数: 1397.65\n  75%分位数: 2147.31\n  最大值: 3999.78\n  偏度: 0.52\n  峰度: -0.50\n\n  分位数分析:\n    10%分位数: 301.05\n    90%分位数: 2909.17\n    95%分位数: 3395.30\n    99%分位数: 3877.58\n\n列: Congestion_Level\n----------------------------------------\n  计数: 64800\n  均值: 23.48\n  标准差: 29.88\n  最小值: 0.00\n  25%分位数: 1.90\n  中位数: 8.97\n  75%分位数: 34.86\n  最大值: 100.00\n  偏度: 1.43\n  峰度: 0.88\n\n  分位数分析:\n    10%分位数: 0.38\n    90%分位数: 75.52\n    95%分位数: 100.00\n    99%分位数: 100.00\n\n================================================================================\n分类列分析\n================================================================================\n\n列: Timestamp\n----------------------------------------\n  唯一值数量: 720\n\n  值分布:\n    2025-03-02 07:00:00: 90 (0.14%)\n    2025-03-02 06:00:00: 90 (0.14%)\n    2025-03-02 05:00:00: 90 (0.14%)\n    2025-03-02 04:00:00: 90 (0.14%)\n    2025-03-02 03:00:00: 90 (0.14%)\n    2025-03-02 02:00:00: 90 (0.14%)\n    2025-03-02 01:00:00: 90 (0.14%)\n    2025-03-02 00:00:00: 90 (0.14%)\n    2025-03-01 23:00:00: 90 (0.14%)\n    2025-03-01 22:00:00: 90 (0.14%)\n    ... 以及 710 个其他值\n\n列: Region\n----------------------------------------\n  唯一值数量: 5\n\n  值分布:\n    North: 12960 (20.00%)\n    South: 12960 (20.00%)\n    East: 12960 (20.00%)\n    West: 12960 (20.00%)\n    Central: 12960 (20.00%)\n\n列: Service_Type\n----------------------------------------\n  唯一值数量: 6\n\n  值分布:\n    Voice: 10800 (16.67%)\n    Data: 10800 (16.67%)\n    SMS: 10800 (16.67%)\n    Video Streaming: 10800 (16.67%)\n    Gaming: 10800 (16.67%)\n    Social Media: 10800 (16.67%)\n\n列: Network_Type\n----------------------------------------\n  唯一值数量: 3\n\n  值分布:\n    4G: 21600 (33.33%)\n    5G: 21600 (33.33%)\n    Fiber: 21600 (33.33%)\n\n================================================================================\n时间戳分析\n================================================================================\n\n时间范围: 29 days 23:00:00\n开始时间: 2025-02-01 00:00:00\n结束时间: 2025-03-02 23:00:00\n\n每日数据量:\n  2025-02-01: 2160 条记录\n  2025-02-02: 2160 条记录\n  2025-02-03: 2160 条记录\n  2025-02-04: 2160 条记录\n  2025-02-05: 2160 条记录\n  2025-02-06: 2160 条记录\n  2025-02-07: 2160 条记录\n  2025-02-08: 2160 条记录\n  2025-02-09: 2160 条记录\n  2025-02-10: 2160 条记录\n  ... 以及 20 个其他日期\n\n================================================================================\n交叉分析\n================================================================================\n\n按区域和服务类型的平均流量(GB):\n\n                          Data         Gaming            SMS   Social MediaVideo Streaming          Voice\nCentral                2101.34         868.75          87.62        1327.39        3500.94         209.84\nEast                   2078.90         864.36          88.70        1348.28        3440.29         208.00\nNorth                  2086.01         871.45          89.59        1330.83        3441.13         212.78\nSouth                  2103.44         869.65          87.64        1322.37        3454.05         210.97\nWest                   2090.62         870.97          87.18        1313.87        3520.55         209.21\n\n按网络类型的平均速度(Mbps):\n\n                     mean            min            max\n4G                 505.43          10.02         999.99\n5G                 764.76          15.04        1499.99\nFiber             1002.35          20.12        1999.88",
+      "report_file": "reports\\总体数据统计分析_20250318_083039.md"
+    }
+  }
+}

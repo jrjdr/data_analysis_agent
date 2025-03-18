@@ -1,0 +1,97 @@
+{
+  "file_path": "temp_csv/excel_data_20250318082908.csv",
+  "row_count": 64800,
+  "column_count": 10,
+  "columns": {
+    "Timestamp": {
+      "type": "object",
+      "missing_values": 0,
+      "unique_values": 720,
+      "most_common": {
+        "value": "2025-03-02 07:00:00",
+        "count": 90
+      }
+    },
+    "Region": {
+      "type": "object",
+      "missing_values": 0,
+      "unique_values": 5,
+      "most_common": {
+        "value": "North",
+        "count": 12960
+      }
+    },
+    "Service_Type": {
+      "type": "object",
+      "missing_values": 0,
+      "unique_values": 6,
+      "most_common": {
+        "value": "Voice",
+        "count": 10800
+      }
+    },
+    "Network_Type": {
+      "type": "object",
+      "missing_values": 0,
+      "unique_values": 3,
+      "most_common": {
+        "value": "4G",
+        "count": 21600
+      }
+    },
+    "Traffic_Volume_GB": {
+      "type": "float64",
+      "missing_values": 0,
+      "unique_values": 50696,
+      "min": 0.0,
+      "max": 19930.14,
+      "mean": 1343.2243436728395,
+      "median": 456.97
+    },
+    "Active_Users": {
+      "type": "int64",
+      "missing_values": 0,
+      "unique_values": 1608,
+      "min": 0,
+      "max": 2445,
+      "mean": 189.78743827160494,
+      "median": 96.0
+    },
+    "Bandwidth_Utilization_Percent": {
+      "type": "float64",
+      "missing_values": 0,
+      "unique_values": 7019,
+      "min": 0.0,
+      "max": 95.0,
+      "mean": 13.164103549382714,
+      "median": 4.55
+    },
+    "Average_Speed_Mbps": {
+      "type": "float64",
+      "missing_values": 0,
+      "unique_values": 53557,
+      "min": 10.02,
+      "max": 1999.88,
+      "mean": 757.5135956790124,
+      "median": 701.0699999999999
+    },
+    "Peak_Speed_Mbps": {
+      "type": "float64",
+      "missing_values": 0,
+      "unique_values": 58765,
+      "min": 20.03,
+      "max": 3999.78,
+      "mean": 1512.427361728395,
+      "median": 1397.65
+    },
+    "Congestion_Level": {
+      "type": "float64",
+      "missing_values": 0,
+      "unique_values": 8587,
+      "min": 0.0,
+      "max": 100.0,
+      "mean": 23.48457268518518,
+      "median": 8.97
+    }
+  }
+}

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>总体数据统计分析分析报告</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            color: #2c3e50;
+            margin-top: 24px;
+            margin-bottom: 16px;
+        }
+        h1 { font-size: 2em; border-bottom: 1px solid #eaecef; padding-bottom: .3em; }
+        h2 { font-size: 1.5em; border-bottom: 1px solid #eaecef; padding-bottom: .3em; }
+        h3 { font-size: 1.25em; }
+        h4 { font-size: 1em; }
+        p, ul, ol, table { margin-bottom: 16px; }
+        code {
+            font-family: Consolas, Monaco, 'Andale Mono', monospace;
+            background-color: #f6f8fa;
+            padding: 0.2em 0.4em;
+            border-radius: 3px;
+        }
+        pre {
+            background-color: #f6f8fa;
+            border-radius: 3px;
+            padding: 16px;
+            overflow: auto;
+        }
+        pre code {
+            background-color: transparent;
+            padding: 0;
+        }
+        blockquote {
+            padding: 0 1em;
+            color: #6a737d;
+            border-left: 0.25em solid #dfe2e5;
+            margin: 0 0 16px 0;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        table th, table td {
+            border: 1px solid #dfe2e5;
+            padding: 6px 13px;
+        }
+        table tr:nth-child(2n) {
+            background-color: #f6f8fa;
+        }
+        img {
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+<h1>电信网络数据分析报告</h1>
+<br>
+<h2>1. 数据概览</h2>
+<br>
+<p>本报告基于2025年2月1日至3月2日的电信网络数据进行分析。数据集包含64,800行和10列，涵盖了不同区域、服务类型和网络类型的网络性能指标。</p>
+<br>
+<h3>1.1 基本统计信息</h3>
+<br>
+<table>
+<tr><th>指标</th><th>值</th></tr>
+<tr><td>数据集大小</td><td>64,800 行 x 10 列</td></tr>
+<tr><td>内存使用</td><td>4.94 MB</td></tr>
+<tr><td>时间范围</td><td>29天23小时</td></tr>
+<tr><td>缺失值</td><td>无</td></tr>
+</table>
+<br>
+<h3>1.2 列数据类型</h3>
+<br>
+<table>
+<tr><th>列名</th><th>数据类型</th></tr>
+<tr><td>Timestamp</td><td>object</td></tr>
+<tr><td>Region</td><td>object</td></tr>
+<tr><td>Service_Type</td><td>object</td></tr>
+<tr><td>Network_Type</td><td>object</td></tr>
+<tr><td>Traffic_Volume_GB</td><td>float64</td></tr>
+<tr><td>Active_Users</td><td>int64</td></tr>
+<tr><td>Bandwidth_Utilization_Percent</td><td>float64</td></tr>
+<tr><td>Average_Speed_Mbps</td><td>float64</td></tr>
+<tr><td>Peak_Speed_Mbps</td><td>float64</td></tr>
+<tr><td>Congestion_Level</td><td>float64</td></tr>
+</table>
+<br>
+<h2>2. 数据洞察</h2>
+<br>
+<h3>2.1 流量分析</h3>
+<br>
+<p>流量数据显示了较大的变化范围和不均匀分布：</p>
+<br>
+<table>
+<tr><th>统计指标</th><th>值 (GB)</th></tr>
+<tr><td>平均值</td><td>1,343.22</td></tr>
+<tr><td>标准差</td><td>2,045.60</td></tr>
+<tr><td>最小值</td><td>0.00</td></tr>
+<tr><td>中位数</td><td>456.97</td></tr>
+<tr><td>最大值</td><td>19,930.14</td></tr>
+</table>
+<br>
+<p>流量分布呈现明显的右偏（偏度为2.75），表明存在少量极高流量的情况。</p>
+<br>
+<h3>2.2 用户活跃度</h3>
+<br>
+<p>活跃用户数据也显示了较大的波动：</p>
+<br>
+<table>
+<tr><th>统计指标</th><th>值</th></tr>
+<tr><td>平均值</td><td>189.79</td></tr>
+<tr><td>标准差</td><td>252.73</td></tr>
+<tr><td>最小值</td><td>0</td></tr>
+<tr><td>中位数</td><td>96</td></tr>
+<tr><td>最大值</td><td>2,445</td></tr>
+</table>
+<br>
+<p>用户活跃度同样呈现右偏分布（偏度为2.64），表明某些时段或区域的用户活跃度明显高于平均水平。</p>
+<br>
+<h3>2.3 网络性能</h3>
+<br>
+<p>带宽利用率和网络速度的统计数据如下：</p>
+<br>
+<table>
+<tr><th>指标</th><th>平均值</th><th>标准差</th><th>最小值</th><th>最大值</th></tr>
+<tr><td>带宽利用率 (%)</td><td>13.16</td><td>19.23</td><td>0.00</td><td>95.00</td></tr>
+<tr><td>平均速度 (Mbps)</td><td>757.51</td><td>486.49</td><td>10.02</td><td>1,999.88</td></tr>
+<tr><td>峰值速度 (Mbps)</td><td>1,512.43</td><td>976.05</td><td>20.03</td><td>3,999.78</td></tr>
+</table>
+<br>
+<p>网络性能指标显示了较大的波动范围，特别是带宽利用率的变化幅度较大。</p>
+<br>
+<h2>3. 关键发现</h2>
+<br>
+<h3>3.1 区域和服务类型分析</h3>
+<br>
+<p>不同区域和服务类型的平均流量（GB）如下：</p>
+<br>
+<table>
+<tr><th>区域</th><th>数据</th><th>游戏</th><th>短信</th><th>社交媒体</th><th>视频流</th><th>语音</th></tr>
+<tr><td>Central</td><td>2,101.34</td></tr>
+</table>
+
+</body>
+</html>

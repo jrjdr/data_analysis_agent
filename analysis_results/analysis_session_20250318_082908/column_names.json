@@ -1,0 +1,12 @@
+[
+  "Timestamp",
+  "Region",
+  "Service_Type",
+  "Network_Type",
+  "Traffic_Volume_GB",
+  "Active_Users",
+  "Bandwidth_Utilization_Percent",
+  "Average_Speed_Mbps",
+  "Peak_Speed_Mbps",
+  "Congestion_Level"
+]

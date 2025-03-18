@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excel数据分析报告</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            color: #2c3e50;
+            margin-top: 24px;
+            margin-bottom: 16px;
+        }
+        h1 { font-size: 2em; border-bottom: 1px solid #eaecef; padding-bottom: .3em; }
+        h2 { font-size: 1.5em; border-bottom: 1px solid #eaecef; padding-bottom: .3em; }
+        h3 { font-size: 1.25em; }
+        h4 { font-size: 1em; }
+        p, ul, ol, table { margin-bottom: 16px; }
+        code {
+            font-family: Consolas, Monaco, 'Andale Mono', monospace;
+            background-color: #f6f8fa;
+            padding: 0.2em 0.4em;
+            border-radius: 3px;
+        }
+        pre {
+            background-color: #f6f8fa;
+            border-radius: 3px;
+            padding: 16px;
+            overflow: auto;
+        }
+        pre code {
+            background-color: transparent;
+            padding: 0;
+        }
+        blockquote {
+            padding: 0 1em;
+            color: #6a737d;
+            border-left: 0.25em solid #dfe2e5;
+            margin: 0 0 16px 0;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        table th, table td {
+            border: 1px solid #dfe2e5;
+            padding: 6px 13px;
+        }
+        table tr:nth-child(2n) {
+            background-color: #f6f8fa;
+        }
+        img {
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+<h1>网络服务数据分析报告</h1>
+<br>
+<h2>1. 数据概览</h2>
+<br>
+<p>本报告基于2025年2月1日至2025年3月2日期间的网络服务数据分析。数据集包含64,800行记录和10个特征列，总内存占用4.94 MB。</p>
+<br>
+<h3>1.1 基本数据特征</h3>
+<br>
+<table>
+<tr><th>特征</th><th>描述</th></tr>
+<tr><td>数据集大小</td><td>64,800行 × 10列</td></tr>
+<tr><td>时间范围</td><td>2025-02-01 00:00:00 至 2025-03-02 23:00:00（约30天）</td></tr>
+<tr><td>每日数据量</td><td>均匀分布，每日2,160条记录</td></tr>
+<tr><td>缺失值</td><td>无</td></tr>
+</table>
+<br>
+<h3>1.2 数据分布</h3>
+<br>
+<h4>区域分布</h4>
+<br>
+<table>
+<tr><th>区域</th><th>记录数</th><th>占比</th></tr>
+<tr><td>North</td><td>12,960</td><td>20%</td></tr>
+<tr><td>South</td><td>12,960</td><td>20%</td></tr>
+<tr><td>East</td><td>12,960</td><td>20%</td></tr>
+<tr><td>West</td><td>12,960</td><td>20%</td></tr>
+<tr><td>Central</td><td>12,960</td><td>20%</td></tr>
+</table>
+<br>
+<h4>服务类型分布</h4>
+<br>
+<table>
+<tr><th>服务类型</th><th>记录数</th><th>占比</th></tr>
+<tr><td>Voice</td><td>10,800</td><td>16.67%</td></tr>
+<tr><td>Data</td><td>10,800</td><td>16.67%</td></tr>
+<tr><td>SMS</td><td>10,800</td><td>16.67%</td></tr>
+<tr><td>Video Streaming</td><td>10,800</td><td>16.67%</td></tr>
+<tr><td>Gaming</td><td>10,800</td><td>16.67%</td></tr>
+<tr><td>Social Media</td><td>10,800</td><td>16.67%</td></tr>
+</table>
+<br>
+<h4>网络类型分布</h4>
+<br>
+<table>
+<tr><th>网络类型</th><th>记录数</th><th>占比</th></tr>
+<tr><td>4G</td><td>21,600</td><td>33.33%</td></tr>
+<tr><td>5G</td><td>21,600</td><td>33.33%</td></tr>
+<tr><td>Fiber</td><td>21,600</td><td>33.33%</td></tr>
+</table>
+<br>
+<h2>2. 数据洞察</h2>
+<br>
+<h3>2.1 流量分析</h3>
+<br>
+<p>流量数据（Traffic_Volume_GB）显示出较大的离散度，平均值为1,343.22 GB，标准差为2,045.60 GB。</p>
+<br>
+<table>
+<tr><th>统计指标</th><th>值 (GB)</th></tr>
+<tr><td>平均值</td><td>1,343.22</td></tr>
+<tr><td>标准差</td><td>2,045.60</td></tr>
+<tr><td>最小值</td><td>0.00</td></tr>
+<tr><td>中位数</td><td>456.97</td></tr>
+<tr><td>最大值</td><td>19,930.14</td></tr>
+<tr><td>偏度</td><td>2.75</td></tr>
+</table>
+<br>
+<p>流量分布呈现明显的右偏（偏度2.75），表明大多数服务的流量较低，但存在少数高流量服务拉高了平均值。</p>
+<br>
+<h3>2.2 用户活跃度分析</h3>
+<br>
+<p>活跃用户数（Active_Users）的分布情况：</p>
+<br>
+<table>
+<tr><th>统计指标</th><th>值</th></tr>
+<tr><td>平均值</td><td>189.79</td></tr>
+<tr><td>标准差</td><td>252.73</td></tr>
+<tr><td>最小值</td><td>0.00</td></tr>
+<tr><td>中位数</td><td>96.00</td></tr>
+<tr><td>最大值</td><td>2,445.00</td></tr>
+</table>
+<br>
+<p>用户活跃度同样呈现右偏分布（偏度2.64），中位数（96）远低于平均值（189.79），表明大多数服务的活跃用户数较少。</p>
+<br>
+<h3>2.3 网络性能分析</h3>
+<br>
+<h4>带宽利用率</h4>
+<br>
+<table>
+<tr><th>统计指标</th><th>值 (%)</th></tr>
+<tr><td>平均值</td><td>13.16</td></tr>
+<tr><td>标准差</td><td>19.23</td></tr>
+<tr><td>最小值</td><td>0.00</td></tr>
+<tr><td>中位数</td><td>4.55</td></tr>
+<tr><td>最大值</td><td>95.00</td></tr>
+</table>
+<br>
+<p>带宽利用率整体较低，中位数仅为4.55%，但最大值达到95%，表明存在带宽使用高峰。</p>
+<br>
+<h4>网络速度比较</h4>
+<br>
+<table>
+<tr><th>网络类型</th><th>平均速度 (Mbps)</th><th>最小速度 (Mbps)</th><th>最大速度 (Mbps)</th></tr>
+<tr><td>4G</td><td>505.43</td><td>10.02</td><td>999.99</td></tr>
+<tr><td>5G</td><td>764.76</td><td>15.04</td><td>1,499.99</td></tr>
+<tr><td>Fiber</td><td>1,002.35</td><td>20.12</td><td>1,999.88</td></tr>
+</table>
+<br>
+<p>Fiber网络提供最高的平均速度，是4G网络的约2倍。</p>
+<br>
+<h3>2.4 拥塞水平分析</h3>
+<br>
+<table>
+<tr><th>统计指标</th><th>值 (%)</th></tr>
+<tr><td>平均值</td><td>23.48</td></tr>
+<tr><td>标准差</td><td>29.88</td></tr>
+<tr><td>最小值</td><td>0.00</td></tr>
+<tr><td>中位数</td><td>8.97</td></tr>
+<tr><td>最大值</td><td>100.00</td></tr>
+</table>
+<br>
+<p>拥塞水平的分布显示，大多数时间网络拥塞较低（中位数8.97%），但存在完全拥塞（100%）的情况。95%分位数达到100%，表明约5%的时间出现严重拥塞。</p>
+<br>
+<h2>3. 关键发现</h2>
+<br>
+<h3>3.1 服务类型与流量关系</h3>
+<br>
+<p>按服务类型的平均流量分布：</p>
+<br>
+<table>
+<tr><th>服务类型</th><th>平均流量 (GB)</th></tr>
+<tr><td>Video Streaming</td><td>~3,471.39</td></tr>
+<tr><td>Data</td><td>~2,092.06</td></tr>
+<tr><td>Social Media</td><td>~1,328.55</td></tr>
+<tr><td>Gaming</td><td>~868.84</td></tr>
+<tr><td>Voice</td><td>~210.16</td></tr>
+<tr><td>SMS</td><td>~88.15</td></tr>
+</table>
+<br>
+<p>视频流媒体服务消耗的流量最大，是SMS服务的约39倍，是语音服务的约16.5倍。</p>
+<br>
+<h3>3.2 区域间服务使用对比</h3>
+<br>
+<p>各区域不同服务类型的平均流量(GB)：</p>
+<br>
+<table>
+<tr><th>区域</th><th>Data</th><th>Gaming</th><th>SMS</th><th>Social Media</th><th>Video Streaming</th><th>Voice</th></tr>
+<tr><td>Central</td><td>2,101.34</td><td>868.75</td><td>87.62</td><td>1,327.39</td><td>3,500.94</td><td>209.84</td></tr>
+<tr><td>East</td><td>2,078.90</td><td>864.36</td><td>88.70</td><td>1,348.28</td><td>3,440.29</td><td>208.00</td></tr>
+<tr><td>North</td><td>2,086.01</td><td>871.45</td><td>89.59</td><td>1,330.83</td><td>3,441.13</td><td>212.78</td></tr>
+<tr><td>South</td><td>2,103.44</td><td>869.65</td><td>87.64</td><td>1,322.37</td><td>3,454.05</td><td>210.97</td></tr>
+<tr><td>West</td><td>2,090.62</td><td>870.97</td><td>87.18</td><td>1,313.87</td><td>3,520.55</td><td>209.21</td></tr>
+</table>
+<br>
+<p>各区域的服务使用模式相似，没有显著差异，表明用户行为在地理上较为一致。</p>
+<br>
+<h3>3.3 网络性能与拥塞关系</h3>
+<br>
+<p>拥塞水平的分布特征表明：</p>
+<ul>
+<li>10%的时间拥塞水平低于0.38%</li>
+<li>50%的时间拥塞水平低于8.97%</li>
+<li>90%的时间拥塞水平低于75.52%</li>
+<li>5%的时间出现严重拥塞（拥塞水平为100%）</li>
+</ul>
+<br>
+<p>这表明网络大部分时间运行良好，但存在短时间的严重拥塞情况。</p>
+<br>
+<h2>4. 总结</h2>
+<br>
+<ol>
+<li>**流量分布不均衡**：视频流媒体和数据服务占据了绝大部分网络流量，这两类服务应当是网络优化的重点。</li>
+</ol>
+<br>
+<ol>
+<li>**网络性能层级明显**：Fiber > 5G > 4G，速度差异显著，但各类网络都能满足基本需求。</li>
+</ol>
+<br>
+<ol>
+<li>**带宽利用率普遍较低**：中位数仅为4.55%，表明网络容量整体充足，但存在利用率达到95%的高峰期。</li>
+</ol>
+<br>
+<ol>
+<li>**拥塞情况需关注**：虽然大部分时间拥塞水平较低，但约5%的时间出现完全拥塞，需要针对性优化。</li>
+</ol>
+<br>
+<ol>
+<li>**区域间使用模式一致**：各地区用户的服务使用模式相似，可采用统一的网络优化策略。</li>
+</ol>
+<br>
+<ol>
+<li>**用户活跃度分布不均**：少数时段/服务的用户活跃度显著高于平均水平，需要针对高峰期进行容量规划。</li>
+</ol>
+<br>
+<p>基于以上发现，建议网络服务提供商重点关注视频流媒体和数据服务的优化，并针对出现完全拥塞的时段进行容量扩展，以提升整体用户体验。</p>
+
+</body>
+</html>

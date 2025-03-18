@@ -1,0 +1,2 @@
+成功加载CSV文件: temp_csv/excel_data_20250318082908.csv
+分析结果已保存到: pngs/analysis_results.txt

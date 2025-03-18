@@ -158,18 +158,28 @@ class ExcelAnalyzer:
                 except Exception as e:
                     logger.warning(f"无法自动打开HTML报告: {str(e)}")
             
-            # 尝试自动打开每个分析单元的HTML报告
-            for unit_html_file in unit_html_reports:
-                try:
-                    import webbrowser
-                    webbrowser.open(f"file://{os.path.abspath(unit_html_file)}")
-                    logger.info(f"已自动打开分析单元HTML报告: {unit_html_file}")
+            # 判断是否需要生成综合报告
+            generate_comprehensive = len(unit_md_files) > 1
+            
+            # 只有在不生成综合报告的情况下才打开单元报告
+            if not generate_comprehensive:
+                # 尝试自动打开每个分析单元的HTML报告
+                for unit_html_file in unit_html_reports:
+                    try:
+                        import webbrowser
+                        webbrowser.open(f"file://{os.path.abspath(unit_html_file)}")
+                        logger.info(f"已自动打开分析单元HTML报告: {unit_html_file}")
+                        print(f"分析单元HTML报告已保存到: {unit_html_file}")
+                    except Exception as e:
+                        logger.warning(f"无法自动打开分析单元HTML报告: {str(e)}")
+            else:
+                # 只打印保存信息，不自动打开
+                for unit_html_file in unit_html_reports:
+                    logger.info(f"分析单元HTML报告已保存到: {unit_html_file}")
                     print(f"分析单元HTML报告已保存到: {unit_html_file}")
-                except Exception as e:
-                    logger.warning(f"无法自动打开分析单元HTML报告: {str(e)}")
             
             # 如果有多个分析单元报告，生成综合报告
-            if len(unit_md_files) > 1:
+            if generate_comprehensive:
                 logger.info("开始生成综合分析报告...")
                 comprehensive_md, comprehensive_html = self.generate_comprehensive_report(unit_md_files)
                 if comprehensive_html:

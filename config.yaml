@@ -56,9 +56,9 @@ analysis:
   analysis_units:
     # 是否启用各个分析单元
     general_statistics: true
-    bar_chart: true
-    pie_chart: true
-    time_trend: true
+    bar_chart: false
+    pie_chart: false
+    time_trend: false
     correlation: false
   
   # 图表配置
